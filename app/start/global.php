@@ -121,5 +121,5 @@ if (extension_loaded('newrelic')) {
 |--------------------------------------------------------------------------|
 */
 
-require app_path().'/TypiCMS/Macros.php';
+require app_path().'/Macros.php';
 
