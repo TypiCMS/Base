@@ -49,31 +49,6 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
-
-    // Throw 404 error on ModelNotFoundException
-    if ($exception instanceof Illuminate\Database\Eloquent\ModelNotFoundException) {
-        $code = 404;
-    }
-
-    switch ($code)
-    {
-        case 403:
-        case 404:
-            return Response::view(
-                'errors.' . $code, [
-                    'title' => 'Erreur ' . $code . ' – ' . Config::get('typicms.' . App::getLocale() . '.websiteTitle'),
-                    'lang' => App::getLocale(),
-                    'bodyClass' => 'error-' . $code
-                ], $code
-            );
-    }
-    // return Response::view(
-    //  'errors.500', [
-    //      'title' => 'Erreur 500 – ' . Config::get('typicms.' . App::getLocale() . '.websiteTitle'), 
-    //      'lang' => App::getLocale(),
-    //      'bodyClass' => 'error-500'
-    //  ], 500
-    // );
 });
 
 /*
@@ -104,22 +79,3 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
-
-/*
-|--------------------------------------------------------------------------
-| New Relic app name
-|--------------------------------------------------------------------------
-*/
-
-if (extension_loaded('newrelic')) {
-    newrelic_set_appname('');
-}
-
-/*
-|--------------------------------------------------------------------------
-| HTML macros.
-|--------------------------------------------------------------------------|
-*/
-
-require app_path().'/Macros.php';
-

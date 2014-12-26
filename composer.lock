@@ -2828,17 +2828,52 @@
             "time": "2014-07-21 16:35:56"
         },
         {
+            "name": "typicms/blocks",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Blocks.git",
+                "reference": "9bbaa6e4c77df3dd772ad43ef9c46ba7ac293c70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/9bbaa6e4c77df3dd772ad43ef9c46ba7ac293c70",
+                "reference": "9bbaa6e4c77df3dd772ad43ef9c46ba7ac293c70",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Blocks\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-11-30 22:10:33"
+        },
+        {
             "name": "typicms/core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "4af5e7643ae7db3abdacbb56523eeb4503676af1"
+                "reference": "0d2129c6c5479cf98f6e6006cb84120e380b5844"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/4af5e7643ae7db3abdacbb56523eeb4503676af1",
-                "reference": "4af5e7643ae7db3abdacbb56523eeb4503676af1",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/0d2129c6c5479cf98f6e6006cb84120e380b5844",
+                "reference": "0d2129c6c5479cf98f6e6006cb84120e380b5844",
                 "shasum": ""
             },
             "require": {
@@ -2853,7 +2888,10 @@
                 "laracasts/utilities": "~1.0",
                 "laravel/framework": "~4.2.11",
                 "thomaswelton/laravel-gravatar": "~0.1",
+                "typicms/blocks": "dev-master",
                 "typicms/dashboard": "dev-master",
+                "typicms/files": "dev-master",
+                "typicms/galleries": "dev-master",
                 "typicms/groups": "dev-master",
                 "typicms/history": "dev-master",
                 "typicms/menus": "dev-master",
@@ -2861,10 +2899,17 @@
                 "typicms/settings": "dev-master",
                 "typicms/sitemap": "dev-master",
                 "typicms/tags": "dev-master",
-                "typicms/translatablebootforms": "~1.0.0",
+                "typicms/translatablebootforms": "~1.1.0",
                 "typicms/translations": "dev-master",
                 "typicms/users": "dev-master",
                 "vlucas/phpdotenv": "~1.0"
+            },
+            "require-dev": {
+                "barryvdh/laravel-debugbar": "~1.8",
+                "mockery/mockery": "~0.9.2",
+                "phpspec/phpspec": "~2.0",
+                "raveren/kint": "~0.9.1",
+                "way/generators": "~3.0"
             },
             "type": "library",
             "autoload": {
@@ -2879,7 +2924,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:43:36"
+            "time": "2014-12-26 15:20:10"
         },
         {
             "name": "typicms/dashboard",
@@ -2912,6 +2957,76 @@
                 }
             ],
             "time": "2014-11-30 22:10:50"
+        },
+        {
+            "name": "typicms/files",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Files.git",
+                "reference": "33e328d581f0d97cdc238d77a380cb91234b7617"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/33e328d581f0d97cdc238d77a380cb91234b7617",
+                "reference": "33e328d581f0d97cdc238d77a380cb91234b7617",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Files\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-11-30 22:11:38"
+        },
+        {
+            "name": "typicms/galleries",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Galleries.git",
+                "reference": "3b284fb38e8991974070524a0cd33f83dbe0cc96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/3b284fb38e8991974070524a0cd33f83dbe0cc96",
+                "reference": "3b284fb38e8991974070524a0cd33f83dbe0cc96",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Galleries\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-11-30 22:11:34"
         },
         {
             "name": "typicms/groups",
@@ -3193,21 +3308,21 @@
         },
         {
             "name": "typicms/translatablebootforms",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/TranslatableBootForms.git",
-                "reference": "ba9ea7ac33b0b2827c4ea8f3dae4d8838c3d0546"
+                "reference": "9e856e3c5af2521b32e636b06f1e957f33db3568"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/ba9ea7ac33b0b2827c4ea8f3dae4d8838c3d0546",
-                "reference": "ba9ea7ac33b0b2827c4ea8f3dae4d8838c3d0546",
+                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/9e856e3c5af2521b32e636b06f1e957f33db3568",
+                "reference": "9e856e3c5af2521b32e636b06f1e957f33db3568",
                 "shasum": ""
             },
             "require": {
                 "adamwathan/bootforms": "~0.4.1",
-                "dimsav/laravel-translatable": "~4.3",
+                "dimsav/laravel-translatable": "~4.4.0",
                 "illuminate/support": "4.2.*",
                 "php": ">=5.4.0"
             },
@@ -3235,7 +3350,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2014-11-19 23:27:29"
+            "time": "2014-12-23 13:58:53"
         },
         {
             "name": "typicms/translations",

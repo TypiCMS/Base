@@ -78,6 +78,14 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
+	| Does locale defined in fallback_locale content has locale in url ?
+	|--------------------------------------------------------------------------
+	*/
+
+	'main_locale_in_url' => true,
+
+	/*
+	|--------------------------------------------------------------------------
 	| Encryption Key
 	|--------------------------------------------------------------------------
 	|
@@ -126,27 +134,27 @@ return array(
 		'Illuminate\Auth\Reminders\ReminderServiceProvider',
 		'Illuminate\Database\SeedServiceProvider',
 		'Illuminate\Session\SessionServiceProvider',
-		'Illuminate\Translation\TranslationServiceProvider',
-		// 'TypiCMS\Modules\Translations\Providers\TranslationServiceProvider',
+		// 'Illuminate\Translation\TranslationServiceProvider',
+		'TypiCMS\Modules\Translations\Providers\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		// 'Barryvdh\Debugbar\ServiceProvider',
-		// 'BigName\BackupManager\Integrations\Laravel\BackupManagerServiceProvider',
-		// 'Bkwld\Croppa\ServiceProvider',
-		// 'Cartalyst\Sentry\SentryServiceProvider',
-		// 'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
-		// 'DaveJamesMiller\Breadcrumbs\ServiceProvider',
-		// 'Dimsav\Translatable\TranslatableServiceProvider',
-		// 'Jenssegers\Rollbar\RollbarServiceProvider',
-		// 'Krucas\Notification\NotificationServiceProvider',
-		// 'Laracasts\Utilities\UtilitiesServiceProvider',
+		'BigName\BackupManager\Integrations\Laravel\BackupManagerServiceProvider',
+		'Bkwld\Croppa\ServiceProvider',
+		'Cartalyst\Sentry\SentryServiceProvider',
+		'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
+		'DaveJamesMiller\Breadcrumbs\ServiceProvider',
+		'Dimsav\Translatable\TranslatableServiceProvider',
+		'Jenssegers\Rollbar\RollbarServiceProvider',
+		'Krucas\Notification\NotificationServiceProvider',
+		'Laracasts\Utilities\UtilitiesServiceProvider',
 		// 'Msurguy\Honeypot\HoneypotServiceProvider',
-		// 'Roumen\Sitemap\SitemapServiceProvider',
-		// 'Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider',
+		'Roumen\Sitemap\SitemapServiceProvider',
+		'Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider',
 
-		// 'TypiCMS\Providers\CoreServiceProvider',
+		'TypiCMS\Providers\CoreServiceProvider',
 
 	),
 
@@ -225,6 +233,15 @@ return array(
 
 		'FileUpload'      => 'TypiCMS\Facades\FileUpload',
 		'TypiCMS'         => 'TypiCMS\Facades\TypiCMS',
+
+		'Blocks'          => 'TypiCMS\Modules\Blocks\Facades\Facade',
+		'Events'          => 'TypiCMS\Modules\Events\Facades\Facade',
+		'Galleries'       => 'TypiCMS\Modules\Galleries\Facades\Facade',
+		'Files'           => 'TypiCMS\Modules\Files\Facades\Facade',
+		'Menus'           => 'TypiCMS\Modules\Menus\Facades\Facade',
+		'Pages'           => 'TypiCMS\Modules\Pages\Facades\Facade',
+		'Tags'            => 'TypiCMS\Modules\Tags\Facades\Facade',
+		'History'         => 'TypiCMS\Modules\History\Facades\Facade',
 
 	),
 
