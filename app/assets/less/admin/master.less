@@ -1,0 +1,241 @@
+@import 'bootstrap.less';
+@import 'tabs';
+@import '../../../../bower_components/font-awesome/less/font-awesome.less';
+@import 'variables';
+@import '../navbar';
+@import 'fancybox';
+@import 'angular-ui-tree';
+
+// selectize
+@import '../../../../bower_components/selectize/dist/less/selectize.bootstrap3.less';
+
+// alertify
+@import '../../../../bower_components/alertify.js/themes/alertify.core.css';
+@import '../../../../bower_components/alertify.js/themes/alertify.bootstrap.css';
+
+// pickadate
+@import '../../../../bower_components/pickadate/lib/themes-source/base.less';
+@import '../../../../bower_components/pickadate/lib/themes-source/base.date.less';
+@import '../../../../bower_components/pickadate/lib/themes-source/base.time.less';
+@import '../../../../bower_components/pickadate/lib/themes-source/default.less';
+@import '../../../../bower_components/pickadate/lib/themes-source/default.date.less';
+@import '../../../../bower_components/pickadate/lib/themes-source/default.time.less';
+
+// Angular smart-table
+@import 'smart-table';
+
+@import 'sidebar';
+@import 'offcanvas';
+
+.has-navbar { padding-top: 50px; }
+
+.main {
+    min-height: 1100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @media (min-width: @screen-sm-min) {
+        min-height: 0;
+        padding: 25px;
+    }
+}
+
+h1 {
+    margin-top: 0;
+    a:hover { text-decoration: none; }
+}
+
+.container-xs-center {
+    margin: 0 auto;
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    padding: 0 25px;
+    @media (min-width: @screen-sm-min) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        max-width: 380px;
+        border: 1px solid @input-border;
+        .border-top-radius(@border-radius-large);
+        .border-bottom-radius(@border-radius-large);
+        .box-shadow(0 2px 5px @gray-lighter);
+    }
+    .form-action { margin-top: 30px; }
+}
+
+.breadcrumb { background-color: #FFF; padding-left: 5px; padding-right: 5px;
+    > .active { color: @gray-dark; }
+}
+
+// Online offline switch
+.switch {
+    font-size: 20px !important;
+    color: @brand-primary;
+}
+.switch.fa-toggle-off {
+    color: @gray-light;
+}
+
+// table
+.table-main {
+    th { white-space: nowrap; }
+    .checkboxes { width: 30px; }
+    .delete { width: 30px; }
+    .edit { width: 50px; }
+    .position { width: 50px; }
+    .status { width: 50px; }
+    .image { width: 100px; }
+    .date,
+    .start_date,
+    .end_date { width: 160px; }
+    .files { width: 70px; }
+}
+
+.table-checkboxes {
+    th { width: 200px; }
+    .checkbox { margin: 0; }
+}
+
+.sortable {
+    li.mjs-nestedSortable-collapsed > ul { display: none; }
+    li.mjs-nestedSortable-collapsed > div > .disclose::before { content: '\f0da'; }
+    li.mjs-nestedSortable-expanded > div > .disclose::before { content: '\f0d7'; }
+    li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div { background: #fafafa; }
+    
+    li.ui-sortable-helper { border-color: transparent; }
+    .placeholder {
+        overflow: hidden;
+        background-color: #EEE;
+    }
+    .mjs-nestedSortable-error { background: #fbe3e4; }
+
+    .thumbnail { cursor: move; }
+}
+
+.thumbnails {
+    .thumbnails-title { margin-bottom: 0; }
+    .thumbnail { margin-top: 5px; }
+}
+
+.thumbnail {
+    cursor: default;
+    float: left;
+    margin: 10px;
+    display: block;
+    position: relative;
+    width: 140px;
+    transition: none;
+    .caption {
+        font-size: 12px;
+        padding: 0;
+        margin-top: 1px;
+        height: 64px;
+        overflow: scroll;
+        line-height: 16px;
+        text-overflow: ellipsis;
+    }
+    input[type=checkbox] {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        margin: 0;
+    }
+    &:hover { text-decoration: none; }
+    .switch {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-top: 5px;
+        text-indent: -9999px;
+        background: no-repeat url(../../../img/status.gif);
+    }
+    .switch.offline { background-position: 0 -6px; }
+    .doc {
+        height: 130px;
+        font-size: 80px;
+        padding-top: 10px;
+    }
+}
+
+.dropzone {
+    border: 1px dashed #CCC;
+    position: relative;
+    min-height: 227px;
+    margin-bottom: 20px;
+}
+.dz-message {
+    font-size: 24px;
+    color: #CCC;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    width: 260px;
+    height: 70px;
+    margin: -35px 0 0 -130px;
+    position: absolute;
+    z-index: 1000;
+}
+.dz-clickable { cursor: pointer; }
+.dropzone-previews {
+    position: relative;
+    z-index: 1001;
+}
+.dz-preview {
+    .dz-error-message {
+        display: none;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        background: rgba(255,255,255,1);
+        color: @brand-danger;
+        width: 100px;
+        min-height: 100px;
+        max-height: 160px;
+        z-index: 500;
+    }
+    .dz-progress {
+        position: absolute;
+        top: 128px;
+        left: 4px;
+        right: 4px;
+        height: 6px;
+        background: #d7d7d7;
+        display: none;
+    }
+    .dz-progress .dz-upload {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background-color: #8cc657;
+    }
+    &.dz-error:hover .dz-error-message { display: block; }
+    &.dz-processing .dz-progress { display: block; }
+    &.dz-success {
+        border-color: @brand-success;
+        .dz-progress { display: none; }
+    }
+    &.dz-error {
+        border-color: @brand-danger;
+        .dz-progress { display: none; }
+    }
+    .thumb-container { height: 130px; }
+}
+
+// fade in-out animation
+.highlight {
+    animation: highlight .25s ease-in-out;
+}
+@keyframes highlight { from { background-color: #fff; } 20% { background-color: lighten(@brand-success, 30%); } 70% { background-color: lighten(@brand-success, 30%); } to { background-color: #fff; } }
+
+.max-height {
+    max-height: 150px;
+    overflow: scroll;
+}
+
+.tab-content { padding-top: 15px; }
+
+.btn-toolbar { margin-bottom: 20px; }
+
+.delete-attachment { cursor: pointer; }

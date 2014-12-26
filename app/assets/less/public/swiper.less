@@ -1,0 +1,77 @@
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+
+.swiper-device {
+    max-width: 1200px;
+}
+.swiper-container {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+    z-index: 1; // Fix of Webkit flickering */
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+
+    transition-property: transform, left, top;
+    transition-duration: 0s;
+    transform: translate3d(0px,0,0);
+    transition-timing-function: ease;
+
+    box-sizing: content-box;
+}
+.swiper-free-mode > .swiper-wrapper {
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+}
+.swiper-slide {
+    float: left;
+    box-sizing: content-box;
+    // width: 100%;
+    // height: 100%;
+}
+
+/**
+ * Swiper Pagination Styles
+ */
+.swiper-pagination {
+    text-align: center;
+    width: 100%;
+}
+.swiper-pagination-switch {
+    /* Stylize pagination button: */    
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #999;
+    box-shadow: 0px 1px 2px #555 inset;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.swiper-active-switch {
+    /* Specific active button style: */ 
+    background: #333;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+    -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+    -ms-touch-action: pan-x;
+}
