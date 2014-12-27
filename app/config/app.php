@@ -140,7 +140,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
-		// 'Barryvdh\Debugbar\ServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
 		'BigName\BackupManager\Integrations\Laravel\BackupManagerServiceProvider',
 		'Bkwld\Croppa\ServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
@@ -150,7 +150,7 @@ return array(
 		'Jenssegers\Rollbar\RollbarServiceProvider',
 		'Krucas\Notification\NotificationServiceProvider',
 		'Laracasts\Utilities\UtilitiesServiceProvider',
-		// 'Msurguy\Honeypot\HoneypotServiceProvider',
+		'Msurguy\Honeypot\HoneypotServiceProvider',
 		'Roumen\Sitemap\SitemapServiceProvider',
 		'Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider',
 
