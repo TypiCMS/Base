@@ -3312,21 +3312,57 @@
             "time": "2014-12-28 21:48:07"
         },
         {
-            "name": "typicms/menus",
+            "name": "typicms/menulinks",
             "version": "1.8.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "d2cffc29ed67bc606fe764254af7d97465c6f97e"
+                "url": "https://github.com/TypiCMS/Menulinks.git",
+                "reference": "325a97fe774911dab406cb6c8191340146f962c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/d2cffc29ed67bc606fe764254af7d97465c6f97e",
-                "reference": "d2cffc29ed67bc606fe764254af7d97465c6f97e",
+                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/325a97fe774911dab406cb6c8191340146f962c8",
+                "reference": "325a97fe774911dab406cb6c8191340146f962c8",
                 "shasum": ""
             },
             "require": {
                 "typicms/core": "~1.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Menulinks\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-12-28 21:48:12"
+        },
+        {
+            "name": "typicms/menus",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Menus.git",
+                "reference": "53ca0d11d6df72dcde3ffcebad49d13126e85edc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/53ca0d11d6df72dcde3ffcebad49d13126e85edc",
+                "reference": "53ca0d11d6df72dcde3ffcebad49d13126e85edc",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "~1.8.0",
+                "typicms/menulinks": "~1.8.0"
             },
             "type": "library",
             "autoload": {
@@ -3344,7 +3380,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-12-28 21:48:32"
+            "time": "2014-12-28 22:12:23"
         },
         {
             "name": "typicms/pages",
@@ -3693,6 +3729,7 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
