@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b5281eaa1af762c3bec495e4ea4d5527",
+    "hash": "f8b3bcb322c0004fe4a2570e088c725e",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -153,6 +153,60 @@
                 "sdk"
             ],
             "time": "2014-12-18 21:40:25"
+        },
+        {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v1.8.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "548e12d45760ee66192029f4b642d2f4e3d64118"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/548e12d45760ee66192029f4b642d2f4e3d64118",
+                "reference": "548e12d45760ee66192029f4b642d2f4e3d64118",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "4.*|5.0.*",
+                "maximebf/debugbar": "~1.10.2",
+                "php": ">=5.3.0",
+                "symfony/finder": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2014-12-24 08:00:07"
         },
         {
             "name": "bkwld/croppa",
@@ -1350,6 +1404,62 @@
             "time": "2014-11-05 13:39:29"
         },
         {
+            "name": "maximebf/debugbar",
+            "version": "v1.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "4971283c1fa8da051e97d1fa62e053d49259f7ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/4971283c1fa8da051e97d1fa62e053d49259f7ef",
+                "reference": "4971283c1fa8da051e97d1fa62e053d49259f7ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0",
+                "symfony/var-dumper": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "DebugBar": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug"
+            ],
+            "time": "2014-12-17 08:39:39"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.11.0",
             "source": {
@@ -1420,6 +1530,55 @@
                 "psr-3"
             ],
             "time": "2014-09-30 13:30:58"
+        },
+        {
+            "name": "msurguy/honeypot",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msurguy/Honeypot.git",
+                "reference": "a28df74ea18947adaef23370c277ecfa5c946b59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/a28df74ea18947adaef23370c277ecfa5c946b59",
+                "reference": "a28df74ea18947adaef23370c277ecfa5c946b59",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "4.*",
+                "illuminate/support": "4.*",
+                "illuminate/translation": "4.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Msurguy\\Honeypot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maksim Surguy",
+                    "email": "m.surguy@gmail.com"
+                }
+            ],
+            "description": "Honeypot spam prevention",
+            "keywords": [
+                "Forms",
+                "Honeypot",
+                "laravel",
+                "spam"
+            ],
+            "time": "2014-04-18 16:26:59"
         },
         {
             "name": "nesbot/carbon",
@@ -2728,6 +2887,59 @@
             "time": "2014-12-02 20:15:53"
         },
         {
+            "name": "symfony/var-dumper",
+            "version": "v2.6.1",
+            "target-dir": "Symfony/Component/VarDumper",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "8f3ee04faeca3b8418229b2efbfc8b2b8625b8aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/8f3ee04faeca3b8418229b2efbfc8b2b8625b8aa",
+                "reference": "8f3ee04faeca3b8418229b2efbfc8b2b8625b8aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-symfony_debug": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-0": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2014-11-18 10:08:24"
+        },
+        {
             "name": "thomaswelton/gravatarlib",
             "version": "0.1.0",
             "target-dir": "thomaswelton/GravatarLib",
@@ -2833,12 +3045,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "9bbaa6e4c77df3dd772ad43ef9c46ba7ac293c70"
+                "reference": "a51cbed82d1fa24680fc61ce3c3a9900b2b37265"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/9bbaa6e4c77df3dd772ad43ef9c46ba7ac293c70",
-                "reference": "9bbaa6e4c77df3dd772ad43ef9c46ba7ac293c70",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/a51cbed82d1fa24680fc61ce3c3a9900b2b37265",
+                "reference": "a51cbed82d1fa24680fc61ce3c3a9900b2b37265",
                 "shasum": ""
             },
             "require": {
@@ -2847,10 +3059,10 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Blocks\\": ""
+                    "TypiCMS\\Modules\\Blocks\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2860,7 +3072,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:10:33"
+            "time": "2014-12-28 21:01:48"
         },
         {
             "name": "typicms/core",
@@ -2868,15 +3080,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "0d2129c6c5479cf98f6e6006cb84120e380b5844"
+                "reference": "4d1eb6573a5d6887a6c592e25c632de3766016d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/0d2129c6c5479cf98f6e6006cb84120e380b5844",
-                "reference": "0d2129c6c5479cf98f6e6006cb84120e380b5844",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/4d1eb6573a5d6887a6c592e25c632de3766016d5",
+                "reference": "4d1eb6573a5d6887a6c592e25c632de3766016d5",
                 "shasum": ""
             },
             "require": {
+                "barryvdh/laravel-debugbar": "~1.8",
                 "bkwld/croppa": "~3.4.2",
                 "cartalyst/sentry": "~2.1.4",
                 "cviebrock/image-validator": "~1.0.4",
@@ -2887,25 +3100,25 @@
                 "jwage/easy-csv": "~0.0.2",
                 "laracasts/utilities": "~1.0",
                 "laravel/framework": "~4.2.11",
+                "msurguy/honeypot": "~0.2",
                 "thomaswelton/laravel-gravatar": "~0.1",
-                "typicms/blocks": "dev-master",
-                "typicms/dashboard": "dev-master",
-                "typicms/files": "dev-master",
-                "typicms/galleries": "dev-master",
-                "typicms/groups": "dev-master",
-                "typicms/history": "dev-master",
-                "typicms/menus": "dev-master",
-                "typicms/pages": "dev-master",
-                "typicms/settings": "dev-master",
-                "typicms/sitemap": "dev-master",
-                "typicms/tags": "dev-master",
+                "typicms/blocks": "*",
+                "typicms/dashboard": "*",
+                "typicms/files": "*",
+                "typicms/galleries": "*",
+                "typicms/groups": "*",
+                "typicms/history": "*",
+                "typicms/menus": "*",
+                "typicms/pages": "*",
+                "typicms/settings": "*",
+                "typicms/sitemap": "*",
+                "typicms/tags": "*",
                 "typicms/translatablebootforms": "~1.1.0",
                 "typicms/translations": "dev-master",
                 "typicms/users": "dev-master",
                 "vlucas/phpdotenv": "~1.0"
             },
             "require-dev": {
-                "barryvdh/laravel-debugbar": "~1.8",
                 "mockery/mockery": "~0.9.2",
                 "phpspec/phpspec": "~2.0",
                 "raveren/kint": "~0.9.1",
@@ -2914,7 +3127,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "TypiCMS\\": ""
+                    "TypiCMS\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2924,7 +3137,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-12-26 15:20:10"
+            "time": "2014-12-28 21:22:01"
         },
         {
             "name": "typicms/dashboard",
@@ -2932,21 +3145,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
-                "reference": "74735a1d3f863a06d5b78d2c40623ed4acad669e"
+                "reference": "88b7bf65baa9d8a5624f4b4fb9bda0eaa0ed8bcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/74735a1d3f863a06d5b78d2c40623ed4acad669e",
-                "reference": "74735a1d3f863a06d5b78d2c40623ed4acad669e",
+                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/88b7bf65baa9d8a5624f4b4fb9bda0eaa0ed8bcc",
+                "reference": "88b7bf65baa9d8a5624f4b4fb9bda0eaa0ed8bcc",
                 "shasum": ""
-            },
-            "require": {
-                "typicms/core": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "TypiCMS\\Modules\\Dashboard\\": ""
+                    "TypiCMS\\Modules\\Dashboard\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2956,7 +3166,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:10:50"
+            "time": "2014-12-27 14:07:38"
         },
         {
             "name": "typicms/files",
@@ -2964,12 +3174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "33e328d581f0d97cdc238d77a380cb91234b7617"
+                "reference": "91ce98097bdd7e2a2c5ab10c985acd0d9d8f1332"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/33e328d581f0d97cdc238d77a380cb91234b7617",
-                "reference": "33e328d581f0d97cdc238d77a380cb91234b7617",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/91ce98097bdd7e2a2c5ab10c985acd0d9d8f1332",
+                "reference": "91ce98097bdd7e2a2c5ab10c985acd0d9d8f1332",
                 "shasum": ""
             },
             "require": {
@@ -2978,10 +3188,10 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Files\\": ""
+                    "TypiCMS\\Modules\\Files\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2991,7 +3201,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:11:38"
+            "time": "2014-12-28 21:02:01"
         },
         {
             "name": "typicms/galleries",
@@ -2999,12 +3209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Galleries.git",
-                "reference": "3b284fb38e8991974070524a0cd33f83dbe0cc96"
+                "reference": "e417634963f7592dc88c1c38ae55bdb4b0c1276d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/3b284fb38e8991974070524a0cd33f83dbe0cc96",
-                "reference": "3b284fb38e8991974070524a0cd33f83dbe0cc96",
+                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/e417634963f7592dc88c1c38ae55bdb4b0c1276d",
+                "reference": "e417634963f7592dc88c1c38ae55bdb4b0c1276d",
                 "shasum": ""
             },
             "require": {
@@ -3013,10 +3223,10 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Galleries\\": ""
+                    "TypiCMS\\Modules\\Galleries\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3026,7 +3236,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:11:34"
+            "time": "2014-12-28 21:02:04"
         },
         {
             "name": "typicms/groups",
@@ -3034,12 +3244,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Groups.git",
-                "reference": "66e5fbb632e645dc3ce64c6afe43347ab1bbb026"
+                "reference": "15058b078f2b58970f282c8874935788bd2e7166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/66e5fbb632e645dc3ce64c6afe43347ab1bbb026",
-                "reference": "66e5fbb632e645dc3ce64c6afe43347ab1bbb026",
+                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/15058b078f2b58970f282c8874935788bd2e7166",
+                "reference": "15058b078f2b58970f282c8874935788bd2e7166",
                 "shasum": ""
             },
             "require": {
@@ -3048,10 +3258,10 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Groups\\": ""
+                    "TypiCMS\\Modules\\Groups\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3061,7 +3271,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:11:43"
+            "time": "2014-12-28 21:02:06"
         },
         {
             "name": "typicms/history",
@@ -3069,12 +3279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
-                "reference": "793702d5e32a23a570bc2a28d5de831853987d88"
+                "reference": "6a9b016f5a457141224059b5b2ef5f2665c7378c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/History/zipball/793702d5e32a23a570bc2a28d5de831853987d88",
-                "reference": "793702d5e32a23a570bc2a28d5de831853987d88",
+                "url": "https://api.github.com/repos/TypiCMS/History/zipball/6a9b016f5a457141224059b5b2ef5f2665c7378c",
+                "reference": "6a9b016f5a457141224059b5b2ef5f2665c7378c",
                 "shasum": ""
             },
             "require": {
@@ -3083,10 +3293,10 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\History\\": ""
+                    "TypiCMS\\Modules\\History\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3096,7 +3306,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:11:48"
+            "time": "2014-12-28 21:02:08"
         },
         {
             "name": "typicms/menulinks",
@@ -3104,12 +3314,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menulinks.git",
-                "reference": "83595810a87a10b587198d34f9be8ff5b0248cb0"
+                "reference": "60dafa38f343eeead9ff9fd4bd62db8d8ba191ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/83595810a87a10b587198d34f9be8ff5b0248cb0",
-                "reference": "83595810a87a10b587198d34f9be8ff5b0248cb0",
+                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/60dafa38f343eeead9ff9fd4bd62db8d8ba191ad",
+                "reference": "60dafa38f343eeead9ff9fd4bd62db8d8ba191ad",
                 "shasum": ""
             },
             "require": {
@@ -3119,10 +3329,10 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Menulinks\\": ""
+                    "TypiCMS\\Modules\\Menulinks\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3132,7 +3342,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:12:57"
+            "time": "2014-12-28 21:02:10"
         },
         {
             "name": "typicms/menus",
@@ -3140,25 +3350,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "e431940fcb6129dc65eaa50d6b7a77201c365f54"
+                "reference": "7505625a8add2ad459474fed38413526b64db7b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/e431940fcb6129dc65eaa50d6b7a77201c365f54",
-                "reference": "e431940fcb6129dc65eaa50d6b7a77201c365f54",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/7505625a8add2ad459474fed38413526b64db7b1",
+                "reference": "7505625a8add2ad459474fed38413526b64db7b1",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "dev-master",
                 "typicms/menulinks": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Menus\\": ""
+                    "TypiCMS\\Modules\\Menus\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3168,7 +3377,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:12:48"
+            "time": "2014-12-28 21:02:13"
         },
         {
             "name": "typicms/pages",
@@ -3176,24 +3385,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "29970916d4e5f982954de8f8131d648adca3f8f3"
+                "reference": "8263916a868e0b934d31fa29eed7778622f195bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/29970916d4e5f982954de8f8131d648adca3f8f3",
-                "reference": "29970916d4e5f982954de8f8131d648adca3f8f3",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/8263916a868e0b934d31fa29eed7778622f195bb",
+                "reference": "8263916a868e0b934d31fa29eed7778622f195bb",
                 "shasum": ""
-            },
-            "require": {
-                "typicms/core": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Pages\\": ""
+                    "TypiCMS\\Modules\\Pages\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3203,7 +3409,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:13:17"
+            "time": "2014-12-28 21:02:19"
         },
         {
             "name": "typicms/settings",
@@ -3211,25 +3417,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
-                "reference": "0095184e8f42be7193fed2b2d8f1d78d2f424cfe"
+                "reference": "e4847e9035bbd24c9f731a5eb9376036e9ee5fe5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/0095184e8f42be7193fed2b2d8f1d78d2f424cfe",
-                "reference": "0095184e8f42be7193fed2b2d8f1d78d2f424cfe",
+                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/e4847e9035bbd24c9f731a5eb9376036e9ee5fe5",
+                "reference": "e4847e9035bbd24c9f731a5eb9376036e9ee5fe5",
                 "shasum": ""
             },
             "require": {
-                "heybigname/backup-manager": "~0.3",
-                "typicms/core": "dev-master"
+                "heybigname/backup-manager": "~0.3"
             },
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Settings\\": ""
+                    "TypiCMS\\Modules\\Settings\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3239,7 +3444,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:13:29"
+            "time": "2014-12-28 21:02:29"
         },
         {
             "name": "typicms/sitemap",
@@ -3247,22 +3452,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
-                "reference": "2bf85fa6c653efc61947aef6ab7c15519944a4ef"
+                "reference": "b4a9e88514805936a574ca665758171912958eff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/2bf85fa6c653efc61947aef6ab7c15519944a4ef",
-                "reference": "2bf85fa6c653efc61947aef6ab7c15519944a4ef",
+                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/b4a9e88514805936a574ca665758171912958eff",
+                "reference": "b4a9e88514805936a574ca665758171912958eff",
                 "shasum": ""
             },
             "require": {
-                "roumen/sitemap": "~2.4.6",
-                "typicms/core": "dev-master"
+                "roumen/sitemap": "~2.4.6"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "TypiCMS\\Modules\\Sitemap\\": ""
+                    "TypiCMS\\Modules\\Sitemap\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3272,7 +3476,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:13:32"
+            "time": "2014-12-27 14:08:46"
         },
         {
             "name": "typicms/tags",
@@ -3280,21 +3484,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "429b21d72cc51b3c404693e1745e85286691735c"
+                "reference": "7514e409ef774167377f8a51fe891a3ac923ca07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/429b21d72cc51b3c404693e1745e85286691735c",
-                "reference": "429b21d72cc51b3c404693e1745e85286691735c",
+                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/7514e409ef774167377f8a51fe891a3ac923ca07",
+                "reference": "7514e409ef774167377f8a51fe891a3ac923ca07",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Tags\\": ""
+                    "TypiCMS\\Modules\\Tags\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3304,7 +3508,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-12-26 14:02:22"
+            "time": "2014-12-28 21:02:36"
         },
         {
             "name": "typicms/translatablebootforms",
@@ -3358,24 +3562,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
-                "reference": "00444b743d82ecc86e1d94cdd04ba1a8e5476017"
+                "reference": "ae6c9fb2ff6694a943df0382f386b6b9cc2b628c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/00444b743d82ecc86e1d94cdd04ba1a8e5476017",
-                "reference": "00444b743d82ecc86e1d94cdd04ba1a8e5476017",
+                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/ae6c9fb2ff6694a943df0382f386b6b9cc2b628c",
+                "reference": "ae6c9fb2ff6694a943df0382f386b6b9cc2b628c",
                 "shasum": ""
-            },
-            "require": {
-                "typicms/core": "dev-master"
             },
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "migrations"
+                    "src/migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Translations\\": ""
+                    "TypiCMS\\Modules\\Translations\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3385,7 +3586,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:13:38"
+            "time": "2014-12-28 21:02:40"
         },
         {
             "name": "typicms/users",
@@ -3393,12 +3594,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "67d97525ef6b59e12f558a748fec143e218382d3"
+                "reference": "b3467b4a64d8a7efff3a9cc0ebdf62972c64858e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/67d97525ef6b59e12f558a748fec143e218382d3",
-                "reference": "67d97525ef6b59e12f558a748fec143e218382d3",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/b3467b4a64d8a7efff3a9cc0ebdf62972c64858e",
+                "reference": "b3467b4a64d8a7efff3a9cc0ebdf62972c64858e",
                 "shasum": ""
             },
             "require": {
@@ -3410,7 +3611,7 @@
                     "migrations"
                 ],
                 "psr-4": {
-                    "TypiCMS\\Modules\\Users\\": ""
+                    "TypiCMS\\Modules\\Users\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3420,7 +3621,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-11-30 22:13:48"
+            "time": "2014-12-27 14:08:58"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3512,9 +3713,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "typicms/core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "platform": [],
     "platform-dev": []
