@@ -1,6 +1,21 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 1.7.10 - 2014-01-11
+
+### Added
+- listsFlattened method of NestableCollection.
+
+## 1.7.8 - 2015-01-10
+
+### Fixed
+- menulink form: wrong order of nested pages in select input.
+
+## 1.7.7 - 2014-12-29
+
+### Fixed
+- Bug fixes.
+
 ## 1.7.6 - 2014-12-19
 
 ### Fixed
