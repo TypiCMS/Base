@@ -13,8 +13,8 @@ var gulp       = require('gulp'),
     filter     = require('gulp-filter'),
     imagemin   = require('gulp-imagemin'),
     newer      = require('gulp-newer'),
-    prefix     = require('gulp-autoprefixer')
-    ngAnnotate = require('gulp-ng-annotate')
+    prefix     = require('gulp-autoprefixer'),
+    ngAnnotate = require('gulp-ng-annotate'),
     gettext    = require('gulp-angular-gettext');
 
 function swallowError (error) {
