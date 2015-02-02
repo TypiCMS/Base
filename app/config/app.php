@@ -153,6 +153,7 @@ return array(
 		'Msurguy\Honeypot\HoneypotServiceProvider',
 		'Roumen\Sitemap\SitemapServiceProvider',
 		'Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider',
+		'TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider',
 
 		'TypiCMS\Providers\CoreServiceProvider',
 
@@ -223,6 +224,7 @@ return array(
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
 
+		'BootForm'        => 'AdamWathan\BootForms\Facades\BootForm',
 		'Breadcrumbs'     => 'DaveJamesMiller\Breadcrumbs\Facade',
 		'Croppa'          => 'Bkwld\Croppa\Facade',
 		'Debugbar'        => 'Barryvdh\Debugbar\Facade',
