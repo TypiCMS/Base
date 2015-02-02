@@ -46,7 +46,7 @@ angular.module('typicms').directive('dropZone', function () {
         ];
 
         Dropzone.options.dropzone = {
-            url: '/api/v1/files',
+            url: '/api/files',
             paramName: 'filename',
             clickable: true,
             maxFilesize: 2, // MB

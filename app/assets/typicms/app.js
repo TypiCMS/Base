@@ -33,7 +33,7 @@
             moduleName = 'history';
         }
 
-        return $resource('/api/v1/' + moduleName + '/:id', null,
+        return $resource('/api/' + moduleName + '/:id', null,
             {
                 'update': { method: 'PUT' }
             });
