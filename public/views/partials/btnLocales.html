@@ -1,0 +1,3 @@
+<div class="btn-group pull-right">
+    <a class="btn btn-default btn-xs" ng-repeat="locale in TypiCMS.locales" ng-class="{active: TypiCMS.locale == locale.short}" href="?locale={{ locale.short }}">{{ locale.long }}</a>
+</div>
