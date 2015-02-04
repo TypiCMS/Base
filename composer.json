@@ -5,11 +5,12 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*",
+		"laravel/framework": "~5.0.0",
 		"barryvdh/laravel-debugbar": "~2.0",
 		"cartalyst/sentry": "~2.1",
-		"laracasts/utilities": "~1.1",
-		"cviebrock/image-validator": "~1.0"
+		"cviebrock/image-validator": "~1.0",
+		"dimsav/laravel-translatable": "dev-master",
+		"laracasts/utilities": "~1.1"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
