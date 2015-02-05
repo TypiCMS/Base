@@ -14,7 +14,7 @@
     "require": {
         "laravel/framework": "~5.0.0",
         "barryvdh/laravel-debugbar": "~2.0",
-        "cartalyst/sentry": "~2.1",
+        "cartalyst/sentry": "dev-master",
         "cviebrock/image-validator": "~1.0",
         "dimsav/laravel-translatable": "dev-master",
         "laracasts/utilities": "~1.1",
@@ -24,6 +24,12 @@
         "phpunit/phpunit": "~4.0",
         "phpspec/phpspec": "~2.1"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/BootstrapCMS/sentry"
+        }
+    ],
     "autoload": {
         "classmap": [
             "database"
