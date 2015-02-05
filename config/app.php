@@ -148,11 +148,12 @@ return [
 		/*
 		 * Vendor Service Providers...
 		 */
+		'AdamWathan\BootForms\BootFormsServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		// 'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		'Dimsav\Translatable\TranslatableServiceProvider',
-		// 'Laracasts\Utilities\UtilitiesServiceProvider',
+		'Laracasts\Utilities\UtilitiesServiceProvider',
 
 		/*
 		 * TypiCMS Service Providers...
@@ -207,8 +208,8 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
-		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-
+		'Sentry'    => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'BootForm'  => 'AdamWathan\BootForms\Facades\BootForm',
 	],
 
 ];
