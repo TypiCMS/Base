@@ -1,8 +1,4 @@
 {
-  "name": "TypiCMS",
-  "version": "1.0.0",
-  "author": "Samuel De Backer",
-  "private": true,
   "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-angular-gettext": "^2.1.0",
@@ -20,6 +16,7 @@
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.2",
     "gulp-watch": "^3.0.0",
+    "laravel-elixir": "*",
     "main-bower-files": "^2.5.0"
   }
 }

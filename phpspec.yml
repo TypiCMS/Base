@@ -1,6 +1,5 @@
 suites:
-    typicms_suite:
-        namespace: TypiCMS
+    main:
+        namespace: App
+        psr4_prefix: App
         src_path: app
-        spec_path: app
-        spec_prefix: spec
