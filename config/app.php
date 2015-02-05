@@ -209,9 +209,13 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
-		'Sentry'       => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-		'BootForm'     => 'AdamWathan\BootForms\Facades\BootForm',
-		'Notification' => 'Krucas\Notification\Facades\Notification'
+		'FileUpload'      => 'TypiCMS\Facades\FileUpload',
+		'TypiCMS'         => 'TypiCMS\Facades\TypiCMS',
+
+		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'BootForm'        => 'AdamWathan\BootForms\Facades\BootForm',
+		'Notification'    => 'Krucas\Notification\Facades\Notification',
+
 	],
 
 ];
