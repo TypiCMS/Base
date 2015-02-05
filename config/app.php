@@ -149,7 +149,7 @@ return [
 		 * Vendor Service Providers...
 		 */
 		'Barryvdh\Debugbar\ServiceProvider',
-		// 'Cartalyst\Sentry\SentryServiceProvider',
+		'Cartalyst\Sentry\SentryServiceProvider',
 		// 'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		'Dimsav\Translatable\TranslatableServiceProvider',
 		// 'Laracasts\Utilities\UtilitiesServiceProvider',
@@ -157,7 +157,7 @@ return [
 		/*
 		 * TypiCMS Service Providers...
 		 */
-		// 'TypiCMS\Providers\CoreServiceProvider',
+		'TypiCMS\Providers\CoreServiceProvider',
 
 	],
 
@@ -206,6 +206,8 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 
 	],
 
