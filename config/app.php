@@ -145,6 +145,20 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+		/*
+		 * Vendor Service Providers...
+		 */
+		'Barryvdh\Debugbar\ServiceProvider',
+		// 'Cartalyst\Sentry\SentryServiceProvider',
+		// 'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
+		'Dimsav\Translatable\TranslatableServiceProvider',
+		// 'Laracasts\Utilities\UtilitiesServiceProvider',
+
+		/*
+		 * TypiCMS Service Providers...
+		 */
+		// 'TypiCMS\Providers\CoreServiceProvider',
+
 	],
 
 	/*
