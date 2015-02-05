@@ -17,6 +17,7 @@
         "cartalyst/sentry": "dev-master",
         "cviebrock/image-validator": "~1.0",
         "dimsav/laravel-translatable": "dev-master",
+        "edvinaskrucas/notification": "dev-master",
         "laracasts/utilities": "dev-master",
         "typicms/core": "~1.8",
         "adamwathan/bootforms": "0.4.*",
@@ -30,6 +31,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/BootstrapCMS/sentry"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/WirelessAnalytics/notification"
         },
         {
             "type": "vcs",
@@ -65,5 +70,7 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

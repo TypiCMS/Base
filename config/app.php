@@ -153,6 +153,7 @@ return [
 		'Cartalyst\Sentry\SentryServiceProvider',
 		// 'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		'Dimsav\Translatable\TranslatableServiceProvider',
+		'Krucas\Notification\NotificationServiceProvider',
 		'Laracasts\Utilities\UtilitiesServiceProvider',
 
 		/*
@@ -208,8 +209,9 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
-		'Sentry'    => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-		'BootForm'  => 'AdamWathan\BootForms\Facades\BootForm',
+		'Sentry'       => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'BootForm'     => 'AdamWathan\BootForms\Facades\BootForm',
+		'Notification' => 'Krucas\Notification\Facades\Notification'
 	],
 
 ];
