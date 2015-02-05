@@ -17,8 +17,10 @@
         "cartalyst/sentry": "dev-master",
         "cviebrock/image-validator": "~1.0",
         "dimsav/laravel-translatable": "dev-master",
-        "laracasts/utilities": "~1.1",
-        "typicms/core": "~1.8"
+        "laracasts/utilities": "dev-master",
+        "typicms/core": "~1.8",
+        "adamwathan/bootforms": "0.4.*",
+        "patchwork/utf8": "~1.2"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
@@ -28,6 +30,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/BootstrapCMS/sentry"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/loshmis/PHP-Vars-To-Js-Transformer"
         }
     ],
     "autoload": {
