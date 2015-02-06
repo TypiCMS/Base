@@ -19,9 +19,18 @@
         "edvinaskrucas/notification": "dev-master",
         "laracasts/utilities": "dev-master",
         "typicms/core": "~1.8",
+        "typicms/events": "~1.8",
+        "typicms/news": "~1.8",
+        "typicms/projects": "~1.8",
+        "typicms/partners": "~1.8",
+        "typicms/categories": "~1.8",
+        "typicms/contacts": "~1.8",
+        "typicms/places": "~1.8",
         "pingpong/menus": "2.*@dev",
         "patchwork/utf8": "~1.2",
-        "typicms/translatablebootforms": "~2.0.0"
+        "bkwld/croppa": "dev-master",
+        "typicms/translatablebootforms": "~2.0.0",
+        "guzzlehttp/guzzle": "~4.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",

@@ -4,8 +4,89 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5500bb23303668a9350eade8a79a3fc6",
+    "hash": "957590286002faf5ce3ceeb70de3716f",
     "packages": [
+        {
+            "name": "adamwathan/bootforms",
+            "version": "v0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adamwathan/bootforms.git",
+                "reference": "8705d49b75a86961384a2813fd41f3214591c61b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/8705d49b75a86961384a2813fd41f3214591c61b",
+                "reference": "8705d49b75a86961384a2813fd41f3214591c61b",
+                "shasum": ""
+            },
+            "require": {
+                "adamwathan/form": "0.4.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "AdamWathan\\BootForms": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
+            "time": "2014-09-29 13:47:11"
+        },
+        {
+            "name": "adamwathan/form",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adamwathan/form.git",
+                "reference": "d17c874ada719cfb2bbd831f791a70bdc3a16eaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/d17c874ada719cfb2bbd831f791a70bdc3a16eaa",
+                "reference": "d17c874ada719cfb2bbd831f791a70bdc3a16eaa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "AdamWathan\\Form": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
+            "time": "2014-09-29 13:14:34"
+        },
         {
             "name": "aws/aws-sdk-php",
             "version": "2.7.17",
@@ -128,82 +209,102 @@
             "time": "2015-02-03 19:52:06"
         },
         {
-            "name": "cartalyst/sentry",
-            "version": "v2.1.4",
+            "name": "bkwld/croppa",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cartalyst/sentry.git",
-                "reference": "1335033432147772c05a509981563409cb3c3d3b"
+                "url": "https://github.com/Qballinternet/croppa.git",
+                "reference": "759d2369e2fdb209c473918e60ceaa2c227976e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cartalyst/sentry/zipball/1335033432147772c05a509981563409cb3c3d3b",
-                "reference": "1335033432147772c05a509981563409cb3c3d3b",
+                "url": "https://api.github.com/repos/Qballinternet/croppa/zipball/759d2369e2fdb209c473918e60ceaa2c227976e9",
+                "reference": "759d2369e2fdb209c473918e60ceaa2c227976e9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "illuminate/support": "~5.0",
+                "php": ">=5.3.0",
+                "weotch/phpthumb": "~1.0"
             },
             "require-dev": {
-                "illuminate/cookie": ">=4.0.9,<4.2",
-                "illuminate/database": ">=4.0.9,<4.2",
-                "illuminate/http": ">=4.0.9,<4.2",
-                "illuminate/session": ">=4.0.9,<4.2",
-                "ircmaxell/password-compat": "1.0.*",
-                "mockery/mockery": "0.7.2"
+                "mikey179/vfsstream": "~1.3",
+                "phpunit/phpunit": "3.7.*"
             },
-            "suggest": {
-                "happydemon/txt": "Required Text helpers when using the Kohana implementation",
-                "illuminate/database": "Default sentry user, group and throttling implementations.",
-                "ircmaxell/password-compat": "Default hashing uses PHP 5.5 password_* functions, with forward-compatible support."
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Bkwld\\Croppa": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Reinhard"
+                }
+            ],
+            "description": "Image thumbnail creation through specially formatted URLs for Laravel",
+            "support": {
+                "source": "https://github.com/Qballinternet/croppa/tree/master"
+            },
+            "time": "2015-02-02 11:53:21"
+        },
+        {
+            "name": "cartalyst/sentry",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BootstrapCMS/sentry.git",
+                "reference": "caf5926ba8a62bcbda8173a470b5d4585503e9e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BootstrapCMS/sentry/zipball/caf5926ba8a62bcbda8173a470b5d4585503e9e5",
+                "reference": "caf5926ba8a62bcbda8173a470b5d4585503e9e5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.0.*",
+                "illuminate/cookie": "5.0.*",
+                "illuminate/database": "5.0.*",
+                "illuminate/http": "5.0.*",
+                "illuminate/session": "5.0.*",
+                "illuminate/support": "5.0.*",
+                "ircmaxell/password-compat": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.3",
+                "phpunit/phpunit": "~4.4"
             },
             "type": "library",
             "extra": {
-                "component": "package",
-                "frameworks": [
-                    "Laravel 3",
-                    "Laravel 4",
-                    "CodeIgniter 3",
-                    "FuelPHP 1",
-                    "Kohana"
-                ],
-                "versions": {
-                    "1": "1.1/master",
-                    "2": "master"
-                },
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
                 "classmap": [
-                    "src/Cartalyst/Sentry/Groups/Exceptions.php",
-                    "src/Cartalyst/Sentry/Throttling/Exceptions.php",
-                    "src/Cartalyst/Sentry/Users/Exceptions.php",
-                    "src/migrations"
+                    "src/Groups/Exceptions.php",
+                    "src/Throttling/Exceptions.php",
+                    "src/Users/Exceptions.php"
                 ],
-                "psr-0": {
-                    "Cartalyst\\Sentry": "src/"
+                "psr-4": {
+                    "Cartalyst\\Sentry\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Ben Corlett",
-                    "email": "ben.corlett@cartalyst.com",
-                    "role": "Developer"
-                },
-                {
                     "name": "Cartalyst LLC",
                     "email": "help@cartalyst.com"
-                },
-                {
-                    "name": "Bruno Gaspar",
-                    "email": "bruno.gaspar@cartalyst.com",
-                    "role": "Developer"
                 },
                 {
                     "name": "Dan Syme",
@@ -211,21 +312,36 @@
                     "role": "Creator & Designer"
                 },
                 {
+                    "name": "Ben Corlett",
+                    "email": "ben.corlett@cartalyst.com",
+                    "role": "Developer"
+                },
+                {
                     "name": "Daniel Petrie",
                     "email": "dan.petrie@cartalyst.com",
                     "role": "Developer"
+                },
+                {
+                    "name": "Bruno Gaspar",
+                    "email": "bruno.gaspar@cartalyst.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@mineuk.com",
+                    "role": "Developer"
                 }
             ],
-            "description": "PHP 5.3+ Fully-featured Authentication & Authorization System",
+            "description": "PHP 5.4+ Fully-featured Authentication & Authorization System",
             "keywords": [
                 "auth",
-                "codeigniter",
-                "fuelphp",
-                "kohana",
                 "laravel",
                 "security"
             ],
-            "time": "2014-07-23 20:35:12"
+            "support": {
+                "source": "https://github.com/BootstrapCMS/sentry/tree/master"
+            },
+            "time": "2015-01-30 22:45:22"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -399,16 +515,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dimsav/laravel-translatable.git",
-                "reference": "c0323441e494f3ef7e50f83ee29ecc5b81f90bde"
+                "reference": "f7028ae1d09da78dcccb5431907078382d4db483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/c0323441e494f3ef7e50f83ee29ecc5b81f90bde",
-                "reference": "c0323441e494f3ef7e50f83ee29ecc5b81f90bde",
+                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/f7028ae1d09da78dcccb5431907078382d4db483",
+                "reference": "f7028ae1d09da78dcccb5431907078382d4db483",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "5.0.*@dev",
+                "illuminate/support": "~5.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -416,11 +532,6 @@
                 "phpunit/phpunit": "~4.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Dimsav\\Translatable\\": "src/Translatable/"
@@ -447,7 +558,7 @@
                 "laravel",
                 "translation"
             ],
-            "time": "2015-02-01 23:58:08"
+            "time": "2015-02-05 13:39:02"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -550,6 +661,112 @@
             "time": "2014-12-20 21:24:13"
         },
         {
+            "name": "edvinaskrucas/notification",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WirelessAnalytics/notification.git",
+                "reference": "907e54fc86ce7c44557be364db00d13d8516d28f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WirelessAnalytics/notification/zipball/907e54fc86ce7c44557be364db00d13d8516d28f",
+                "reference": "907e54fc86ce7c44557be364db00d13d8516d28f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.*",
+                "illuminate/events": "5.*",
+                "illuminate/session": "5.*",
+                "illuminate/support": "5.*",
+                "mvalim/package-utils": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Krucas\\Notification": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Edvinas Kručas",
+                    "email": "edv.krucas@gmail.com"
+                }
+            ],
+            "description": "Package for Laravel for helping to manage flash / instant notifications / messages.",
+            "keywords": [
+                "flash",
+                "instant",
+                "laravel",
+                "messages",
+                "notifications"
+            ],
+            "support": {
+                "source": "https://github.com/WirelessAnalytics/notification/tree/master"
+            },
+            "time": "2015-02-05 17:25:54"
+        },
+        {
+            "name": "eluceo/ical",
+            "version": "0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markuspoerschke/iCal.git",
+                "reference": "eba91341cb6757fda9bc4f1c1ae00ec03ad81e46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markuspoerschke/iCal/zipball/eba91341cb6757fda9bc4f1c1ae00ec03ad81e46",
+                "reference": "eba91341cb6757fda9bc4f1c1ae00ec03ad81e46",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Eluceo\\iCal": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maciej Łebkowski",
+                    "email": "m.lebkowski@gmail.com",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Markus Poerschke",
+                    "email": "markus@eluceo.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The eluceo/iCal package offers a abstraction layer for creating iCalendars. You can easily create iCal files by using PHP object instead of typing your *.ics file by hand. The output will follow RFC 2445 as best as possible.",
+            "homepage": "https://github.com/markuspoerschke/iCal",
+            "keywords": [
+                "calendar",
+                "iCalendar",
+                "ical",
+                "ics",
+                "php calendar"
+            ],
+            "time": "2014-12-08 16:02:20"
+        },
+        {
             "name": "guzzle/guzzle",
             "version": "v3.9.2",
             "source": {
@@ -642,6 +859,124 @@
             "time": "2014-08-11 04:32:36"
         },
         {
+            "name": "guzzlehttp/guzzle",
+            "version": "4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "66fd916e9f9130bc22c51450476823391cb2f67c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/66fd916e9f9130bc22c51450476823391cb2f67c",
+                "reference": "66fd916e9f9130bc22c51450476823391cb2f67c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/streams": "~2.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "suggest": {
+                "ext-curl": "Guzzle will use specific adapters if cURL is present"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2014-10-05 19:29:14"
+        },
+        {
+            "name": "guzzlehttp/streams",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/streams.git",
+                "reference": "f91b721d73f0e561410903b3b3c90a5d0e40b534"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/f91b721d73f0e561410903b3b3c90a5d0e40b534",
+                "reference": "f91b721d73f0e561410903b3b3c90a5d0e40b534",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Stream\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple abstraction over streams of data (Guzzle 4+)",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "stream"
+            ],
+            "time": "2014-08-17 21:15:53"
+        },
+        {
             "name": "heybigname/backup-manager",
             "version": "0.3.10",
             "source": {
@@ -709,6 +1044,52 @@
             ],
             "description": "Database backup manager for dumping to and restoring databases from S3, Dropbox, FTP, and SFTP.",
             "time": "2015-01-30 10:20:33"
+        },
+        {
+            "name": "illuminate/html",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/html.git",
+                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
+                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Html\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2015-01-01 16:31:18"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -898,16 +1279,16 @@
         },
         {
             "name": "laracasts/utilities",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laracasts/PHP-Vars-To-Js-Transformer.git",
-                "reference": "6d2ed843ac596bf78b447c417c3e4a0f4be83674"
+                "url": "https://github.com/loshmis/PHP-Vars-To-Js-Transformer.git",
+                "reference": "62f160deb924dcdb30f96f173108353432710334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laracasts/PHP-Vars-To-Js-Transformer/zipball/6d2ed843ac596bf78b447c417c3e4a0f4be83674",
-                "reference": "6d2ed843ac596bf78b447c417c3e4a0f4be83674",
+                "url": "https://api.github.com/repos/loshmis/PHP-Vars-To-Js-Transformer/zipball/62f160deb924dcdb30f96f173108353432710334",
+                "reference": "62f160deb924dcdb30f96f173108353432710334",
                 "shasum": ""
             },
             "require": {
@@ -923,7 +1304,6 @@
                     "Laracasts\\Utilities": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -938,20 +1318,23 @@
                 "javascript",
                 "laravel"
             ],
-            "time": "2014-09-22 23:03:15"
+            "support": {
+                "source": "https://github.com/loshmis/PHP-Vars-To-Js-Transformer/tree/master"
+            },
+            "time": "2015-02-03 19:13:57"
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "44c61252b5762ff53ad181ed416e3006c50a6a9b"
+                "reference": "022d46dc5eff9056e25078f283d2810749275966"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/44c61252b5762ff53ad181ed416e3006c50a6a9b",
-                "reference": "44c61252b5762ff53ad181ed416e3006c50a6a9b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/022d46dc5eff9056e25078f283d2810749275966",
+                "reference": "022d46dc5eff9056e25078f283d2810749275966",
                 "shasum": ""
             },
             "require": {
@@ -1063,7 +1446,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-04 13:59:07"
+            "time": "2015-02-06 19:37:20"
         },
         {
             "name": "league/flysystem",
@@ -1150,16 +1533,16 @@
         },
         {
             "name": "maximebf/debugbar",
-            "version": "v1.10.3",
+            "version": "v1.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "060fbaf6a4e2d328dcdb31cc606d2f2ed145104b"
+                "reference": "7b2006e6e095126b5a061ec33fca3d90ea8a8219"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/060fbaf6a4e2d328dcdb31cc606d2f2ed145104b",
-                "reference": "060fbaf6a4e2d328dcdb31cc606d2f2ed145104b",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/7b2006e6e095126b5a061ec33fca3d90ea8a8219",
+                "reference": "7b2006e6e095126b5a061ec33fca3d90ea8a8219",
                 "shasum": ""
             },
             "require": {
@@ -1202,7 +1585,7 @@
             "keywords": [
                 "debug"
             ],
-            "time": "2015-01-30 08:24:55"
+            "time": "2015-02-05 07:51:20"
         },
         {
             "name": "monolog/monolog",
@@ -1321,17 +1704,57 @@
             "time": "2015-01-11 23:07:46"
         },
         {
-            "name": "nesbot/carbon",
-            "version": "1.13.0",
+            "name": "mvalim/package-utils",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "5cb6e71055f7b0b57956b73d324cc4de31278f42"
+                "url": "https://github.com/mvalim/package-utils.git",
+                "reference": "d065feeee2730bbefc91172003c322a937f5ce88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/5cb6e71055f7b0b57956b73d324cc4de31278f42",
-                "reference": "5cb6e71055f7b0b57956b73d324cc4de31278f42",
+                "url": "https://api.github.com/repos/mvalim/package-utils/zipball/d065feeee2730bbefc91172003c322a937f5ce88",
+                "reference": "d065feeee2730bbefc91172003c322a937f5ce88",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "2.0.*@dev",
+                "phpunit/phpunit": "~4.6@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mvalim\\PackageUtils\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matheus Valim",
+                    "email": "mthvalim@gmail.com"
+                }
+            ],
+            "description": "Some helpers for Laravel 5 package development",
+            "time": "2015-01-24 01:44:29"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "bb87460c995d97fe55b39e65f6ffb7f64b0a941e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bb87460c995d97fe55b39e65f6ffb7f64b0a941e",
+                "reference": "bb87460c995d97fe55b39e65f6ffb7f64b0a941e",
                 "shasum": ""
             },
             "require": {
@@ -1364,7 +1787,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2014-09-26 02:52:02"
+            "time": "2015-02-06 05:07:29"
         },
         {
             "name": "nikic/php-parser",
@@ -1410,6 +1833,115 @@
                 "php"
             ],
             "time": "2015-01-18 11:29:59"
+        },
+        {
+            "name": "patchwork/utf8",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tchwork/utf8.git",
+                "reference": "01f0ed1628db7794e2d4e336f55a09daef4248a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/01f0ed1628db7794e2d4e336f55a09daef4248a5",
+                "reference": "01f0ed1628db7794e2d4e336f55a09daef4248a5",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": ">=7.3",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-iconv": "Use iconv for best performance",
+                "ext-intl": "Use Intl for best performance",
+                "ext-mbstring": "Use Mbstring for best performance",
+                "ext-wfio": "Use WFIO for UTF-8 filesystem access on Windows"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Patchwork": "class/",
+                    "Normalizer": "class/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(Apache-2.0 or GPL-2.0)"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Portable and performant UTF-8, Unicode and Grapheme Clusters for PHP",
+            "homepage": "https://github.com/tchwork/utf8",
+            "keywords": [
+                "grapheme",
+                "i18n",
+                "unicode",
+                "utf-8",
+                "utf8"
+            ],
+            "time": "2015-01-29 08:36:50"
+        },
+        {
+            "name": "pingpong/menus",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pingpong-labs/menus.git",
+                "reference": "f77f938216386679589433e578b6f4bf8c765abf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/f77f938216386679589433e578b6f4bf8c765abf",
+                "reference": "f77f938216386679589433e578b6f4bf8c765abf",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5",
+                "illuminate/html": "~5",
+                "illuminate/support": "~5",
+                "illuminate/view": "~5",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pingpong\\Menus": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Pingpong Labs",
+                    "email": "pingpong.labs@gmail.com"
+                }
+            ],
+            "description": "Laravel Menus",
+            "keywords": [
+                "bootstrap",
+                "laravel",
+                "menus",
+                "nav",
+                "navigation",
+                "pingpong"
+            ],
+            "time": "2015-02-03 07:32:33"
         },
         {
             "name": "psr/log",
@@ -2351,6 +2883,76 @@
             "time": "2014-12-28 21:45:53"
         },
         {
+            "name": "typicms/categories",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Categories.git",
+                "reference": "473bd3f7d03efbb2ed55bb90de7fbeeb445aa6aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Categories/zipball/473bd3f7d03efbb2ed55bb90de7fbeeb445aa6aa",
+                "reference": "473bd3f7d03efbb2ed55bb90de7fbeeb445aa6aa",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "~1.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Categories\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-12-28 21:45:56"
+        },
+        {
+            "name": "typicms/contacts",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Contacts.git",
+                "reference": "bd99a7b07b02ce34fa486ad1e6c37b8090c7a6c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Contacts/zipball/bd99a7b07b02ce34fa486ad1e6c37b8090c7a6c2",
+                "reference": "bd99a7b07b02ce34fa486ad1e6c37b8090c7a6c2",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "~1.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Contacts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2015-02-05 17:05:48"
+        },
+        {
             "name": "typicms/core",
             "version": "1.8.4",
             "source": {
@@ -2432,6 +3034,42 @@
             "time": "2014-12-28 21:47:52"
         },
         {
+            "name": "typicms/events",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Events.git",
+                "reference": "e992c986991b78efea5cfee4b1d6e13c3eebbd44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Events/zipball/e992c986991b78efea5cfee4b1d6e13c3eebbd44",
+                "reference": "e992c986991b78efea5cfee4b1d6e13c3eebbd44",
+                "shasum": ""
+            },
+            "require": {
+                "eluceo/ical": "~0.3",
+                "typicms/core": "~1.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Events\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-12-28 21:47:57"
+        },
+        {
             "name": "typicms/files",
             "version": "1.8.0",
             "source": {
@@ -2503,16 +3141,16 @@
         },
         {
             "name": "typicms/groups",
-            "version": "1.8.0",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Groups.git",
-                "reference": "b1129916bdca47c361280e081c154d6f478eff89"
+                "reference": "39581eb8449ee19838afc8e353b3b22940f21b19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/b1129916bdca47c361280e081c154d6f478eff89",
-                "reference": "b1129916bdca47c361280e081c154d6f478eff89",
+                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/39581eb8449ee19838afc8e353b3b22940f21b19",
+                "reference": "39581eb8449ee19838afc8e353b3b22940f21b19",
                 "shasum": ""
             },
             "require": {
@@ -2534,7 +3172,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-12-28 21:48:05"
+            "time": "2015-02-05 22:48:51"
         },
         {
             "name": "typicms/history",
@@ -2643,6 +3281,41 @@
             "time": "2014-12-28 22:12:23"
         },
         {
+            "name": "typicms/news",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/News.git",
+                "reference": "2944f0280cbc29af9bb053ed153ca7c4e8728129"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/News/zipball/2944f0280cbc29af9bb053ed153ca7c4e8728129",
+                "reference": "2944f0280cbc29af9bb053ed153ca7c4e8728129",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "~1.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\News\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-12-28 21:48:35"
+        },
+        {
             "name": "typicms/pages",
             "version": "1.8.0",
             "source": {
@@ -2676,6 +3349,111 @@
                 }
             ],
             "time": "2014-12-28 21:48:56"
+        },
+        {
+            "name": "typicms/partners",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Partners.git",
+                "reference": "11d7adcbd9cfd775a47421c512f043ed69071cb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Partners/zipball/11d7adcbd9cfd775a47421c512f043ed69071cb5",
+                "reference": "11d7adcbd9cfd775a47421c512f043ed69071cb5",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "~1.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Partners\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-12-28 21:48:59"
+        },
+        {
+            "name": "typicms/places",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Places.git",
+                "reference": "91d9766bce0a7ca7ddec15fb7491060995168049"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Places/zipball/91d9766bce0a7ca7ddec15fb7491060995168049",
+                "reference": "91d9766bce0a7ca7ddec15fb7491060995168049",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "~1.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Places\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2015-02-05 22:50:30"
+        },
+        {
+            "name": "typicms/projects",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Projects.git",
+                "reference": "9aec6d1c0892c61ae1e91a7c0d4c03ce84833b77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Projects/zipball/9aec6d1c0892c61ae1e91a7c0d4c03ce84833b77",
+                "reference": "9aec6d1c0892c61ae1e91a7c0d4c03ce84833b77",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "~1.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-4": {
+                    "TypiCMS\\Modules\\Projects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2014-12-28 21:49:04"
         },
         {
             "name": "typicms/settings",
@@ -2783,6 +3561,51 @@
             "time": "2014-12-28 21:50:17"
         },
         {
+            "name": "typicms/translatablebootforms",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/TranslatableBootForms.git",
+                "reference": "f3554c8bb1711a4a5d8cc78e951f734156cfcd7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/f3554c8bb1711a4a5d8cc78e951f734156cfcd7a",
+                "reference": "f3554c8bb1711a4a5d8cc78e951f734156cfcd7a",
+                "shasum": ""
+            },
+            "require": {
+                "adamwathan/bootforms": "~0.4.1",
+                "dimsav/laravel-translatable": "dev-master",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\TranslatableBootForms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "description": "Form model binding for translated fields, use BootForms and Translatable.",
+            "keywords": [
+                "BootForm",
+                "TypiCMS",
+                "formbuilder",
+                "laravel",
+                "translatable"
+            ],
+            "time": "2015-02-06 18:32:19"
+        },
+        {
             "name": "typicms/translations",
             "version": "1.8.0",
             "source": {
@@ -2819,16 +3642,16 @@
         },
         {
             "name": "typicms/users",
-            "version": "1.8.0",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "b9284e528cff17425d8e47df4b6381064ac1b966"
+                "reference": "2408ae7e213baa7acbda160a7be4f51a4cb14827"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/b9284e528cff17425d8e47df4b6381064ac1b966",
-                "reference": "b9284e528cff17425d8e47df4b6381064ac1b966",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/2408ae7e213baa7acbda160a7be4f51a4cb14827",
+                "reference": "2408ae7e213baa7acbda160a7be4f51a4cb14827",
                 "shasum": ""
             },
             "require": {
@@ -2850,7 +3673,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2014-12-28 21:50:47"
+            "time": "2015-02-05 22:45:39"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2902,6 +3725,41 @@
                 "environment"
             ],
             "time": "2014-12-05 15:19:21"
+        },
+        {
+            "name": "weotch/phpthumb",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weotch/PHPThumb.git",
+                "reference": "316a472b9a00fb33450d46f463de62c0eadb876a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weotch/PHPThumb/zipball/316a472b9a00fb33450d46f463de62c0eadb876a",
+                "reference": "316a472b9a00fb33450d46f463de62c0eadb876a",
+                "shasum": ""
+            },
+            "replace": {
+                "dannytrue/phpthumb": "dev-master#2d8898f62e75a743e248dd5906a038d574e0dfe0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Reinhard"
+                }
+            ],
+            "description": "Fork of PHPThumb that adds auto-image rotation based on EXIF data and composer support",
+            "time": "2013-04-08 22:11:00"
         }
     ],
     "packages-dev": [
@@ -3423,16 +4281,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.4.5",
+            "version": "4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a"
+                "reference": "5b578d3865a9128b9c209b011fda6539ec06e7a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2e8580deebb7d1ac92ac878595e6bffe01069c2a",
-                "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5b578d3865a9128b9c209b011fda6539ec06e7a5",
+                "reference": "5b578d3865a9128b9c209b011fda6539ec06e7a5",
                 "shasum": ""
             },
             "require": {
@@ -3442,17 +4300,17 @@
                 "ext-reflection": "*",
                 "ext-spl": "*",
                 "php": ">=5.3.3",
+                "phpspec/prophecy": "~1.3.1",
                 "phpunit/php-code-coverage": "~2.0",
                 "phpunit/php-file-iterator": "~1.3.2",
                 "phpunit/php-text-template": "~1.2",
                 "phpunit/php-timer": "~1.0.2",
                 "phpunit/phpunit-mock-objects": "~2.3",
-                "sebastian/comparator": "~1.0",
+                "sebastian/comparator": "~1.1",
                 "sebastian/diff": "~1.1",
-                "sebastian/environment": "~1.1",
-                "sebastian/exporter": "~1.1",
+                "sebastian/environment": "~1.2",
+                "sebastian/exporter": "~1.2",
                 "sebastian/global-state": "~1.0",
-                "sebastian/recursion-context": "~1.0",
                 "sebastian/version": "~1.0",
                 "symfony/yaml": "~2.0"
             },
@@ -3465,7 +4323,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.4.x-dev"
+                    "dev-master": "4.5.x-dev"
                 }
             },
             "autoload": {
@@ -3491,7 +4349,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-01-27 16:06:15"
+            "time": "2015-02-05 15:51:19"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3968,11 +4826,15 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
-        "dimsav/laravel-translatable": 20
+        "cartalyst/sentry": 20,
+        "edvinaskrucas/notification": 20,
+        "laracasts/utilities": 20,
+        "pingpong/menus": 20,
+        "bkwld/croppa": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

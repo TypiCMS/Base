@@ -132,7 +132,7 @@ return [
 		'Illuminate\Redis\RedisServiceProvider',
 		'Illuminate\Auth\Passwords\PasswordResetServiceProvider',
 		'Illuminate\Session\SessionServiceProvider',
-		'Illuminate\Translation\TranslationServiceProvider',
+		// 'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 
@@ -150,6 +150,7 @@ return [
 		 */
 		// 'AdamWathan\BootForms\BootFormsServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
+		'Bkwld\Croppa\ServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		// 'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		// 'Dimsav\Translatable\TranslatableServiceProvider',
@@ -158,9 +159,19 @@ return [
 		'Illuminate\Html\HtmlServiceProvider',
 
 		/*
+		 * TypiCMS Modules Service Providers...
+		 */
+		'TypiCMS\Modules\Translations\Providers\TranslationServiceProvider',
+		'TypiCMS\Modules\Partners\Providers\ModuleProvider',
+		'TypiCMS\Modules\News\Providers\ModuleProvider',
+		'TypiCMS\Modules\Events\Providers\ModuleProvider',
+		'TypiCMS\Modules\Places\Providers\ModuleProvider',
+		'TypiCMS\Modules\Projects\Providers\ModuleProvider',
+		'TypiCMS\Modules\Categories\Providers\ModuleProvider',
+
+		/*
 		 * TypiCMS Service Providers...
 		 */
-		// 'TypiCMS\Modules\Translations\Providers\TranslationServiceProvider',
 		'TypiCMS\Providers\CoreServiceProvider',
 		'TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider',
 	],
@@ -214,10 +225,12 @@ return [
 		'FileUpload'      => 'TypiCMS\Facades\FileUpload',
 		'TypiCMS'         => 'TypiCMS\Facades\TypiCMS',
 
-		'HTML'            => 'Illuminate\Html\HtmlFacade',
-		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'BootForm'        => 'AdamWathan\BootForms\Facades\BootForm',
+		'Form'            => 'AdamWathan\Form\Facades\Form',
+		'Croppa'          => 'Bkwld\Croppa\Facade',
+		'HTML'            => 'Illuminate\Html\HtmlFacade',
 		'Notification'    => 'Krucas\Notification\Facades\Notification',
+		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'Translatable'    => 'Dimsav\Translatable\Translatable',
 
 	],
