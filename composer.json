@@ -16,12 +16,12 @@
         "barryvdh/laravel-debugbar": "~2.0",
         "cartalyst/sentry": "dev-master",
         "cviebrock/image-validator": "~1.0",
-        "dimsav/laravel-translatable": "dev-master",
         "edvinaskrucas/notification": "dev-master",
         "laracasts/utilities": "dev-master",
         "typicms/core": "~1.8",
-        "adamwathan/bootforms": "0.4.*",
-        "patchwork/utf8": "~1.2"
+        "pingpong/menus": "2.*@dev",
+        "patchwork/utf8": "~1.2",
+        "typicms/translatablebootforms": "~2.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
