@@ -148,19 +148,21 @@ return [
 		/*
 		 * Vendor Service Providers...
 		 */
-		'AdamWathan\BootForms\BootFormsServiceProvider',
+		// 'AdamWathan\BootForms\BootFormsServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		// 'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
-		'Dimsav\Translatable\TranslatableServiceProvider',
+		// 'Dimsav\Translatable\TranslatableServiceProvider',
 		'Krucas\Notification\NotificationServiceProvider',
 		'Laracasts\Utilities\UtilitiesServiceProvider',
+		'Illuminate\Html\HtmlServiceProvider',
 
 		/*
 		 * TypiCMS Service Providers...
 		 */
+		// 'TypiCMS\Modules\Translations\Providers\TranslationServiceProvider',
 		'TypiCMS\Providers\CoreServiceProvider',
-
+		'TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider',
 	],
 
 	/*
@@ -212,9 +214,11 @@ return [
 		'FileUpload'      => 'TypiCMS\Facades\FileUpload',
 		'TypiCMS'         => 'TypiCMS\Facades\TypiCMS',
 
+		'HTML'            => 'Illuminate\Html\HtmlFacade',
 		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'BootForm'        => 'AdamWathan\BootForms\Facades\BootForm',
 		'Notification'    => 'Krucas\Notification\Facades\Notification',
+		'Translatable'    => 'Dimsav\Translatable\Translatable',
 
 	],
 
