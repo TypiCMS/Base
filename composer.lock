@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "957590286002faf5ce3ceeb70de3716f",
+    "hash": "99e7113c14d7f6111d973cce9525cb67",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1279,16 +1279,16 @@
         },
         {
             "name": "laracasts/utilities",
-            "version": "dev-master",
+            "version": "2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/loshmis/PHP-Vars-To-Js-Transformer.git",
-                "reference": "62f160deb924dcdb30f96f173108353432710334"
+                "url": "https://github.com/laracasts/PHP-Vars-To-Js-Transformer.git",
+                "reference": "fb96d2de843086af87b175c890d75561da66d393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loshmis/PHP-Vars-To-Js-Transformer/zipball/62f160deb924dcdb30f96f173108353432710334",
-                "reference": "62f160deb924dcdb30f96f173108353432710334",
+                "url": "https://api.github.com/repos/laracasts/PHP-Vars-To-Js-Transformer/zipball/fb96d2de843086af87b175c890d75561da66d393",
+                "reference": "fb96d2de843086af87b175c890d75561da66d393",
                 "shasum": ""
             },
             "require": {
@@ -1300,10 +1300,11 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Laracasts\\Utilities": "src/"
+                "psr-4": {
+                    "Laracasts\\Utilities\\JavaScript\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1318,23 +1319,20 @@
                 "javascript",
                 "laravel"
             ],
-            "support": {
-                "source": "https://github.com/loshmis/PHP-Vars-To-Js-Transformer/tree/master"
-            },
-            "time": "2015-02-03 19:13:57"
+            "time": "2015-02-06 17:35:14"
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "022d46dc5eff9056e25078f283d2810749275966"
+                "reference": "30391aa20874c30725f653bea1ea5b895a5217cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/022d46dc5eff9056e25078f283d2810749275966",
-                "reference": "022d46dc5eff9056e25078f283d2810749275966",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/30391aa20874c30725f653bea1ea5b895a5217cf",
+                "reference": "30391aa20874c30725f653bea1ea5b895a5217cf",
                 "shasum": ""
             },
             "require": {
@@ -1446,7 +1444,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-06 19:37:20"
+            "time": "2015-02-06 23:14:12"
         },
         {
             "name": "league/flysystem",
@@ -4830,7 +4828,6 @@
     "stability-flags": {
         "cartalyst/sentry": 20,
         "edvinaskrucas/notification": 20,
-        "laracasts/utilities": 20,
         "pingpong/menus": 20,
         "bkwld/croppa": 20
     },

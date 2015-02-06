@@ -17,7 +17,7 @@
         "cartalyst/sentry": "dev-master",
         "cviebrock/image-validator": "~1.0",
         "edvinaskrucas/notification": "dev-master",
-        "laracasts/utilities": "dev-master",
+        "laracasts/utilities": "~2.0",
         "typicms/core": "~1.8",
         "typicms/events": "~1.8",
         "typicms/news": "~1.8",
@@ -48,10 +48,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/Qballinternet/croppa"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/loshmis/PHP-Vars-To-Js-Transformer"
         }
     ],
     "autoload": {
