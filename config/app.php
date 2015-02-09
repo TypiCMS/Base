@@ -168,6 +168,7 @@ return [
 		'TypiCMS\Modules\Places\Providers\ModuleProvider',
 		'TypiCMS\Modules\Projects\Providers\ModuleProvider',
 		'TypiCMS\Modules\Categories\Providers\ModuleProvider',
+		'TypiCMS\Modules\Contacts\Providers\ModuleProvider',
 
 		/*
 		 * TypiCMS Service Providers...
