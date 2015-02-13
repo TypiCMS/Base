@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "99e7113c14d7f6111d973cce9525cb67",
+    "hash": "3f16e4b8de3cce39e27fb54a8d8659ca",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -89,16 +89,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.7.17",
+            "version": "2.7.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "eddf89846ed0f15e8e2b8cbe6d08125eaa20ad80"
+                "reference": "470ca90e2d511f64f082c569864f22f2c18fdc38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eddf89846ed0f15e8e2b8cbe6d08125eaa20ad80",
-                "reference": "eddf89846ed0f15e8e2b8cbe6d08125eaa20ad80",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/470ca90e2d511f64f082c569864f22f2c18fdc38",
+                "reference": "470ca90e2d511f64f082c569864f22f2c18fdc38",
                 "shasum": ""
             },
             "require": {
@@ -152,7 +152,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-01-27 20:14:01"
+            "time": "2015-02-12 20:56:39"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -213,18 +213,19 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Qballinternet/croppa.git",
-                "reference": "759d2369e2fdb209c473918e60ceaa2c227976e9"
+                "url": "https://github.com/BKWLD/croppa.git",
+                "reference": "1a59d3fd689905f30e8cd82bfcb215c6376fc3a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Qballinternet/croppa/zipball/759d2369e2fdb209c473918e60ceaa2c227976e9",
-                "reference": "759d2369e2fdb209c473918e60ceaa2c227976e9",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/1a59d3fd689905f30e8cd82bfcb215c6376fc3a1",
+                "reference": "1a59d3fd689905f30e8cd82bfcb215c6376fc3a1",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~5.0",
                 "php": ">=5.3.0",
+                "symfony/http-kernel": "~2.0",
                 "weotch/phpthumb": "~1.0"
             },
             "require-dev": {
@@ -240,6 +241,7 @@
                     "Bkwld\\Croppa": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -249,10 +251,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "support": {
-                "source": "https://github.com/Qballinternet/croppa/tree/master"
-            },
-            "time": "2015-02-02 11:53:21"
+            "time": "2015-02-12 17:00:55"
         },
         {
             "name": "cartalyst/sentry",
@@ -455,16 +454,16 @@
         },
         {
             "name": "danielstjules/stringy",
-            "version": "1.8.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad"
+                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad",
-                "reference": "6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
+                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
                 "shasum": ""
             },
             "require": {
@@ -507,20 +506,20 @@
                 "utility",
                 "utils"
             ],
-            "time": "2015-01-08 15:21:43"
+            "time": "2015-02-10 06:19:18"
         },
         {
             "name": "dimsav/laravel-translatable",
-            "version": "dev-master",
+            "version": "v5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dimsav/laravel-translatable.git",
-                "reference": "8f41827ee94f2591dad808bca5901897cca6ac02"
+                "reference": "df168873fc01151c887b0874059a0dce4c589ecd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/8f41827ee94f2591dad808bca5901897cca6ac02",
-                "reference": "8f41827ee94f2591dad808bca5901897cca6ac02",
+                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/df168873fc01151c887b0874059a0dce4c589ecd",
+                "reference": "df168873fc01151c887b0874059a0dce4c589ecd",
                 "shasum": ""
             },
             "require": {
@@ -528,7 +527,7 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "orchestra/testbench": "3.0.*@dev",
+                "orchestra/testbench": "~3.0",
                 "phpunit/phpunit": "~4.0"
             },
             "type": "library",
@@ -558,7 +557,7 @@
                 "laravel",
                 "translation"
             ],
-            "time": "2015-02-07 10:01:58"
+            "time": "2015-02-13 13:35:19"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1323,16 +1322,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.2",
+            "version": "v5.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "30391aa20874c30725f653bea1ea5b895a5217cf"
+                "reference": "b5eafda7dba3d1367a63095b83a068a73d32d97f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/30391aa20874c30725f653bea1ea5b895a5217cf",
-                "reference": "30391aa20874c30725f653bea1ea5b895a5217cf",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b5eafda7dba3d1367a63095b83a068a73d32d97f",
+                "reference": "b5eafda7dba3d1367a63095b83a068a73d32d97f",
                 "shasum": ""
             },
             "require": {
@@ -1444,7 +1443,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-06 23:14:12"
+            "time": "2015-02-11 20:37:48"
         },
         {
             "name": "league/flysystem",
@@ -1895,12 +1894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/menus.git",
-                "reference": "f77f938216386679589433e578b6f4bf8c765abf"
+                "reference": "13ecd363a61d324783c3ce4fcbae8bfbf6f0fff7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/f77f938216386679589433e578b6f4bf8c765abf",
-                "reference": "f77f938216386679589433e578b6f4bf8c765abf",
+                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/13ecd363a61d324783c3ce4fcbae8bfbf6f0fff7",
+                "reference": "13ecd363a61d324783c3ce4fcbae8bfbf6f0fff7",
                 "shasum": ""
             },
             "require": {
@@ -1939,7 +1938,7 @@
                 "navigation",
                 "pingpong"
             ],
-            "time": "2015-02-03 07:32:33"
+            "time": "2015-02-12 12:35:04"
         },
         {
             "name": "psr/log",
@@ -1981,16 +1980,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.3.3",
+            "version": "v0.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "0355cecab0591c83fed019a9572c510b0da29174"
+                "reference": "2ce0e8f3020fd292c2ad2a496c5d83939823f642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/0355cecab0591c83fed019a9572c510b0da29174",
-                "reference": "0355cecab0591c83fed019a9572c510b0da29174",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/2ce0e8f3020fd292c2ad2a496c5d83939823f642",
+                "reference": "2ce0e8f3020fd292c2ad2a496c5d83939823f642",
                 "shasum": ""
             },
             "require": {
@@ -2040,14 +2039,14 @@
                 }
             ],
             "description": "An interactive shell for modern PHP.",
-            "homepage": "https://github.com/bobthecow/psysh",
+            "homepage": "http://psysh.org",
             "keywords": [
                 "REPL",
                 "console",
                 "interactive",
                 "shell"
             ],
-            "time": "2015-01-20 21:18:03"
+            "time": "2015-02-12 19:35:52"
         },
         {
             "name": "roumen/sitemap",
@@ -3560,21 +3559,21 @@
         },
         {
             "name": "typicms/translatablebootforms",
-            "version": "v2.0.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/TranslatableBootForms.git",
-                "reference": "f3554c8bb1711a4a5d8cc78e951f734156cfcd7a"
+                "reference": "1a0cbcf679e929e7750a4b16fa6d46ef07ad647c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/f3554c8bb1711a4a5d8cc78e951f734156cfcd7a",
-                "reference": "f3554c8bb1711a4a5d8cc78e951f734156cfcd7a",
+                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/1a0cbcf679e929e7750a4b16fa6d46ef07ad647c",
+                "reference": "1a0cbcf679e929e7750a4b16fa6d46ef07ad647c",
                 "shasum": ""
             },
             "require": {
                 "adamwathan/bootforms": "~0.4.1",
-                "dimsav/laravel-translatable": "dev-master",
+                "dimsav/laravel-translatable": "~5.0.0",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -3601,7 +3600,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2015-02-06 18:32:19"
+            "time": "2015-02-13 14:33:02"
         },
         {
             "name": "typicms/translations",
