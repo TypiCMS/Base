@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3f16e4b8de3cce39e27fb54a8d8659ca",
+    "hash": "01203fccc4e3f9b2ee660496f24ff946",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -255,70 +255,76 @@
         },
         {
             "name": "cartalyst/sentry",
-            "version": "dev-master",
+            "version": "dev-feature/laravel-5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/BootstrapCMS/sentry.git",
-                "reference": "caf5926ba8a62bcbda8173a470b5d4585503e9e5"
+                "url": "https://github.com/cartalyst/sentry.git",
+                "reference": "78c4dd21d1ddd41c2b2c54301b9e5771e1e42bf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BootstrapCMS/sentry/zipball/caf5926ba8a62bcbda8173a470b5d4585503e9e5",
-                "reference": "caf5926ba8a62bcbda8173a470b5d4585503e9e5",
+                "url": "https://api.github.com/repos/cartalyst/sentry/zipball/78c4dd21d1ddd41c2b2c54301b9e5771e1e42bf4",
+                "reference": "78c4dd21d1ddd41c2b2c54301b9e5771e1e42bf4",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "5.0.*",
-                "illuminate/cookie": "5.0.*",
-                "illuminate/database": "5.0.*",
-                "illuminate/http": "5.0.*",
-                "illuminate/session": "5.0.*",
-                "illuminate/support": "5.0.*",
-                "ircmaxell/password-compat": "~1.0",
-                "php": ">=5.5.0"
+                "php": ">=5.3.3"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9.3",
-                "phpunit/phpunit": "~4.4"
+                "illuminate/cookie": "~5.0",
+                "illuminate/database": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "ircmaxell/password-compat": "1.0.*",
+                "mockery/mockery": "0.7.2"
+            },
+            "suggest": {
+                "happydemon/txt": "Required Text helpers when using the Kohana implementation",
+                "illuminate/database": "Default sentry user, group and throttling implementations.",
+                "ircmaxell/password-compat": "Default hashing uses PHP 5.5 password_* functions, with forward-compatible support."
             },
             "type": "library",
             "extra": {
+                "component": "package",
+                "frameworks": [
+                    "Laravel 3",
+                    "Laravel 4",
+                    "CodeIgniter 3",
+                    "FuelPHP 1",
+                    "Kohana"
+                ],
+                "versions": {
+                    "1": "1.1/master",
+                    "2": "master"
+                },
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
                 "classmap": [
-                    "src/Groups/Exceptions.php",
-                    "src/Throttling/Exceptions.php",
-                    "src/Users/Exceptions.php"
+                    "src/Cartalyst/Sentry/Groups/Exceptions.php",
+                    "src/Cartalyst/Sentry/Throttling/Exceptions.php",
+                    "src/Cartalyst/Sentry/Users/Exceptions.php",
+                    "src/migrations"
                 ],
-                "psr-4": {
-                    "Cartalyst\\Sentry\\": "src/"
+                "psr-0": {
+                    "Cartalyst\\Sentry": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
-                {
-                    "name": "Cartalyst LLC",
-                    "email": "help@cartalyst.com"
-                },
-                {
-                    "name": "Dan Syme",
-                    "email": "dan.syme@cartalyst.com",
-                    "role": "Creator & Designer"
-                },
                 {
                     "name": "Ben Corlett",
                     "email": "ben.corlett@cartalyst.com",
                     "role": "Developer"
                 },
                 {
-                    "name": "Daniel Petrie",
-                    "email": "dan.petrie@cartalyst.com",
-                    "role": "Developer"
+                    "name": "Cartalyst LLC",
+                    "email": "help@cartalyst.com"
                 },
                 {
                     "name": "Bruno Gaspar",
@@ -326,21 +332,26 @@
                     "role": "Developer"
                 },
                 {
-                    "name": "Graham Campbell",
-                    "email": "graham@mineuk.com",
+                    "name": "Dan Syme",
+                    "email": "dan.syme@cartalyst.com",
+                    "role": "Creator & Designer"
+                },
+                {
+                    "name": "Daniel Petrie",
+                    "email": "dan.petrie@cartalyst.com",
                     "role": "Developer"
                 }
             ],
-            "description": "PHP 5.4+ Fully-featured Authentication & Authorization System",
+            "description": "PHP 5.3+ Fully-featured Authentication & Authorization System",
             "keywords": [
                 "auth",
+                "codeigniter",
+                "fuelphp",
+                "kohana",
                 "laravel",
                 "security"
             ],
-            "support": {
-                "source": "https://github.com/BootstrapCMS/sentry/tree/master"
-            },
-            "time": "2015-01-30 22:45:22"
+            "time": "2015-02-06 21:30:43"
         },
         {
             "name": "classpreloader/classpreloader",

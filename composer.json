@@ -14,7 +14,7 @@
     "require": {
         "laravel/framework": "~5.0.0",
         "barryvdh/laravel-debugbar": "~2.0",
-        "cartalyst/sentry": "dev-master",
+        "cartalyst/sentry": "dev-feature/laravel-5",
         "cviebrock/image-validator": "~1.0",
         "edvinaskrucas/notification": "dev-master",
         "laracasts/utilities": "~2.0",
@@ -37,10 +37,6 @@
         "phpspec/phpspec": "~2.1"
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/BootstrapCMS/sentry"
-        },
         {
             "type": "vcs",
             "url": "https://github.com/WirelessAnalytics/notification"
