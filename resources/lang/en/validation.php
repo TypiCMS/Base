@@ -117,7 +117,7 @@ return [
         'minute' => 'Minute',
         'second' => 'Second',
         'title' => 'Title',
-        'websiteTitle' => 'Website title',
+        'website_title' => 'Website title',
         'content' => 'Content',
         'description' => 'Description',
         'excerpt' => 'Excerpt',
@@ -230,14 +230,13 @@ return [
         'getMergedPermissions' => 'Get merged permissions',
 
         // Settings
-        'webmasterEmail' => 'Webmaster email',
-        'typekitCode' => 'Typekit Code',
-        'googleAnalyticsCode' => 'Google Analytics Code',
-        'langChooser' => 'Lang chooser',
-        'welcomeMessage' => 'Administration welcome message',
-        'adminLocale' => 'Administration language',
-        'welcomeMessageURL' => 'Administration welcome message URL',
-        'authPublic' => 'Authenticate to view website',
+        'webmaster_email' => 'Webmaster email',
+        'typekit_code' => 'Typekit Code',
+        'google_analytics_code' => 'Google Analytics Code',
+        'lang_chooser' => 'Lang chooser',
+        'welcome_message' => 'Administration welcome message',
+        'admin_locale' => 'Administration language',
+        'auth_public' => 'Authenticate to view website',
         'registration allowed' => 'Registration allowed',
 
         // Galleries
