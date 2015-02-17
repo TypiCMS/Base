@@ -218,7 +218,7 @@ return [
         'password_confirmation' => 'Password confirmation',
         'reset password' => 'Reset password',
         'register' => 'Register',
-        'Change password (if not empty)' => 'Change password (if not empty)',
+        'Change password' => 'Change password',
         'save' => 'Save',
         'save and exit' => 'Save and exit',
         'exit' => 'Exit',

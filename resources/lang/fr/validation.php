@@ -216,7 +216,7 @@ return array(
         'password_confirmation' => 'Confirmer le mot de passe',
         'reset password' => 'Réinitialiser le mot de passe',
         'register' => 'Créer le compte',
-        'Change password (if not empty)' => 'Nouveau mot de passe',
+        'Change password' => 'Modifier le mot de passe',
         'save' => 'Enregistrer',
         'save and exit' => 'Enregistrer et sortir',
         'exit' => 'Sortir',
