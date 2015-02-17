@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "01203fccc4e3f9b2ee660496f24ff946",
+    "hash": "d028921b4c2556f48d10b2081fc22d95",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1666,6 +1666,55 @@
                 "psr-3"
             ],
             "time": "2014-12-29 21:29:35"
+        },
+        {
+            "name": "msurguy/honeypot",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msurguy/Honeypot.git",
+                "reference": "6e7c590240ac0dc1e95c80a65349dfe48e42be09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/6e7c590240ac0dc1e95c80a65349dfe48e42be09",
+                "reference": "6e7c590240ac0dc1e95c80a65349dfe48e42be09",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "4.*|5.*",
+                "illuminate/support": "4.*|5.*",
+                "illuminate/translation": "4.*|5.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Msurguy\\Honeypot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maksim Surguy",
+                    "email": "m.surguy@gmail.com"
+                }
+            ],
+            "description": "Honeypot spam prevention",
+            "keywords": [
+                "Forms",
+                "Honeypot",
+                "laravel",
+                "spam"
+            ],
+            "time": "2015-01-22 17:27:32"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -4838,6 +4887,7 @@
     "stability-flags": {
         "cartalyst/sentry": 20,
         "edvinaskrucas/notification": 20,
+        "msurguy/honeypot": 20,
         "pingpong/menus": 20,
         "bkwld/croppa": 20
     },
