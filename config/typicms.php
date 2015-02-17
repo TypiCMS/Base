@@ -29,4 +29,28 @@ return [
         'Tags',
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Modules for permissions table
+    |--------------------------------------------------------------------------
+    */
+    'modules_for_permissions_table' => [
+        'Blocks',
+        'Categories',
+        'Contacts',
+        'Events',
+        'Files',
+        'Galleries',
+        'Groups',
+        'Menus',
+        'News',
+        'Pages',
+        'Partners',
+        'Places',
+        'Projects',
+        'Tags',
+        'Translations',
+        'Users',
+    ],
+
 ];
