@@ -154,9 +154,10 @@ return [
 		'Cartalyst\Sentry\SentryServiceProvider',
 		// 'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		// 'Dimsav\Translatable\TranslatableServiceProvider',
+		'Illuminate\Html\HtmlServiceProvider',
 		'Krucas\Notification\NotificationServiceProvider',
 		'Laracasts\Utilities\JavaScript\JavaScriptServiceProvider',
-		'Illuminate\Html\HtmlServiceProvider',
+		'Msurguy\Honeypot\HoneypotServiceProvider',
 
 		/*
 		 * TypiCMS Modules Service Providers...
@@ -229,6 +230,7 @@ return [
 		'BootForm'        => 'AdamWathan\BootForms\Facades\BootForm',
 		'Form'            => 'AdamWathan\Form\Facades\Form',
 		'Croppa'          => 'Bkwld\Croppa\Facade',
+		'Honeypot'        => 'Msurguy\Honeypot\HoneypotFacade',
 		'HTML'            => 'Illuminate\Html\HtmlFacade',
 		'Notification'    => 'Krucas\Notification\Facades\Notification',
 		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',

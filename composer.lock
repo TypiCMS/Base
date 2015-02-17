@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d028921b4c2556f48d10b2081fc22d95",
+    "hash": "d9ac37610f1d5f3a243259bd91bfd731",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1672,13 +1672,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/msurguy/Honeypot.git",
-                "reference": "6e7c590240ac0dc1e95c80a65349dfe48e42be09"
+                "url": "https://github.com/mosanger/Honeypot.git",
+                "reference": "65c6c92b061c54295e379ec1e19c6e43d6918bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/6e7c590240ac0dc1e95c80a65349dfe48e42be09",
-                "reference": "6e7c590240ac0dc1e95c80a65349dfe48e42be09",
+                "url": "https://api.github.com/repos/mosanger/Honeypot/zipball/65c6c92b061c54295e379ec1e19c6e43d6918bb0",
+                "reference": "65c6c92b061c54295e379ec1e19c6e43d6918bb0",
                 "shasum": ""
             },
             "require": {
@@ -1697,7 +1697,6 @@
                     "Msurguy\\Honeypot\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1709,12 +1708,15 @@
             ],
             "description": "Honeypot spam prevention",
             "keywords": [
-                "Forms",
-                "Honeypot",
+                "forms",
+                "honeypot",
                 "laravel",
                 "spam"
             ],
-            "time": "2015-01-22 17:27:32"
+            "support": {
+                "source": "https://github.com/mosanger/Honeypot/tree/master"
+            },
+            "time": "2015-02-06 10:12:43"
         },
         {
             "name": "mtdowling/cron-expression",
