@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d9ac37610f1d5f3a243259bd91bfd731",
+    "hash": "284b541a6cb04548294bc05dd459261e",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -49,22 +49,23 @@
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/adamwathan/form.git",
-                "reference": "d17c874ada719cfb2bbd831f791a70bdc3a16eaa"
+                "url": "https://github.com/sdebacker/form.git",
+                "reference": "ee76de3063a5aa8e41c2c667e7945dc406ee1bfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/d17c874ada719cfb2bbd831f791a70bdc3a16eaa",
-                "reference": "d17c874ada719cfb2bbd831f791a70bdc3a16eaa",
+                "url": "https://api.github.com/repos/sdebacker/form/zipball/ee76de3063a5aa8e41c2c667e7945dc406ee1bfb",
+                "reference": "ee76de3063a5aa8e41c2c667e7945dc406ee1bfb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
+                "codeclimate/php-test-reporter": "0.1.*@dev",
                 "mockery/mockery": "dev-master@dev",
                 "phpunit/phpunit": "3.7.*"
             },
@@ -74,7 +75,6 @@
                     "AdamWathan\\Form": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -85,7 +85,10 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2014-09-29 13:14:34"
+            "support": {
+                "source": "https://github.com/sdebacker/form/tree/v0.4.1"
+            },
+            "time": "2015-02-18 14:38:13"
         },
         {
             "name": "aws/aws-sdk-php",
