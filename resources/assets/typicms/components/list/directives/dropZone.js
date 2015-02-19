@@ -74,6 +74,7 @@ angular.module('typicms').directive('dropZone', function () {
                 this.on('sending', function (file, xhr, formData) {
 
                     formData.append('gallery_id', parentId);
+                    formData.append('_token', TypiCMS._token);
                     for (var i = locales.length - 1; i >= 0; i--) {
                         formData.append(locales[i].short + '[description]', '');
                         formData.append(locales[i].short + '[alt_attribute]', '');
