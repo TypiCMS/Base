@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "284b541a6cb04548294bc05dd459261e",
+    "hash": "e961c9b67c613ae22e030998ac340e86",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -217,12 +217,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
-                "reference": "1a59d3fd689905f30e8cd82bfcb215c6376fc3a1"
+                "reference": "6949efa581ad24f3c02bff94504b88516ba56ae5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/1a59d3fd689905f30e8cd82bfcb215c6376fc3a1",
-                "reference": "1a59d3fd689905f30e8cd82bfcb215c6376fc3a1",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/6949efa581ad24f3c02bff94504b88516ba56ae5",
+                "reference": "6949efa581ad24f3c02bff94504b88516ba56ae5",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "time": "2015-02-12 17:00:55"
+            "time": "2015-02-18 16:22:29"
         },
         {
             "name": "cartalyst/sentry",
@@ -3341,6 +3341,51 @@
                 }
             ],
             "time": "2014-12-28 22:12:23"
+        },
+        {
+            "name": "typicms/nestablecollection",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/NestableCollection.git",
+                "reference": "0f583df31755035fd7b8d0d6ee527a5600e05dc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/0f583df31755035fd7b8d0d6ee527a5600e05dc6",
+                "reference": "0f583df31755035fd7b8d0d6ee527a5600e05dc6",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~4.2.0|~5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "description": "A Laravel Package that extends Collection to handle unlimited nested items following adjacency list model.",
+            "keywords": [
+                "TypiCMS",
+                "adjacency list",
+                "collection",
+                "eloquent",
+                "laravel",
+                "nested set",
+                "tree"
+            ],
+            "time": "2015-02-18 16:22:04"
         },
         {
             "name": "typicms/news",
