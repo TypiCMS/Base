@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e961c9b67c613ae22e030998ac340e86",
+    "hash": "26d29352b09c733c3e9b47ac127b42d0",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -418,32 +418,34 @@
         },
         {
             "name": "cviebrock/image-validator",
-            "version": "1.0.4",
+            "version": "2.0.0-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cviebrock/image-validator.git",
-                "reference": "a9ae973f8964e3cd99c665783524aeb53abc43f9"
+                "reference": "823cfbe6dd276f02acc933f951f922bc1678ec4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/image-validator/zipball/a9ae973f8964e3cd99c665783524aeb53abc43f9",
-                "reference": "a9ae973f8964e3cd99c665783524aeb53abc43f9",
+                "url": "https://api.github.com/repos/cviebrock/image-validator/zipball/823cfbe6dd276f02acc933f951f922bc1678ec4b",
+                "reference": "823cfbe6dd276f02acc933f951f922bc1678ec4b",
                 "shasum": ""
             },
             "require": {
                 "ext-gd": "*",
-                "illuminate/support": ">=4.1.21",
-                "illuminate/validation": ">=4.1.21",
+                "illuminate/support": "5.*",
+                "illuminate/translation": "5.*",
+                "illuminate/validation": "5.*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "mockery/mockery": "dev-master",
-                "phpunit/phpunit": "3.7.*"
+                "orchestra/testbench": "3.0.*",
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Cviebrock\\ImageValidator": "src/"
+                "psr-4": {
+                    "Cviebrock\\ImageValidator\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -453,18 +455,17 @@
             "authors": [
                 {
                     "name": "Colin Viebrock",
-                    "email": "colin@viebrock.ca",
-                    "homepage": "https://github.com/cviebrock"
+                    "email": "colin@viebrock.ca"
                 }
             ],
-            "description": "Custom Laravel 4 Validator for image dimensions",
+            "description": "Custom Laravel Validator for image dimensions",
             "homepage": "https://github.com/cviebrock/image-validator",
             "keywords": [
                 "image",
                 "laravel",
                 "validator"
             ],
-            "time": "2014-06-18 01:15:15"
+            "time": "2015-02-17 20:34:17"
         },
         {
             "name": "danielstjules/stringy",
