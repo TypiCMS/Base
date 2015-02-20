@@ -103,20 +103,14 @@ h1 {
     .checkbox { margin: 0; }
 }
 
-.sortable {
-    li.mjs-nestedSortable-collapsed > ul { display: none; }
-    li.mjs-nestedSortable-collapsed > div > .disclose::before { content: '\f0da'; }
-    li.mjs-nestedSortable-expanded > div > .disclose::before { content: '\f0d7'; }
-    li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div { background: #fafafa; }
-    
-    li.ui-sortable-helper { border-color: transparent; }
-    .placeholder {
-        overflow: hidden;
-        background-color: #EEE;
+/**
+ * File upload field
+ */
+.fieldset-media {
+    .well();
+    div + div {
+        margin-top: 20px;
     }
-    .mjs-nestedSortable-error { background: #fbe3e4; }
-
-    .thumbnail { cursor: move; }
 }
 
 .thumbnails {
