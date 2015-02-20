@@ -148,13 +148,12 @@ return [
 		/*
 		 * Vendor Service Providers...
 		 */
-		// 'AdamWathan\BootForms\BootFormsServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Bkwld\Croppa\ServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
+		'Collective\Html\HtmlServiceProvider',
 		'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		'Dimsav\Translatable\TranslatableServiceProvider',
-		'Illuminate\Html\HtmlServiceProvider',
 		'Krucas\Notification\NotificationServiceProvider',
 		'Laracasts\Utilities\JavaScript\JavaScriptServiceProvider',
 		'Maatwebsite\Sidebar\SidebarServiceProvider',
