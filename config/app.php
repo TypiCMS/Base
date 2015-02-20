@@ -157,6 +157,7 @@ return [
 		'Illuminate\Html\HtmlServiceProvider',
 		'Krucas\Notification\NotificationServiceProvider',
 		'Laracasts\Utilities\JavaScript\JavaScriptServiceProvider',
+		'Maatwebsite\Sidebar\SidebarServiceProvider',
 		'Msurguy\Honeypot\HoneypotServiceProvider',
 
 		/*

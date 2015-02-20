@@ -1,4 +1,7 @@
 /* Sidebar */
+.sidebar-menu {
+    .list-unstyled();
+}
 .sidebar {
     background-color: #333;
     border-right: 1px solid #000;
@@ -31,7 +34,8 @@
     text-transform: uppercase;
     color: #666;
     text-shadow: 0 -1px 0px rgba(0,0,0,.5);
-    &:hover {
+    &:hover,
+    &:focus {
         text-decoration: none;
         color: #666;
     }
@@ -43,30 +47,44 @@
 
 /* Sidebar navigation */
 .nav-sidebar {
-    > li > a {
-        text-shadow: 0 -1px 0px rgba(0,0,0,.5);
-        color: #ddd;
-        padding-right: 20px;
-        padding-left: 20px;
-        .icon {
-            color: #aaa;
-            position: absolute;
-            margin-top: 3px;
+    > li {
+        &:hover {
+            .append { display: block; }
         }
-        div { margin-left: 30px; }
-        &:hover,
-        &:focus {
-            background-color: #333;
-            color: #fff;
-            transition: all .2s;
-            .icon { color: #fff; transition: all .2s; }
-        }
-        &:active {
-            transition: all 0s;
-            background-color: #ddd;
-            text-shadow: 0 0 30px rgba(0,0,0,.9);
-            color: #000;
-            .icon { color: #000; transition: all 0s; }
+        > a {
+            text-shadow: 0 -1px 0px rgba(0,0,0,.5);
+            color: #ddd;
+            padding-right: 20px;
+            padding-left: 20px;
+            &.hasAppend {
+                width: 100%;
+                float: left;
+            }
+            &.append {
+                display: none;
+                position: absolute;
+                right: 0;
+            }
+            .icon {
+                color: #aaa;
+                position: absolute;
+                margin-top: 3px;
+            }
+            div { margin-left: 30px; }
+            &:hover,
+            &:focus {
+                background-color: #333;
+                color: #fff;
+                transition: all .2s;
+                .icon { color: #fff; transition: all .2s; }
+            }
+            &:active {
+                transition: all 0s;
+                background-color: #ddd;
+                text-shadow: 0 0 30px rgba(0,0,0,.9);
+                color: #000;
+                .icon { color: #000; transition: all 0s; }
+            }
         }
     }
     > .active > a,
