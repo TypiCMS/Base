@@ -4,27 +4,28 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3bc753adaaa575276e97a5e5569a8860",
+    "hash": "c972001db8e5b26baac25ce14c735124",
     "packages": [
         {
             "name": "adamwathan/bootforms",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/bootforms.git",
-                "reference": "8705d49b75a86961384a2813fd41f3214591c61b"
+                "reference": "f4967ba9099f8e6f289ab6d280fcd00dc96fe907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/8705d49b75a86961384a2813fd41f3214591c61b",
-                "reference": "8705d49b75a86961384a2813fd41f3214591c61b",
+                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/f4967ba9099f8e6f289ab6d280fcd00dc96fe907",
+                "reference": "f4967ba9099f8e6f289ab6d280fcd00dc96fe907",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/form": "0.4.*",
+                "adamwathan/form": "~0.4",
                 "php": ">=5.3.0"
             },
             "require-dev": {
+                "codeclimate/php-test-reporter": "0.1.*",
                 "mockery/mockery": "dev-master@dev",
                 "phpunit/phpunit": "3.7.*"
             },
@@ -45,20 +46,20 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2014-09-29 13:47:11"
+            "time": "2015-02-07 19:20:05"
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.4.1",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sdebacker/form.git",
-                "reference": "ee76de3063a5aa8e41c2c667e7945dc406ee1bfb"
+                "url": "https://github.com/adamwathan/form.git",
+                "reference": "895512416ea29ed194fdd2e6c6e03df58039cbba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sdebacker/form/zipball/ee76de3063a5aa8e41c2c667e7945dc406ee1bfb",
-                "reference": "ee76de3063a5aa8e41c2c667e7945dc406ee1bfb",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/895512416ea29ed194fdd2e6c6e03df58039cbba",
+                "reference": "895512416ea29ed194fdd2e6c6e03df58039cbba",
                 "shasum": ""
             },
             "require": {
@@ -66,7 +67,8 @@
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "0.1.*@dev",
-                "mockery/mockery": "dev-master@dev",
+                "illuminate/support": "4.*",
+                "mockery/mockery": "~0.9",
                 "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
@@ -75,6 +77,7 @@
                     "AdamWathan\\Form": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -85,10 +88,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "support": {
-                "source": "https://github.com/sdebacker/form/tree/v0.4.1"
-            },
-            "time": "2015-02-18 14:38:13"
+            "time": "2015-02-20 15:01:55"
         },
         {
             "name": "aws/aws-sdk-php",
@@ -1461,6 +1461,56 @@
             "time": "2015-02-13 19:10:59"
         },
         {
+            "name": "laravelcollective/html",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "a21c998f997163018bb4ee4f40e5db71b0067095"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/a21c998f997163018bb4ee4f40e5db71b0067095",
+                "reference": "a21c998f997163018bb4ee4f40e5db71b0067095",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/routing": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "time": "2015-02-05 16:40:45"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.0.1",
             "source": {
@@ -2000,58 +2050,6 @@
                 "utf8"
             ],
             "time": "2015-01-29 08:36:50"
-        },
-        {
-            "name": "pingpong/menus",
-            "version": "2.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pingpong-labs/menus.git",
-                "reference": "13ecd363a61d324783c3ce4fcbae8bfbf6f0fff7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/menus/zipball/13ecd363a61d324783c3ce4fcbae8bfbf6f0fff7",
-                "reference": "13ecd363a61d324783c3ce4fcbae8bfbf6f0fff7",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/config": "~5",
-                "illuminate/html": "~5",
-                "illuminate/support": "~5",
-                "illuminate/view": "~5",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "~4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Pingpong\\Menus": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Pingpong Labs",
-                    "email": "pingpong.labs@gmail.com"
-                }
-            ],
-            "description": "Laravel Menus",
-            "keywords": [
-                "bootstrap",
-                "laravel",
-                "menus",
-                "nav",
-                "navigation",
-                "pingpong"
-            ],
-            "time": "2015-02-12 12:35:04"
         },
         {
             "name": "psr/log",
@@ -4986,7 +4984,6 @@
         "cartalyst/sentry": 20,
         "edvinaskrucas/notification": 20,
         "msurguy/honeypot": 20,
-        "pingpong/menus": 20,
         "bkwld/croppa": 20,
         "maatwebsite/laravel-sidebar": 20
     },

@@ -13,6 +13,7 @@
     "type": "project",
     "require": {
         "laravel/framework": "~5.0.0",
+        "laravelcollective/html": "~5.0",
         "barryvdh/laravel-debugbar": "~2.0",
         "cartalyst/sentry": "dev-feature/laravel-5",
         "cviebrock/image-validator": "~2.0.0",
@@ -27,7 +28,6 @@
         "typicms/categories": "~1.8",
         "typicms/contacts": "~1.8",
         "typicms/places": "~1.8",
-        "pingpong/menus": "2.*@dev",
         "patchwork/utf8": "~1.2",
         "bkwld/croppa": "dev-master",
         "typicms/nestablecollection": "~1.0.0",
@@ -40,10 +40,6 @@
         "phpspec/phpspec": "~2.1"
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/sdebacker/form"
-        },
         {
             "type": "vcs",
             "url": "https://github.com/WirelessAnalytics/notification"
