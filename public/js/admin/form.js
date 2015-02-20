@@ -56,20 +56,6 @@ function initTinymce(selector) {
     $(function () {
 
         /**
-         * Slug fields
-         */
-        for (var i = 0; i < TypiCMS.locales.length; i++) {
-            var titleField = $('#' + TypiCMS.locales[i]['short'] + '\\[title\\]');
-            titleField.slug({
-                slugField: '#' + TypiCMS.locales[i]['short'] + '\\[slug\\]'
-            });
-        };
-        var titleField = $('#title, #tag');
-        titleField.slug({
-            slugField: '#slug'
-        });
-
-        /**
          * Delete attachment
          */
         $('.delete-attachment').click(function(){

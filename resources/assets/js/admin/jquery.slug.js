@@ -1,51 +1,42 @@
 /*
- * Slug 1.1, jQuery plugin
+ * Slug 2.0, jQuery plugin
  * 
- * Copyright(c) 2013, Samuel De Backer
+ * Copyright(c) 2015, Samuel De Backer
  * http://www.typi.be
- *	
- * Transform field to slug.
- * Thanks to jQuery community 
+ *
+ * Fill a field with a generated slug from another field value.
+ * add data-slug="origin-field-id" attribut to you slug field.
+ * Thanks to jQuery community
  * Licenced under the MIT Licence
  */
 (function($)
 {
-	var settings = {
-		slugField: '#slug'
-	};
 	var methods = {
-		init: function (options) {
+		init: function () {
 			return this.each(function() {
 
-				if (options) {
-					$.extend(settings, options);
-				}
+				var self = this;
 
-				this.slugField = settings.slugField;
+				this.titleField = $('[id="' + $(this).data('slug') + '"]');
+				this.slugGenerateButton = $(this).parent().find('.btn-slug');
 
-				this.slugGenerateButton = $(this.slugField).parent().find('.btn-slug');
-
-				if ( ! $(this).val()) {
-					$(this).keyup( function(){
-						slug = methods.convertToSlug( $(this).val() );
-						$(this.slugField).val(slug);
+				if ( ! this.titleField.val()) {
+					this.titleField.keyup( function(){
+						var slug = methods.convertToSlug( $(this).val() );
+						$(self).val(slug);
 					});
 				};
 
-				$('.btn-slug').click(function(){
-					var string = $(this).closest('.form-group').prev().find('input').val(),
-						slugField = $(this).parent().parent().find('input');
-
-					slug = methods.convertToSlug( string );
-					slugField.val(slug);
-
+				this.slugGenerateButton.click(function(){
+					var string = self.titleField.val(),
+						slug = methods.convertToSlug( string );
+					$(self).val(slug);
 					return false;
 				});
 
 			});
 		},
 		convertToSlug: function (string) {
-
 			var slug = string
 				.replace('œ','oe')
 				.replace('?','')
@@ -76,4 +67,8 @@
 			$.error('Method ' + method + ' does not exist on jQuery.slug');
 		}
 	};
+
+	// launch plugin
+    $('[data-slug]').slug();
+
 })(jQuery);
