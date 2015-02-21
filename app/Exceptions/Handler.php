@@ -1,7 +1,9 @@
 <?php namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\Debug\Exception\FatalErrorException;
 
 class Handler extends ExceptionHandler {
 
@@ -36,12 +38,27 @@ class Handler extends ExceptionHandler {
 	 */
 	public function render($request, Exception $e)
 	{
-		if ($this->isHttpException($e))
-		{
-			return $this->renderHttpException($e);
+
+		/**
+		 * 404 page when a model is not found
+		 */
+		if ($e instanceof ModelNotFoundException) {
+			return response()->view('errors.404', [], 404);
 		}
-		else
-		{
+
+		/**
+		 * 500 page on FatalErrorException
+		 * when env is not local
+		 */
+		if (! app()->isLocal()) {
+			if ($e instanceof FatalErrorException) {
+				return response()->view('errors.500', [], 500);
+			}
+		}
+
+		if ($this->isHttpException($e)) {
+			return $this->renderHttpException($e);
+		} else {
 			return parent::render($request, $e);
 		}
 	}
