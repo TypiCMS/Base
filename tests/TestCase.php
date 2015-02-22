@@ -22,11 +22,11 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase {
 
         $this->app['path.base'] = __DIR__ . '/..';
         $this->app['config']->set('database.default', 'sqlite');
-        $this->app['config']->set('database.connections.sqlite', array(
-            'driver' => 'sqlite',
+        $this->app['config']->set('database.connections.sqlite', [
+            'driver'   => 'sqlite',
             'database' => ':memory:',
-            'prefix' => '',
-        ));
+            'prefix'   => '',
+        ]);
         $this->app['config']->set('translatable.locales', ['en', 'fr']);
         Artisan::call('migrate');
         $this->seed();
