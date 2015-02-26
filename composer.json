@@ -17,7 +17,7 @@
         "barryvdh/laravel-debugbar": "~2.0",
         "cartalyst/sentry": "dev-feature/laravel-5",
         "cviebrock/image-validator": "~2.0.0",
-        "edvinaskrucas/notification": "dev-master",
+        "edvinaskrucas/notification": "~5.0.0",
         "laracasts/utilities": "~2.0",
         "msurguy/honeypot": "dev-master",
         "typicms/core": "~1.8",
@@ -29,7 +29,7 @@
         "typicms/contacts": "~1.8",
         "typicms/places": "~1.8",
         "patchwork/utf8": "~1.2",
-        "bkwld/croppa": "dev-master",
+        "bkwld/croppa": "~3.6.1",
         "typicms/nestablecollection": "~1.0.0",
         "typicms/translatablebootforms": "~2.0.0",
         "guzzlehttp/guzzle": "~4.0",
@@ -40,10 +40,6 @@
         "phpspec/phpspec": "~2.1"
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/WirelessAnalytics/notification"
-        },
         {
             "type": "vcs",
             "url": "https://github.com/mosanger/Honeypot"

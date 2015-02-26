@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c972001db8e5b26baac25ce14c735124",
+    "hash": "6e1fdd1718a8bde9a628860df1205d50",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -92,16 +92,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.7.19",
+            "version": "2.7.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a3275993df4414bcaa61177df5a8d2ce502f927b"
+                "reference": "2c9d93fbe680f64a84f5877209904f414d5cf92f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a3275993df4414bcaa61177df5a8d2ce502f927b",
-                "reference": "a3275993df4414bcaa61177df5a8d2ce502f927b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2c9d93fbe680f64a84f5877209904f414d5cf92f",
+                "reference": "2c9d93fbe680f64a84f5877209904f414d5cf92f",
                 "shasum": ""
             },
             "require": {
@@ -155,7 +155,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-02-20 18:30:16"
+            "time": "2015-02-24 00:04:06"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -213,7 +213,7 @@
         },
         {
             "name": "bkwld/croppa",
-            "version": "dev-master",
+            "version": "3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
@@ -262,24 +262,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cartalyst/sentry.git",
-                "reference": "78c4dd21d1ddd41c2b2c54301b9e5771e1e42bf4"
+                "reference": "5e5e232e970903cf565cbc0eadee33ceda8492b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cartalyst/sentry/zipball/78c4dd21d1ddd41c2b2c54301b9e5771e1e42bf4",
-                "reference": "78c4dd21d1ddd41c2b2c54301b9e5771e1e42bf4",
+                "url": "https://api.github.com/repos/cartalyst/sentry/zipball/5e5e232e970903cf565cbc0eadee33ceda8492b4",
+                "reference": "5e5e232e970903cf565cbc0eadee33ceda8492b4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "illuminate/cookie": "~5.0",
-                "illuminate/database": "~5.0",
-                "illuminate/http": "~5.0",
-                "illuminate/session": "~5.0",
+                "illuminate/cookie": "~4.0|~5.0",
+                "illuminate/database": "~4.0|~5.0",
+                "illuminate/http": "~4.0|~5.0",
+                "illuminate/session": "~4.0|~5.0",
                 "ircmaxell/password-compat": "1.0.*",
-                "mockery/mockery": "0.7.2"
+                "mockery/mockery": "0.9.*"
             },
             "suggest": {
                 "happydemon/txt": "Required Text helpers when using the Kohana implementation",
@@ -354,7 +354,7 @@
                 "laravel",
                 "security"
             ],
-            "time": "2015-02-06 21:30:43"
+            "time": "2015-02-25 01:41:59"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -676,24 +676,21 @@
         },
         {
             "name": "edvinaskrucas/notification",
-            "version": "dev-master",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/WirelessAnalytics/notification.git",
-                "reference": "907e54fc86ce7c44557be364db00d13d8516d28f"
+                "url": "https://github.com/edvinaskrucas/notification.git",
+                "reference": "2c92f0241e61232e37980537570ce952c4e55f28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WirelessAnalytics/notification/zipball/907e54fc86ce7c44557be364db00d13d8516d28f",
-                "reference": "907e54fc86ce7c44557be364db00d13d8516d28f",
+                "url": "https://api.github.com/repos/edvinaskrucas/notification/zipball/2c92f0241e61232e37980537570ce952c4e55f28",
+                "reference": "2c92f0241e61232e37980537570ce952c4e55f28",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "5.*",
-                "illuminate/events": "5.*",
                 "illuminate/session": "5.*",
                 "illuminate/support": "5.*",
-                "mvalim/package-utils": "*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -705,6 +702,7 @@
                     "Krucas\\Notification": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -722,10 +720,7 @@
                 "messages",
                 "notifications"
             ],
-            "support": {
-                "source": "https://github.com/WirelessAnalytics/notification/tree/master"
-            },
-            "time": "2015-02-05 17:25:54"
+            "time": "2015-02-23 22:57:46"
         },
         {
             "name": "eluceo/ical",
@@ -1337,16 +1332,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.6",
+            "version": "v5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "43637b796f1ac0b1a960984231251ff04b438006"
+                "reference": "f46adbb5bc753bd9503ee232e8ce1f4421a78b2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/43637b796f1ac0b1a960984231251ff04b438006",
-                "reference": "43637b796f1ac0b1a960984231251ff04b438006",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f46adbb5bc753bd9503ee232e8ce1f4421a78b2a",
+                "reference": "f46adbb5bc753bd9503ee232e8ce1f4421a78b2a",
                 "shasum": ""
             },
             "require": {
@@ -1363,7 +1358,7 @@
                 "mtdowling/cron-expression": "~1.0",
                 "nesbot/carbon": "~1.0",
                 "php": ">=5.4.0",
-                "psy/psysh": "0.3.*",
+                "psy/psysh": "0.4.*",
                 "swiftmailer/swiftmailer": "~5.1",
                 "symfony/console": "2.6.*",
                 "symfony/debug": "2.6.*",
@@ -1458,7 +1453,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-20 16:22:21"
+            "time": "2015-02-25 20:23:22"
         },
         {
             "name": "laravelcollective/html",
@@ -1864,46 +1859,6 @@
             "time": "2015-01-11 23:07:46"
         },
         {
-            "name": "mvalim/package-utils",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mvalim/package-utils.git",
-                "reference": "d065feeee2730bbefc91172003c322a937f5ce88"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mvalim/package-utils/zipball/d065feeee2730bbefc91172003c322a937f5ce88",
-                "reference": "d065feeee2730bbefc91172003c322a937f5ce88",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "~5.0"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "2.0.*@dev",
-                "phpunit/phpunit": "~4.6@dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Mvalim\\PackageUtils\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Matheus Valim",
-                    "email": "mthvalim@gmail.com"
-                }
-            ],
-            "description": "Some helpers for Laravel 5 package development",
-            "time": "2015-01-24 01:44:29"
-        },
-        {
             "name": "nesbot/carbon",
             "version": "1.14.0",
             "source": {
@@ -2091,16 +2046,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.3.5",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "2ce0e8f3020fd292c2ad2a496c5d83939823f642"
+                "reference": "3787f3436f4fd898e0ac1eb6f5abd2ab6b24085b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/2ce0e8f3020fd292c2ad2a496c5d83939823f642",
-                "reference": "2ce0e8f3020fd292c2ad2a496c5d83939823f642",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/3787f3436f4fd898e0ac1eb6f5abd2ab6b24085b",
+                "reference": "3787f3436f4fd898e0ac1eb6f5abd2ab6b24085b",
                 "shasum": ""
             },
             "require": {
@@ -2118,6 +2073,7 @@
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
+                "ext-pdo-sqlite": "The doc command requires SQLite to work.",
                 "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
                 "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history."
             },
@@ -2157,7 +2113,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2015-02-12 19:35:52"
+            "time": "2015-02-25 20:35:54"
         },
         {
             "name": "roumen/sitemap",
@@ -4924,9 +4880,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "cartalyst/sentry": 20,
-        "edvinaskrucas/notification": 20,
         "msurguy/honeypot": 20,
-        "bkwld/croppa": 20,
         "maatwebsite/laravel-sidebar": 20
     },
     "prefer-stable": true,
