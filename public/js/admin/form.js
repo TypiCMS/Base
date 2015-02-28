@@ -95,6 +95,11 @@ function initTinymce(selector) {
         }
 
         /**
+         * Selectize for select input
+         */
+        $('select').selectize();
+
+        /**
          * Selectize for tags
          */
         if ($('#tags').length) {
@@ -110,13 +115,6 @@ function initTinymce(selector) {
                 createOnBlur: true
             });
         }
-
-        /**
-         * Selectize for galleries
-         */
-        $('select#galleries').selectize({
-            createOnBlur: true
-        });
 
         /**
          * Set button in red on validation errors
