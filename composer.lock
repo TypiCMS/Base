@@ -159,16 +159,16 @@
         },
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v2.0.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "77b9cc071f4bbd839923269668b14d308778d8b0"
+                "reference": "7bdf8acf3b955f4fcf922e74abdfdec370369196"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/77b9cc071f4bbd839923269668b14d308778d8b0",
-                "reference": "77b9cc071f4bbd839923269668b14d308778d8b0",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/7bdf8acf3b955f4fcf922e74abdfdec370369196",
+                "reference": "7bdf8acf3b955f4fcf922e74abdfdec370369196",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2015-02-15 14:11:42"
+            "time": "2015-02-19 10:26:39"
         },
         {
             "name": "bkwld/croppa",
@@ -1332,16 +1332,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.7",
+            "version": "v5.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f46adbb5bc753bd9503ee232e8ce1f4421a78b2a"
+                "reference": "c263240daa383e6b9bd979600dc61dcb2c436d53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f46adbb5bc753bd9503ee232e8ce1f4421a78b2a",
-                "reference": "f46adbb5bc753bd9503ee232e8ce1f4421a78b2a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c263240daa383e6b9bd979600dc61dcb2c436d53",
+                "reference": "c263240daa383e6b9bd979600dc61dcb2c436d53",
                 "shasum": ""
             },
             "require": {
@@ -1453,20 +1453,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-25 20:23:22"
+            "time": "2015-02-27 00:32:38"
         },
         {
             "name": "laravelcollective/html",
-            "version": "v5.0.0",
+            "version": "v5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "a21c998f997163018bb4ee4f40e5db71b0067095"
+                "reference": "819a87d56445d3fcd2c46a57f1ecf589ee6744c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/a21c998f997163018bb4ee4f40e5db71b0067095",
-                "reference": "a21c998f997163018bb4ee4f40e5db71b0067095",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/819a87d56445d3fcd2c46a57f1ecf589ee6744c6",
+                "reference": "819a87d56445d3fcd2c46a57f1ecf589ee6744c6",
                 "shasum": ""
             },
             "require": {
@@ -1503,7 +1503,7 @@
                     "email": "adam@laravelcollective.com"
                 }
             ],
-            "time": "2015-02-05 16:40:45"
+            "time": "2015-02-20 16:13:49"
         },
         {
             "name": "league/flysystem",
@@ -3316,16 +3316,16 @@
         },
         {
             "name": "typicms/nestablecollection",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/NestableCollection.git",
-                "reference": "8ed21890a55d1f3fa59c8bc1d3d80ceda921060f"
+                "reference": "977f0ef2dda8988455ac16fce0d0e1fcec4af5f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/8ed21890a55d1f3fa59c8bc1d3d80ceda921060f",
-                "reference": "8ed21890a55d1f3fa59c8bc1d3d80ceda921060f",
+                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/977f0ef2dda8988455ac16fce0d0e1fcec4af5f7",
+                "reference": "977f0ef2dda8988455ac16fce0d0e1fcec4af5f7",
                 "shasum": ""
             },
             "require": {
@@ -3357,7 +3357,7 @@
                 "nested set",
                 "tree"
             ],
-            "time": "2015-02-18 22:38:47"
+            "time": "2015-03-02 20:03:32"
         },
         {
             "name": "typicms/news",
