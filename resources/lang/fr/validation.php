@@ -159,6 +159,7 @@ return array(
         'rss_enabled' => 'Activer un flux RSS',
         'comments_enabled' => 'Activer les commentaires',
         'is_home' => 'Définir en tant que page d’accueil',
+        'redirect to first child' => 'Rediriger vers le premier enfant',
         'template' => 'Template',
         'css' => 'Code CSS',
         'js' => 'Code JavaScript',
