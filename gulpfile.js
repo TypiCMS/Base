@@ -206,6 +206,7 @@ gulp.task('translations', function () {
 
 // Keep an eye on Less and JS files for changes…
 gulp.task('watch', function () {
+    livereload.listen();
     gulp.watch('resources/assets/less/public/**/*.less', ['less-public']);
     gulp.watch('resources/assets/less/admin/**/*.less', ['less-admin']);
     gulp.watch('resources/assets/less/*.less', ['less-public', 'less-admin']);
