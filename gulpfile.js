@@ -11,7 +11,6 @@ var gulp       = require('gulp'),
     livereload = require('gulp-livereload'),
     rename     = require('gulp-rename'),
     filter     = require('gulp-filter'),
-    imagemin   = require('gulp-imagemin'),
     newer      = require('gulp-newer'),
     prefix     = require('gulp-autoprefixer'),
     ngAnnotate = require('gulp-ng-annotate'),
@@ -54,20 +53,6 @@ gulp.task('less-admin', function () {
         .pipe(gulp.dest(destDir))
         .pipe(livereload())
         .pipe(notify('Admin CSS minified'));
-
-});
-
-gulp.task('img', function () {
-
-    var destDir = 'public/img';
-
-    return gulp.src('resources/assets/img/*')
-        .pipe(newer(destDir))
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}]
-        }))
-        .pipe(gulp.dest(destDir));
 
 });
 
@@ -221,7 +206,6 @@ gulp.task('default', [
     'less-admin',
     'js-public',
     'js-admin',
-    'img',
     'fonts',
     'pickadate-locales',
     'angular-locales',
