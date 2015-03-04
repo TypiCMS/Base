@@ -1860,16 +1860,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.14.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "bb87460c995d97fe55b39e65f6ffb7f64b0a941e"
+                "reference": "9b7665041754eaa9bb2622349bc9adbc1cf61cb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bb87460c995d97fe55b39e65f6ffb7f64b0a941e",
-                "reference": "bb87460c995d97fe55b39e65f6ffb7f64b0a941e",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/9b7665041754eaa9bb2622349bc9adbc1cf61cb8",
+                "reference": "9b7665041754eaa9bb2622349bc9adbc1cf61cb8",
                 "shasum": ""
             },
             "require": {
@@ -1896,13 +1896,13 @@
                 }
             ],
             "description": "A simple API extension for DateTime.",
-            "homepage": "https://github.com/briannesbitt/Carbon",
+            "homepage": "http://carbon.nesbot.com",
             "keywords": [
                 "date",
                 "datetime",
                 "time"
             ],
-            "time": "2015-02-06 05:07:29"
+            "time": "2015-03-04 04:50:11"
         },
         {
             "name": "nikic/php-parser",
@@ -3316,16 +3316,16 @@
         },
         {
             "name": "typicms/nestablecollection",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/NestableCollection.git",
-                "reference": "977f0ef2dda8988455ac16fce0d0e1fcec4af5f7"
+                "reference": "3641d518295c2ded19210c46751d6d7d6a147b3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/977f0ef2dda8988455ac16fce0d0e1fcec4af5f7",
-                "reference": "977f0ef2dda8988455ac16fce0d0e1fcec4af5f7",
+                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/3641d518295c2ded19210c46751d6d7d6a147b3d",
+                "reference": "3641d518295c2ded19210c46751d6d7d6a147b3d",
                 "shasum": ""
             },
             "require": {
@@ -3357,7 +3357,7 @@
                 "nested set",
                 "tree"
             ],
-            "time": "2015-03-02 20:03:32"
+            "time": "2015-03-03 15:15:19"
         },
         {
             "name": "typicms/news",
