@@ -29,7 +29,7 @@
             moduleName = 'menulinks';
         }
 
-        if (! moduleName) { // dashboard (/admin)
+        if (moduleName === 'dashboard') { // dashboard (/admin)
             moduleName = 'history';
         }
 
