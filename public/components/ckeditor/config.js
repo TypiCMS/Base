@@ -18,7 +18,7 @@ CKEDITOR.editorConfig = function( config ) {
     // Set the most common block elements.
     config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre';
 
-    config.extraPlugins = 'image2,clipboard,oembed,justify,showblocks';
+    config.extraPlugins = 'image2,clipboard,panelbutton,oembed,justify,quicktable,showblocks';
     config.removePlugins = 'image';
 
     // Skin / UI

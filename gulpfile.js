@@ -143,6 +143,7 @@ gulp.task('ckeditor', function () {
         'lineutils',
         'link',
         'others',
+        'panelbutton',
         'clipboard',
         'showblocks',
         'specialchar',
