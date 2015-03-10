@@ -111,19 +111,63 @@ gulp.task('fancybox-img', function () {
 
 });
 
+// Publish CKEditor
+gulp.task('ckeditor', function () {
+
+    // Base files
+    gulp.src([
+        'bower_components/ckeditor/ckeditor.js',
+        'bower_components/ckeditor/styles.js',
+        'bower_components/ckeditor/contents.css'
+    ])
+    .pipe(gulp.dest('public/components/ckeditor'));
+
+    // Lang files
+    gulp.src([
+            'bower_components/ckeditor/lang/fr.js',
+            'bower_components/ckeditor/lang/es.js',
+            'bower_components/ckeditor/lang/pt.js',
+            'bower_components/ckeditor/lang/de.js',
+            'bower_components/ckeditor/lang/en.js',
+            'bower_components/ckeditor/lang/nl.js'
+        ])
+        .pipe(gulp.dest('public/components/ckeditor/lang'));
+
+    // Plugins
+    var plugins = [
+        'anchor',
+        'colors',
+        'image',
+        'image2',
+        'justify',
+        'lineutils',
+        'link',
+        'others',
+        'clipboard',
+        'showblocks',
+        'specialchar',
+        'table',
+        'widget'
+    ];
+    for (var i = 0; i < plugins.length; i++) {
+        gulp.src(['bower_components/ckeditor/plugins/' + plugins[i] + '/**/*'])
+            .pipe(gulp.dest('public/components/ckeditor/plugins/' + plugins[i]));
+    }
+
+});
+
 gulp.task('js-admin', function () {
 
     var destDir = 'public/js/admin/',
         destFile = 'components.min.js',
-        files = bowerFiles({checkExistence: true});
+        files = bowerFiles();
     
     files.push(path.resolve() + '/resources/assets/js/admin/*');
     files.push(path.resolve() + '/resources/assets/typicms/**/*.js');
 
     return gulp.src(files)
         .pipe(filter([
-            '**/*.js',
-            '!tinymce*'
+            '**/*.js'
         ]))
         .pipe(newer(destDir + destFile))
         .pipe(concat('components.js'))
@@ -139,14 +183,13 @@ gulp.task('js-public', function () {
 
     var destDir = 'public/js/public/',
         destFile = 'components.min.js',
-        files = bowerFiles({checkExistence: true});
+        files = bowerFiles();
 
     files.push(path.resolve() + '/resources/assets/js/public/*');
 
     return gulp.src(files)
         .pipe(filter([
             '**/*.js',
-            '!tinymce*',
             '!jquery-ui*',
             '!jquery.ui*',
             '!picker*',
@@ -210,5 +253,6 @@ gulp.task('default', [
     'pickadate-locales',
     'angular-locales',
     'fancybox-img',
+    'ckeditor',
     'watch'
 ]);

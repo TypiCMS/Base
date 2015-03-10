@@ -93,10 +93,9 @@
             /**
              * TinyMCE File picker
              */
-            $scope.selectAndClose = function (file) {
-                var TinyMCEWindow = top.tinymce.activeEditor.windowManager;
-                TinyMCEWindow.getParams().oninsert(file);
-                TinyMCEWindow.close();
+            $scope.selectAndClose = function (CKEditorFuncNum, file) {
+                window.opener.CKEDITOR.tools.callFunction(CKEditorFuncNum, file);
+                window.close();
             };
 
             /**
