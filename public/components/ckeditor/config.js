@@ -22,13 +22,18 @@ CKEDITOR.editorConfig = function( config ) {
     config.removePlugins = 'image';
 
     // Skin / UI
-    // config.skin = 'typicms';
+    config.skin = 'typicms';
     config.uiColor = '#eeeeee';
     config.height = 500;
     config.dialog_backgroundCoverColor = 'black';
 
     // config.forcePasteAsPlainText = true;
     config.contentsCss = ['/css/public.css', '/components/ckeditor/css/content.css'];
+
+    // codemirror
+    config.codemirror = {
+        theme: 'twilight'
+    }
 
     // Language
     config.language = $('html').attr('lang');
