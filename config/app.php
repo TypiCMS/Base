@@ -163,13 +163,6 @@ return [
 		 * TypiCMS Modules Service Providers...
 		 */
 		'TypiCMS\Modules\Translations\Providers\TranslationServiceProvider',
-		'TypiCMS\Modules\Partners\Providers\ModuleProvider',
-		'TypiCMS\Modules\News\Providers\ModuleProvider',
-		'TypiCMS\Modules\Events\Providers\ModuleProvider',
-		'TypiCMS\Modules\Places\Providers\ModuleProvider',
-		'TypiCMS\Modules\Projects\Providers\ModuleProvider',
-		'TypiCMS\Modules\Categories\Providers\ModuleProvider',
-		'TypiCMS\Modules\Contacts\Providers\ModuleProvider',
 
 		/*
 		 * TypiCMS Service Providers...
