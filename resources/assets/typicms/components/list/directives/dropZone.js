@@ -40,6 +40,7 @@ angular.module('typicms').directive('dropZone', function () {
             'application/vnd.ms-powerpoint', // ppt
             'application/vnd.ms-excel', // xls
             'application/pdf',
+            'application/zip',
             'image/jpeg',
             'image/gif',
             'image/png'
@@ -49,7 +50,7 @@ angular.module('typicms').directive('dropZone', function () {
             url: '/api/files',
             paramName: 'file',
             clickable: true,
-            maxFilesize: 2, // MB
+            maxFilesize: 60, // MB
             acceptedFiles: acceptedFiles.join(),
             previewTemplate: dropZoneTemplate,
             thumbnailWidth: 130,

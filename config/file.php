@@ -27,6 +27,7 @@ return array(
         'odb'  => 'd',
         'odi'  => 'd',
         'odm'  => 'd',
+        'zip'  => 'd',
         'jpg'  => 'i',
         'jpeg' => 'i',
         'png'  => 'i',
