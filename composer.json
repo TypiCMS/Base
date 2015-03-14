@@ -20,13 +20,13 @@
         "edvinaskrucas/notification": "~5.0.0",
         "laracasts/utilities": "~2.0",
         "msurguy/honeypot": "dev-master",
-        "typicms/core": "~1.8",
         "patchwork/utf8": "~1.2",
         "bkwld/croppa": "~3.6.1",
         "guzzlehttp/guzzle": "~4.0",
         "maatwebsite/laravel-sidebar": "dev-master",
         "typicms/nestablecollection": "~1.0.0",
         "typicms/translatablebootforms": "~2.0.0",
+        "typicms/core": "~2.0.0",
         "typicms/blocks": "~2.0.0",
         "typicms/dashboard": "~2.0.0",
         "typicms/files": "~2.0.0",
@@ -45,12 +45,6 @@
         "phpunit/phpunit": "~4.0",
         "phpspec/phpspec": "~2.1"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/mosanger/Honeypot"
-        }
-    ],
     "autoload": {
         "classmap": [
             "database"
