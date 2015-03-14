@@ -6,8 +6,6 @@
 TypiCMS is a multilingual content management system built with [Laravel 5](http://laravel.com).
 [Bower](http://bower.io) and [gulp](http://gulpjs.com) are used for asset management and the user interface is built with [Bootstrap 3](http://getbootstrap.com) with [Less](http://lesscss.org).
 
-**Demo**
-
 ![TypiCMS screenshot](http://typicms.samsfactory.com/uploads/pages/TypiCMS-screenshot.png)
 
 ## Table of contents
@@ -64,27 +62,30 @@ This kind of URLs are managed by the CMS:
 
 - PHP >= 5.4.0
 - MCrypt PHP Extension
-- Memcached or Redis or APC
+- Memcached, Redis or APC
+
 
 ## Installation
 
-1. Install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](http://gulpjs.com)
-2. Create a new project
+First install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](http://gulpjs.com)
+
+1. Create a new project
 
    ```
    composer create-project typicms/base mywebsite
    ```
-3. Enter the newly created folder
+2. Enter the newly created folder
 
    ```
    cd mywebsite
    ```
-4. DB migration and seed, user creation, npm installation, bower installation and directory rights
+3. DB migration and seed, user creation, npm installation, bower installation and directory rights
 
    ```
    php artisan typicms:install
    ```
-5. Go to http://mywebsite.local/admin and log in.
+
+Go to http://mywebsite.local/admin and log in.
 
 ### Bower & Gulp
 
@@ -115,13 +116,14 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), [B
 
 ### Pages
 
-Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database. A page has routes for each translation.
+Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.  
+Each translation of a page has its own route.  
+A page can be linked to a module.
 
 ### Menus
 
-Each menu has nestable entries. One entry can be linked to a module, page, URI or URL.
-You can get a HTML formated menu with ``` Menus::build('menuname') ```.
-An icon can easily be added to a menu item by filling the icon class field.
+Each menu has nestable entries. One entry can be linked to a page or URL.
+You can return a HTML formated menu with ``` Menus::build('menuname') ```.
 
 ### Projects
 
