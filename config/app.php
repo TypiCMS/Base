@@ -155,7 +155,7 @@ return [
 		'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		'Dimsav\Translatable\TranslatableServiceProvider',
 		'Krucas\Notification\NotificationServiceProvider',
-		'Laracasts\Utilities\JavaScript\JavaScriptServiceProvider',
+		'Laracasts\Utilities\JavaScript\JavascriptServiceProvider',
 		'Maatwebsite\Sidebar\SidebarServiceProvider',
 		'Msurguy\Honeypot\HoneypotServiceProvider',
 
