@@ -196,10 +196,8 @@ It works for all modules except users and groups.
 
 ## Facades
 
-Modules that have their own Facade: News, Events, Projects, Places, Partners, Galleries, Blocks, Files and Menus.
-
-In your views, you can call for example ```News::latest(3)``` to get the three latest news.
-Check available methods in each module's repository.
+Each modules has a facade that give you access to the repository, you can call for example ```News::latest(3)``` to get the three latest news.
+Check available methods in each module’s repository.
 
 ## Artisan commands
 
@@ -229,10 +227,6 @@ Feel free to fork and make pull requests directly on the master branch!
 TypiCMS follows the [PSR-2](http://www.php-fig.org/psr/psr-2/) standard.
 
 Thanks to [elvendor](https://github.com/elvendor) and [jekjek](https://github.com/jekjek) for their contributions!
-
-## Testing
-
-Some admin controllers are actually tested, more tests needed.
 
 ## License
 
