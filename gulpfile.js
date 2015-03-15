@@ -83,20 +83,6 @@ gulp.task('angular-locales', function () {
 
 });
 
-// Publish pickadate locales
-gulp.task('pickadate-locales', function () {
-
-    var destDir = 'public/js/pickadate-locales';
-
-    return gulp.src([
-            'bower_components/pickadate/lib/translations/fr_FR.js',
-            'bower_components/pickadate/lib/translations/nl_NL.js',
-        ])
-        .pipe(newer(destDir))
-        .pipe(gulp.dest(destDir));
-
-});
-
 // Publish Fancybox images
 gulp.task('fancybox-img', function () {
 
@@ -251,7 +237,6 @@ gulp.task('default', [
     'js-public',
     'js-admin',
     'fonts',
-    'pickadate-locales',
     'angular-locales',
     'fancybox-img',
     'ckeditor',

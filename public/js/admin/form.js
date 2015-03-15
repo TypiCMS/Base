@@ -85,28 +85,6 @@
             $(this).addClass('active');
         });
 
-        /**
-         * Date picker
-         */
-        if ($('.datepicker').length) {
-            $('.datepicker').pickadate({
-                // editable: true,
-                formatSubmit: 'yyyy-mm-dd',
-                format: 'dd.mm.yyyy',
-                hiddenName: true,
-            });
-        }
-
-        /**
-         * Time picker
-         */
-        if ($('.timepicker').length) {
-            $('.timepicker').pickatime({
-                editable: true,
-                format: 'HH:i'
-            });
-        }
-
     });
 
 }( window.jQuery || window.ender );
