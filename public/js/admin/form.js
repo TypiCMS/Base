@@ -39,7 +39,10 @@
         /**
          * Selectize for select input
          */
-        $('select').selectize();
+        $('select#galleries').selectize();
+        $('select#category_id').selectize();
+        $('select#page_id').selectize();
+        $('select#target').selectize();
 
         /**
          * Selectize for tags
