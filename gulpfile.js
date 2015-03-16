@@ -184,7 +184,6 @@ gulp.task('js-public', function () {
             '!microplugin*',
             '!selectize*',
             '!alertify*',
-            '!fastclick*',
             '!angular*',
             '!smart-table*',
             '!dropzone*'
