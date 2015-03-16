@@ -38,6 +38,7 @@ return [
     */
     'modules_for_menu_items' => [
         'Categories',
+        'Contacts',
         'Events',
         'Galleries',
         'News',
