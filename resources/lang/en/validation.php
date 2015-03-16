@@ -162,6 +162,7 @@ return [
         'comments_enabled' => 'Comments enabled',
         'is_home' => 'Is home',
         'redirect to first child' => 'Redirect to first child',
+        'module' => 'Module',
         'template' => 'Template',
         'css' => 'CSS',
         'js' => 'JavaScript',

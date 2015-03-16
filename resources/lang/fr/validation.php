@@ -160,6 +160,7 @@ return array(
         'comments_enabled' => 'Activer les commentaires',
         'is_home' => 'Définir en tant que page d’accueil',
         'redirect to first child' => 'Rediriger vers le premier enfant',
+        'module' => 'Module',
         'template' => 'Template',
         'css' => 'Code CSS',
         'js' => 'Code JavaScript',
