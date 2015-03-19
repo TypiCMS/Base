@@ -1,9 +1,9 @@
 <div class="disclose fa fa-fw" ng-class="{'fa-caret-right': collapsed, 'fa-caret-down': !collapsed, hidden: !model.items.length}" ng-click="toggle(this)"></div>
-<typi-btn-delete ng-click="deleteFromNested(this)"></typi-btn-delete>
+<div typi-btn-delete action="deleteFromNested(this)"></div>
 <div>
     <a class="btn btn-default btn-xs" href="pages/{{ model.id }}/edit" translate>Edit</a>
 </div>
-<div typi-btn-status></div>
+<div typi-btn-status action="toggleStatus(model)" model="model"></div>
 <div class="title" ui-tree-handle>{{ model.title }}</div>
 <ul ui-tree-nodes="" ng-class="{hidden: collapsed}" ng-model="model.items">
     <li ng-repeat="model in model.items" ui-tree-node ng-include="'/views/partials/listItemPage.html'">
