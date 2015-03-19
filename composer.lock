@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "28e36749533c1dc735f382d9743620b5",
+    "hash": "d2b9791f346620c2693acd0a14e599d5",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -724,16 +724,16 @@
         },
         {
             "name": "guzzle/guzzle",
-            "version": "v3.9.2",
+            "version": "v3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155"
+                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/0645b70d953bc1c067bbc8d5bc53194706b628d9",
+                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9",
                 "shasum": ""
             },
             "require": {
@@ -774,6 +774,9 @@
                 "zendframework/zend-cache": "2.*,<2.3",
                 "zendframework/zend-log": "2.*,<2.3"
             },
+            "suggest": {
+                "guzzlehttp/guzzle": "Guzzle 5 has moved to a new package name. The package you have installed, Guzzle 3, is deprecated."
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -801,7 +804,7 @@
                     "homepage": "https://github.com/guzzle/guzzle/contributors"
                 }
             ],
-            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "description": "PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle",
             "homepage": "http://guzzlephp.org/",
             "keywords": [
                 "client",
@@ -812,7 +815,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-11 04:32:36"
+            "time": "2015-03-18 18:23:50"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1279,16 +1282,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.16",
+            "version": "v5.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "861a1e78c84dca82fe4bd85d00349c52304eea77"
+                "reference": "b4abcbc98885e1b339acc7e993d2758d47f01ecc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/861a1e78c84dca82fe4bd85d00349c52304eea77",
-                "reference": "861a1e78c84dca82fe4bd85d00349c52304eea77",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b4abcbc98885e1b339acc7e993d2758d47f01ecc",
+                "reference": "b4abcbc98885e1b339acc7e993d2758d47f01ecc",
                 "shasum": ""
             },
             "require": {
@@ -1401,7 +1404,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-03-13 13:27:55"
+            "time": "2015-03-17 21:45:31"
         },
         {
             "name": "laravelcollective/html",
@@ -1538,16 +1541,16 @@
         },
         {
             "name": "maatwebsite/laravel-sidebar",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Sidebar.git",
-                "reference": "99f0f835ed56c4678f6d4fca9a2fff41017060aa"
+                "reference": "0d0eb5602a4ce60e8f2caf1924070ee74ee9ea22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/99f0f835ed56c4678f6d4fca9a2fff41017060aa",
-                "reference": "99f0f835ed56c4678f6d4fca9a2fff41017060aa",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/0d0eb5602a4ce60e8f2caf1924070ee74ee9ea22",
+                "reference": "0d0eb5602a4ce60e8f2caf1924070ee74ee9ea22",
                 "shasum": ""
             },
             "require": {
@@ -1581,7 +1584,7 @@
                 "acp",
                 "laravel"
             ],
-            "time": "2015-02-16 17:40:40"
+            "time": "2015-03-18 17:53:29"
         },
         {
             "name": "maximebf/debugbar",
@@ -4612,8 +4615,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "cartalyst/sentry": 20,
-        "msurguy/honeypot": 20,
-        "maatwebsite/laravel-sidebar": 20
+        "msurguy/honeypot": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
