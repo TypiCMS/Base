@@ -12,17 +12,7 @@
             $scope.itemsByPage = 25;
             var url = $location.absUrl().split('?')[0],
                 moduleName = url.split('/')[4],
-                lastSegment = url.split('/').pop(),
                 $params = {};
-            $scope.url = url;
-            $scope.parentId = $scope.url.split('/')[5] || 0;
-            if (moduleName === 'galleries' && lastSegment === 'edit') {
-                $scope.url = '/admin/files';
-            }
-            if (moduleName === 'menus' && lastSegment === 'edit') {
-                $scope.url = url.slice(0, url.lastIndexOf('/')) + '/menulinks';
-            }
-
 
             $scope.TypiCMS = TypiCMS;
 
