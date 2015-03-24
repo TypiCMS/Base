@@ -1282,16 +1282,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.17",
+            "version": "v5.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b4abcbc98885e1b339acc7e993d2758d47f01ecc"
+                "reference": "419d3f485ce7946cace4325ef19a30e1d5543951"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b4abcbc98885e1b339acc7e993d2758d47f01ecc",
-                "reference": "b4abcbc98885e1b339acc7e993d2758d47f01ecc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/419d3f485ce7946cace4325ef19a30e1d5543951",
+                "reference": "419d3f485ce7946cace4325ef19a30e1d5543951",
                 "shasum": ""
             },
             "require": {
@@ -1404,7 +1404,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-03-17 21:45:31"
+            "time": "2015-03-24 13:36:37"
         },
         {
             "name": "laravelcollective/html",
@@ -1856,16 +1856,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v1.1.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "ac05ef6f95bf8361549604b6031c115f92f39528"
+                "reference": "dba7524b3724f25b947cd26a580787c55c8a6f9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/ac05ef6f95bf8361549604b6031c115f92f39528",
-                "reference": "ac05ef6f95bf8361549604b6031c115f92f39528",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dba7524b3724f25b947cd26a580787c55c8a6f9b",
+                "reference": "dba7524b3724f25b947cd26a580787c55c8a6f9b",
                 "shasum": ""
             },
             "require": {
@@ -1875,7 +1875,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -1897,7 +1897,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2015-01-18 11:29:59"
+            "time": "2015-03-24 19:10:28"
         },
         {
             "name": "patchwork/utf8",
@@ -2915,16 +2915,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.0.10",
+            "version": "v2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "8b997b6255995143fd9c6c984df7f448c6864993"
+                "reference": "3c06d073d4da2f71b2e9b798e669ff422d6293b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/8b997b6255995143fd9c6c984df7f448c6864993",
-                "reference": "8b997b6255995143fd9c6c984df7f448c6864993",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/3c06d073d4da2f71b2e9b798e669ff422d6293b6",
+                "reference": "3c06d073d4da2f71b2e9b798e669ff422d6293b6",
                 "shasum": ""
             },
             "require": {
@@ -2947,7 +2947,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-19 20:03:11"
+            "time": "2015-03-24 20:50:05"
         },
         {
             "name": "typicms/dashboard",
@@ -3428,16 +3428,16 @@
         },
         {
             "name": "typicms/users",
-            "version": "v2.0.3",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "be2f589c9dd410f13705aedca8ba73bf6047da01"
+                "reference": "fa2e0018d286632e631ecc92ae1267e797faa30c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/be2f589c9dd410f13705aedca8ba73bf6047da01",
-                "reference": "be2f589c9dd410f13705aedca8ba73bf6047da01",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/fa2e0018d286632e631ecc92ae1267e797faa30c",
+                "reference": "fa2e0018d286632e631ecc92ae1267e797faa30c",
                 "shasum": ""
             },
             "require": {
@@ -3456,7 +3456,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-19 20:05:49"
+            "time": "2015-03-24 20:43:40"
         },
         {
             "name": "vlucas/phpdotenv",
