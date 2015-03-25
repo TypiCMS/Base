@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b2ea7cfa3f6174c4f3581cae32a49e1f",
+    "hash": "6699bd2abb5d7d3b380a0cfa82574b9f",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -92,16 +92,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.7.23",
+            "version": "2.7.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a31871763cef5e2d46ad793d994a46dc700d4d55"
+                "reference": "1c119a1d3b4c9fa726fc1eae25a2039357ca8808"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a31871763cef5e2d46ad793d994a46dc700d4d55",
-                "reference": "a31871763cef5e2d46ad793d994a46dc700d4d55",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1c119a1d3b4c9fa726fc1eae25a2039357ca8808",
+                "reference": "1c119a1d3b4c9fa726fc1eae25a2039357ca8808",
                 "shasum": ""
             },
             "require": {
@@ -155,7 +155,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-03-19 21:42:28"
+            "time": "2015-03-24 22:03:02"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -2915,16 +2915,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.0.13",
+            "version": "v2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "2bfca8be2662c6f69cf44c2cae9669ce5dd93ab7"
+                "reference": "7ea0541911f9dac773f05c7cef6c82a1379cb9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/2bfca8be2662c6f69cf44c2cae9669ce5dd93ab7",
-                "reference": "2bfca8be2662c6f69cf44c2cae9669ce5dd93ab7",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/7ea0541911f9dac773f05c7cef6c82a1379cb9f8",
+                "reference": "7ea0541911f9dac773f05c7cef6c82a1379cb9f8",
                 "shasum": ""
             },
             "require": {
@@ -2947,7 +2947,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-24 21:43:41"
+            "time": "2015-03-25 11:34:03"
         },
         {
             "name": "typicms/dashboard",
@@ -3143,16 +3143,16 @@
         },
         {
             "name": "typicms/menus",
-            "version": "v2.0.7",
+            "version": "v2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "768b805feabffe400e98887068b6d943ba1e7cbf"
+                "reference": "403b4a40b54b7d8fc6ab2bed006234f420fc8298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/768b805feabffe400e98887068b6d943ba1e7cbf",
-                "reference": "768b805feabffe400e98887068b6d943ba1e7cbf",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/403b4a40b54b7d8fc6ab2bed006234f420fc8298",
+                "reference": "403b4a40b54b7d8fc6ab2bed006234f420fc8298",
                 "shasum": ""
             },
             "require": {
@@ -3172,7 +3172,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-19 20:04:10"
+            "time": "2015-03-25 11:07:08"
         },
         {
             "name": "typicms/nestablecollection",
@@ -3221,16 +3221,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "v2.0.9",
+            "version": "v2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "82071b623218583f8d45a9cf41dd1820a14909fc"
+                "reference": "d143c6661a19aa2bf161a5d1cd2b3f90a89c0fb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/82071b623218583f8d45a9cf41dd1820a14909fc",
-                "reference": "82071b623218583f8d45a9cf41dd1820a14909fc",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/d143c6661a19aa2bf161a5d1cd2b3f90a89c0fb6",
+                "reference": "d143c6661a19aa2bf161a5d1cd2b3f90a89c0fb6",
                 "shasum": ""
             },
             "require": {
@@ -3249,7 +3249,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-24 21:43:26"
+            "time": "2015-03-25 11:37:27"
         },
         {
             "name": "typicms/settings",
@@ -3286,16 +3286,16 @@
         },
         {
             "name": "typicms/sitemap",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
-                "reference": "f7b03b767c6f079e081c3ea40d15a4723795ddde"
+                "reference": "aef93abe32c35b834c394cd3c3f798afdb8f93c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/f7b03b767c6f079e081c3ea40d15a4723795ddde",
-                "reference": "f7b03b767c6f079e081c3ea40d15a4723795ddde",
+                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/aef93abe32c35b834c394cd3c3f798afdb8f93c3",
+                "reference": "aef93abe32c35b834c394cd3c3f798afdb8f93c3",
                 "shasum": ""
             },
             "require": {
@@ -3315,7 +3315,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-14 21:40:50"
+            "time": "2015-03-25 10:36:28"
         },
         {
             "name": "typicms/tags",
