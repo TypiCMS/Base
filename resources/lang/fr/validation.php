@@ -164,6 +164,7 @@ return array(
         'template' => 'Template',
         'css' => 'Code CSS',
         'js' => 'Code JavaScript',
+        'add_to_menu' => 'Ajouter au menu',
 
         // Places
         'latitude' => 'Latitude',
