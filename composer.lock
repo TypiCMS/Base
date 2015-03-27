@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a0b8b315f7261591095127e198f8cc9e",
+    "hash": "d87a4d7b28e7f36940b885ed6f7a68be",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1717,16 +1717,16 @@
         },
         {
             "name": "msurguy/honeypot",
-            "version": "dev-master",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msurguy/Honeypot.git",
-                "reference": "4c9b2c6bf10c4b974f999bd3feac75ec3c6fefe5"
+                "reference": "a34ca50833d0e88530ec7f0325ab66f016b3f444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/4c9b2c6bf10c4b974f999bd3feac75ec3c6fefe5",
-                "reference": "4c9b2c6bf10c4b974f999bd3feac75ec3c6fefe5",
+                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/a34ca50833d0e88530ec7f0325ab66f016b3f444",
+                "reference": "a34ca50833d0e88530ec7f0325ab66f016b3f444",
                 "shasum": ""
             },
             "require": {
@@ -1762,7 +1762,7 @@
                 "laravel",
                 "spam"
             ],
-            "time": "2015-03-13 22:49:47"
+            "time": "2015-03-27 16:18:11"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -2916,16 +2916,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.0.18",
+            "version": "v2.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "6d68377eca48b762037f5c9c064a1e7b3def92ff"
+                "reference": "7936ede31a075992cb5422a6f689d5ad9890a1b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/6d68377eca48b762037f5c9c064a1e7b3def92ff",
-                "reference": "6d68377eca48b762037f5c9c064a1e7b3def92ff",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/7936ede31a075992cb5422a6f689d5ad9890a1b2",
+                "reference": "7936ede31a075992cb5422a6f689d5ad9890a1b2",
                 "shasum": ""
             },
             "require": {
@@ -2948,7 +2948,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-27 14:11:30"
+            "time": "2015-03-27 22:00:56"
         },
         {
             "name": "typicms/dashboard",
@@ -4615,8 +4615,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cartalyst/sentry": 20,
-        "msurguy/honeypot": 20
+        "cartalyst/sentry": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
