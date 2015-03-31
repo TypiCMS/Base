@@ -11,9 +11,9 @@ angular.module('typicms').directive('dropZone', function () {
         $( "#uploaderAddButton" ).on('click', function () {
             $('#dropzone').trigger('click');
         });
+
         var dropZoneTemplate,
             acceptedFiles,
-            parentId = scope.parentId,
             locales = scope.TypiCMS.locales;
 
         dropZoneTemplate = '<div class="thumbnail dz-preview dz-file-preview">\
@@ -73,8 +73,7 @@ angular.module('typicms').directive('dropZone', function () {
                 });
 
                 this.on('sending', function (file, xhr, formData) {
-
-                    formData.append('gallery_id', parentId);
+                    formData.append('gallery_id', scope.gallery_id);
                     formData.append('_token', TypiCMS._token);
                     for (var i = locales.length - 1; i >= 0; i--) {
                         formData.append(locales[i].short + '[description]', '');
