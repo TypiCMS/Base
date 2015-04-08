@@ -19,13 +19,13 @@ class MenulinkSeeder extends Seeder
         );
 
         $typi_menulink_translations = array(
-            array('id' => '1','menulink_id' => '1','locale' => 'fr','status' => '1','title' => 'Accueil','url' => '','created_at' => '0000-00-00 00:00:00','updated_at' => '0000-00-00 00:00:00'),
-            array('id' => '2','menulink_id' => '1','locale' => 'nl','status' => '1','title' => 'Home','url' => '','created_at' => '0000-00-00 00:00:00','updated_at' => '0000-00-00 00:00:00'),
-            array('id' => '3','menulink_id' => '1','locale' => 'en','status' => '1','title' => 'Home','url' => '','created_at' => '0000-00-00 00:00:00','updated_at' => '0000-00-00 00:00:00'),
+            array('id' => '1','menulink_id' => '1','locale' => 'fr','status' => '1','title' => 'Accueil','url' => '','created_at' => '1900-01-01 00:00:00','updated_at' => '1900-01-01 00:00:00'),
+            array('id' => '2','menulink_id' => '1','locale' => 'nl','status' => '1','title' => 'Home','url' => '','created_at' => '1900-01-01 00:00:00','updated_at' => '1900-01-01 00:00:00'),
+            array('id' => '3','menulink_id' => '1','locale' => 'en','status' => '1','title' => 'Home','url' => '','created_at' => '1900-01-01 00:00:00','updated_at' => '1900-01-01 00:00:00'),
 
-            array('id' => '4','menulink_id' => '2','locale' => 'fr','status' => '1','title' => 'Contact','url' => '','created_at' => '0000-00-00 00:00:00','updated_at' => '2014-03-28 13:29:27'),
-            array('id' => '5','menulink_id' => '2','locale' => 'nl','status' => '1','title' => 'Contact','url' => '','created_at' => '0000-00-00 00:00:00','updated_at' => '2014-03-28 13:29:27'),
-            array('id' => '6','menulink_id' => '2','locale' => 'en','status' => '1','title' => 'Contact','url' => '','created_at' => '0000-00-00 00:00:00','updated_at' => '2014-03-28 13:29:27'),
+            array('id' => '4','menulink_id' => '2','locale' => 'fr','status' => '1','title' => 'Contact','url' => '','created_at' => '1900-01-01 00:00:00','updated_at' => '2014-03-28 13:29:27'),
+            array('id' => '5','menulink_id' => '2','locale' => 'nl','status' => '1','title' => 'Contact','url' => '','created_at' => '1900-01-01 00:00:00','updated_at' => '2014-03-28 13:29:27'),
+            array('id' => '6','menulink_id' => '2','locale' => 'en','status' => '1','title' => 'Contact','url' => '','created_at' => '1900-01-01 00:00:00','updated_at' => '2014-03-28 13:29:27'),
 
             array('id' => '7','menulink_id' => '3','locale' => 'fr','status' => '1','title' => 'Contact','url' => '','created_at' => '2013-11-02 17:20:16','updated_at' => '2014-03-28 13:30:40'),
             array('id' => '8','menulink_id' => '3','locale' => 'nl','status' => '1','title' => 'Contact','url' => '','created_at' => '2013-11-02 17:20:16','updated_at' => '2014-03-28 13:30:40'),
