@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('MenuSeeder');
 		$this->call('MenulinkSeeder');
 		$this->call('GroupSeeder');
+		$this->call('UserSeeder');
 	}
 
 }
