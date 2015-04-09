@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4d935ed9e9bfb1c2cd2dcebc73b0484b",
+    "hash": "049d722f44defb8cbb1da3409edee72a",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -92,16 +92,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.7.27",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "96dd5a8e3d9dbc435383a34523ee92156c8137ee"
+                "reference": "526a52732b11154aa937ec1e160668d7f7b83afc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/96dd5a8e3d9dbc435383a34523ee92156c8137ee",
-                "reference": "96dd5a8e3d9dbc435383a34523ee92156c8137ee",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/526a52732b11154aa937ec1e160668d7f7b83afc",
+                "reference": "526a52732b11154aa937ec1e160668d7f7b83afc",
                 "shasum": ""
             },
             "require": {
@@ -155,7 +155,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-04-07 21:07:40"
+            "time": "2015-04-09 18:58:17"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -3144,16 +3144,16 @@
         },
         {
             "name": "typicms/menus",
-            "version": "v2.0.11",
+            "version": "v2.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "3a04a6a352e25071e9b8d0e06e7a6465e80eed26"
+                "reference": "6eabb686908ed5ffcc4f15cccbdff42432cf40d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/3a04a6a352e25071e9b8d0e06e7a6465e80eed26",
-                "reference": "3a04a6a352e25071e9b8d0e06e7a6465e80eed26",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/6eabb686908ed5ffcc4f15cccbdff42432cf40d0",
+                "reference": "6eabb686908ed5ffcc4f15cccbdff42432cf40d0",
                 "shasum": ""
             },
             "require": {
@@ -3173,7 +3173,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-09 15:46:49"
+            "time": "2015-04-09 21:10:18"
         },
         {
             "name": "typicms/nestablecollection",
