@@ -224,7 +224,7 @@ return [
 		'Form'            => 'AdamWathan\Form\Facades\Form',
 		'Croppa'          => 'Bkwld\Croppa\Facade',
 		'Honeypot'        => 'Msurguy\Honeypot\HoneypotFacade',
-		'HTML'            => 'Illuminate\Html\HtmlFacade',
+		'HTML'            => 'Collective\Html\HtmlFacade',
 		'Notification'    => 'Krucas\Notification\Facades\Notification',
 		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'Translatable'    => 'Dimsav\Translatable\Translatable',
