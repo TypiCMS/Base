@@ -8,7 +8,7 @@ angular.module('typicms').directive('dropZone', function () {
         $('#uploaderAddButtonContainer').click(function (event) {
             return false;
         });
-        $( "#uploaderAddButton" ).on('click', function () {
+        $('#uploaderAddButton').on('click', function () {
             $('#dropzone').trigger('click');
         });
 
@@ -73,7 +73,11 @@ angular.module('typicms').directive('dropZone', function () {
                 });
 
                 this.on('sending', function (file, xhr, formData) {
-                    formData.append('gallery_id', scope.gallery_id);
+                    var gallery_id = scope.gallery_id;
+                    if (! gallery_id) {
+                        gallery_id = 0;
+                    }
+                    formData.append('gallery_id', gallery_id);
                     formData.append('_token', TypiCMS._token);
                     for (var i = locales.length - 1; i >= 0; i--) {
                         formData.append(locales[i].short + '[description]', '');
