@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7305dc63c3137c0f03b5f6527aacc47b",
+    "hash": "7a35902fa156a7f58d046fabfd05a903",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -3112,16 +3112,16 @@
         },
         {
             "name": "typicms/menulinks",
-            "version": "v2.0.5",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menulinks.git",
-                "reference": "4e9a67e9aa73af6bd04ffaa4d910e64a13f1de31"
+                "reference": "c59bcb8320effb5204b72e3870ca61b5628ca71c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/4e9a67e9aa73af6bd04ffaa4d910e64a13f1de31",
-                "reference": "4e9a67e9aa73af6bd04ffaa4d910e64a13f1de31",
+                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/c59bcb8320effb5204b72e3870ca61b5628ca71c",
+                "reference": "c59bcb8320effb5204b72e3870ca61b5628ca71c",
                 "shasum": ""
             },
             "require": {
@@ -3140,20 +3140,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-18 17:26:16"
+            "time": "2015-04-10 09:05:57"
         },
         {
             "name": "typicms/menus",
-            "version": "v2.0.15",
+            "version": "v2.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "836efda9fcf02c4df61da7b9b2daedc62a0ae947"
+                "reference": "bb84d92b656cb32a182911e938a9be561f1b632e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/836efda9fcf02c4df61da7b9b2daedc62a0ae947",
-                "reference": "836efda9fcf02c4df61da7b9b2daedc62a0ae947",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/bb84d92b656cb32a182911e938a9be561f1b632e",
+                "reference": "bb84d92b656cb32a182911e938a9be561f1b632e",
                 "shasum": ""
             },
             "require": {
@@ -3173,7 +3173,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-10 09:04:09"
+            "time": "2015-04-10 09:33:11"
         },
         {
             "name": "typicms/nestablecollection",
