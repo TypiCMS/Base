@@ -114,10 +114,29 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), [B
 
 ## Modules
 
+Install a module (News module in this example)
+
+1. Install module with Composer
+
+   ```
+   composer require typicms/news
+   ```
+2. Add ```'TypiCMS\Modules\News\Providers\ModuleProvider',``` to *config/app.php*, before ```'TypiCMS\Providers\CoreServiceProvider'```
+3. Publish views and migrations
+
+   ```
+   php artisan vendor:publish
+   ```
+4. Migrate the database
+
+   ```
+   php artisan migrate
+   ``
+
 ### Pages
 
-Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.  
-Each translation of a page has its own route.  
+Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.
+Each translation of a page has its own route.
 A page can be linked to a module.
 
 ### Menus
