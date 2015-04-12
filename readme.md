@@ -112,9 +112,9 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), [B
 1. Set available locales and the default locale in config/translatable.php
 2. Cache driver is set to memcached. You can change it to another taggable cache system such as redis in your .env file
 
-## Modules
+### Installation of a module
 
-*Here is how to install the News module*
+*This example is for the News module. After these steps, the module will appear in the sidebar of the back office.*
 
 1. Install module with Composer
 
@@ -132,6 +132,8 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), [B
    ```
    php artisan migrate
    ```
+
+## Modules
 
 ### Pages
 
