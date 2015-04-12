@@ -114,7 +114,7 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), [B
 
 ### Installation of a module
 
-*This example is for the News module. After these steps, the module will appear in the sidebar of the back office.*
+This example is for the News module. After these steps, the module will appear in the sidebar of the back office.
 
 1. Install module with Composer
 
