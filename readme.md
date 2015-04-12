@@ -114,14 +114,14 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), [B
 
 ## Modules
 
-Install a module (News module in this example)
+*Here is how to install the News module*
 
 1. Install module with Composer
 
    ```
    composer require typicms/news
    ```
-2. Add ```'TypiCMS\Modules\News\Providers\ModuleProvider',``` to *config/app.php*, before ```'TypiCMS\Providers\CoreServiceProvider'```
+2. Add ```'TypiCMS\Modules\News\Providers\ModuleProvider',``` to *config/app.php*, before 'TypiCMS\Providers\CoreServiceProvider'
 3. Publish views and migrations
 
    ```
@@ -131,7 +131,7 @@ Install a module (News module in this example)
 
    ```
    php artisan migrate
-   ``
+   ```
 
 ### Pages
 
