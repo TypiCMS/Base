@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "325d3d127de787e6a099cfcc3a0af0f9",
+    "hash": "0972b1bc05e9cb7b35f6b65ebf45b769",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -213,20 +213,20 @@
         },
         {
             "name": "bkwld/croppa",
-            "version": "3.6.1",
+            "version": "3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
-                "reference": "6949efa581ad24f3c02bff94504b88516ba56ae5"
+                "reference": "5452db2d5925b388b7adedd6fe9d9f772aca92e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/6949efa581ad24f3c02bff94504b88516ba56ae5",
-                "reference": "6949efa581ad24f3c02bff94504b88516ba56ae5",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/5452db2d5925b388b7adedd6fe9d9f772aca92e4",
+                "reference": "5452db2d5925b388b7adedd6fe9d9f772aca92e4",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.0",
+                "illuminate/support": "4 - 5",
                 "php": ">=5.3.0",
                 "symfony/http-kernel": "~2.0",
                 "weotch/phpthumb": "~1.0"
@@ -254,7 +254,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "time": "2015-02-18 16:22:29"
+            "time": "2015-04-13 16:00:30"
         },
         {
             "name": "cartalyst/sentry",
