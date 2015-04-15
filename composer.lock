@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0972b1bc05e9cb7b35f6b65ebf45b769",
+    "hash": "cc66e3d1a43739216f4ac21485f18158",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -213,33 +213,33 @@
         },
         {
             "name": "bkwld/croppa",
-            "version": "3.6.2",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
-                "reference": "5452db2d5925b388b7adedd6fe9d9f772aca92e4"
+                "reference": "5827cdf00f69f867e88c1459c4037671f10b078c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/5452db2d5925b388b7adedd6fe9d9f772aca92e4",
-                "reference": "5452db2d5925b388b7adedd6fe9d9f772aca92e4",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/5827cdf00f69f867e88c1459c4037671f10b078c",
+                "reference": "5827cdf00f69f867e88c1459c4037671f10b078c",
                 "shasum": ""
             },
             "require": {
+                "illuminate/routing": "4 - 5",
                 "illuminate/support": "4 - 5",
-                "php": ">=5.3.0",
+                "league/flysystem": "~1.0",
+                "php": ">=5.4.0",
+                "symfony/http-foundation": "~2.0",
                 "symfony/http-kernel": "~2.0",
                 "weotch/phpthumb": "~1.0"
             },
             "require-dev": {
-                "mikey179/vfsstream": "~1.3",
+                "mockery/mockery": "~0.9",
                 "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src/migrations"
-                ],
                 "psr-0": {
                     "Bkwld\\Croppa": "src/"
                 }
@@ -254,7 +254,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "time": "2015-04-13 16:00:30"
+            "time": "2015-04-14 17:27:24"
         },
         {
             "name": "cartalyst/sentry",
@@ -2916,16 +2916,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.0.24",
+            "version": "v2.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "63569fe1b3c3008fe2aaad301481cb96730edfe6"
+                "reference": "a1e98919d8a81d2e8661ce0d71dc4deda563d2e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/63569fe1b3c3008fe2aaad301481cb96730edfe6",
-                "reference": "63569fe1b3c3008fe2aaad301481cb96730edfe6",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/a1e98919d8a81d2e8661ce0d71dc4deda563d2e1",
+                "reference": "a1e98919d8a81d2e8661ce0d71dc4deda563d2e1",
                 "shasum": ""
             },
             "require": {
@@ -2948,7 +2948,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-13 09:45:35"
+            "time": "2015-04-14 13:31:48"
         },
         {
             "name": "typicms/dashboard",
