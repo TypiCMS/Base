@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cc66e3d1a43739216f4ac21485f18158",
+    "hash": "1fe859d98ca5f3e0fd35edd69a2ed72d",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -2916,16 +2916,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.0.25",
+            "version": "v2.0.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "a1e98919d8a81d2e8661ce0d71dc4deda563d2e1"
+                "reference": "43f87f240df15fe824e88d99fa006985d3bdf010"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/a1e98919d8a81d2e8661ce0d71dc4deda563d2e1",
-                "reference": "a1e98919d8a81d2e8661ce0d71dc4deda563d2e1",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/43f87f240df15fe824e88d99fa006985d3bdf010",
+                "reference": "43f87f240df15fe824e88d99fa006985d3bdf010",
                 "shasum": ""
             },
             "require": {
@@ -2948,7 +2948,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-14 13:31:48"
+            "time": "2015-04-15 15:01:20"
         },
         {
             "name": "typicms/dashboard",
