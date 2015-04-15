@@ -174,7 +174,7 @@ gulp.task('js-admin', function () {
         .pipe(filter([
             '**/*.js'
         ]))
-        // .pipe(newer(destDir + '/' + destFile))
+        .pipe(newer(destDir + '/' + destFile))
         .pipe(concat('components.js'))
         .pipe(ngAnnotate())
         .pipe(uglify())
@@ -205,8 +205,7 @@ gulp.task('js-public', function () {
             '!smart-table*',
             '!dropzone*'
         ]))
-        // .pipe(newer(destDir + '/' + destFile))
-        .pipe(watch('**/*.js'))
+        .pipe(newer(destDir + '/' + destFile))
         .pipe(concat('components.js'))
         .pipe(uglify())
         .pipe(rename(destFile))
