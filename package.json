@@ -1,6 +1,7 @@
 {
   "private": true,
   "devDependencies": {
+    "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-angular-gettext": "^2.1.0",
     "gulp-autoprefixer": "2.1.0",
@@ -12,11 +13,11 @@
     "gulp-newer": "^0.5.0",
     "gulp-ng-annotate": "^0.5.2",
     "gulp-notify": "^2.2.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^3.0.1",
+    "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.4",
-    "gulp-watch": "^4.2.0",
-    "laravel-elixir": "*",
+    "gulp-watch": "^4.2.4",
     "main-bower-files": "^2.6.2"
   }
 }

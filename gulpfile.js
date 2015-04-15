@@ -14,6 +14,8 @@ var gulp       = require('gulp'),
     newer      = require('gulp-newer'),
     prefix     = require('gulp-autoprefixer'),
     ngAnnotate = require('gulp-ng-annotate'),
+    del        = require('del'),
+    rev        = require('gulp-rev'),
     gettext    = require('gulp-angular-gettext');
 
 function swallowError (error) {
@@ -24,36 +26,48 @@ function swallowError (error) {
 // Compile Less and save to css directory
 gulp.task('less-public', function () {
 
-    var destDir = 'public/css/',
-        destFile = 'public.css';
-
     return gulp.src('resources/assets/less/public/master.less')
         .pipe(less())
         .on('error', swallowError)
         .pipe(prefix('last 2 versions', '> 1%', 'Explorer 7', 'Android 2'))
         .pipe(minifyCSS())
-        .pipe(rename(destFile))
-        .pipe(gulp.dest(destDir))
-        .pipe(livereload())
+        .pipe(rename('public.css'))
+        .pipe(gulp.dest('public/css'))
         .pipe(notify('Public CSS minified'));
 
 });
 
 gulp.task('less-admin', function () {
 
-    var destDir = 'public/css/',
-        destFile = 'admin.css';
-
     return gulp.src('resources/assets/less/admin/master.less')
         .pipe(less())
         .on('error', swallowError)
         .pipe(prefix('last 2 versions', '> 1%', 'Explorer 7', 'Android 2'))
         .pipe(minifyCSS())
-        .pipe(rename(destFile))
-        .pipe(gulp.dest(destDir))
-        .pipe(livereload())
+        .pipe(rename('admin.css'))
+        .pipe(gulp.dest('public/css'))
         .pipe(notify('Admin CSS minified'));
 
+});
+
+// version
+gulp.task('version', function() {
+
+    var publicDir = 'public',
+        buildDir = publicDir + '/build';
+
+    del.sync(buildDir + '/*', { force: true });
+
+    return gulp.src([
+            publicDir + '/css/*',
+            publicDir + '/js/**/*'
+        ], { base: './' + publicDir })
+        .pipe(gulp.dest(buildDir))
+        .pipe(rev())
+        .pipe(gulp.dest(buildDir))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest(buildDir))
+        .pipe(livereload());
 });
 
 // Publish fonts
@@ -145,10 +159,10 @@ gulp.task('ckeditor', function () {
 
 gulp.task('js-admin', function () {
 
-    var destDir = 'public/js/admin/',
+    var destDir = 'public/js/admin',
         destFile = 'components.min.js',
         files = bowerFiles();
-    
+
     files.push(path.resolve() + '/resources/assets/js/admin/*');
     files.push(path.resolve() + '/resources/assets/typicms/**/*.js');
 
@@ -156,7 +170,7 @@ gulp.task('js-admin', function () {
         .pipe(filter([
             '**/*.js'
         ]))
-        .pipe(newer(destDir + destFile))
+        .pipe(newer(destDir + '/' + destFile))
         .pipe(concat('components.js'))
         .pipe(ngAnnotate())
         .pipe(uglify())
@@ -168,7 +182,7 @@ gulp.task('js-admin', function () {
 
 gulp.task('js-public', function () {
 
-    var destDir = 'public/js/public/',
+    var destDir = 'public/js/public',
         destFile = 'components.min.js',
         files = bowerFiles();
 
@@ -188,7 +202,7 @@ gulp.task('js-public', function () {
             '!smart-table*',
             '!dropzone*'
         ]))
-        .pipe(newer(destDir + destFile))
+        .pipe(newer(destDir + '/' + destFile))
         .pipe(concat('components.js'))
         .pipe(uglify())
         .pipe(rename(destFile))
@@ -227,6 +241,7 @@ gulp.task('watch', function () {
     gulp.watch('resources/assets/js/public/**/*.js', ['js-public']);
     gulp.watch('resources/assets/js/admin/**/*.js', ['js-admin']);
     gulp.watch('resources/assets/typicms/**/*.js', ['js-admin']);
+    gulp.watch('resources/assets/**/*', ['version']);
 });
 
 // What tasks does running gulp trigger?
@@ -239,5 +254,6 @@ gulp.task('default', [
     'angular-locales',
     'fancybox-img',
     'ckeditor',
+    'version',
     'watch'
 ]);
