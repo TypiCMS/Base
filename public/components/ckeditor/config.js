@@ -11,6 +11,14 @@ CKEDITOR.editorConfig = function( config ) {
         { name: 'others', items: [ '-' ] },
     ];
 
+    // Quicktable config
+    config.qtRows = 20, // Count of rows
+    config.qtColumns = 20, // Count of columns
+    config.qtBorder = '0', // Border of inserted table
+    config.qtWidth = '100%', // Width of inserted table
+    config.qtCellPadding = '0', // Cell padding table
+    config.qtCellSpacing = '0', // Cell spacing table
+
     // Remove some buttons provided by the standard plugins, which are
     // not needed in the Standard(s) toolbar.
     config.removeButtons = 'Underline';
