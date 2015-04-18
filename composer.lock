@@ -92,16 +92,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.8.0",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "526a52732b11154aa937ec1e160668d7f7b83afc"
+                "reference": "9715c747724a10c0ba0e3bae741b165730cd1953"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/526a52732b11154aa937ec1e160668d7f7b83afc",
-                "reference": "526a52732b11154aa937ec1e160668d7f7b83afc",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9715c747724a10c0ba0e3bae741b165730cd1953",
+                "reference": "9715c747724a10c0ba0e3bae741b165730cd1953",
                 "shasum": ""
             },
             "require": {
@@ -155,7 +155,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-04-09 18:58:17"
+            "time": "2015-04-16 22:25:42"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -3016,16 +3016,16 @@
         },
         {
             "name": "typicms/galleries",
-            "version": "v2.0.10",
+            "version": "v2.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Galleries.git",
-                "reference": "525c6a506319c134b38e4f266b28fe88f7db95bc"
+                "reference": "a29e3de050fd387688e5790483a5e466b4995ec3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/525c6a506319c134b38e4f266b28fe88f7db95bc",
-                "reference": "525c6a506319c134b38e4f266b28fe88f7db95bc",
+                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/a29e3de050fd387688e5790483a5e466b4995ec3",
+                "reference": "a29e3de050fd387688e5790483a5e466b4995ec3",
                 "shasum": ""
             },
             "require": {
@@ -3044,7 +3044,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-10 13:35:22"
+            "time": "2015-04-17 20:48:24"
         },
         {
             "name": "typicms/groups",
