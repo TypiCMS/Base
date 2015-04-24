@@ -1,4 +1,4 @@
-<?php 
+<?php
 return [
 
     /*
@@ -36,47 +36,6 @@ return [
     */
     'news' => [
         'per_page' => 50,
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Modules that can be linked to a menu item
-    |--------------------------------------------------------------------------
-    */
-    'modules_for_menu_items' => [
-        'Categories',
-        'Contacts',
-        'Events',
-        'Galleries',
-        'News',
-        'Partners',
-        'Places',
-        'Projects',
-        'Tags',
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Modules for permissions table
-    |--------------------------------------------------------------------------
-    */
-    'modules_for_permissions_table' => [
-        'Blocks',
-        'Categories',
-        'Contacts',
-        'Events',
-        'Files',
-        'Galleries',
-        'Groups',
-        'Menus',
-        'News',
-        'Pages',
-        'Partners',
-        'Places',
-        'Projects',
-        'Tags',
-        'Translations',
-        'Users',
     ],
 
 ];
