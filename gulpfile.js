@@ -216,7 +216,8 @@ gulp.task('js-public', function () {
 gulp.task('pot', function () {
     return gulp.src([
             'public/views/partials/**/*.html',
-            'app/TypiCMS/Modules/**/Views/**/admin/*.php',
+            'Modules/**/resources/views/admin/*.php',
+            'resources/views/vendor/**/admin/*.php',
             'resources/assets/typicms/**/*.js'
         ])
         .pipe(gettext.extract('template.pot', {
