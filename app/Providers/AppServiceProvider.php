@@ -29,6 +29,9 @@ class AppServiceProvider extends ServiceProvider {
 			'Illuminate\Contracts\Auth\Registrar',
 			'App\Services\Registrar'
 		);
+		if ($this->app->isLocal()) {
+		    $this->app->register('Laracasts\Generators\GeneratorsServiceProvider');
+		}
 	}
 
 }
