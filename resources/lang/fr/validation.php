@@ -158,6 +158,7 @@ return array(
         // Pages
         'rss_enabled' => 'Activer un flux RSS',
         'comments_enabled' => 'Activer les commentaires',
+        'private' => 'Privée',
         'is_home' => 'Définir en tant que page d’accueil',
         'redirect to first child' => 'Rediriger vers le premier enfant',
         'module' => 'Module',

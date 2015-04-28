@@ -160,6 +160,7 @@ return [
         // Pages
         'rss_enabled' => 'Rss enabled',
         'comments_enabled' => 'Comments enabled',
+        'private' => 'Private',
         'is_home' => 'Is home',
         'redirect to first child' => 'Redirect to first child',
         'module' => 'Module',
