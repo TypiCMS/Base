@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1bfad5975ad612a966954216136ede4a",
+    "hash": "714863d86242815d5357e60c1db9fde6",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -50,16 +50,16 @@
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "895512416ea29ed194fdd2e6c6e03df58039cbba"
+                "reference": "52edf41529ebe71385599c1ad5259307dea9f8eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/895512416ea29ed194fdd2e6c6e03df58039cbba",
-                "reference": "895512416ea29ed194fdd2e6c6e03df58039cbba",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/52edf41529ebe71385599c1ad5259307dea9f8eb",
+                "reference": "52edf41529ebe71385599c1ad5259307dea9f8eb",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2015-02-20 15:01:55"
+            "time": "2015-04-28 18:04:06"
         },
         {
             "name": "aws/aws-sdk-php",
@@ -3352,20 +3352,20 @@
         },
         {
             "name": "typicms/translatablebootforms",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/TranslatableBootForms.git",
-                "reference": "1a0cbcf679e929e7750a4b16fa6d46ef07ad647c"
+                "reference": "7058e742fe69df703ba39c08d3ca62d0a297fa25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/1a0cbcf679e929e7750a4b16fa6d46ef07ad647c",
-                "reference": "1a0cbcf679e929e7750a4b16fa6d46ef07ad647c",
+                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/7058e742fe69df703ba39c08d3ca62d0a297fa25",
+                "reference": "7058e742fe69df703ba39c08d3ca62d0a297fa25",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/bootforms": "~0.4.1",
+                "adamwathan/bootforms": "~0.4.2",
                 "dimsav/laravel-translatable": "~5.0.0",
                 "php": ">=5.4.0"
             },
@@ -3393,7 +3393,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2015-02-13 14:33:02"
+            "time": "2015-04-28 20:10:17"
         },
         {
             "name": "typicms/translations",
