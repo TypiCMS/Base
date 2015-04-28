@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aba0e46113ec82d9de16e9c0dea28ccc",
+    "hash": "1dad6aabe239e23a1749013fcf95e982",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1902,16 +1902,16 @@
         },
         {
             "name": "patchwork/utf8",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tchwork/utf8.git",
-                "reference": "01f0ed1628db7794e2d4e336f55a09daef4248a5"
+                "reference": "7287a6fb2c46a66ac6bfbaf0e4975229b27efcba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tchwork/utf8/zipball/01f0ed1628db7794e2d4e336f55a09daef4248a5",
-                "reference": "01f0ed1628db7794e2d4e336f55a09daef4248a5",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/7287a6fb2c46a66ac6bfbaf0e4975229b27efcba",
+                "reference": "7287a6fb2c46a66ac6bfbaf0e4975229b27efcba",
                 "shasum": ""
             },
             "require": {
@@ -1955,7 +1955,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2015-01-29 08:36:50"
+            "time": "2015-04-26 09:51:43"
         },
         {
             "name": "psr/log",
@@ -2884,20 +2884,20 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "v2.0.9",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "882e01d2b326490288451e2160d5135c65830ffa"
+                "reference": "ac1b82c48f5c5501b00d2a4f6218bd5a57472007"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/882e01d2b326490288451e2160d5135c65830ffa",
-                "reference": "882e01d2b326490288451e2160d5135c65830ffa",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/ac1b82c48f5c5501b00d2a4f6218bd5a57472007",
+                "reference": "ac1b82c48f5c5501b00d2a4f6218bd5a57472007",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -2912,20 +2912,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 10:57:17"
+            "time": "2015-04-28 08:40:14"
         },
         {
             "name": "typicms/core",
-            "version": "v2.0.29",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "36b518f369d432d6433b282acf05df42d496319a"
+                "reference": "04131dd4a29e58ad3e9823390b1b06fbabd7ee4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/36b518f369d432d6433b282acf05df42d496319a",
-                "reference": "36b518f369d432d6433b282acf05df42d496319a",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/04131dd4a29e58ad3e9823390b1b06fbabd7ee4e",
+                "reference": "04131dd4a29e58ad3e9823390b1b06fbabd7ee4e",
                 "shasum": ""
             },
             "require": {
@@ -2948,24 +2948,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-25 12:47:00"
+            "time": "2015-04-28 08:48:03"
         },
         {
             "name": "typicms/dashboard",
-            "version": "v2.0.5",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
-                "reference": "a913761938a53574baa068436b13bc95b53546ef"
+                "reference": "e621f5a573dc78ec76b82a69ee0014b8ba953ca6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/a913761938a53574baa068436b13bc95b53546ef",
-                "reference": "a913761938a53574baa068436b13bc95b53546ef",
+                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/e621f5a573dc78ec76b82a69ee0014b8ba953ca6",
+                "reference": "e621f5a573dc78ec76b82a69ee0014b8ba953ca6",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -2980,24 +2980,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-09 16:19:28"
+            "time": "2015-04-28 08:39:57"
         },
         {
             "name": "typicms/files",
-            "version": "v2.0.8",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "e9bfbd40ab5ed25bf8c6afedc5b730c36e01cab0"
+                "reference": "35acd6036ffc18895c0cb783cf212d8be66902d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/e9bfbd40ab5ed25bf8c6afedc5b730c36e01cab0",
-                "reference": "e9bfbd40ab5ed25bf8c6afedc5b730c36e01cab0",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/35acd6036ffc18895c0cb783cf212d8be66902d5",
+                "reference": "35acd6036ffc18895c0cb783cf212d8be66902d5",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3012,24 +3012,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 11:04:49"
+            "time": "2015-04-28 08:39:50"
         },
         {
             "name": "typicms/galleries",
-            "version": "v2.0.13",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Galleries.git",
-                "reference": "eb12e0e47b1a6d2daaea5bf23d7f32122218059a"
+                "reference": "d019722c200c3d2a8232f58a669e81594dbdf161"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/eb12e0e47b1a6d2daaea5bf23d7f32122218059a",
-                "reference": "eb12e0e47b1a6d2daaea5bf23d7f32122218059a",
+                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/d019722c200c3d2a8232f58a669e81594dbdf161",
+                "reference": "d019722c200c3d2a8232f58a669e81594dbdf161",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3044,24 +3044,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 11:04:53"
+            "time": "2015-04-28 08:44:06"
         },
         {
             "name": "typicms/groups",
-            "version": "v2.0.5",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Groups.git",
-                "reference": "8e166d0ea3af7b3ad7ec7eea52f6d807237b2dc3"
+                "reference": "fcd66784d355dbcd275b05bc9160f46d164e9f0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/8e166d0ea3af7b3ad7ec7eea52f6d807237b2dc3",
-                "reference": "8e166d0ea3af7b3ad7ec7eea52f6d807237b2dc3",
+                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/fcd66784d355dbcd275b05bc9160f46d164e9f0d",
+                "reference": "fcd66784d355dbcd275b05bc9160f46d164e9f0d",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3076,24 +3076,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 11:04:58"
+            "time": "2015-04-28 08:39:42"
         },
         {
             "name": "typicms/history",
-            "version": "v2.0.5",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
-                "reference": "dec2637a61dbf01f763eb8ec9d4d798401a2f531"
+                "reference": "36731f692d86120bbe358092773191a4cc60726b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/History/zipball/dec2637a61dbf01f763eb8ec9d4d798401a2f531",
-                "reference": "dec2637a61dbf01f763eb8ec9d4d798401a2f531",
+                "url": "https://api.github.com/repos/TypiCMS/History/zipball/36731f692d86120bbe358092773191a4cc60726b",
+                "reference": "36731f692d86120bbe358092773191a4cc60726b",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3108,24 +3108,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-21 08:35:58"
+            "time": "2015-04-28 08:39:38"
         },
         {
             "name": "typicms/menulinks",
-            "version": "v2.0.9",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menulinks.git",
-                "reference": "03381af79f7f741a790747f1f224b3957ed7e8a4"
+                "reference": "bd5b3417eb2ecf807c64b5db27858aafdc9fb358"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/03381af79f7f741a790747f1f224b3957ed7e8a4",
-                "reference": "03381af79f7f741a790747f1f224b3957ed7e8a4",
+                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/bd5b3417eb2ecf807c64b5db27858aafdc9fb358",
+                "reference": "bd5b3417eb2ecf807c64b5db27858aafdc9fb358",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3140,25 +3140,25 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 11:05:10"
+            "time": "2015-04-28 08:39:35"
         },
         {
             "name": "typicms/menus",
-            "version": "v2.0.19",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "55d62055e563c665c72efa91ce5c9c90bbb7f54d"
+                "reference": "e8c9ba021602dd5c4f5bd7d73b42a45ae82cfe06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/55d62055e563c665c72efa91ce5c9c90bbb7f54d",
-                "reference": "55d62055e563c665c72efa91ce5c9c90bbb7f54d",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/e8c9ba021602dd5c4f5bd7d73b42a45ae82cfe06",
+                "reference": "e8c9ba021602dd5c4f5bd7d73b42a45ae82cfe06",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0",
-                "typicms/menulinks": "~2.0.8"
+                "typicms/core": "~2.1.0",
+                "typicms/menulinks": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3173,7 +3173,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 11:07:32"
+            "time": "2015-04-28 08:50:04"
         },
         {
             "name": "typicms/nestablecollection",
@@ -3222,20 +3222,20 @@
         },
         {
             "name": "typicms/pages",
-            "version": "v2.0.21",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "edcca1983af2f418872adf871addfb898117260d"
+                "reference": "d94ae2e5a5da85ad19ca8faad9847bd0b6b9f635"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/edcca1983af2f418872adf871addfb898117260d",
-                "reference": "edcca1983af2f418872adf871addfb898117260d",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/d94ae2e5a5da85ad19ca8faad9847bd0b6b9f635",
+                "reference": "d94ae2e5a5da85ad19ca8faad9847bd0b6b9f635",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3250,25 +3250,25 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 11:06:04"
+            "time": "2015-04-28 08:45:42"
         },
         {
             "name": "typicms/settings",
-            "version": "v2.0.8",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
-                "reference": "c96448628f081f6d9b9d869b598952cffa65464c"
+                "reference": "3bf5ef22c876025a5e5a020d211e074d9a25bbee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/c96448628f081f6d9b9d869b598952cffa65464c",
-                "reference": "c96448628f081f6d9b9d869b598952cffa65464c",
+                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/3bf5ef22c876025a5e5a020d211e074d9a25bbee",
+                "reference": "3bf5ef22c876025a5e5a020d211e074d9a25bbee",
                 "shasum": ""
             },
             "require": {
                 "heybigname/backup-manager": "~0.3",
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3283,25 +3283,25 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 19:50:23"
+            "time": "2015-04-28 08:39:08"
         },
         {
             "name": "typicms/sitemap",
-            "version": "v2.0.3",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
-                "reference": "aef93abe32c35b834c394cd3c3f798afdb8f93c3"
+                "reference": "55415310ca904b4167fe3d638b177529b79d13ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/aef93abe32c35b834c394cd3c3f798afdb8f93c3",
-                "reference": "aef93abe32c35b834c394cd3c3f798afdb8f93c3",
+                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/55415310ca904b4167fe3d638b177529b79d13ef",
+                "reference": "55415310ca904b4167fe3d638b177529b79d13ef",
                 "shasum": ""
             },
             "require": {
                 "roumen/sitemap": "~2.4.6",
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3316,24 +3316,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-03-25 10:36:28"
+            "time": "2015-04-28 08:39:02"
         },
         {
             "name": "typicms/tags",
-            "version": "v2.0.7",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "2a43334fd0b167a735877c38ccf9276490a22c58"
+                "reference": "6734239720eb9a4f31a7a1f5a62459ebb5f1a08e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/2a43334fd0b167a735877c38ccf9276490a22c58",
-                "reference": "2a43334fd0b167a735877c38ccf9276490a22c58",
+                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/6734239720eb9a4f31a7a1f5a62459ebb5f1a08e",
+                "reference": "6734239720eb9a4f31a7a1f5a62459ebb5f1a08e",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3348,7 +3348,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 11:06:32"
+            "time": "2015-04-28 08:47:23"
         },
         {
             "name": "typicms/translatablebootforms",
@@ -3397,20 +3397,20 @@
         },
         {
             "name": "typicms/translations",
-            "version": "v2.0.7",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
-                "reference": "147e6c426d0738ba63c1d0d422030adfbd525ad7"
+                "reference": "9578f72c147e1283148ad54f3b75a4b8270b5af8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/147e6c426d0738ba63c1d0d422030adfbd525ad7",
-                "reference": "147e6c426d0738ba63c1d0d422030adfbd525ad7",
+                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/9578f72c147e1283148ad54f3b75a4b8270b5af8",
+                "reference": "9578f72c147e1283148ad54f3b75a4b8270b5af8",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3425,24 +3425,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 11:06:36"
+            "time": "2015-04-28 08:38:55"
         },
         {
             "name": "typicms/users",
-            "version": "v2.0.6",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "bf6593cb62c180238d5225c334b07590a50cce68"
+                "reference": "719d8205544044424bae4dc6a1b0d36e1ec5ab91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/bf6593cb62c180238d5225c334b07590a50cce68",
-                "reference": "bf6593cb62c180238d5225c334b07590a50cce68",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/719d8205544044424bae4dc6a1b0d36e1ec5ab91",
+                "reference": "719d8205544044424bae4dc6a1b0d36e1ec5ab91",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.0.0"
+                "typicms/core": "~2.1.0"
             },
             "type": "library",
             "autoload": {
@@ -3457,7 +3457,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-24 20:21:49"
+            "time": "2015-04-28 08:38:23"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3600,6 +3600,50 @@
                 "instantiate"
             ],
             "time": "2014-10-13 12:58:55"
+        },
+        {
+            "name": "laracasts/generators",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/Laravel-5-Generators-Extended.git",
+                "reference": "f1596fa3afc26221fc83549989769322f5cc162d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/Laravel-5-Generators-Extended/zipball/f1596fa3afc26221fc83549989769322f5cc162d",
+                "reference": "f1596fa3afc26221fc83549989769322f5cc162d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laracasts\\Generators\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Extend Laravel 5's generators.",
+            "keywords": [
+                "generators",
+                "laravel"
+            ],
+            "time": "2015-03-02 19:20:34"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -3764,16 +3808,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5"
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
                 "shasum": ""
             },
             "require": {
@@ -3820,7 +3864,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-03-27 19:31:25"
+            "time": "2015-04-27 22:15:08"
         },
         {
             "name": "phpunit/php-code-coverage",
