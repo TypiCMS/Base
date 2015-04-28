@@ -39,6 +39,7 @@ CKEDITOR.editorConfig = function( config ) {
 
     // config.forcePasteAsPlainText = true;
     config.contentsCss = ['/css/public.css', '/components/ckeditor/css/content.css'];
+    config.allowedContent = true;
 
     // codemirror
     config.codemirror = {
@@ -58,3 +59,5 @@ CKEDITOR.editorConfig = function( config ) {
     config.filebrowserWindowHeight = 500;
 
 };
+CKEDITOR.dtd.$removeEmpty.span = 0;
+CKEDITOR.dtd.$removeEmpty.i = 0;
