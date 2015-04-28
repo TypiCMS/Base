@@ -1,3 +1,10 @@
+CKEDITOR.dtd.$removeEmpty.span = 0;
+CKEDITOR.dtd.$removeEmpty.i = 0;
+CKEDITOR.stylesSet.add( 'typicms_styles', [
+    { name: 'Default button', element: 'a', attributes: { 'class': 'btn btn-default' } },
+    { name: 'Primary button', element: 'a', attributes: { 'class': 'btn btn-primary' } }
+]);
+
 CKEDITOR.editorConfig = function( config ) {
     config.toolbar = [
         { name: 'styles', items: [ 'Format', 'Styles', 'Font', 'FontSize' ] },
@@ -18,6 +25,8 @@ CKEDITOR.editorConfig = function( config ) {
     config.qtWidth = '100%', // Width of inserted table
     config.qtCellPadding = '0', // Cell padding table
     config.qtCellSpacing = '0', // Cell spacing table
+
+    config.stylesSet = 'typicms_styles';
 
     // Remove some buttons provided by the standard plugins, which are
     // not needed in the Standard(s) toolbar.
@@ -59,5 +68,3 @@ CKEDITOR.editorConfig = function( config ) {
     config.filebrowserWindowHeight = 500;
 
 };
-CKEDITOR.dtd.$removeEmpty.span = 0;
-CKEDITOR.dtd.$removeEmpty.i = 0;
