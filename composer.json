@@ -13,6 +13,7 @@
     "type": "project",
     "require": {
         "laravel/framework": "~5.0.28",
+        "barryvdh/laravel-debugbar": "~2.0",
         "cartalyst/sentry": "dev-feature/laravel-5",
         "cviebrock/image-validator": "~2.0.0",
         "edvinaskrucas/notification": "~5.0.0",
@@ -38,7 +39,6 @@
         "typicms/users": "~2.1.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "~2.0",
         "laracasts/generators": "~1.1",
         "phpunit/phpunit": "~4.5",
         "phpspec/phpspec": "~2.1"

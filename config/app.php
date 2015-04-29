@@ -219,6 +219,7 @@ return [
 		'FileUpload'      => 'TypiCMS\Facades\FileUpload',
 		'TypiCMS'         => 'TypiCMS\Facades\TypiCMS',
 
+		'Debugbar'        => 'Barryvdh\Debugbar\Facade',
 		'BootForm'        => 'AdamWathan\BootForms\Facades\BootForm',
 		'Form'            => 'AdamWathan\Form\Facades\Form',
 		'Croppa'          => 'Bkwld\Croppa\Facade',
