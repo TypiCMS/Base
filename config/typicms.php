@@ -10,7 +10,9 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | HTML Cache system (each page is saved in a flat html file) - beta
+    | Save each front office page in public/html as flat html file.
+    | Pages are generated only when debug is off and no user is connected.
+    | Eloquent save and delete events empty html directory.
     |--------------------------------------------------------------------------
     */
     'html_cache' => false,
