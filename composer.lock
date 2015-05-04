@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "998a91ff5c287dea0b78b159b9584357",
+    "hash": "4f4adbf8e358e3cb43c37c55244eb37c",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -50,26 +50,26 @@
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.5.2",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "52edf41529ebe71385599c1ad5259307dea9f8eb"
+                "reference": "cff7aff5a7f7e213091053d2134d3db0d605f2fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/52edf41529ebe71385599c1ad5259307dea9f8eb",
-                "reference": "52edf41529ebe71385599c1ad5259307dea9f8eb",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/cff7aff5a7f7e213091053d2134d3db0d605f2fc",
+                "reference": "cff7aff5a7f7e213091053d2134d3db0d605f2fc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "codeclimate/php-test-reporter": "0.1.*@dev",
                 "illuminate/support": "4.*",
                 "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -88,7 +88,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2015-04-28 18:04:06"
+            "time": "2015-04-30 17:54:36"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1458,16 +1458,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v1.2.2",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "08f97eb4efa029e2fafb6d8c98b71731bf0cf621"
+                "reference": "dff239267fd1befa1cd40430c9ed12591aa720ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/08f97eb4efa029e2fafb6d8c98b71731bf0cf621",
-                "reference": "08f97eb4efa029e2fafb6d8c98b71731bf0cf621",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dff239267fd1befa1cd40430c9ed12591aa720ca",
+                "reference": "dff239267fd1befa1cd40430c9ed12591aa720ca",
                 "shasum": ""
             },
             "require": {
@@ -1477,7 +1477,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -1499,7 +1499,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2015-04-03 14:33:59"
+            "time": "2015-05-02 15:40:40"
         },
         {
             "name": "psr/log",
@@ -2460,16 +2460,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.1.3",
+            "version": "v2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "b03049a1018ccae65bd2cba8105a9623dca19135"
+                "reference": "9475a83ac1bf944b8dcb0989366ec703ba73cda9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/b03049a1018ccae65bd2cba8105a9623dca19135",
-                "reference": "b03049a1018ccae65bd2cba8105a9623dca19135",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/9475a83ac1bf944b8dcb0989366ec703ba73cda9",
+                "reference": "9475a83ac1bf944b8dcb0989366ec703ba73cda9",
                 "shasum": ""
             },
             "require": {
@@ -2492,7 +2492,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-29 12:23:27"
+            "time": "2015-05-04 14:46:01"
         },
         {
             "name": "typicms/dashboard",
@@ -3657,16 +3657,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.6.5",
+            "version": "4.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1c54dd1d9a782d7c8715bb3604cde7b6e23c2614"
+                "reference": "3afe303d873a4d64c62ef84de491b97b006fbdac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c54dd1d9a782d7c8715bb3604cde7b6e23c2614",
-                "reference": "1c54dd1d9a782d7c8715bb3604cde7b6e23c2614",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3afe303d873a4d64c62ef84de491b97b006fbdac",
+                "reference": "3afe303d873a4d64c62ef84de491b97b006fbdac",
                 "shasum": ""
             },
             "require": {
@@ -3725,7 +3725,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-29 05:04:43"
+            "time": "2015-04-29 15:18:52"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
