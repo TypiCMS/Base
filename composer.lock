@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "31ea424b44bbdf4faf805d25b4845c23",
+    "hash": "e6993c86781bd984cb13174698983502",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1092,16 +1092,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.28",
+            "version": "v5.0.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "06a09429322cf53e5bd4587db1060f02a291562e"
+                "reference": "aa7046645e094b0134a4125cce6694f4b076ac62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/06a09429322cf53e5bd4587db1060f02a291562e",
-                "reference": "06a09429322cf53e5bd4587db1060f02a291562e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/aa7046645e094b0134a4125cce6694f4b076ac62",
+                "reference": "aa7046645e094b0134a4125cce6694f4b076ac62",
                 "shasum": ""
             },
             "require": {
@@ -1214,7 +1214,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-04-21 01:44:32"
+            "time": "2015-05-08 12:57:10"
         },
         {
             "name": "league/flysystem",
@@ -3175,16 +3175,16 @@
         },
         {
             "name": "typicms/users",
-            "version": "v2.1.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "06940a6004cff69344d2309243a34d5e5a252440"
+                "reference": "5b5240e723266a901a77099ea74b8e4c4db37402"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/06940a6004cff69344d2309243a34d5e5a252440",
-                "reference": "06940a6004cff69344d2309243a34d5e5a252440",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/5b5240e723266a901a77099ea74b8e4c4db37402",
+                "reference": "5b5240e723266a901a77099ea74b8e4c4db37402",
                 "shasum": ""
             },
             "require": {
@@ -3203,7 +3203,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-04 20:39:43"
+            "time": "2015-05-08 13:49:49"
         },
         {
             "name": "vlucas/phpdotenv",
