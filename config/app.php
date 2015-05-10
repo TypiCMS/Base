@@ -166,7 +166,7 @@ return [
 		/*
 		 * TypiCMS Service Providers...
 		 */
-		'TypiCMS\Providers\CoreServiceProvider',
+		'TypiCMS\Modules\Core\Providers\ModuleProvider',
 		'TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider',
 	],
 
@@ -216,8 +216,8 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
-		'FileUpload'      => 'TypiCMS\Facades\FileUpload',
-		'TypiCMS'         => 'TypiCMS\Facades\TypiCMS',
+		'FileUpload'      => 'TypiCMS\Modules\Core\Facades\FileUpload',
+		'TypiCMS'         => 'TypiCMS\Modules\Core\Facades\TypiCMS',
 
 		'Debugbar'        => 'Barryvdh\Debugbar\Facade',
 		'BootForm'        => 'AdamWathan\BootForms\Facades\BootForm',
