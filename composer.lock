@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba9aa1fcdf3943b9e98858737d56dfd1",
+    "hash": "47907c671a91cdd2bf8f39fe124d077d",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1045,6 +1045,52 @@
                 "tokenizer"
             ],
             "time": "2015-03-11 20:06:43"
+        },
+        {
+            "name": "laracasts/presenter",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/Presenter.git",
+                "reference": "b284f3137f990efd6e95df49d254f1ccc4541e92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/Presenter/zipball/b284f3137f990efd6e95df49d254f1ccc4541e92",
+                "reference": "b284f3137f990efd6e95df49d254f1ccc4541e92",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Laracasts\\Presenter": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Simple view presenters",
+            "keywords": [
+                "laravel",
+                "presenter",
+                "view"
+            ],
+            "time": "2014-09-13 13:18:07"
         },
         {
             "name": "laracasts/utilities",
@@ -2631,20 +2677,20 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "ac1b82c48f5c5501b00d2a4f6218bd5a57472007"
+                "reference": "4ee3bbb284dba404a0e9d27fd8500e33f0873a5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/ac1b82c48f5c5501b00d2a4f6218bd5a57472007",
-                "reference": "ac1b82c48f5c5501b00d2a4f6218bd5a57472007",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/4ee3bbb284dba404a0e9d27fd8500e33f0873a5b",
+                "reference": "4ee3bbb284dba404a0e9d27fd8500e33f0873a5b",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2653,26 +2699,29 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 08:40:14"
+            "time": "2015-05-10 14:20:24"
         },
         {
             "name": "typicms/core",
-            "version": "v2.1.7",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "9475a83ac1bf944b8dcb0989366ec703ba73cda9"
+                "reference": "0ecbbd295a6469f13dec90388649fd8080ce792a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/9475a83ac1bf944b8dcb0989366ec703ba73cda9",
-                "reference": "9475a83ac1bf944b8dcb0989366ec703ba73cda9",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/0ecbbd295a6469f13dec90388649fd8080ce792a",
+                "reference": "0ecbbd295a6469f13dec90388649fd8080ce792a",
                 "shasum": ""
             },
             "require": {
@@ -2685,34 +2734,37 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "TypiCMS\\": "src/"
+                    "TypiCMS\\Modules\\Core\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-04 14:46:01"
+            "time": "2015-05-10 14:12:03"
         },
         {
             "name": "typicms/dashboard",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
-                "reference": "a6d17ca080e94294fae4c5e2c4695cc6e7cbd69c"
+                "reference": "2ed5d1069eb90993a466cd0d7e3f0d30d8e0063a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/a6d17ca080e94294fae4c5e2c4695cc6e7cbd69c",
-                "reference": "a6d17ca080e94294fae4c5e2c4695cc6e7cbd69c",
+                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/2ed5d1069eb90993a466cd0d7e3f0d30d8e0063a",
+                "reference": "2ed5d1069eb90993a466cd0d7e3f0d30d8e0063a",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2721,30 +2773,33 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-29 13:05:49"
+            "time": "2015-05-10 14:20:40"
         },
         {
             "name": "typicms/files",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "35acd6036ffc18895c0cb783cf212d8be66902d5"
+                "reference": "5d2b7d93e28227b66e397786030c41a55b26e04a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/35acd6036ffc18895c0cb783cf212d8be66902d5",
-                "reference": "35acd6036ffc18895c0cb783cf212d8be66902d5",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/5d2b7d93e28227b66e397786030c41a55b26e04a",
+                "reference": "5d2b7d93e28227b66e397786030c41a55b26e04a",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2753,30 +2808,33 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 08:39:50"
+            "time": "2015-05-10 14:20:47"
         },
         {
             "name": "typicms/galleries",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Galleries.git",
-                "reference": "d019722c200c3d2a8232f58a669e81594dbdf161"
+                "reference": "ce28a145c3cd2b628bef928482118be1d00f4613"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/d019722c200c3d2a8232f58a669e81594dbdf161",
-                "reference": "d019722c200c3d2a8232f58a669e81594dbdf161",
+                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/ce28a145c3cd2b628bef928482118be1d00f4613",
+                "reference": "ce28a145c3cd2b628bef928482118be1d00f4613",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2785,30 +2843,33 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 08:44:06"
+            "time": "2015-05-10 14:20:51"
         },
         {
             "name": "typicms/groups",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Groups.git",
-                "reference": "023486a2f4bc8b0d8b38b6d7f8d9896c155b9b70"
+                "reference": "5401031b82dfb4a35f51149f45fd3dc771d4e35f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/023486a2f4bc8b0d8b38b6d7f8d9896c155b9b70",
-                "reference": "023486a2f4bc8b0d8b38b6d7f8d9896c155b9b70",
+                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/5401031b82dfb4a35f51149f45fd3dc771d4e35f",
+                "reference": "5401031b82dfb4a35f51149f45fd3dc771d4e35f",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2817,30 +2878,33 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-04 20:39:52"
+            "time": "2015-05-10 14:20:54"
         },
         {
             "name": "typicms/history",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
-                "reference": "36731f692d86120bbe358092773191a4cc60726b"
+                "reference": "ced04cb72dc7cc46215d7a8748cd63a7247b4aae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/History/zipball/36731f692d86120bbe358092773191a4cc60726b",
-                "reference": "36731f692d86120bbe358092773191a4cc60726b",
+                "url": "https://api.github.com/repos/TypiCMS/History/zipball/ced04cb72dc7cc46215d7a8748cd63a7247b4aae",
+                "reference": "ced04cb72dc7cc46215d7a8748cd63a7247b4aae",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2849,30 +2913,33 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 08:39:38"
+            "time": "2015-05-10 14:20:58"
         },
         {
             "name": "typicms/menulinks",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menulinks.git",
-                "reference": "bd5b3417eb2ecf807c64b5db27858aafdc9fb358"
+                "reference": "051341f3a85a7604544943748d796c878725d3c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/bd5b3417eb2ecf807c64b5db27858aafdc9fb358",
-                "reference": "bd5b3417eb2ecf807c64b5db27858aafdc9fb358",
+                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/051341f3a85a7604544943748d796c878725d3c4",
+                "reference": "051341f3a85a7604544943748d796c878725d3c4",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2881,31 +2948,34 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 08:39:35"
+            "time": "2015-05-10 14:21:02"
         },
         {
             "name": "typicms/menus",
-            "version": "v2.1.2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "ab798724b99b92cf1da937d6455c28b11619f47e"
+                "reference": "1c50647333cac2b5cc6a9a6719c5239348a8c415"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/ab798724b99b92cf1da937d6455c28b11619f47e",
-                "reference": "ab798724b99b92cf1da937d6455c28b11619f47e",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/1c50647333cac2b5cc6a9a6719c5239348a8c415",
+                "reference": "1c50647333cac2b5cc6a9a6719c5239348a8c415",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0",
-                "typicms/menulinks": "~2.1.0"
+                "typicms/core": "~2.2.0",
+                "typicms/menulinks": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2914,13 +2984,16 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-04 20:48:41"
+            "time": "2015-05-10 14:21:06"
         },
         {
             "name": "typicms/nestablecollection",
@@ -2969,20 +3042,20 @@
         },
         {
             "name": "typicms/pages",
-            "version": "v2.1.2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "662560d7c5a9ad93ee3ea083eae788db63c31095"
+                "reference": "53b1fc58e75ff6e6c4945cd6fabda091fa9c8ef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/662560d7c5a9ad93ee3ea083eae788db63c31095",
-                "reference": "662560d7c5a9ad93ee3ea083eae788db63c31095",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/53b1fc58e75ff6e6c4945cd6fabda091fa9c8ef1",
+                "reference": "53b1fc58e75ff6e6c4945cd6fabda091fa9c8ef1",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -2991,30 +3064,33 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 14:39:47"
+            "time": "2015-05-10 14:21:15"
         },
         {
             "name": "typicms/settings",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
-                "reference": "af8442083a4aabf29827f930cc44094f75bdb474"
+                "reference": "dfa549223c77515676a654b6dec695997a210164"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/af8442083a4aabf29827f930cc44094f75bdb474",
-                "reference": "af8442083a4aabf29827f930cc44094f75bdb474",
+                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/dfa549223c77515676a654b6dec695997a210164",
+                "reference": "dfa549223c77515676a654b6dec695997a210164",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -3023,31 +3099,34 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-29 12:57:33"
+            "time": "2015-05-10 14:21:29"
         },
         {
             "name": "typicms/sitemap",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
-                "reference": "55415310ca904b4167fe3d638b177529b79d13ef"
+                "reference": "61655d0e57ec7df62201548ccbb7f6f058914de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/55415310ca904b4167fe3d638b177529b79d13ef",
-                "reference": "55415310ca904b4167fe3d638b177529b79d13ef",
+                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/61655d0e57ec7df62201548ccbb7f6f058914de3",
+                "reference": "61655d0e57ec7df62201548ccbb7f6f058914de3",
                 "shasum": ""
             },
             "require": {
                 "roumen/sitemap": "~2.4.6",
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -3056,30 +3135,33 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 08:39:02"
+            "time": "2015-05-10 14:21:32"
         },
         {
             "name": "typicms/tags",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "6734239720eb9a4f31a7a1f5a62459ebb5f1a08e"
+                "reference": "86bcd9887ef283583f8edf46111daa78d1b70f07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/6734239720eb9a4f31a7a1f5a62459ebb5f1a08e",
-                "reference": "6734239720eb9a4f31a7a1f5a62459ebb5f1a08e",
+                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/86bcd9887ef283583f8edf46111daa78d1b70f07",
+                "reference": "86bcd9887ef283583f8edf46111daa78d1b70f07",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -3088,13 +3170,16 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 08:47:23"
+            "time": "2015-05-10 14:21:35"
         },
         {
             "name": "typicms/translatablebootforms",
@@ -3143,20 +3228,20 @@
         },
         {
             "name": "typicms/translations",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
-                "reference": "9578f72c147e1283148ad54f3b75a4b8270b5af8"
+                "reference": "49060784cdfce475fd4effc16495216f7e8ccd82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/9578f72c147e1283148ad54f3b75a4b8270b5af8",
-                "reference": "9578f72c147e1283148ad54f3b75a4b8270b5af8",
+                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/49060784cdfce475fd4effc16495216f7e8ccd82",
+                "reference": "49060784cdfce475fd4effc16495216f7e8ccd82",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -3165,30 +3250,33 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-04-28 08:38:55"
+            "time": "2015-05-10 14:21:39"
         },
         {
             "name": "typicms/users",
-            "version": "v2.1.2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "5b5240e723266a901a77099ea74b8e4c4db37402"
+                "reference": "3d254bacd8d546dc57c3150f9186d11129564378"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/5b5240e723266a901a77099ea74b8e4c4db37402",
-                "reference": "5b5240e723266a901a77099ea74b8e4c4db37402",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/3d254bacd8d546dc57c3150f9186d11129564378",
+                "reference": "3d254bacd8d546dc57c3150f9186d11129564378",
                 "shasum": ""
             },
             "require": {
-                "typicms/core": "~2.1.0"
+                "typicms/core": "~2.2.0"
             },
             "type": "library",
             "autoload": {
@@ -3197,13 +3285,16 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-08 13:49:49"
+            "time": "2015-05-10 14:21:43"
         },
         {
             "name": "vlucas/phpdotenv",
