@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "97cdb625b886c1181b89102f1698482a",
+    "hash": "77a60c9b0f92b37f92d66037ffe154d7",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -146,16 +146,16 @@
         },
         {
             "name": "bkwld/croppa",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
-                "reference": "5827cdf00f69f867e88c1459c4037671f10b078c"
+                "reference": "5ab0c620a70da1e6459e2aa8c3d53570383a3a34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/5827cdf00f69f867e88c1459c4037671f10b078c",
-                "reference": "5827cdf00f69f867e88c1459c4037671f10b078c",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/5ab0c620a70da1e6459e2aa8c3d53570383a3a34",
+                "reference": "5ab0c620a70da1e6459e2aa8c3d53570383a3a34",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "php": ">=5.4.0",
                 "symfony/http-foundation": "~2.0",
                 "symfony/http-kernel": "~2.0",
-                "weotch/phpthumb": "~1.0"
+                "weotch/phpthumb": ">=1.0.5,<2"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
@@ -187,7 +187,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "time": "2015-04-14 17:27:24"
+            "time": "2015-05-12 23:06:39"
         },
         {
             "name": "cartalyst/sentry",
@@ -1138,16 +1138,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "5.0.30",
+            "version": "v5.0.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c7ffbf1fd4895ac4cdac551265d635d995346d97"
+                "reference": "db0a7400465df159ba8c6eaa954f97f50bc19687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c7ffbf1fd4895ac4cdac551265d635d995346d97",
-                "reference": "c7ffbf1fd4895ac4cdac551265d635d995346d97",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/db0a7400465df159ba8c6eaa954f97f50bc19687",
+                "reference": "db0a7400465df159ba8c6eaa954f97f50bc19687",
                 "shasum": ""
             },
             "require": {
@@ -1260,7 +1260,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-05-08 19:11:13"
+            "time": "2015-05-11 22:15:00"
         },
         {
             "name": "league/flysystem",
@@ -1347,21 +1347,20 @@
         },
         {
             "name": "maatwebsite/laravel-sidebar",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Sidebar.git",
-                "reference": "0d0eb5602a4ce60e8f2caf1924070ee74ee9ea22"
+                "reference": "c778063fb6ee82cfbab2afce26bd59b34db2b40d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/0d0eb5602a4ce60e8f2caf1924070ee74ee9ea22",
-                "reference": "0d0eb5602a4ce60e8f2caf1924070ee74ee9ea22",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/c778063fb6ee82cfbab2afce26bd59b34db2b40d",
+                "reference": "c778063fb6ee82cfbab2afce26bd59b34db2b40d",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "~5.0",
-                "illuminate/html": "~5.0",
                 "illuminate/support": "~5.0",
                 "illuminate/view": "~5.0",
                 "php": ">=5.4.0"
@@ -1390,7 +1389,7 @@
                 "acp",
                 "laravel"
             ],
-            "time": "2015-03-18 17:53:29"
+            "time": "2015-05-13 20:56:56"
         },
         {
             "name": "maximebf/debugbar",
@@ -2997,20 +2996,21 @@
         },
         {
             "name": "typicms/nestablecollection",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/NestableCollection.git",
-                "reference": "5c0fcf0ee3a06c40c363c4b5531874ccd4f3b93a"
+                "reference": "e75ed5efaf7cf8d98a44fd31e0435352a3bae0ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/5c0fcf0ee3a06c40c363c4b5531874ccd4f3b93a",
-                "reference": "5c0fcf0ee3a06c40c363c4b5531874ccd4f3b93a",
+                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/e75ed5efaf7cf8d98a44fd31e0435352a3bae0ff",
+                "reference": "e75ed5efaf7cf8d98a44fd31e0435352a3bae0ff",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "~4.2.0|~5.0.0"
+                "illuminate/database": "~4.2.0|~5.0",
+                "illuminate/support": "~4.2.0|~5.0"
             },
             "type": "library",
             "autoload": {
@@ -3038,7 +3038,7 @@
                 "nested set",
                 "tree"
             ],
-            "time": "2015-03-24 10:05:37"
+            "time": "2015-05-13 20:26:35"
         },
         {
             "name": "typicms/pages",
@@ -3349,16 +3349,16 @@
         },
         {
             "name": "weotch/phpthumb",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weotch/PHPThumb.git",
-                "reference": "316a472b9a00fb33450d46f463de62c0eadb876a"
+                "reference": "f5c1d2ef2e9de3bded7483778618bf8cac2511c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weotch/PHPThumb/zipball/316a472b9a00fb33450d46f463de62c0eadb876a",
-                "reference": "316a472b9a00fb33450d46f463de62c0eadb876a",
+                "url": "https://api.github.com/repos/weotch/PHPThumb/zipball/f5c1d2ef2e9de3bded7483778618bf8cac2511c3",
+                "reference": "f5c1d2ef2e9de3bded7483778618bf8cac2511c3",
                 "shasum": ""
             },
             "replace": {
@@ -3380,7 +3380,7 @@
                 }
             ],
             "description": "Fork of PHPThumb that adds auto-image rotation based on EXIF data and composer support",
-            "time": "2013-04-08 22:11:00"
+            "time": "2015-05-12 22:56:19"
         }
     ],
     "packages-dev": [
