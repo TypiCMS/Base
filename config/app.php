@@ -156,7 +156,6 @@ return [
 		'Krucas\Notification\NotificationServiceProvider',
 		'Laracasts\Utilities\JavaScript\JavascriptServiceProvider',
 		'Maatwebsite\Sidebar\SidebarServiceProvider',
-		'TypiCMS\Honeypot\HoneypotServiceProvider',
 
 		/*
 		 * TypiCMS Modules Service Providers...
@@ -223,7 +222,6 @@ return [
 		'BootForm'        => 'AdamWathan\BootForms\Facades\BootForm',
 		'Form'            => 'AdamWathan\Form\Facades\Form',
 		'Croppa'          => 'Bkwld\Croppa\Facade',
-		'Honeypot'        => 'TypiCMS\Honeypot\HoneypotFacade',
 		'Notification'    => 'Krucas\Notification\Facades\Notification',
 		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'Translatable'    => 'Dimsav\Translatable\Translatable',

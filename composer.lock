@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f1e8450e6b996f465ed340b6a5df8e19",
+    "hash": "9e90b1667d1a8177b9fa3785a45257d9",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -2827,56 +2827,6 @@
                 }
             ],
             "time": "2015-05-10 14:20:58"
-        },
-        {
-            "name": "typicms/honeypot",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TypiCMS/Honeypot.git",
-                "reference": "4d3913e6be57100bc07e6e23eab152a2da38ea09"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Honeypot/zipball/4d3913e6be57100bc07e6e23eab152a2da38ea09",
-                "reference": "4d3913e6be57100bc07e6e23eab152a2da38ea09",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/config": "~5.0",
-                "illuminate/support": "~5.0",
-                "illuminate/translation": "~5.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "4.0.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Honeypot\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "description": "Honeypot spam prevention for Laravel 5 / Lumen 1",
-            "keywords": [
-                "Forms",
-                "Honeypot",
-                "laravel",
-                "lumen",
-                "spam"
-            ],
-            "time": "2015-05-14 12:09:15"
         },
         {
             "name": "typicms/menulinks",
