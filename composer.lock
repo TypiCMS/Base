@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "77a60c9b0f92b37f92d66037ffe154d7",
+    "hash": "e90215a9d2f2dde6afc02220d45c869a",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -815,52 +815,6 @@
             "time": "2014-10-12 19:18:40"
         },
         {
-            "name": "illuminate/html",
-            "version": "v5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/html.git",
-                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/html/zipball/3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
-                "reference": "3d1009bb8e0f25720c914af5c1f4015dd373c9ef",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/http": "~5.0",
-                "illuminate/session": "~5.0",
-                "illuminate/support": "~5.0",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Html\\": ""
-                },
-                "files": [
-                    "helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "time": "2015-01-01 16:31:18"
-        },
-        {
             "name": "ircmaxell/password-compat",
             "version": "v1.0.4",
             "source": {
@@ -1519,55 +1473,6 @@
                 "psr-3"
             ],
             "time": "2015-03-09 09:58:04"
-        },
-        {
-            "name": "msurguy/honeypot",
-            "version": "0.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/msurguy/Honeypot.git",
-                "reference": "6d31740fce79271a4aa96b05847ddac60d46b304"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/6d31740fce79271a4aa96b05847ddac60d46b304",
-                "reference": "6d31740fce79271a4aa96b05847ddac60d46b304",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/config": "4.*|5.*",
-                "illuminate/support": "4.*|5.*",
-                "illuminate/translation": "4.*|5.*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "4.0.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Msurguy\\Honeypot\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Maksim Surguy",
-                    "email": "m.surguy@gmail.com"
-                }
-            ],
-            "description": "Honeypot spam prevention",
-            "keywords": [
-                "Forms",
-                "Honeypot",
-                "laravel",
-                "spam"
-            ],
-            "time": "2015-03-31 02:30:51"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -2922,6 +2827,56 @@
                 }
             ],
             "time": "2015-05-10 14:20:58"
+        },
+        {
+            "name": "typicms/honeypot",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Honeypot.git",
+                "reference": "4d3913e6be57100bc07e6e23eab152a2da38ea09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Honeypot/zipball/4d3913e6be57100bc07e6e23eab152a2da38ea09",
+                "reference": "4d3913e6be57100bc07e6e23eab152a2da38ea09",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5.0",
+                "illuminate/support": "~5.0",
+                "illuminate/translation": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Honeypot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "description": "Honeypot spam prevention for Laravel 5 / Lumen 1",
+            "keywords": [
+                "Forms",
+                "Honeypot",
+                "laravel",
+                "lumen",
+                "spam"
+            ],
+            "time": "2015-05-14 12:09:15"
         },
         {
             "name": "typicms/menulinks",
