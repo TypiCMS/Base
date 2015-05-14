@@ -3,6 +3,7 @@
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\Debug\Exception\FatalErrorException;
 
 class Handler extends ExceptionHandler {
@@ -26,6 +27,7 @@ class Handler extends ExceptionHandler {
 	 */
 	public function report(Exception $e)
 	{
+		Log::error($e);
 		return parent::report($e);
 	}
 
