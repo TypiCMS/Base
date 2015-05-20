@@ -657,26 +657,26 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "5.2.0",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "475b29ccd411f2fa8a408e64576418728c032cfa"
+                "reference": "f3c8c22471cb55475105c14769644a49c3262b93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/475b29ccd411f2fa8a408e64576418728c032cfa",
-                "reference": "475b29ccd411f2fa8a408e64576418728c032cfa",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f3c8c22471cb55475105c14769644a49c3262b93",
+                "reference": "f3c8c22471cb55475105c14769644a49c3262b93",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/ringphp": "~1.0",
+                "guzzlehttp/ringphp": "^1.1",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "~4.0",
-                "psr/log": "~1.0"
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -711,20 +711,20 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-01-28 01:03:29"
+            "time": "2015-05-20 03:47:55"
         },
         {
             "name": "guzzlehttp/ringphp",
-            "version": "1.0.7",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/RingPHP.git",
-                "reference": "52d868f13570a9a56e5fce6614e0ec75d0f13ac2"
+                "reference": "dbbb91d7f6c191e5e405e900e3102ac7f261bc0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/RingPHP/zipball/52d868f13570a9a56e5fce6614e0ec75d0f13ac2",
-                "reference": "52d868f13570a9a56e5fce6614e0ec75d0f13ac2",
+                "url": "https://api.github.com/repos/guzzle/RingPHP/zipball/dbbb91d7f6c191e5e405e900e3102ac7f261bc0b",
+                "reference": "dbbb91d7f6c191e5e405e900e3102ac7f261bc0b",
                 "shasum": ""
             },
             "require": {
@@ -742,7 +742,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -762,7 +762,7 @@
                 }
             ],
             "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
-            "time": "2015-03-30 01:43:20"
+            "time": "2015-05-20 03:37:09"
         },
         {
             "name": "guzzlehttp/streams",
@@ -2581,16 +2581,16 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "v2.2.0",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "4ee3bbb284dba404a0e9d27fd8500e33f0873a5b"
+                "reference": "6ca63a3caef8aa4b31d02d51e6ae568102478299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/4ee3bbb284dba404a0e9d27fd8500e33f0873a5b",
-                "reference": "4ee3bbb284dba404a0e9d27fd8500e33f0873a5b",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/6ca63a3caef8aa4b31d02d51e6ae568102478299",
+                "reference": "6ca63a3caef8aa4b31d02d51e6ae568102478299",
                 "shasum": ""
             },
             "require": {
@@ -2612,20 +2612,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-10 14:20:24"
+            "time": "2015-05-20 13:07:41"
         },
         {
             "name": "typicms/core",
-            "version": "v2.2.0",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "0ecbbd295a6469f13dec90388649fd8080ce792a"
+                "reference": "8272e7ae64a01e6b51f676d857af390ab03086fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/0ecbbd295a6469f13dec90388649fd8080ce792a",
-                "reference": "0ecbbd295a6469f13dec90388649fd8080ce792a",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/8272e7ae64a01e6b51f676d857af390ab03086fb",
+                "reference": "8272e7ae64a01e6b51f676d857af390ab03086fb",
                 "shasum": ""
             },
             "require": {
@@ -2651,7 +2651,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-10 14:12:03"
+            "time": "2015-05-20 12:25:43"
         },
         {
             "name": "typicms/dashboard",
@@ -2830,16 +2830,16 @@
         },
         {
             "name": "typicms/menulinks",
-            "version": "v2.2.0",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menulinks.git",
-                "reference": "051341f3a85a7604544943748d796c878725d3c4"
+                "reference": "45bbaea1bf470e09e9ffd10ed181934b304959ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/051341f3a85a7604544943748d796c878725d3c4",
-                "reference": "051341f3a85a7604544943748d796c878725d3c4",
+                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/45bbaea1bf470e09e9ffd10ed181934b304959ac",
+                "reference": "45bbaea1bf470e09e9ffd10ed181934b304959ac",
                 "shasum": ""
             },
             "require": {
@@ -2861,7 +2861,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-10 14:21:02"
+            "time": "2015-05-19 13:02:23"
         },
         {
             "name": "typicms/menus",
