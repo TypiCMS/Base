@@ -150,7 +150,6 @@ return [
 		 */
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Bkwld\Croppa\ServiceProvider',
-		'Cartalyst\Sentry\SentryServiceProvider',
 		'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		'Dimsav\Translatable\TranslatableServiceProvider',
 		'Krucas\Notification\NotificationServiceProvider',
@@ -223,7 +222,6 @@ return [
 		'Form'            => 'AdamWathan\Form\Facades\Form',
 		'Croppa'          => 'Bkwld\Croppa\Facade',
 		'Notification'    => 'Krucas\Notification\Facades\Notification',
-		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'Translatable'    => 'Dimsav\Translatable\Translatable',
 
 	],

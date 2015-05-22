@@ -185,9 +185,8 @@ Thumbnails are generated on the fly with [Croppa](https://github.com/BKWLD/cropp
 You can create as many galleries as you want, each gallery has many files.
 Galleries are linkable to any module item through a polymorphic many to many relation, for now only the news module is properly set up to support galleries.
 
-### Users and groups
+### Users
 
-[Sentry 2](https://cartalyst.com/manual/sentry) is used to manage users, groups and permissions.
 User registration can be enabled through the settings panel (/admin/settings).
 
 ### Blocks
