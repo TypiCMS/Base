@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e36abacd5e7c0841c064804f9303a20",
+    "hash": "74c9db30cb04df1fc6a6710792d2e7e1",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -248,57 +248,6 @@
                 "preload"
             ],
             "time": "2015-04-15 21:59:30"
-        },
-        {
-            "name": "cviebrock/image-validator",
-            "version": "2.0.0-beta",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cviebrock/image-validator.git",
-                "reference": "cd78e0fa6aeced2f4a0a61d8305d3cd160e5a3ee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/image-validator/zipball/cd78e0fa6aeced2f4a0a61d8305d3cd160e5a3ee",
-                "reference": "cd78e0fa6aeced2f4a0a61d8305d3cd160e5a3ee",
-                "shasum": ""
-            },
-            "require": {
-                "ext-gd": "*",
-                "illuminate/support": "5.*",
-                "illuminate/translation": "5.*",
-                "illuminate/validation": "5.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "dev-master",
-                "orchestra/testbench": "3.0.*",
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cviebrock\\ImageValidator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Colin Viebrock",
-                    "email": "colin@viebrock.ca"
-                }
-            ],
-            "description": "Custom Laravel Validator for image dimensions",
-            "homepage": "https://github.com/cviebrock/image-validator",
-            "keywords": [
-                "image",
-                "laravel",
-                "validator"
-            ],
-            "time": "2015-05-04 02:01:43"
         },
         {
             "name": "danielstjules/stringy",
@@ -4304,9 +4253,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
