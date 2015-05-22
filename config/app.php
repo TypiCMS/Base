@@ -150,7 +150,6 @@ return [
 		 */
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Bkwld\Croppa\ServiceProvider',
-		'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 		'Dimsav\Translatable\TranslatableServiceProvider',
 		'Krucas\Notification\NotificationServiceProvider',
 		'Laracasts\Utilities\JavaScript\JavascriptServiceProvider',
