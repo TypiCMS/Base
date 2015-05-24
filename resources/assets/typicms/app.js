@@ -7,14 +7,8 @@
 
     var lang = $('html').attr('lang');
 
-    angular.module('typicms', ['ngResource', 'smart-table', 'gettext', 'ui.tree'], function ($locationProvider) {
+    angular.module('typicms', ['ngResource', 'smart-table', 'ui.tree'], function ($locationProvider) {
         // $locationProvider.html5Mode(true);
-    });
-
-    angular.module('typicms').run(function (gettextCatalog) {
-        gettextCatalog.setCurrentLanguage(lang);
-        gettextCatalog.loadRemote("/languages/" + lang + ".json");
-        // gettextCatalog.debug = true;
     });
 
     angular.module('typicms').factory('$api', ['$location', '$resource', function ($location, $resource) {
