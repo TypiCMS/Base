@@ -28,7 +28,7 @@ return [
 	|
 	*/
 
-	'model' => 'App\User',
+	'model' => 'TypiCMS\Modules\Users\Models\User',
 
 	/*
 	|--------------------------------------------------------------------------
