@@ -1,0 +1,71 @@
+.fieldset-media {
+    .well();
+    div + div {
+        margin-top: 20px;
+    }
+}
+
+.thumbnails {
+    .thumbnails-title { margin-bottom: 0; }
+    .thumbnail { margin-top: 5px; }
+}
+
+.thumbnail {
+    cursor: default;
+    float: left;
+    margin: 10px;
+    display: block;
+    position: relative;
+    width: 140px;
+    transition: none;
+    .caption {
+        font-size: 12px;
+        padding: 0;
+        margin-top: 1px;
+        height: 64px;
+        overflow: scroll;
+        line-height: 16px;
+        text-overflow: ellipsis;
+    }
+    input[type=checkbox] {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        margin: 0;
+    }
+    &:hover { text-decoration: none; }
+    .switch {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-top: 5px;
+        text-indent: -9999px;
+        background: no-repeat url(../../../img/status.gif);
+    }
+    .switch.offline { background-position: 0 -6px; }
+    .container-doc {
+        display: table;
+        font-size: 11px;
+        height: 130px;
+        text-align: center;
+        .doc-info {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .fa {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.container-filepicker {
+    .thumbnail {
+        cursor: pointer;
+    }
+    .pagination {
+        margin-bottom: 0;
+    }
+}
+
