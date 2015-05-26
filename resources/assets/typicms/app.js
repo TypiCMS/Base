@@ -13,13 +13,14 @@
 
     angular.module('typicms').factory('$api', ['$location', '$resource', function ($location, $resource) {
         // var moduleName = $location.path().split('/').pop(); // ok when in HTML5 route mode
-        var url = $location.absUrl().split('?')[0],
-            moduleName = url.split('/')[4];
+        var url = new Url,
+            path = url.path,
+            moduleName = path.split('/')[2];
 
-        if (moduleName === 'galleries' && url.split('/')[6] === 'edit') {
+        if (moduleName === 'galleries' && path.split('/')[4] === 'edit') {
             moduleName = 'files';
         }
-        if (moduleName === 'menus' && url.split('/')[6] === 'edit') {
+        if (moduleName === 'menus' && path.split('/')[4] === 'edit') {
             moduleName = 'menulinks';
         }
 
@@ -27,7 +28,7 @@
             moduleName = 'history';
         }
 
-        return $resource('/api/' + moduleName + '/:id', null,
+        return $resource('/api/' + moduleName + '/:id', url.query,
             {
                 'update': { method: 'PUT' }
             });
