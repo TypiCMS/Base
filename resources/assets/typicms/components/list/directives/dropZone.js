@@ -65,7 +65,8 @@ angular.module('typicms').directive('dropZone', function () {
                         $(file.previewElement).fadeOut('fast', function () {
                             $this.removeFile(file);
                             scope.$apply(function () {
-                                scope.models.push(response.model);
+                                // scope.models.push(response.model);
+                                scope.models.splice(0, 0, response.model);
                             });
                         });
                     }, 1000);
