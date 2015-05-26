@@ -1,11 +1,25 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
-## 2.2.0 - 2015-05-10
+## 2.3.0 - 2015-05-26
 
 ### Changed
-- Core module Namespace changed to TypiCMS\Modules\Core.
-- Use of Laracasts\Presenter package.
+- Authentication is now based on Laravel Auth.
+- Composer set to "minimum-stability": "stable"
+- Better wysiwyg filepicker
+
+### Removed
+- Cartalyst/Sentry (No more throttling feature)
+- angular-gettext
+- cviebrock/image-validator
+
+## 2.2.0 - 2015-05-10
+
+### Added
+- Laracasts\Presenter package
+
+### Changed
+- Core module Namespace is now TypiCMS\Modules\Core.
 
 ## 2.1.6 - 2015-04-28
 
