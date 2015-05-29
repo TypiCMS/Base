@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "77e15fff92d844647505a53c8aae49bb",
+    "hash": "64a45904c9c661f22f1fcfe8727450ab",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -2465,16 +2465,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.3.1",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "3ae2b79ff7651e76ce365f9e9c14aebed1c1d09b"
+                "reference": "7f57d2e6e93ea85efb428a21968575437725b3a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/3ae2b79ff7651e76ce365f9e9c14aebed1c1d09b",
-                "reference": "3ae2b79ff7651e76ce365f9e9c14aebed1c1d09b",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/7f57d2e6e93ea85efb428a21968575437725b3a1",
+                "reference": "7f57d2e6e93ea85efb428a21968575437725b3a1",
                 "shasum": ""
             },
             "require": {
@@ -2500,7 +2500,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-27 12:23:04"
+            "time": "2015-05-29 08:45:48"
         },
         {
             "name": "typicms/dashboard",
@@ -2899,41 +2899,6 @@
                 }
             ],
             "time": "2015-05-26 21:09:20"
-        },
-        {
-            "name": "typicms/tags",
-            "version": "v2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "65b18e8a802ce996d8ae5f342255b2c1796dcee9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/65b18e8a802ce996d8ae5f342255b2c1796dcee9",
-                "reference": "65b18e8a802ce996d8ae5f342255b2c1796dcee9",
-                "shasum": ""
-            },
-            "require": {
-                "typicms/core": "~2.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Tags\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2015-05-26 21:09:35"
         },
         {
             "name": "typicms/translatablebootforms",
@@ -3705,16 +3670,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.6.7",
+            "version": "4.6.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "57bf06dd4eebe2a5ced79a8de71509e7d5c18b25"
+                "reference": "816d12536a7a032adc3b68737f82cfbbf98b79c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/57bf06dd4eebe2a5ced79a8de71509e7d5c18b25",
-                "reference": "57bf06dd4eebe2a5ced79a8de71509e7d5c18b25",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/816d12536a7a032adc3b68737f82cfbbf98b79c1",
+                "reference": "816d12536a7a032adc3b68737f82cfbbf98b79c1",
                 "shasum": ""
             },
             "require": {
@@ -3773,20 +3738,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-05-25 05:18:18"
+            "time": "2015-05-29 06:00:03"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.1",
+            "version": "2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "74ffb87f527f24616f72460e54b595f508dccb5c"
+                "reference": "253c005852591fd547fc18cd5b7b43a1ec82d8f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/74ffb87f527f24616f72460e54b595f508dccb5c",
-                "reference": "74ffb87f527f24616f72460e54b595f508dccb5c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/253c005852591fd547fc18cd5b7b43a1ec82d8f7",
+                "reference": "253c005852591fd547fc18cd5b7b43a1ec82d8f7",
                 "shasum": ""
             },
             "require": {
@@ -3828,7 +3793,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-04-02 05:36:41"
+            "time": "2015-05-29 05:19:18"
         },
         {
             "name": "sebastian/comparator",
