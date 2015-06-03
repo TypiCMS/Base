@@ -1614,16 +1614,16 @@
         },
         {
             "name": "roumen/sitemap",
-            "version": "2.4.18",
+            "version": "2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RoumenDamianoff/laravel-sitemap.git",
-                "reference": "45bb8d517f733265661106c9f94be845db0f243b"
+                "reference": "93aa010ac31f175751712631b4499755e1e8bedc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/45bb8d517f733265661106c9f94be845db0f243b",
-                "reference": "45bb8d517f733265661106c9f94be845db0f243b",
+                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/93aa010ac31f175751712631b4499755e1e8bedc",
+                "reference": "93aa010ac31f175751712631b4499755e1e8bedc",
                 "shasum": ""
             },
             "require": {
@@ -1636,7 +1636,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev",
+                    "dev-laravel4": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1662,7 +1663,7 @@
                 "Sitemap",
                 "laravel"
             ],
-            "time": "2015-05-31 09:11:45"
+            "time": "2015-05-31 08:29:07"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2864,20 +2865,20 @@
         },
         {
             "name": "typicms/sitemap",
-            "version": "v2.3.0",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
-                "reference": "454bbec838a69c7b7aa6d30f04a8309ce3e2da07"
+                "reference": "aef233216e772f43b2f127dd6668e348454c7517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/454bbec838a69c7b7aa6d30f04a8309ce3e2da07",
-                "reference": "454bbec838a69c7b7aa6d30f04a8309ce3e2da07",
+                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/aef233216e772f43b2f127dd6668e348454c7517",
+                "reference": "aef233216e772f43b2f127dd6668e348454c7517",
                 "shasum": ""
             },
             "require": {
-                "roumen/sitemap": "~2.4.6",
+                "roumen/sitemap": "~2.5.4",
                 "typicms/core": "~2.3.0"
             },
             "type": "library",
@@ -2896,7 +2897,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-05-26 21:09:20"
+            "time": "2015-06-03 14:00:29"
         },
         {
             "name": "typicms/translatablebootforms",
