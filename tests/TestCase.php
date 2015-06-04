@@ -1,8 +1,15 @@
 <?php
-use App\User;
+use TypiCMS\Modules\Users\Models\User;
 
 class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
+
+    /**
+     * The base URL to use while testing the application.
+     *
+     * @var string
+     */
+    protected $baseUrl = 'http://localhost';
 
     /**
      * Creates the application.
