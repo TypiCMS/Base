@@ -49,7 +49,7 @@ return [
         'sqlite' => [
             'driver'   => 'sqlite',
             'database' => storage_path('database.sqlite'),
-            'prefix'   => '',
+            'prefix'   => 'typicms_',
         ],
 
         'mysql' => [
@@ -71,7 +71,7 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset'  => 'utf8',
-            'prefix'   => '',
+            'prefix'   => 'typicms_',
             'schema'   => 'public',
         ],
 
@@ -81,7 +81,7 @@ return [
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
-            'prefix'   => '',
+            'prefix'   => 'typicms_',
         ],
 
     ],
