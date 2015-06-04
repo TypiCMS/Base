@@ -1,10 +1,11 @@
 <?php
+
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
-class Kernel extends HttpKernel {
-
+class Kernel extends HttpKernel
+{
     /**
      * The application's global HTTP middleware stack.
      *
@@ -33,5 +34,4 @@ class Kernel extends HttpKernel {
         'publicLocale' => 'TypiCMS\Modules\Core\Http\Middleware\PublicLocale',
         'registration' => 'TypiCMS\Modules\Core\Http\Middleware\Registration',
     ];
-
 }
