@@ -13,15 +13,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-
         $this->call('SettingsSeeder');
         $this->call('TranslationSeeder');
         $this->call('PageSeeder');
         $this->call('MenuSeeder');
         $this->call('MenulinkSeeder');
         $this->call('GroupSeeder');
-    }
-
         Model::reguard();
     }
 }
