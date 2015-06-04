@@ -12,7 +12,7 @@
     ],
     "type": "project",
     "require": {
-        "laravel/framework": "~5.0.32",
+        "laravel/framework": "~5.1.0",
         "barryvdh/laravel-debugbar": "~2.0",
         "edvinaskrucas/notification": "~5.0.0",
         "guzzlehttp/guzzle": "~5.0",
@@ -22,23 +22,25 @@
         "maatwebsite/laravel-sidebar": "~1.0.1",
         "typicms/nestablecollection": "~1.1.1",
         "typicms/translatablebootforms": "~2.1.1",
-        "typicms/core": "~2.3.0",
-        "typicms/blocks": "~2.3.0",
-        "typicms/dashboard": "~2.3.0",
-        "typicms/files": "~2.3.0",
-        "typicms/galleries": "~2.3.0",
-        "typicms/groups": "~2.3.0",
-        "typicms/history": "~2.3.0",
-        "typicms/menus": "~2.3.0",
-        "typicms/pages": "~2.3.0",
-        "typicms/settings": "~2.3.0",
-        "typicms/sitemap": "~2.3.0",
-        "typicms/translations": "~2.3.0",
-        "typicms/users": "~2.3.0"
+        "typicms/core": "~2.4.0",
+        "typicms/blocks": "dev-master",
+        "typicms/dashboard": "dev-master",
+        "typicms/files": "dev-master",
+        "typicms/galleries": "dev-master",
+        "typicms/groups": "dev-master",
+        "typicms/history": "dev-master",
+        "typicms/menus": "dev-master",
+        "typicms/pages": "dev-master",
+        "typicms/settings": "dev-master",
+        "typicms/sitemap": "dev-master",
+        "typicms/translations": "dev-master",
+        "typicms/users": "dev-master"
     },
     "require-dev": {
         "laracasts/generators": "~1.1",
-        "phpunit/phpunit": "~4.5",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.0",
         "phpspec/phpspec": "~2.1"
     },
     "autoload": {
@@ -68,5 +70,6 @@
     "config": {
         "preferred-install": "dist"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
