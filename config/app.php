@@ -80,8 +80,6 @@ return [
 
     'key' => env('APP_KEY', 'SomeRandomString'),
 
-    'cipher' => MCRYPT_RIJNDAEL_128,
-
     /*
     |--------------------------------------------------------------------------
     | Logging Configuration
@@ -95,7 +93,7 @@ return [
     |
     */
 
-    'log' => 'daily',
+    'log' => 'single',
 
     /*
     |--------------------------------------------------------------------------
@@ -115,6 +113,7 @@ return [
          */
         'Illuminate\Foundation\Providers\ArtisanServiceProvider',
         'Illuminate\Auth\AuthServiceProvider',
+        'Illuminate\Broadcasting\BroadcastServiceProvider',
         'Illuminate\Bus\BusServiceProvider',
         'Illuminate\Cache\CacheServiceProvider',
         'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
@@ -140,8 +139,6 @@ return [
          * Application Service Providers...
          */
         'App\Providers\AppServiceProvider',
-        'App\Providers\BusServiceProvider',
-        'App\Providers\ConfigServiceProvider',
         'App\Providers\EventServiceProvider',
         'App\Providers\RouteServiceProvider',
 
