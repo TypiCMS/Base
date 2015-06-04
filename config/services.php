@@ -24,19 +24,20 @@ return [
     ],
 
     'ses' => [
-        'key'    => env('SES_KEY'),
+        'key' => env('SES_KEY'),
         'secret' => env('SES_SECRET'),
         'region' => env('SES_REGION', 'us-east-1'),
     ],
 
     'stripe' => [
-        'model'  => env('STRIPE_MODEL', 'User'),
+        'model' => env('STRIPE_MODEL', 'TypiCMS\Modules\Users\Models\User'),
+        'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
 
     'rollbar' => [
         'access_token' => env('ROLLBAR_TOKEN'),
-        'level'        => env('ROLLBAR_LEVEL', 'debug')
+        'level' => env('ROLLBAR_LEVEL', 'debug')
     ],
 
 ];
