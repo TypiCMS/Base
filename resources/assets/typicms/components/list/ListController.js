@@ -133,6 +133,12 @@
 
             $scope.treeOptions = {
                 dragThreshold: 0,
+                accept: function(sourceNodeScope, destNodesScope, destIndex) {
+                    if (destNodesScope.model && destNodesScope.model.module) {
+                        return false;
+                    }
+                    return true;
+                },
                 dropped: function (event) {
 
                     var model = event.source.nodeScope.model,
@@ -141,7 +147,7 @@
                         nodes = event.dest.nodesScope,
                         currentList = nodes.$modelValue;
 
-                    // if there is a parent
+                    // If there is a parent
                     if (event.dest.nodesScope.$nodeScope) {
                         parentId = nodes.$nodeScope.model.id;
                     }
