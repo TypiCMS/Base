@@ -6,7 +6,6 @@ use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Support\Facades\Log;
-use Symfony\Component\Debug\Exception\FatalErrorException;
 
 class Handler extends ExceptionHandler
 {
@@ -17,7 +16,7 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        'Symfony\Component\HttpKernel\Exception\HttpException'
+        \Symfony\Component\HttpKernel\Exception\HttpException::class,
     ];
 
     /**
@@ -45,27 +44,21 @@ class Handler extends ExceptionHandler
     {
 
         /**
-         * 404 page when a model is not found
+         * Error 404 when a model is not found
          */
         if ($e instanceof ModelNotFoundException) {
             return response()->view('errors.404', [], 404);
         }
 
         /**
-         * 500 page on FatalErrorException
-         * when env is not local
+         * Error 500 when env is production
          */
-        if (! app()->isLocal()) {
-            if ($e instanceof FatalErrorException) {
-                return response()->view('errors.500', [], 500);
-            }
+        if (app()->environment() == 'production') {
+            return response()->view('errors.500', [], 500);
         }
 
-        if ($this->isHttpException($e)) {
-            return $this->renderHttpException($e);
-        } else {
-            return parent::render($request, $e);
-        }
+        return parent::render($request, $e);
+
     }
 
 }
