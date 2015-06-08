@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => 'TypiCMS\Modules\Users\Models\User',
+    'model' => \TypiCMS\Modules\Users\Models\User::class,
 
     /*
     |--------------------------------------------------------------------------
