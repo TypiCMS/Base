@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3bc9ee8f7ee638eccb436d234b4a1227",
+    "hash": "9f11c00772ac18ed775feac1d94292f7",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -903,12 +903,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "94241ec396e27e4a50ca01d7c0c3c7d2d543ad4b"
+                "reference": "5796036e3f0114fd3dfdecd26b0dfd1e896faf38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/94241ec396e27e4a50ca01d7c0c3c7d2d543ad4b",
-                "reference": "94241ec396e27e4a50ca01d7c0c3c7d2d543ad4b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/5796036e3f0114fd3dfdecd26b0dfd1e896faf38",
+                "reference": "5796036e3f0114fd3dfdecd26b0dfd1e896faf38",
                 "shasum": ""
             },
             "require": {
@@ -1023,23 +1023,24 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-06-07 15:25:08"
+            "time": "2015-06-08 18:25:15"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "3c2400a99ccc3be6884d40361890010449c6b447"
+                "reference": "56862959b45131ad33e5a7727a25db19f2cf090b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3c2400a99ccc3be6884d40361890010449c6b447",
-                "reference": "3c2400a99ccc3be6884d40361890010449c6b447",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/56862959b45131ad33e5a7727a25db19f2cf090b",
+                "reference": "56862959b45131ad33e5a7727a25db19f2cf090b",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -1106,29 +1107,31 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-03-29 14:01:43"
+            "time": "2015-06-07 21:27:37"
         },
         {
             "name": "maatwebsite/laravel-sidebar",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Sidebar.git",
-                "reference": "310878dabaf85dd7fc331a35c11b953d7bd9b6c2"
+                "reference": "aac7a7b4e17189802bb7d1fa086bee7f02c013a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/310878dabaf85dd7fc331a35c11b953d7bd9b6c2",
-                "reference": "310878dabaf85dd7fc331a35c11b953d7bd9b6c2",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/aac7a7b4e17189802bb7d1fa086bee7f02c013a8",
+                "reference": "aac7a7b4e17189802bb7d1fa086bee7f02c013a8",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "~5.0",
+                "illuminate/routing": "~5.0",
                 "illuminate/support": "~5.0",
                 "illuminate/view": "~5.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
+                "mockery/mockery": "~0.9",
                 "phpunit/phpunit": "~4.1"
             },
             "type": "library",
@@ -1152,7 +1155,7 @@
                 "acp",
                 "laravel"
             ],
-            "time": "2015-05-27 09:55:55"
+            "time": "2015-06-08 18:22:00"
         },
         {
             "name": "maximebf/debugbar",
