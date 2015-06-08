@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9f11c00772ac18ed775feac1d94292f7",
+    "hash": "7b078a571ab01cd1d4a838da54dab4ea",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1111,16 +1111,16 @@
         },
         {
             "name": "maatwebsite/laravel-sidebar",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Sidebar.git",
-                "reference": "aac7a7b4e17189802bb7d1fa086bee7f02c013a8"
+                "reference": "ef312369995fbb34eff7bcedd7739579aa77de2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/aac7a7b4e17189802bb7d1fa086bee7f02c013a8",
-                "reference": "aac7a7b4e17189802bb7d1fa086bee7f02c013a8",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Sidebar/zipball/ef312369995fbb34eff7bcedd7739579aa77de2d",
+                "reference": "ef312369995fbb34eff7bcedd7739579aa77de2d",
                 "shasum": ""
             },
             "require": {
@@ -1155,7 +1155,7 @@
                 "acp",
                 "laravel"
             ],
-            "time": "2015-06-08 18:22:00"
+            "time": "2015-06-08 19:03:23"
         },
         {
             "name": "maximebf/debugbar",
