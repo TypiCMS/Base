@@ -60,7 +60,7 @@ This kind of URLs are managed by the CMS:
 
 ## Requirements
 
-- PHP >= 5.4.0
+- PHP >= 5.5.9
 - Memcached, Redis or APC
 
 
