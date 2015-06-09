@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7b078a571ab01cd1d4a838da54dab4ea",
+    "hash": "0031edfe6888f9032b487316207f395c",
     "packages": [
         {
             "name": "adamwathan/bootforms",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/bootforms.git",
-                "reference": "33c29ca5cb703094dc8432c6cc6affff1dd4f2bd"
+                "reference": "469464aa4ee61e6cb8578f20911a884b5f674a74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/33c29ca5cb703094dc8432c6cc6affff1dd4f2bd",
-                "reference": "33c29ca5cb703094dc8432c6cc6affff1dd4f2bd",
+                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/469464aa4ee61e6cb8578f20911a884b5f674a74",
+                "reference": "469464aa4ee61e6cb8578f20911a884b5f674a74",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2015-04-30 18:05:32"
+            "time": "2015-06-09 10:44:40"
         },
         {
             "name": "adamwathan/form",
@@ -92,7 +92,7 @@
         },
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "dev-master",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
@@ -899,16 +899,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "5.1.x-dev",
+            "version": "v5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5796036e3f0114fd3dfdecd26b0dfd1e896faf38"
+                "reference": "a423a55ed6601daebcbb75817de6d06b4d670a70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5796036e3f0114fd3dfdecd26b0dfd1e896faf38",
-                "reference": "5796036e3f0114fd3dfdecd26b0dfd1e896faf38",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a423a55ed6601daebcbb75817de6d06b4d670a70",
+                "reference": "a423a55ed6601daebcbb75817de6d06b4d670a70",
                 "shasum": ""
             },
             "require": {
@@ -1023,7 +1023,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-06-08 18:25:15"
+            "time": "2015-06-09 13:05:05"
         },
         {
             "name": "league/flysystem",
@@ -2435,7 +2435,7 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
@@ -2474,12 +2474,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "3cc1711443b494ff8cb0391250a9913a49c77509"
+                "reference": "288ab3623618d884e748a500710a2947c980b65a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/3cc1711443b494ff8cb0391250a9913a49c77509",
-                "reference": "3cc1711443b494ff8cb0391250a9913a49c77509",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/288ab3623618d884e748a500710a2947c980b65a",
+                "reference": "288ab3623618d884e748a500710a2947c980b65a",
                 "shasum": ""
             },
             "require": {
@@ -2505,11 +2505,11 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-06-05 11:54:57"
+            "time": "2015-06-05 18:19:22"
         },
         {
             "name": "typicms/dashboard",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
@@ -2544,7 +2544,7 @@
         },
         {
             "name": "typicms/files",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
@@ -2579,7 +2579,7 @@
         },
         {
             "name": "typicms/galleries",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Galleries.git",
@@ -2614,7 +2614,7 @@
         },
         {
             "name": "typicms/groups",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Groups.git",
@@ -2649,7 +2649,7 @@
         },
         {
             "name": "typicms/history",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
@@ -2719,7 +2719,7 @@
         },
         {
             "name": "typicms/menus",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
@@ -2801,7 +2801,7 @@
         },
         {
             "name": "typicms/pages",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
@@ -2836,7 +2836,7 @@
         },
         {
             "name": "typicms/settings",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
@@ -2871,7 +2871,7 @@
         },
         {
             "name": "typicms/sitemap",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
@@ -2952,7 +2952,7 @@
         },
         {
             "name": "typicms/translations",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
@@ -2987,7 +2987,7 @@
         },
         {
             "name": "typicms/users",
-            "version": "dev-master",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
@@ -3586,16 +3586,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "3703c4bb67c8700957dd41c843254658539d091d"
+                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/3703c4bb67c8700957dd41c843254658539d091d",
-                "reference": "3703c4bb67c8700957dd41c843254658539d091d",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/be2286cb8c7e1773eded49d9719219e6f74f9e3e",
+                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e",
                 "shasum": ""
             },
             "require": {
@@ -3644,7 +3644,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-06 08:33:23"
+            "time": "2015-06-09 13:05:42"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4379,22 +4379,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "typicms/blocks": 20,
-        "typicms/dashboard": 20,
-        "typicms/files": 20,
-        "typicms/galleries": 20,
-        "typicms/groups": 20,
-        "typicms/history": 20,
-        "typicms/menus": 20,
-        "typicms/pages": 20,
-        "typicms/settings": 20,
-        "typicms/sitemap": 20,
-        "typicms/translations": 20,
-        "typicms/users": 20
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

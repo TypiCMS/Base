@@ -23,18 +23,18 @@
         "typicms/nestablecollection": "~1.1.1",
         "typicms/translatablebootforms": "~2.1.1",
         "typicms/core": "~2.4.0",
-        "typicms/blocks": "dev-master",
-        "typicms/dashboard": "dev-master",
-        "typicms/files": "dev-master",
-        "typicms/galleries": "dev-master",
-        "typicms/groups": "dev-master",
-        "typicms/history": "dev-master",
-        "typicms/menus": "dev-master",
-        "typicms/pages": "dev-master",
-        "typicms/settings": "dev-master",
-        "typicms/sitemap": "dev-master",
-        "typicms/translations": "dev-master",
-        "typicms/users": "dev-master"
+        "typicms/blocks": "~2.4.0",
+        "typicms/dashboard": "~2.4.0",
+        "typicms/files": "~2.4.0",
+        "typicms/galleries": "~2.4.0",
+        "typicms/groups": "~2.4.0",
+        "typicms/history": "~2.4.0",
+        "typicms/menus": "~2.4.0",
+        "typicms/pages": "~2.4.0",
+        "typicms/settings": "~2.4.0",
+        "typicms/sitemap": "~2.4.0",
+        "typicms/translations": "~2.4.0",
+        "typicms/users": "~2.4.0"
     },
     "require-dev": {
         "laracasts/generators": "~1.1",
@@ -70,6 +70,5 @@
     "config": {
         "preferred-install": "dist"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "stable"
 }
