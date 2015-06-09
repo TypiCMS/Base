@@ -61,7 +61,6 @@ This kind of URLs are managed by the CMS:
 ## Requirements
 
 - PHP >= 5.4.0
-- MCrypt PHP Extension
 - Memcached, Redis or APC
 
 
