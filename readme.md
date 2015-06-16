@@ -61,6 +61,9 @@ This kind of URLs are managed by the CMS:
 ## Requirements
 
 - PHP >= 5.5.9
+- OpenSSL PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
 - Memcached, Redis or APC
 
 
