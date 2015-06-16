@@ -120,7 +120,7 @@ This example is for the News module. After these steps, the module will appear i
    ```
    composer require typicms/news
    ```
-2. Add ```'TypiCMS\Modules\News\Providers\ModuleProvider',``` to *config/app.php*, before 'TypiCMS\Providers\CoreServiceProvider'
+2. Add ```TypiCMS\Modules\News\Providers\ModuleProvider::class,``` to *config/app.php*, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
 3. Publish views and migrations
 
    ```
