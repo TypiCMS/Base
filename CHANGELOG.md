@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.4.4 - 2015-06-30
+
+- bkwld/croppa 4.2
+
+## 2.4.0 - 2015-06-09
+
+### Changed
+- Laravel 5.1
+
 ## 2.3.0 - 2015-05-26
 
 ### Changed
