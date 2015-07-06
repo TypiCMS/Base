@@ -18,5 +18,6 @@ return array(
     'token' => 'Ce jeton de réinitialisation du mot de passe n’est pas valide.',
     'sent' => 'Le lien de changement de mot de passe a été envoyé par email !',
     'reset' => 'Rappel du mot de passe envoyé !',
+    'throttle' => 'Trop de tentatives de connexion. Veuillez essayer de nouveau dans :seconds secondes.',
 
 );

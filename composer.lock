@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0b4b77a4583d6693009ee5c05b16dd44",
+    "hash": "2b26063262ceaa845a1004e4836f0627",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -501,27 +501,27 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.0.1",
+            "version": "6.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f992b7b487a816c957d317442bed4966409873e0"
+                "reference": "a8dfeff00eb84616a17fea7a4d72af35e750410f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f992b7b487a816c957d317442bed4966409873e0",
-                "reference": "f992b7b487a816c957d317442bed4966409873e0",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a8dfeff00eb84616a17fea7a4d72af35e750410f",
+                "reference": "a8dfeff00eb84616a17fea7a4d72af35e750410f",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/promises": "^1.0.0",
-                "guzzlehttp/psr7": "^1.0.0",
+                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/psr7": "~1.1",
                 "php": ">=5.5.0"
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.0",
-                "psr/log": "^1.0"
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
             },
             "type": "library",
             "extra": {
@@ -531,7 +531,7 @@
             },
             "autoload": {
                 "files": [
-                    "src/functions.php"
+                    "src/functions_include.php"
                 ],
                 "psr-4": {
                     "GuzzleHttp\\": "src/"
@@ -559,7 +559,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-05-27 16:57:51"
+            "time": "2015-07-04 20:09:24"
         },
         {
             "name": "guzzlehttp/promises",
@@ -907,16 +907,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.4",
+            "version": "v5.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ef87627cc3a2ecb866214c5be593781016cd43b1"
+                "reference": "356418f315e4f6bf55d2f4bd451606e45a7595df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ef87627cc3a2ecb866214c5be593781016cd43b1",
-                "reference": "ef87627cc3a2ecb866214c5be593781016cd43b1",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/356418f315e4f6bf55d2f4bd451606e45a7595df",
+                "reference": "356418f315e4f6bf55d2f4bd451606e45a7595df",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1031,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-06-30 20:45:09"
+            "time": "2015-07-03 13:48:44"
         },
         {
             "name": "league/flysystem",
@@ -2432,16 +2432,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.4.1",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "e469a588d395bfab981727fd9226d03896541cf7"
+                "reference": "df048476dd761dfdf0f461862138f95da230333a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/e469a588d395bfab981727fd9226d03896541cf7",
-                "reference": "e469a588d395bfab981727fd9226d03896541cf7",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/df048476dd761dfdf0f461862138f95da230333a",
+                "reference": "df048476dd761dfdf0f461862138f95da230333a",
                 "shasum": ""
             },
             "require": {
@@ -2467,7 +2467,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-07-01 08:35:31"
+            "time": "2015-07-06 21:50:57"
         },
         {
             "name": "typicms/dashboard",
@@ -2541,16 +2541,16 @@
         },
         {
             "name": "typicms/galleries",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Galleries.git",
-                "reference": "41de6f83242ebb12cfaad5cd6967bfede4b1890a"
+                "reference": "b9f88f4400343ecc1a3a018763330df440ba7b4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/41de6f83242ebb12cfaad5cd6967bfede4b1890a",
-                "reference": "41de6f83242ebb12cfaad5cd6967bfede4b1890a",
+                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/b9f88f4400343ecc1a3a018763330df440ba7b4b",
+                "reference": "b9f88f4400343ecc1a3a018763330df440ba7b4b",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2572,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-06-04 21:19:00"
+            "time": "2015-07-03 09:35:14"
         },
         {
             "name": "typicms/groups",
@@ -2646,16 +2646,16 @@
         },
         {
             "name": "typicms/menulinks",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menulinks.git",
-                "reference": "c18cad358bb74796c3689e5afd869f12dc142e30"
+                "reference": "e595180a6b14c7e4fc36ec8326825385eb31fbd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/c18cad358bb74796c3689e5afd869f12dc142e30",
-                "reference": "c18cad358bb74796c3689e5afd869f12dc142e30",
+                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/e595180a6b14c7e4fc36ec8326825385eb31fbd3",
+                "reference": "e595180a6b14c7e4fc36ec8326825385eb31fbd3",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2677,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-06-04 14:39:39"
+            "time": "2015-07-06 21:51:43"
         },
         {
             "name": "typicms/menus",
@@ -2949,16 +2949,16 @@
         },
         {
             "name": "typicms/users",
-            "version": "v2.4.0",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "473eddbfa8697bb8fb746f5baded4c4615b4447d"
+                "reference": "43a9ed62f1606ee0c21bc161c8f1b8682b416df7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/473eddbfa8697bb8fb746f5baded4c4615b4447d",
-                "reference": "473eddbfa8697bb8fb746f5baded4c4615b4447d",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/43a9ed62f1606ee0c21bc161c8f1b8682b416df7",
+                "reference": "43a9ed62f1606ee0c21bc161c8f1b8682b416df7",
                 "shasum": ""
             },
             "require": {
@@ -2980,7 +2980,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-06-05 11:48:54"
+            "time": "2015-07-06 21:52:28"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3860,16 +3860,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35"
+                "reference": "1c330b1b6e1ea8fd15f2fbea46770576e366855c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/92408bb1968a81b3217a6fdf6c1a198da83caa35",
-                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/1c330b1b6e1ea8fd15f2fbea46770576e366855c",
+                "reference": "1c330b1b6e1ea8fd15f2fbea46770576e366855c",
                 "shasum": ""
             },
             "require": {
@@ -3911,7 +3911,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-06-11 15:55:48"
+            "time": "2015-07-04 05:41:32"
         },
         {
             "name": "sebastian/comparator",
