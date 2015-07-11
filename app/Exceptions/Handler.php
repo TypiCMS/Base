@@ -6,6 +6,7 @@ use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Support\Facades\Log;
+use Symfony\Component\Debug\ExceptionHandler as SymfonyDisplayer;
 
 class Handler extends ExceptionHandler
 {
@@ -50,14 +51,15 @@ class Handler extends ExceptionHandler
             return response()->view('errors.404', [], 404);
         }
 
-        /**
-         * Error 500 when env is production
-         */
-        if (app()->environment() == 'production') {
-            return response()->view('errors.500', [], 500);
+        if ($this->isHttpException($e)) {
+            return $this->toIlluminateResponse($this->renderHttpException($e), $e);
+        } else {
+            // Custom error 500 view on production
+            if (app()->environment() == 'production') {
+                return response()->view('errors.500', [], 500);
+            }
+            return $this->toIlluminateResponse((new SymfonyDisplayer(config('app.debug')))->createResponse($e), $e);
         }
-
-        return parent::render($request, $e);
 
     }
 
