@@ -3,6 +3,7 @@
 @import '../../../../bower_components/font-awesome/less/font-awesome';
 @import 'variables';
 @import '../navbar';
+@import '../login';
 @import 'fancybox';
 @import 'twilight';
 @import 'files';
@@ -42,32 +43,6 @@ body {
 h1 {
     margin-top: 0;
     a:hover { text-decoration: none; }
-}
-
-.container-xs-center {
-    margin: 0 auto;
-    h1 {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    padding: 0 25px;
-    @media (min-width: @screen-sm-min) {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        max-width: 380px;
-        border: 1px solid @input-border;
-        .border-top-radius(@border-radius-large);
-        .border-bottom-radius(@border-radius-large);
-        .box-shadow(0 2px 5px @gray-lighter);
-    }
-    .form-action { margin-top: 30px; }
-    .alert {
-        margin: -15px -25px 0;
-        border: none;
-        border-radius: inherit;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
 }
 
 .breadcrumb { background-color: #FFF; padding-left: 5px; padding-right: 5px;
