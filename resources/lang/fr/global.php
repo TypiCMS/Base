@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return array(
 
@@ -35,6 +35,7 @@ return array(
     'View' => 'Voir',
     'Sort' => 'Ordonner',
     'Edit' => 'Modifier',
+    'Search' => 'Chercher',
     'Not found' => 'Introuvable',
 
     'Yes' => 'Oui',
