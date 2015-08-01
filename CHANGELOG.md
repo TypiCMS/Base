@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.4.13 - 2015-08-01
+
+- CKEditor 4.5.1
+
+## 2.4.12 - 2015-08-01
+
+- Angular 1.4
+- Font Awesome 4.4
+- npm in place of Bower when possible
+
 ## 2.4.4 - 2015-06-30
 
 - bkwld/croppa 4.2
