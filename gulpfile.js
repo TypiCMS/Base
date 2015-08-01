@@ -6,10 +6,8 @@ var gulp       = require('gulp'),
     minifyCSS  = require('gulp-minify-css'),
     uglify     = require('gulp-uglify'),
     watch      = require('gulp-watch'),
-    bowerFiles = require('main-bower-files'),
     livereload = require('gulp-livereload'),
     rename     = require('gulp-rename'),
-    filter     = require('gulp-filter'),
     newer      = require('gulp-newer'),
     prefix     = require('gulp-autoprefixer'),
     ngAnnotate = require('gulp-ng-annotate'),
@@ -79,7 +77,7 @@ gulp.task('fonts', function () {
     var destDir = 'public/fonts';
 
     return gulp.src([
-            'bower_components/font-awesome/fonts/*'
+            'node_modules/font-awesome/fonts/*'
         ])
         .pipe(newer(destDir))
         .pipe(gulp.dest(destDir));
@@ -92,8 +90,8 @@ gulp.task('angular-locales', function () {
     var destDir = 'public/js/angular-locales';
 
     return gulp.src([
-            'bower_components/angular-i18n/angular-locale_fr-fr.js',
-            'bower_components/angular-i18n/angular-locale_nl-nl.js'
+            'node_modules/angular-i18n/angular-locale_fr-fr.js',
+            'node_modules/angular-i18n/angular-locale_nl-nl.js'
         ])
         .pipe(newer(destDir))
         .pipe(gulp.dest(destDir));
@@ -105,10 +103,7 @@ gulp.task('fancybox-img', function () {
 
     var destDir = 'public/components/fancybox/source';
 
-    return gulp.src([
-            'bower_components/fancybox/source/*.gif',
-            'bower_components/fancybox/source/*.png'
-        ])
+    return gulp.src('node_modules/fancybox/dist/img/*')
         .pipe(newer(destDir))
         .pipe(gulp.dest(destDir));
 
@@ -164,15 +159,27 @@ gulp.task('js-admin', function () {
 
     var destDir = 'public/js/admin',
         destFile = 'components.min.js',
-        files = bowerFiles();
-
-    files.push(path.resolve() + '/resources/assets/js/admin/*');
-    files.push(path.resolve() + '/resources/assets/typicms/**/*.js');
+        files = [
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/angular/angular.js',
+            'node_modules/angular-resource/angular-resource.js',
+            'node_modules/angular-smart-table/dist/smart-table.js',
+            'bower_components/angular-ui-tree/dist/angular-ui-tree.js',
+            'bower_components/jsurl/url.js',
+            'node_modules/bootstrap/js/dropdown.js',
+            'node_modules/bootstrap/js/collapse.js',
+            'node_modules/bootstrap/js/alert.js',
+            'node_modules/bootstrap/js/tab.js',
+            'node_modules/bootstrap/js/transition.js',
+            'node_modules/dropzone/dist/dropzone.js',
+            'node_modules/selectize/dist/js/standalone/selectize.js',
+            'node_modules/fancybox/dist/js/jquery.fancybox.js',
+            'node_modules/alertify.js/dist/js/alertify.js',
+            'resources/assets/js/admin/*',
+            'resources/assets/typicms/**/*.js'
+        ];
 
     return gulp.src(files)
-        .pipe(filter([
-            '**/*.js'
-        ]))
         .pipe(newer(destDir + '/' + destFile))
         .pipe(concat('components.js'))
         .pipe(ngAnnotate())
@@ -186,24 +193,18 @@ gulp.task('js-public', function () {
 
     var destDir = 'public/js/public',
         destFile = 'components.min.js',
-        files = bowerFiles();
-
-    files.push(path.resolve() + '/resources/assets/js/public/*');
+        files = [
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap/js/dropdown.js',
+            'node_modules/bootstrap/js/collapse.js',
+            'node_modules/bootstrap/js/alert.js',
+            'node_modules/bootstrap/js/tab.js',
+            'node_modules/bootstrap/js/transition.js',
+            'node_modules/fancybox/dist/js/jquery.fancybox.js',
+            'resources/assets/js/public/*'
+        ];
 
     return gulp.src(files)
-        .pipe(filter([
-            '**/*.js',
-            '!jquery-ui*',
-            '!jquery.ui*',
-            '!picker*',
-            '!sifter*',
-            '!microplugin*',
-            '!selectize*',
-            '!alertify*',
-            '!angular*',
-            '!smart-table*',
-            '!dropzone*'
-        ]))
         .pipe(newer(destDir + '/' + destFile))
         .pipe(concat('components.js'))
         .pipe(uglify())
