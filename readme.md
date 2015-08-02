@@ -4,7 +4,7 @@
 [![License](https://poser.pugx.org/typicms/base/license.svg)](https://packagist.org/packages/typicms/base)
 
 TypiCMS is a multilingual content management system built with [Laravel 5](http://laravel.com).
-[Bower](http://bower.io) and [gulp](http://gulpjs.com) are used for asset management and the user interface is built with [Bootstrap 3](http://getbootstrap.com) with [Less](http://lesscss.org).
+[npm](http://npmjs.com), [Bower](http://bower.io) and [gulp](http://gulpjs.com) are used for asset management and the user interface is built with [Bootstrap 3](http://getbootstrap.com) with [Less](http://lesscss.org).
 
 ![TypiCMS screenshot](http://typicms.samsfactory.com/uploads/pages/TypiCMS-screenshot.png)
 
@@ -13,10 +13,9 @@ TypiCMS is a multilingual content management system built with [Laravel 5](http:
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
-  - [Quick installation](#quick-installation)
-  - [Manual installation](#manual-installation)
-  - [Bower & Gulp](#bower--gulp)
+  - [npm, Bower & Gulp](#npm-bower--gulp)
   - [Configuration](#configuration)
+  - [Installation of a module](#installation-of-a-module)
 - [Modules](#modules)
   - [Pages](#pages)
   - [Menus](#menus)
@@ -89,7 +88,7 @@ First install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](
 
 Go to http://mywebsite.local/admin and log in.
 
-### Bower & Gulp
+### npm, Bower & Gulp
 
 In order to work on assets, you need to install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](http://gulpjs.com), then cd to your website folder and run these commands:
 
