@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.4.18 - 2015-08-09
+
+- Dynamic links to a resource in text editor, for example {!! page:3 !!} or {!! news:5 !!}
+
 ## 2.4.13 - 2015-08-01
 
 - CKEditor 4.5.1
