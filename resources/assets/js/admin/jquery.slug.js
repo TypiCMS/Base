@@ -1,6 +1,6 @@
 /*
- * Slug 2.0, jQuery plugin
- * 
+ * Slug 2.0.1, jQuery plugin
+ *
  * Copyright(c) 2015, Samuel De Backer
  * http://www.typi.be
  *
@@ -43,8 +43,8 @@
 				.replace('æ','ae');
 
 			// remove accents, swap ñ for n, etc
-			var from = "ÃÀÁÄÂẼÈÉËÊÌÍÏÎÕÒÓÖÔÙÚÜÛÑÇãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;-'’!";
-			var to   = "AAAAAEEEEEIIIIOOOOOUUUUNCaaaaaeeeeeiiiiooooouuuunc          ";
+			var from = "ÃÀÁÄÂẼÈÉËÊÌÍÏÎÕÒÓÖÔÙÚÜÛÑÇãàáäâẽèéëêìíïîõòóöôùúüûñç$€£·/_,:;-'’! ";
+			var to   = "AAAAAEEEEEIIIIOOOOOUUUUNCaaaaaeeeeeiiiiooooouuuunc              ";
 			for (var i=0, l=from.length ; i<l ; i++) {
 				slug = slug.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
 			}
