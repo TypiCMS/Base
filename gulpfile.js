@@ -64,7 +64,6 @@ gulp.task('version', function() {
         .pipe(gulp.dest(buildDir))
         .pipe(rev.manifest())
         .pipe(gulp.dest(buildDir))
-        .pipe(livereload())
         .on('end', function() {
             del(files.paths);
         });
