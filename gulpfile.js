@@ -205,7 +205,7 @@ gulp.task('watch', function () {
 });
 
 // What tasks does running gulp trigger?
-gulp.task('default', [
+gulp.task('all', [
     'less-public',
     'less-admin',
     'js-public',
@@ -214,5 +214,11 @@ gulp.task('default', [
     'angular-locales',
     'fancybox-img',
     'ckeditor',
+    'watch'
+]);
+
+gulp.task('default', [
+    'less-public',
+    'js-public',
     'watch'
 ]);
