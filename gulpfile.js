@@ -186,6 +186,7 @@ gulp.task('js-public', function () {
             'node_modules/bootstrap/js/tab.js',
             'node_modules/bootstrap/js/transition.js',
             'node_modules/fancybox/dist/js/jquery.fancybox.js',
+            'node_modules/swiper/dist/js/swiper.jquery.js',
             'resources/assets/js/public/*'
         ];
 
