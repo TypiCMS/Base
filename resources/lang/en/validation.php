@@ -235,7 +235,6 @@ return [
 
         // Settings
         'webmaster_email' => 'Webmaster email',
-        'typekit_code' => 'Typekit Code',
         'google_analytics_code' => 'Google Analytics Code',
         'lang_chooser' => 'Lang chooser',
         'welcome_message' => 'Administration welcome message',

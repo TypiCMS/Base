@@ -235,7 +235,6 @@ return [
 
         // Settings
         'webmaster_email' => 'Email du webmaster',
-        'typekit_code' => 'Code Typekit',
         'google_analytics_code' => 'Code Google Analytics',
         'lang_chooser' => 'Page de choix de langue',
         'welcome_message' => 'Message d’accueil de l’interface d’administration',
