@@ -2,13 +2,11 @@ var gulp       = require('gulp'),
     gutil      = require('gulp-util'),
     less       = require('gulp-less'),
     concat     = require('gulp-concat'),
-    path       = require('path'),
     minifyCSS  = require('gulp-minify-css'),
     uglify     = require('gulp-uglify'),
     watch      = require('gulp-watch'),
     livereload = require('gulp-livereload'),
     rename     = require('gulp-rename'),
-    newer      = require('gulp-newer'),
     prefix     = require('gulp-autoprefixer'),
     ngAnnotate = require('gulp-ng-annotate'),
     del        = require('del'),
@@ -79,7 +77,6 @@ gulp.task('fonts', function () {
     return gulp.src([
             'node_modules/font-awesome/fonts/*'
         ])
-        .pipe(newer(destDir))
         .pipe(gulp.dest(destDir));
 
 });
@@ -93,7 +90,6 @@ gulp.task('angular-locales', function () {
             'node_modules/angular-i18n/angular-locale_fr-fr.js',
             'node_modules/angular-i18n/angular-locale_nl-nl.js'
         ])
-        .pipe(newer(destDir))
         .pipe(gulp.dest(destDir));
 
 });
@@ -104,7 +100,6 @@ gulp.task('fancybox-img', function () {
     var destDir = 'public/components/fancybox/source';
 
     return gulp.src('node_modules/fancybox/dist/img/*')
-        .pipe(newer(destDir))
         .pipe(gulp.dest(destDir));
 
 });
@@ -165,7 +160,6 @@ gulp.task('js-admin', function () {
         ];
 
     return gulp.src(files)
-        .pipe(newer(destDir + '/' + destFile))
         .pipe(concat('components.js'))
         .pipe(ngAnnotate())
         .pipe(uglify())
@@ -191,7 +185,6 @@ gulp.task('js-public', function () {
         ];
 
     return gulp.src(files)
-        .pipe(newer(destDir + '/' + destFile))
         .pipe(concat('components.js'))
         .pipe(uglify())
         .pipe(rename(destFile))
