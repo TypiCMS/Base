@@ -163,6 +163,7 @@ gulp.task('js-admin', function () {
         .pipe(concat('components.js'))
         .pipe(ngAnnotate())
         .pipe(uglify())
+        .on('error', swallowError)
         .pipe(rename(destFile))
         .pipe(gulp.dest(destDir));
 
@@ -187,6 +188,7 @@ gulp.task('js-public', function () {
     return gulp.src(files)
         .pipe(concat('components.js'))
         .pipe(uglify())
+        .on('error', swallowError)
         .pipe(rename(destFile))
         .pipe(gulp.dest(destDir));
 
