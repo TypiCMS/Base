@@ -40,7 +40,8 @@ gulp.task('less-admin', function () {
         .pipe(prefix('last 2 versions', '> 1%', 'Explorer 7', 'Android 2'))
         .pipe(minifyCSS())
         .pipe(rename('admin.css'))
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('public/css'))
+        .pipe(livereload());
 
 });
 
