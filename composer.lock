@@ -907,16 +907,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.9",
+            "version": "v5.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "2f1e0b8d7c24bb783d3a8d4fe4120ef82e5da648"
+                "reference": "d47ccc8de10ccb6f328cc90f901ca5e47e077c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/2f1e0b8d7c24bb783d3a8d4fe4120ef82e5da648",
-                "reference": "2f1e0b8d7c24bb783d3a8d4fe4120ef82e5da648",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d47ccc8de10ccb6f328cc90f901ca5e47e077c93",
+                "reference": "d47ccc8de10ccb6f328cc90f901ca5e47e077c93",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1031,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-08-05 12:51:18"
+            "time": "2015-08-12 18:16:08"
         },
         {
             "name": "league/flysystem",
@@ -2395,16 +2395,16 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "f1b6e7ba9f53bb0322a49d0e05c7e9d3717f7027"
+                "reference": "2d3015691bc8e6b3f0adee4a11ac44ee27baf64e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/f1b6e7ba9f53bb0322a49d0e05c7e9d3717f7027",
-                "reference": "f1b6e7ba9f53bb0322a49d0e05c7e9d3717f7027",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/2d3015691bc8e6b3f0adee4a11ac44ee27baf64e",
+                "reference": "2d3015691bc8e6b3f0adee4a11ac44ee27baf64e",
                 "shasum": ""
             },
             "require": {
@@ -2426,20 +2426,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-06-04 12:51:45"
+            "time": "2015-08-15 11:47:06"
         },
         {
             "name": "typicms/core",
-            "version": "v2.4.11",
+            "version": "v2.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "f4b820d82081dd5726c9bc28e6eae84e45ec3316"
+                "reference": "82dc2c84c805ee69e20c995f65a0f3a652256256"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f4b820d82081dd5726c9bc28e6eae84e45ec3316",
-                "reference": "f4b820d82081dd5726c9bc28e6eae84e45ec3316",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/82dc2c84c805ee69e20c995f65a0f3a652256256",
+                "reference": "82dc2c84c805ee69e20c995f65a0f3a652256256",
                 "shasum": ""
             },
             "require": {
@@ -2465,7 +2465,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-08-10 18:18:36"
+            "time": "2015-08-11 19:44:27"
         },
         {
             "name": "typicms/dashboard",
@@ -2539,16 +2539,16 @@
         },
         {
             "name": "typicms/galleries",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Galleries.git",
-                "reference": "ac0b51e3bb25e005c86f7c26d508c64246ba0757"
+                "reference": "e0aed595d1f84a4d8503c862435af248fb7fe689"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/ac0b51e3bb25e005c86f7c26d508c64246ba0757",
-                "reference": "ac0b51e3bb25e005c86f7c26d508c64246ba0757",
+                "url": "https://api.github.com/repos/TypiCMS/Galleries/zipball/e0aed595d1f84a4d8503c862435af248fb7fe689",
+                "reference": "e0aed595d1f84a4d8503c862435af248fb7fe689",
                 "shasum": ""
             },
             "require": {
@@ -2570,20 +2570,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-08-07 09:12:20"
+            "time": "2015-08-15 11:47:39"
         },
         {
             "name": "typicms/groups",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Groups.git",
-                "reference": "b747ad4ffe7e5dffb935b7b26646ed8764ce48a2"
+                "reference": "7e1b0b6272e0bae7c0a8dabe77603166db306b96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/b747ad4ffe7e5dffb935b7b26646ed8764ce48a2",
-                "reference": "b747ad4ffe7e5dffb935b7b26646ed8764ce48a2",
+                "url": "https://api.github.com/repos/TypiCMS/Groups/zipball/7e1b0b6272e0bae7c0a8dabe77603166db306b96",
+                "reference": "7e1b0b6272e0bae7c0a8dabe77603166db306b96",
                 "shasum": ""
             },
             "require": {
@@ -2605,7 +2605,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-06-04 14:39:29"
+            "time": "2015-08-15 11:47:43"
         },
         {
             "name": "typicms/history",
@@ -2679,16 +2679,16 @@
         },
         {
             "name": "typicms/menus",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "502639ccc2887341d81490fa54b5b661b21a0ecf"
+                "reference": "c96cccfffed60553517ff3c56484c7774c06d753"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/502639ccc2887341d81490fa54b5b661b21a0ecf",
-                "reference": "502639ccc2887341d81490fa54b5b661b21a0ecf",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/c96cccfffed60553517ff3c56484c7774c06d753",
+                "reference": "c96cccfffed60553517ff3c56484c7774c06d753",
                 "shasum": ""
             },
             "require": {
@@ -2711,7 +2711,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-08-07 12:36:41"
+            "time": "2015-08-15 11:47:55"
         },
         {
             "name": "typicms/nestablecollection",
@@ -2912,16 +2912,16 @@
         },
         {
             "name": "typicms/translations",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
-                "reference": "5e35c1e44c0809ae01896acb6bf1cf562ce88522"
+                "reference": "8dc55e5d98c9216bcbd34ed487c6b44440bb6c74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/5e35c1e44c0809ae01896acb6bf1cf562ce88522",
-                "reference": "5e35c1e44c0809ae01896acb6bf1cf562ce88522",
+                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/8dc55e5d98c9216bcbd34ed487c6b44440bb6c74",
+                "reference": "8dc55e5d98c9216bcbd34ed487c6b44440bb6c74",
                 "shasum": ""
             },
             "require": {
@@ -2943,20 +2943,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-06-04 14:40:28"
+            "time": "2015-08-15 11:48:44"
         },
         {
             "name": "typicms/users",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "43a9ed62f1606ee0c21bc161c8f1b8682b416df7"
+                "reference": "b5a79d5b28f214491828e724e33d71e1fcfcce4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/43a9ed62f1606ee0c21bc161c8f1b8682b416df7",
-                "reference": "43a9ed62f1606ee0c21bc161c8f1b8682b416df7",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/b5a79d5b28f214491828e724e33d71e1fcfcce4b",
+                "reference": "b5a79d5b28f214491828e724e33d71e1fcfcce4b",
                 "shasum": ""
             },
             "require": {
@@ -2978,7 +2978,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-07-06 21:52:28"
+            "time": "2015-08-15 11:48:48"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3486,16 +3486,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.4.1",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373"
+                "reference": "4745ded9307786b730d7a60df5cb5a6c43cf95f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
-                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4745ded9307786b730d7a60df5cb5a6c43cf95f7",
+                "reference": "4745ded9307786b730d7a60df5cb5a6c43cf95f7",
                 "shasum": ""
             },
             "require": {
@@ -3542,7 +3542,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-04-27 22:15:08"
+            "time": "2015-08-13 10:07:40"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -3737,16 +3737,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.4.3",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "7a9b0969488c3c54fd62b4d504b3ec758fd005d9"
+                "reference": "09fc125d65c344c53a7c7ad8f261e3f3af9f76c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/7a9b0969488c3c54fd62b4d504b3ec758fd005d9",
-                "reference": "7a9b0969488c3c54fd62b4d504b3ec758fd005d9",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/09fc125d65c344c53a7c7ad8f261e3f3af9f76c5",
+                "reference": "09fc125d65c344c53a7c7ad8f261e3f3af9f76c5",
                 "shasum": ""
             },
             "require": {
@@ -3782,20 +3782,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-06-19 03:43:16"
+            "time": "2015-08-13 14:23:08"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.3",
+            "version": "4.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "fd3050e26e3105f416d74c4d33aea659b406c59d"
+                "reference": "55bf1d6092b0e13a1f26bd5eaffeef3d8ad85ea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fd3050e26e3105f416d74c4d33aea659b406c59d",
-                "reference": "fd3050e26e3105f416d74c4d33aea659b406c59d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/55bf1d6092b0e13a1f26bd5eaffeef3d8ad85ea7",
+                "reference": "55bf1d6092b0e13a1f26bd5eaffeef3d8ad85ea7",
                 "shasum": ""
             },
             "require": {
@@ -3854,7 +3854,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-08-10 09:16:56"
+            "time": "2015-08-15 04:21:23"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
