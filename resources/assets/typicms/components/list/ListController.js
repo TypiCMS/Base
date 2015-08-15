@@ -38,15 +38,12 @@
              * Set status = 0 or 1 for item
              */
             $scope.toggleStatus = function (model) {
-                var status = Math.abs(model.status - 1),
-                    statuses = [
-                        'offline',
-                        'online'
-                    ];
-                model.status = status;
-                $api.update({'id': model.id}, model).$promise.then(
+                var newStatus = Math.abs(model.status - 1),
+                    label = (newStatus === 1) ? 'online' : 'offline';
+                model.status = newStatus;
+                $api.update({id: model.id}, model).$promise.then(
                     function () {
-                        alertify.success('Item is ' + statuses[status] + '.');
+                        alertify.success('Item is ' + label + '.');
                     },
                     function (reason) {
                         alertify.error('Error ' + reason.status + ' ' + reason.statusText);
@@ -59,8 +56,9 @@
              */
             $scope.toggleHomepage = function (model) {
                 model.homepage = Math.abs(model.homepage - 1);
-                $api.update({'id': model.id}, model).$promise.then(
+                $api.update({id: model.id}, model).$promise.then(
                     function () {
+                        alertify.success('Homepage is set.');
                     },
                     function (reason) {
                         alertify.error('Error ' + reason.status + ' ' + reason.statusText);
@@ -72,9 +70,8 @@
              * Update model
              */
             $scope.update = function (model) {
-                $api.update({'id': model.id}, model).$promise.then(
-                    function () {
-                    },
+                $api.update({id: model.id}, model).$promise.then(
+                    null,
                     function (reason) {
                         alertify.error('Error ' + reason.status + ' ' + reason.statusText);
                     }
@@ -100,7 +97,7 @@
                     return false;
                 }
                 var index = $scope.models.indexOf(model);
-                $api.delete({'id': model.id},
+                $api.delete({id: model.id},
                     function () {
                         if (index !== -1) {
                             $scope.models.splice(index, 1);
@@ -126,14 +123,13 @@
                 if (!window.confirm('Supprimer « ' + title + ' » ?')) {
                     return false;
                 }
-                $api.delete({'id': scope.model.id}, function () {
+                $api.delete({id: scope.model.id}, function () {
                     scope.remove();
                 });
             };
 
             $scope.treeOptions = {
-                dragThreshold: 0,
-                accept: function(sourceNodeScope, destNodesScope, destIndex) {
+                accept: function (sourceNodeScope, destNodesScope) {
                     if (destNodesScope.model && destNodesScope.model.module) {
                         return false;
                     }
@@ -163,7 +159,7 @@
                     model.parent_id = parentId;
 
                     angular.forEach(currentList, function (model) {
-                        data.item.push({'id': model.id, 'parent_id': model.parent_id});
+                        data.item.push({id: model.id, 'parent_id': model.parent_id});
                     });
 
                     $http.post('/admin/' + moduleName + '/sort', data).
