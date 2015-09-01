@@ -1,4 +1,29 @@
+# Laravel
+.env
+.env.*
+!.env.example
 /vendor
+
 /node_modules
 /bower_components
-.env
+
+
+# Composer
+composer.phar
+composer.lock
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+vagrant
+.vagrant
+nbproject/
+
+# Packages
+_ide_helpers.php
