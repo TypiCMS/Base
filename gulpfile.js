@@ -128,7 +128,7 @@ gulp.task('ckeditor', function () {
         .pipe(gulp.dest('public/components/ckeditor/lang'));
 
     // Plugins
-    var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget'];
+    var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget'];
     for (var i = 0; i < plugins.length; i++) {
         gulp.src(['bower_components/ckeditor/plugins/' + plugins[i] + '/**/*'])
             .pipe(gulp.dest('public/components/ckeditor/plugins/' + plugins[i]));
