@@ -907,16 +907,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.12",
+            "version": "v5.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "76a9816f37a58383f6ba093ccf08f253e5488555"
+                "reference": "231b5ee6d8439edb5f7d45da00fd31d915bdf6f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/76a9816f37a58383f6ba093ccf08f253e5488555",
-                "reference": "76a9816f37a58383f6ba093ccf08f253e5488555",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/231b5ee6d8439edb5f7d45da00fd31d915bdf6f0",
+                "reference": "231b5ee6d8439edb5f7d45da00fd31d915bdf6f0",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1031,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-08-30 23:25:48"
+            "time": "2015-09-03 16:00:33"
         },
         {
             "name": "league/flysystem",
@@ -2430,16 +2430,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "v2.4.16",
+            "version": "v2.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "8c684af27b2328e62ba49d6534f774b7683d5fee"
+                "reference": "3d08455d475879a226f31895b3a25386802650d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/8c684af27b2328e62ba49d6534f774b7683d5fee",
-                "reference": "8c684af27b2328e62ba49d6534f774b7683d5fee",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/3d08455d475879a226f31895b3a25386802650d8",
+                "reference": "3d08455d475879a226f31895b3a25386802650d8",
                 "shasum": ""
             },
             "require": {
@@ -2465,7 +2465,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-08-31 21:31:13"
+            "time": "2015-09-03 16:04:16"
         },
         {
             "name": "typicms/dashboard",
@@ -2609,16 +2609,16 @@
         },
         {
             "name": "typicms/history",
-            "version": "v2.4.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
-                "reference": "5db4484f62c35ba33a6b0537ca77127c61f0c59f"
+                "reference": "061c741a6dc6b98679ade5f9b25d139168a814a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/History/zipball/5db4484f62c35ba33a6b0537ca77127c61f0c59f",
-                "reference": "5db4484f62c35ba33a6b0537ca77127c61f0c59f",
+                "url": "https://api.github.com/repos/TypiCMS/History/zipball/061c741a6dc6b98679ade5f9b25d139168a814a8",
+                "reference": "061c741a6dc6b98679ade5f9b25d139168a814a8",
                 "shasum": ""
             },
             "require": {
@@ -2640,7 +2640,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-06-04 14:39:35"
+            "time": "2015-09-01 12:18:15"
         },
         {
             "name": "typicms/menulinks",
