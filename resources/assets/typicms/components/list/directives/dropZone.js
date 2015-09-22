@@ -12,23 +12,8 @@ angular.module('typicms').directive('dropZone', function () {
             $('#dropzone').trigger('click');
         });
 
-        var dropZoneTemplate,
-            acceptedFiles,
+        var acceptedFiles,
             locales = scope.TypiCMS.locales;
-
-        dropZoneTemplate = '<div class="thumbnail dz-preview dz-file-preview">\
-                <div class="dz-details">\
-                    <div class="thumb-container">\
-                        <img data-dz-thumbnail src="" alt="">\
-                    </div>\
-                    <div class="caption">\
-                        <small data-dz-name></small>\
-                        <div data-dz-size></div>\
-                        <div class="dz-error-message"><span data-dz-errormessage></span></div>\
-                    </div>\
-                </div>\
-                <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>\
-            </div>';
 
         acceptedFiles = [
             'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
@@ -40,10 +25,13 @@ angular.module('typicms').directive('dropZone', function () {
             'application/vnd.ms-powerpoint', // ppt
             'application/vnd.ms-excel', // xls
             'application/pdf',
+            'application/postscript',
             'application/zip',
+            'image/tiff',
             'image/jpeg',
             'image/gif',
-            'image/png'
+            'image/bmp',
+            'image/gif'
         ];
 
         Dropzone.options.dropzone = {
@@ -52,9 +40,8 @@ angular.module('typicms').directive('dropZone', function () {
             clickable: true,
             maxFilesize: 60, // MB
             acceptedFiles: acceptedFiles.join(),
-            previewTemplate: dropZoneTemplate,
-            thumbnailWidth: 130,
-            thumbnailHeight: 130,
+            thumbnailWidth: 140,
+            thumbnailHeight: 140,
             init: function () {
 
                 this.on('success', function (file, response) {
@@ -65,12 +52,27 @@ angular.module('typicms').directive('dropZone', function () {
                         $(file.previewElement).fadeOut('fast', function () {
                             $this.removeFile(file);
                             scope.$apply(function () {
-                                // scope.models.push(response.model);
                                 scope.models.splice(0, 0, response.model);
                             });
                         });
                     }, 1000);
 
+                });
+
+                this.on('error', function (file, response) {
+                    if($.type(response) === "string") {
+                        var message = response; //dropzone sends it's own error messages in string
+                    } else {
+                        var message = response.file[0];
+                    }
+                    file.previewElement.classList.add("dz-error");
+                    _ref = file.previewElement.querySelectorAll("[data-dz-errormessage]");
+                    _results = [];
+                    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                        node = _ref[_i];
+                        _results.push(node.textContent = message);
+                    }
+                    return _results;
                 });
 
                 this.on('sending', function (file, xhr, formData) {
