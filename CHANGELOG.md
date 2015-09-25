@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.4.24 - 2015-09-25
+
+- BREAKING CHANGE: store and update methods where removed from TypiCMS\Modules\Core\Http\Controllers\BaseApiController, so you will have to implement these methods in your custom modules ApiController classes.
+
 ## 2.4.18 - 2015-08-09
 
 - Dynamic links to a resource in text editor, for example {!! page:3 !!} or {!! news:5 !!}
