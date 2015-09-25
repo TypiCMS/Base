@@ -30,6 +30,7 @@ angular.module('typicms').directive('dropZone', function () {
             'image/tiff',
             'image/jpeg',
             'image/gif',
+            'image/png',
             'image/bmp',
             'image/gif'
         ];
