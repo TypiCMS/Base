@@ -152,7 +152,7 @@ return [
         Bkwld\Croppa\ServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Krucas\Notification\NotificationServiceProvider::class,
-        Laracasts\Utilities\JavaScript\JavascriptServiceProvider::class,
+        Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
 
         /*
