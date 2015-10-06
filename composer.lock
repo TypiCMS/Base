@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "cb48842f3d7276538ad1b70ff4528d0a",
+    "content-hash": "5d0d28f2f86df01c3632982fbe330098",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -302,16 +303,16 @@
         },
         {
             "name": "dimsav/laravel-translatable",
-            "version": "v5.1.1",
+            "version": "v5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dimsav/laravel-translatable.git",
-                "reference": "e0ec6da538c866c9dd8a89485ca0565ccc6ebbd0"
+                "reference": "1116d7d15dcd3b3c96ad6df2b72694f919b90a3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/e0ec6da538c866c9dd8a89485ca0565ccc6ebbd0",
-                "reference": "e0ec6da538c866c9dd8a89485ca0565ccc6ebbd0",
+                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/1116d7d15dcd3b3c96ad6df2b72694f919b90a3b",
+                "reference": "1116d7d15dcd3b3c96ad6df2b72694f919b90a3b",
                 "shasum": ""
             },
             "require": {
@@ -349,7 +350,7 @@
                 "laravel",
                 "translation"
             ],
-            "time": "2015-09-13 20:58:44"
+            "time": "2015-05-07 16:07:37"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -907,16 +908,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.18",
+            "version": "v5.1.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "2703f4b395631fd3a2165ad74074d3531acfeccf"
+                "reference": "45e181369991579dc3ad015665eabbb72c0fadba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/2703f4b395631fd3a2165ad74074d3531acfeccf",
-                "reference": "2703f4b395631fd3a2165ad74074d3531acfeccf",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/45e181369991579dc3ad015665eabbb72c0fadba",
+                "reference": "45e181369991579dc3ad015665eabbb72c0fadba",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1032,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-09-30 20:42:12"
+            "time": "2015-10-01 18:32:48"
         },
         {
             "name": "league/flysystem",
@@ -2642,16 +2643,16 @@
         },
         {
             "name": "typicms/menulinks",
-            "version": "v2.4.4",
+            "version": "v2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menulinks.git",
-                "reference": "07b50cb2d6e94bf79519257137522e79966f943d"
+                "reference": "96e8e47a475811159290ff68d05d7ddf3c25f8e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/07b50cb2d6e94bf79519257137522e79966f943d",
-                "reference": "07b50cb2d6e94bf79519257137522e79966f943d",
+                "url": "https://api.github.com/repos/TypiCMS/Menulinks/zipball/96e8e47a475811159290ff68d05d7ddf3c25f8e7",
+                "reference": "96e8e47a475811159290ff68d05d7ddf3c25f8e7",
                 "shasum": ""
             },
             "require": {
@@ -2673,7 +2674,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-09-25 18:41:24"
+            "time": "2015-10-02 13:22:04"
         },
         {
             "name": "typicms/menus",
@@ -2865,21 +2866,21 @@
         },
         {
             "name": "typicms/translatablebootforms",
-            "version": "v2.1.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/TranslatableBootForms.git",
-                "reference": "c8eecde7b63eb2a72e45e5907a1209d61eda05fd"
+                "reference": "1b8d64041dd6297f068fba58bc1609c5c0f588d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/c8eecde7b63eb2a72e45e5907a1209d61eda05fd",
-                "reference": "c8eecde7b63eb2a72e45e5907a1209d61eda05fd",
+                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/1b8d64041dd6297f068fba58bc1609c5c0f588d3",
+                "reference": "1b8d64041dd6297f068fba58bc1609c5c0f588d3",
                 "shasum": ""
             },
             "require": {
                 "adamwathan/bootforms": "~0.6.0",
-                "dimsav/laravel-translatable": "~5.1.0",
+                "dimsav/laravel-translatable": "5.1.0",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -2906,7 +2907,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2015-05-26 10:39:11"
+            "time": "2015-10-06 09:51:06"
         },
         {
             "name": "typicms/translations",
@@ -3855,16 +3856,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.7",
+            "version": "2.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "5e2645ad49d196e020b85598d7c97e482725786a"
+                "reference": "ac8e7a3db35738d56ee9a76e78a4e03d97628983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/5e2645ad49d196e020b85598d7c97e482725786a",
-                "reference": "5e2645ad49d196e020b85598d7c97e482725786a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/ac8e7a3db35738d56ee9a76e78a4e03d97628983",
+                "reference": "ac8e7a3db35738d56ee9a76e78a4e03d97628983",
                 "shasum": ""
             },
             "require": {
@@ -3907,7 +3908,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-08-19 09:14:08"
+            "time": "2015-10-02 06:51:40"
         },
         {
             "name": "sebastian/comparator",
