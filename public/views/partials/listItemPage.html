@@ -5,7 +5,7 @@
 </div>
 <div typi-btn-status action="toggleStatus(model)" model="model"></div>
 <span ng-if="model.private" class="fa fa-lock"></span>
-<div class="title" ui-tree-handle>{{ model.title }}</div> <span ng-if="model.redirect" class="fa fa-level-down" title="Redirect to first child"></span> <a class="label label-warning" href="{{ model.module }}" ng-if="model.module">{{ model.module }}</a>
+<div class="title" ui-tree-handle>{{ model.title }}</div> <span ng-if="model.redirect" class="fa fa-level-down text-muted" title="Redirect to first child"></span> <a class="label label-warning" href="{{ model.module }}" ng-if="model.module">{{ model.module }}</a>
 <ul ui-tree-nodes="" ng-class="{hidden: collapsed}" ng-model="model.items">
     <li ng-repeat="model in model.items" ui-tree-node ng-include="'/views/partials/listItemPage.html'">
     </li>
