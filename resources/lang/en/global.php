@@ -45,9 +45,9 @@ return array(
     'En ligne/Hors ligne' => 'Online/Offline',
     'No default page found' => 'No default page found',
     'No file' => 'No file',
-    'settings'  => 'settings',
-    'admin side' => 'admin side',
-    'view website' => 'view website',
+    'Settings'  => 'Settings',
+    'Admin side' => 'Admin side',
+    'View website' => 'View website',
 
     'Mandatory fields' => 'Mandatory fields',
 
