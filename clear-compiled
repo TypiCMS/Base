@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+foreach (glob(__DIR__ . '/bootstrap/cache/*.*') as $file) {
+    @unlink($file);
+}
+echo 'Cleared compiled directory.' . "\r\n";
+exit();
