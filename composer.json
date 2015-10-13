@@ -22,7 +22,7 @@
         "maatwebsite/laravel-sidebar": "~1.1.1",
         "typicms/nestablecollection": "~1.1.1",
         "typicms/translatablebootforms": "~2.1.1",
-        "typicms/core": "~2.4.5",
+        "typicms/core": "~2.4.24",
         "typicms/blocks": "~2.4.0",
         "typicms/dashboard": "~2.4.0",
         "typicms/files": "~2.4.0",
@@ -30,11 +30,11 @@
         "typicms/groups": "~2.4.0",
         "typicms/history": "~2.4.0",
         "typicms/menus": "~2.4.0",
-        "typicms/pages": "~2.4.0",
+        "typicms/pages": "~2.4.8",
         "typicms/settings": "~2.4.0",
         "typicms/sitemap": "~2.4.0",
         "typicms/translations": "~2.4.0",
-        "typicms/users": "~2.4.1"
+        "typicms/users": "~2.4.7"
     },
     "require-dev": {
         "laracasts/generators": "~1.1",
@@ -62,8 +62,10 @@
             "php clear-compiled",
             "php artisan optimize"
         ],
+        "pre-update-cmd": [
+            "php clear-compiled"
+        ],
         "post-update-cmd": [
-            "php clear-compiled",
             "php artisan optimize"
         ]
     },
