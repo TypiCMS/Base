@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cb48842f3d7276538ad1b70ff4528d0a",
+    "hash": "ff9355ad0b67f4eb0f8bdef8add750c3",
     "content-hash": "5d0d28f2f86df01c3632982fbe330098",
     "packages": [
         {
@@ -1595,16 +1595,16 @@
         },
         {
             "name": "roumen/sitemap",
-            "version": "v2.5.5",
+            "version": "v2.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RoumenDamianoff/laravel-sitemap.git",
-                "reference": "f29c465f2dbee562c354e79ba17ef7c0ae9f29fe"
+                "reference": "9e7044dd0ee919de2f37ebb8ae0bbb541c61e86a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/f29c465f2dbee562c354e79ba17ef7c0ae9f29fe",
-                "reference": "f29c465f2dbee562c354e79ba17ef7c0ae9f29fe",
+                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/9e7044dd0ee919de2f37ebb8ae0bbb541c61e86a",
+                "reference": "9e7044dd0ee919de2f37ebb8ae0bbb541c61e86a",
                 "shasum": ""
             },
             "require": {
@@ -1639,7 +1639,7 @@
                 "generator",
                 "laravel"
             ],
-            "time": "2015-06-12 16:49:42"
+            "time": "2015-10-03 08:11:47"
         },
         {
             "name": "swiftmailer/swiftmailer",
