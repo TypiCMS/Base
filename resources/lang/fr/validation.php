@@ -163,6 +163,7 @@ return [
         'private' => 'Privée',
         'is_home' => 'Définir en tant que page d’accueil',
         'redirect to first child' => 'Rediriger vers le premier enfant',
+        'don’t generate HTML cache' => 'Ne pas générer un cache HTML',
         'module' => 'Module',
         'template' => 'Template',
         'css' => 'Code CSS',

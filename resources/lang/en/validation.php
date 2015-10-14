@@ -163,6 +163,7 @@ return [
         'private' => 'Private',
         'is_home' => 'Is home',
         'redirect to first child' => 'Redirect to first child',
+        'don’t generate HTML cache' => 'Don’t generate HTML cache',
         'module' => 'Module',
         'template' => 'Template',
         'css' => 'CSS',
