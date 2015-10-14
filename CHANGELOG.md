@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.4.31 - 2015-10-14
+- BREAKING CHANGE: Add this line after publicAccess in routeMiddleware array: 'publicCache' => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
+
 ## 2.4.30 - 2015-10-14
 - BREAKING CHANGE: Add a new column in pages table: `nocache` tinyint(1) NOT NULL DEFAULT '0'.
 
