@@ -31,6 +31,7 @@ class Kernel extends HttpKernel
         'admin' => \TypiCMS\Modules\Core\Http\Middleware\Admin::class,
         'auth' => \TypiCMS\Modules\Core\Http\Middleware\Authenticate::class,
         'publicAccess' => \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
+        'publicCache' => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
         'publicLocale' => \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
         'registration' => \TypiCMS\Modules\Core\Http\Middleware\Registration::class,
     ];
