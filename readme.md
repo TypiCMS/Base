@@ -64,7 +64,7 @@ This kind of URLs are managed by the CMS:
 - OpenSSL PHP Extension
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
-- Memcached, Redis or APC
+- Memcached or Redis
 
 
 ## Installation
