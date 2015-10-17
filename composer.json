@@ -11,6 +11,12 @@
         }
     ],
     "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sdebacker/laravel-translatable"
+        }
+    ],
     "require": {
         "laravel/framework": "~5.1.0",
         "barryvdh/laravel-debugbar": "~2.0",
@@ -21,7 +27,8 @@
         "bkwld/croppa": "~4.2.1",
         "maatwebsite/laravel-sidebar": "~1.1.1",
         "typicms/nestablecollection": "~1.1.1",
-        "typicms/translatablebootforms": "~2.1.1",
+        "typicms/translatablebootforms": "2.1.1",
+        "dimsav/laravel-translatable": "~5.1.1",
         "typicms/core": "~2.4.24",
         "typicms/blocks": "~2.4.0",
         "typicms/dashboard": "~2.4.0",

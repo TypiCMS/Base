@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7fc1f1fecfde1aa8639435921ad60429",
-    "content-hash": "62ab60ea45574cebaac2fef080fd5662",
+    "hash": "b1814475dc7bc23e7233aa103d89c555",
+    "content-hash": "46ef8d8961bdc854dd698e988715950b",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -303,16 +303,16 @@
         },
         {
             "name": "dimsav/laravel-translatable",
-            "version": "v5.1",
+            "version": "v5.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dimsav/laravel-translatable.git",
-                "reference": "1116d7d15dcd3b3c96ad6df2b72694f919b90a3b"
+                "url": "https://github.com/sdebacker/laravel-translatable.git",
+                "reference": "e0ec6da538c866c9dd8a89485ca0565ccc6ebbd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/1116d7d15dcd3b3c96ad6df2b72694f919b90a3b",
-                "reference": "1116d7d15dcd3b3c96ad6df2b72694f919b90a3b",
+                "url": "https://api.github.com/repos/sdebacker/laravel-translatable/zipball/e0ec6da538c866c9dd8a89485ca0565ccc6ebbd0",
+                "reference": "e0ec6da538c866c9dd8a89485ca0565ccc6ebbd0",
                 "shasum": ""
             },
             "require": {
@@ -332,7 +332,6 @@
                     "tests"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -350,7 +349,10 @@
                 "laravel",
                 "translation"
             ],
-            "time": "2015-05-07 16:07:37"
+            "support": {
+                "source": "https://github.com/sdebacker/laravel-translatable/tree/v5.1.1"
+            },
+            "time": "2015-09-13 20:58:44"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -564,16 +566,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "97fe7210def29451ec74923b27e552238defd75a"
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/97fe7210def29451ec74923b27e552238defd75a",
-                "reference": "97fe7210def29451ec74923b27e552238defd75a",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
                 "shasum": ""
             },
             "require": {
@@ -611,7 +613,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2015-08-15 19:37:21"
+            "time": "2015-10-15 22:28:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1438,20 +1440,23 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.0.5",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e"
+                "reference": "df1207683dfbd1399f0fa931a368082a28fed50b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
-                "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/df1207683dfbd1399f0fa931a368082a28fed50b",
+                "reference": "df1207683dfbd1399f0fa931a368082a28fed50b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.0"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
             "autoload": {
@@ -1476,7 +1481,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-10-08 12:57:25"
+            "time": "2015-10-16 14:10:15"
         },
         {
             "name": "psr/http-message",
@@ -2910,21 +2915,21 @@
         },
         {
             "name": "typicms/translatablebootforms",
-            "version": "v2.1.2",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/TranslatableBootForms.git",
-                "reference": "1b8d64041dd6297f068fba58bc1609c5c0f588d3"
+                "reference": "c8eecde7b63eb2a72e45e5907a1209d61eda05fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/1b8d64041dd6297f068fba58bc1609c5c0f588d3",
-                "reference": "1b8d64041dd6297f068fba58bc1609c5c0f588d3",
+                "url": "https://api.github.com/repos/TypiCMS/TranslatableBootForms/zipball/c8eecde7b63eb2a72e45e5907a1209d61eda05fd",
+                "reference": "c8eecde7b63eb2a72e45e5907a1209d61eda05fd",
                 "shasum": ""
             },
             "require": {
                 "adamwathan/bootforms": "~0.6.0",
-                "dimsav/laravel-translatable": "5.1.0",
+                "dimsav/laravel-translatable": "~5.1.0",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -2951,7 +2956,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2015-10-06 09:51:06"
+            "time": "2015-05-26 10:39:11"
         },
         {
             "name": "typicms/translations",
