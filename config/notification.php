@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -35,11 +35,11 @@ return array(
     | :message - message text.
     |
     */
-    'default_format'                        => array(
+    'default_format'                        => [
 
         'default'               => '<div class="alert alert-:type">:message</div>',
 
-    ),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -61,13 +61,13 @@ return array(
     | :message - message text.
     |
     */
-    'default_formats'                       => array(
+    'default_formats'                       => [
 
-        'default'               => array(
-            'error'             => '<div class="alert alert-danger">:message</div>'
-        ),
+        'default'               => [
+            'error'             => '<div class="alert alert-danger">:message</div>',
+        ],
 
-    ),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -77,10 +77,10 @@ return array(
     | Specify available types for each container.
     |
     */
-    'default_types'                         => array(
+    'default_types'                         => [
 
-        'default'               => array('info', 'success', 'warning', 'error'),
+        'default'               => ['info', 'success', 'warning', 'error'],
 
-    ),
+    ],
 
-);
+];

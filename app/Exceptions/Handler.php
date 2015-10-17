@@ -10,7 +10,6 @@ use Symfony\Component\Debug\ExceptionHandler as SymfonyDisplayer;
 
 class Handler extends ExceptionHandler
 {
-
     /**
      * A list of the exception types that should not be reported.
      *
@@ -25,7 +24,8 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param  \Exception  $e
+     * @param \Exception $e
+     *
      * @return void
      */
     public function report(Exception $e)
@@ -33,20 +33,22 @@ class Handler extends ExceptionHandler
         if ($this->shouldReport($e)) {
             Log::error($e);
         }
+
         return parent::report($e);
     }
 
     /**
      * Render an exception into an HTTP response.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $e
+     * @param \Illuminate\Http\Request $request
+     * @param \Exception               $e
+     *
      * @return \Illuminate\Http\Response
      */
     public function render($request, Exception $e)
     {
 
-        /**
+        /*
          * Error 404 when a model is not found
          */
         if ($e instanceof ModelNotFoundException) {
@@ -60,9 +62,8 @@ class Handler extends ExceptionHandler
             if (app()->environment() == 'production') {
                 return response()->view('errors.500', [], 500);
             }
+
             return $this->toIlluminateResponse((new SymfonyDisplayer(config('app.debug')))->createResponse($e), $e);
         }
-
     }
-
 }

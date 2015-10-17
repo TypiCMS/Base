@@ -1,9 +1,9 @@
 <?php
+
 use TypiCMS\Modules\Users\Models\User;
 
 class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
-
     /**
      * The base URL to use while testing the application.
      *
@@ -32,7 +32,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
         // Start session so we can test post with token.
         Session::start();
 
-        $this->app['path.base'] = __DIR__ . '/..';
+        $this->app['path.base'] = __DIR__.'/..';
         $this->app['config']->set('database.default', 'sqlite');
         $this->app['config']->set('database.connections.sqlite', [
             'driver'   => 'sqlite',
@@ -46,5 +46,4 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
         $user = new User(['name' => 'John']);
         $this->be($user);
     }
-
 }
