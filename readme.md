@@ -1,13 +1,14 @@
 # TypiCMS
 
 [![Packagist](https://img.shields.io/packagist/v/typicms/base.svg?style=flat-square)]()
-[![StyleCI](https://styleci.io/repos/28512514/shield)](https://styleci.io/repos/28512514)
 [![Packagist](https://img.shields.io/packagist/l/typicms/base.svg?style=flat-square)]()
+[![Scrutinizer](https://img.shields.io/scrutinizer/g/typicms/base.svg?style=flat-square)]()
+[![StyleCI](https://styleci.io/repos/28512514/shield)](https://styleci.io/repos/28512514)
 
 TypiCMS is a multilingual content management system built with [Laravel 5](http://laravel.com).
 [npm](http://npmjs.com), [Bower](http://bower.io) and [gulp](http://gulpjs.com) are used for asset management and the user interface is built with [Bootstrap 3](http://getbootstrap.com) with [Less](http://lesscss.org).
 
-![TypiCMS screenshot](http://typicms.samsfactory.com/uploads/pages/TypiCMS-screenshot.png)
+![TypiCMS screenshot](http://typicms.org/img/TypiCMS-screenshot.png)
 
 ## Table of contents
 
