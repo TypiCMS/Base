@@ -8,7 +8,7 @@
 TypiCMS is a multilingual content management system built with [Laravel 5](http://laravel.com).
 [npm](http://npmjs.com), [Bower](http://bower.io) and [gulp](http://gulpjs.com) are used for asset management and the user interface is built with [Bootstrap 3](http://getbootstrap.com) with [Less](http://lesscss.org).
 
-![TypiCMS screenshot](http://typicms.org/uploads/files/typicms-screenshot.png)
+![TypiCMS screenshot](http://typicms.org/uploads/files/typicms-screenshot.png?1)
 
 ## Table of contents
 
