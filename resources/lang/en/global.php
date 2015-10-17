@@ -1,66 +1,66 @@
 <?php
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
     | EN Global TypiCMS Language Lines
     |--------------------------------------------------------------------------
     */
-    'languages' => array(
+    'languages' => [
         'fr' => 'French',
         'nl' => 'Dutch',
         'en' => 'English',
-    ),
-    'form' => array(
+    ],
+    'form' => [
         'page content' => 'page content',
-        'meta data' => 'meta data',
-        'options' => 'options',
-    ),
-    'menus' => array(
-        'content' => 'Content',
-        'users' => 'Users and groups',
-        'media' => 'Media',
+        'meta data'    => 'meta data',
+        'options'      => 'options',
+    ],
+    'menus' => [
+        'content'  => 'Content',
+        'users'    => 'Users and groups',
+        'media'    => 'Media',
         'contacts' => 'Contacts',
-    ),
-    'Index' => 'List',
-    'Create' => 'Create',
-    'Store' => 'Store',
-    'Update' => 'Update',
-    'Delete' => 'Delete',
-    'Select all' => 'Select all',
+    ],
+    'Index'        => 'List',
+    'Create'       => 'Create',
+    'Store'        => 'Store',
+    'Update'       => 'Update',
+    'Delete'       => 'Delete',
+    'Select all'   => 'Select all',
     'Deselect all' => 'Deselect all',
-    'Online' => 'Online',
-    'Offline' => 'Offline',
-    'View' => 'View',
-    'Sort' => 'Sort',
-    'Edit' => 'Edit',
-    'Search' => 'Search',
-    'Not found' => 'Not found',
+    'Online'       => 'Online',
+    'Offline'      => 'Offline',
+    'View'         => 'View',
+    'Sort'         => 'Sort',
+    'Edit'         => 'Edit',
+    'Search'       => 'Search',
+    'Not found'    => 'Not found',
 
     'Yes' => 'Yes',
-    'No' => 'No',
+    'No'  => 'No',
 
-    'Home' => 'Home',
-    'En ligne/Hors ligne' => 'Online/Offline',
+    'Home'                  => 'Home',
+    'En ligne/Hors ligne'   => 'Online/Offline',
     'No default page found' => 'No default page found',
-    'No file' => 'No file',
-    'Settings'  => 'Settings',
-    'Admin side' => 'Admin side',
-    'View website' => 'View website',
+    'No file'               => 'No file',
+    'Settings'              => 'Settings',
+    'Admin side'            => 'Admin side',
+    'View website'          => 'View website',
 
     'Mandatory fields' => 'Mandatory fields',
 
     // Tabs
-    'Content' => 'Content',
-    'Meta' => 'Meta',
-    'Options' => 'Options',
+    'Content'   => 'Content',
+    'Meta'      => 'Meta',
+    'Options'   => 'Options',
     'Galleries' => 'Galleries',
-    'Files' => 'Files',
-    'Images' => 'Images',
-    'Info' => 'Info',
+    'Files'     => 'Files',
+    'Images'    => 'Images',
+    'Info'      => 'Info',
 
     'Toggle navigation' => 'Toggle navigation',
 
     'Items sorted' => 'Items sorted.',
-);
+];

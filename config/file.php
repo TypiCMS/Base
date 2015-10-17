@@ -1,7 +1,8 @@
 <?php
-return array(
 
-    'types' => array(
+return [
+
+    'types' => [
         'mp3'  => 'a',
         'wav'  => 'a',
         'aif'  => 'a',
@@ -32,6 +33,6 @@ return array(
         'jpeg' => 'i',
         'png'  => 'i',
         'gif'  => 'i',
-    ),
+    ],
 
-);
+];

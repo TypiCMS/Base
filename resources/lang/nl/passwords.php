@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -19,4 +19,4 @@ return array(
     'sent'     => 'Wachtwoord herinnering verzonden!',
     'reset'    => 'Wachtwoord herinnering verzonden!',
 
-);
+];
