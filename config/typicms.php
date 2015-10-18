@@ -20,11 +20,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | You can choose not to have main locale in URL
+    | You can choose not to have main locale in URLs
     |--------------------------------------------------------------------------
     |
-    | If you chage this value, you will have to regenerate
-    | menulinks and pages uri.
+    | If set to false, the fallback_locale defined in config/app.php
+    | will not appears in URLs.
     |
     */
     'main_locale_in_url' => true,
