@@ -14,6 +14,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Default locale
+    |--------------------------------------------------------------------------
+    |
+    | As a default locale, Translatable takes the locale of Laravel's
+    | translator. If for some reason you want to override this,
+    | you can specify what default should be used here.
+    |
+    */
+    'locale' => null,
+
+    /*
+    |--------------------------------------------------------------------------
     | Use fallback
     |--------------------------------------------------------------------------
     |
@@ -21,6 +33,7 @@ return [
     | more flexibility and configure this option per "translatable"
     | instance, this value will be overridden by the property
     | $useTranslationFallback when defined
+    |
     */
     'use_fallback' => false,
 
