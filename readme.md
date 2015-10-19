@@ -248,7 +248,8 @@ Commands are located in app/TypiCMS/Commands
 ## Contributing
 
 Feel free to fork and make pull requests directly on the master branch!
-TypiCMS follows the [PSR-2](http://www.php-fig.org/psr/psr-2/) standard.
+
+TypiCMS coding style follows the "recommended" preset of StyleCI. See https://styleci.readme.io/docs/presets#recommended
 
 Thanks to [elvendor](https://github.com/elvendor) and [jekjek](https://github.com/jekjek) for their contributions!
 

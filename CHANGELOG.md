@@ -13,6 +13,7 @@ All notable changes to TypiCMS will be documented in this file.
 - dimsav/laravel-translatable 5.2
 - adamwathan/bootforms 0.7
 - edvinaskrucas/notification 5.1
+- TypiCMS coding style follows the "recommended" preset of StyleCI. See https://styleci.readme.io/docs/presets#recommended
 
 ### Fixed
 - TypiCMS can be installed on systems without memcached.
