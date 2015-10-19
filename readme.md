@@ -67,7 +67,6 @@ This kind of URLs are managed by the CMS:
 - Tokenizer PHP Extension
 - Memcached or Redis
 
-
 ## Installation
 
 First install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](http://gulpjs.com)
@@ -112,8 +111,10 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), [B
 
 ### Configuration
 
-1. Set available locales and the default locale in config/translatable.php
-2. Cache driver is set to memcached. You can change it to another taggable cache system such as redis in your .env file
+1. Set locales in config/translatable.php.
+2. Set fallback_locale in config/app.php.
+3. Set main_locale_in_url in config/typicms.php to true or false.
+4. Cache driver is set to array, you can change it to another taggable cache system such as redis or memcached in your .env file.
 
 ### Installation of a module
 
