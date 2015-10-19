@@ -245,6 +245,12 @@ Commands are located in app/TypiCMS/Commands
   php artisan typicms:database
   ```
 
+* Clean the directory public/html
+
+  ```
+  php artisan clear-html
+  ```
+
 ## Contributing
 
 Feel free to fork and make pull requests directly on the master branch!

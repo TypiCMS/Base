@@ -6,6 +6,7 @@ All notable changes to TypiCMS will be documented in this file.
 ### Added
 - Custom script (clear-compiled) to avoid composer update issues. See https://github.com/laravel/framework/issues/9678.
 - Pages can be saved to static html files in the public/html directory, to be served directly by the webserver. See config/typicms.html_cache.
+- New command ```php artisan clear-html``` to empty the public/html directory.
 - Pages that shouldn't be cached have a no_cache attribute.
 - cviebrock/image-validator 2.0
 

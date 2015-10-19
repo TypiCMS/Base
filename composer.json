@@ -61,13 +61,14 @@
     "scripts": {
         "post-install-cmd": [
             "php clear-compiled",
-            "php clear-html-cache",
+            "php artisan clear-html",
             "php artisan optimize"
         ],
         "pre-update-cmd": [
             "php clear-compiled"
         ],
         "post-update-cmd": [
+            "php artisan clear-html",
             "php artisan optimize"
         ]
     },
