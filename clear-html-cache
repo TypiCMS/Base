@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+$files = new RecursiveIteratorIterator(
+    new RecursiveDirectoryIterator(__DIR__ . '/public/html', RecursiveDirectoryIterator::SKIP_DOTS),
+    RecursiveIteratorIterator::CHILD_FIRST
+);
+
+foreach ($files as $fileinfo) {
+    if ($fileinfo->getFileName() === '.gitignore') {
+        continue;
+    }
+    $todo = $fileinfo->isDir() ? 'rmdir' : 'unlink';
+    @$todo($fileinfo->getRealPath());
+}
+
+echo 'Cleared HTML cache directory.' . "\r\n";
+exit();

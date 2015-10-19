@@ -60,6 +60,7 @@
     "scripts": {
         "post-install-cmd": [
             "php clear-compiled",
+            "php clear-html-cache",
             "php artisan optimize"
         ],
         "pre-update-cmd": [
