@@ -161,7 +161,7 @@ Categories have many projects.
 ### Tags
 
 Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) jQuery plugin.
-The tags moudle has many to many polymorphic relations so it could easily be linked to other modules.
+The tags module has many to many polymorphic relations so it could easily be linked to other modules.
 
 ### Events
 
@@ -215,8 +215,8 @@ Change website title, and other options trough the settings panel. Settings are 
 
 ### History
 
-History table records changes and 25 latest records are displayed in the back office’s dashboard. Logged actions are *created*, *updated*, *deleted*, *set online* and *set offline*.
-It works for all modules except users and groups.
+*created*, *updated*, *deleted*, *online* and *offline* actions are logged in database.
+25 latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
@@ -227,7 +227,7 @@ Check available methods in each module’s repository.
 
 Commands are located in app/TypiCMS/Commands
 
-* Initialisation of TypiCMS
+* Installation of TypiCMS
 
   ```
   php artisan typicms:install
