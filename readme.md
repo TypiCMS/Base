@@ -141,13 +141,13 @@ This example is for the News module. After these steps, the module will appear i
 
 ### Pages
 
-Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.
-Each translation of a page has its own route.
+Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.  
+Each translation of a page has its own route.  
 A page can be linked to a module.
 
 ### Menus
 
-Each menu has nestable entries. One entry can be linked to a page or URL.
+Each menu has nestable entries. One entry can be linked to a page or URL.  
 You can return a HTML formated menu with ``` Menus::build('menuname') ```.
 
 ### Projects
@@ -160,7 +160,7 @@ Categories have many projects.
 
 ### Tags
 
-Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) jQuery plugin.
+Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) jQuery plugin.  
 The tags module has many to many polymorphic relations so it could easily be linked to other modules.
 
 ### Events
@@ -181,13 +181,13 @@ A partner has a logo, website URL, title and body content.
 
 ### Files
 
-The files module allows you to upload multiple files. It uses [DropzoneJS](http://www.dropzonejs.com) to upload them.
+The files module allows you to upload multiple files. It uses [DropzoneJS](http://www.dropzonejs.com) to upload them.  
 Thumbnails are generated on the fly with [Croppa](https://github.com/BKWLD/croppa).
 
 ### Galleries
 
-You can create as many galleries as you want, each gallery has many files.
-Galleries are linkable to any module item through a polymorphic many to many relation, for now only the news module is properly set up to support galleries.
+You can create as many galleries as you want, each gallery has many files.  
+Galleries are linkable to any module item through a polymorphic many to many relation.
 
 ### Users
 
@@ -195,7 +195,7 @@ User registration can be enabled through the settings panel (/admin/settings).
 
 ### Blocks
 
-Blocks are useful to display custom content in your views.
+Blocks are useful to display custom content in your views.  
 You can get the content of a block with ``` Blocks::build('blockname') ```.
 
 ### Translations
@@ -206,21 +206,21 @@ You can call DB translation everywhere with ``` Lang::get('db.Key') ```, ``` tra
 
 ### Sitemap
 
-Route sitemap.xml generates a sitemap file in XML format.
+Route sitemap.xml generates a sitemap file in XML format.  
 To add modules to the site map configure app/config/sitemap.php.
 
 ### Settings
 
-Change website title, and other options trough the settings panel. Settings are saved in the database.
+Change website title, and other options trough the settings panel. Settings are saved in the database
 
 ### History
 
-*created*, *updated*, *deleted*, *online* and *offline* actions are logged in database.
+*created*, *updated*, *deleted*, *online* and *offline* actions are logged in database.  
 25 latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
-Each modules has a facade that give you access to the repository, you can call for example ```News::latest(3)``` to get the three latest news.
+Each modules has a facade that give you access to the repository, you can call for example ```News::latest(3)``` to get the three latest news.  
 Check available methods in each module’s repository.
 
 ## Artisan commands
@@ -251,7 +251,7 @@ Feel free to fork and make pull requests directly on the master branch!
 
 TypiCMS coding style follows the "recommended" preset of StyleCI. See https://styleci.readme.io/docs/presets#recommended
 
-Thanks to [elvendor](https://github.com/elvendor) and [jekjek](https://github.com/jekjek) for their contributions!
+Thanks to all contributors!
 
 ## License
 
