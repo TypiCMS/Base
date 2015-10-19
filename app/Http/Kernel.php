@@ -28,12 +28,12 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
-        'admin' => \TypiCMS\Modules\Core\Http\Middleware\Admin::class,
-        'auth' => \TypiCMS\Modules\Core\Http\Middleware\Authenticate::class,
+        'auth.basic'   => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'guest'        => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'admin'        => \TypiCMS\Modules\Core\Http\Middleware\Admin::class,
+        'auth'         => \TypiCMS\Modules\Core\Http\Middleware\Authenticate::class,
         'publicAccess' => \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
-        'publicCache' => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
+        'publicCache'  => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
         'registration' => \TypiCMS\Modules\Core\Http\Middleware\Registration::class,
     ];
 }
