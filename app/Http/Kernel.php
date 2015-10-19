@@ -18,6 +18,7 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         \App\Http\Middleware\VerifyCsrfToken::class,
+        \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
         \Krucas\Notification\Middleware\NotificationMiddleware::class,
     ];
 
@@ -32,7 +33,6 @@ class Kernel extends HttpKernel
         'admin' => \TypiCMS\Modules\Core\Http\Middleware\Admin::class,
         'auth' => \TypiCMS\Modules\Core\Http\Middleware\Authenticate::class,
         'publicAccess' => \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
-        'publicLocale' => \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
         'publicCache' => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
         'registration' => \TypiCMS\Modules\Core\Http\Middleware\Registration::class,
     ];
