@@ -150,6 +150,7 @@ return [
          */
         Barryvdh\Debugbar\ServiceProvider::class,
         Bkwld\Croppa\ServiceProvider::class,
+        Cviebrock\ImageValidator\ImageValidatorServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Krucas\Notification\NotificationServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
