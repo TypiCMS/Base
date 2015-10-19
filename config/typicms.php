@@ -13,7 +13,7 @@ return [
     |--------------------------------------------------------------------------
     | Save each front office page in public/html as flat html file.
     | Pages are generated only when debug is off and no user is connected.
-    | Eloquent save and delete events empty html directory.
+    | The directory is cleaned on eloquent save, delete and composer install.
     |--------------------------------------------------------------------------
     */
     'html_cache' => false,
