@@ -39,6 +39,7 @@ TypiCMS is a multilingual content management system built with [Laravel 5](http:
 - [Facades](#facades)
 - [Artisan commands](#artisan-commands)
 - [Roadmap](#roadmap)
+- [Upgrade instructions](#upgrade-instructions)
 - [Contributing](#contributing)
 - [Testing](#testing)
 - [Licence](#licence)
@@ -250,6 +251,64 @@ Commands are located in app/TypiCMS/Commands
   ```
   php artisan clear-html
   ```
+
+##Upgrade instructions
+
+###Upgrade from 2.4.34 to TypiCMS 2.5.0
+
+Create an empty writable directory **public/html**, add in it a **.gitignore** file with this content :
+
+```
+*
+!.gitignore
+```
+
+In ```composer.json``` :
+ 
+- change each modules from ~2.4.x to ~2.5.0
+- change edvinaskrucas/notification to ~5.1.0
+- change typicms/translatablebootforms to ~2.2.0
+- Add ```"cviebrock/image-validator": "~2.0.0",```
+- Add ```"php artisan clear-html"``` in **post-install-cmd** and **post-update-cmd** scripts
+- Replace ```php artisan clear-compiled``` by ```php clear-compiled```
+
+Run ```composer update```
+
+In **App/Http/Kernel.php**
+
+- add to middleware array
+    - \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
+    - \Krucas\Notification\Middleware\NotificationMiddleware::class,
+- remove ```publicLocale``` from routes middleware
+
+In **config/translatable.php**, add ```'locale' => null```,
+
+Remove these files, they will be recreated by ```vendor:publish``` command
+
+- resources/views/vendor/core/admin/_tabs-lang-form.blade.php
+- resources/views/vendor/core/admin/_tabs-lang-list.blade.php
+- resources/views/vendor/core/admin/_tabs-lang.blade.php
+- resources/views/vendor/core/public/_languages-menu.blade.php
+
+Copy the clear-compiled file to root directory
+
+In table pages, add ````no_cache` tinyint(1) NOT NULL DEFAULT '0'```
+
+In **resources/views/vendor/core/admin/master.blade.php**, replace ```{{ Notification::[…] }}``` by ```{!! Notification::[…] !!}``` (3 lines)
+
+Run ```php artisan vendor:publish```
+
+Replace **package.json** file new one.
+
+Copy **set-content-locale.js** to **resources/assets/js/admin**
+
+In **resource/assets/less/admin/master.less**, remove ```@import (inline) '../../../../node_modules/alertify.js/dist/css/alertify-bootstrap-3.css'```;
+
+In **_index.blade.php** files, replace ```<div class="btn-toolbar" role="toolbar" ng-include="'/views/partials/btnLocales.html'"></div>``` by ```@include('core::admin._tabs-lang-list')```
+
+Remove **bower_components** and **node_modules** directories
+
+Run ```npm install```, ```bower update```, then ```gulp all```
 
 ## Contributing
 
