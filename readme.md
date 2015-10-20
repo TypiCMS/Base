@@ -296,6 +296,8 @@ In table pages, add ````no_cache` tinyint(1) NOT NULL DEFAULT '0'```
 
 In **resources/views/vendor/core/admin/master.blade.php**, replace ```{{ Notification::[…] }}``` by ```{!! Notification::[…] !!}``` (3 lines)
 
+Remove each occurrence of ```@inject('page', 'typicms.xxxx.page')``` from each front end view of each module (index.blade.php, show.blade.php,…), $page is now injected in the view via a view composer, see ModuleProvider classes.
+
 Run ```php artisan vendor:publish```
 
 Replace **package.json** file new one.
