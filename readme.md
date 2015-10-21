@@ -254,7 +254,7 @@ Commands are located in app/TypiCMS/Commands
 
 ##Upgrade instructions
 
-###Upgrade from 2.4.34 to TypiCMS 2.5.0
+###Upgrade from 2.4.34 to TypiCMS 2.5.4
 
 Create an empty writable directory **public/html**, add in it a **.gitignore** file with this content :
 
@@ -292,7 +292,10 @@ Remove these files, they will be recreated by ```vendor:publish``` command
 
 Copy the clear-compiled file to root directory
 
-In table pages, add ````no_cache` tinyint(1) NOT NULL DEFAULT '0'```
+In table pages, add ```no_cache` tinyint(1) NOT NULL DEFAULT '0'```
+
+In table galleries, add ```image` varchar(255) NULL```
+
 
 In **resources/views/vendor/core/admin/master.blade.php**, replace ```{{ Notification::[…] }}``` by ```{!! Notification::[…] !!}``` (3 lines)
 
