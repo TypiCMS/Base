@@ -142,13 +142,13 @@ This example is for the News module. After these steps, the module will appear i
 
 ### Pages
 
-Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.  
-Each translation of a page has its own route.  
+Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.
+Each translation of a page has its own route.
 A page can be linked to a module.
 
 ### Menus
 
-Each menu has nestable entries. One entry can be linked to a page or URL.  
+Each menu has nestable entries. One entry can be linked to a page or URL.
 You can return a HTML formated menu with ``` Menus::build('menuname') ```.
 
 ### Projects
@@ -161,7 +161,7 @@ Categories have many projects.
 
 ### Tags
 
-Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) jQuery plugin.  
+Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) jQuery plugin.
 The tags module has many to many polymorphic relations so it could easily be linked to other modules.
 
 ### Events
@@ -182,12 +182,12 @@ A partner has a logo, website URL, title and body content.
 
 ### Files
 
-The files module allows you to upload multiple files. It uses [DropzoneJS](http://www.dropzonejs.com) to upload them.  
+The files module allows you to upload multiple files. It uses [DropzoneJS](http://www.dropzonejs.com) to upload them.
 Thumbnails are generated on the fly with [Croppa](https://github.com/BKWLD/croppa).
 
 ### Galleries
 
-You can create as many galleries as you want, each gallery has many files.  
+You can create as many galleries as you want, each gallery has many files.
 Galleries are linkable to any module item through a polymorphic many to many relation.
 
 ### Users
@@ -196,7 +196,7 @@ User registration can be enabled through the settings panel (/admin/settings).
 
 ### Blocks
 
-Blocks are useful to display custom content in your views.  
+Blocks are useful to display custom content in your views.
 You can get the content of a block with ``` Blocks::build('blockname') ```.
 
 ### Translations
@@ -207,7 +207,7 @@ You can call DB translation everywhere with ``` Lang::get('db.Key') ```, ``` tra
 
 ### Sitemap
 
-Route sitemap.xml generates a sitemap file in XML format.  
+Route sitemap.xml generates a sitemap file in XML format.
 To add modules to the site map configure app/config/sitemap.php.
 
 ### Settings
@@ -216,12 +216,12 @@ Change website title, and other options trough the settings panel. Settings are 
 
 ### History
 
-*created*, *updated*, *deleted*, *online* and *offline* actions are logged in database.  
+*created*, *updated*, *deleted*, *online* and *offline* actions are logged in database.
 25 latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
-Each modules has a facade that give you access to the repository, you can call for example ```News::latest(3)``` to get the three latest news.  
+Each modules has a facade that give you access to the repository, you can call for example ```News::latest(3)``` to get the three latest news.
 Check available methods in each module’s repository.
 
 ## Artisan commands
@@ -254,7 +254,7 @@ Commands are located in app/TypiCMS/Commands
 
 ##Upgrade instructions
 
-###Upgrade from 2.4.34 to TypiCMS 2.5.4
+###Upgrade from 2.4.34 to TypiCMS 2.5.5
 
 Create an empty writable directory **public/html**, add in it a **.gitignore** file with this content :
 
@@ -264,7 +264,7 @@ Create an empty writable directory **public/html**, add in it a **.gitignore** f
 ```
 
 In ```composer.json``` :
- 
+
 - change each modules from ~2.4.x to ~2.5.0
 - change edvinaskrucas/notification to ~5.1.0
 - change typicms/translatablebootforms to ~2.2.0
@@ -296,7 +296,6 @@ In table pages, add ```no_cache` tinyint(1) NOT NULL DEFAULT '0'```
 
 In table galleries, add ```image` varchar(255) NULL```
 
-
 In **resources/views/vendor/core/admin/master.blade.php**, replace ```{{ Notification::[…] }}``` by ```{!! Notification::[…] !!}``` (3 lines)
 
 Remove each occurrence of ```@inject('page', 'typicms.xxxx.page')``` from each front end view of each module (index.blade.php, show.blade.php,…), $page is now injected in the view via a view composer, see ModuleProvider classes.
@@ -312,6 +311,8 @@ In **resource/assets/less/admin/master.less**, remove ```@import (inline) '../..
 In **_index.blade.php** files, replace ```<div class="btn-toolbar" role="toolbar" ng-include="'/views/partials/btnLocales.html'"></div>``` by ```@include('core::admin._tabs-lang-list')```
 
 Remove **bower_components** and **node_modules** directories
+
+Replace files in **resource/assets/less/admin/** directory with new one
 
 Run ```npm install```, ```bower update```, then ```gulp all```
 
