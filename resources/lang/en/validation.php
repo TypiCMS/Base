@@ -230,8 +230,8 @@ return [
         'log in'                => 'Log in',
         'modify'                => 'Modify',
         'permissions'           => 'Permissions',
-        'isSuperUser'           => 'Superuser',
-        'isActivated'           => 'Activated',
+        'superUser'             => 'Superuser',
+        'activated'             => 'Activated',
         'getMergedPermissions'  => 'Get merged permissions',
 
         // Settings
