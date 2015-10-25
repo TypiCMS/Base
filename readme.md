@@ -254,7 +254,7 @@ Commands are located in app/TypiCMS/Commands
 
 ##Upgrade instructions
 
-###Upgrade from 2.4.34 to TypiCMS 2.5.5
+###Upgrade from 2.4.34 to TypiCMS 2.5.7
 
 Create an empty writable directory **public/html**, add in it a **.gitignore** file with this content :
 
@@ -281,7 +281,9 @@ In **App/Http/Kernel.php**
     - \Krucas\Notification\Middleware\NotificationMiddleware::class,
 - remove ```publicLocale``` from routes middleware
 
-In **config/translatable.php**, add ```'locale' => null```,
+In **config/translatable.php**, add ```'locale' => null```.
+
+In **config/auth.php**, change ```'emails.password'``` to ```'users::emails.password'```.
 
 Remove these files, they will be recreated by ```vendor:publish``` command
 
