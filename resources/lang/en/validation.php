@@ -230,7 +230,7 @@ return [
         'log in'                => 'Log in',
         'modify'                => 'Modify',
         'permissions'           => 'Permissions',
-        'superUser'             => 'Superuser',
+        'superuser'             => 'Superuser',
         'activated'             => 'Activated',
         'getMergedPermissions'  => 'Get merged permissions',
 
