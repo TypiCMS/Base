@@ -1220,16 +1220,16 @@
         },
         {
             "name": "maximebf/debugbar",
-            "version": "v1.10.4",
+            "version": "v1.10.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "7b2006e6e095126b5a061ec33fca3d90ea8a8219"
+                "reference": "30e53e8a28284b69dd223c9f5ee8957befd72636"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/7b2006e6e095126b5a061ec33fca3d90ea8a8219",
-                "reference": "7b2006e6e095126b5a061ec33fca3d90ea8a8219",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/30e53e8a28284b69dd223c9f5ee8957befd72636",
+                "reference": "30e53e8a28284b69dd223c9f5ee8957befd72636",
                 "shasum": ""
             },
             "require": {
@@ -1272,7 +1272,7 @@
             "keywords": [
                 "debug"
             ],
-            "time": "2015-02-05 07:51:20"
+            "time": "2015-10-19 20:35:12"
         },
         {
             "name": "monolog/monolog",
@@ -1489,16 +1489,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "7647ac58c35ece044b939e01c85dbaa73ed26351"
+                "reference": "2fa50aa2f17066fa74ba00d943e8cee1a98284af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/7647ac58c35ece044b939e01c85dbaa73ed26351",
-                "reference": "7647ac58c35ece044b939e01c85dbaa73ed26351",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/2fa50aa2f17066fa74ba00d943e8cee1a98284af",
+                "reference": "2fa50aa2f17066fa74ba00d943e8cee1a98284af",
                 "shasum": ""
             },
             "require": {
@@ -1530,7 +1530,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-10-20 15:22:41"
+            "time": "2015-10-23 13:21:37"
         },
         {
             "name": "psr/http-message",
@@ -3044,16 +3044,16 @@
         },
         {
             "name": "typicms/users",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "828316683d1db4ccbbe263a7e2738fd2a71ff995"
+                "reference": "fa348d737f3aeae791294752536eecb868549c2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/828316683d1db4ccbbe263a7e2738fd2a71ff995",
-                "reference": "828316683d1db4ccbbe263a7e2738fd2a71ff995",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/fa348d737f3aeae791294752536eecb868549c2d",
+                "reference": "fa348d737f3aeae791294752536eecb868549c2d",
                 "shasum": ""
             },
             "require": {
@@ -3075,7 +3075,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-10-20 11:04:12"
+            "time": "2015-10-25 09:49:59"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3882,16 +3882,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.14",
+            "version": "4.8.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b4900675926860bef091644849305399b986efa2"
+                "reference": "625f8c345606ed0f3a141dfb88f4116f0e22978e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b4900675926860bef091644849305399b986efa2",
-                "reference": "b4900675926860bef091644849305399b986efa2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/625f8c345606ed0f3a141dfb88f4116f0e22978e",
+                "reference": "625f8c345606ed0f3a141dfb88f4116f0e22978e",
                 "shasum": ""
             },
             "require": {
@@ -3950,7 +3950,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-10-17 15:03:30"
+            "time": "2015-10-23 06:48:33"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
