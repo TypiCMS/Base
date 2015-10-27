@@ -7,9 +7,9 @@ class MenuSeeder extends Seeder
     public function run()
     {
         $typi_menus = [
-            ['id' => '1','name' => 'main','class' => 'nav-main','created_at' => '2013-09-03 22:05:21','updated_at' => '2014-02-17 16:00:00'],
-            ['id' => '2','name' => 'footer','class' => 'nav-footer','created_at' => '2013-09-03 22:05:42','updated_at' => '2014-02-17 16:00:00'],
-            ['id' => '3','name' => 'social','class' => 'nav-social','created_at' => '2014-02-04 18:27:18','updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '1','name' => 'main','class' => '','created_at' => '2013-09-03 22:05:21','updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '2','name' => 'footer','class' => '','created_at' => '2013-09-03 22:05:42','updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '3','name' => 'social','class' => '','created_at' => '2014-02-04 18:27:18','updated_at' => '2014-02-17 16:00:00'],
         ];
 
         $typi_menu_translations = [
