@@ -45,10 +45,6 @@ h1 {
     a:hover { text-decoration: none; }
 }
 
-.breadcrumb { background-color: #FFF; padding-left: 5px; padding-right: 5px;
-    > .active { color: @gray-dark; }
-}
-
 // Online offline switch
 .switch {
     font-size: 20px !important;
@@ -77,12 +73,6 @@ h1 {
     th { width: 200px; }
     .checkbox { margin: 0; }
 }
-
-// fade in-out animation
-.highlight {
-    animation: highlight .25s ease-in-out;
-}
-@keyframes highlight { from { background-color: #fff; } 20% { background-color: lighten(@brand-success, 30%); } 70% { background-color: lighten(@brand-success, 30%); } to { background-color: #fff; } }
 
 .max-height {
     max-height: 150px;
