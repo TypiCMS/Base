@@ -5,7 +5,9 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Facades\Log;
+use Krucas\Notification\Facades\Notification;
 use Symfony\Component\Debug\ExceptionHandler as SymfonyDisplayer;
 
 class Handler extends ExceptionHandler
@@ -54,6 +56,14 @@ class Handler extends ExceptionHandler
          */
         if ($e instanceof ModelNotFoundException) {
             return response()->view('errors.404', [], 404);
+        }
+
+        /*
+         * Notification on TokenMismatchException
+         */
+        if ($e instanceof TokenMismatchException) {
+            Notification::error(trans('global.Security token expired. Please, repeat your request.'));
+            return redirect()->back()->withInput();
         }
 
         if ($this->isHttpException($e)) {

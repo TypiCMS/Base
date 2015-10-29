@@ -63,4 +63,6 @@ return [
     'Toggle navigation' => 'Toggle navigation',
 
     'Items sorted' => 'Items sorted.',
+
+    'Security token expired. Please, repeat your request.' => 'Security token expired. Please, repeat your request.',
 ];
