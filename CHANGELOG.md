@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.5.12 - 2015-10-29
+
+### Added
+- Redirect + Notification on TokenMismatchException in place of server error.
+
 ## 2.5.0 - 2015-10-19
 
 ### Added
