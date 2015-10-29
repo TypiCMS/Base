@@ -63,6 +63,7 @@ class Handler extends ExceptionHandler
          */
         if ($e instanceof TokenMismatchException) {
             Notification::error(trans('global.Security token expired. Please, repeat your request.'));
+
             return redirect()->back()->withInput();
         }
 
