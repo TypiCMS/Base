@@ -152,10 +152,10 @@ gulp.task('js-admin', function () {
             'node_modules/bootstrap/js/alert.js',
             'node_modules/bootstrap/js/tab.js',
             'node_modules/bootstrap/js/transition.js',
+            'node_modules/alertify.js/dist/js/alertify.js',
             'node_modules/dropzone/dist/dropzone.js',
             'node_modules/selectize/dist/js/standalone/selectize.js',
             'node_modules/fancybox/dist/js/jquery.fancybox.js',
-            'node_modules/alertify.js/dist/js/alertify.js',
             'resources/assets/js/admin/*',
             'resources/assets/typicms/**/*.js'
         ];
