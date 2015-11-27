@@ -1,1 +1,1 @@
-CKEDITOR.plugins.setLang("showblocks","eu",{toolbar:"Blokeak erakutsi"});
+CKEDITOR.plugins.setLang("showblocks","eu",{toolbar:"Erakutsi blokeak"});

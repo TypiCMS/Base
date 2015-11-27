@@ -1,1 +1,1 @@
-CKEDITOR.plugins.setLang("justify","eu",{block:"Justifikatu",center:"Lerrokatu Erdian",left:"Lerrokatu Ezkerrean",right:"Lerrokatu Eskuman"});
+CKEDITOR.plugins.setLang("justify","eu",{block:"Justifikatu",center:"Erdian",left:"Lerrokatu ezkerrean",right:"Lerrokatu eskuinean"});
