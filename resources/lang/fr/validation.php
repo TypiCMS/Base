@@ -191,6 +191,9 @@ return [
         'HH:MM'         => 'HH:MM',
         'DDMMYYYY'      => 'JJ.MM.AAAA',
         'DDMMYYYY HHMM' => 'JJ.MM.AAAA HH:MM',
+        'location'      => 'Lieu',
+        'price'         => 'Prix',
+        'currency'      => 'Devise',
 
         // Projects
         'category_id' => 'Catégorie',
