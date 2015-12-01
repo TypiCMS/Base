@@ -239,7 +239,7 @@ return [
 
         // Settings
         'webmaster_email'       => 'Webmaster email',
-        'google_analytics_code' => 'Google Analytics Code',
+        'google_analytics_code' => 'Google Analytics Tracking Id',
         'lang_chooser'          => 'Lang chooser',
         'welcome_message'       => 'Administration welcome message',
         'admin_locale'          => 'Administration language',
