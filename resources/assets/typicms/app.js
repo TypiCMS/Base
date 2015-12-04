@@ -7,14 +7,12 @@
 
     var lang = $('html').attr('lang');
 
-    angular.module('typicms', ['ngResource', 'smart-table', 'ui.tree'], function ($locationProvider) {
-        // $locationProvider.html5Mode(true);
-    });
+    angular.module('typicms', ['ngResource', 'smart-table', 'ui.tree']);
 
     angular.module('typicms').factory('$api', ['$location', '$resource', function ($location, $resource) {
-        // var moduleName = $location.path().split('/').pop(); // ok when in HTML5 route mode
-        var url = new Url,
-            path = url.path,
+
+        var url = new URL(window.location),
+            path = url.pathname,
             moduleName = path.split('/')[2];
 
         if (moduleName === 'galleries' && path.split('/')[4] === 'edit') {
@@ -24,7 +22,7 @@
             moduleName = 'menulinks';
         }
 
-        if (moduleName === 'dashboard') { // dashboard (/admin)
+        if (moduleName === 'dashboard') {
             moduleName = 'history';
         }
 
