@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.5.18 - 2015-12-15
+
+### Added
+- Multiple pages can be linked to same module (require modules Core 2.5.10 and Pages 2.5.5).
+
 ## 2.5.12 - 2015-10-29
 
 ### Added
