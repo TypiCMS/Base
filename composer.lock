@@ -2660,16 +2660,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "2.5.9",
+            "version": "2.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "d879384229438329154011aadff818559c95bd2d"
+                "reference": "61aab2960cac59417a5fbf0cc66962ebae2bb04e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/d879384229438329154011aadff818559c95bd2d",
-                "reference": "d879384229438329154011aadff818559c95bd2d",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/61aab2960cac59417a5fbf0cc66962ebae2bb04e",
+                "reference": "61aab2960cac59417a5fbf0cc66962ebae2bb04e",
                 "shasum": ""
             },
             "require": {
@@ -2695,7 +2695,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-12-11 09:05:22"
+            "time": "2015-12-15 21:31:57"
         },
         {
             "name": "typicms/dashboard",
@@ -2991,16 +2991,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "2.5.4",
+            "version": "2.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "dc18741fd501118d94db069916d698a1f02c1a50"
+                "reference": "086f4cf4f61802bf9a5408068faf1b95731c9ba5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/dc18741fd501118d94db069916d698a1f02c1a50",
-                "reference": "dc18741fd501118d94db069916d698a1f02c1a50",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/086f4cf4f61802bf9a5408068faf1b95731c9ba5",
+                "reference": "086f4cf4f61802bf9a5408068faf1b95731c9ba5",
                 "shasum": ""
             },
             "require": {
@@ -3022,7 +3022,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-11-27 14:03:38"
+            "time": "2015-12-15 21:31:48"
         },
         {
             "name": "typicms/settings",
@@ -4016,16 +4016,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.19",
+            "version": "4.8.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b2caaf8947aba5e002d42126723e9d69795f32b4"
+                "reference": "ea76b17bced0500a28098626b84eda12dbcf119c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b2caaf8947aba5e002d42126723e9d69795f32b4",
-                "reference": "b2caaf8947aba5e002d42126723e9d69795f32b4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ea76b17bced0500a28098626b84eda12dbcf119c",
+                "reference": "ea76b17bced0500a28098626b84eda12dbcf119c",
                 "shasum": ""
             },
             "require": {
@@ -4084,7 +4084,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-11-30 08:18:59"
+            "time": "2015-12-12 07:45:58"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
