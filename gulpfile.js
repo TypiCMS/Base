@@ -24,7 +24,7 @@ gulp.task('less-public', function () {
     return gulp.src('resources/assets/less/public/master.less')
         .pipe(less())
         .on('error', swallowError)
-        .pipe(prefix('last 2 versions', '> 1%', 'Explorer 7', 'Android 2'))
+        .pipe(prefix('> 1%', 'ie >= 8'))
         .pipe(minifyCSS())
         .pipe(rename('public.css'))
         .pipe(gulp.dest('public/css'))
