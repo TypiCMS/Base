@@ -15,5 +15,5 @@ var mySwiper = new Swiper('.swiper-container', {
     loop: true,
     grabCursor: true,
     nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
+    prevButton: '.swiper-button-prev'
 });
