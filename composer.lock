@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4d0120c9ebf033bee87b4b67fffd3161",
-    "content-hash": "d02f96c67f7f8d2b392c28c1d3bd04a9",
+    "hash": "fd63dd0fbea55e4ce7ae97414ea804e8",
+    "content-hash": "110d4fbc2f7380a552e92179d1c62af6",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -959,16 +959,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.26",
+            "version": "v5.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "be7fbb60376bd61f07e9c637473e5b2cf7eebe5c"
+                "reference": "b16f80878fd3603022d3c84593397cedd9af0bcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/be7fbb60376bd61f07e9c637473e5b2cf7eebe5c",
-                "reference": "be7fbb60376bd61f07e9c637473e5b2cf7eebe5c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b16f80878fd3603022d3c84593397cedd9af0bcf",
+                "reference": "b16f80878fd3603022d3c84593397cedd9af0bcf",
                 "shasum": ""
             },
             "require": {
@@ -1014,7 +1014,6 @@
                 "illuminate/events": "self.version",
                 "illuminate/exception": "self.version",
                 "illuminate/filesystem": "self.version",
-                "illuminate/foundation": "self.version",
                 "illuminate/hashing": "self.version",
                 "illuminate/http": "self.version",
                 "illuminate/log": "self.version",
@@ -1084,7 +1083,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-12-02 21:59:57"
+            "time": "2015-12-17 20:35:38"
         },
         {
             "name": "league/flysystem",
@@ -1702,16 +1701,16 @@
         },
         {
             "name": "roumen/sitemap",
-            "version": "v2.5.6",
+            "version": "v2.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RoumenDamianoff/laravel-sitemap.git",
-                "reference": "9e7044dd0ee919de2f37ebb8ae0bbb541c61e86a"
+                "reference": "637e094b2f5e1e56389845dcd3f0e8db4c2f05d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/9e7044dd0ee919de2f37ebb8ae0bbb541c61e86a",
-                "reference": "9e7044dd0ee919de2f37ebb8ae0bbb541c61e86a",
+                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/637e094b2f5e1e56389845dcd3f0e8db4c2f05d9",
+                "reference": "637e094b2f5e1e56389845dcd3f0e8db4c2f05d9",
                 "shasum": ""
             },
             "require": {
@@ -1746,7 +1745,7 @@
                 "generator",
                 "laravel"
             ],
-            "time": "2015-10-03 08:11:47"
+            "time": "2015-12-17 17:30:38"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4568,6 +4567,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.5.9"
+    },
     "platform-dev": []
 }
