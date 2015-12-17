@@ -9,6 +9,7 @@ use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Facades\Log;
 use Krucas\Notification\Facades\Notification;
 use Symfony\Component\Debug\ExceptionHandler as SymfonyDisplayer;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -18,8 +19,8 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        \Symfony\Component\HttpKernel\Exception\HttpException::class,
-        \Illuminate\Database\Eloquent\ModelNotFoundException::class,
+        HttpException::class,
+        ModelNotFoundException::class,
     ];
 
     /**
