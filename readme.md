@@ -4,7 +4,6 @@
 [![Packagist](https://img.shields.io/packagist/l/typicms/base.svg?style=flat-square)]()
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/96951b30-0060-414c-992d-df965bd63000.svg?style=flat-square)]()
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/typicms/base.svg?style=flat-square)]()
-[![StyleCI](https://styleci.io/repos/28512514/shield)](https://styleci.io/repos/28512514)
 
 TypiCMS is a multilingual content management system built with [Laravel 5](http://laravel.com).
 
