@@ -1,7 +1,5 @@
 <?php
 
-use TypiCMS\Modules\Users\Models\User;
-
 class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
     /**
@@ -20,30 +18,8 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
     {
         $app = require __DIR__.'/../bootstrap/app.php';
 
-        $app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
+        $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 
         return $app;
-    }
-
-    public function setUp()
-    {
-        parent::setUp();
-
-        // Start session so we can test post with token.
-        Session::start();
-
-        $this->app['path.base'] = __DIR__.'/..';
-        $this->app['config']->set('database.default', 'sqlite');
-        $this->app['config']->set('database.connections.sqlite', [
-            'driver'   => 'sqlite',
-            'database' => ':memory:',
-            'prefix'   => '',
-        ]);
-        $this->app['config']->set('translatable.locales', ['en', 'fr']);
-        Artisan::call('migrate');
-        $this->seed();
-
-        $user = new User(['name' => 'John']);
-        $this->be($user);
     }
 }
