@@ -1,10 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
-## 2.5.20 - 2015-12-19
+## 2.5.21 - 2015-12-19
 
 ### Fixed
 - Disabling all "Online" languages throws error #38.
+BREAKING CHANGE: in app/Http/Kernel.php, move PublicLocale middleware from $middleware to $routeMiddleware array.
 
 ## 2.5.18 - 2015-12-15
 
