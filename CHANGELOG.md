@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.5.20 - 2015-12-19
+
+### Fixed
+- Disabling all "Online" languages throws error #38.
+
 ## 2.5.18 - 2015-12-15
 
 ### Added
