@@ -33,6 +33,7 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
+            'authorization',
             'throttle:60,1',
         ],
     ];
@@ -45,13 +46,14 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth.basic'   => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest'        => \App\Http\Middleware\RedirectIfAuthenticated::class,
-        'admin'        => \TypiCMS\Modules\Core\Http\Middleware\Admin::class,
-        'auth'         => \TypiCMS\Modules\Core\Http\Middleware\Authenticate::class,
+        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'auth' => \App\Http\Middleware\Authenticate::class,
+        'admin' => \TypiCMS\Modules\Core\Http\Middleware\Admin::class,
+        'authorization' => \TypiCMS\Modules\Core\Http\Middleware\Authorization::class,
         'publicAccess' => \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
         'publicLocale' => \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
-        'publicCache'  => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
+        'publicCache' => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
         'registration' => \TypiCMS\Modules\Core\Http\Middleware\Registration::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
