@@ -33,13 +33,15 @@ class Kernel extends HttpKernel
         ],
 
         'public' => [
-            'publicAccess',
-            'publicLocale',
-            'publicCache',
+            \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
+            \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
+            \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
         ],
 
         'admin' => [
-            'admin',
+            \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
+            \TypiCMS\Modules\Core\Http\Middleware\JavaScript::class,
+            \TypiCMS\Modules\Core\Http\Middleware\UserPrefs::class,
             'authorization',
         ],
 
@@ -60,12 +62,8 @@ class Kernel extends HttpKernel
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
-        'admin' => \TypiCMS\Modules\Core\Http\Middleware\Admin::class,
         'authorization' => \TypiCMS\Modules\Core\Http\Middleware\Authorization::class,
-        'publicAccess' => \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
-        'publicLocale' => \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
-        'publicCache' => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
-        'registration' => \TypiCMS\Modules\Core\Http\Middleware\Registration::class,
+        'registrationAllowed' => \TypiCMS\Modules\Core\Http\Middleware\RegistrationAllowed::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }
