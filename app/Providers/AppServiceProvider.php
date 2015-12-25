@@ -24,7 +24,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         if ($this->app->isLocal()) {
-            $this->app->register('Laracasts\Generators\GeneratorsServiceProvider');
+            // This line is waiting for the new version of the Generators package.
+            // $this->app->register('Laracasts\Generators\GeneratorsServiceProvider');
         }
     }
 }
