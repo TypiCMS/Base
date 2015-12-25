@@ -5,13 +5,12 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Foundation\Validation\ValidationException;
 use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Facades\Log;
 use Krucas\Notification\Facades\Notification;
-use Symfony\Component\Debug\ExceptionHandler as SymfonyDisplayer;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use Illuminate\Foundation\Validation\ValidationException;
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
 {
@@ -40,7 +39,6 @@ class Handler extends ExceptionHandler
         if ($this->shouldReport($e)) {
             Log::error($e);
         }
-
         parent::report($e);
     }
 
@@ -53,7 +51,6 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-
         /*
          * Error 404 when a model is not found
          */
@@ -78,8 +75,7 @@ class Handler extends ExceptionHandler
                 return response()->view('errors.500', [], 500);
             }
 
-            return $this->toIlluminateResponse((new SymfonyDisplayer(config('app.debug')))->createResponse($e), $e);
+            return $this->toIlluminateResponse($this->convertExceptionToResponse($e), $e);
         }
-        return parent::render($request, $e);
     }
 }
