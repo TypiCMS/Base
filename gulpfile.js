@@ -2,7 +2,7 @@ var gulp       = require('gulp'),
     gutil      = require('gulp-util'),
     less       = require('gulp-less'),
     concat     = require('gulp-concat'),
-    minifyCSS  = require('gulp-minify-css'),
+    nano       = require('gulp-cssnano'),
     uglify     = require('gulp-uglify'),
     watch      = require('gulp-watch'),
     livereload = require('gulp-livereload'),
@@ -25,7 +25,7 @@ gulp.task('less-public', function () {
         .pipe(less())
         .on('error', swallowError)
         .pipe(prefix('> 1%', 'ie >= 8'))
-        .pipe(minifyCSS())
+        .pipe(nano())
         .pipe(rename('public.css'))
         .pipe(gulp.dest('public/css'))
         .pipe(livereload());
@@ -38,7 +38,7 @@ gulp.task('less-admin', function () {
         .pipe(less())
         .on('error', swallowError)
         .pipe(prefix('last 2 versions', '> 1%', 'Explorer 7', 'Android 2'))
-        .pipe(minifyCSS())
+        .pipe(nano())
         .pipe(rename('admin.css'))
         .pipe(gulp.dest('public/css'))
         .pipe(livereload());
