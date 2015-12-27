@@ -7,10 +7,12 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Foundation\Validation\ValidationException;
+use Illuminate\Http\Exception\HttpResponseException;
 use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Facades\Log;
 use Krucas\Notification\Facades\Notification;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -52,19 +54,22 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $e)
     {
         /*
-         * Error 404 when a model is not found
-         */
-        if ($e instanceof ModelNotFoundException) {
-            return response()->view('errors.404', [], 404);
-        }
-
-        /*
          * Notification on TokenMismatchException
          */
         if ($e instanceof TokenMismatchException) {
             Notification::error(trans('global.Security token expired. Please, repeat your request.'));
 
             return redirect()->back()->withInput();
+        }
+
+        if ($e instanceof HttpResponseException) {
+            return $e->getResponse();
+        } elseif ($e instanceof ModelNotFoundException) {
+            $e = new NotFoundHttpException($e->getMessage(), $e);
+        } elseif ($e instanceof AuthorizationException) {
+            $e = new HttpException(403, $e->getMessage());
+        } elseif ($e instanceof ValidationException && $e->getResponse()) {
+            return $e->getResponse();
         }
 
         if ($this->isHttpException($e)) {
