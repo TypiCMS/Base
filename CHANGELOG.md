@@ -9,6 +9,8 @@ All notable changes to TypiCMS will be documented in this file.
 ### Fixed
 - Old value are preserved in tags and date fields when a form has errors.
 - When Tags module was loaded, there was a query to get all tags on every requests.
+- API GET methods are now protected.
+- Find nearest address is repaired in Places module.
 
 ### Removed
 - TypiCMS@logo(), TypiCMS@logoOrTitle() method.
