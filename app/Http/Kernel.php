@@ -14,6 +14,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
+        \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Krucas\Notification\Middleware\NotificationMiddleware::class,
     ];
@@ -33,10 +34,10 @@ class Kernel extends HttpKernel
         ],
 
         'public' => [
-            'web',
             \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
             \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
+            \App\Http\Middleware\VerifyCsrfToken::class,
         ],
 
         'admin' => [
@@ -49,9 +50,9 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-            'web',
             'auth',
             'authorization',
+            \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
             'throttle:60,1',
         ],
     ];
