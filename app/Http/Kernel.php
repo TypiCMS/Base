@@ -42,13 +42,15 @@ class Kernel extends HttpKernel
         'admin' => [
             'web',
             'auth',
+            'authorization',
             \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
             \TypiCMS\Modules\Core\Http\Middleware\UserPrefs::class,
-            'authorization',
         ],
 
         'api' => [
+            'web',
+            'auth',
             'authorization',
             'throttle:60,1',
         ],
