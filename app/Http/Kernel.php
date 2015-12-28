@@ -34,10 +34,10 @@ class Kernel extends HttpKernel
         ],
 
         'public' => [
+            'web',
             \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
             \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
-            \App\Http\Middleware\VerifyCsrfToken::class,
         ],
 
         'admin' => [
