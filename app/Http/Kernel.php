@@ -33,12 +33,15 @@ class Kernel extends HttpKernel
         ],
 
         'public' => [
+            'web',
             \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
             \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
         ],
 
         'admin' => [
+            'web',
+            'auth',
             \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
             \TypiCMS\Modules\Core\Http\Middleware\UserPrefs::class,
