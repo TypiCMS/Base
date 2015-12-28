@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.6.0 - 2015-12-
+
+### Added
+- TypiCMS now require Laravel 5.2.
+
+### Fixed
+- Old value are preserved in tags and date fields when a form has errors.
+- When Tags module was loaded, there was a query to get all tags on every requests.
+
+### Removed
+- TypiCMS@logo(), TypiCMS@logoOrTitle() method.
+- Methods previously marked @deprecated.
+- Laracasts/generators is disabled because it is not compatible with Laravel 5.2.
+
 ## 2.5.21 - 2015-12-19
 
 ### Fixed
