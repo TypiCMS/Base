@@ -16,6 +16,7 @@ All notable changes to TypiCMS will be documented in this file.
 - TypiCMS@logo(), TypiCMS@logoOrTitle() method.
 - Methods previously marked @deprecated.
 - Laracasts/generators is disabled because it is not compatible with Laravel 5.2.
+- Menulinks module has been merged with Menus.
 
 ## 2.5.21 - 2015-12-19
 
