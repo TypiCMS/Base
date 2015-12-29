@@ -2,6 +2,8 @@
 @import '../../../../node_modules/font-awesome/less/font-awesome';
 @import 'variables';
 @import 'errors';
+@import 'header';
+@import 'footer';
 @import 'swiper';
 @import 'gmaps';
 @import '../navbar';
@@ -9,7 +11,9 @@
 @import 'fancybox';
 @import 'gallery';
 
-.has-navbar { padding-top: 50px; }
+.has-navbar {
+    padding-top: 50px;
+}
 
 .skip-to-content {
     .sr-only();
@@ -17,4 +21,8 @@
 
 table {
     .table();
+}
+
+.main-container {
+    .container();
 }
