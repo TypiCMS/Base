@@ -5,6 +5,7 @@ All notable changes to TypiCMS will be documented in this file.
 
 ### Added
 - TypiCMS now require Laravel 5.2.
+- Command typicms:publish {module} to move a module from vendor directory to the Modules directory.
 
 ### Fixed
 - Old value are preserved in tags and date fields when a form has errors.
