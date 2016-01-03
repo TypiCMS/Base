@@ -1,5 +1,6 @@
 {
-    "name": "typicms/base",
+    "name": "typicms/typicms",
+    "replace": {"typicms/base": "self.version"},
     "description": "Multilingual CMS built with Laravel 5",
     "keywords": ["cms", "multilingual", "laravel", "typi"],
     "license": "MIT",
