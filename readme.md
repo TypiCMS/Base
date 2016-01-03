@@ -276,13 +276,13 @@ When a module is published, it will be tracked by git and you will be able to ma
 
 ##Upgrade instructions
 
-###Upgrade from TypiCMS 2.5.x to 2.6.x
+###Upgrade from 2.5.x to 2.6.x
 
 - Follows the steps needed to [upgrade to Laravel 5.2](https://laravel.com/docs/5.2/upgrade#upgrade-5.2.0)
 - If you have customs modules in /Modules directory, you will have to add missing methods in adminControllers and apiControllers and setup [implicit model binding](https://laravel.com/docs/5.2/routing#route-model-binding).
 - ```logo`` and/or ```logoOrTitle``` methods are removed, in public master.blade.php, update with recent changes made to version 2.6.
 
-###Upgrade from 2.4.34 to TypiCMS 2.5.7
+###Upgrade from 2.4.34 to 2.5.7
 
 Create an empty writable directory **public/html**, add in it a **.gitignore** file with this content :
 
