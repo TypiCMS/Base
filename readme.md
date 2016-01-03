@@ -260,7 +260,7 @@ php artisan clear-html
 ### Publish a module
 
 If you want to modify a module, for example add some fields or a relation, you can not do it easily because each module is in vendor directory.
-The solution is to remove it from composer and copy it to the **/Modules** directory. For example, the module ***Pages*** will be published by running this command:
+The solution is to remove it from composer and copy it to the **/Modules** directory. For example, the module **Pages** will be published by running this command:
 
 ```
 php artisan typicms:publish pages
