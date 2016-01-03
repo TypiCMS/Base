@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
-## 2.6.0 - 2015-12-
+## 2.6.0 - 2016-01-03
 
 ### Added
 - Command typicms:publish {module} to move a module from vendor directory to the Modules directory.
