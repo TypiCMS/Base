@@ -5,6 +5,7 @@ All notable changes to TypiCMS will be documented in this file.
 
 ### Added
 - TypiCMS now require Laravel 5.2.
+- Added a button to clear latest changes in dashboard.
 - Command typicms:publish {module} to move a module from vendor directory to the Modules directory.
 
 ### Fixed
