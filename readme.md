@@ -227,31 +227,55 @@ Check available methods in each module’s repository.
 
 Commands are located in app/TypiCMS/Commands
 
-* Installation of TypiCMS
+### Installation of TypiCMS
 
   ```
   php artisan typicms:install
   ```
 
-* Set cache key prefix in app/config/cache.php
+### Set cache key prefix in app/config/cache.php
 
   ```
   php artisan cache:prefix yourCachePrefix
   ```
 
-* Initial migration and seed
+### Initial migration and seed
 
   ```
   php artisan typicms:database
   ```
 
-* Clean the directory public/html
+### Clean the directory public/html
 
   ```
   php artisan clear-html
   ```
 
+### Publish a module
+
+If you want to modify a module, for example add some fields or a relation, you can not do it easily because each module is in vendor directory.
+The solution is to remove it from composer and copy it to the /Modules directory by running the command:
+
+  ```
+  php artisan typicms:publish pages
+  ```
+
+This command executes these steps:
+
+1. Publishes views and migrations for Pages module.
+2. Copies everything excepted views and migrations from **/vendor/typicms/pages/src** to **/Modules/Pages**.
+3. Runs ```composer remove typicms/pages```.
+
+When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running ```composer update```.
+
 ##Upgrade instructions
+
+###Upgrade from TypiCMS 2.5.x to 2.6.x
+
+- Follows the steps needed to [upgrade to Laravel 5.2](https://laravel.com/docs/5.2/upgrade#upgrade-5.2.0)
+- If you have customs modules in /Modules directory, you will have to add missing methods in adminControllers and apiControllers and setup [implicit model binding](https://laravel.com/docs/5.2/routing#route-model-binding).
+- ```logo`` and/or ```logoOrTitle``` methods are removed, in public master.blade.php, update with recent changes made to version 2.6.
+
 
 ###Upgrade from 2.4.34 to TypiCMS 2.5.7
 
