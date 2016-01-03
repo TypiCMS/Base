@@ -5,7 +5,7 @@
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/96951b30-0060-414c-992d-df965bd63000.svg?style=flat-square)]()
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/typicms/base.svg?style=flat-square)]()
 
-TypiCMS is a multilingual content management system built with [Laravel 5.2](http://laravel.com).
+TypiCMS is a modular multilingual content management system built with [Laravel 5.2](http://laravel.com). Out of the box you can manage pages, events, news, places, sliders, etc.
 
 ![TypiCMS screenshot](http://typicms.org/uploads/files/typicms-screenshot.png?1)
 
