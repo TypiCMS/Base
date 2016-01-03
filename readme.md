@@ -260,17 +260,17 @@ This command is triggered by ```typicms:install```
 ### Publish a module
 
 If you want to modify a module, for example add some fields or a relation, you can not do it easily because each module is in vendor directory.
-The solution is to remove it from composer and copy it to the /Modules directory by running the command:
+The solution is to remove it from composer and copy it to the **/Modules** directory. For example, the module ***Pages*** will be published by running this command:
 
   ```
   php artisan typicms:publish pages
   ```
 
-This command executes these steps:
+These steps will be executed:
 
-1. Publishes views and migrations for Pages module.
-2. Copies everything excepted views and migrations from **/vendor/typicms/pages/src** to **/Modules/Pages**.
-3. Runs ```composer remove typicms/pages```.
+1. Publishing of views and migrations for Pages module.
+2. Copying of everything excepted views and migrations from **/vendor/typicms/pages/src** to **/Modules/Pages**.
+3. Running ```composer remove typicms/pages```.
 
 When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running ```composer update```.
 
