@@ -231,31 +231,31 @@ Commands are located in **/vendor/typicms/core/src/Commands**
 
 ### Installation of TypiCMS
 
-  ```
-  php artisan typicms:install
-  ```
+```
+php artisan typicms:install
+```
 
 ### Set cache key prefix in app/config/cache.php
 
-  ```
-  php artisan cache:prefix yourCachePrefix
-  ```
+```
+php artisan cache:prefix yourCachePrefix
+```
 
 This command is triggered by ```typicms:install```
 
 ### Initial migration and seed
 
-  ```
-  php artisan typicms:database
-  ```
+```
+php artisan typicms:database
+```
 
 This command is triggered by ```typicms:install```
 
 ### Clean the directory public/html
 
-  ```
-  php artisan clear-html
-  ```
+```
+php artisan clear-html
+```
 
 ### Publish a module
 
