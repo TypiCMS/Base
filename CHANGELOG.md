@@ -4,9 +4,9 @@ All notable changes to TypiCMS will be documented in this file.
 ## 2.6.0 - 2015-12-
 
 ### Added
-- TypiCMS now require Laravel 5.2.
-- Added a button to clear latest changes in dashboard.
 - Command typicms:publish {module} to move a module from vendor directory to the Modules directory.
+- Added a button to clear latest changes in dashboard.
+- TypiCMS now require Laravel 5.2.
 
 ### Fixed
 - Old value are preserved in tags and date fields when a form has errors.
@@ -16,8 +16,7 @@ All notable changes to TypiCMS will be documented in this file.
 
 ### Removed
 - TypiCMS@logo(), TypiCMS@logoOrTitle() method.
-- Methods previously marked @deprecated.
-- Laracasts/generators is disabled because it is not compatible with Laravel 5.2.
+- Methods previously marked @deprecated are removed.
 - Menulinks module has been merged with Menus.
 
 ## 2.5.21 - 2015-12-19
