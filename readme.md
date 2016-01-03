@@ -139,6 +139,8 @@ This example is for the News module. After these steps, the module will appear i
 
 ## Modules
 
+Each module can be published in order to be modified and tracked by git. Here is more info on [publishing a module](#publish-a-module).
+
 ### Pages
 
 Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.
@@ -225,7 +227,7 @@ Check available methods in each module’s repository.
 
 ## Artisan commands
 
-Commands are located in app/TypiCMS/Commands
+Commands are located in **/vendor/typicms/core/src/Commands**
 
 ### Installation of TypiCMS
 
@@ -239,11 +241,15 @@ Commands are located in app/TypiCMS/Commands
   php artisan cache:prefix yourCachePrefix
   ```
 
+This command is triggered by ```typicms:install```
+
 ### Initial migration and seed
 
   ```
   php artisan typicms:database
   ```
+
+This command is triggered by ```typicms:install```
 
 ### Clean the directory public/html
 
@@ -275,7 +281,6 @@ When a module is published, it will be tracked by git and you will be able to ma
 - Follows the steps needed to [upgrade to Laravel 5.2](https://laravel.com/docs/5.2/upgrade#upgrade-5.2.0)
 - If you have customs modules in /Modules directory, you will have to add missing methods in adminControllers and apiControllers and setup [implicit model binding](https://laravel.com/docs/5.2/routing#route-model-binding).
 - ```logo`` and/or ```logoOrTitle``` methods are removed, in public master.blade.php, update with recent changes made to version 2.6.
-
 
 ###Upgrade from 2.4.34 to TypiCMS 2.5.7
 
