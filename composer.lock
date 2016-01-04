@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25b11c3a5049bb335f1a120f1c0025da",
-    "content-hash": "a3d6c9fb40768f40ad4a3552413003f7",
+    "hash": "af07e6e2792bb302525cb433ec4b229c",
+    "content-hash": "02030d5be875bce0e14d5e6a386a3fb8",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -2917,16 +2917,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "afd40067c88e48e9cd16b2a0e81c8a29b35ada1e"
+                "reference": "93572ca81b432819c718d0b69a4ed4c08ca84333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/afd40067c88e48e9cd16b2a0e81c8a29b35ada1e",
-                "reference": "afd40067c88e48e9cd16b2a0e81c8a29b35ada1e",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/93572ca81b432819c718d0b69a4ed4c08ca84333",
+                "reference": "93572ca81b432819c718d0b69a4ed4c08ca84333",
                 "shasum": ""
             },
             "require": {
@@ -2948,7 +2948,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-01-02 23:32:43"
+            "time": "2016-01-04 22:17:08"
         },
         {
             "name": "typicms/settings",
