@@ -2622,20 +2622,21 @@
         },
         {
             "name": "typicms/core",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "9fc9d084b1979ca50e6fc93437f918b212bf619e"
+                "reference": "81865de8d96ee8c597c5679404044b8902a037cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/9fc9d084b1979ca50e6fc93437f918b212bf619e",
-                "reference": "9fc9d084b1979ca50e6fc93437f918b212bf619e",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/81865de8d96ee8c597c5679404044b8902a037cb",
+                "reference": "81865de8d96ee8c597c5679404044b8902a037cb",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "~5.2.0"
+                "laravel/framework": "~5.2.0",
+                "typicms/objects": "~2.6.0"
             },
             "require-dev": {
                 "phpspec/phpspec": "~2.1",
@@ -2657,7 +2658,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-01-03 17:35:53"
+            "time": "2016-01-05 23:19:40"
         },
         {
             "name": "typicms/dashboard",
@@ -2914,6 +2915,41 @@
                 "tree"
             ],
             "time": "2015-05-13 20:26:35"
+        },
+        {
+            "name": "typicms/objects",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Objects.git",
+                "reference": "3798e8ab59cf714f803151e010a95ff349efffb7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/3798e8ab59cf714f803151e010a95ff349efffb7",
+                "reference": "3798e8ab59cf714f803151e010a95ff349efffb7",
+                "shasum": ""
+            },
+            "require": {
+                "typicms/core": "~2.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Objects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-01-04 22:18:47"
         },
         {
             "name": "typicms/pages",
