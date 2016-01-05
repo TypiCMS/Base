@@ -9,7 +9,8 @@
 
     angular.module('typicms', ['ngResource', 'smart-table', 'ui.tree']);
 
-    angular.module('typicms').factory('$api', ['$location', '$resource', function ($location, $resource) {
+    // Creating an 'update' method (PUT)
+    angular.module('typicms').factory('$api', ['$resource', function ($resource) {
 
         var url = new URL(window.location),
             path = url.pathname,
@@ -21,12 +22,10 @@
         if (moduleName === 'menus' && path.split('/')[4] === 'edit') {
             moduleName = 'menulinks';
         }
-
         if (moduleName === 'dashboard') {
             moduleName = 'history';
         }
-
-        return $resource('/api/' + moduleName + '/:id', url.query,
+        return $resource('/api/' + moduleName + '/:id', null,
             {
                 'update': { method: 'PUT' }
             });
