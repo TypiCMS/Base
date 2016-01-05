@@ -119,6 +119,7 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), [B
 ### Installation of a module
 
 This example is for the News module. After these steps, the module will appear in the sidebar of the back office.
+If you need to customize it, [publish it](#publish-a-module)!
 
 1. Install module with Composer
 
@@ -137,7 +138,24 @@ This example is for the News module. After these steps, the module will appear i
    php artisan migrate
    ```
 
-## Modules
+### Module scaffolding
+
+This example is for a new module called Cats.
+
+1. Create the module with artisan:
+
+   ```
+   php artisan typicms:create cats
+   ```
+2. The module is in */Modules/Cats*, you can customize it
+3. Add ```TypiCMS\Modules\Cats\Providers\ModuleProvider::class,``` to *config/app.php*, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
+4. Migrate the database
+
+   ```
+   php artisan migrate
+   ```
+
+## Existing modules
 
 Each module can be published in order to be modified and tracked by git. Here is more info on [publishing a module](#publish-a-module).
 
@@ -273,6 +291,14 @@ These steps will be executed:
 3. Running ```composer remove typicms/pages```.
 
 When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running ```composer update```.
+
+### Create a module
+
+You can easily scaffold a module, for a module named Cats, run this command:
+
+```
+php artisan typicms:create cats
+```
 
 ##Upgrade instructions
 

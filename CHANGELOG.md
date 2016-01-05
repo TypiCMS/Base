@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.6.3 - 2016-01-06
+
+### Added
+- Command typicms:create {module} to scaffold a module.
+
 ## 2.6.0 - 2016-01-03
 
 ### Added
