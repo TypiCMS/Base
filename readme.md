@@ -93,12 +93,12 @@ Go to http://mywebsite.local/admin and log in.
 
 In order to work on assets, you need to install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](http://gulpjs.com), then cd to your website folder and run these commands:
 
-1. Install bower packages according to bower.json (directory app/assets/components)
+1. Install bower packages according to bower.json (directory **bower_components**)
 
    ```
    bower install
    ```
-2. Install gulp packages according to gulpfile.js (directory node_modules)
+2. Install gulp packages according to gulpfile.js (directory **node_modules**)
 
    ```
    npm install
@@ -126,7 +126,7 @@ If you need to customize it, [publish it](#publish-a-module)!
    ```
    composer require typicms/news
    ```
-2. Add ```TypiCMS\Modules\News\Providers\ModuleProvider::class,``` to *config/app.php*, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
+2. Add ```TypiCMS\Modules\News\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
 3. Publish views and migrations
 
    ```
@@ -147,8 +147,8 @@ This example is for a new module called Cats.
    ```
    php artisan typicms:create cats
    ```
-2. The module is in */Modules/Cats*, you can customize it
-3. Add ```TypiCMS\Modules\Cats\Providers\ModuleProvider::class,``` to *config/app.php*, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
+2. The module is in **/Modules/Cats**, you can customize it
+3. Add ```TypiCMS\Modules\Cats\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
 4. Migrate the database
 
    ```
