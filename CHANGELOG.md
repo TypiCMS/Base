@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.6.6 - 2016-01-13
+
+### Fixed
+- Bug with PHP < 7 in history module.
+
 ## 2.6.3 - 2016-01-06
 
 ### Added
