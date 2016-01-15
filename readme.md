@@ -302,6 +302,15 @@ php artisan typicms:create cats
 
 ##Upgrade instructions
 
+###Upgrade from 2.6.x to 2.7.x
+
+- In config/app.php, remove ```TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider::class,``` and add ```AdamWathan\BootForms\BootFormsServiceProvider::class,``` and ```Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,```
+- Run ```composer require propaganistas/laravel-translatable-bootforms```
+- Run ```composer remove typicms/translatablebootforms```
+- In composer.json, change typicms modules from ~2.6.0 to ~2.7.0
+- Run ```composer update```
+- Remove resources/vendor/*/admin/_form.blade.php files, republish them if needed.
+
 ###Upgrade from 2.5.x to 2.6.x
 
 - Follows the steps needed to [upgrade to Laravel 5.2](https://laravel.com/docs/5.2/upgrade#upgrade-5.2.0)
