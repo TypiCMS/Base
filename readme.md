@@ -304,12 +304,16 @@ php artisan typicms:create cats
 
 ###Upgrade from 2.6.x to 2.7.x
 
-- In config/app.php, remove ```TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider::class,``` and add ```AdamWathan\BootForms\BootFormsServiceProvider::class,``` and ```Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,```
-- Run ```composer require propaganistas/laravel-translatable-bootforms```
-- Run ```composer remove typicms/translatablebootforms```
-- In composer.json, change typicms modules from ~2.6.0 to ~2.7.0
-- Run ```composer update```
-- Remove resources/vendor/*/admin/_form.blade.php files, republish them if needed.
+- In **config/app.php**:
+  - remove ```TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider::class,```;
+  - add ```AdamWathan\BootForms\BootFormsServiceProvider::class,``` to the providers list;
+  - add ```Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,``` to the providers list;
+  - add ```'TranslatableBootForm' => Propaganistas\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,``` to the aliases list.
+- Run ```composer require propaganistas/laravel-translatable-bootforms```.
+- Run ```composer remove typicms/translatablebootforms```.
+- In composer.json, change version of all typicms modules from ~2.6.0 to ~2.7.0.
+- Run ```composer update```.
+- Remove **resources/vendor/*/admin** directories, republish them if needed.
 
 ###Upgrade from 2.5.x to 2.6.x
 
