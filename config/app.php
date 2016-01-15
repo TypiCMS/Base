@@ -224,15 +224,16 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-        'FileUpload'      => TypiCMS\Modules\Core\Facades\FileUpload::class,
-        'TypiCMS'         => TypiCMS\Modules\Core\Facades\TypiCMS::class,
+        'FileUpload'           => TypiCMS\Modules\Core\Facades\FileUpload::class,
+        'TypiCMS'              => TypiCMS\Modules\Core\Facades\TypiCMS::class,
 
-        'Debugbar'        => Barryvdh\Debugbar\Facade::class,
-        'BootForm'        => AdamWathan\BootForms\Facades\BootForm::class,
-        'Form'            => AdamWathan\Form\Facades\Form::class,
-        'Croppa'          => Bkwld\Croppa\Facade::class,
-        'Notification'    => Krucas\Notification\Facades\Notification::class,
-        'Translatable'    => Dimsav\Translatable\Translatable::class,
+        'Debugbar'             => Barryvdh\Debugbar\Facade::class,
+        'BootForm'             => AdamWathan\BootForms\Facades\BootForm::class,
+        'Form'                 => AdamWathan\Form\Facades\Form::class,
+        'Croppa'               => Bkwld\Croppa\Facade::class,
+        'Notification'         => Krucas\Notification\Facades\Notification::class,
+        'Translatable'         => Dimsav\Translatable\Translatable::class,
+        'TranslatableBootForm' => Propaganistas\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,
 
     ],
 
