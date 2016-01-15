@@ -159,6 +159,7 @@ return [
         /*
          * Vendor Service Providers...
          */
+        AdamWathan\BootForms\BootFormsServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Bkwld\Croppa\ServiceProvider::class,
         Cviebrock\ImageValidator\ImageValidatorServiceProvider::class,
@@ -166,6 +167,7 @@ return [
         Krucas\Notification\NotificationServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
+        Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
 
         /*
          * TypiCMS Modules Service Providers...
@@ -176,7 +178,6 @@ return [
          * TypiCMS Service Providers...
          */
         TypiCMS\Modules\Core\Providers\ModuleProvider::class,
-        TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider::class,
     ],
 
     /*
