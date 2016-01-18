@@ -72,8 +72,12 @@
             $scope.clearHistory = function () {
                 if (window.confirm('Are you sure you want to clear history?')) {
                     $api.delete().$promise.then(
-                        function () {
-                            $scope.displayedModels = [];
+                        function (data) {
+                            if (data.error) {
+                                console.log(data);
+                            } else {
+                                $scope.displayedModels = [];
+                            }
                         },
                         function (reason) {
                             alertify.error('Error ' + reason.status + ' ' + reason.statusText);
