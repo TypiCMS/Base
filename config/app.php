@@ -166,11 +166,14 @@ return [
         Krucas\Notification\NotificationServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
+        TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
 
         /*
-         * TypiCMS Modules Service Providers...
+         * TypiCMS Modules Service Providers.
+         * Here is the place for your modules,
+         * they should be set before Core Service provider.
          */
-        TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
+        // TypiCMS\Modules\News\Providers\ModuleProvider::class,
 
         /*
          * TypiCMS Service Providers...
