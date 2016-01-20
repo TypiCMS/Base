@@ -168,14 +168,17 @@ return [
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
         Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
-
-        /*
-         * TypiCMS Modules Service Providers...
-         */
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
 
         /*
-         * TypiCMS Service Providers...
+         * TypiCMS Modules Service Providers.
+         * Here is the place for your modules,
+         * they should be set before Core Service provider.
+         */
+        // TypiCMS\Modules\News\Providers\ModuleProvider::class,
+
+        /*
+         * TypiCMS Core Service Provider...
          */
         TypiCMS\Modules\Core\Providers\ModuleProvider::class,
     ],
