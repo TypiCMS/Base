@@ -449,22 +449,22 @@
         },
         {
             "name": "edvinaskrucas/notification",
-            "version": "5.1.0",
+            "version": "5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/edvinaskrucas/notification.git",
-                "reference": "dddcc8f9aaa80f524d26198afb7916170764d914"
+                "reference": "04cac9a31f5497633ffd05581210fa1a4d6fe6e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/edvinaskrucas/notification/zipball/dddcc8f9aaa80f524d26198afb7916170764d914",
-                "reference": "dddcc8f9aaa80f524d26198afb7916170764d914",
+                "url": "https://api.github.com/repos/edvinaskrucas/notification/zipball/04cac9a31f5497633ffd05581210fa1a4d6fe6e9",
+                "reference": "04cac9a31f5497633ffd05581210fa1a4d6fe6e9",
                 "shasum": ""
             },
             "require": {
-                "illuminate/session": "5.*",
-                "illuminate/support": "5.*",
-                "php": ">=5.4.0"
+                "illuminate/session": "^5.1",
+                "illuminate/support": "^5.1",
+                "php": "^5.5|^7.0"
             },
             "require-dev": {
                 "mockery/mockery": "0.7.*"
@@ -493,7 +493,7 @@
                 "messages",
                 "notifications"
             ],
-            "time": "2015-10-18 09:36:17"
+            "time": "2016-01-19 14:26:18"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1533,27 +1533,27 @@
         },
         {
             "name": "propaganistas/laravel-translatable-bootforms",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Propaganistas/Laravel-Translatable-Bootforms.git",
-                "reference": "b70f09fb73b68568f9555da3ab535107298a78f8"
+                "reference": "999c536a975a0f974020bbae5b15cf2cd6ce2295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/b70f09fb73b68568f9555da3ab535107298a78f8",
-                "reference": "b70f09fb73b68568f9555da3ab535107298a78f8",
+                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/999c536a975a0f974020bbae5b15cf2cd6ce2295",
+                "reference": "999c536a975a0f974020bbae5b15cf2cd6ce2295",
                 "shasum": ""
             },
             "require": {
                 "adamwathan/bootforms": "^0.7.1",
                 "dimsav/laravel-translatable": "~5.0",
                 "illuminate/support": "~5.0",
-                "php": ">=5.6.0"
+                "php": ">=5.5.9"
             },
             "require-dev": {
                 "orchestra/testbench": "~3.0",
-                "phpunit/phpunit": "~5.0"
+                "phpunit/phpunit": "~4.1"
             },
             "type": "library",
             "autoload": {
@@ -1579,7 +1579,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2016-01-03 16:02:53"
+            "time": "2016-01-20 15:22:00"
         },
         {
             "name": "psr/http-message",
