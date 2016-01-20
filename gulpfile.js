@@ -146,7 +146,6 @@ gulp.task('js-admin', function () {
             'node_modules/angular-resource/angular-resource.js',
             'node_modules/angular-smart-table/dist/smart-table.js',
             'node_modules/angular-ui-tree/dist/angular-ui-tree.js',
-            'node_modules/jsurl/url.js',
             'node_modules/bootstrap/js/dropdown.js',
             'node_modules/bootstrap/js/collapse.js',
             'node_modules/bootstrap/js/alert.js',
