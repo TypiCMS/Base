@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3637acdd7bede17f4ef781541b7a7a46",
-    "content-hash": "a14df75cad1dfe8e126efed6967d12b3",
+    "hash": "9c6b56405c4a3571ad8c02ed4994ee53",
+    "content-hash": "27b649d91f23beca3a802339153dc5bc",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -147,16 +147,16 @@
         },
         {
             "name": "bkwld/croppa",
-            "version": "4.2.1",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
-                "reference": "d9631cdfdfb3c829f4c8c80b7ed68b0aba537c40"
+                "reference": "6e78aa5158f0ba32223d42c0bf73dbee4ef5ca03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/d9631cdfdfb3c829f4c8c80b7ed68b0aba537c40",
-                "reference": "d9631cdfdfb3c829f4c8c80b7ed68b0aba537c40",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/6e78aa5158f0ba32223d42c0bf73dbee4ef5ca03",
+                "reference": "6e78aa5158f0ba32223d42c0bf73dbee4ef5ca03",
                 "shasum": ""
             },
             "require": {
@@ -168,6 +168,9 @@
                 "symfony/http-foundation": "~2.0",
                 "symfony/http-kernel": "~2.0",
                 "weotch/phpthumb": ">=1.0.5,<2"
+            },
+            "conflict": {
+                "league/flysystem-cached-adapter": "<1.0.2"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
@@ -189,7 +192,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "time": "2015-06-30 20:40:02"
+            "time": "2016-01-22 18:04:40"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -945,16 +948,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.10",
+            "version": "v5.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "93dc5b0089eef468157fd7200e575c3861ec59a5"
+                "reference": "e8ad411ac3ca63f532952417156e32d010fcc522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/93dc5b0089eef468157fd7200e575c3861ec59a5",
-                "reference": "93dc5b0089eef468157fd7200e575c3861ec59a5",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e8ad411ac3ca63f532952417156e32d010fcc522",
+                "reference": "e8ad411ac3ca63f532952417156e32d010fcc522",
                 "shasum": ""
             },
             "require": {
@@ -1069,7 +1072,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-01-13 20:29:10"
+            "time": "2016-01-22 18:36:05"
         },
         {
             "name": "league/flysystem",
