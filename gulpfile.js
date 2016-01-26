@@ -110,27 +110,27 @@ gulp.task('ckeditor', function () {
 
     // Base files
     gulp.src([
-        'bower_components/ckeditor/ckeditor.js',
-        'bower_components/ckeditor/styles.js',
-        'bower_components/ckeditor/contents.css'
+        'node_modules/ckeditor/ckeditor.js',
+        'node_modules/ckeditor/styles.js',
+        'node_modules/ckeditor/contents.css'
     ])
     .pipe(gulp.dest('public/components/ckeditor'));
 
     // Lang files
     gulp.src([
-            'bower_components/ckeditor/lang/fr.js',
-            'bower_components/ckeditor/lang/es.js',
-            'bower_components/ckeditor/lang/pt.js',
-            'bower_components/ckeditor/lang/de.js',
-            'bower_components/ckeditor/lang/en.js',
-            'bower_components/ckeditor/lang/nl.js'
+            'node_modules/ckeditor/lang/fr.js',
+            'node_modules/ckeditor/lang/es.js',
+            'node_modules/ckeditor/lang/pt.js',
+            'node_modules/ckeditor/lang/de.js',
+            'node_modules/ckeditor/lang/en.js',
+            'node_modules/ckeditor/lang/nl.js'
         ])
         .pipe(gulp.dest('public/components/ckeditor/lang'));
 
     // Plugins
     var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget'];
     for (var i = 0; i < plugins.length; i++) {
-        gulp.src(['bower_components/ckeditor/plugins/' + plugins[i] + '/**/*'])
+        gulp.src(['node_modules/ckeditor/plugins/' + plugins[i] + '/**/*'])
             .pipe(gulp.dest('public/components/ckeditor/plugins/' + plugins[i]));
     }
 
@@ -146,6 +146,9 @@ gulp.task('js-admin', function () {
             'node_modules/angular-resource/angular-resource.js',
             'node_modules/angular-smart-table/dist/smart-table.js',
             'node_modules/angular-ui-tree/dist/angular-ui-tree.js',
+            'node_modules/vue/vue.js',
+            'node_modules/vue-tables/lib/dist/v-client-table.js',
+            'node_modules/jsurl/url.js',
             'node_modules/bootstrap/js/dropdown.js',
             'node_modules/bootstrap/js/collapse.js',
             'node_modules/bootstrap/js/alert.js',
@@ -161,8 +164,8 @@ gulp.task('js-admin', function () {
 
     return gulp.src(files)
         .pipe(concat('components.js'))
-        .pipe(ngAnnotate())
-        .pipe(uglify())
+        // .pipe(ngAnnotate())
+        // .pipe(uglify())
         .on('error', swallowError)
         .pipe(rename(destFile))
         .pipe(gulp.dest(destDir));
