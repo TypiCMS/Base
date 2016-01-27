@@ -6,6 +6,7 @@ All notable changes to TypiCMS will be documented in this file.
 ### Changed
 - Translatable fields are grouped by fields, not by locale, TypiCMS now use Propaganistas\LaravelTranslatableBootForms.
 - Bower is removed from TypiCMS.
+- Specify a domain for a locale.
 
 ## 2.6.6 - 2016-01-13
 
