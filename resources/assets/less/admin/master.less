@@ -8,6 +8,7 @@
 @import 'fancybox';
 @import 'twilight';
 @import 'files';
+@import 'tables';
 @import 'dropzone';
 @import 'angular-ui-tree';
 
@@ -56,26 +57,6 @@ h1 {
     color: @gray-light;
 }
 
-// table
-.table-main {
-    th { white-space: nowrap; }
-    .checkboxes { width: 30px; }
-    .delete { width: 30px; }
-    .edit { width: 50px; }
-    .position { width: 50px; }
-    .status { width: 50px; }
-    .image { width: 100px; }
-    .date,
-    .start_date,
-    .end_date { width: 160px; }
-    .files { width: 70px; }
-}
-
-.table-checkboxes {
-    th { width: 200px; }
-    .checkbox { margin: 0; }
-}
-
 .container-system-locales {
     max-height: 150px;
     overflow: scroll;
@@ -101,4 +82,11 @@ h1 {
     .btn-xs();
     float: right;
     margin-top: -19px;
+}
+
+.checkbox.form-group-translation{
+    margin-bottom: 20px;
+    &+.checkbox.form-group-translation {
+        margin-top: 10px;
+    }
 }
