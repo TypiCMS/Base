@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.7.2 - 2016-02-05
+
+### Changed
+- Angular 1.5, CKEditor 4.5.7, jQuery 2.2.0 (Drop IE 8 support).
+
 ## 2.7.0 - 2016-02-04
 
 ### Changed
