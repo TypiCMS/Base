@@ -2774,21 +2774,21 @@
         },
         {
             "name": "typicms/core",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "8d7353068ff32e55f96a719fd530f913df82c247"
+                "reference": "79002d11394123be3cc7fd3fbf32a1bb539321ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/8d7353068ff32e55f96a719fd530f913df82c247",
-                "reference": "8d7353068ff32e55f96a719fd530f913df82c247",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/79002d11394123be3cc7fd3fbf32a1bb539321ba",
+                "reference": "79002d11394123be3cc7fd3fbf32a1bb539321ba",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "~5.2.0",
-                "typicms/objects": "~2.6.0"
+                "typicms/objects": "~2.7.0"
             },
             "require-dev": {
                 "phpspec/phpspec": "~2.1",
@@ -2810,7 +2810,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-02-03 22:21:17"
+            "time": "2016-02-05 17:45:50"
         },
         {
             "name": "typicms/dashboard",
@@ -3070,16 +3070,16 @@
         },
         {
             "name": "typicms/objects",
-            "version": "2.6.4",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "315b46d45e78ff3b9d6093b0252421b8799482f5"
+                "reference": "5341752c73ffc555979603d785c1291d6482f481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/315b46d45e78ff3b9d6093b0252421b8799482f5",
-                "reference": "315b46d45e78ff3b9d6093b0252421b8799482f5",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/5341752c73ffc555979603d785c1291d6482f481",
+                "reference": "5341752c73ffc555979603d785c1291d6482f481",
                 "shasum": ""
             },
             "require": {
@@ -3096,7 +3096,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-01-11 19:41:10"
+            "time": "2016-01-19 13:45:33"
         },
         {
             "name": "typicms/pages",
