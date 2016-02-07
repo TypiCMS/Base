@@ -9,6 +9,7 @@ return [
     */
     'languages' => [
         'fr' => 'Français',
+        'es' => 'Espagnol',
         'nl' => 'Néerlandais',
         'en' => 'Anglais',
     ],
