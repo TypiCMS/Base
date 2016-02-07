@@ -109,7 +109,6 @@ class TranslationSeeder extends Seeder
             ['id' => '80', 'translation_id' => '13', 'locale' => 'es', 'translation' => 'Últimas noticias', 'created_at' => '2016-02-04 19:43:36', 'updated_at' => '2016-02-04 19:43:36'],
             ['id' => '81', 'translation_id' => '7', 'locale' => 'es', 'translation' => 'Muchas gracias', 'created_at' => '2016-02-04 19:43:48', 'updated_at' => '2016-02-04 19:43:48'],
             ['id' => '82', 'translation_id' => '17', 'locale' => 'es', 'translation' => 'Disculpe, no está autorizado a ver esta página', 'created_at' => '2016-02-04 19:44:08', 'updated_at' => '2016-02-04 19:44:08'],
-            ['id' => '83', 'translation_id' => '21', 'locale' => 'es', 'translation' => 'Español', 'created_at' => '2016-02-07 19:06:52', 'updated_at' => '2016-02-07 19:06:52'],
             ['id' => '84', 'translation_id' => '16', 'locale' => 'es', 'translation' => 'Error :code', 'created_at' => '2016-02-07 19:06:59', 'updated_at' => '2016-02-07 19:06:59'],
         ];
 
