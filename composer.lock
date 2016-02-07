@@ -301,20 +301,20 @@
         },
         {
             "name": "dimsav/laravel-translatable",
-            "version": "v5.4",
+            "version": "v5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dimsav/laravel-translatable.git",
-                "reference": "222d8ab86c7529e644bd819930e22ad9dd0527b1"
+                "reference": "dd6c5dbbf76b4afe360679cfede9f178f88ee92d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/222d8ab86c7529e644bd819930e22ad9dd0527b1",
-                "reference": "222d8ab86c7529e644bd819930e22ad9dd0527b1",
+                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/dd6c5dbbf76b4afe360679cfede9f178f88ee92d",
+                "reference": "dd6c5dbbf76b4afe360679cfede9f178f88ee92d",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.0",
+                "illuminate/support": "~5.1",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -348,7 +348,7 @@
                 "laravel",
                 "translation"
             ],
-            "time": "2015-11-15 20:32:59"
+            "time": "2016-01-19 19:42:08"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1488,16 +1488,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.6",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "e6f80ab77885151908d0ec743689ca700886e8b0"
+                "reference": "b0e69d10852716b2ccbdff69c75c477637220790"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/e6f80ab77885151908d0ec743689ca700886e8b0",
-                "reference": "e6f80ab77885151908d0ec743689ca700886e8b0",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b0e69d10852716b2ccbdff69c75c477637220790",
+                "reference": "b0e69d10852716b2ccbdff69c75c477637220790",
                 "shasum": ""
             },
             "require": {
@@ -1532,7 +1532,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-01-29 16:19:52"
+            "time": "2016-02-06 03:52:05"
         },
         {
             "name": "propaganistas/laravel-translatable-bootforms",
