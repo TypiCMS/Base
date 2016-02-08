@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.7.5 - 2016-02-08
+
+### Changed
+- Possibility to show every languages in a form.
+
+### Breaking change
+- Replace file /resources/assets/js/admin/set-content-locale.js with https://github.com/TypiCMS/TypiCMS/blob/master/resources/assets/js/admin/set-content-locale.js
+- Add 'languages.all' key in /resources/lang/*/global.php
+
 ## 2.7.3 - 2016-02-05
 
 ### Changed
