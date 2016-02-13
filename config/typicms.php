@@ -34,10 +34,10 @@ return [
     | Each locale can have his own domain
     |--------------------------------------------------------------------------
     */
-    // 'domains' => [
-    //     'domain-name.com' => 'en',
-    //     'nom-de-dmaine.fr' => 'fr',
-    // ],
+    'translated_domains' => [
+        // 'en' => 'domain-name.com',
+        // 'fr' => 'nom-de-domaine.fr',
+    ],
 
     /*
     |--------------------------------------------------------------------------
