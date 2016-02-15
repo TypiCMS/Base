@@ -26,7 +26,7 @@ class TranslationSeeder extends Seeder
             ['id' => '18', 'group' => 'db', 'key' => 'Go to our homepage?', 'created_at' => '2014-02-28 16:40:40', 'updated_at' => '2014-02-28 16:40:40'],
             ['id' => '19', 'group' => 'db', 'key' => 'Sorry, this page was not found', 'created_at' => '2014-02-28 16:42:18', 'updated_at' => '2014-02-28 16:42:18'],
             ['id' => '20', 'group' => 'db', 'key' => 'Sorry, a server error occurred', 'created_at' => '2014-02-28 16:44:46', 'updated_at' => '2014-02-28 16:44:46'],
-            ['id' => '21', 'group' => 'db', 'key' => 'languages.es', 'created_at' => '2016-02-07 10:44:56', 'updated_at' => '2016-02-07 10:44:66'],
+            ['id' => '21', 'group' => 'db', 'key' => 'Open navigation', 'created_at' => '2016-02-15 16:44:46', 'updated_at' => '2016-02-15 16:44:46'],
         ];
 
         $typi_translation_translations = [
@@ -87,29 +87,9 @@ class TranslationSeeder extends Seeder
             ['id' => '58', 'translation_id' => '20', 'locale' => 'fr', 'translation' => 'Désolé, une erreur serveur est survenue', 'created_at' => '2014-02-28 16:44:46', 'updated_at' => '2014-02-28 16:44:46'],
             ['id' => '59', 'translation_id' => '20', 'locale' => 'nl', 'translation' => 'Sorry, er is een serverfout opgetreden', 'created_at' => '2014-02-28 16:44:46', 'updated_at' => '2014-02-28 16:44:46'],
             ['id' => '60', 'translation_id' => '20', 'locale' => 'en', 'translation' => 'Sorry, a server error occurred', 'created_at' => '2014-02-28 16:44:46', 'updated_at' => '2014-02-28 16:44:46'],
-            ['id' => '61', 'translation_id' => '21', 'locale' => 'fr', 'translation' => 'Espagnol', 'created_at' => '2016-02-07 10:44:56', 'updated_at' => '2016-02-07 10:44:56'],
-            ['id' => '62', 'translation_id' => '21', 'locale' => 'en', 'translation' => 'Spanish', 'created_at' => '2016-02-07 10:45:56', 'updated_at' => '2016-02-07 10:45:56'],
-            ['id' => '63', 'translation_id' => '21', 'locale' => 'nl', 'translation' => 'Spaan', 'created_at' => '2016-02-07 10:46:56', 'updated_at' => '2016-02-07 10:46:56'],
-            ['id' => '64', 'translation_id' => '21', 'locale' => 'es', 'translation' => 'Español', 'created_at' => '2016-02-07 10:47:56', 'updated_at' => '2016-02-07 10:47:56'],
-            ['id' => '65', 'translation_id' => '9', 'locale' => 'es', 'translation' => 'Añadir al calendario', 'created_at' => '2016-02-04 19:39:51', 'updated_at' => '2016-02-04 19:39:51'],
-            ['id' => '66', 'translation_id' => '11', 'locale' => 'es', 'translation' => 'Todos los eventos', 'created_at' => '2016-02-04 19:40:03', 'updated_at' => '2016-02-04 19:40:03'],
-            ['id' => '67', 'translation_id' => '10', 'locale' => 'es', 'translation' => 'Todas las noticias', 'created_at' => '2016-02-04 19:40:10', 'updated_at' => '2016-02-04 19:40:10'],
-            ['id' => '68', 'translation_id' => '18', 'locale' => 'es', 'translation' => 'Ir a nuestra :a_openpágina de inicio:a_close?', 'created_at' => '2016-02-04 19:40:36', 'updated_at' => '2016-02-04 19:40:36'],
-            ['id' => '69', 'translation_id' => '4', 'locale' => 'es', 'translation' => 'Inglés', 'created_at' => '2016-02-04 19:40:48', 'updated_at' => '2016-02-04 19:40:48'],
-            ['id' => '70', 'translation_id' => '3', 'locale' => 'es', 'translation' => 'Francés', 'created_at' => '2016-02-04 19:40:55', 'updated_at' => '2016-02-04 19:40:55'],
-            ['id' => '71', 'translation_id' => '5', 'locale' => 'es', 'translation' => 'Holandés', 'created_at' => '2016-02-04 19:41:05', 'updated_at' => '2016-02-04 19:41:05'],
-            ['id' => '72', 'translation_id' => '1', 'locale' => 'es', 'translation' => 'Leer más', 'created_at' => '2016-02-04 19:41:16', 'updated_at' => '2016-02-04 19:41:16'],
-            ['id' => '73', 'translation_id' => '12', 'locale' => 'es', 'translation' => 'Partners', 'created_at' => '2016-02-04 19:41:27', 'updated_at' => '2016-02-04 19:41:27'],
-            ['id' => '74', 'translation_id' => '6', 'locale' => 'es', 'translation' => 'Buscar', 'created_at' => '2016-02-04 19:41:36', 'updated_at' => '2016-02-04 19:41:36'],
-            ['id' => '75', 'translation_id' => '2', 'locale' => 'es', 'translation' => 'Saltar al contenido', 'created_at' => '2016-02-04 19:41:48', 'updated_at' => '2016-02-04 19:41:48'],
-            ['id' => '76', 'translation_id' => '14', 'locale' => 'es', 'translation' => 'Eventos próximos', 'created_at' => '2016-02-04 19:42:05', 'updated_at' => '2016-02-04 19:42:05'],
-            ['id' => '77', 'translation_id' => '20', 'locale' => 'es', 'translation' => 'Disculpe, ha ocurrido un error en el servidor', 'created_at' => '2016-02-04 19:42:25', 'updated_at' => '2016-02-04 19:42:25'],
-            ['id' => '78', 'translation_id' => '19', 'locale' => 'es', 'translation' => 'Disculpe, la página no ha sido encontrada', 'created_at' => '2016-02-04 19:42:55', 'updated_at' => '2016-02-04 19:42:55'],
-            ['id' => '79', 'translation_id' => '8', 'locale' => 'es', 'translation' => 'Por favor, corrige los errores mencionados abajo', 'created_at' => '2016-02-04 20:44:22', 'updated_at' => '2016-02-04 19:44:22'],
-            ['id' => '80', 'translation_id' => '13', 'locale' => 'es', 'translation' => 'Últimas noticias', 'created_at' => '2016-02-04 19:43:36', 'updated_at' => '2016-02-04 19:43:36'],
-            ['id' => '81', 'translation_id' => '7', 'locale' => 'es', 'translation' => 'Muchas gracias', 'created_at' => '2016-02-04 19:43:48', 'updated_at' => '2016-02-04 19:43:48'],
-            ['id' => '82', 'translation_id' => '17', 'locale' => 'es', 'translation' => 'Disculpe, no está autorizado a ver esta página', 'created_at' => '2016-02-04 19:44:08', 'updated_at' => '2016-02-04 19:44:08'],
-            ['id' => '84', 'translation_id' => '16', 'locale' => 'es', 'translation' => 'Error :code', 'created_at' => '2016-02-07 19:06:59', 'updated_at' => '2016-02-07 19:06:59'],
+            ['id' => '61', 'translation_id' => '21', 'locale' => 'fr', 'translation' => 'Aller à la navigation', 'created_at' => '2016-02-15 16:44:46', 'updated_at' => '2016-02-15 16:44:46'],
+            ['id' => '62', 'translation_id' => '21', 'locale' => 'nl', 'translation' => 'Open navigatie', 'created_at' => '2016-02-15 16:44:46', 'updated_at' => '2016-02-15 16:44:46'],
+            ['id' => '63', 'translation_id' => '21', 'locale' => 'en', 'translation' => 'Open navigation', 'created_at' => '2016-02-15 16:44:46', 'updated_at' => '2016-02-15 16:44:46'],
         ];
 
         DB::table('translations')->insert($typi_translations);
