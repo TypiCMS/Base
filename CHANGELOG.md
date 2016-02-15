@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.7.6 - 2016-02-15
+
+### Added
+- Offcanvas navigation on public side.
+
 ## 2.7.5 - 2016-02-08
 
 ### Changed
