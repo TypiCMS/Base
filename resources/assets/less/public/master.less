@@ -18,6 +18,11 @@
 
 .skip-to-content {
     .sr-only();
+    .sr-only-focusable();
+    &:active,
+    &:focus {
+        position: absolute;
+    }
 }
 
 table {
