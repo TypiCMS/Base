@@ -192,7 +192,7 @@ return [
         'DDMMYYYY'      => 'DD.MM.YYYY',
         'DDMMYYYY HHMM' => 'DD.MM.YYYY HH:MM',
         'location'      => 'Location',
-        'venue'         => 'Aankomst',
+        'venue'         => 'Venue',
         'price'         => 'Price',
         'currency'      => 'Currency',
 
