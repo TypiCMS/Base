@@ -164,8 +164,8 @@ gulp.task('js-admin', function () {
 
     return gulp.src(files)
         .pipe(concat('components.js'))
-        // .pipe(ngAnnotate())
-        // .pipe(uglify())
+        .pipe(ngAnnotate())
+        .pipe(uglify())
         .on('error', swallowError)
         .pipe(rename(destFile))
         .pipe(gulp.dest(destDir));

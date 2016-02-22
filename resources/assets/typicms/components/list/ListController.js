@@ -9,7 +9,7 @@
 
         function ($http, $scope, $location, $api) {
 
-            $scope.itemsByPage = 25;
+            $scope.itemsByPage = 100;
             var url = $location.absUrl().split('?')[0],
                 moduleName = url.split('/')[4],
                 $params = {};
