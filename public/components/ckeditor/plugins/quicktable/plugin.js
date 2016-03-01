@@ -31,12 +31,12 @@
 				}
 			}
 
-			table.setAttribute( 'cellpadding', quickCellPadding );
-			table.setAttribute( 'cellspacing', quickCellSpacing );
-			table.setAttribute( 'border', quickBorder );
+			conf.qtCellPadding !== null && table.setAttribute( 'cellpadding', quickCellPadding );
+			conf.qtCellSpacing !== null && table.setAttribute( 'cellspacing', quickCellSpacing );
+			conf.qtBorder !== null && table.setAttribute( 'border', quickBorder );
 			table.setAttribute( 'class', quickClass );
 			table.setStyles( quickStyle );
-			table.setStyle( 'width', quickWidth );
+			conf.qtWidth !== null && table.setStyle( 'width', quickWidth );
 			editor.insertElement( table );
 			
 			// Fire event for showborders plugin (so hidden borders are visible)
