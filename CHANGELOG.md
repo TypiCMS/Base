@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.7.14 - 2016-03-09
+
+### Added
+- app/helpers.php file autoloaded.
+- mb_ucfirst method in helpers.php.
+
 ## 2.7.6 - 2016-02-15
 
 ### Added
