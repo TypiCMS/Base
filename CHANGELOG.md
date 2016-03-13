@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.7.15 - 2016-03-13
+
+## Fixed
+- Bug where old input value where empty when form validation failed.
+
 ## 2.7.14 - 2016-03-09
 
 ### Added
