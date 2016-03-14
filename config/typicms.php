@@ -65,4 +65,13 @@ return [
         'per_page' => 50,
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Folder to find template files for pages.
+    | This folder is a subfolder of /resources/views/vendor/pages
+    |--------------------------------------------------------------------------
+    |
+    */
+    'template_dir' => 'public',
+
 ];
