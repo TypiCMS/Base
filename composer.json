@@ -20,9 +20,9 @@
         "guzzlehttp/guzzle": "~6.0",
         "laracasts/presenter": "~0.2.1",
         "laracasts/utilities": "~2.1.0",
-        "bkwld/croppa": "~4.3.0",
+        "bkwld/croppa": "~4.4.0",
         "maatwebsite/laravel-sidebar": "~1.1.1",
-        "propaganistas/laravel-translatable-bootforms": "~1.1",
+        "propaganistas/laravel-translatable-bootforms": "~1.1.4",
         "typicms/nestablecollection": "~1.1.1",
         "typicms/core": "~2.7.0",
         "typicms/blocks": "~2.7.0",
@@ -53,7 +53,10 @@
         "psr-4": {
             "App\\": "app/",
             "TypiCMS\\Modules\\": "Modules/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [
@@ -72,10 +75,8 @@
             "php artisan clear-html",
             "php artisan optimize"
         ],
-        "pre-update-cmd": [
-            "php clear-compiled"
-        ],
         "post-update-cmd": [
+            "php clear-compiled",
             "php artisan clear-html",
             "php artisan optimize"
         ]

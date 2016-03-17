@@ -192,6 +192,7 @@ return [
         'DDMMYYYY'      => 'JJ.MM.AAAA',
         'DDMMYYYY HHMM' => 'JJ.MM.AAAA HH:MM',
         'location'      => 'Lieu',
+        'venue'         => 'Lieu',
         'price'         => 'Prix',
         'currency'      => 'Devise',
 

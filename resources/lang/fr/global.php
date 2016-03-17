@@ -8,10 +8,11 @@ return [
     |--------------------------------------------------------------------------
     */
     'languages' => [
-        'fr' => 'Français',
-        'es' => 'Espagnol',
-        'nl' => 'Néerlandais',
-        'en' => 'Anglais',
+        'fr'  => 'Français',
+        'es'  => 'Espagnol',
+        'nl'  => 'Néerlandais',
+        'en'  => 'Anglais',
+        'all' => 'Toutes les langues',
     ],
     'form' => [
         'page content' => 'contenu de la page',

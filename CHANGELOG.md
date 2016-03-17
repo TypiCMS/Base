@@ -1,6 +1,31 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.7.15 - 2016-03-13
+
+## Fixed
+- Bug where old input value where empty when form validation failed.
+
+## 2.7.14 - 2016-03-09
+
+### Added
+- app/helpers.php file autoloaded.
+- mb_ucfirst method in helpers.php.
+
+## 2.7.6 - 2016-02-15
+
+### Added
+- Offcanvas navigation on public side.
+
+## 2.7.5 - 2016-02-08
+
+### Changed
+- Possibility to show every languages in a form.
+
+### Breaking change
+- Replace file /resources/assets/js/admin/set-content-locale.js with https://github.com/TypiCMS/TypiCMS/blob/master/resources/assets/js/admin/set-content-locale.js
+- Add 'languages.all' key in /resources/lang/*/global.php
+
 ## 2.7.3 - 2016-02-05
 
 ### Changed

@@ -1,0 +1,29 @@
+@offcanvas-width: 100%;
+
+.sidebar-offcanvas {
+    @media (max-width: @screen-xs-max) {
+        background: fadeout(#fff, 10%);
+        bottom: 0;
+        left: -@offcanvas-width;
+        position: fixed;
+        top: 0;
+        transition: transform 0.3s ease-in-out;
+        width: @offcanvas-width;
+        z-index: 1001;
+    }
+    &.active {
+        @media (max-width: @screen-xs-max) {
+            transform: translateX(@offcanvas-width);
+        }
+    }
+}
+.btn-offcanvas {
+    .btn();
+    .btn-default();
+    .visible-xs-block();
+    margin: 10px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+}

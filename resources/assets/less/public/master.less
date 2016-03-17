@@ -4,7 +4,9 @@
 @import 'errors';
 @import 'header';
 @import 'footer';
+@import '../../../../node_modules/swiper/src/less/swiper';
 @import 'swiper';
+@import 'offcanvas';
 @import 'gmaps';
 @import '../navbar';
 @import 'navbar-hide-left-button';
@@ -17,6 +19,11 @@
 
 .skip-to-content {
     .sr-only();
+    .sr-only-focusable();
+    &:active,
+    &:focus {
+        position: absolute;
+    }
 }
 
 table {

@@ -4,14 +4,15 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | EN Global TypiCMS Language Lines
+    | ES Global TypiCMS Language Lines
     |--------------------------------------------------------------------------
     */
     'languages' => [
-        'fr' => 'French',
-        'es' => 'Español',
-        'nl' => 'Dutch',
-        'en' => 'English',
+        'fr'  => 'Francés',
+        'es'  => 'Español',
+        'nl'  => 'Holandés',
+        'en'  => 'Inglés',
+        'all' => 'Todos los idiomas',
     ],
     'form' => [
         'page content' => 'contenido de página',
