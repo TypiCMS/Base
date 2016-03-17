@@ -48,8 +48,8 @@ return [
 
         'sqlite' => [
             'driver' => 'sqlite',
-            'prefix' => 'typicms_',
             'database' => database_path('database.sqlite'),
+            'prefix' => 'typicms_',
         ],
 
         'mysql' => [
@@ -62,29 +62,20 @@ return [
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => 'typicms_',
-            'strict' => env('DB_PASSWORD', ''),
+            'strict' => env('DB_STRICT', false),,
             'engine' => null,
         ],
 
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => 'typicms_',
             'schema' => 'public',
-        ],
-
-        'sqlsrv' => [
-            'driver' => 'sqlsrv',
-            'host' => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'prefix' => 'typicms_',
-            'charset' => 'utf8',
         ],
 
     ],
