@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8029a08b2c8efdfc4cc8a3610c0a5e2b",
-    "content-hash": "1978c153efc98b42ad3335a058646777",
+    "hash": "86780295a4cfb12c2e944e15f7e4bc10",
+    "content-hash": "7636172f4c25f3cd38f399bd21c22b70",
     "packages": [
         {
             "name": "adamwathan/bootforms",
-            "version": "v0.8.0",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/bootforms.git",
-                "reference": "20ce41da79e3e35488d559f7ef5ab3dba6ef92ba"
+                "reference": "9da18932543690d98e45dd684f5acd8bb9a86349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/20ce41da79e3e35488d559f7ef5ab3dba6ef92ba",
-                "reference": "20ce41da79e3e35488d559f7ef5ab3dba6ef92ba",
+                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/9da18932543690d98e45dd684f5acd8bb9a86349",
+                "reference": "9da18932543690d98e45dd684f5acd8bb9a86349",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/form": "^0.8",
+                "adamwathan/form": "~0.7.1",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -47,30 +47,30 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2016-02-11 20:17:34"
+            "time": "2015-12-08 16:07:27"
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.8.3",
+            "version": "v0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "5359604777006ab8e7bdbbe1c216575349447734"
+                "reference": "e99a0a046d150adb1b2ef6b1fb1ab73b51d2929e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/5359604777006ab8e7bdbbe1c216575349447734",
-                "reference": "5359604777006ab8e7bdbbe1c216575349447734",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/e99a0a046d150adb1b2ef6b1fb1ab73b51d2929e",
+                "reference": "e99a0a046d150adb1b2ef6b1fb1ab73b51d2929e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.3.0"
             },
             "require-dev": {
                 "illuminate/support": "4.*",
                 "mockery/mockery": "~0.9",
                 "phpunit/phpunit": "3.7.*",
-                "satooshi/php-coveralls": "^1.0"
+                "satooshi/php-coveralls": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -89,7 +89,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2016-03-23 20:12:24"
+            "time": "2015-08-07 18:04:49"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1494,20 +1494,20 @@
         },
         {
             "name": "propaganistas/laravel-translatable-bootforms",
-            "version": "1.3.0",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Propaganistas/Laravel-Translatable-Bootforms.git",
-                "reference": "80b4f689d0784acb9032dd6a605d3f4ca368fc57"
+                "reference": "999c536a975a0f974020bbae5b15cf2cd6ce2295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/80b4f689d0784acb9032dd6a605d3f4ca368fc57",
-                "reference": "80b4f689d0784acb9032dd6a605d3f4ca368fc57",
+                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/999c536a975a0f974020bbae5b15cf2cd6ce2295",
+                "reference": "999c536a975a0f974020bbae5b15cf2cd6ce2295",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/bootforms": "^0.8",
+                "adamwathan/bootforms": "^0.7.1",
                 "dimsav/laravel-translatable": "~5.0",
                 "illuminate/support": "~5.0",
                 "php": ">=5.5.9"
@@ -1540,7 +1540,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2016-03-20 19:19:34"
+            "time": "2016-01-20 15:22:00"
         },
         {
             "name": "psr/http-message",
