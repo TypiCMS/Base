@@ -1,11 +1,9 @@
+/*jslint browser: true*/
+/*globals $, jQuery, angular, window*/
+
 (function (angular) {
 
     'use strict';
-
-    /*jslint browser: true*/
-    /*globals $, jQuery, angular*/
-
-    var lang = $('html').attr('lang');
 
     angular.module('typicms', ['ngResource', 'smart-table', 'ui.tree']);
 
@@ -25,10 +23,11 @@
         if (moduleName === 'dashboard') {
             moduleName = 'history';
         }
-        return $resource('/api/' + moduleName + '/:id', null,
-            {
-                'update': { method: 'PUT' }
-            });
+        return $resource('/api/' + moduleName + '/:id', null, {
+            update: {
+                method: 'PUT'
+            }
+        });
     }]);
 
-})(angular);
+}(angular));
