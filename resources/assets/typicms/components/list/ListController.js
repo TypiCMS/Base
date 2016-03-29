@@ -37,6 +37,96 @@
             });
         }
 
+        /**
+         * Empty object that will contain checked items
+         */
+        $scope.checked = {
+            models: []
+        };
+
+        /**
+         * Check all items
+         */
+        $scope.toggleCheckAll = function () {
+            var countChecked = $scope.checked.models.length
+            $scope.checked.models = [];
+            if (countChecked < $scope.displayedModels.length) {
+                this.checkAll();
+            }
+        };
+
+        /**
+         * Check all items
+         */
+        $scope.checkAll = function () {
+            $scope.checked.models = [];
+            $scope.displayedModels.forEach(function (model) {
+                $scope.checked.models.push(model);
+            });
+        };
+
+        /**
+         * Uncheck all items
+         */
+        $scope.uncheckAll = function () {
+            $scope.checked.models = [];
+        };
+
+        /**
+         * Check all online or offline items
+         */
+        $scope.checkOnOffline = function (status) {
+            $scope.checked.models = [];
+            $scope.models.forEach(function (model) {
+                if (model.status == status) {
+                    $scope.checked.models.push(model);
+                }
+            });
+        };
+
+        /**
+         * Check all offline items
+         */
+        $scope.checkOffline = function () {
+            this.checkOnOffline(0);
+        };
+
+        /**
+         * Check all online items
+         */
+        $scope.checkOnline = function () {
+            this.checkOnOffline(1);
+        };
+
+        /**
+         * Delete checked items
+         */
+        $scope.deleteChecked = function () {
+            var ids = [],
+                models = $scope.checked.models,
+                number = models.length;
+            if (!window.confirm('Are you sure you want to delete ' + number + ' items?')) {
+                return false;
+            }
+            models.forEach(function (model) {
+                ids.push(model.id);
+                var index = $scope.models.indexOf(model);
+                $scope.models.splice(index, 1);
+            });
+
+            $scope.checked.models = [];
+
+            $api.delete({ids: ids.join()}).$promise.then(
+                function (data) {
+                    if (data.number < number) {
+                        alertify.error((number - data.number) + ' items could not be deleted.');
+                    }
+                },
+                function (reason) {
+                    alertify.error('Error ' + reason.status + ' ' + reason.statusText);
+                }
+            );
+        };
 
         /**
          * Set status = 0 or 1 for item
