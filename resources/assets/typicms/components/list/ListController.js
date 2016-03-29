@@ -26,11 +26,17 @@
             moduleName = 'menulinks';
         }
 
-        $api.query($params).$promise.then(function (all) {
-            $scope.models = all;
-            //copy the references (you could clone ie angular.copy but then have to go through a dirty checking for the matches)
+        if (TypiCMS.models) {
+            $scope.models = TypiCMS.models;
             $scope.displayedModels = [].concat($scope.models);
-        });
+        } else {
+            $api.query($params).$promise.then(function (all) {
+                $scope.models = all;
+                //copy the references (you could clone ie angular.copy but then have to go through a dirty checking for the matches)
+                $scope.displayedModels = [].concat($scope.models);
+            });
+        }
+
 
         /**
          * Set status = 0 or 1 for item
