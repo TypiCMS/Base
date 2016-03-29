@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "88e3b903b83e7b61e21059cfbe5475ae",
-    "content-hash": "50b543c188af4dcf98de7bf0d21c3a98",
+    "hash": "4936079fc7bab2fadead6657a008ccd4",
+    "content-hash": "1b365bf80fddfc5346fce6b94bc107d4",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -51,16 +51,16 @@
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.8.7",
+            "version": "v0.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba"
+                "reference": "b95e6724e55897d7947a8a06e18abac24e88198d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba",
-                "reference": "573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/b95e6724e55897d7947a8a06e18abac24e88198d",
+                "reference": "b95e6724e55897d7947a8a06e18abac24e88198d",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2016-03-28 16:40:32"
+            "time": "2016-03-24 23:00:52"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -906,16 +906,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.26",
+            "version": "v5.2.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b73ac62506c5c2bd49d87fcb1089f7759431e173"
+                "reference": "ccda783ffa253ed27dd1d4b41dbbc95e76e48a2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b73ac62506c5c2bd49d87fcb1089f7759431e173",
-                "reference": "b73ac62506c5c2bd49d87fcb1089f7759431e173",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ccda783ffa253ed27dd1d4b41dbbc95e76e48a2a",
+                "reference": "ccda783ffa253ed27dd1d4b41dbbc95e76e48a2a",
                 "shasum": ""
             },
             "require": {
@@ -1030,7 +1030,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-03-25 17:12:52"
+            "time": "2016-03-29 13:32:58"
         },
         {
             "name": "league/flysystem",
