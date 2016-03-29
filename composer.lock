@@ -51,16 +51,16 @@
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.8.4",
+            "version": "v0.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "b95e6724e55897d7947a8a06e18abac24e88198d"
+                "reference": "573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/b95e6724e55897d7947a8a06e18abac24e88198d",
-                "reference": "b95e6724e55897d7947a8a06e18abac24e88198d",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba",
+                "reference": "573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2016-03-24 23:00:52"
+            "time": "2016-03-28 16:40:32"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -906,16 +906,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.25",
+            "version": "v5.2.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d2817d2773dc3f405b561762489a76bbe66bd673"
+                "reference": "b73ac62506c5c2bd49d87fcb1089f7759431e173"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d2817d2773dc3f405b561762489a76bbe66bd673",
-                "reference": "d2817d2773dc3f405b561762489a76bbe66bd673",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b73ac62506c5c2bd49d87fcb1089f7759431e173",
+                "reference": "b73ac62506c5c2bd49d87fcb1089f7759431e173",
                 "shasum": ""
             },
             "require": {
@@ -1030,7 +1030,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-03-24 15:06:38"
+            "time": "2016-03-25 17:12:52"
         },
         {
             "name": "league/flysystem",
@@ -2617,16 +2617,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "2.7.17",
+            "version": "2.7.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "e3c13f7df209d77a8530899bd380d2014f1e1c73"
+                "reference": "5e362248d9100903051c428ebc5c2a16fa05919e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/e3c13f7df209d77a8530899bd380d2014f1e1c73",
-                "reference": "e3c13f7df209d77a8530899bd380d2014f1e1c73",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/5e362248d9100903051c428ebc5c2a16fa05919e",
+                "reference": "5e362248d9100903051c428ebc5c2a16fa05919e",
                 "shasum": ""
             },
             "require": {
@@ -2653,7 +2653,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-03-25 14:16:40"
+            "time": "2016-03-29 06:49:59"
         },
         {
             "name": "typicms/dashboard",
