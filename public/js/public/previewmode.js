@@ -2,11 +2,21 @@
  * Add query preview=true on every <a href>
  * Required for previewing in admin side
  */
-var currentUrl = new Url;
-if (currentUrl.query.preview) {
-    $('a').each(function(index){
-        var href = new Url($(this).attr('href'));
-        href.query.preview = true;
-        $(this).attr('href', href);
+'use strict';
+
+var params = {};
+window.location.search
+    .replace(/[?&]+([^=&]+)=([^&]*)/gi, function (str, key, value) {
+        params[key] = value;
+    });
+if (params.preview) {
+    $('a').attr('href', function (i, h) {
+        var chunks = h.split('#');
+        if (chunks[0] !== '') {
+            chunks[0] = chunks[0] + (chunks[0].indexOf('?') !== -1
+                ? '&preview=true'
+                : '?preview=true');
+        }
+        return chunks.join('#');
     });
 }
