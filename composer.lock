@@ -51,16 +51,16 @@
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.8.7",
+            "version": "v0.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba"
+                "reference": "942f10721bedd6c8d52da9fdfa5633ddf272548e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba",
-                "reference": "573a4d62f2f9dbdc4e0f173c1c7ded4ca3ccebba",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/942f10721bedd6c8d52da9fdfa5633ddf272548e",
+                "reference": "942f10721bedd6c8d52da9fdfa5633ddf272548e",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2016-03-28 16:40:32"
+            "time": "2016-04-02 13:31:11"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -906,16 +906,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.28",
+            "version": "v5.2.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "69acb1f8ec254511e10138890364865ff2645ddd"
+                "reference": "e3d644eb131f18c5f3d28ff7bc678bc797091f20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/69acb1f8ec254511e10138890364865ff2645ddd",
-                "reference": "69acb1f8ec254511e10138890364865ff2645ddd",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e3d644eb131f18c5f3d28ff7bc678bc797091f20",
+                "reference": "e3d644eb131f18c5f3d28ff7bc678bc797091f20",
                 "shasum": ""
             },
             "require": {
@@ -1030,7 +1030,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-04-01 18:26:27"
+            "time": "2016-04-03 01:43:55"
         },
         {
             "name": "league/flysystem",
@@ -1226,16 +1226,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.18.1",
+            "version": "1.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45"
+                "reference": "064b38c16790249488e7a8b987acf1c9d7383c09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
-                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/064b38c16790249488e7a8b987acf1c9d7383c09",
+                "reference": "064b38c16790249488e7a8b987acf1c9d7383c09",
                 "shasum": ""
             },
             "require": {
@@ -1250,13 +1250,13 @@
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
                 "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
                 "phpunit/phpunit": "~4.5",
                 "phpunit/phpunit-mock-objects": "2.3.0",
                 "raven/raven": "^0.13",
                 "ruflin/elastica": ">=0.90 <3.0",
-                "swiftmailer/swiftmailer": "~5.3",
-                "videlalvaro/php-amqplib": "~2.4"
+                "swiftmailer/swiftmailer": "~5.3"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -1265,11 +1265,11 @@
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
                 "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "raven/raven": "Allow sending log messages to a Sentry server",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
@@ -1300,7 +1300,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-03-13 16:08:35"
+            "time": "2016-04-02 13:12:58"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -2944,16 +2944,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "2.7.5",
+            "version": "2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "99df70cc6a3c91ff999c097703f7d34b2d5c1104"
+                "reference": "8b5cf28326888e04404f2d1f42a5fdfe6862d65e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/99df70cc6a3c91ff999c097703f7d34b2d5c1104",
-                "reference": "99df70cc6a3c91ff999c097703f7d34b2d5c1104",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/8b5cf28326888e04404f2d1f42a5fdfe6862d65e",
+                "reference": "8b5cf28326888e04404f2d1f42a5fdfe6862d65e",
                 "shasum": ""
             },
             "require": {
@@ -2975,7 +2975,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-03-25 10:29:48"
+            "time": "2016-04-04 16:41:27"
         },
         {
             "name": "typicms/settings",
