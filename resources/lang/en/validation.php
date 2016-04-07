@@ -222,6 +222,7 @@ return [
         'first_name'            => 'First name',
         'last_name'             => 'Last name',
         'groups'                => 'Groups',
+        'roles'                 => 'Roles',
         'email'                 => 'Email',
         'password'              => 'Password',
         'password_confirmation' => 'Password confirmation',
