@@ -36,7 +36,8 @@
         "typicms/settings": "~2.7.0",
         "typicms/sitemap": "~2.7.0",
         "typicms/translations": "~2.7.0",
-        "typicms/users": "~2.7.0"
+        "typicms/users": "~2.7.0",
+        "spatie/laravel-permission": "^1.3"
     },
     "require-dev": {
         "laracasts/generators": "~1.1",

@@ -168,6 +168,7 @@ return [
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
         Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
 
         /*
