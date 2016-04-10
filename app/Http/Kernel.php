@@ -15,7 +15,7 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Session\Middleware\StartSession::class,
-        \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class, // Need to be there because the locale must be available in Pages RouteServiceProvider.
+        \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Krucas\Notification\Middleware\NotificationMiddleware::class,
     ];
