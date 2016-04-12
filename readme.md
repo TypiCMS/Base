@@ -29,7 +29,7 @@ TypiCMS is a modular multilingual content management system built with [Laravel 
   - [Partners](#partners)
   - [Files](#files)
   - [Galleries](#galleries)
-  - [Users and groups](#users-and-groups)
+  - [Users and roles](#users-and-roles)
   - [Blocks](#blocks)
   - [Translations](#translations)
   - [Sitemap](#sitemap)
@@ -204,9 +204,10 @@ Thumbnails are generated on the fly with [Croppa](https://github.com/BKWLD/cropp
 You can create as many galleries as you want, each gallery has many files.
 Galleries are linkable to any module item through a polymorphic many to many relation.
 
-### Users
+### Users and roles
 
 User registration can be enabled through the settings panel (/admin/settings).
+Roles and Permissions are managed with [spatie/laravel-permission](https://github.com/spatie/laravel-permission).
 
 ### Blocks
 
