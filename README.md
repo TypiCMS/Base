@@ -312,7 +312,7 @@ Please see [CONTRIBUTING](https://github.com/TypiCMS/Base/blob/master/CONTRIBUTI
 ## Credits
 
 - [Samuel De Backer](https://github.com/sdebacker)
-- All contributors
+- [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
 
 ## License
 
