@@ -5,7 +5,7 @@ All notable changes to TypiCMS will be documented in this file.
 
 ### Changed
 - Groups is replaced by roles
-- Permissions are now stored in database (spatie/laravel-permission)
+- Permissions are now stored in database, see [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
 - Preview button in form is only present when the module is linked to a page.
 - Routes name in admin have changed from **admin.{module}.{action}** to admin::{action}-{module(s)}
 - index, edit and create methods where removed from BaseAdminController.
