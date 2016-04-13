@@ -298,96 +298,20 @@ php artisan typicms:create cats
 
 ##Upgrade instructions
 
-###Upgrade from 2.6.x to 2.7.x
+[See the Wiki for upgrade instructions](https://github.com/TypiCMS/Base/wiki)
 
-- In **config/app.php**:
-  - remove ```TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider::class,```;
-  - add ```AdamWathan\BootForms\BootFormsServiceProvider::class,``` to the providers list;
-  - add ```Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,``` to the providers list;
-  - add ```'TranslatableBootForm' => Propaganistas\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,``` to the aliases list.
-- Run ```composer require propaganistas/laravel-translatable-bootforms```.
-- Run ```composer remove typicms/translatablebootforms```.
-- In composer.json, change version of all typicms modules from ~2.6.0 to ~2.7.0.
-- Run ```composer update```.
-- Remove **resources/vendor/*/admin** directories, republish them if needed.
+## Change log
 
-###Upgrade from 2.5.x to 2.6.x
-
-- Follows the steps needed to [upgrade to Laravel 5.2](https://laravel.com/docs/5.2/upgrade#upgrade-5.2.0)
-- If you have customs modules in /Modules directory, you will have to add missing methods in adminControllers and apiControllers and setup [implicit model binding](https://laravel.com/docs/5.2/routing#route-model-binding).
-- ```logo`` and/or ```logoOrTitle``` methods are removed, in public master.blade.php, update with recent changes made to version 2.6.
-
-###Upgrade from 2.4.34 to 2.5.7
-
-Create an empty writable directory **public/html**, add in it a **.gitignore** file with this content :
-
-```
-*
-!.gitignore
-```
-
-In ```composer.json``` :
-
-- change each modules from ~2.4.x to ~2.5.0
-- change edvinaskrucas/notification to ~5.1.0
-- change typicms/translatablebootforms to ~2.2.0
-- Add ```"cviebrock/image-validator": "~2.0.0",```
-- Add ```"php artisan clear-html"``` in **post-install-cmd** and **post-update-cmd** scripts
-- Replace ```php artisan clear-compiled``` by ```php clear-compiled```
-
-Run ```composer update```
-
-In **App/Http/Kernel.php**
-
-- add to middleware array
-    - \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
-    - \Krucas\Notification\Middleware\NotificationMiddleware::class,
-- remove ```publicLocale``` from routes middleware
-
-In **config/translatable.php**, add ```'locale' => null```.
-
-In **config/auth.php**, change ```'emails.password'``` to ```'users::emails.password'```.
-
-Remove these files, they will be recreated by ```vendor:publish``` command
-
-- resources/views/vendor/core/admin/_tabs-lang-form.blade.php
-- resources/views/vendor/core/admin/_tabs-lang-list.blade.php
-- resources/views/vendor/core/admin/_tabs-lang.blade.php
-- resources/views/vendor/core/public/_languages-menu.blade.php
-
-Copy the clear-compiled file to root directory
-
-In table pages, add ```no_cache` tinyint(1) NOT NULL DEFAULT '0'```
-
-In table galleries, add ```image` varchar(255) NULL```
-
-In **resources/views/vendor/core/admin/master.blade.php**, replace ```{{ Notification::[…] }}``` by ```{!! Notification::[…] !!}``` (3 lines)
-
-Remove each occurrence of ```@inject('page', 'typicms.xxxx.page')``` from each front end view of each module (index.blade.php, show.blade.php,…), $page is now injected in the view via a view composer, see ModuleProvider classes.
-
-Run ```php artisan vendor:publish```
-
-Replace **package.json** file new one.
-
-Copy **set-content-locale.js** to **resources/assets/js/admin**
-
-In **resource/assets/less/admin/master.less**, remove ```@import (inline) '../../../../node_modules/alertify.js/dist/css/alertify-bootstrap-3.css'```;
-
-In **_index.blade.php** files, replace ```<div class="btn-toolbar" role="toolbar" ng-include="'/views/partials/btnLocales.html'"></div>``` by ```@include('core::admin._tabs-lang-list')```
-
-Remove **bower_components** and **node_modules** directories
-
-Replace files in **resource/assets/less/admin/** directory with new one
-
-Run ```npm install```, ```bower update```, then ```gulp all```
+Please see [CHANGELOG](https://github.com/TypiCMS/Base/blob/master/CHANGELOG.md) for more information what has changed recently.
 
 ## Contributing
 
-Feel free to fork and make pull requests directly on the master branch!
+Please see [CONTRIBUTING](https://github.com/TypiCMS/Base/blob/master/CONTRIBUTING.md) for details.
 
-TypiCMS coding style follows the "recommended" preset of StyleCI. See https://styleci.readme.io/docs/presets#recommended
+## Credits
 
-Thanks to all contributors!
+- [Samuel De Backer](https://github.com/sdebacker)
+- All contributors
 
 ## License
 
