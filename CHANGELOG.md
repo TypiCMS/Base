@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
-## 2.8.0 - 2016
+## 2.8.0 - 2016-04-13
 
 ### Changed
 - Groups is replaced by roles
