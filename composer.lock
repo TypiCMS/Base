@@ -2722,16 +2722,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "2.8.0",
+            "version": "2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "1096cd15cbf5b3acee7aad0b33c665976edcc887"
+                "reference": "8e402efb55bf8dd0fd3226b6056df4b602a4860a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/1096cd15cbf5b3acee7aad0b33c665976edcc887",
-                "reference": "1096cd15cbf5b3acee7aad0b33c665976edcc887",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/8e402efb55bf8dd0fd3226b6056df4b602a4860a",
+                "reference": "8e402efb55bf8dd0fd3226b6056df4b602a4860a",
                 "shasum": ""
             },
             "require": {
@@ -2758,7 +2758,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-12 19:37:04"
+            "time": "2016-04-13 10:23:23"
         },
         {
             "name": "typicms/dashboard",
@@ -3048,16 +3048,16 @@
         },
         {
             "name": "typicms/roles",
-            "version": "2.8.0",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Roles.git",
-                "reference": "aca92f8ed8465c18bfcc98a2f8b1c0d3bca9e3b4"
+                "reference": "b18cbb3eea8b3500f184c7a80c324248e5913d17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/aca92f8ed8465c18bfcc98a2f8b1c0d3bca9e3b4",
-                "reference": "aca92f8ed8465c18bfcc98a2f8b1c0d3bca9e3b4",
+                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/b18cbb3eea8b3500f184c7a80c324248e5913d17",
+                "reference": "b18cbb3eea8b3500f184c7a80c324248e5913d17",
                 "shasum": ""
             },
             "require": {
@@ -3079,7 +3079,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-12 16:07:00"
+            "time": "2016-04-13 10:23:33"
         },
         {
             "name": "typicms/settings",
@@ -3189,16 +3189,16 @@
         },
         {
             "name": "typicms/users",
-            "version": "2.8.0",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "fe665dfb87c53a3d91634bb0efa6cb4daa578f8a"
+                "reference": "54efa1495fca05ec88d4ae0695500d267b18f701"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/fe665dfb87c53a3d91634bb0efa6cb4daa578f8a",
-                "reference": "fe665dfb87c53a3d91634bb0efa6cb4daa578f8a",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/54efa1495fca05ec88d4ae0695500d267b18f701",
+                "reference": "54efa1495fca05ec88d4ae0695500d267b18f701",
                 "shasum": ""
             },
             "require": {
@@ -3220,7 +3220,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-12 16:07:18"
+            "time": "2016-04-12 21:02:21"
         },
         {
             "name": "vlucas/phpdotenv",
