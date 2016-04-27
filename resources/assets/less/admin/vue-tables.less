@@ -1,0 +1,53 @@
+.VueTables {
+    &__sortable {
+        cursor: pointer;
+    }
+    &__sort-icon {
+        float: left !important;
+        margin-right: 5px;
+        &:before {
+            .fa-icon;
+            color: @gray-light;
+            content: "\f0dc";
+        }
+        &.glyphicon-chevron-down:before {
+            color: @gray-dark;
+            content: "\f0dd";
+        }
+        &.glyphicon-chevron-up:before {
+            color: @gray-dark;
+            content: "\f0de";
+        }
+    }
+    &__loading {
+        position: fixed;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100%;
+        width: 100%;
+    }
+    &__spinner {
+        margin-top: 300px;
+        color: #ccc;
+    }
+    .row {
+        margin: 0;
+        .col-md-6 {
+            padding: 0;
+        }
+    }
+    th:nth-child(1) {
+        width: 80px;
+    }
+    th:nth-child(2) {
+        width: 80px;
+    }
+    th:nth-child(3) {
+        width: 60px;
+    }
+}
