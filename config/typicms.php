@@ -4,10 +4,10 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Cache system (use cache decorator in place of repository classes)
+    | Use cache decorator in place of repository classes.
     |--------------------------------------------------------------------------
     */
-    'cache' => true,
+    'cache' => getenv('TYPICMS_CACHE'),
 
     /*
     |--------------------------------------------------------------------------
