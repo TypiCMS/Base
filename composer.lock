@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "54808bf7967471f0966e8d08558cf62e",
-    "content-hash": "be468db9996cceafc5b9d26386a8ab18",
+    "hash": "4be0c5e4b611e098ff13545ce9f72f7e",
+    "content-hash": "53be1330d9d082d5a79be2cce59c72fd",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -906,16 +906,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.32",
+            "version": "v5.2.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f688217113f70b01d0e127da9035195415812bef"
+                "reference": "d2b6b0fe32fab610d356c22e74a6ffd101b0f513"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f688217113f70b01d0e127da9035195415812bef",
-                "reference": "f688217113f70b01d0e127da9035195415812bef",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d2b6b0fe32fab610d356c22e74a6ffd101b0f513",
+                "reference": "d2b6b0fe32fab610d356c22e74a6ffd101b0f513",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1031,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-05-17 13:24:40"
+            "time": "2016-05-30 17:42:01"
         },
         {
             "name": "league/flysystem",
@@ -2723,16 +2723,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "2.8.6",
+            "version": "2.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "c88b6bfd7447c848d6ed5bc19d68c673adfe82ae"
+                "reference": "68f1648a93d4ebb145a4c53733100b814e971684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/c88b6bfd7447c848d6ed5bc19d68c673adfe82ae",
-                "reference": "c88b6bfd7447c848d6ed5bc19d68c673adfe82ae",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/68f1648a93d4ebb145a4c53733100b814e971684",
+                "reference": "68f1648a93d4ebb145a4c53733100b814e971684",
                 "shasum": ""
             },
             "require": {
@@ -2759,7 +2759,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-05-30 20:21:05"
+            "time": "2016-05-31 09:49:34"
         },
         {
             "name": "typicms/dashboard",
