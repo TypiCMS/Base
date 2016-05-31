@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6474a5a710e4297f07d67911ca61d95c",
-    "content-hash": "84b42b014b88acb54c331a3ede578edc",
+    "hash": "54808bf7967471f0966e8d08558cf62e",
+    "content-hash": "be468db9996cceafc5b9d26386a8ab18",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -906,16 +906,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.35",
+            "version": "v5.2.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d2b6b0fe32fab610d356c22e74a6ffd101b0f513"
+                "reference": "f688217113f70b01d0e127da9035195415812bef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d2b6b0fe32fab610d356c22e74a6ffd101b0f513",
-                "reference": "d2b6b0fe32fab610d356c22e74a6ffd101b0f513",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f688217113f70b01d0e127da9035195415812bef",
+                "reference": "f688217113f70b01d0e127da9035195415812bef",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1031,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-05-30 17:42:01"
+            "time": "2016-05-17 13:24:40"
         },
         {
             "name": "league/flysystem",
