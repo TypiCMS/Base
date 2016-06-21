@@ -8,7 +8,7 @@ require('bootstrap');
 /**
  * Dropzone
  */
-require('dropzone');
+window.Dropzone = require('dropzone');
 
 /**
  * Fancybox
