@@ -1,4 +1,4 @@
-<li class="{{ $item->state }} @if($item->hasItems()) treeview @endif clearfix">
+<li class="sidebar-item-{{ $item->id }} {{ $item->state }} @if($item->hasItems()) treeview @endif clearfix">
     <a href="{{ $item->route }}" @if($item->hasAppend())class="hasAppend"@endif>
         <i class="{{ $item->icon or 'fa fa-angle-double-right' }}"></i>
         <div>{{ $item->name }}</div>
