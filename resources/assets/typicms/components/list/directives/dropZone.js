@@ -61,14 +61,16 @@ angular.module('typicms').directive('dropZone', function () {
                 });
 
                 this.on('error', function (file, response) {
-                    if($.type(response) === "string") {
-                        var message = response; //dropzone sends it's own error messages in string
-                    } else {
-                        var message = response.file[0];
+                    var _ref = file.previewElement.querySelectorAll("[data-dz-errormessage]"),
+                        _results = [],
+                        _i,
+                        message = response,
+                        _len,
+                        node;
+                    if($.type(response) !== "string") {
+                        message = response.file[0];
                     }
                     file.previewElement.classList.add("dz-error");
-                    _ref = file.previewElement.querySelectorAll("[data-dz-errormessage]");
-                    _results = [];
                     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
                         node = _ref[_i];
                         _results.push(node.textContent = message);

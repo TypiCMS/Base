@@ -62,7 +62,7 @@ return [
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => 'typicms_',
-            'strict' => env('DB_STRICT', false),,
+            'strict' => env('DB_STRICT', false),
             'engine' => null,
         ],
 

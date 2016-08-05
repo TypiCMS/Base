@@ -162,12 +162,13 @@ return [
         AdamWathan\BootForms\BootFormsServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Bkwld\Croppa\ServiceProvider::class,
-        Cviebrock\ImageValidator\ImageValidatorServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Krucas\Notification\NotificationServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
         Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
+        Roumen\Feed\FeedServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
 
         /*

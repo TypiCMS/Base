@@ -24,7 +24,10 @@ gulp.task('less-public', function () {
     return gulp.src('resources/assets/less/public/master.less')
         .pipe(less())
         .on('error', swallowError)
-        .pipe(prefix('> 1%', 'ie >= 8'))
+        .pipe(prefix({
+            browsers: ['> 1%', 'IE > 8'],
+            cascade: false
+        }))
         .pipe(minifyCSS())
         .pipe(rename('public.css'))
         .pipe(gulp.dest('public/css'))
@@ -37,7 +40,10 @@ gulp.task('less-admin', function () {
     return gulp.src('resources/assets/less/admin/master.less')
         .pipe(less())
         .on('error', swallowError)
-        .pipe(prefix('last 2 versions', '> 1%', 'Explorer 7', 'Android 2'))
+        .pipe(prefix({
+            browsers: ['> 1%', 'IE > 8'],
+            cascade: false
+        }))
         .pipe(minifyCSS())
         .pipe(rename('admin.css'))
         .pipe(gulp.dest('public/css'))

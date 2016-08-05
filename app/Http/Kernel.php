@@ -15,7 +15,7 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Session\Middleware\StartSession::class,
-        \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class, // Need to be there because the locale must be available in Pages RouteServiceProvider.
+        \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Krucas\Notification\Middleware\NotificationMiddleware::class,
     ];
@@ -29,7 +29,6 @@ class Kernel extends HttpKernel
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-            // \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
         ],
@@ -67,6 +66,7 @@ class Kernel extends HttpKernel
     protected $routeMiddleware = [
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'authorization' => \TypiCMS\Modules\Core\Http\Middleware\Authorization::class,
         'registrationAllowed' => \TypiCMS\Modules\Core\Http\Middleware\RegistrationAllowed::class,

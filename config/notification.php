@@ -1,16 +1,16 @@
 <?php
 
-return [
+return array(
 
     /*
     |--------------------------------------------------------------------------
-    | Session prefix name
+    | Session key
     |--------------------------------------------------------------------------
     |
-    | This will be used to prefix flash messages.
+    | Session key for messages.
     |
     */
-    'session_prefix' => 'notifications_',
+    'session_key'                           => 'notifications',
 
     /*
     |--------------------------------------------------------------------------
@@ -20,7 +20,27 @@ return [
     | This name will be used to name default container (when calling it with null value).
     |
     */
-    'default_container' => 'default',
+    'default_container'                     => 'default',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default types for dynamic containers.
+    |--------------------------------------------------------------------------
+    |
+    | These types will be added for new containers.
+    |
+    */
+    'default_types'                         => array('info', 'success', 'warning', 'error'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Types for containers
+    |--------------------------------------------------------------------------
+    |
+    | Specify available types for each container separately.
+    |
+    */
+    'types'                                 => array(),
 
     /*
     |--------------------------------------------------------------------------
@@ -28,30 +48,64 @@ return [
     |--------------------------------------------------------------------------
     |
     | This format will be used when no format is specified.
-    | Specify default format for each container.
     | Available place holders:
     |
     | :type - type of message (error, warning, info, success).
     | :message - message text.
     |
     */
-    'default_format' => [
-
-        'default' => '<div class="alert alert-:type">:message</div>',
-
-    ],
+    'default_format'                        => '<div class="alert alert-:type">:message</div>',
 
     /*
     |--------------------------------------------------------------------------
-    | Default message formats for types and container types
+    | Default message format for containers
+    |--------------------------------------------------------------------------
+    |
+    | This format will be used to override global default format for each container.
+    |
+    | 'format' => array(
+    |       'myContainer' => ':message - :type',
+    | )
+    |
+    |
+    | Available place holders:
+    |
+    | :type - type of message (error, warning, info, success).
+    | :message - message text.
+    |
+    */
+    'format'                                => array(),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default message formats for types
+    |--------------------------------------------------------------------------
+    |
+    | These formats can override default format for each type of message (error, warning, info, success).
+    | Available place holders:
+    |
+    | :type - type of message (error, warning, info, success).
+    | :message - message text.
+    |
+    */
+    'default_formats'                       => array(
+        'info'                  => '<div class="alert alert-info">:message</div>',
+        'success'               => '<div class="alert alert-success">:message</div>',
+        'warning'               => '<div class="alert alert-warning">:message</div>',
+        'error'                 => '<div class="alert alert-danger">:message</div>',
+    ),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Message formats for types and container types
     |--------------------------------------------------------------------------
     |
     | These formats can override default format for each type of message (error, warning, info, success).
     | You can set formats for each container by using this syntax:
     |
-    | 'default_formats'         => array(
-    |       'myContainer'   => array(
-    |           'info'  => ':key - :message'
+    | 'formats' => array(
+    |       'myContainer' => array(
+    |           'info' => ':key - :message'
     |       )
     |   )
     |
@@ -61,26 +115,6 @@ return [
     | :message - message text.
     |
     */
-    'default_formats' => [
+    'formats'                       => array(),
 
-        'default' => [
-            'error' => '<div class="alert alert-danger">:message</div>',
-        ],
-
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Default message types available in containers
-    |--------------------------------------------------------------------------
-    |
-    | Specify available types for each container.
-    |
-    */
-    'default_types' => [
-
-        'default' => ['info', 'success', 'warning', 'error'],
-
-    ],
-
-];
+);

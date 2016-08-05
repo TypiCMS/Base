@@ -21,7 +21,7 @@ return [
     ],
     'menus' => [
         'content'  => 'Content',
-        'users'    => 'Users and groups',
+        'users'    => 'Users and roles',
         'media'    => 'Media',
         'contacts' => 'Contacts',
     ],

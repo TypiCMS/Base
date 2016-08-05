@@ -1,34 +1,33 @@
+/*jslint browser: true*/
+/*globals $, jQuery, angular, window*/
+
 (function (angular) {
 
     'use strict';
-
-    /*jslint browser: true*/
-    /*globals $, jQuery, angular*/
-
-    var lang = $('html').attr('lang');
 
     angular.module('typicms', ['ngResource', 'smart-table', 'ui.tree']);
 
     // Creating an 'update' method (PUT)
     angular.module('typicms').factory('$api', ['$resource', function ($resource) {
 
-        var url = new URL(window.location),
-            path = url.pathname,
-            moduleName = path.split('/')[2];
+        var pathSegments = window.location.pathname.split('/'),
+            moduleName = pathSegments[2],
+            action = pathSegments[4];
 
-        if (moduleName === 'galleries' && path.split('/')[4] === 'edit') {
+        if (moduleName === 'galleries' && action === 'edit') {
             moduleName = 'files';
         }
-        if (moduleName === 'menus' && path.split('/')[4] === 'edit') {
+        if (moduleName === 'menus' && action === 'edit') {
             moduleName = 'menulinks';
         }
         if (moduleName === 'dashboard') {
             moduleName = 'history';
         }
-        return $resource('/api/' + moduleName + '/:id', null,
-            {
-                'update': { method: 'PUT' }
-            });
+        return $resource('/api/' + moduleName + '/:id', null, {
+            update: {
+                method: 'PUT'
+            }
+        });
     }]);
 
-})(angular);
+}(angular));

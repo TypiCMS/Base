@@ -13,15 +13,15 @@ class MenuSeeder extends Seeder
         ];
 
         $typi_menu_translations = [
-            ['id' => '1', 'menu_id' => '1', 'locale' => 'fr', 'status' => '1', 'title' => 'Principal', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
-            ['id' => '2', 'menu_id' => '1', 'locale' => 'nl', 'status' => '1', 'title' => 'Main', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
-            ['id' => '3', 'menu_id' => '1', 'locale' => 'en', 'status' => '1', 'title' => 'Main', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
-            ['id' => '4', 'menu_id' => '2', 'locale' => 'fr', 'status' => '1', 'title' => 'Pied de site', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
-            ['id' => '5', 'menu_id' => '2', 'locale' => 'nl', 'status' => '1', 'title' => 'Footer', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
-            ['id' => '6', 'menu_id' => '2', 'locale' => 'en', 'status' => '1', 'title' => 'Footer', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
-            ['id' => '7', 'menu_id' => '3', 'locale' => 'fr', 'status' => '1', 'title' => 'Réseaux sociaux', 'created_at' => '2014-02-04 18:27:18', 'updated_at' => '2014-02-04 18:35:01'],
-            ['id' => '8', 'menu_id' => '3', 'locale' => 'nl', 'status' => '1', 'title' => 'Sociale netwerken', 'created_at' => '2014-02-04 18:27:18', 'updated_at' => '2014-02-04 18:35:01'],
-            ['id' => '9', 'menu_id' => '3', 'locale' => 'en', 'status' => '1', 'title' => 'Social networks', 'created_at' => '2014-02-04 18:27:18', 'updated_at' => '2014-02-04 18:35:01'],
+            ['id' => '1', 'menu_id' => '1', 'locale' => 'fr', 'status' => '1', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '2', 'menu_id' => '1', 'locale' => 'nl', 'status' => '1', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '3', 'menu_id' => '1', 'locale' => 'en', 'status' => '1', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '4', 'menu_id' => '2', 'locale' => 'fr', 'status' => '1', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '5', 'menu_id' => '2', 'locale' => 'nl', 'status' => '1', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '6', 'menu_id' => '2', 'locale' => 'en', 'status' => '1', 'created_at' => '2014-02-17 16:00:00', 'updated_at' => '2014-02-17 16:00:00'],
+            ['id' => '7', 'menu_id' => '3', 'locale' => 'fr', 'status' => '1', 'created_at' => '2014-02-04 18:27:18', 'updated_at' => '2014-02-04 18:35:01'],
+            ['id' => '8', 'menu_id' => '3', 'locale' => 'nl', 'status' => '1', 'created_at' => '2014-02-04 18:27:18', 'updated_at' => '2014-02-04 18:35:01'],
+            ['id' => '9', 'menu_id' => '3', 'locale' => 'en', 'status' => '1', 'created_at' => '2014-02-04 18:27:18', 'updated_at' => '2014-02-04 18:35:01'],
         ];
 
         DB::table('menus')->insert($typi_menus);
