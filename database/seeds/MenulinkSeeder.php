@@ -21,25 +21,33 @@ class MenulinkSeeder extends Seeder
             ['id' => '1', 'menulink_id' => '1', 'locale' => 'fr', 'status' => '1', 'title' => 'Accueil', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 00:00:00'],
             ['id' => '2', 'menulink_id' => '1', 'locale' => 'nl', 'status' => '1', 'title' => 'Home', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 00:00:00'],
             ['id' => '3', 'menulink_id' => '1', 'locale' => 'en', 'status' => '1', 'title' => 'Home', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 00:00:00'],
+            ['id' => '4', 'menulink_id' => '1', 'locale' => 'es', 'status' => '1', 'title' => 'Inicio', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 00:00:00'],
 
-            ['id' => '4', 'menulink_id' => '2', 'locale' => 'fr', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 13:29:27'],
-            ['id' => '5', 'menulink_id' => '2', 'locale' => 'nl', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 13:29:27'],
-            ['id' => '6', 'menulink_id' => '2', 'locale' => 'en', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 13:29:27'],
+            ['id' => '5', 'menulink_id' => '2', 'locale' => 'fr', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 13:29:27'],
+            ['id' => '6', 'menulink_id' => '2', 'locale' => 'nl', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 13:29:27'],
+            ['id' => '7', 'menulink_id' => '2', 'locale' => 'en', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 13:29:27'],
+            ['id' => '8', 'menulink_id' => '2', 'locale' => 'es', 'status' => '1', 'title' => 'Contacto', 'url' => '', 'created_at' => '2014-03-28 00:00:00', 'updated_at' => '2014-03-28 13:29:27'],
 
-            ['id' => '7', 'menulink_id' => '3', 'locale' => 'fr', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 17:20:16', 'updated_at' => '2014-03-28 13:30:40'],
-            ['id' => '8', 'menulink_id' => '3', 'locale' => 'nl', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 17:20:16', 'updated_at' => '2014-03-28 13:30:40'],
-            ['id' => '9', 'menulink_id' => '3', 'locale' => 'en', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 17:20:16', 'updated_at' => '2014-03-28 13:30:40'],
+            ['id' => '9', 'menulink_id' => '3', 'locale' => 'fr', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 17:20:16', 'updated_at' => '2014-03-28 13:30:40'],
+            ['id' => '10', 'menulink_id' => '3', 'locale' => 'nl', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 17:20:16', 'updated_at' => '2014-03-28 13:30:40'],
+            ['id' => '11', 'menulink_id' => '3', 'locale' => 'en', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 17:20:16', 'updated_at' => '2014-03-28 13:30:40'],
+            ['id' => '12', 'menulink_id' => '3', 'locale' => 'es', 'status' => '1', 'title' => 'Contact', 'url' => '', 'created_at' => '2014-03-28 17:20:16', 'updated_at' => '2014-03-28 13:30:40'],
 
-            ['id' => '10', 'menulink_id' => '4', 'locale' => 'fr', 'status' => '1', 'title' => 'Conditions d’utilisation', 'url' => '', 'created_at' => '2014-03-28 17:20:43', 'updated_at' => '2014-03-28 17:20:51'],
-            ['id' => '11', 'menulink_id' => '4', 'locale' => 'nl', 'status' => '1', 'title' => 'Gebruiksvoorwaarden', 'url' => '', 'created_at' => '2014-03-28 17:20:43', 'updated_at' => '2014-03-28 17:20:47'],
-            ['id' => '12', 'menulink_id' => '4', 'locale' => 'en', 'status' => '1', 'title' => 'Terms of use', 'url' => '', 'created_at' => '2014-03-28 17:20:43', 'updated_at' => '2014-03-28 17:20:44'],
+            ['id' => '13', 'menulink_id' => '4', 'locale' => 'fr', 'status' => '1', 'title' => 'Conditions d’utilisation', 'url' => '', 'created_at' => '2014-03-28 17:20:43', 'updated_at' => '2014-03-28 17:20:51'],
+            ['id' => '14', 'menulink_id' => '4', 'locale' => 'nl', 'status' => '1', 'title' => 'Gebruiksvoorwaarden', 'url' => '', 'created_at' => '2014-03-28 17:20:43', 'updated_at' => '2014-03-28 17:20:47'],
+            ['id' => '15', 'menulink_id' => '4', 'locale' => 'en', 'status' => '1', 'title' => 'Terms of use', 'url' => '', 'created_at' => '2014-03-28 17:20:43', 'updated_at' => '2014-03-28 17:20:44'],
+            ['id' => '16', 'menulink_id' => '4', 'locale' => 'es', 'status' => '1', 'title' => 'Términos de uso', 'url' => '', 'created_at' => '2014-03-28 17:20:43', 'updated_at' => '2014-03-28 17:20:51'],
 
-            ['id' => '13', 'menulink_id' => '5', 'locale' => 'fr', 'status' => '1', 'title' => 'Facebook', 'url' => 'https://www.facebook.com', 'created_at' => '2014-03-28 18:30:11', 'updated_at' => '2014-03-28 18:30:17'],
-            ['id' => '14', 'menulink_id' => '5', 'locale' => 'nl', 'status' => '1', 'title' => 'Facebook', 'url' => 'https://www.facebook.com', 'created_at' => '2014-03-28 18:30:11', 'updated_at' => '2014-03-28 18:30:17'],
-            ['id' => '15', 'menulink_id' => '5', 'locale' => 'en', 'status' => '1', 'title' => 'Facebook', 'url' => 'https://www.facebook.com', 'created_at' => '2014-03-28 18:30:11', 'updated_at' => '2014-03-28 18:30:17'],
-            ['id' => '16', 'menulink_id' => '6', 'locale' => 'fr', 'status' => '1', 'title' => 'Twitter', 'url' => 'https://twitter.com', 'created_at' => '2014-03-28 18:31:35', 'updated_at' => '2014-03-28 18:31:47'],
-            ['id' => '17', 'menulink_id' => '6', 'locale' => 'nl', 'status' => '1', 'title' => 'Twitter', 'url' => 'https://twitter.com', 'created_at' => '2014-03-28 18:31:35', 'updated_at' => '2014-03-28 18:31:44'],
-            ['id' => '18', 'menulink_id' => '6', 'locale' => 'en', 'status' => '1', 'title' => 'Twitter', 'url' => 'https://twitter.com', 'created_at' => '2014-03-28 18:31:35', 'updated_at' => '2014-03-28 18:31:42'],
+            ['id' => '17', 'menulink_id' => '5', 'locale' => 'fr', 'status' => '1', 'title' => 'Facebook', 'url' => 'https://www.facebook.com', 'created_at' => '2014-03-28 18:30:11', 'updated_at' => '2014-03-28 18:30:17'],
+            ['id' => '18', 'menulink_id' => '5', 'locale' => 'nl', 'status' => '1', 'title' => 'Facebook', 'url' => 'https://www.facebook.com', 'created_at' => '2014-03-28 18:30:11', 'updated_at' => '2014-03-28 18:30:17'],
+            ['id' => '19', 'menulink_id' => '5', 'locale' => 'en', 'status' => '1', 'title' => 'Facebook', 'url' => 'https://www.facebook.com', 'created_at' => '2014-03-28 18:30:11', 'updated_at' => '2014-03-28 18:30:17'],
+            ['id' => '20', 'menulink_id' => '5', 'locale' => 'es', 'status' => '1', 'title' => 'Facebook', 'url' => 'https://www.facebook.com', 'created_at' => '2014-03-28 18:30:11', 'updated_at' => '2014-03-28 18:30:17'],
+
+
+            ['id' => '21', 'menulink_id' => '6', 'locale' => 'fr', 'status' => '1', 'title' => 'Twitter', 'url' => 'https://twitter.com', 'created_at' => '2014-03-28 18:31:35', 'updated_at' => '2014-03-28 18:31:47'],
+            ['id' => '22', 'menulink_id' => '6', 'locale' => 'nl', 'status' => '1', 'title' => 'Twitter', 'url' => 'https://twitter.com', 'created_at' => '2014-03-28 18:31:35', 'updated_at' => '2014-03-28 18:31:44'],
+            ['id' => '23', 'menulink_id' => '6', 'locale' => 'en', 'status' => '1', 'title' => 'Twitter', 'url' => 'https://twitter.com', 'created_at' => '2014-03-28 18:31:35', 'updated_at' => '2014-03-28 18:31:42'],
+            ['id' => '24', 'menulink_id' => '6', 'locale' => 'es', 'status' => '1', 'title' => 'Twitter', 'url' => 'https://twitter.com', 'created_at' => '2014-03-28 18:31:35', 'updated_at' => '2014-03-28 18:31:47'],
         ];
 
         DB::table('menulinks')->insert($typi_menulinks);
