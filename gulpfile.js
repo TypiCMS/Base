@@ -95,7 +95,8 @@ gulp.task('angular-locales', function () {
 
     return gulp.src([
             'node_modules/angular-i18n/angular-locale_fr-fr.js',
-            'node_modules/angular-i18n/angular-locale_nl-nl.js'
+            'node_modules/angular-i18n/angular-locale_nl-nl.js',
+            'node_modules/angular-i18n/angular-locale_es-es.js'
         ])
         .pipe(gulp.dest(destDir));
 
