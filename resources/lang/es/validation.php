@@ -244,7 +244,8 @@ return [
 
         // Settings
         'webmaster_email'       => 'Email del Maestro de la Web',
-        'google_analytics_code' => 'Google Analytics Tracking Id',
+        'google_analytics_code' => 'Google Analytics ID',
+        'google_tag_manager_id' => 'Google Tag Manager ID',
         'lang_chooser'          => 'Selector de idioma',
         'welcome_message'       => 'Administration welcome message',
         'admin_locale'          => 'Idioma de la administración',

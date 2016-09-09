@@ -248,7 +248,8 @@ return [
 
         // Settings
         'webmaster_email'       => 'Email du webmaster',
-        'google_analytics_code' => 'Google Analytics Tracking Id',
+        'google_analytics_code' => 'Google Analytics ID',
+        'google_tag_manager_id' => 'Google Tag Manager ID',
         'lang_chooser'          => 'Page de choix de langue',
         'welcome_message'       => 'Message d’accueil de l’interface d’administration',
         'admin_locale'          => 'Langue de l’interface d’administration',
