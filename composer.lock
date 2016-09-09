@@ -1445,21 +1445,21 @@
         },
         {
             "name": "propaganistas/laravel-translatable-bootforms",
-            "version": "1.3.3",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Propaganistas/Laravel-Translatable-Bootforms.git",
-                "reference": "dee58cb13ceea622b9de23460e9ed9ab821e8d3a"
+                "reference": "fdb30bb37314af880235b41e96d9d81ab881384d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/dee58cb13ceea622b9de23460e9ed9ab821e8d3a",
-                "reference": "dee58cb13ceea622b9de23460e9ed9ab821e8d3a",
+                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/fdb30bb37314af880235b41e96d9d81ab881384d",
+                "reference": "fdb30bb37314af880235b41e96d9d81ab881384d",
                 "shasum": ""
             },
             "require": {
                 "adamwathan/bootforms": "^0.8",
-                "dimsav/laravel-translatable": "~5.0",
+                "dimsav/laravel-translatable": "~5.0|~6.0",
                 "illuminate/support": "~5.0",
                 "php": ">=5.5.9"
             },
@@ -1491,7 +1491,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2016-04-26 13:41:51"
+            "time": "2016-09-05 12:01:04"
         },
         {
             "name": "psr/http-message",
@@ -1977,7 +1977,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -2674,16 +2674,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "2.8.8",
+            "version": "2.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "5227307bc193c54e9a03e34618ae30201848f922"
+                "reference": "dd8d13559cfaa609d04d0d90c766d11040ebcaff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/5227307bc193c54e9a03e34618ae30201848f922",
-                "reference": "5227307bc193c54e9a03e34618ae30201848f922",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/dd8d13559cfaa609d04d0d90c766d11040ebcaff",
+                "reference": "dd8d13559cfaa609d04d0d90c766d11040ebcaff",
                 "shasum": ""
             },
             "require": {
@@ -2710,7 +2710,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-07-25 18:24:36"
+            "time": "2016-09-09 07:58:07"
         },
         {
             "name": "typicms/dashboard",
@@ -3035,16 +3035,16 @@
         },
         {
             "name": "typicms/settings",
-            "version": "2.8.1",
+            "version": "2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
-                "reference": "eb895f07b62f7ee08afb4e74c6071e872e157540"
+                "reference": "8f35e67a9aeed1ec018f5aa9471e5119c35aa571"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/eb895f07b62f7ee08afb4e74c6071e872e157540",
-                "reference": "eb895f07b62f7ee08afb4e74c6071e872e157540",
+                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/8f35e67a9aeed1ec018f5aa9471e5119c35aa571",
+                "reference": "8f35e67a9aeed1ec018f5aa9471e5119c35aa571",
                 "shasum": ""
             },
             "require": {
@@ -3066,7 +3066,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-12 20:02:50"
+            "time": "2016-09-06 08:07:19"
         },
         {
             "name": "typicms/sitemap",
@@ -3176,16 +3176,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
                 "shasum": ""
             },
             "require": {
@@ -3197,7 +3197,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -3222,7 +3222,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-06-14 14:14:52"
+            "time": "2016-09-01 10:05:43"
         },
         {
             "name": "weotch/phpthumb",
@@ -4579,16 +4579,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "1819adf2066880c7967df7180f4f662b6f0567ac"
+                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/1819adf2066880c7967df7180f4f662b6f0567ac",
-                "reference": "1819adf2066880c7967df7180f4f662b6f0567ac",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/f291ed25eb1435bddbe8a96caaef16469c2a092d",
+                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d",
                 "shasum": ""
             },
             "require": {
@@ -4624,7 +4624,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-17 14:02:08"
+            "time": "2016-09-02 02:12:52"
         },
         {
             "name": "webmozart/assert",
