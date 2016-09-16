@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'fetch' => PDO::FETCH_CLASS,
+    'fetch' => PDO::FETCH_OBJ,
 
     /*
     |--------------------------------------------------------------------------
@@ -48,7 +48,7 @@ return [
 
         'sqlite' => [
             'driver' => 'sqlite',
-            'database' => database_path('database.sqlite'),
+            'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => 'typicms_',
         ],
 
@@ -62,7 +62,7 @@ return [
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => 'typicms_',
-            'strict' => env('DB_STRICT', false),
+            'strict' => true,
             'engine' => null,
         ],
 
@@ -76,6 +76,7 @@ return [
             'charset' => 'utf8',
             'prefix' => 'typicms_',
             'schema' => 'public',
+            'sslmode' => 'prefer',
         ],
 
     ],

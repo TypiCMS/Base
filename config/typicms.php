@@ -4,13 +4,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Use cache decorator in place of repository classes.
-    |--------------------------------------------------------------------------
-    */
-    'cache' => getenv('TYPICMS_CACHE'),
-
-    /*
-    |--------------------------------------------------------------------------
     | Save each front office page in public/html as flat html file.
     | Pages are generated only when debug is off and no user is connected.
     | The directory is cleaned on eloquent save, delete and composer install.

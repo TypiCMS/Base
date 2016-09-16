@@ -4,6 +4,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Application Name
+    |--------------------------------------------------------------------------
+    |
+    | This value is the name of your application. This value is used when the
+    | framework needs to place the application's name in a notification or
+    | any other location as required by the application or its packages.
+    */
+
+    'name' => 'TypiCMS',
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |
@@ -110,6 +122,9 @@ return [
 
     'log' => env('APP_LOG', 'single'),
 
+    'log_level' => env('APP_LOG_LEVEL', 'debug'),
+
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -138,50 +153,74 @@ return [
         Illuminate\Foundation\Providers\FoundationServiceProvider::class,
         Illuminate\Hashing\HashServiceProvider::class,
         Illuminate\Mail\MailServiceProvider::class,
+        Illuminate\Notifications\NotificationServiceProvider::class,
         Illuminate\Pagination\PaginationServiceProvider::class,
         Illuminate\Pipeline\PipelineServiceProvider::class,
         Illuminate\Queue\QueueServiceProvider::class,
         Illuminate\Redis\RedisServiceProvider::class,
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
-        //Illuminate\Translation\TranslationServiceProvider::class,
+        // Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Application Service Providers...
-         */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-
-        /*
-         * Vendor Service Providers...
+         * Package Service Providers...
          */
         AdamWathan\BootForms\BootFormsServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Bkwld\Croppa\ServiceProvider::class,
-        Dimsav\Translatable\TranslatableServiceProvider::class,
         Krucas\Notification\NotificationServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
-        Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
+        Rinvex\Repository\Providers\RepositoryServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
-        Spatie\Permission\PermissionServiceProvider::class,
+        Spatie\Translatable\TranslatableServiceProvider::class,
+        TypiCMS\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
+        TypiCMS\Modules\Translations\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Blocks\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Settings\Providers\ModuleProvider::class,
+        TypiCMS\Modules\History\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Users\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Roles\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Files\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Galleries\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Dashboard\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Menus\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Sitemap\Providers\ModuleProvider::class,
 
         /*
          * TypiCMS Modules Service Providers.
          * Here is the place for your modules,
          * they should be set before Core Service provider.
          */
-        // TypiCMS\Modules\News\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Categories\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Contacts\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Events\Providers\ModuleProvider::class,
+        TypiCMS\Modules\News\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Partners\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Projects\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Places\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Slides\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Tags\Providers\ModuleProvider::class,
 
         /*
          * TypiCMS Core Service Provider...
          */
         TypiCMS\Modules\Core\Providers\ModuleProvider::class,
+
+        // Pages module needs to be at last for routing to work.
+        TypiCMS\Modules\Pages\Providers\ModuleProvider::class,
+
+        /*
+         * Application Service Providers...
+         */
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
     ],
 
     /*
@@ -214,6 +253,7 @@ return [
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
+        // 'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
@@ -228,16 +268,15 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'FileUpload' => TypiCMS\Modules\Core\Facades\FileUpload::class,
-        'TypiCMS' => TypiCMS\Modules\Core\Facades\TypiCMS::class,
+        'FileUpload'           => TypiCMS\Modules\Core\Facades\FileUpload::class,
+        'TypiCMS'              => TypiCMS\Modules\Core\Facades\TypiCMS::class,
 
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
-        'BootForm' => AdamWathan\BootForms\Facades\BootForm::class,
-        'Form' => AdamWathan\Form\Facades\Form::class,
-        'Croppa' => Bkwld\Croppa\Facade::class,
-        'Notification' => Krucas\Notification\Facades\Notification::class,
-        'Translatable' => Dimsav\Translatable\Translatable::class,
-        'TranslatableBootForm' => Propaganistas\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,
+        'Debugbar'             => Barryvdh\Debugbar\Facade::class,
+        'BootForm'             => AdamWathan\BootForms\Facades\BootForm::class,
+        'Form'                 => AdamWathan\Form\Facades\Form::class,
+        'Croppa'               => Bkwld\Croppa\Facade::class,
+        'Notification'         => Krucas\Notification\Facades\Notification::class,
+        'TranslatableBootForm' => TypiCMS\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,
 
     ],
 
