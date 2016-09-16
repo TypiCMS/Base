@@ -38,6 +38,7 @@ return [
     'distinct'             => 'Le champ :attribute a une valeur dupliquée.',
     'email'                => 'Le champ :attribute doit être une adresse e-mail valide.',
     'exists'               => 'Le champ :attribute sélectionné est invalide.',
+    'file'                 => 'Le champ :attribute doit être un fichier.',
     'filled'               => 'Le champ :attribute est obligatoire.',
     'image'                => 'Le champ :attribute doit être une image.',
     'in'                   => 'Le champ :attribute est invalide.',
@@ -52,6 +53,7 @@ return [
         'array'   => 'Le tableau :attribute ne peut contenir plus de :max éléments.',
     ],
     'mimes'                => 'Le champ :attribute doit être un fichier de type : :values.',
+    'mimetypes'            => 'Le champ :attribute doit être un fichier de type : :values.',
     'min'                  => [
         'numeric' => 'La valeur de :attribute doit être supérieure à :min.',
         'file'    => 'La taille du fichier de :attribute doit être supérieure à :min kilo-octets.',
@@ -79,6 +81,7 @@ return [
     'string'               => 'Le champ :attribute doit être une chaîne de caractères.',
     'timezone'             => 'Le champ :attribute doit être un fuseau horaire valide.',
     'unique'               => 'La valeur du champ :attribute est déjà utilisée.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => "Le format de l'URL de :attribute n'est pas valide.",
 
     /*
@@ -109,7 +112,7 @@ return [
     |
     */
 
-    'attributes' => [
+    'attributes'           => [
         // General
         'name'             => 'Nom',
         'username'         => 'Pseudo',
