@@ -29,6 +29,7 @@ class Kernel extends HttpKernel
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            // \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
         ],
@@ -53,6 +54,7 @@ class Kernel extends HttpKernel
             'authorization',
             \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
             'throttle:60,1',
+            'bindings',
         ],
     ];
 
@@ -64,12 +66,13 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \App\Http\Middleware\Authenticate::class,
+        'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
+        'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'authorization' => \TypiCMS\Modules\Core\Http\Middleware\Authorization::class,
         'registrationAllowed' => \TypiCMS\Modules\Core\Http\Middleware\RegistrationAllowed::class,
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }
