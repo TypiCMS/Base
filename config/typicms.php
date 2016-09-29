@@ -41,7 +41,7 @@ return [
     | Welcome message url present in Dashboard
     |--------------------------------------------------------------------------
     */
-    'welcome_message_url' => getEnv('WELCOME_MESSAGE_URL'),
+    'welcome_message_url' => getenv('WELCOME_MESSAGE_URL'),
 
     /*
     |--------------------------------------------------------------------------
