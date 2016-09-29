@@ -9,7 +9,7 @@ return [
     |
     | The following language lines contain the default error messages used by
     | the validator class. Some of these rules have multiple versions such
-    | such as the size rules. Feel free to tweak each of these messages.
+    | as the size rules. Feel free to tweak each of these messages here.
     |
     */
 
@@ -81,7 +81,7 @@ return [
     'string'               => 'Le champ :attribute doit être une chaîne de caractères.',
     'timezone'             => 'Le champ :attribute doit être un fuseau horaire valide.',
     'unique'               => 'La valeur du champ :attribute est déjà utilisée.',
-    'uploaded'             => 'The :attribute uploading failed.',
+    'uploaded'             => "Le fichier du champ :attribute n'a pu être téléchargé.",
     'url'                  => "Le format de l'URL de :attribute n'est pas valide.",
 
     /*
@@ -90,12 +90,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may specify custom validation messages for attributes using the
-    | convention "attribute.rule" to name the lines. This makes it quick to
+    | convention 'attribute.rule' to name the lines. This makes it quick to
     | specify a specific custom language line for a given attribute rule.
     |
     */
 
-    'custom'               => [
+    'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
@@ -108,11 +108,11 @@ return [
     |
     | The following language lines are used to swap attribute place-holders
     | with something more reader friendly such as E-Mail Address instead
-    | of "email". This simply helps us make messages a little cleaner.
+    | of 'email'. This simply helps us make messages a little cleaner.
     |
     */
 
-    'attributes'           => [
+    'attributes' => [
         // General
         'name'             => 'Nom',
         'username'         => 'Pseudo',
@@ -236,19 +236,14 @@ return [
         'email'                 => 'Email',
         'password'              => 'Mot de passe',
         'password_confirmation' => 'Confirmer le mot de passe',
-        'reset password'        => 'Réinitialiser le mot de passe',
-        'Send password reset link' => 'Envoyer le lien de réinitialisation',
-        'register'              => 'Créer le compte',
-        'Change password'       => 'Modifier le mot de passe',
         'save'                  => 'Enregistrer',
         'save and exit'         => 'Enregistrer et sortir',
         'exit'                  => 'Sortir',
-        'log in'                => 'Connexion',
         'modify'                => 'Modifier',
         'permissions'           => 'Permissions',
         'superuser'             => 'Super utilisateur',
         'activated'             => 'Activé',
-        'getMergedPermissions'  => 'Permissions',
+        'remember'              => 'Se souvenir',
 
         // Settings
         'webmaster_email'       => 'Email du webmaster',

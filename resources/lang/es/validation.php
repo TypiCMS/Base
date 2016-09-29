@@ -9,7 +9,7 @@ return [
     |
     | The following language lines contain the default error messages used by
     | the validator class. Some of these rules have multiple versions such
-    | such as the size rules. Feel free to tweak each of these messages.
+    | as the size rules. Feel free to tweak each of these messages here.
     |
     */
 
@@ -90,12 +90,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may specify custom validation messages for attributes using the
-    | convention "attribute.rule" to name the lines. This makes it quick to
+    | convention 'attribute.rule' to name the lines. This makes it quick to
     | specify a specific custom language line for a given attribute rule.
     |
     */
 
-    'custom'               => [
+    'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
@@ -108,11 +108,11 @@ return [
     |
     | The following language lines are used to swap attribute place-holders
     | with something more reader friendly such as E-Mail Address instead
-    | of "email". This simply helps us make messages a little cleaner.
+    | of 'email'. This simply helps us make messages a little cleaner.
     |
     */
 
-    'attributes'           => [
+    'attributes' => [
         // General
         'name'             => 'Nombre',
         'username'         => 'Nombre de usuario',
@@ -202,7 +202,7 @@ return [
         'DDMMYYYY'      => 'DD.MM.YYYY',
         'DDMMYYYY HHMM' => 'DD.MM.YYYY HH:MM',
         'location'      => 'Ubicación',
-        'venue'         => 'Ubicación',
+        'venue'         => 'Llegada',
         'price'         => 'Precio',
         'currency'      => 'Moneda',
 
@@ -236,19 +236,14 @@ return [
         'email'                 => 'Email',
         'password'              => 'Contraseña',
         'password_confirmation' => 'Confirmación de contraseña',
-        'reset password'        => 'Restablecer contraseña',
-        'Send password reset link' => 'Send password reset link',
-        'register'              => 'Registrar',
-        'Change password'       => 'Cambiar contraseña',
         'save'                  => 'Guardar',
         'save and exit'         => 'Guardar y salir',
         'exit'                  => 'Salir',
-        'log in'                => 'Acceder',
         'modify'                => 'Modicar',
         'permissions'           => 'Permisos',
         'superuser'             => 'Superusuario',
         'activated'             => 'Activado',
-        'getMergedPermissions'  => 'Obtener permisos fusionados',
+        'remember'              => 'Recuérdame',
 
         // Settings
         'webmaster_email'       => 'Email del Maestro de la Web',
