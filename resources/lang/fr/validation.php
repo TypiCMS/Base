@@ -237,6 +237,7 @@ return [
         'password'              => 'Mot de passe',
         'password_confirmation' => 'Confirmer le mot de passe',
         'reset password'        => 'Réinitialiser le mot de passe',
+        'Send password reset link' => 'Envoyer le lien de réinitialisation',
         'register'              => 'Créer le compte',
         'Change password'       => 'Modifier le mot de passe',
         'save'                  => 'Enregistrer',

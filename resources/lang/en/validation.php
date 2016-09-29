@@ -237,6 +237,7 @@ return [
         'password'              => 'Password',
         'password_confirmation' => 'Password confirmation',
         'reset password'        => 'Reset password',
+        'Send password reset link' => 'Send password reset link',
         'register'              => 'Register',
         'Change password'       => 'Change password',
         'save'                  => 'Save',

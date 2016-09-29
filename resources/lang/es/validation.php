@@ -237,6 +237,7 @@ return [
         'password'              => 'Contraseña',
         'password_confirmation' => 'Confirmación de contraseña',
         'reset password'        => 'Restablecer contraseña',
+        'Send password reset link' => 'Send password reset link',
         'register'              => 'Registrar',
         'Change password'       => 'Cambiar contraseña',
         'save'                  => 'Guardar',
