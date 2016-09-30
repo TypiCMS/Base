@@ -2,7 +2,11 @@ CKEDITOR.dtd.$removeEmpty.span = 0;
 CKEDITOR.dtd.$removeEmpty.i = 0;
 CKEDITOR.stylesSet.add( 'typicms_styles', [
     { name: 'Default button', element: 'a', attributes: { 'class': 'btn btn-default' } },
-    { name: 'Primary button', element: 'a', attributes: { 'class': 'btn btn-primary' } }
+    { name: 'Primary button', element: 'a', attributes: { 'class': 'btn btn-primary' } },
+    { name: 'Alert Success', element: 'div', attributes: { 'class': 'alert alert-success' } },
+    { name: 'Alert Info', element: 'div', attributes: { 'class': 'alert alert-info' } },
+    { name: 'Alert Warning', element: 'div', attributes: { 'class': 'alert alert-warning' } },
+    { name: 'Alert Danger', element: 'div', attributes: { 'class': 'alert alert-danger' } }
 ]);
 
 CKEDITOR.editorConfig = function( config ) {
@@ -37,7 +41,7 @@ CKEDITOR.editorConfig = function( config ) {
     // Set the most common block elements.
     config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre';
 
-    config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks';
+    config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks,div';
     config.removePlugins = 'image';
 
     // Skin / UI
