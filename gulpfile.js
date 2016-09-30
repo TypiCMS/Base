@@ -45,7 +45,7 @@ gulp.task('ckeditor', function () {
     ]).pipe(gulp.dest('public/components/ckeditor/lang'));
 
     // Plugins
-    var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget'];
+    var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'div', 'widget'];
     plugins.forEach(function (plugin) {
         gulp.src(['node_modules/ckeditor/plugins/' + plugin + '/**/*'])
             .pipe(gulp.dest('public/components/ckeditor/plugins/' + plugin));
