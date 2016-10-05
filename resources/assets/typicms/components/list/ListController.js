@@ -212,7 +212,7 @@
          */
         $scope.delete = function (model, title) {
             if (!title) {
-                title = model.title;
+                title = model.title[TypiCMS.content_locale];
             }
             if (!window.confirm('Supprimer « ' + title + ' » ?')) {
                 return false;
@@ -235,7 +235,7 @@
          */
         $scope.deleteFromNested = function (scope, title) {
             if (!title) {
-                title = scope.model.title;
+                title = scope.model.title[TypiCMS.content_locale];
             }
             if (scope.hasChild()) {
                 alertify.error('Cannot delete item because it has children.');
