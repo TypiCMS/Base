@@ -23,7 +23,7 @@
         if (moduleName === 'dashboard') {
             moduleName = 'history';
         }
-        return $resource('/api/' + moduleName + '/:id', null, {
+        return $resource('/admin/' + moduleName + '/:id', null, {
             update: {
                 method: 'PATCH'
             }
