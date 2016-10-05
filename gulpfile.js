@@ -3,34 +3,41 @@
 var elixir = require('laravel-elixir'),
     gulp = require('gulp');
 
-elixir.config.js.browserify.transformers.push({
-    name: 'require-globify'
-}, {
-    name: 'stringify'
-});
-
+/**
+ * Compile CSS
+ */
 elixir(function (mix) {
     mix.less('resources/assets/less/admin/admin.less')
-        .less('resources/assets/less/public/public.less');
+       .less('resources/assets/less/public/public.less');
 });
 
+
+/**
+ * Copy files
+ */
 elixir(function (mix) {
     mix.copy('node_modules/font-awesome/fonts', 'public/fonts')
-        .copy('node_modules/fancybox/dist/img', 'public/components/fancybox/source');
+       .copy('node_modules/fancybox/dist/img', 'public/components/fancybox/source');
 });
 
+
+/**
+ * Compile JS
+ */
 elixir(function (mix) {
-    mix.browserify('admin.js')
-        .browserify('public.js');
+    mix.webpack('admin.js')
+       .webpack('public.js');
 });
 
-// Publish CKEditor files
+
+/**
+ * Copy CKEditor files
+ */
 gulp.task('ckeditor', function () {
 
     // Base files
     gulp.src([
         'node_modules/ckeditor/ckeditor.js',
-        'node_modules/ckeditor/styles.js',
         'node_modules/ckeditor/contents.css'
     ]).pipe(gulp.dest('public/components/ckeditor'));
 
@@ -45,7 +52,7 @@ gulp.task('ckeditor', function () {
     ]).pipe(gulp.dest('public/components/ckeditor/lang'));
 
     // Plugins
-    var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'div', 'widget'];
+    var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget', 'div'];
     plugins.forEach(function (plugin) {
         gulp.src(['node_modules/ckeditor/plugins/' + plugin + '/**/*'])
             .pipe(gulp.dest('public/components/ckeditor/plugins/' + plugin));

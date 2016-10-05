@@ -1,5 +1,9 @@
 {
   "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
   "devDependencies": {
     "alertify.js": "1.0.10",
     "angular": "1.5.5",
@@ -7,21 +11,16 @@
     "angular-resource": "1.5.5",
     "angular-smart-table": "2.1.8",
     "angular-ui-tree": "2.14.0",
-    "bootstrap": "3.3.6",
-    "browserify": "^13.0.0",
+    "bootstrap": "^3.3.7",
     "ckeditor": "4.5.8",
     "dropzone": "4.3.0",
     "fancybox": "3.0.0",
     "font-awesome": "4.6.1",
-    "gulp": "3.9.1",
-    "jquery": "2.2.3",
-    "laravel-elixir": "^6.0.0-1",
-    "require-globify": "^1.3.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-webpack-official": "^1.0.2",
     "selectize": "0.12.1",
-    "stringify": "^5.1.0",
-    "swiper": "3.3.1",
-    "vue": "^1.0.21",
-    "vue-resource": "^0.7.0",
-    "vue-tables": "^1.4.13"
+    "swiper": "3.3.1"
   }
 }
