@@ -132,12 +132,17 @@
          * Set status = 0 or 1 for item
          */
         $scope.toggleStatus = function (model) {
-            var newStatus = Math.abs(model.status[TypiCMS.content_locale] - 1),
-                label = (newStatus === 1)
+            var newStatus = Math.abs(parseInt(model.status[TypiCMS.content_locale]) - 1).toString(),
+                data = {},
+                label = (newStatus === '1')
                     ? 'online'
                     : 'offline';
             model.status[TypiCMS.content_locale] = newStatus;
-            $api.update({id: model.id}, model).$promise.then(
+            data = {
+                id: model.id,
+                status: model.status
+            }
+            $api.update({id: model.id}, data).$promise.then(
                 function () {
                     alertify.success('Item is ' + label + '.');
                 },

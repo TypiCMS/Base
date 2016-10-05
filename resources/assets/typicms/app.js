@@ -25,7 +25,7 @@
         }
         return $resource('/api/' + moduleName + '/:id', null, {
             update: {
-                method: 'PUT'
+                method: 'PATCH'
             }
         });
     }]);
