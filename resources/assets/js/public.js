@@ -2,4 +2,7 @@ window.$ = window.jQuery = require('jquery')
 require('bootstrap');
 require('swiper');
 require('fancybox')($);
-require('../../../resources/assets/js/public/*.js', { mode: 'expand' });
+var req = require.context("../../../resources/assets/js/public", true, /^(.*\.(js$))[^.]*$/igm);
+req.keys().forEach(function(key){
+    req(key);
+});

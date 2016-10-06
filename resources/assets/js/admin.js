@@ -22,19 +22,10 @@ require('angular');
 require('angular-resource');
 require('../../../node_modules/angular-smart-table/dist/smart-table.js');
 require('angular-ui-tree');
-require('../../../resources/assets/typicms/**/*.js', { mode: 'expand' });
-
-/**
- * Vue
- */
-window.Vue = require('vue');
-var VueResource = require('vue-resource');
-var VueTables = require('vue-tables');
-Vue.use(VueResource);
-if ($('#table').length) {
-    Vue.use(VueTables.client, tablesConfig);
-    Vue.use(VueTables.server, tablesConfig);
-}
+var req = require.context("../../../resources/assets/typicms", true, /^(.*\.(js$))[^.]*$/igm);
+req.keys().forEach(function(key){
+    req(key);
+});
 
 /**
  * Alertify
@@ -47,6 +38,9 @@ window.alertify = require('alertify.js');
 require('selectize');
 
 /**
- * Other
+ * All files in /reources/assets/js/admin
  */
-require('../../../resources/assets/js/admin/*.js', { mode: 'expand' });
+var req = require.context("../../../resources/assets/js/admin", true, /^(.*\.(js$))[^.]*$/igm);
+req.keys().forEach(function(key){
+    req(key);
+});
