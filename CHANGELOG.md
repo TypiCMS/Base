@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.9.0 - 2016-11-04
+
+### Changed
+- [laravel-translatable](https://github.com/dimsav/laravel-translatable) 6.0, you will need to upgrade your custom models.
+- [laravel-permission](https://github.com/spatie/laravel-permission) 1.5
+- [bkwld/croppa](https://github.com/BKWLD/croppa) 4.5
+- Yarn
+
 ## 2.8.0 - 2016-04-13
 
 ### Changed
