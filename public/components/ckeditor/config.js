@@ -1,9 +1,5 @@
 CKEDITOR.dtd.$removeEmpty.span = 0;
 CKEDITOR.dtd.$removeEmpty.i = 0;
-CKEDITOR.stylesSet.add( 'typicms_styles', [
-    { name: 'Default button', element: 'a', attributes: { 'class': 'btn btn-default' } },
-    { name: 'Primary button', element: 'a', attributes: { 'class': 'btn btn-primary' } }
-]);
 
 CKEDITOR.editorConfig = function( config ) {
     config.toolbar = [
@@ -15,7 +11,6 @@ CKEDITOR.editorConfig = function( config ) {
         { name: 'insert', items: [ 'Image', 'oembed', 'Table', 'HorizontalRule', 'PageBreak', 'Iframe' ] },
         { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
         { name: 'tools', items: [ 'Maximize', 'ShowBlocks', 'Source' ] },
-        { name: 'others', items: [ '-' ] },
     ];
 
     // Quicktable config
@@ -26,8 +21,6 @@ CKEDITOR.editorConfig = function( config ) {
     config.qtCellPadding = '0', // Cell padding table
     config.qtCellSpacing = '0', // Cell spacing table
 
-    config.stylesSet = 'typicms_styles';
-
     // Remove some buttons provided by the standard plugins, which are
     // not needed in the Standard(s) toolbar.
     config.removeButtons = 'Underline';
@@ -37,7 +30,7 @@ CKEDITOR.editorConfig = function( config ) {
     // Set the most common block elements.
     config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre';
 
-    config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks';
+    config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks,div';
     config.removePlugins = 'image';
 
     // Skin / UI

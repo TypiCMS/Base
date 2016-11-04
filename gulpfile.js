@@ -118,7 +118,6 @@ gulp.task('ckeditor', function () {
     // Base files
     gulp.src([
         'node_modules/ckeditor/ckeditor.js',
-        'node_modules/ckeditor/styles.js',
         'node_modules/ckeditor/contents.css'
     ])
     .pipe(gulp.dest('public/components/ckeditor'));
@@ -148,6 +147,7 @@ gulp.task('ckeditor', function () {
         'showblocks',
         'specialchar',
         'table',
+        'div',
         'widget'
     ];
     for (var i = 0; i < plugins.length; i++) {
