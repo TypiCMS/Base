@@ -8,6 +8,7 @@ All notable changes to TypiCMS will be documented in this file.
 - [laravel-permission](https://github.com/spatie/laravel-permission) 1.5
 - [bkwld/croppa](https://github.com/BKWLD/croppa) 4.5
 - Yarn
+- CKEditor: more styles + div plugin
 
 ## 2.8.0 - 2016-04-13
 
