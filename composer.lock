@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6115d916943a419d16e49c63e6d044ea",
-    "content-hash": "4bcb4caee7497c105486c276f354a408",
+    "hash": "64c9d2c701d56a887e197805a6aab89d",
+    "content-hash": "9fc06150fef04502c46fb6a84f9c059e",
     "packages": [
         {
             "name": "adamwathan/bootforms",
-            "version": "v0.8.1",
+            "version": "v0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/bootforms.git",
-                "reference": "c9e02ea46e4599fe718308ee917bbf2422d04afd"
+                "reference": "39113075a9f8f8d7b3cb6be068e696814c1e5be7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/c9e02ea46e4599fe718308ee917bbf2422d04afd",
-                "reference": "c9e02ea46e4599fe718308ee917bbf2422d04afd",
+                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/39113075a9f8f8d7b3cb6be068e696814c1e5be7",
+                "reference": "39113075a9f8f8d7b3cb6be068e696814c1e5be7",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/form": "^0.8",
+                "adamwathan/form": "^0.8.10",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -47,20 +47,20 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2016-06-09 17:00:51"
+            "time": "2016-09-20 14:40:08"
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.8.9",
+            "version": "v0.8.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "8056cea6743de85e079d69bc43ee8e358553a9a7"
+                "reference": "e6a1dfe02028e14ea3fd2ab652beb387b6ccace4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/8056cea6743de85e079d69bc43ee8e358553a9a7",
-                "reference": "8056cea6743de85e079d69bc43ee8e358553a9a7",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/e6a1dfe02028e14ea3fd2ab652beb387b6ccace4",
+                "reference": "e6a1dfe02028e14ea3fd2ab652beb387b6ccace4",
                 "shasum": ""
             },
             "require": {
@@ -89,32 +89,32 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2016-05-10 01:07:01"
+            "time": "2016-09-20 14:33:32"
         },
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "V2.2.3",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "ecd1ce5c4a827e2f6a8fb41bcf67713beb1c1cbd"
+                "reference": "0c87981df959c7c1943abe227baf607c92f204f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/ecd1ce5c4a827e2f6a8fb41bcf67713beb1c1cbd",
-                "reference": "ecd1ce5c4a827e2f6a8fb41bcf67713beb1c1cbd",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/0c87981df959c7c1943abe227baf607c92f204f9",
+                "reference": "0c87981df959c7c1943abe227baf607c92f204f9",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "5.1.*|5.2.*|5.3.*",
-                "maximebf/debugbar": "~1.11.0|~1.12.0",
+                "maximebf/debugbar": "~1.13.0",
                 "php": ">=5.5.9",
                 "symfony/finder": "~2.7|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -143,20 +143,20 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2016-07-29 15:00:36"
+            "time": "2016-09-15 14:05:56"
         },
         {
             "name": "bkwld/croppa",
-            "version": "4.4.0",
+            "version": "4.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
-                "reference": "575101e4c2131db0dcdf5800cadf604801f940e4"
+                "reference": "5e93e97e0e20388a2f942a561911319eb956be77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/575101e4c2131db0dcdf5800cadf604801f940e4",
-                "reference": "575101e4c2131db0dcdf5800cadf604801f940e4",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/5e93e97e0e20388a2f942a561911319eb956be77",
+                "reference": "5e93e97e0e20388a2f942a561911319eb956be77",
                 "shasum": ""
             },
             "require": {
@@ -174,7 +174,7 @@
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "~4.0"
             },
             "type": "library",
             "autoload": {
@@ -192,7 +192,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "time": "2016-02-19 17:04:47"
+            "time": "2016-09-08 16:24:58"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -250,16 +250,16 @@
         },
         {
             "name": "dimsav/laravel-translatable",
-            "version": "v5.6",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dimsav/laravel-translatable.git",
-                "reference": "4534a17da5494ac27cf5ce743e228533c66b7275"
+                "reference": "95c56bd6475d2f64b8b01e1b225a32b1c79dc8e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/4534a17da5494ac27cf5ce743e228533c66b7275",
-                "reference": "4534a17da5494ac27cf5ce743e228533c66b7275",
+                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/95c56bd6475d2f64b8b01e1b225a32b1c79dc8e4",
+                "reference": "95c56bd6475d2f64b8b01e1b225a32b1c79dc8e4",
                 "shasum": ""
             },
             "require": {
@@ -297,7 +297,7 @@
                 "laravel",
                 "translation"
             ],
-            "time": "2016-04-21 22:12:50"
+            "time": "2016-08-19 12:49:25"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -449,16 +449,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.2.1",
+            "version": "6.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427"
+                "reference": "ebf29dee597f02f09f4d5bbecc68230ea9b08f60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/3f808fba627f2c5b69e2501217bf31af349c1427",
-                "reference": "3f808fba627f2c5b69e2501217bf31af349c1427",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ebf29dee597f02f09f4d5bbecc68230ea9b08f60",
+                "reference": "ebf29dee597f02f09f4d5bbecc68230ea9b08f60",
                 "shasum": ""
             },
             "require": {
@@ -507,7 +507,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-07-15 17:22:37"
+            "time": "2016-10-08 15:01:37"
         },
         {
             "name": "guzzlehttp/promises",
@@ -985,20 +985,20 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.27",
+            "version": "1.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "50e2045ed70a7e75a5e30bc3662904f3b67af8a9"
+                "reference": "1b5c4a0031697f46e779a9d1b309c2e1b24daeab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/50e2045ed70a7e75a5e30bc3662904f3b67af8a9",
-                "reference": "50e2045ed70a7e75a5e30bc3662904f3b67af8a9",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/1b5c4a0031697f46e779a9d1b309c2e1b24daeab",
+                "reference": "1b5c4a0031697f46e779a9d1b309c2e1b24daeab",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=5.5.9"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
@@ -1064,7 +1064,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2016-08-10 08:55:11"
+            "time": "2016-10-19 20:38:46"
         },
         {
             "name": "maatwebsite/laravel-sidebar",
@@ -1116,16 +1116,16 @@
         },
         {
             "name": "maximebf/debugbar",
-            "version": "v1.12.0",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "e634fbd32cd6bc3fa0e8c972b52d4bf49bab3988"
+                "reference": "5f49a5ed6cfde81d31d89378806670d77462526e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/e634fbd32cd6bc3fa0e8c972b52d4bf49bab3988",
-                "reference": "e634fbd32cd6bc3fa0e8c972b52d4bf49bab3988",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/5f49a5ed6cfde81d31d89378806670d77462526e",
+                "reference": "5f49a5ed6cfde81d31d89378806670d77462526e",
                 "shasum": ""
             },
             "require": {
@@ -1144,7 +1144,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -1173,7 +1173,7 @@
                 "debug",
                 "debugbar"
             ],
-            "time": "2016-05-15 13:11:34"
+            "time": "2016-09-15 14:01:59"
         },
         {
             "name": "monolog/monolog",
@@ -1445,16 +1445,16 @@
         },
         {
             "name": "propaganistas/laravel-translatable-bootforms",
-            "version": "1.3.4",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Propaganistas/Laravel-Translatable-Bootforms.git",
-                "reference": "fdb30bb37314af880235b41e96d9d81ab881384d"
+                "reference": "226569c4e25da1060492e84165b1fc7a36ba3ea0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/fdb30bb37314af880235b41e96d9d81ab881384d",
-                "reference": "fdb30bb37314af880235b41e96d9d81ab881384d",
+                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/226569c4e25da1060492e84165b1fc7a36ba3ea0",
+                "reference": "226569c4e25da1060492e84165b1fc7a36ba3ea0",
                 "shasum": ""
             },
             "require": {
@@ -1491,7 +1491,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2016-09-05 12:01:04"
+            "time": "2016-09-21 13:07:40"
         },
         {
             "name": "psr/http-message",
@@ -1545,22 +1545,30 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.3.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1574,12 +1582,13 @@
                 }
             ],
             "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
             "keywords": [
                 "log",
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "psy/psysh",
@@ -1754,22 +1763,22 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "1.3.4",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "03ba61c4a9f035a4c09a74fd301791bd4c168a15"
+                "reference": "554e43d5576d1c4c723d19774e7e6f34c7c41e9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/03ba61c4a9f035a4c09a74fd301791bd4c168a15",
-                "reference": "03ba61c4a9f035a4c09a74fd301791bd4c168a15",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/554e43d5576d1c4c723d19774e7e6f34c7c41e9b",
+                "reference": "554e43d5576d1c4c723d19774e7e6f34c7c41e9b",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^5.1",
-                "laravel/framework": "^5.1.11",
-                "php": ">=5.5.0"
+                "illuminate/contracts": "~5.1.0|~5.2.0|~5.3.0",
+                "laravel/framework": "~5.1.11|~5.2.0|~5.3.0",
+                "php": ">=5.6.0"
             },
             "require-dev": {
                 "orchestra/testbench": "^3.1.4",
@@ -1803,7 +1812,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2016-02-27 13:07:08"
+            "time": "2016-08-26 07:17:52"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1977,16 +1986,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.1.4",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5"
+                "reference": "28b0832b2553ffb80cabef6a7a812ff1e670c0bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
-                "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/28b0832b2553ffb80cabef6a7a812ff1e670c0bc",
+                "reference": "28b0832b2553ffb80cabef6a7a812ff1e670c0bc",
                 "shasum": ""
             },
             "require": {
@@ -2033,7 +2042,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-19 10:45:57"
+            "time": "2016-10-13 06:28:43"
         },
         {
             "name": "symfony/finder",
@@ -3573,16 +3582,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "9270140b940ff02e58ec577c237274e92cd40cdd"
+                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/9270140b940ff02e58ec577c237274e92cd40cdd",
-                "reference": "9270140b940ff02e58ec577c237274e92cd40cdd",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/8331b5efe816ae05461b7ca1e721c01b46bafb3e",
+                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e",
                 "shasum": ""
             },
             "require": {
@@ -3614,7 +3623,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-06-10 09:48:41"
+            "time": "2016-09-30 07:12:33"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -4579,16 +4588,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.4",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d"
+                "reference": "7ff51b06c6c3d5cc6686df69004a42c69df09e27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/f291ed25eb1435bddbe8a96caaef16469c2a092d",
-                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/7ff51b06c6c3d5cc6686df69004a42c69df09e27",
+                "reference": "7ff51b06c6c3d5cc6686df69004a42c69df09e27",
                 "shasum": ""
             },
             "require": {
@@ -4624,7 +4633,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-02 02:12:52"
+            "time": "2016-10-24 18:41:13"
         },
         {
             "name": "webmozart/assert",
