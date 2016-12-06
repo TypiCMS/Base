@@ -274,13 +274,21 @@
                     return false;
                 }
 
+                // If parent is private set current model to private
+                if (event.dest.nodesScope.$nodeScope) {
+                    if (nodes.$nodeScope.model.private == 1) {
+                        model.private = 1;
+                    }
+                }
+
+
                 data.moved = model.id;
                 data.item = [];
                 model.position = event.dest.index + 1;
                 model.parent_id = parentId;
 
                 angular.forEach(currentList, function (model) {
-                    data.item.push({id: model.id, parent_id: model.parent_id});
+                    data.item.push({id: model.id, parent_id: model.parent_id, private: model.private});
                 });
 
                 $http.post('/admin/' + moduleName + '/sort', data).success(function (data) {
