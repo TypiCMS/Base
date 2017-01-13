@@ -76,13 +76,11 @@
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php clear-compiled",
-            "php artisan clear-html",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php clear-compiled",
-            "php artisan clear-html",
             "php artisan optimize"
         ]
     },

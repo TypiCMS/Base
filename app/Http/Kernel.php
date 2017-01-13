@@ -38,7 +38,6 @@ class Kernel extends HttpKernel
         'public' => [
             'web',
             \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
-            \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
         ],
 
         'admin' => [
