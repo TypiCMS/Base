@@ -3,6 +3,7 @@
     "description": "Multilingual CMS built with Laravel 5",
     "keywords": ["cms", "multilingual", "laravel", "typi"],
     "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "Samuel De Backer",
@@ -10,10 +11,16 @@
             "role": "Developer"
         }
     ],
-    "type": "project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/TypiCMS/repository"
+        }
+    ],
     "require": {
-        "php": ">=7.0.0",
-        "laravel/framework": "5.3.*",
+        "php": ">=5.6.4",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0",
         "barryvdh/laravel-debugbar": "~2.0",
         "edvinaskrucas/notification": "~5.1.0",
         "guzzlehttp/guzzle": "~6.0",
@@ -21,8 +28,8 @@
         "laracasts/utilities": "~2.1.0",
         "bkwld/croppa": "~4.4.0",
         "maatwebsite/laravel-sidebar": "~1.1.1",
+        "rinvex/repository": "dev-master",
         "roumen/feed": "~2.10.1",
-        "rinvex/repository": "2.0.*",
         "spatie/laravel-permission": "~1.5.0",
         "typicms/laravel-translatable-bootforms": "dev-master",
         "typicms/nestablecollection": "~1.1.1",
@@ -45,9 +52,7 @@
         "laracasts/generators": "~1.1",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.0",
-        "symfony/css-selector": "3.1.*",
-        "symfony/dom-crawler": "3.1.*"
+        "phpunit/phpunit": "~5.0"
     },
     "autoload": {
         "classmap": [
@@ -55,15 +60,11 @@
         ],
         "psr-4": {
             "App\\": "app/",
+            "Tests\\": "tests/",
             "TypiCMS\\Modules\\": "Modules/"
         },
         "files": [
             "app/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
         ]
     },
     "scripts": {
@@ -75,17 +76,16 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php clear-compiled",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php clear-compiled",
             "php artisan optimize"
         ]
     },
     "config": {
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "sort-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true

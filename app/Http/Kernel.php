@@ -18,6 +18,7 @@ class Kernel extends HttpKernel
         \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Krucas\Notification\Middleware\NotificationMiddleware::class,
+        \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
     ];
 
     /**

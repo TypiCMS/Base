@@ -20,9 +20,9 @@ return [
     ],
 
     'ses' => [
-        'key'    => env('SES_KEY'),
+        'key' => env('SES_KEY'),
         'secret' => env('SES_SECRET'),
-        'region' => env('SES_REGION', 'us-east-1'),
+        'region' => 'us-east-1',
     ],
 
     'sparkpost' => [
@@ -31,7 +31,7 @@ return [
 
     'stripe' => [
         'model'  => env('STRIPE_MODEL', 'TypiCMS\Modules\Users\Models\User'),
-        'key'    => env('STRIPE_KEY'),
+        'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
 
