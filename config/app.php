@@ -171,6 +171,7 @@ return [
         Bkwld\Croppa\ServiceProvider::class,
         Krucas\Notification\NotificationServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
         Rinvex\Repository\Providers\RepositoryServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
@@ -211,7 +212,6 @@ return [
 
         // Pages module needs to be at last for routing to work.
         TypiCMS\Modules\Pages\Providers\ModuleProvider::class,
-        Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
          * Application Service Providers...
