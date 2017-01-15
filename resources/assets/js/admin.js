@@ -6,14 +6,14 @@ window.$ = window.jQuery = require('jquery')
 require('bootstrap');
 
 /**
+ * Fancybox
+ */
+require('fancybox');
+
+/**
  * Dropzone
  */
 window.Dropzone = require('dropzone');
-
-/**
- * Fancybox
- */
-require('fancybox')($);
 
 /**
  * Angular
