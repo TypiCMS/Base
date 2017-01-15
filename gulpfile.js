@@ -16,8 +16,7 @@ elixir(function (mix) {
  * Copy files
  */
 elixir(function (mix) {
-    mix.copy('node_modules/font-awesome/fonts', 'public/fonts')
-       .copy('node_modules/fancybox/dist/img', 'public/components/fancybox/source');
+    mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 });
 
 
