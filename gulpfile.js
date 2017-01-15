@@ -51,10 +51,14 @@ gulp.task('ckeditor', function () {
     ]).pipe(gulp.dest('public/components/ckeditor/lang'));
 
     // Plugins
-    var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget', 'div'];
+    var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget', 'div', 'scayt', 'wsc', 'pastefromword', 'widgetselection'];
     plugins.forEach(function (plugin) {
         gulp.src(['node_modules/ckeditor/plugins/' + plugin + '/**/*'])
             .pipe(gulp.dest('public/components/ckeditor/plugins/' + plugin));
     });
+
+    // Skins
+    gulp.src(['node_modules/ckeditor/skins/**/*'])
+        .pipe(gulp.dest('public/components/ckeditor/skins'));
 
 });

@@ -1,13 +1,5 @@
 CKEDITOR.dtd.$removeEmpty.span = 0;
 CKEDITOR.dtd.$removeEmpty.i = 0;
-CKEDITOR.stylesSet.add( 'typicms_styles', [
-    { name: 'Default button', element: 'a', attributes: { 'class': 'btn btn-default' } },
-    { name: 'Primary button', element: 'a', attributes: { 'class': 'btn btn-primary' } },
-    { name: 'Alert Success', element: 'div', attributes: { 'class': 'alert alert-success' } },
-    { name: 'Alert Info', element: 'div', attributes: { 'class': 'alert alert-info' } },
-    { name: 'Alert Warning', element: 'div', attributes: { 'class': 'alert alert-warning' } },
-    { name: 'Alert Danger', element: 'div', attributes: { 'class': 'alert alert-danger' } }
-]);
 
 CKEDITOR.editorConfig = function( config ) {
     config.toolbar = [
@@ -19,7 +11,6 @@ CKEDITOR.editorConfig = function( config ) {
         { name: 'insert', items: [ 'Image', 'oembed', 'Table', 'HorizontalRule', 'PageBreak', 'Iframe' ] },
         { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
         { name: 'tools', items: [ 'Maximize', 'ShowBlocks', 'Source' ] },
-        { name: 'others', items: [ '-' ] },
     ];
 
     // Quicktable config
@@ -29,8 +20,6 @@ CKEDITOR.editorConfig = function( config ) {
     config.qtWidth = '100%', // Width of inserted table
     config.qtCellPadding = '0', // Cell padding table
     config.qtCellSpacing = '0', // Cell spacing table
-
-    config.stylesSet = 'typicms_styles';
 
     // Remove some buttons provided by the standard plugins, which are
     // not needed in the Standard(s) toolbar.
@@ -44,13 +33,7 @@ CKEDITOR.editorConfig = function( config ) {
     config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks,div';
     config.removePlugins = 'image';
 
-    // Skin / UI
-    config.skin = 'typicms';
-    config.uiColor = '#eeeeee';
     config.height = 500;
-    config.dialog_backgroundCoverColor = 'black';
-
-    // config.forcePasteAsPlainText = true;
     config.contentsCss = ['/css/public.css', '/components/ckeditor/css/content.css'];
     config.allowedContent = true;
 
