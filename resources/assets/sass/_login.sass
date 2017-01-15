@@ -1,0 +1,31 @@
+.container-xs-center
+    padding: 0 25px
+    margin: 0 auto
+
+    @media (min-width: $screen-sm-min)
+        padding-top: 15px
+        padding-bottom: 15px
+        margin-top: 50px
+        max-width: 380px
+        border: 1px solid $input-border
+
+        +border-top-radius($border-radius-large)
+        +border-bottom-radius($border-radius-large)
+        +box-shadow(0 2px 5px $gray-lighter)
+
+    h1
+        margin-bottom: 30px
+        margin-top: 20px
+
+    .form-action
+        margin-top: 30px
+
+    .alert
+        margin: 0 -25px
+        border: none
+        border-radius: inherit
+        border-bottom-right-radius: 0
+        border-bottom-left-radius: 0
+
+        @media (min-width: $screen-sm-min)
+            margin-top: -15px

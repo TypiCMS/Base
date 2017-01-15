@@ -3,7 +3,7 @@ window.$ = window.jQuery = require('jquery')
 /**
  * Bootstrap
  */
-require('bootstrap');
+require('bootstrap-sass');
 
 /**
  * Fancybox

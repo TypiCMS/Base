@@ -7,8 +7,8 @@ var elixir = require('laravel-elixir'),
  * Compile CSS
  */
 elixir(function (mix) {
-    mix.less('resources/assets/less/admin/admin.less')
-       .less('resources/assets/less/public/public.less');
+    mix.sass('admin.sass')
+       .sass('public.sass');
 });
 
 

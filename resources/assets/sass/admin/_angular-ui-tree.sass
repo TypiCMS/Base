@@ -1,0 +1,50 @@
+.angular-ui-tree-nodes
+    display: block
+    position: relative
+    padding: 0
+    list-style: none
+
+    .angular-ui-tree-nodes
+        padding-left: 25px
+
+.angular-ui-tree-node,
+.angular-ui-tree-placeholder
+    display: block
+    position: relative
+    border-top: 1px solid #ddd
+
+    div
+        margin: 2px 0
+        display: inline-block
+
+        &.title
+            white-space: nowrap
+
+        &.disclose
+            position: absolute
+            cursor: pointer
+            left: -15px
+            top: 6px
+            width: 14px
+            height: 14px
+            color: $gray-light
+            font-size: 18px
+
+.angular-ui-tree-drag > li:first-child
+    border-color: transparent
+
+.angular-ui-tree-placeholder
+    box-sizing: content-box
+    background-color: $gray-lighter
+
+.angular-ui-tree-hidden
+    display: none
+
+.angular-ui-tree-handle
+    cursor: move
+
+.angular-ui-tree-drag
+    position: absolute
+    pointer-events: none
+    z-index: 999
+    opacity: .8

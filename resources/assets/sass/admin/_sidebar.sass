@@ -1,0 +1,102 @@
+.sidebar-menu
+    +list-unstyled
+
+.sidebar
+    background-color: #333
+    border-right: 1px solid #000
+    bottom: 0
+    position: fixed
+    top: 51px
+    left: 0
+    display: block
+    overflow-x: hidden
+    overflow-y: auto
+    z-index: 1000
+    padding: 21px 15px
+
+    @media (min-width: $screen-sm-min)
+        padding: 20px
+
+.sidebar-panel
+    @media (min-width: $screen-sm-min)
+        margin-left: -20px
+
+    margin-right: -21px
+    margin-bottom: 20px
+
+.sidebar-title
+    letter-spacing: 1px
+    display: block
+    font-size: 12px
+    padding: 0 20px 10px
+    text-transform: uppercase
+    color: #666
+    text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.5)
+
+    &:hover,
+    &:focus
+        text-decoration: none
+        color: #666
+
+    &:active
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.5)
+        color: #999
+
+.nav-sidebar
+    > li
+        &:hover
+            .append
+                display: block
+
+        > a
+            text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.5)
+            color: #ddd
+            padding-right: 20px
+            padding-left: 20px
+
+            &.hasAppend
+                width: 100%
+                float: left
+
+            &.append
+                display: none
+                position: absolute
+                right: 0
+
+            .icon
+                color: #aaa
+                position: absolute
+                margin-top: 3px
+
+            div
+                margin-left: 30px
+
+            &:hover,
+            &:focus
+                background-color: #333
+                color: #fff
+                transition: all .2s
+
+                .icon
+                    color: #fff
+                    transition: all .2s
+
+            &:active
+                transition: all 0s
+                background-color: #ddd
+                text-shadow: 0 0 30px rgba(0, 0, 0, 0.9)
+                color: #000
+
+                .icon
+                    color: #000
+                    transition: all 0s
+
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus
+        text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.5)
+        color: #fff
+        background-color: $brand-primary
+
+        .icon
+            color: #eee
