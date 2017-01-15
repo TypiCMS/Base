@@ -169,7 +169,6 @@ return [
         AdamWathan\BootForms\BootFormsServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Bkwld\Croppa\ServiceProvider::class,
-        Krucas\Notification\NotificationServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
@@ -278,7 +277,6 @@ return [
         'BootForm'             => AdamWathan\BootForms\Facades\BootForm::class,
         'Form'                 => AdamWathan\Form\Facades\Form::class,
         'Croppa'               => Bkwld\Croppa\Facade::class,
-        'Notification'         => Krucas\Notification\Facades\Notification::class,
         'TranslatableBootForm' => TypiCMS\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,
 
     ],
