@@ -14,7 +14,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/TypiCMS/repository"
+            "url": "https://github.com/TypiCMS/form"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/TypiCMS/bootforms"
         }
     ],
     "require": {
