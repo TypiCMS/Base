@@ -76,5 +76,5 @@ return [
 
     'Items sorted' => 'Items sorted.',
 
-    'Security token expired. Please, repeat your request.' => 'Security token expired. Please, repeat your request.',
+    'Sorry, your session seems to have expired. Please try again.' => 'Sorry, your session seems to have expired. Please try again.',
 ];

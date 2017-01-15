@@ -76,5 +76,5 @@ return [
 
     'Items sorted' => 'Ordenados los elementos.',
 
-    'Security token expired. Please, repeat your request.' => 'El token de Seguridad ha expirado. Por favor, repite la solicitud.',
+    'Sorry, your session seems to have expired. Please try again.' => 'El token de Seguridad ha expirado. Por favor, repite la solicitud.',
 ];

@@ -10,7 +10,6 @@ use Illuminate\Foundation\Validation\ValidationException;
 use Illuminate\Http\Exception\HttpResponseException;
 use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Facades\Log;
-use Krucas\Notification\Facades\Notification;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
@@ -59,9 +58,10 @@ class Handler extends ExceptionHandler
          * Notification on TokenMismatchException
          */
         if ($exception instanceof TokenMismatchException) {
-            Notification::error(trans('global.Security token expired. Please, repeat your request.'));
-
-            return redirect()->back()->withInput();
+            return redirect()
+                ->back()
+                ->withErrors(['token_error' => trans('global.Sorry, your session seems to have expired. Please try again.')])
+                ->withInput();
         }
 
         if ($exception instanceof HttpResponseException) {

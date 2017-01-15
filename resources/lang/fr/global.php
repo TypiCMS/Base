@@ -76,5 +76,5 @@ return [
 
     'Items sorted' => 'Les éléments ont été réorganisés.',
 
-    'Security token expired. Please, repeat your request.' => 'Le jeton de sécurité a expiré. Veuillez resoumettre votre requête.',
+    'Sorry, your session seems to have expired. Please try again.' => 'Désolé, votre session semble avoir expiré. Veuillez réessayer.',
 ];
