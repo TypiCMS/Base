@@ -194,15 +194,7 @@ return [
          * Here is the place for your modules,
          * they should be set before Core Service provider.
          */
-        TypiCMS\Modules\Categories\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Contacts\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Events\Providers\ModuleProvider::class,
-        TypiCMS\Modules\News\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Partners\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Projects\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Places\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Slides\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Tags\Providers\ModuleProvider::class,
+        // TypiCMS\Modules\News\Providers\ModuleProvider::class,
 
         /*
          * TypiCMS Core Service Provider...
