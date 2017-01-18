@@ -128,6 +128,7 @@ return [
         'second'           => 'Segundo',
         'title'            => 'Título',
         'website_title'    => 'Título de la web',
+        'website_baseline' => 'Baseline de la web',
         'content'          => 'Contenido',
         'description'      => 'Descripción',
         'excerpt'          => 'Extracto',
