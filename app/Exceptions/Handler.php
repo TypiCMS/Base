@@ -22,12 +22,12 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        AuthenticationException::class,
-        AuthorizationException::class,
-        HttpException::class,
-        ModelNotFoundException::class,
-        TokenMismatchException::class,
-        ValidationException::class,
+        \Illuminate\Auth\AuthenticationException::class,
+        \Illuminate\Auth\Access\AuthorizationException::class,
+        \Symfony\Component\HttpKernel\Exception\HttpException::class,
+        \Illuminate\Database\Eloquent\ModelNotFoundException::class,
+        \Illuminate\Session\TokenMismatchException::class,
+        \Illuminate\Validation\ValidationException::class,
     ];
 
     /**
@@ -75,15 +75,26 @@ class Handler extends ExceptionHandler
             return $exception->getResponse();
         }
 
-        if ($this->isHttpException($exception)) {
-            return $this->toIlluminateResponse($this->renderHttpException($exception), $exception);
+        return parent::render($request, $exception);
+    }
+
+    /**
+     * Prepare response containing exception render.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Exception $e
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    protected function prepareResponse($request, Exception $e)
+    {
+        if ($this->isHttpException($e)) {
+            return $this->toIlluminateResponse($this->renderHttpException($e), $e);
         } else {
             // Custom error 500 view on production
             if (app()->environment() == 'production') {
                 return response()->view('errors.500', [], 500);
             }
-
-            return $this->toIlluminateResponse($this->convertExceptionToResponse($exception), $exception);
+            return $this->toIlluminateResponse($this->convertExceptionToResponse($e), $e);
         }
     }
 
