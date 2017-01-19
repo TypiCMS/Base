@@ -30,14 +30,14 @@ return [
     ],
 
     'stripe' => [
-        'model'  => env('STRIPE_MODEL', 'TypiCMS\Modules\Users\Models\User'),
+        'model' => env('STRIPE_MODEL', 'TypiCMS\Modules\Users\Models\User'),
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
 
     'rollbar' => [
         'access_token' => env('ROLLBAR_TOKEN'),
-        'level'        => env('ROLLBAR_LEVEL', 'debug'),
+        'level' => env('ROLLBAR_LEVEL', 'debug'),
     ],
 
 ];
