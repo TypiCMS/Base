@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 3.0.0 - 2017-01-XX
+
+### Changed
+- incoming() method from Events module is now upcoming()
+- double arrows in array are no more aligned
+- locale() helper method to get array of all locales
+- @block('name') blade directive
+- @menu('name') blade directive
+
 ## 2.8.0 - 2016-04-13
 
 ### Changed
