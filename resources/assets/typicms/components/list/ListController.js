@@ -73,9 +73,9 @@
         };
 
         /**
-         * Check all online or offline items
+         * Check all published or unpublished items
          */
-        $scope.checkOnOffline = function (status) {
+        $scope.checkStatus = function (status) {
             $scope.checked.models = [];
             $scope.models.forEach(function (model) {
                 if (model.status == status) {
@@ -85,17 +85,17 @@
         };
 
         /**
-         * Check all offline items
+         * Check all unpublished items
          */
-        $scope.checkOffline = function () {
-            this.checkOnOffline(0);
+        $scope.checkUnpublished = function () {
+            this.checkStatus(0);
         };
 
         /**
-         * Check all online items
+         * Check all published items
          */
-        $scope.checkOnline = function () {
-            this.checkOnOffline(1);
+        $scope.checkPublished = function () {
+            this.checkStatus(1);
         };
 
         /**
@@ -135,8 +135,8 @@
             var newStatus = Math.abs(parseInt(model.status[TypiCMS.content_locale]) - 1).toString(),
                 data = {},
                 label = (newStatus === '1')
-                    ? 'online'
-                    : 'offline';
+                    ? 'published'
+                    : 'unpublished';
             model.status[TypiCMS.content_locale] = newStatus;
             data = {
                 id: model.id,
