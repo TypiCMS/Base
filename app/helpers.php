@@ -15,3 +15,10 @@ if (! function_exists('column')) {
         return $column.'->'.config('app.locale');
     }
 }
+
+if (! function_exists('locales')) {
+    function locales()
+    {
+        return config('translatable-bootforms.locales');
+    }
+}
