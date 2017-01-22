@@ -27,6 +27,7 @@ class TranslationSeeder extends Seeder
             ['id' => '19', 'group' => 'db', 'translation' => '{"fr":"Désolé, cette page n’a pas été trouvée","nl":"Sorry, deze pagina is niet gevonden","en":"Sorry, this page was not found"}', 'key' => 'Sorry, this page was not found', 'created_at' => '2014-02-28 16:42:18', 'updated_at' => '2014-02-28 16:42:18'],
             ['id' => '20', 'group' => 'db', 'translation' => '{"fr":"Désolé, une erreur serveur est survenue","nl":"Sorry, er is een serverfout opgetreden","en":"Sorry, a server error occurred"}', 'key' => 'Sorry, a server error occurred', 'created_at' => '2014-02-28 16:44:46', 'updated_at' => '2014-02-28 16:44:46'],
             ['id' => '21', 'group' => 'db', 'translation' => '{"fr":"Aller à la navigation","nl":"Open navigatie","en":"Open navigation"}', 'key' => 'Open navigation', 'created_at' => '2016-02-15 16:44:46', 'updated_at' => '2016-02-15 16:44:46'],
+            ['id' => '22', 'group' => 'db', 'translation' => '{"fr":"Fermer la navigation","nl":"Sluiten navigatie","en":"Close navigation"}', 'key' => 'Close navigation', 'created_at' => '2016-02-15 16:44:46', 'updated_at' => '2016-02-15 16:44:46'],
         ];
 
         DB::table('translations')->insert($typi_translations);
