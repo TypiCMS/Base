@@ -213,7 +213,7 @@ Roles and Permissions are managed with [spatie/laravel-permission](https://githu
 ### Blocks
 
 Blocks are useful to display custom content in your views.
-You can get the content of a block with ``` Blocks::build('blockname') ```.
+You can get the content of a block with ``` Blocks::render('blockname') ```.
 
 ### Translations
 
