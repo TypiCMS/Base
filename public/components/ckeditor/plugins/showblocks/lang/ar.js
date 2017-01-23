@@ -1,1 +1,1 @@
-CKEDITOR.plugins.setLang("showblocks","ar",{toolbar:"مخطط تفصيلي"});
+﻿CKEDITOR.plugins.setLang("showblocks","ar",{toolbar:"مخطط تفصيلي"});

@@ -1,1 +1,1 @@
-CKEDITOR.plugins.setLang("showblocks","gu",{toolbar:"બ્લૉક બતાવવું"});
+﻿CKEDITOR.plugins.setLang("showblocks","gu",{toolbar:"બ્લૉક બતાવવું"});

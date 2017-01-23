@@ -1,1 +1,1 @@
-CKEDITOR.plugins.setLang("showblocks","fo",{toolbar:"Vís blokkar"});
+﻿CKEDITOR.plugins.setLang("showblocks","fo",{toolbar:"Vís blokkar"});
