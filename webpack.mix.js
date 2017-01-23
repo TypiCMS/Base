@@ -1,14 +1,16 @@
+let mix = require('laravel-mix').mix;
+
 /**
  * Compile CSS
  */
-mix.sass('admin.sass').version();
-mix.sass('public.sass').version();
+mix.sass('resources/assets/sass/admin.sass', 'public/css').version();
+mix.sass('resources/assets/sass/public.sass', 'public/css').version();
 
 /**
  * Compile JS
  */
-mix.js('admin.js').version();
-mix.js('public.js').version();
+mix.js('resources/assets/js/admin.js', 'public/js').version();
+mix.js('resources/assets/js/public.js', 'public/js').version();
 
 /**
  * Copy font-awesome files
@@ -34,10 +36,10 @@ mix.copy('node_modules/ckeditor/lang/en.js', 'public/components/ckeditor/lang/en
  */
 var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget', 'div', 'scayt', 'wsc', 'pastefromword', 'widgetselection'];
 plugins.forEach(function (plugin) {
-    mix.copy(['node_modules/ckeditor/plugins/' + plugin + '/**/*'], 'public/components/ckeditor/plugins/' + plugin);
+    mix.copy('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin);
 });
 
 /**
  * Copy CKEditor skins files
  */
-mix.copy(['node_modules/ckeditor/skins/**/*'], 'public/components/ckeditor/skins');
+mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins');
