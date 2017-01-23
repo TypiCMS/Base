@@ -1,0 +1,26 @@
+.st-sort {
+    cursor: pointer;
+}
+
+.pagination a {
+    cursor: pointer;
+}
+
+.st-sort:before {
+    margin-right: 5px;
+    color: $gray-light;
+    font: normal normal normal 14px / 1 FontAwesome;
+    content: $fa-var-sort;
+}
+
+.st-sort-ascent:before {
+    color: $gray-dark;
+    font: normal normal normal 14px / 1 FontAwesome;
+    content: $fa-var-sort-asc;
+}
+
+.st-sort-descent:before {
+    color: $gray-dark;
+    font: normal normal normal 14px / 1 FontAwesome;
+    content: $fa-var-sort-desc;
+}

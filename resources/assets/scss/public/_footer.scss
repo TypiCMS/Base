@@ -1,0 +1,7 @@
+.footer-nav {
+    > ul {
+        @extends nav;
+
+        @extends nav-pills;
+    }
+}
