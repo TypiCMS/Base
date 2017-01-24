@@ -1,5 +1,5 @@
 .http-error-message {
-    @include jumbotron();
+    @extend .jumbotron;
     padding-left: 60px;
     padding-right: 60px;
 }

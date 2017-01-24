@@ -20,12 +20,9 @@ $offcanvas-width: 100%;
 }
 
 .btn-offcanvas {
-    @extends btn;
-
-    @extends btn-default;
-
-    @extends visible-xs-block;
-
+    @extend .btn;
+    @extend .btn-default;
+    @extend .visible-xs-block;
     margin: 10px;
     right: 0;
     top: 0;

@@ -32,7 +32,7 @@
 }
 
 .dz-preview {
-    @extends thumbnail;
+    @extend .thumbnail;
 
     padding: 0;
     height: 200px;

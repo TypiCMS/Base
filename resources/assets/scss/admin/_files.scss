@@ -1,5 +1,5 @@
 .fieldset-media {
-    @extends well;
+    @extend .well;
 
     div + div {
         margin-top: 20px;
