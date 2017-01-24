@@ -34,7 +34,23 @@ mix.copy('node_modules/ckeditor/lang/en.js', 'public/components/ckeditor/lang/en
 /**
  * Copy CKEditor plugins files
  */
-var plugins = ['clipboard', 'image', 'image2', 'justify', 'lineutils', 'link', 'magicline', 'panelbutton', 'showblocks', 'specialchar', 'table', 'widget', 'div', 'scayt', 'wsc', 'pastefromword', 'widgetselection'];
+var plugins = [
+    'clipboard',
+    'div',
+    'image',
+    'image2',
+    'justify',
+    'lineutils',
+    'link',
+    'magicline',
+    'panelbutton',
+    'pastefromword',
+    'showblocks',
+    'specialchar',
+    'table',
+    'widget',
+    'widgetselection'
+];
 plugins.forEach(function (plugin) {
     mix.copy('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin);
 });
