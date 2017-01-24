@@ -1,8 +1,0 @@
-.lang-switcher {}
-
-.site-nav {
-    > ul {
-        @extend .nav;
-        @extend .nav-pills;
-    }
-}
