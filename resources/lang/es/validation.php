@@ -9,18 +9,20 @@ return [
     |
     | The following language lines contain the default error messages used by
     | the validator class. Some of these rules have multiple versions such
-    | as the size rules. Feel free to tweak each of these messages here.
+    | such as the size rules. Feel free to tweak each of these messages.
     |
     */
 
     'accepted'             => ':attribute debe ser aceptado.',
     'active_url'           => ':attribute no es una URL válida.',
     'after'                => ':attribute debe ser una fecha posterior a :date.',
-    'alpha'                => ':attribute solo debe contener letras.',
-    'alpha_dash'           => ':attribute solo debe contener letras, números y guiones.',
-    'alpha_num'            => ':attribute solo debe contener letras y números.',
+    'after_or_equal'       => ':attribute debe ser una fecha posterior o igual a :date.',
+    'alpha'                => ':attribute sólo debe contener letras.',
+    'alpha_dash'           => ':attribute sólo debe contener letras, números y guiones.',
+    'alpha_num'            => ':attribute sólo debe contener letras y números.',
     'array'                => ':attribute debe ser un conjunto.',
     'before'               => ':attribute debe ser una fecha anterior a :date.',
+    'before_or_equal'      => ':attribute debe ser una fecha anterior o igual a :date.',
     'between'              => [
         'numeric' => ':attribute tiene que estar entre :min - :max.',
         'file'    => ':attribute debe pesar entre :min - :max kilobytes.',
@@ -34,7 +36,7 @@ return [
     'different'            => ':attribute y :other deben ser diferentes.',
     'digits'               => ':attribute debe tener :digits dígitos.',
     'digits_between'       => ':attribute debe tener entre :min y :max dígitos.',
-    'dimensions'           => 'Las dimensiones de la imagen :attribute no son validas.',
+    'dimensions'           => 'Las dimensiones de la imagen :attribute no son válidas.',
     'distinct'             => 'El campo :attribute contiene un valor duplicado.',
     'email'                => ':attribute no es un correo válido',
     'exists'               => ':attribute es inválido.',
@@ -90,12 +92,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may specify custom validation messages for attributes using the
-    | convention 'attribute.rule' to name the lines. This makes it quick to
+    | convention "attribute.rule" to name the lines. This makes it quick to
     | specify a specific custom language line for a given attribute rule.
     |
     */
 
-    'custom' => [
+    'custom'               => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
@@ -108,11 +110,10 @@ return [
     |
     | The following language lines are used to swap attribute place-holders
     | with something more reader friendly such as E-Mail Address instead
-    | of 'email'. This simply helps us make messages a little cleaner.
+    | of "email". This simply helps us make messages a little cleaner.
     |
     */
 
-    'attributes' => [
-    ],
+    'attributes' => [],
 
 ];
