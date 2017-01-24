@@ -46,19 +46,6 @@
         text-decoration: none;
     }
 
-    .switch {
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        margin-top: 5px;
-        text-indent: -9999px;
-        background: no-repeat url(../../../img/status.gif);
-    }
-
-    .switch.offline {
-        background-position: 0 -6px;
-    }
-
     .container-doc {
         display: table;
         font-size: 11px;
