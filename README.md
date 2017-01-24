@@ -266,12 +266,6 @@ php artisan typicms:database
 
 This command is triggered by ```typicms:install```
 
-### Clean the directory public/html
-
-```
-php artisan clear-html
-```
-
 ### Publish a module
 
 If you want to modify a module, for example add some fields or a relation, you can not do it easily because each module is in vendor directory.
