@@ -34,7 +34,7 @@ CKEDITOR.editorConfig = function( config ) {
     config.removePlugins = 'image';
 
     config.height = 500;
-    config.contentsCss = ['/css/public.css', '/components/ckeditor/css/content.css'];
+    config.contentsCss = ['/css/public.css', '/components/ckeditor/custom.css'];
     config.allowedContent = true;
 
     // codemirror
