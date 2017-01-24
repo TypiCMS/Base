@@ -12682,9 +12682,9 @@ if (typeof jQuery === 'undefined') {
 /***/ }),
 
 /***/ 2:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {// ==================================================
+// ==================================================
 // fancyBox v3.0.4
 //
 // Licensed GPLv3 for open source use
@@ -15249,7 +15249,7 @@ if (typeof jQuery === 'undefined') {
 
         $(document).on('click.fb-start', '[data-fancybox]', _run);
 
-    }(window, document, __webpack_provided_window_dot_jQuery));
+    }(window, document, window.jQuery));
 
 // ==========================================================================
 //
@@ -15454,7 +15454,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(__webpack_provided_window_dot_jQuery));
+}(window.jQuery));
 
 // ==========================================================================
 //
@@ -16122,7 +16122,7 @@ if (typeof jQuery === 'undefined') {
 	});
 
 
-}(window, document, __webpack_provided_window_dot_jQuery));
+}(window, document, window.jQuery));
 
 // ==========================================================================
 //
@@ -16252,7 +16252,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, __webpack_provided_window_dot_jQuery));
+}(document, window.jQuery));
 
 // ==========================================================================
 //
@@ -16380,7 +16380,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, __webpack_provided_window_dot_jQuery));
+}(document, window.jQuery));
 
 // ==========================================================================
 //
@@ -16616,9 +16616,8 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, __webpack_provided_window_dot_jQuery));
+}(document, window.jQuery));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
@@ -16657,7 +16656,7 @@ if (typeof jQuery === 'undefined') {
 /***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery, __webpack_provided_window_dot_jQuery) {/**
+/* WEBPACK VAR INJECTION */(function(jQuery) {/**
  * Swiper 3.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
@@ -16949,7 +16948,7 @@ if (typeof jQuery === 'undefined') {
         }
         if (typeof $ === 'undefined') {
             if (typeof Dom7 === 'undefined') {
-                $ = window.Dom7 || window.Zepto || __webpack_provided_window_dot_jQuery;
+                $ = window.Dom7 || window.Zepto || window.jQuery;
             }
             else {
                 $ = Dom7;
@@ -21899,7 +21898,7 @@ if (typeof jQuery === 'undefined') {
     // Required DOM Plugins
     var domLib;
     if (typeof Dom7 === 'undefined') {
-    	domLib = window.Dom7 || window.Zepto || __webpack_provided_window_dot_jQuery;
+    	domLib = window.Dom7 || window.Zepto || window.jQuery;
     }
     else {
     	domLib = Dom7;
@@ -21991,7 +21990,7 @@ else if (typeof define === 'function' && define.amd) {
 }
 //# sourceMappingURL=maps/swiper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
@@ -22024,10 +22023,10 @@ webpackContext.id = 48;
 /***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
+/**
  * jQuery
  */
-window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(0);
+window.$ = window.jQuery = __webpack_require__(0);
 
 /**
  * Bootstrap
@@ -22051,7 +22050,6 @@ var req = __webpack_require__(48);
 req.keys().forEach(function (key) {
   req(key);
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 

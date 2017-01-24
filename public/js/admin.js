@@ -12679,9 +12679,9 @@ if (typeof jQuery === 'undefined') {
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {// ==================================================
+// ==================================================
 // fancyBox v3.0.4
 //
 // Licensed GPLv3 for open source use
@@ -15246,7 +15246,7 @@ if (typeof jQuery === 'undefined') {
 
         $(document).on('click.fb-start', '[data-fancybox]', _run);
 
-    }(window, document, __webpack_provided_window_dot_jQuery));
+    }(window, document, window.jQuery));
 
 // ==========================================================================
 //
@@ -15451,7 +15451,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(__webpack_provided_window_dot_jQuery));
+}(window.jQuery));
 
 // ==========================================================================
 //
@@ -16119,7 +16119,7 @@ if (typeof jQuery === 'undefined') {
 	});
 
 
-}(window, document, __webpack_provided_window_dot_jQuery));
+}(window, document, window.jQuery));
 
 // ==========================================================================
 //
@@ -16249,7 +16249,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, __webpack_provided_window_dot_jQuery));
+}(document, window.jQuery));
 
 // ==========================================================================
 //
@@ -16377,7 +16377,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, __webpack_provided_window_dot_jQuery));
+}(document, window.jQuery));
 
 // ==========================================================================
 //
@@ -16613,9 +16613,8 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, __webpack_provided_window_dot_jQuery));
+}(document, window.jQuery));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 3 */
@@ -16649,10 +16648,10 @@ module.exports = function(module) {
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
+/**
  * jQuery
  */
-window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(0);
+window.$ = window.jQuery = __webpack_require__(0);
 
 /**
  * Bootstrap
@@ -16698,7 +16697,6 @@ var req = __webpack_require__(47);
 req.keys().forEach(function (key) {
   req(key);
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 5 */,
@@ -19961,9 +19959,9 @@ module.exports = 'ui.tree';
 
 /***/ }),
 /* 14 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
+/**
  * @license AngularJS v1.6.1
  * (c) 2010-2016 Google, Inc. http://angularjs.org
  * License: MIT
@@ -21887,7 +21885,7 @@ function bindJQuery() {
 
   // bind to jQuery if present;
   var jqName = jq();
-  jQuery = isUndefined(jqName) ? __webpack_provided_window_dot_jQuery :   // use jQuery (if present)
+  jQuery = isUndefined(jqName) ? window.jQuery :   // use jQuery (if present)
            !jqName             ? undefined     :   // use jqLite
                                  window[jqName];   // use jQuery specified by `ngJq`
 
@@ -52945,7 +52943,6 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 15 */
@@ -52959,7 +52956,7 @@ module.exports = angular;
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($, __webpack_provided_window_dot_jQuery) {function enableTableCheckboxes() {
+/* WEBPACK VAR INJECTION */(function($) {function enableTableCheckboxes() {
 	// Checkboxes autocochées pour la table des rôles.
 	// la table doit comporter thead et tbody et les cellules de thead doivent être des th
 	var generate = function generate(table, direction) {
@@ -53006,8 +53003,8 @@ module.exports = angular;
 
 		enableTableCheckboxes();
 	});
-}(__webpack_provided_window_dot_jQuery || window.ender);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
+}(window.jQuery || window.ender);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 17 */
