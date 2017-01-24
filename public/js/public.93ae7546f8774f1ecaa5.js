@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 49);
+/******/ 	return __webpack_require__(__webpack_require__.s = 51);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -12682,9 +12682,9 @@ if (typeof jQuery === 'undefined') {
 /***/ }),
 
 /***/ 2:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// ==================================================
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {// ==================================================
 // fancyBox v3.0.4
 //
 // Licensed GPLv3 for open source use
@@ -15249,7 +15249,7 @@ if (typeof jQuery === 'undefined') {
 
         $(document).on('click.fb-start', '[data-fancybox]', _run);
 
-    }(window, document, window.jQuery));
+    }(window, document, __webpack_provided_window_dot_jQuery));
 
 // ==========================================================================
 //
@@ -15454,7 +15454,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(window.jQuery));
+}(__webpack_provided_window_dot_jQuery));
 
 // ==========================================================================
 //
@@ -16122,7 +16122,7 @@ if (typeof jQuery === 'undefined') {
 	});
 
 
-}(window, document, window.jQuery));
+}(window, document, __webpack_provided_window_dot_jQuery));
 
 // ==========================================================================
 //
@@ -16252,7 +16252,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, window.jQuery));
+}(document, __webpack_provided_window_dot_jQuery));
 
 // ==========================================================================
 //
@@ -16380,7 +16380,7 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, window.jQuery));
+}(document, __webpack_provided_window_dot_jQuery));
 
 // ==========================================================================
 //
@@ -16616,12 +16616,13 @@ if (typeof jQuery === 'undefined') {
 
 	});
 
-}(document, window.jQuery));
+}(document, __webpack_provided_window_dot_jQuery));
 
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 
-/***/ 25:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(function () {
@@ -16634,7 +16635,7 @@ if (typeof jQuery === 'undefined') {
 
 /***/ }),
 
-/***/ 26:
+/***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$('.smooth-scroll').on('click', function (e) {
@@ -16653,10 +16654,10 @@ if (typeof jQuery === 'undefined') {
 
 /***/ }),
 
-/***/ 44:
+/***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/**
+/* WEBPACK VAR INJECTION */(function(jQuery, __webpack_provided_window_dot_jQuery) {/**
  * Swiper 3.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
@@ -16948,7 +16949,7 @@ if (typeof jQuery === 'undefined') {
         }
         if (typeof $ === 'undefined') {
             if (typeof Dom7 === 'undefined') {
-                $ = window.Dom7 || window.Zepto || window.jQuery;
+                $ = window.Dom7 || window.Zepto || __webpack_provided_window_dot_jQuery;
             }
             else {
                 $ = Dom7;
@@ -21898,7 +21899,7 @@ if (typeof jQuery === 'undefined') {
     // Required DOM Plugins
     var domLib;
     if (typeof Dom7 === 'undefined') {
-    	domLib = window.Dom7 || window.Zepto || window.jQuery;
+    	domLib = window.Dom7 || window.Zepto || __webpack_provided_window_dot_jQuery;
     }
     else {
     	domLib = Dom7;
@@ -21990,16 +21991,16 @@ else if (typeof define === 'function' && define.amd) {
 }
 //# sourceMappingURL=maps/swiper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
 
 /***/ }),
 
-/***/ 46:
+/***/ 48:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./offcanvas.js": 25,
-	"./smooth-scroll.js": 26
+	"./offcanvas.js": 27,
+	"./smooth-scroll.js": 28
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -22015,15 +22016,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 46;
-
-
-/***/ }),
-
-/***/ 49:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(5);
+webpackContext.id = 48;
 
 
 /***/ }),
@@ -22031,14 +22024,42 @@ module.exports = __webpack_require__(5);
 /***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
-window.$ = window.jQuery = __webpack_require__(0);
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
+ * jQuery
+ */
+window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(0);
+
+/**
+ * Bootstrap
+ */
 __webpack_require__(1);
-__webpack_require__(44);
+
+/**
+ * Fancybox
+ */
 __webpack_require__(2);
-var req = __webpack_require__(46);
+
+/**
+ * Swiper
+ */
+__webpack_require__(46);
+
+/**
+ * All files in /reources/assets/js/public
+ */
+var req = __webpack_require__(48);
 req.keys().forEach(function (key) {
-    req(key);
+  req(key);
 });
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+
+/***/ 51:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(5);
+
 
 /***/ })
 
