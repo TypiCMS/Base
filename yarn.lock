@@ -34,7 +34,7 @@ ajv@^4.7.0:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
-alertify.js@1.0.12:
+alertify.js@^1.0.12:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/alertify.js/-/alertify.js-1.0.12.tgz#8c1f15423dbcbb07f0368f281cf79f6497e3cfea"
   dependencies:
@@ -56,23 +56,23 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-angular-i18n@1.6.1:
+angular-i18n@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/angular-i18n/-/angular-i18n-1.6.1.tgz#ce683ab70fbf484fa959f15eb2c4ee6c272086a3"
 
-angular-resource@1.6.1:
+angular-resource@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.6.1.tgz#9eeea8c59238439ba15ad31be0eb70f2442f77a1"
 
-angular-smart-table@2.1.8:
+angular-smart-table@^2.1.8:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/angular-smart-table/-/angular-smart-table-2.1.8.tgz#521f32a465e7334e073c5c1ae093c59c2b8fca50"
 
-angular-ui-tree@2.22.2:
+angular-ui-tree@^2.22.2:
   version "2.22.2"
   resolved "https://registry.yarnpkg.com/angular-ui-tree/-/angular-ui-tree-2.22.2.tgz#42c4dd582d10c191bbcda6693d7d71c094af155e"
 
-angular@1.6.1:
+angular@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.1.tgz#a7b6d763a74c157325692619e97257e69d9b6a27"
 
@@ -914,7 +914,7 @@ cipher-base@^1.0.0, cipher-base@^1.0.1:
   dependencies:
     inherits "^2.0.1"
 
-ckeditor@4.6.2:
+ckeditor@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/ckeditor/-/ckeditor-4.6.2.tgz#b1552b7a2f9537e165d7afd2d29d3d4959ff6bad"
 
@@ -1461,7 +1461,7 @@ dot-prop@^3.0.0:
   dependencies:
     is-obj "^1.0.0"
 
-dropzone@4.3.0:
+dropzone@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/dropzone/-/dropzone-4.3.0.tgz#48b0b8f2ad092872e4b535b672a7c3f1a1d67c91"
 
@@ -1754,7 +1754,7 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-font-awesome@4.7.0:
+font-awesome@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
@@ -4026,7 +4026,7 @@ select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
 
-selectize@0.12.4:
+selectize@^0.12.4:
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/selectize/-/selectize-0.12.4.tgz#50c697526b609dea11da153cf7252b98948f4c0e"
   dependencies:
@@ -4512,7 +4512,7 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
-swiper@3.4.1:
+swiper@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/swiper/-/swiper-3.4.1.tgz#05f2e72c4fdc8f618e3570f5583696c54641d3a2"
 
@@ -4946,13 +4946,9 @@ window-size@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.2.0.tgz#b4315bb4214a3d7058ebeee892e13fa24d98b075"
 
-wordwrap@0.0.2:
+wordwrap@0.0.2, wordwrap@~0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
-
-wordwrap@~0.0.2:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
 
 wrap-ansi@^2.0.0:
   version "2.1.0"

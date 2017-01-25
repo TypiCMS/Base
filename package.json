@@ -7,21 +7,21 @@
     "production": "node_modules/cross-env/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "alertify.js": "1.0.12",
-    "angular": "1.6.1",
-    "angular-i18n": "1.6.1",
-    "angular-resource": "1.6.1",
-    "angular-smart-table": "2.1.8",
-    "angular-ui-tree": "2.22.2",
+    "alertify.js": "^1.0.12",
+    "angular": "^1.6.1",
+    "angular-i18n": "^1.6.1",
+    "angular-resource": "^1.6.1",
+    "angular-smart-table": "^2.1.8",
+    "angular-ui-tree": "^2.22.2",
     "bootstrap-sass": "^3.3.7",
-    "ckeditor": "4.6.2",
-    "dropzone": "4.3.0",
+    "ckeditor": "^4.6.2",
+    "dropzone": "^4.3.0",
     "fancybox": "git://github.com/fancyapps/fancyBox.git#2b13a9c087db8d49aaec608beed49f429324d72d",
-    "font-awesome": "4.7.0",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.1.0",
     "laravel-mix": "0.5.1",
     "lodash": "^4.16.2",
-    "selectize": "0.12.4",
-    "swiper": "3.4.1"
+    "selectize": "^0.12.4",
+    "swiper": "^3.4.1"
   }
 }
