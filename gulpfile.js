@@ -148,7 +148,8 @@ gulp.task('ckeditor', function () {
         'specialchar',
         'table',
         'div',
-        'widget'
+        'widget',
+        'widgetselection'
     ];
     for (var i = 0; i < plugins.length; i++) {
         gulp.src(['node_modules/ckeditor/plugins/' + plugins[i] + '/**/*'])
