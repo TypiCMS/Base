@@ -13,14 +13,6 @@ CKEDITOR.editorConfig = function( config ) {
         { name: 'tools', items: [ 'Maximize', 'ShowBlocks', 'Source' ] },
     ];
 
-    // Quicktable config
-    config.qtRows = 20, // Count of rows
-    config.qtColumns = 20, // Count of columns
-    config.qtBorder = '0', // Border of inserted table
-    config.qtWidth = '100%', // Width of inserted table
-    config.qtCellPadding = '0', // Cell padding table
-    config.qtCellSpacing = '0', // Cell spacing table
-
     // Remove some buttons provided by the standard plugins, which are
     // not needed in the Standard(s) toolbar.
     config.removeButtons = 'Underline';
@@ -30,7 +22,7 @@ CKEDITOR.editorConfig = function( config ) {
     // Set the most common block elements.
     config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre';
 
-    config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks,div';
+    config.extraPlugins = 'image2,codemirror,clipboard,panelbutton,oembed,justify,showblocks,div';
     config.removePlugins = 'image';
 
     config.height = 500;
