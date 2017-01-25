@@ -45,11 +45,13 @@ var plugins = [
     'magicline',
     'panelbutton',
     'pastefromword',
+    'scayt',
     'showblocks',
     'specialchar',
     'table',
     'widget',
-    'widgetselection'
+    'widgetselection',
+    'wsc',
 ];
 plugins.forEach(function (plugin) {
     mix.copy('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin);
