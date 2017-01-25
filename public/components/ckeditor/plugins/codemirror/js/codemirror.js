@@ -976,12 +976,12 @@ function moveLogically(line, start, dir, byUnit) {
 var bidiOrdering = (function() {
   // Character types for codepoints 0 to 0xff
   var lowTypes = "bbbbbbbbbtstwsbbbbbbbbbbbbbbssstwNN%%%NNNNNN,N,N1111111111NNNNNNNLLLLLLLLLLLLLLLLLLLLLLLLLLNNNNNNLLLLLLLLLLLLLLLLLLLLLLLLLLNNNNbbbbbbsbbbbbbbbbbbbbbbbbbbbbbbbbb,N%%%%NNNNLNNNNN%%11NLNNN1LNNNNNLLLLLLLLLLLLLLLLLLLLLLLNLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLN"
-  // Character types for codepoints 0x600 to 0x6f9
-  var arabicTypes = "nnnnnnNNr%%r,rNNmmmmmmmmmmmrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrmmmmmmmmmmmmmmmmmmmmmnnnnnnnnnn%nnrrrmrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrmmmmmmmnNmmmmmmrrmmNmmmmrr1111111111"
+  // Character types for codepoints 0x600 to 0x6ff
+  var arabicTypes = "rrrrrrrrrrrr,rNNmmmmmmrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrmmmmmmmmmmmmmmrrrrrrrnnnnnnnnnn%nnrrrmrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrmmmmmmmmmmmmmmmmmmmNmmmm"
   function charType(code) {
     if (code <= 0xf7) { return lowTypes.charAt(code) }
     else if (0x590 <= code && code <= 0x5f4) { return "R" }
-    else if (0x600 <= code && code <= 0x6f9) { return arabicTypes.charAt(code - 0x600) }
+    else if (0x600 <= code && code <= 0x6ed) { return arabicTypes.charAt(code - 0x600) }
     else if (0x6ee <= code && code <= 0x8ac) { return "r" }
     else if (0x2000 <= code && code <= 0x200b) { return "w" }
     else if (code == 0x200c) { return "b" }
@@ -3289,7 +3289,7 @@ function measureForScrollbars(cm) {
   }
 }
 
-var NativeScrollbars = function NativeScrollbars(place, scroll, cm) {
+function NativeScrollbars(place, scroll, cm) {
   this.cm = cm
   var vert = this.vert = elt("div", [elt("div", null, null, "min-width: 1px")], "CodeMirror-vscrollbar")
   var horiz = this.horiz = elt("div", [elt("div", null, null, "height: 100%; min-height: 1px")], "CodeMirror-hscrollbar")
@@ -3305,92 +3305,91 @@ var NativeScrollbars = function NativeScrollbars(place, scroll, cm) {
   this.checkedZeroWidth = false
   // Need to set a minimum width to see the scrollbar on IE7 (but must not set it on IE8).
   if (ie && ie_version < 8) { this.horiz.style.minHeight = this.vert.style.minWidth = "18px" }
-};
+}
 
-NativeScrollbars.prototype.update = function update (measure) {
-  var needsH = measure.scrollWidth > measure.clientWidth + 1
-  var needsV = measure.scrollHeight > measure.clientHeight + 1
-  var sWidth = measure.nativeBarWidth
+NativeScrollbars.prototype = copyObj({
+  update: function(measure) {
+    var needsH = measure.scrollWidth > measure.clientWidth + 1
+    var needsV = measure.scrollHeight > measure.clientHeight + 1
+    var sWidth = measure.nativeBarWidth
 
-  if (needsV) {
-    this.vert.style.display = "block"
-    this.vert.style.bottom = needsH ? sWidth + "px" : "0"
-    var totalHeight = measure.viewHeight - (needsH ? sWidth : 0)
-    // A bug in IE8 can cause this value to be negative, so guard it.
-    this.vert.firstChild.style.height =
-      Math.max(0, measure.scrollHeight - measure.clientHeight + totalHeight) + "px"
-  } else {
-    this.vert.style.display = ""
-    this.vert.firstChild.style.height = "0"
+    if (needsV) {
+      this.vert.style.display = "block"
+      this.vert.style.bottom = needsH ? sWidth + "px" : "0"
+      var totalHeight = measure.viewHeight - (needsH ? sWidth : 0)
+      // A bug in IE8 can cause this value to be negative, so guard it.
+      this.vert.firstChild.style.height =
+        Math.max(0, measure.scrollHeight - measure.clientHeight + totalHeight) + "px"
+    } else {
+      this.vert.style.display = ""
+      this.vert.firstChild.style.height = "0"
+    }
+
+    if (needsH) {
+      this.horiz.style.display = "block"
+      this.horiz.style.right = needsV ? sWidth + "px" : "0"
+      this.horiz.style.left = measure.barLeft + "px"
+      var totalWidth = measure.viewWidth - measure.barLeft - (needsV ? sWidth : 0)
+      this.horiz.firstChild.style.width =
+        (measure.scrollWidth - measure.clientWidth + totalWidth) + "px"
+    } else {
+      this.horiz.style.display = ""
+      this.horiz.firstChild.style.width = "0"
+    }
+
+    if (!this.checkedZeroWidth && measure.clientHeight > 0) {
+      if (sWidth == 0) { this.zeroWidthHack() }
+      this.checkedZeroWidth = true
+    }
+
+    return {right: needsV ? sWidth : 0, bottom: needsH ? sWidth : 0}
+  },
+  setScrollLeft: function(pos) {
+    if (this.horiz.scrollLeft != pos) { this.horiz.scrollLeft = pos }
+    if (this.disableHoriz) { this.enableZeroWidthBar(this.horiz, this.disableHoriz) }
+  },
+  setScrollTop: function(pos) {
+    if (this.vert.scrollTop != pos) { this.vert.scrollTop = pos }
+    if (this.disableVert) { this.enableZeroWidthBar(this.vert, this.disableVert) }
+  },
+  zeroWidthHack: function() {
+    var w = mac && !mac_geMountainLion ? "12px" : "18px"
+    this.horiz.style.height = this.vert.style.width = w
+    this.horiz.style.pointerEvents = this.vert.style.pointerEvents = "none"
+    this.disableHoriz = new Delayed
+    this.disableVert = new Delayed
+  },
+  enableZeroWidthBar: function(bar, delay) {
+    bar.style.pointerEvents = "auto"
+    function maybeDisable() {
+      // To find out whether the scrollbar is still visible, we
+      // check whether the element under the pixel in the bottom
+      // left corner of the scrollbar box is the scrollbar box
+      // itself (when the bar is still visible) or its filler child
+      // (when the bar is hidden). If it is still visible, we keep
+      // it enabled, if it's hidden, we disable pointer events.
+      var box = bar.getBoundingClientRect()
+      var elt$$1 = document.elementFromPoint(box.left + 1, box.bottom - 1)
+      if (elt$$1 != bar) { bar.style.pointerEvents = "none" }
+      else { delay.set(1000, maybeDisable) }
+    }
+    delay.set(1000, maybeDisable)
+  },
+  clear: function() {
+    var parent = this.horiz.parentNode
+    parent.removeChild(this.horiz)
+    parent.removeChild(this.vert)
   }
+}, NativeScrollbars.prototype)
 
-  if (needsH) {
-    this.horiz.style.display = "block"
-    this.horiz.style.right = needsV ? sWidth + "px" : "0"
-    this.horiz.style.left = measure.barLeft + "px"
-    var totalWidth = measure.viewWidth - measure.barLeft - (needsV ? sWidth : 0)
-    this.horiz.firstChild.style.width =
-      (measure.scrollWidth - measure.clientWidth + totalWidth) + "px"
-  } else {
-    this.horiz.style.display = ""
-    this.horiz.firstChild.style.width = "0"
-  }
+function NullScrollbars() {}
 
-  if (!this.checkedZeroWidth && measure.clientHeight > 0) {
-    if (sWidth == 0) { this.zeroWidthHack() }
-    this.checkedZeroWidth = true
-  }
-
-  return {right: needsV ? sWidth : 0, bottom: needsH ? sWidth : 0}
-};
-
-NativeScrollbars.prototype.setScrollLeft = function setScrollLeft$1 (pos) {
-  if (this.horiz.scrollLeft != pos) { this.horiz.scrollLeft = pos }
-  if (this.disableHoriz) { this.enableZeroWidthBar(this.horiz, this.disableHoriz) }
-};
-
-NativeScrollbars.prototype.setScrollTop = function setScrollTop$1 (pos) {
-  if (this.vert.scrollTop != pos) { this.vert.scrollTop = pos }
-  if (this.disableVert) { this.enableZeroWidthBar(this.vert, this.disableVert) }
-};
-
-NativeScrollbars.prototype.zeroWidthHack = function zeroWidthHack () {
-  var w = mac && !mac_geMountainLion ? "12px" : "18px"
-  this.horiz.style.height = this.vert.style.width = w
-  this.horiz.style.pointerEvents = this.vert.style.pointerEvents = "none"
-  this.disableHoriz = new Delayed
-  this.disableVert = new Delayed
-};
-
-NativeScrollbars.prototype.enableZeroWidthBar = function enableZeroWidthBar (bar, delay) {
-  bar.style.pointerEvents = "auto"
-  function maybeDisable() {
-    // To find out whether the scrollbar is still visible, we
-    // check whether the element under the pixel in the bottom
-    // left corner of the scrollbar box is the scrollbar box
-    // itself (when the bar is still visible) or its filler child
-    // (when the bar is hidden). If it is still visible, we keep
-    // it enabled, if it's hidden, we disable pointer events.
-    var box = bar.getBoundingClientRect()
-    var elt$$1 = document.elementFromPoint(box.left + 1, box.bottom - 1)
-    if (elt$$1 != bar) { bar.style.pointerEvents = "none" }
-    else { delay.set(1000, maybeDisable) }
-  }
-  delay.set(1000, maybeDisable)
-};
-
-NativeScrollbars.prototype.clear = function clear () {
-  var parent = this.horiz.parentNode
-  parent.removeChild(this.horiz)
-  parent.removeChild(this.vert)
-};
-
-var NullScrollbars = function NullScrollbars () {};
-
-NullScrollbars.prototype.update = function update () { return {bottom: 0, right: 0} };
-NullScrollbars.prototype.setScrollLeft = function setScrollLeft$2 () {};
-NullScrollbars.prototype.setScrollTop = function setScrollTop$2 () {};
-NullScrollbars.prototype.clear = function clear () {};
+NullScrollbars.prototype = copyObj({
+  update: function() { return {bottom: 0, right: 0} },
+  setScrollLeft: function() {},
+  setScrollTop: function() {},
+  clear: function() {}
+}, NullScrollbars.prototype)
 
 function updateScrollbars(cm, measure) {
   if (!measure) { measure = measureForScrollbars(cm) }
@@ -3969,7 +3968,7 @@ function highlightWorker(cm) {
 
 // DISPLAY DRAWING
 
-var DisplayUpdate = function DisplayUpdate(cm, viewport, force) {
+function DisplayUpdate(cm, viewport, force) {
   var display = cm.display
 
   this.viewport = viewport
@@ -3982,18 +3981,18 @@ var DisplayUpdate = function DisplayUpdate(cm, viewport, force) {
   this.force = force
   this.dims = getDimensions(cm)
   this.events = []
-};
+}
 
-DisplayUpdate.prototype.signal = function signal$1 (emitter, type) {
+DisplayUpdate.prototype.signal = function(emitter, type) {
   if (hasHandler(emitter, type))
     { this.events.push(arguments) }
-};
-DisplayUpdate.prototype.finish = function finish () {
-    var this$1 = this;
+}
+DisplayUpdate.prototype.finish = function() {
+  var this$1 = this;
 
   for (var i = 0; i < this.events.length; i++)
     { signal.apply(null, this$1.events[i]) }
-};
+}
 
 function maybeClipScrollbars(cm) {
   var display = cm.display
@@ -6753,7 +6752,7 @@ function onKeyUp(e) {
   signalDOMEvent(this, e)
 }
 
-function onKeyPress$1(e) {
+function onKeyPress(e) {
   var cm = this
   if (eventInWidget(cm.display, e) || signalDOMEvent(cm, e) || e.ctrlKey && !e.altKey || mac && e.metaKey) { return }
   var keyCode = e.keyCode, charCode = e.charCode
@@ -6807,7 +6806,7 @@ function onMouseDown(e) {
     e_preventDefault(e)
     break
   case 3:
-    if (captureRightClick) { onContextMenu$1(cm, e) }
+    if (captureRightClick) { onContextMenu(cm, e) }
     else { delayBlurEvent(cm) }
     break
   }
@@ -7052,7 +7051,7 @@ function clickInGutter(cm, e) {
 // To make the context menu work, we need to briefly unhide the
 // textarea (making it as unobtrusive as possible) to let the
 // right-click take effect on it.
-function onContextMenu$1(cm, e) {
+function onContextMenu(cm, e) {
   if (eventInWidget(cm.display, e) || contextMenuInGutter(cm, e)) { return }
   if (signalDOMEvent(cm, e, "contextmenu")) { return }
   cm.display.input.onContextMenu(e)
@@ -7120,7 +7119,7 @@ function defineOptions(CodeMirror) {
     for (var i = newBreaks.length - 1; i >= 0; i--)
       { replaceRange(cm.doc, val, newBreaks[i], Pos(newBreaks[i].line, newBreaks[i].ch + val.length)) }
   })
-  option("specialChars", /[\u0000-\u001f\u007f\u00ad\u061c\u200b-\u200f\u2028\u2029\ufeff]/g, function (cm, val, old) {
+  option("specialChars", /[\u0000-\u001f\u007f\u00ad\u200b-\u200f\u2028\u2029\ufeff]/g, function (cm, val, old) {
     cm.state.specialChars = new RegExp(val.source + (val.test("\t") ? "" : "|\t"), "g")
     if (old != Init) { cm.refresh() }
   })
@@ -7210,7 +7209,7 @@ function defineOptions(CodeMirror) {
 function guttersChanged(cm) {
   updateGutters(cm)
   regChange(cm)
-  alignHorizontally(cm)
+  setTimeout(function () { return alignHorizontally(cm); }, 20)
 }
 
 function dragDropChanged(cm, value, old) {
@@ -7265,6 +7264,7 @@ function CodeMirror$1(place, options) {
   themeChanged(this)
   if (options.lineWrapping)
     { this.display.wrapper.className += " CodeMirror-wrap" }
+  if (options.autofocus && !mobile) { display.input.focus() }
   initScrollbars(this)
 
   this.state = {
@@ -7282,8 +7282,6 @@ function CodeMirror$1(place, options) {
     keySeq: null,  // Unfinished key sequence
     specialChars: null
   }
-
-  if (options.autofocus && !mobile) { display.input.focus() }
 
   // Override magic textarea content restore that IE sometimes does
   // on our hidden textarea on reload
@@ -7338,7 +7336,7 @@ function registerEventHandlers(cm) {
   // Some browsers fire contextmenu *after* opening the menu, at
   // which point we can't mess with it anymore. Context menu is
   // handled in onMouseDown for these browsers.
-  if (!captureRightClick) { on(d.scroller, "contextmenu", function (e) { return onContextMenu$1(cm, e); }) }
+  if (!captureRightClick) { on(d.scroller, "contextmenu", function (e) { return onContextMenu(cm, e); }) }
 
   // Used to suppress mouse event handling when a touch happens
   var touchFinished, prevTouch = {end: 0}
@@ -7422,7 +7420,7 @@ function registerEventHandlers(cm) {
   var inp = d.input.getField()
   on(inp, "keyup", function (e) { return onKeyUp.call(cm, e); })
   on(inp, "keydown", operation(cm, onKeyDown))
-  on(inp, "keypress", operation(cm, onKeyPress$1))
+  on(inp, "keypress", operation(cm, onKeyPress))
   on(inp, "focus", function (e) { return onFocus(cm, e); })
   on(inp, "blur", function (e) { return onBlur(cm, e); })
 }
@@ -7640,7 +7638,6 @@ var addEditorMethods = function(CodeMirror) {
       options[option] = value
       if (optionHandlers.hasOwnProperty(option))
         { operation(this, optionHandlers[option])(this, value, old) }
-      signal(this, "optionChange", this, option)
     },
 
     getOption: function(option) {return this.options[option]},
@@ -7857,7 +7854,7 @@ var addEditorMethods = function(CodeMirror) {
     },
 
     triggerOnKeyDown: methodOp(onKeyDown),
-    triggerOnKeyPress: methodOp(onKeyPress$1),
+    triggerOnKeyPress: methodOp(onKeyPress),
     triggerOnKeyUp: onKeyUp,
 
     execCommand: function(cmd) {
@@ -8148,333 +8145,331 @@ function findPosV(cm, pos, dir, unit) {
 
 // CONTENTEDITABLE INPUT STYLE
 
-var ContentEditableInput = function ContentEditableInput(cm) {
+function ContentEditableInput(cm) {
   this.cm = cm
   this.lastAnchorNode = this.lastAnchorOffset = this.lastFocusNode = this.lastFocusOffset = null
   this.polling = new Delayed()
   this.composing = null
   this.gracePeriod = false
   this.readDOMTimeout = null
-};
+}
 
-ContentEditableInput.prototype.init = function init (display) {
+ContentEditableInput.prototype = copyObj({
+  init: function(display) {
     var this$1 = this;
 
-  var input = this, cm = input.cm
-  var div = input.div = display.lineDiv
-  disableBrowserMagic(div, cm.options.spellcheck)
+    var input = this, cm = input.cm
+    var div = input.div = display.lineDiv
+    disableBrowserMagic(div, cm.options.spellcheck)
 
-  on(div, "paste", function (e) {
-    if (signalDOMEvent(cm, e) || handlePaste(e, cm)) { return }
-    // IE doesn't fire input events, so we schedule a read for the pasted content in this way
-    if (ie_version <= 11) { setTimeout(operation(cm, function () {
-      if (!input.pollContent()) { regChange(cm) }
-    }), 20) }
-  })
+    on(div, "paste", function (e) {
+      if (signalDOMEvent(cm, e) || handlePaste(e, cm)) { return }
+      // IE doesn't fire input events, so we schedule a read for the pasted content in this way
+      if (ie_version <= 11) { setTimeout(operation(cm, function () {
+        if (!input.pollContent()) { regChange(cm) }
+      }), 20) }
+    })
 
-  on(div, "compositionstart", function (e) {
-    this$1.composing = {data: e.data, done: false}
-  })
-  on(div, "compositionupdate", function (e) {
-    if (!this$1.composing) { this$1.composing = {data: e.data, done: false} }
-  })
-  on(div, "compositionend", function (e) {
-    if (this$1.composing) {
-      if (e.data != this$1.composing.data) { this$1.readFromDOMSoon() }
-      this$1.composing.done = true
-    }
-  })
-
-  on(div, "touchstart", function () { return input.forceCompositionEnd(); })
-
-  on(div, "input", function () {
-    if (!this$1.composing) { this$1.readFromDOMSoon() }
-  })
-
-  function onCopyCut(e) {
-    if (signalDOMEvent(cm, e)) { return }
-    if (cm.somethingSelected()) {
-      setLastCopied({lineWise: false, text: cm.getSelections()})
-      if (e.type == "cut") { cm.replaceSelection("", null, "cut") }
-    } else if (!cm.options.lineWiseCopyCut) {
-      return
-    } else {
-      var ranges = copyableRanges(cm)
-      setLastCopied({lineWise: true, text: ranges.text})
-      if (e.type == "cut") {
-        cm.operation(function () {
-          cm.setSelections(ranges.ranges, 0, sel_dontScroll)
-          cm.replaceSelection("", null, "cut")
-        })
+    on(div, "compositionstart", function (e) {
+      this$1.composing = {data: e.data}
+    })
+    on(div, "compositionupdate", function (e) {
+      if (!this$1.composing) { this$1.composing = {data: e.data} }
+    })
+    on(div, "compositionend", function (e) {
+      if (this$1.composing) {
+        if (e.data != this$1.composing.data) { this$1.readFromDOMSoon() }
+        this$1.composing = null
       }
-    }
-    if (e.clipboardData) {
-      e.clipboardData.clearData()
-      var content = lastCopied.text.join("\n")
-      // iOS exposes the clipboard API, but seems to discard content inserted into it
-      e.clipboardData.setData("Text", content)
-      if (e.clipboardData.getData("Text") == content) {
-        e.preventDefault()
+    })
+
+    on(div, "touchstart", function () { return input.forceCompositionEnd(); })
+
+    on(div, "input", function () {
+      if (!this$1.composing) { this$1.readFromDOMSoon() }
+    })
+
+    function onCopyCut(e) {
+      if (signalDOMEvent(cm, e)) { return }
+      if (cm.somethingSelected()) {
+        setLastCopied({lineWise: false, text: cm.getSelections()})
+        if (e.type == "cut") { cm.replaceSelection("", null, "cut") }
+      } else if (!cm.options.lineWiseCopyCut) {
         return
+      } else {
+        var ranges = copyableRanges(cm)
+        setLastCopied({lineWise: true, text: ranges.text})
+        if (e.type == "cut") {
+          cm.operation(function () {
+            cm.setSelections(ranges.ranges, 0, sel_dontScroll)
+            cm.replaceSelection("", null, "cut")
+          })
+        }
       }
+      if (e.clipboardData) {
+        e.clipboardData.clearData()
+        var content = lastCopied.text.join("\n")
+        // iOS exposes the clipboard API, but seems to discard content inserted into it
+        e.clipboardData.setData("Text", content)
+        if (e.clipboardData.getData("Text") == content) {
+          e.preventDefault()
+          return
+        }
+      }
+      // Old-fashioned briefly-focus-a-textarea hack
+      var kludge = hiddenTextarea(), te = kludge.firstChild
+      cm.display.lineSpace.insertBefore(kludge, cm.display.lineSpace.firstChild)
+      te.value = lastCopied.text.join("\n")
+      var hadFocus = document.activeElement
+      selectInput(te)
+      setTimeout(function () {
+        cm.display.lineSpace.removeChild(kludge)
+        hadFocus.focus()
+        if (hadFocus == div) { input.showPrimarySelection() }
+      }, 50)
     }
-    // Old-fashioned briefly-focus-a-textarea hack
-    var kludge = hiddenTextarea(), te = kludge.firstChild
-    cm.display.lineSpace.insertBefore(kludge, cm.display.lineSpace.firstChild)
-    te.value = lastCopied.text.join("\n")
-    var hadFocus = document.activeElement
-    selectInput(te)
-    setTimeout(function () {
-      cm.display.lineSpace.removeChild(kludge)
-      hadFocus.focus()
-      if (hadFocus == div) { input.showPrimarySelection() }
-    }, 50)
-  }
-  on(div, "copy", onCopyCut)
-  on(div, "cut", onCopyCut)
-};
+    on(div, "copy", onCopyCut)
+    on(div, "cut", onCopyCut)
+  },
 
-ContentEditableInput.prototype.prepareSelection = function prepareSelection$1 () {
-  var result = prepareSelection(this.cm, false)
-  result.focus = this.cm.state.focused
-  return result
-};
+  prepareSelection: function() {
+    var result = prepareSelection(this.cm, false)
+    result.focus = this.cm.state.focused
+    return result
+  },
 
-ContentEditableInput.prototype.showSelection = function showSelection (info, takeFocus) {
-  if (!info || !this.cm.display.view.length) { return }
-  if (info.focus || takeFocus) { this.showPrimarySelection() }
-  this.showMultipleSelections(info)
-};
+  showSelection: function(info, takeFocus) {
+    if (!info || !this.cm.display.view.length) { return }
+    if (info.focus || takeFocus) { this.showPrimarySelection() }
+    this.showMultipleSelections(info)
+  },
 
-ContentEditableInput.prototype.showPrimarySelection = function showPrimarySelection () {
-  var sel = window.getSelection(), prim = this.cm.doc.sel.primary()
-  var curAnchor = domToPos(this.cm, sel.anchorNode, sel.anchorOffset)
-  var curFocus = domToPos(this.cm, sel.focusNode, sel.focusOffset)
-  if (curAnchor && !curAnchor.bad && curFocus && !curFocus.bad &&
-      cmp(minPos(curAnchor, curFocus), prim.from()) == 0 &&
-      cmp(maxPos(curAnchor, curFocus), prim.to()) == 0)
-    { return }
+  showPrimarySelection: function() {
+    var sel = window.getSelection(), prim = this.cm.doc.sel.primary()
+    var curAnchor = domToPos(this.cm, sel.anchorNode, sel.anchorOffset)
+    var curFocus = domToPos(this.cm, sel.focusNode, sel.focusOffset)
+    if (curAnchor && !curAnchor.bad && curFocus && !curFocus.bad &&
+        cmp(minPos(curAnchor, curFocus), prim.from()) == 0 &&
+        cmp(maxPos(curAnchor, curFocus), prim.to()) == 0)
+      { return }
 
-  var start = posToDOM(this.cm, prim.from())
-  var end = posToDOM(this.cm, prim.to())
-  if (!start && !end) { return }
+    var start = posToDOM(this.cm, prim.from())
+    var end = posToDOM(this.cm, prim.to())
+    if (!start && !end) { return }
 
-  var view = this.cm.display.view
-  var old = sel.rangeCount && sel.getRangeAt(0)
-  if (!start) {
-    start = {node: view[0].measure.map[2], offset: 0}
-  } else if (!end) { // FIXME dangerously hacky
-    var measure = view[view.length - 1].measure
-    var map$$1 = measure.maps ? measure.maps[measure.maps.length - 1] : measure.map
-    end = {node: map$$1[map$$1.length - 1], offset: map$$1[map$$1.length - 2] - map$$1[map$$1.length - 3]}
-  }
+    var view = this.cm.display.view
+    var old = sel.rangeCount && sel.getRangeAt(0)
+    if (!start) {
+      start = {node: view[0].measure.map[2], offset: 0}
+    } else if (!end) { // FIXME dangerously hacky
+      var measure = view[view.length - 1].measure
+      var map$$1 = measure.maps ? measure.maps[measure.maps.length - 1] : measure.map
+      end = {node: map$$1[map$$1.length - 1], offset: map$$1[map$$1.length - 2] - map$$1[map$$1.length - 3]}
+    }
 
-  var rng
-  try { rng = range(start.node, start.offset, end.offset, end.node) }
-  catch(e) {} // Our model of the DOM might be outdated, in which case the range we try to set can be impossible
-  if (rng) {
-    if (!gecko && this.cm.state.focused) {
-      sel.collapse(start.node, start.offset)
-      if (!rng.collapsed) {
+    var rng
+    try { rng = range(start.node, start.offset, end.offset, end.node) }
+    catch(e) {} // Our model of the DOM might be outdated, in which case the range we try to set can be impossible
+    if (rng) {
+      if (!gecko && this.cm.state.focused) {
+        sel.collapse(start.node, start.offset)
+        if (!rng.collapsed) {
+          sel.removeAllRanges()
+          sel.addRange(rng)
+        }
+      } else {
         sel.removeAllRanges()
         sel.addRange(rng)
       }
-    } else {
-      sel.removeAllRanges()
-      sel.addRange(rng)
+      if (old && sel.anchorNode == null) { sel.addRange(old) }
+      else if (gecko) { this.startGracePeriod() }
     }
-    if (old && sel.anchorNode == null) { sel.addRange(old) }
-    else if (gecko) { this.startGracePeriod() }
-  }
-  this.rememberSelection()
-};
-
-ContentEditableInput.prototype.startGracePeriod = function startGracePeriod () {
-    var this$1 = this;
-
-  clearTimeout(this.gracePeriod)
-  this.gracePeriod = setTimeout(function () {
-    this$1.gracePeriod = false
-    if (this$1.selectionChanged())
-      { this$1.cm.operation(function () { return this$1.cm.curOp.selectionChanged = true; }) }
-  }, 20)
-};
-
-ContentEditableInput.prototype.showMultipleSelections = function showMultipleSelections (info) {
-  removeChildrenAndAdd(this.cm.display.cursorDiv, info.cursors)
-  removeChildrenAndAdd(this.cm.display.selectionDiv, info.selection)
-};
-
-ContentEditableInput.prototype.rememberSelection = function rememberSelection () {
-  var sel = window.getSelection()
-  this.lastAnchorNode = sel.anchorNode; this.lastAnchorOffset = sel.anchorOffset
-  this.lastFocusNode = sel.focusNode; this.lastFocusOffset = sel.focusOffset
-};
-
-ContentEditableInput.prototype.selectionInEditor = function selectionInEditor () {
-  var sel = window.getSelection()
-  if (!sel.rangeCount) { return false }
-  var node = sel.getRangeAt(0).commonAncestorContainer
-  return contains(this.div, node)
-};
-
-ContentEditableInput.prototype.focus = function focus () {
-  if (this.cm.options.readOnly != "nocursor") {
-    if (!this.selectionInEditor())
-      { this.showSelection(this.prepareSelection(), true) }
-    this.div.focus()
-  }
-};
-ContentEditableInput.prototype.blur = function blur () { this.div.blur() };
-ContentEditableInput.prototype.getField = function getField () { return this.div };
-
-ContentEditableInput.prototype.supportsTouch = function supportsTouch () { return true };
-
-ContentEditableInput.prototype.receivedFocus = function receivedFocus () {
-  var input = this
-  if (this.selectionInEditor())
-    { this.pollSelection() }
-  else
-    { runInOp(this.cm, function () { return input.cm.curOp.selectionChanged = true; }) }
-
-  function poll() {
-    if (input.cm.state.focused) {
-      input.pollSelection()
-      input.polling.set(input.cm.options.pollInterval, poll)
-    }
-  }
-  this.polling.set(this.cm.options.pollInterval, poll)
-};
-
-ContentEditableInput.prototype.selectionChanged = function selectionChanged () {
-  var sel = window.getSelection()
-  return sel.anchorNode != this.lastAnchorNode || sel.anchorOffset != this.lastAnchorOffset ||
-    sel.focusNode != this.lastFocusNode || sel.focusOffset != this.lastFocusOffset
-};
-
-ContentEditableInput.prototype.pollSelection = function pollSelection () {
-  if (!this.composing && this.readDOMTimeout == null && !this.gracePeriod && this.selectionChanged()) {
-    var sel = window.getSelection(), cm = this.cm
     this.rememberSelection()
-    var anchor = domToPos(cm, sel.anchorNode, sel.anchorOffset)
-    var head = domToPos(cm, sel.focusNode, sel.focusOffset)
-    if (anchor && head) { runInOp(cm, function () {
-      setSelection(cm.doc, simpleSelection(anchor, head), sel_dontScroll)
-      if (anchor.bad || head.bad) { cm.curOp.selectionChanged = true }
-    }) }
-  }
-};
+  },
 
-ContentEditableInput.prototype.pollContent = function pollContent () {
-  if (this.readDOMTimeout != null) {
-    clearTimeout(this.readDOMTimeout)
-    this.readDOMTimeout = null
-  }
-
-  var cm = this.cm, display = cm.display, sel = cm.doc.sel.primary()
-  var from = sel.from(), to = sel.to()
-  if (from.ch == 0 && from.line > cm.firstLine())
-    { from = Pos(from.line - 1, getLine(cm.doc, from.line - 1).length) }
-  if (to.ch == getLine(cm.doc, to.line).text.length && to.line < cm.lastLine())
-    { to = Pos(to.line + 1, 0) }
-  if (from.line < display.viewFrom || to.line > display.viewTo - 1) { return false }
-
-  var fromIndex, fromLine, fromNode
-  if (from.line == display.viewFrom || (fromIndex = findViewIndex(cm, from.line)) == 0) {
-    fromLine = lineNo(display.view[0].line)
-    fromNode = display.view[0].node
-  } else {
-    fromLine = lineNo(display.view[fromIndex].line)
-    fromNode = display.view[fromIndex - 1].node.nextSibling
-  }
-  var toIndex = findViewIndex(cm, to.line)
-  var toLine, toNode
-  if (toIndex == display.view.length - 1) {
-    toLine = display.viewTo - 1
-    toNode = display.lineDiv.lastChild
-  } else {
-    toLine = lineNo(display.view[toIndex + 1].line) - 1
-    toNode = display.view[toIndex + 1].node.previousSibling
-  }
-
-  if (!fromNode) { return false }
-  var newText = cm.doc.splitLines(domTextBetween(cm, fromNode, toNode, fromLine, toLine))
-  var oldText = getBetween(cm.doc, Pos(fromLine, 0), Pos(toLine, getLine(cm.doc, toLine).text.length))
-  while (newText.length > 1 && oldText.length > 1) {
-    if (lst(newText) == lst(oldText)) { newText.pop(); oldText.pop(); toLine-- }
-    else if (newText[0] == oldText[0]) { newText.shift(); oldText.shift(); fromLine++ }
-    else { break }
-  }
-
-  var cutFront = 0, cutEnd = 0
-  var newTop = newText[0], oldTop = oldText[0], maxCutFront = Math.min(newTop.length, oldTop.length)
-  while (cutFront < maxCutFront && newTop.charCodeAt(cutFront) == oldTop.charCodeAt(cutFront))
-    { ++cutFront }
-  var newBot = lst(newText), oldBot = lst(oldText)
-  var maxCutEnd = Math.min(newBot.length - (newText.length == 1 ? cutFront : 0),
-                           oldBot.length - (oldText.length == 1 ? cutFront : 0))
-  while (cutEnd < maxCutEnd &&
-         newBot.charCodeAt(newBot.length - cutEnd - 1) == oldBot.charCodeAt(oldBot.length - cutEnd - 1))
-    { ++cutEnd }
-
-  newText[newText.length - 1] = newBot.slice(0, newBot.length - cutEnd).replace(/^\u200b+/, "")
-  newText[0] = newText[0].slice(cutFront).replace(/\u200b+$/, "")
-
-  var chFrom = Pos(fromLine, cutFront)
-  var chTo = Pos(toLine, oldText.length ? lst(oldText).length - cutEnd : 0)
-  if (newText.length > 1 || newText[0] || cmp(chFrom, chTo)) {
-    replaceRange(cm.doc, newText, chFrom, chTo, "+input")
-    return true
-  }
-};
-
-ContentEditableInput.prototype.ensurePolled = function ensurePolled () {
-  this.forceCompositionEnd()
-};
-ContentEditableInput.prototype.reset = function reset () {
-  this.forceCompositionEnd()
-};
-ContentEditableInput.prototype.forceCompositionEnd = function forceCompositionEnd () {
-  if (!this.composing) { return }
-  clearTimeout(this.readDOMTimeout)
-  this.composing = null
-  if (!this.pollContent()) { regChange(this.cm) }
-  this.div.blur()
-  this.div.focus()
-};
-ContentEditableInput.prototype.readFromDOMSoon = function readFromDOMSoon () {
+  startGracePeriod: function() {
     var this$1 = this;
 
-  if (this.readDOMTimeout != null) { return }
-  this.readDOMTimeout = setTimeout(function () {
-    this$1.readDOMTimeout = null
-    if (this$1.composing) {
-      if (this$1.composing.done) { this$1.composing = null }
-      else { return }
+    clearTimeout(this.gracePeriod)
+    this.gracePeriod = setTimeout(function () {
+      this$1.gracePeriod = false
+      if (this$1.selectionChanged())
+        { this$1.cm.operation(function () { return this$1.cm.curOp.selectionChanged = true; }) }
+    }, 20)
+  },
+
+  showMultipleSelections: function(info) {
+    removeChildrenAndAdd(this.cm.display.cursorDiv, info.cursors)
+    removeChildrenAndAdd(this.cm.display.selectionDiv, info.selection)
+  },
+
+  rememberSelection: function() {
+    var sel = window.getSelection()
+    this.lastAnchorNode = sel.anchorNode; this.lastAnchorOffset = sel.anchorOffset
+    this.lastFocusNode = sel.focusNode; this.lastFocusOffset = sel.focusOffset
+  },
+
+  selectionInEditor: function() {
+    var sel = window.getSelection()
+    if (!sel.rangeCount) { return false }
+    var node = sel.getRangeAt(0).commonAncestorContainer
+    return contains(this.div, node)
+  },
+
+  focus: function() {
+    if (this.cm.options.readOnly != "nocursor") {
+      if (!this.selectionInEditor())
+        { this.showSelection(this.prepareSelection(), true) }
+      this.div.focus()
     }
-    if (this$1.cm.isReadOnly() || !this$1.pollContent())
-      { runInOp(this$1.cm, function () { return regChange(this$1.cm); }) }
-  }, 80)
-};
+  },
+  blur: function() { this.div.blur() },
+  getField: function() { return this.div },
 
-ContentEditableInput.prototype.setUneditable = function setUneditable (node) {
-  node.contentEditable = "false"
-};
+  supportsTouch: function() { return true },
 
-ContentEditableInput.prototype.onKeyPress = function onKeyPress (e) {
-  e.preventDefault()
-  if (!this.cm.isReadOnly())
-    { operation(this.cm, applyTextInput)(this.cm, String.fromCharCode(e.charCode == null ? e.keyCode : e.charCode), 0) }
-};
+  receivedFocus: function() {
+    var input = this
+    if (this.selectionInEditor())
+      { this.pollSelection() }
+    else
+      { runInOp(this.cm, function () { return input.cm.curOp.selectionChanged = true; }) }
 
-ContentEditableInput.prototype.readOnlyChanged = function readOnlyChanged (val) {
-  this.div.contentEditable = String(val != "nocursor")
-};
+    function poll() {
+      if (input.cm.state.focused) {
+        input.pollSelection()
+        input.polling.set(input.cm.options.pollInterval, poll)
+      }
+    }
+    this.polling.set(this.cm.options.pollInterval, poll)
+  },
 
-ContentEditableInput.prototype.onContextMenu = function onContextMenu () {};
-ContentEditableInput.prototype.resetPosition = function resetPosition () {};
+  selectionChanged: function() {
+    var sel = window.getSelection()
+    return sel.anchorNode != this.lastAnchorNode || sel.anchorOffset != this.lastAnchorOffset ||
+      sel.focusNode != this.lastFocusNode || sel.focusOffset != this.lastFocusOffset
+  },
 
-ContentEditableInput.prototype.needsContentAttribute = true
+  pollSelection: function() {
+    if (!this.composing && this.readDOMTimeout == null && !this.gracePeriod && this.selectionChanged()) {
+      var sel = window.getSelection(), cm = this.cm
+      this.rememberSelection()
+      var anchor = domToPos(cm, sel.anchorNode, sel.anchorOffset)
+      var head = domToPos(cm, sel.focusNode, sel.focusOffset)
+      if (anchor && head) { runInOp(cm, function () {
+        setSelection(cm.doc, simpleSelection(anchor, head), sel_dontScroll)
+        if (anchor.bad || head.bad) { cm.curOp.selectionChanged = true }
+      }) }
+    }
+  },
+
+  pollContent: function() {
+    if (this.readDOMTimeout != null) {
+      clearTimeout(this.readDOMTimeout)
+      this.readDOMTimeout = null
+    }
+
+    var cm = this.cm, display = cm.display, sel = cm.doc.sel.primary()
+    var from = sel.from(), to = sel.to()
+    if (from.ch == 0 && from.line > cm.firstLine())
+      { from = Pos(from.line - 1, getLine(cm.doc, from.line - 1).length) }
+    if (to.ch == getLine(cm.doc, to.line).text.length && to.line < cm.lastLine())
+      { to = Pos(to.line + 1, 0) }
+    if (from.line < display.viewFrom || to.line > display.viewTo - 1) { return false }
+
+    var fromIndex, fromLine, fromNode
+    if (from.line == display.viewFrom || (fromIndex = findViewIndex(cm, from.line)) == 0) {
+      fromLine = lineNo(display.view[0].line)
+      fromNode = display.view[0].node
+    } else {
+      fromLine = lineNo(display.view[fromIndex].line)
+      fromNode = display.view[fromIndex - 1].node.nextSibling
+    }
+    var toIndex = findViewIndex(cm, to.line)
+    var toLine, toNode
+    if (toIndex == display.view.length - 1) {
+      toLine = display.viewTo - 1
+      toNode = display.lineDiv.lastChild
+    } else {
+      toLine = lineNo(display.view[toIndex + 1].line) - 1
+      toNode = display.view[toIndex + 1].node.previousSibling
+    }
+
+    if (!fromNode) { return false }
+    var newText = cm.doc.splitLines(domTextBetween(cm, fromNode, toNode, fromLine, toLine))
+    var oldText = getBetween(cm.doc, Pos(fromLine, 0), Pos(toLine, getLine(cm.doc, toLine).text.length))
+    while (newText.length > 1 && oldText.length > 1) {
+      if (lst(newText) == lst(oldText)) { newText.pop(); oldText.pop(); toLine-- }
+      else if (newText[0] == oldText[0]) { newText.shift(); oldText.shift(); fromLine++ }
+      else { break }
+    }
+
+    var cutFront = 0, cutEnd = 0
+    var newTop = newText[0], oldTop = oldText[0], maxCutFront = Math.min(newTop.length, oldTop.length)
+    while (cutFront < maxCutFront && newTop.charCodeAt(cutFront) == oldTop.charCodeAt(cutFront))
+      { ++cutFront }
+    var newBot = lst(newText), oldBot = lst(oldText)
+    var maxCutEnd = Math.min(newBot.length - (newText.length == 1 ? cutFront : 0),
+                             oldBot.length - (oldText.length == 1 ? cutFront : 0))
+    while (cutEnd < maxCutEnd &&
+           newBot.charCodeAt(newBot.length - cutEnd - 1) == oldBot.charCodeAt(oldBot.length - cutEnd - 1))
+      { ++cutEnd }
+
+    newText[newText.length - 1] = newBot.slice(0, newBot.length - cutEnd).replace(/^\u200b+/, "")
+    newText[0] = newText[0].slice(cutFront).replace(/\u200b+$/, "")
+
+    var chFrom = Pos(fromLine, cutFront)
+    var chTo = Pos(toLine, oldText.length ? lst(oldText).length - cutEnd : 0)
+    if (newText.length > 1 || newText[0] || cmp(chFrom, chTo)) {
+      replaceRange(cm.doc, newText, chFrom, chTo, "+input")
+      return true
+    }
+  },
+
+  ensurePolled: function() {
+    this.forceCompositionEnd()
+  },
+  reset: function() {
+    this.forceCompositionEnd()
+  },
+  forceCompositionEnd: function() {
+    if (!this.composing) { return }
+    this.composing = null
+    if (!this.pollContent()) { regChange(this.cm) }
+    this.div.blur()
+    this.div.focus()
+  },
+  readFromDOMSoon: function() {
+    var this$1 = this;
+
+    if (this.readDOMTimeout != null) { return }
+    this.readDOMTimeout = setTimeout(function () {
+      this$1.readDOMTimeout = null
+      if (this$1.composing) { return }
+      if (this$1.cm.isReadOnly() || !this$1.pollContent())
+        { runInOp(this$1.cm, function () { return regChange(this$1.cm); }) }
+    }, 80)
+  },
+
+  setUneditable: function(node) {
+    node.contentEditable = "false"
+  },
+
+  onKeyPress: function(e) {
+    e.preventDefault()
+    if (!this.cm.isReadOnly())
+      { operation(this.cm, applyTextInput)(this.cm, String.fromCharCode(e.charCode == null ? e.keyCode : e.charCode), 0) }
+  },
+
+  readOnlyChanged: function(val) {
+    this.div.contentEditable = String(val != "nocursor")
+  },
+
+  onContextMenu: nothing,
+  resetPosition: nothing,
+
+  needsContentAttribute: true
+  }, ContentEditableInput.prototype)
 
 function posToDOM(cm, pos) {
   var view = findViewForLine(cm, pos.line)
@@ -8611,7 +8606,7 @@ function locateNodeInLineView(lineView, node, offset) {
 
 // TEXTAREA INPUT STYLE
 
-var TextareaInput = function TextareaInput(cm) {
+function TextareaInput(cm) {
   this.cm = cm
   // See input.poll and input.reset
   this.prevInput = ""
@@ -8628,333 +8623,335 @@ var TextareaInput = function TextareaInput(cm) {
   // Used to work around IE issue with selection being forgotten when focus moves away from textarea
   this.hasSelection = false
   this.composing = null
-};
+}
 
-TextareaInput.prototype.init = function init (display) {
+TextareaInput.prototype = copyObj({
+  init: function(display) {
     var this$1 = this;
 
-  var input = this, cm = this.cm
+    var input = this, cm = this.cm
 
-  // Wraps and hides input textarea
-  var div = this.wrapper = hiddenTextarea()
-  // The semihidden textarea that is focused when the editor is
-  // focused, and receives input.
-  var te = this.textarea = div.firstChild
-  display.wrapper.insertBefore(div, display.wrapper.firstChild)
+    // Wraps and hides input textarea
+    var div = this.wrapper = hiddenTextarea()
+    // The semihidden textarea that is focused when the editor is
+    // focused, and receives input.
+    var te = this.textarea = div.firstChild
+    display.wrapper.insertBefore(div, display.wrapper.firstChild)
 
-  // Needed to hide big blue blinking cursor on Mobile Safari (doesn't seem to work in iOS 8 anymore)
-  if (ios) { te.style.width = "0px" }
+    // Needed to hide big blue blinking cursor on Mobile Safari (doesn't seem to work in iOS 8 anymore)
+    if (ios) { te.style.width = "0px" }
 
-  on(te, "input", function () {
-    if (ie && ie_version >= 9 && this$1.hasSelection) { this$1.hasSelection = null }
-    input.poll()
-  })
-
-  on(te, "paste", function (e) {
-    if (signalDOMEvent(cm, e) || handlePaste(e, cm)) { return }
-
-    cm.state.pasteIncoming = true
-    input.fastPoll()
-  })
-
-  function prepareCopyCut(e) {
-    if (signalDOMEvent(cm, e)) { return }
-    if (cm.somethingSelected()) {
-      setLastCopied({lineWise: false, text: cm.getSelections()})
-      if (input.inaccurateSelection) {
-        input.prevInput = ""
-        input.inaccurateSelection = false
-        te.value = lastCopied.text.join("\n")
-        selectInput(te)
-      }
-    } else if (!cm.options.lineWiseCopyCut) {
-      return
-    } else {
-      var ranges = copyableRanges(cm)
-      setLastCopied({lineWise: true, text: ranges.text})
-      if (e.type == "cut") {
-        cm.setSelections(ranges.ranges, null, sel_dontScroll)
-      } else {
-        input.prevInput = ""
-        te.value = ranges.text.join("\n")
-        selectInput(te)
-      }
-    }
-    if (e.type == "cut") { cm.state.cutIncoming = true }
-  }
-  on(te, "cut", prepareCopyCut)
-  on(te, "copy", prepareCopyCut)
-
-  on(display.scroller, "paste", function (e) {
-    if (eventInWidget(display, e) || signalDOMEvent(cm, e)) { return }
-    cm.state.pasteIncoming = true
-    input.focus()
-  })
-
-  // Prevent normal selection in the editor (we handle our own)
-  on(display.lineSpace, "selectstart", function (e) {
-    if (!eventInWidget(display, e)) { e_preventDefault(e) }
-  })
-
-  on(te, "compositionstart", function () {
-    var start = cm.getCursor("from")
-    if (input.composing) { input.composing.range.clear() }
-    input.composing = {
-      start: start,
-      range: cm.markText(start, cm.getCursor("to"), {className: "CodeMirror-composing"})
-    }
-  })
-  on(te, "compositionend", function () {
-    if (input.composing) {
+    on(te, "input", function () {
+      if (ie && ie_version >= 9 && this$1.hasSelection) { this$1.hasSelection = null }
       input.poll()
-      input.composing.range.clear()
-      input.composing = null
-    }
-  })
-};
+    })
 
-TextareaInput.prototype.prepareSelection = function prepareSelection$1 () {
-  // Redraw the selection and/or cursor
-  var cm = this.cm, display = cm.display, doc = cm.doc
-  var result = prepareSelection(cm)
+    on(te, "paste", function (e) {
+      if (signalDOMEvent(cm, e) || handlePaste(e, cm)) { return }
 
-  // Move the hidden textarea near the cursor to prevent scrolling artifacts
-  if (cm.options.moveInputWithCursor) {
-    var headPos = cursorCoords(cm, doc.sel.primary().head, "div")
-    var wrapOff = display.wrapper.getBoundingClientRect(), lineOff = display.lineDiv.getBoundingClientRect()
-    result.teTop = Math.max(0, Math.min(display.wrapper.clientHeight - 10,
-                                        headPos.top + lineOff.top - wrapOff.top))
-    result.teLeft = Math.max(0, Math.min(display.wrapper.clientWidth - 10,
-                                         headPos.left + lineOff.left - wrapOff.left))
-  }
+      cm.state.pasteIncoming = true
+      input.fastPoll()
+    })
 
-  return result
-};
-
-TextareaInput.prototype.showSelection = function showSelection (drawn) {
-  var cm = this.cm, display = cm.display
-  removeChildrenAndAdd(display.cursorDiv, drawn.cursors)
-  removeChildrenAndAdd(display.selectionDiv, drawn.selection)
-  if (drawn.teTop != null) {
-    this.wrapper.style.top = drawn.teTop + "px"
-    this.wrapper.style.left = drawn.teLeft + "px"
-  }
-};
-
-// Reset the input to correspond to the selection (or to be empty,
-// when not typing and nothing is selected)
-TextareaInput.prototype.reset = function reset (typing) {
-  if (this.contextMenuPending) { return }
-  var minimal, selected, cm = this.cm, doc = cm.doc
-  if (cm.somethingSelected()) {
-    this.prevInput = ""
-    var range$$1 = doc.sel.primary()
-    minimal = hasCopyEvent &&
-      (range$$1.to().line - range$$1.from().line > 100 || (selected = cm.getSelection()).length > 1000)
-    var content = minimal ? "-" : selected || cm.getSelection()
-    this.textarea.value = content
-    if (cm.state.focused) { selectInput(this.textarea) }
-    if (ie && ie_version >= 9) { this.hasSelection = content }
-  } else if (!typing) {
-    this.prevInput = this.textarea.value = ""
-    if (ie && ie_version >= 9) { this.hasSelection = null }
-  }
-  this.inaccurateSelection = minimal
-};
-
-TextareaInput.prototype.getField = function getField () { return this.textarea };
-
-TextareaInput.prototype.supportsTouch = function supportsTouch () { return false };
-
-TextareaInput.prototype.focus = function focus () {
-  if (this.cm.options.readOnly != "nocursor" && (!mobile || activeElt() != this.textarea)) {
-    try { this.textarea.focus() }
-    catch (e) {} // IE8 will throw if the textarea is display: none or not in DOM
-  }
-};
-
-TextareaInput.prototype.blur = function blur () { this.textarea.blur() };
-
-TextareaInput.prototype.resetPosition = function resetPosition () {
-  this.wrapper.style.top = this.wrapper.style.left = 0
-};
-
-TextareaInput.prototype.receivedFocus = function receivedFocus () { this.slowPoll() };
-
-// Poll for input changes, using the normal rate of polling. This
-// runs as long as the editor is focused.
-TextareaInput.prototype.slowPoll = function slowPoll () {
-    var this$1 = this;
-
-  if (this.pollingFast) { return }
-  this.polling.set(this.cm.options.pollInterval, function () {
-    this$1.poll()
-    if (this$1.cm.state.focused) { this$1.slowPoll() }
-  })
-};
-
-// When an event has just come in that is likely to add or change
-// something in the input textarea, we poll faster, to ensure that
-// the change appears on the screen quickly.
-TextareaInput.prototype.fastPoll = function fastPoll () {
-  var missed = false, input = this
-  input.pollingFast = true
-  function p() {
-    var changed = input.poll()
-    if (!changed && !missed) {missed = true; input.polling.set(60, p)}
-    else {input.pollingFast = false; input.slowPoll()}
-  }
-  input.polling.set(20, p)
-};
-
-// Read input from the textarea, and update the document to match.
-// When something is selected, it is present in the textarea, and
-// selected (unless it is huge, in which case a placeholder is
-// used). When nothing is selected, the cursor sits after previously
-// seen text (can be empty), which is stored in prevInput (we must
-// not reset the textarea when typing, because that breaks IME).
-TextareaInput.prototype.poll = function poll () {
-    var this$1 = this;
-
-  var cm = this.cm, input = this.textarea, prevInput = this.prevInput
-  // Since this is called a *lot*, try to bail out as cheaply as
-  // possible when it is clear that nothing happened. hasSelection
-  // will be the case when there is a lot of text in the textarea,
-  // in which case reading its value would be expensive.
-  if (this.contextMenuPending || !cm.state.focused ||
-      (hasSelection(input) && !prevInput && !this.composing) ||
-      cm.isReadOnly() || cm.options.disableInput || cm.state.keySeq)
-    { return false }
-
-  var text = input.value
-  // If nothing changed, bail.
-  if (text == prevInput && !cm.somethingSelected()) { return false }
-  // Work around nonsensical selection resetting in IE9/10, and
-  // inexplicable appearance of private area unicode characters on
-  // some key combos in Mac (#2689).
-  if (ie && ie_version >= 9 && this.hasSelection === text ||
-      mac && /[\uf700-\uf7ff]/.test(text)) {
-    cm.display.input.reset()
-    return false
-  }
-
-  if (cm.doc.sel == cm.display.selForContextMenu) {
-    var first = text.charCodeAt(0)
-    if (first == 0x200b && !prevInput) { prevInput = "\u200b" }
-    if (first == 0x21da) { this.reset(); return this.cm.execCommand("undo") }
-  }
-  // Find the part of the input that is actually new
-  var same = 0, l = Math.min(prevInput.length, text.length)
-  while (same < l && prevInput.charCodeAt(same) == text.charCodeAt(same)) { ++same }
-
-  runInOp(cm, function () {
-    applyTextInput(cm, text.slice(same), prevInput.length - same,
-                   null, this$1.composing ? "*compose" : null)
-
-    // Don't leave long text in the textarea, since it makes further polling slow
-    if (text.length > 1000 || text.indexOf("\n") > -1) { input.value = this$1.prevInput = "" }
-    else { this$1.prevInput = text }
-
-    if (this$1.composing) {
-      this$1.composing.range.clear()
-      this$1.composing.range = cm.markText(this$1.composing.start, cm.getCursor("to"),
-                                         {className: "CodeMirror-composing"})
-    }
-  })
-  return true
-};
-
-TextareaInput.prototype.ensurePolled = function ensurePolled () {
-  if (this.pollingFast && this.poll()) { this.pollingFast = false }
-};
-
-TextareaInput.prototype.onKeyPress = function onKeyPress () {
-  if (ie && ie_version >= 9) { this.hasSelection = null }
-  this.fastPoll()
-};
-
-TextareaInput.prototype.onContextMenu = function onContextMenu (e) {
-  var input = this, cm = input.cm, display = cm.display, te = input.textarea
-  var pos = posFromMouse(cm, e), scrollPos = display.scroller.scrollTop
-  if (!pos || presto) { return } // Opera is difficult.
-
-  // Reset the current text selection only if the click is done outside of the selection
-  // and 'resetSelectionOnContextMenu' option is true.
-  var reset = cm.options.resetSelectionOnContextMenu
-  if (reset && cm.doc.sel.contains(pos) == -1)
-    { operation(cm, setSelection)(cm.doc, simpleSelection(pos), sel_dontScroll) }
-
-  var oldCSS = te.style.cssText, oldWrapperCSS = input.wrapper.style.cssText
-  input.wrapper.style.cssText = "position: absolute"
-  var wrapperBox = input.wrapper.getBoundingClientRect()
-  te.style.cssText = "position: absolute; width: 30px; height: 30px;\n      top: " + (e.clientY - wrapperBox.top - 5) + "px; left: " + (e.clientX - wrapperBox.left - 5) + "px;\n      z-index: 1000; background: " + (ie ? "rgba(255, 255, 255, .05)" : "transparent") + ";\n      outline: none; border-width: 0; outline: none; overflow: hidden; opacity: .05; filter: alpha(opacity=5);"
-  var oldScrollY
-  if (webkit) { oldScrollY = window.scrollY } // Work around Chrome issue (#2712)
-  display.input.focus()
-  if (webkit) { window.scrollTo(null, oldScrollY) }
-  display.input.reset()
-  // Adds "Select all" to context menu in FF
-  if (!cm.somethingSelected()) { te.value = input.prevInput = " " }
-  input.contextMenuPending = true
-  display.selForContextMenu = cm.doc.sel
-  clearTimeout(display.detectingSelectAll)
-
-  // Select-all will be greyed out if there's nothing to select, so
-  // this adds a zero-width space so that we can later check whether
-  // it got selected.
-  function prepareSelectAllHack() {
-    if (te.selectionStart != null) {
-      var selected = cm.somethingSelected()
-      var extval = "\u200b" + (selected ? te.value : "")
-      te.value = "\u21da" // Used to catch context-menu undo
-      te.value = extval
-      input.prevInput = selected ? "" : "\u200b"
-      te.selectionStart = 1; te.selectionEnd = extval.length
-      // Re-set this, in case some other handler touched the
-      // selection in the meantime.
-      display.selForContextMenu = cm.doc.sel
-    }
-  }
-  function rehide() {
-    input.contextMenuPending = false
-    input.wrapper.style.cssText = oldWrapperCSS
-    te.style.cssText = oldCSS
-    if (ie && ie_version < 9) { display.scrollbars.setScrollTop(display.scroller.scrollTop = scrollPos) }
-
-    // Try to detect the user choosing select-all
-    if (te.selectionStart != null) {
-      if (!ie || (ie && ie_version < 9)) { prepareSelectAllHack() }
-      var i = 0, poll = function () {
-        if (display.selForContextMenu == cm.doc.sel && te.selectionStart == 0 &&
-            te.selectionEnd > 0 && input.prevInput == "\u200b")
-          { operation(cm, selectAll)(cm) }
-        else if (i++ < 10) { display.detectingSelectAll = setTimeout(poll, 500) }
-        else { display.input.reset() }
+    function prepareCopyCut(e) {
+      if (signalDOMEvent(cm, e)) { return }
+      if (cm.somethingSelected()) {
+        setLastCopied({lineWise: false, text: cm.getSelections()})
+        if (input.inaccurateSelection) {
+          input.prevInput = ""
+          input.inaccurateSelection = false
+          te.value = lastCopied.text.join("\n")
+          selectInput(te)
+        }
+      } else if (!cm.options.lineWiseCopyCut) {
+        return
+      } else {
+        var ranges = copyableRanges(cm)
+        setLastCopied({lineWise: true, text: ranges.text})
+        if (e.type == "cut") {
+          cm.setSelections(ranges.ranges, null, sel_dontScroll)
+        } else {
+          input.prevInput = ""
+          te.value = ranges.text.join("\n")
+          selectInput(te)
+        }
       }
-      display.detectingSelectAll = setTimeout(poll, 200)
+      if (e.type == "cut") { cm.state.cutIncoming = true }
     }
-  }
+    on(te, "cut", prepareCopyCut)
+    on(te, "copy", prepareCopyCut)
 
-  if (ie && ie_version >= 9) { prepareSelectAllHack() }
-  if (captureRightClick) {
-    e_stop(e)
-    var mouseup = function () {
-      off(window, "mouseup", mouseup)
-      setTimeout(rehide, 20)
+    on(display.scroller, "paste", function (e) {
+      if (eventInWidget(display, e) || signalDOMEvent(cm, e)) { return }
+      cm.state.pasteIncoming = true
+      input.focus()
+    })
+
+    // Prevent normal selection in the editor (we handle our own)
+    on(display.lineSpace, "selectstart", function (e) {
+      if (!eventInWidget(display, e)) { e_preventDefault(e) }
+    })
+
+    on(te, "compositionstart", function () {
+      var start = cm.getCursor("from")
+      if (input.composing) { input.composing.range.clear() }
+      input.composing = {
+        start: start,
+        range: cm.markText(start, cm.getCursor("to"), {className: "CodeMirror-composing"})
+      }
+    })
+    on(te, "compositionend", function () {
+      if (input.composing) {
+        input.poll()
+        input.composing.range.clear()
+        input.composing = null
+      }
+    })
+  },
+
+  prepareSelection: function() {
+    // Redraw the selection and/or cursor
+    var cm = this.cm, display = cm.display, doc = cm.doc
+    var result = prepareSelection(cm)
+
+    // Move the hidden textarea near the cursor to prevent scrolling artifacts
+    if (cm.options.moveInputWithCursor) {
+      var headPos = cursorCoords(cm, doc.sel.primary().head, "div")
+      var wrapOff = display.wrapper.getBoundingClientRect(), lineOff = display.lineDiv.getBoundingClientRect()
+      result.teTop = Math.max(0, Math.min(display.wrapper.clientHeight - 10,
+                                          headPos.top + lineOff.top - wrapOff.top))
+      result.teLeft = Math.max(0, Math.min(display.wrapper.clientWidth - 10,
+                                           headPos.left + lineOff.left - wrapOff.left))
     }
-    on(window, "mouseup", mouseup)
-  } else {
-    setTimeout(rehide, 50)
-  }
-};
 
-TextareaInput.prototype.readOnlyChanged = function readOnlyChanged (val) {
-  if (!val) { this.reset() }
-};
+    return result
+  },
 
-TextareaInput.prototype.setUneditable = function setUneditable () {};
+  showSelection: function(drawn) {
+    var cm = this.cm, display = cm.display
+    removeChildrenAndAdd(display.cursorDiv, drawn.cursors)
+    removeChildrenAndAdd(display.selectionDiv, drawn.selection)
+    if (drawn.teTop != null) {
+      this.wrapper.style.top = drawn.teTop + "px"
+      this.wrapper.style.left = drawn.teLeft + "px"
+    }
+  },
 
-TextareaInput.prototype.needsContentAttribute = false
+  // Reset the input to correspond to the selection (or to be empty,
+  // when not typing and nothing is selected)
+  reset: function(typing) {
+    if (this.contextMenuPending) { return }
+    var minimal, selected, cm = this.cm, doc = cm.doc
+    if (cm.somethingSelected()) {
+      this.prevInput = ""
+      var range$$1 = doc.sel.primary()
+      minimal = hasCopyEvent &&
+        (range$$1.to().line - range$$1.from().line > 100 || (selected = cm.getSelection()).length > 1000)
+      var content = minimal ? "-" : selected || cm.getSelection()
+      this.textarea.value = content
+      if (cm.state.focused) { selectInput(this.textarea) }
+      if (ie && ie_version >= 9) { this.hasSelection = content }
+    } else if (!typing) {
+      this.prevInput = this.textarea.value = ""
+      if (ie && ie_version >= 9) { this.hasSelection = null }
+    }
+    this.inaccurateSelection = minimal
+  },
+
+  getField: function() { return this.textarea },
+
+  supportsTouch: function() { return false },
+
+  focus: function() {
+    if (this.cm.options.readOnly != "nocursor" && (!mobile || activeElt() != this.textarea)) {
+      try { this.textarea.focus() }
+      catch (e) {} // IE8 will throw if the textarea is display: none or not in DOM
+    }
+  },
+
+  blur: function() { this.textarea.blur() },
+
+  resetPosition: function() {
+    this.wrapper.style.top = this.wrapper.style.left = 0
+  },
+
+  receivedFocus: function() { this.slowPoll() },
+
+  // Poll for input changes, using the normal rate of polling. This
+  // runs as long as the editor is focused.
+  slowPoll: function() {
+    var this$1 = this;
+
+    if (this.pollingFast) { return }
+    this.polling.set(this.cm.options.pollInterval, function () {
+      this$1.poll()
+      if (this$1.cm.state.focused) { this$1.slowPoll() }
+    })
+  },
+
+  // When an event has just come in that is likely to add or change
+  // something in the input textarea, we poll faster, to ensure that
+  // the change appears on the screen quickly.
+  fastPoll: function() {
+    var missed = false, input = this
+    input.pollingFast = true
+    function p() {
+      var changed = input.poll()
+      if (!changed && !missed) {missed = true; input.polling.set(60, p)}
+      else {input.pollingFast = false; input.slowPoll()}
+    }
+    input.polling.set(20, p)
+  },
+
+  // Read input from the textarea, and update the document to match.
+  // When something is selected, it is present in the textarea, and
+  // selected (unless it is huge, in which case a placeholder is
+  // used). When nothing is selected, the cursor sits after previously
+  // seen text (can be empty), which is stored in prevInput (we must
+  // not reset the textarea when typing, because that breaks IME).
+  poll: function() {
+    var this$1 = this;
+
+    var cm = this.cm, input = this.textarea, prevInput = this.prevInput
+    // Since this is called a *lot*, try to bail out as cheaply as
+    // possible when it is clear that nothing happened. hasSelection
+    // will be the case when there is a lot of text in the textarea,
+    // in which case reading its value would be expensive.
+    if (this.contextMenuPending || !cm.state.focused ||
+        (hasSelection(input) && !prevInput && !this.composing) ||
+        cm.isReadOnly() || cm.options.disableInput || cm.state.keySeq)
+      { return false }
+
+    var text = input.value
+    // If nothing changed, bail.
+    if (text == prevInput && !cm.somethingSelected()) { return false }
+    // Work around nonsensical selection resetting in IE9/10, and
+    // inexplicable appearance of private area unicode characters on
+    // some key combos in Mac (#2689).
+    if (ie && ie_version >= 9 && this.hasSelection === text ||
+        mac && /[\uf700-\uf7ff]/.test(text)) {
+      cm.display.input.reset()
+      return false
+    }
+
+    if (cm.doc.sel == cm.display.selForContextMenu) {
+      var first = text.charCodeAt(0)
+      if (first == 0x200b && !prevInput) { prevInput = "\u200b" }
+      if (first == 0x21da) { this.reset(); return this.cm.execCommand("undo") }
+    }
+    // Find the part of the input that is actually new
+    var same = 0, l = Math.min(prevInput.length, text.length)
+    while (same < l && prevInput.charCodeAt(same) == text.charCodeAt(same)) { ++same }
+
+    runInOp(cm, function () {
+      applyTextInput(cm, text.slice(same), prevInput.length - same,
+                     null, this$1.composing ? "*compose" : null)
+
+      // Don't leave long text in the textarea, since it makes further polling slow
+      if (text.length > 1000 || text.indexOf("\n") > -1) { input.value = this$1.prevInput = "" }
+      else { this$1.prevInput = text }
+
+      if (this$1.composing) {
+        this$1.composing.range.clear()
+        this$1.composing.range = cm.markText(this$1.composing.start, cm.getCursor("to"),
+                                           {className: "CodeMirror-composing"})
+      }
+    })
+    return true
+  },
+
+  ensurePolled: function() {
+    if (this.pollingFast && this.poll()) { this.pollingFast = false }
+  },
+
+  onKeyPress: function() {
+    if (ie && ie_version >= 9) { this.hasSelection = null }
+    this.fastPoll()
+  },
+
+  onContextMenu: function(e) {
+    var input = this, cm = input.cm, display = cm.display, te = input.textarea
+    var pos = posFromMouse(cm, e), scrollPos = display.scroller.scrollTop
+    if (!pos || presto) { return } // Opera is difficult.
+
+    // Reset the current text selection only if the click is done outside of the selection
+    // and 'resetSelectionOnContextMenu' option is true.
+    var reset = cm.options.resetSelectionOnContextMenu
+    if (reset && cm.doc.sel.contains(pos) == -1)
+      { operation(cm, setSelection)(cm.doc, simpleSelection(pos), sel_dontScroll) }
+
+    var oldCSS = te.style.cssText, oldWrapperCSS = input.wrapper.style.cssText
+    input.wrapper.style.cssText = "position: absolute"
+    var wrapperBox = input.wrapper.getBoundingClientRect()
+    te.style.cssText = "position: absolute; width: 30px; height: 30px;\n      top: " + (e.clientY - wrapperBox.top - 5) + "px; left: " + (e.clientX - wrapperBox.left - 5) + "px;\n      z-index: 1000; background: " + (ie ? "rgba(255, 255, 255, .05)" : "transparent") + ";\n      outline: none; border-width: 0; outline: none; overflow: hidden; opacity: .05; filter: alpha(opacity=5);"
+    var oldScrollY
+    if (webkit) { oldScrollY = window.scrollY } // Work around Chrome issue (#2712)
+    display.input.focus()
+    if (webkit) { window.scrollTo(null, oldScrollY) }
+    display.input.reset()
+    // Adds "Select all" to context menu in FF
+    if (!cm.somethingSelected()) { te.value = input.prevInput = " " }
+    input.contextMenuPending = true
+    display.selForContextMenu = cm.doc.sel
+    clearTimeout(display.detectingSelectAll)
+
+    // Select-all will be greyed out if there's nothing to select, so
+    // this adds a zero-width space so that we can later check whether
+    // it got selected.
+    function prepareSelectAllHack() {
+      if (te.selectionStart != null) {
+        var selected = cm.somethingSelected()
+        var extval = "\u200b" + (selected ? te.value : "")
+        te.value = "\u21da" // Used to catch context-menu undo
+        te.value = extval
+        input.prevInput = selected ? "" : "\u200b"
+        te.selectionStart = 1; te.selectionEnd = extval.length
+        // Re-set this, in case some other handler touched the
+        // selection in the meantime.
+        display.selForContextMenu = cm.doc.sel
+      }
+    }
+    function rehide() {
+      input.contextMenuPending = false
+      input.wrapper.style.cssText = oldWrapperCSS
+      te.style.cssText = oldCSS
+      if (ie && ie_version < 9) { display.scrollbars.setScrollTop(display.scroller.scrollTop = scrollPos) }
+
+      // Try to detect the user choosing select-all
+      if (te.selectionStart != null) {
+        if (!ie || (ie && ie_version < 9)) { prepareSelectAllHack() }
+        var i = 0, poll = function () {
+          if (display.selForContextMenu == cm.doc.sel && te.selectionStart == 0 &&
+              te.selectionEnd > 0 && input.prevInput == "\u200b")
+            { operation(cm, selectAll)(cm) }
+          else if (i++ < 10) { display.detectingSelectAll = setTimeout(poll, 500) }
+          else { display.input.reset() }
+        }
+        display.detectingSelectAll = setTimeout(poll, 200)
+      }
+    }
+
+    if (ie && ie_version >= 9) { prepareSelectAllHack() }
+    if (captureRightClick) {
+      e_stop(e)
+      var mouseup = function () {
+        off(window, "mouseup", mouseup)
+        setTimeout(rehide, 20)
+      }
+      on(window, "mouseup", mouseup)
+    } else {
+      setTimeout(rehide, 50)
+    }
+  },
+
+  readOnlyChanged: function(val) {
+    if (!val) { this.reset() }
+  },
+
+  setUneditable: nothing,
+
+  needsContentAttribute: false
+}, TextareaInput.prototype)
 
 function fromTextArea(textarea, options) {
   options = options ? copyObj(options) : {}
@@ -9105,7 +9102,7 @@ CodeMirror$1.fromTextArea = fromTextArea
 
 addLegacyProps(CodeMirror$1)
 
-CodeMirror$1.version = "5.22.0"
+CodeMirror$1.version = "5.21.0"
 
 return CodeMirror$1;
 
