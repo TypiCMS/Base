@@ -54,10 +54,10 @@ var plugins = [
     'wsc',
 ];
 plugins.forEach(function (plugin) {
-    mix.copy('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin);
+    mix.copy('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin, false);
 });
 
 /**
  * Copy CKEditor skins files
  */
-mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins');
+mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins', false);
