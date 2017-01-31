@@ -2490,9 +2490,9 @@ klaw@^1.0.0:
   optionalDependencies:
     graceful-fs "^4.1.9"
 
-laravel-mix@^0.5.4:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-0.5.6.tgz#ddfa95233333242bcb7b9d2a7bbfc3a267a05def"
+laravel-mix@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-0.6.0.tgz#c09059ff13bebb6bee7d7ec4e22939d1b4eb5cd2"
   dependencies:
     babel-core "^6.20.0"
     babel-loader "^6.2.9"
@@ -3658,11 +3658,11 @@ public-encrypt@^4.0.0:
     parse-asn1 "^5.0.0"
     randombytes "^2.0.1"
 
-punycode@1.3.2, punycode@^1.2.4:
+punycode@1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
 
-punycode@^1.4.1:
+punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
