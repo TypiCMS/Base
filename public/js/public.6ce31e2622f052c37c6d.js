@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 51);
+/******/ 	return __webpack_require__(__webpack_require__.s = 53);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -16669,7 +16669,7 @@ if (typeof jQuery === 'undefined') {
 
 /***/ }),
 
-/***/ 27:
+/***/ 29:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(function () {
@@ -16682,7 +16682,7 @@ if (typeof jQuery === 'undefined') {
 
 /***/ }),
 
-/***/ 28:
+/***/ 30:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$('.smooth-scroll').on('click', function (e) {
@@ -16701,7 +16701,7 @@ if (typeof jQuery === 'undefined') {
 
 /***/ }),
 
-/***/ 46:
+/***/ 48:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery, __webpack_provided_window_dot_jQuery) {/**
@@ -22042,32 +22042,6 @@ else if (typeof define === 'function' && define.amd) {
 
 /***/ }),
 
-/***/ 48:
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./offcanvas.js": 27,
-	"./smooth-scroll.js": 28
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 48;
-
-
-/***/ }),
-
 /***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22089,12 +22063,12 @@ __webpack_require__(2);
 /**
  * Swiper
  */
-__webpack_require__(46);
+__webpack_require__(48);
 
 /**
  * All files in /reources/assets/js/public
  */
-var req = __webpack_require__(48);
+var req = __webpack_require__(50);
 req.keys().forEach(function (key) {
   req(key);
 });
@@ -22102,7 +22076,33 @@ req.keys().forEach(function (key) {
 
 /***/ }),
 
-/***/ 51:
+/***/ 50:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./offcanvas.js": 29,
+	"./smooth-scroll.js": 30
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 50;
+
+
+/***/ }),
+
+/***/ 53:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(5);
