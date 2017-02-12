@@ -22,6 +22,7 @@ window.Dropzone = require('dropzone');
  * Angular
  */
 require('angular');
+require('angular-cookies');
 require('angular-resource');
 require('../../../node_modules/angular-smart-table/dist/smart-table.js');
 require('angular-ui-tree');

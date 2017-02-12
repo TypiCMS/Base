@@ -5,7 +5,7 @@
 
     'use strict';
 
-    angular.module('typicms', ['ngResource', 'smart-table', 'ui.tree']);
+    angular.module('typicms', ['ngResource', 'ngCookies', 'smart-table', 'ui.tree']);
 
     // Creating an 'update' method (PUT)
     angular.module('typicms').factory('$api', ['$resource', function ($resource) {
