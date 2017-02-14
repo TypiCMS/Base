@@ -52,9 +52,6 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-            'auth',
-            'authorization',
-            \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
             'throttle:60,1',
             'bindings',
         ],
