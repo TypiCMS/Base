@@ -4,7 +4,7 @@
     <a class="btn btn-default btn-xs" href="menulinks/{{ model.id }}/edit" translate>Edit</a>
 </div>
 <div typi-btn-status action="toggleStatus(model)" model="model" locale="TypiCMS.content_locale"></div>
-<div class="title" ui-tree-handle>{{ model.title }}</div>
+<div class="title" ui-tree-handle>{{ model.title | translated }}</div>
 <ul ui-tree-nodes="" ng-class="{hidden: collapsed}" ng-model="model.items">
     <li ng-repeat="model in model.items" ui-tree-node ng-include="'/views/partials/listItemMenulink.html'">
     </li>
