@@ -10,7 +10,7 @@ $(function () {
             table  = $(this).data('table'),
             data   = {},
             $this  = $(this),
-            url    = '/api/' + table + '/' + id;
+            url    = '/admin/' + table + '/' + id;
 
         if (! confirm('Delete ' + field + '?')) {
             return false;
@@ -20,7 +20,7 @@ $(function () {
         data[field] = 'delete';
 
         $.ajax({
-            type: 'PUT',
+            type: 'PATCH',
             url: url,
             data: data
         }).done(function() {
