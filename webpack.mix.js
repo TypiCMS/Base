@@ -3,14 +3,14 @@ const { mix } = require('laravel-mix');
 /**
  * Compile CSS
  */
-mix.sass('resources/assets/sass/admin.sass', 'public/css').version();
-mix.sass('resources/assets/sass/public.sass', 'public/css').version();
+mix.sass('resources/assets/sass/admin.sass', 'public/css');
+mix.sass('resources/assets/sass/public.sass', 'public/css');
 
 /**
  * Compile JS
  */
-mix.js('resources/assets/js/admin.js', 'public/js').version();
-mix.js('resources/assets/js/public.js', 'public/js').version();
+mix.js('resources/assets/js/admin.js', 'public/js');
+mix.js('resources/assets/js/public.js', 'public/js');
 
 /**
  * Copy font-awesome files
@@ -61,3 +61,11 @@ plugins.forEach(function (plugin) {
  * Copy CKEditor skins files
  */
 mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins', false);
+
+/**
+ * Versioning process
+ */
+if (mix.config.inProduction) {
+    mix.minify();
+    mix.version();
+}
