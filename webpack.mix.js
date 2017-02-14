@@ -66,6 +66,5 @@ mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins', fals
  * Versioning process
  */
 if (mix.config.inProduction) {
-    mix.minify();
     mix.version();
 }
