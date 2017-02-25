@@ -92,7 +92,7 @@ angular-ui-tree@^2.22.5:
   version "2.22.5"
   resolved "https://registry.yarnpkg.com/angular-ui-tree/-/angular-ui-tree-2.22.5.tgz#99071fb963feaf2eac11c98e95e40628c135813f"
 
-angular@^1.6.2:
+angular@>=1.0.8, angular@^1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.2.tgz#d0b677242ac4bf9ae81424297c6320973af4bb5a"
 
@@ -1026,6 +1026,12 @@ charenc@~0.0.1:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
 
+checklist-model@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/checklist-model/-/checklist-model-0.9.0.tgz#5544d00ee2fcb315e2e8dd3b392c9229c0b0423e"
+  dependencies:
+    angular ">=1.0.8"
+
 chokidar@1.6.1, chokidar@^1.4.3, chokidar@^1.6.0, chokidar@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.6.1.tgz#2f4447ab5e96e50fb3d789fd90d4c72e0e4c70c2"
@@ -1800,9 +1806,9 @@ extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
 
-"fancybox@git://github.com/fancyapps/fancyBox.git#3.0":
-  version "3.0.14"
-  resolved "git://github.com/fancyapps/fancyBox.git#03cc4a08a62d76a5c800f20389181f79117cad65"
+fancybox@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/fancybox/-/fancybox-3.0.0.tgz#8c21af8142c621bed7d551ba69c4c38eaecd2e04"
 
 fastparse@^1.1.1:
   version "1.1.1"
@@ -1918,9 +1924,9 @@ fresh@0.3.0, fresh@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.3.0.tgz#651f838e22424e7566de161d8358caa199f83d4f"
 
-friendly-errors-webpack-plugin@^1.2.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-1.3.1.tgz#80ab4ab26bfa733cae576dd0d427c64056781fdc"
+friendly-errors-webpack-plugin@^1.3.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-1.4.0.tgz#d1cec96387c7586122202e8a946e4e66baf2c102"
   dependencies:
     chalk "^1.1.3"
     error-stack-parser "^2.0.0"
@@ -2651,9 +2657,9 @@ klaw@^1.0.0:
   optionalDependencies:
     graceful-fs "^4.1.9"
 
-laravel-mix@^0.8.0:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-0.8.1.tgz#04ce73177a35f980e7873ffb6833b5933a12ac45"
+laravel-mix@^0.8.7:
+  version "0.8.7"
+  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-0.8.7.tgz#aba822b7a527f0e519c547733509e8c92e8b138f"
   dependencies:
     autoprefixer "^6.7.3"
     babel-core "^6.20.0"
@@ -2669,7 +2675,7 @@ laravel-mix@^0.8.0:
     css-loader "^0.14.5"
     extract-text-webpack-plugin "^2.0.0-rc.3"
     file-loader "^0.9.0"
-    friendly-errors-webpack-plugin "^1.2.0"
+    friendly-errors-webpack-plugin "^1.3.0"
     fs "0.0.1-security"
     html-loader "^0.4.4"
     less "^2.7.1"
