@@ -43,7 +43,38 @@ CKEDITOR.editorConfig = function( config ) {
     // File browser
     config.filebrowserBrowseUrl = '/admin/files?view=filepicker';
     config.filebrowserImageBrowseUrl = '/admin/files?type=i&view=filepicker';
-    config.filebrowserWindowWidth = 800;
-    config.filebrowserWindowHeight = 500;
 
 };
+
+CKEDITOR.on('dialogDefinition', function (event) {
+    var editor = event.editor;
+    var dialogDefinition = event.data.definition;
+    var dialogName = event.data.name;
+
+    var cleanUpFuncRef = CKEDITOR.tools.addFunction(function () {
+        $('#filepicker-iframe').remove();
+        $('html, body').removeClass('noscroll');
+    });
+
+    var tabCount = dialogDefinition.contents.length;
+    for (var i = 0; i < tabCount; i++) {
+        var browseButton = dialogDefinition.contents[i].get('browse');
+
+        if (browseButton !== null) {
+            browseButton.hidden = false;
+            browseButton.onClick = function (dialog, i) {
+                editor._.filebrowserSe = this;
+                var iframe = $('<iframe id="filepicker-iframe" class="filepicker-iframe"/>').attr({
+                    src: '/admin/files?view=filepicker' + // Change it to wherever  Filemanager is stored.
+                        '&CKEditorFuncNum=' + CKEDITOR.instances[event.editor.name]._.filebrowserFn +
+                        '&CKEditorCleanUpFuncNum=' + cleanUpFuncRef +
+                        '&langCode=en' +
+                        '&CKEditor=' + event.editor.name
+                });
+
+                $('body').append(iframe);
+                $('html, body').addClass('noscroll');
+            }
+        }
+    }
+});
