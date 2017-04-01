@@ -164,7 +164,7 @@ A page can be linked to a module.
 ### Menus
 
 Each menu has nestable entries. One entry can be linked to a page or URL.
-You can return a HTML formated menu with ``` Menus::build('menuname') ```.
+You can return a HTML formated menu with ``` Menus::render('menuname') ``` or ``` @menu('menuname') ```.
 
 ### Projects
 
@@ -213,7 +213,7 @@ Roles and Permissions are managed with [spatie/laravel-permission](https://githu
 ### Blocks
 
 Blocks are useful to display custom content in your views.
-You can get the content of a block with ``` Blocks::build('blockname') ```.
+You can display the content of a block with ``` Blocks::render('blockname') ``` or ``` @block('blockname') ```.
 
 ### Translations
 
