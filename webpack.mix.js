@@ -15,7 +15,7 @@ mix.js('resources/assets/js/public.js', 'public/js');
 /**
  * Copy font-awesome files
  */
-mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
+mix.copyDirectory('node_modules/font-awesome/fonts', 'public/fonts');
 
 /**
  * Copy CKEditor main files
@@ -54,13 +54,13 @@ var plugins = [
     'wsc',
 ];
 plugins.forEach(function (plugin) {
-    mix.copy('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin, false);
+    mix.copyDirectory('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin);
 });
 
 /**
  * Copy CKEditor skins files
  */
-mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins', false);
+mix.copyDirectory('node_modules/ckeditor/skins', 'public/components/ckeditor/skins');
 
 /**
  * Versioning process
