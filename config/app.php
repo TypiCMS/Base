@@ -170,7 +170,6 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Bkwld\Croppa\ServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
-        Laravel\Tinker\TinkerServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
         Rinvex\Repository\Providers\RepositoryServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
