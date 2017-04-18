@@ -1,5 +1,7 @@
 const { mix } = require('laravel-mix');
 
+mix.options({ processCssUrls: false });
+
 /**
  * Compile CSS
  */
@@ -68,3 +70,5 @@ mix.copyDirectory('node_modules/ckeditor/skins', 'public/components/ckeditor/ski
 if (mix.config.inProduction) {
     mix.version();
 }
+
+mix.browserSync('typicms.dev');
