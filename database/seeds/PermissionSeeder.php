@@ -78,6 +78,8 @@ class PermissionSeeder extends Seeder
             ['id' => 69, 'name' => 'sort-users', 'guard_name' => 'web'],
             ['id' => 70, 'name' => 'destroy-user', 'guard_name' => 'web'],
             ['id' => 71, 'name' => 'view-navbar', 'guard_name' => 'web'],
+            ['id' => 72, 'name' => 'clear-cache', 'guard_name' => 'web'],
+            ['id' => 73, 'name' => 'edit-setting', 'guard_name' => 'web'],
         ];
 
         DB::table('permissions')->insert($typi_permissions);
