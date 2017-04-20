@@ -55,13 +55,15 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        $locale = ($request->segment(1) === 'admin') ? config('typicms.admin_locale') : config('app.locale');
+
         /*
          * Notification on TokenMismatchException
          */
         if ($exception instanceof TokenMismatchException) {
             return redirect()
                 ->back()
-                ->withErrors(['token_error' => __('Sorry, your session seems to have expired. Please try again.')])
+                ->withErrors(['token_error' => __('Sorry, your session seems to have expired. Please try again.', [], $locale)])
                 ->withInput();
         }
 
@@ -71,14 +73,14 @@ class Handler extends ExceptionHandler
             $exception = new NotFoundHttpException($exception->getMessage(), $exception);
         } elseif ($exception instanceof AuthorizationException) {
             if ($request->wantsJson()) {
-                return response()->json(['error' => __($exception->getMessage(), [], config('typicms.admin_locale'))], 403);
+                return response()->json(['error' => __($exception->getMessage(), [], $locale)], 403);
             }
             $exception = new HttpException(403, $exception->getMessage());
         } elseif ($exception instanceof ValidationException && $exception->getResponse()) {
             return $exception->getResponse();
         }
         if ($request->wantsJson()) {
-            return response()->json(['error' => __('Error', [], config('typicms.admin_locale'))], 500);
+            return response()->json(['error' => __('Error', [], $locale)], 500);
         }
 
         return parent::render($request, $exception);
