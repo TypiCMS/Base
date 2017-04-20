@@ -70,9 +70,15 @@ class Handler extends ExceptionHandler
         } elseif ($exception instanceof ModelNotFoundException) {
             $exception = new NotFoundHttpException($exception->getMessage(), $exception);
         } elseif ($exception instanceof AuthorizationException) {
+            if ($request->wantsJson()) {
+                return response()->json(['error' => __($exception->getMessage(), [], config('typicms.admin_locale'))], 403);
+            }
             $exception = new HttpException(403, $exception->getMessage());
         } elseif ($exception instanceof ValidationException && $exception->getResponse()) {
             return $exception->getResponse();
+        }
+        if ($request->wantsJson()) {
+            return response()->json(['error' => __('Error', [], config('typicms.admin_locale'))], 500);
         }
 
         return parent::render($request, $exception);
