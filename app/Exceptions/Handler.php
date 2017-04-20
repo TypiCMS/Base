@@ -99,6 +99,30 @@ class Handler extends ExceptionHandler
     }
 
     /**
+     * Render the given HttpException.
+     *
+     * @param  \Symfony\Component\HttpKernel\Exception\HttpException  $e
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    protected function renderHttpException(HttpException $e)
+    {
+        $status = $e->getStatusCode();
+
+        view()->replaceNamespace('errors', [
+            resource_path('views/errors'),
+            __DIR__.'/views',
+        ]);
+
+        if (request()->segment(1) === 'admin' && view()->exists("errors::admin.{$status}")) {
+            return response()->view("errors::admin.{$status}", ['exception' => $e], $status, $e->getHeaders());
+        } elseif (view()->exists("errors::{$status}")) {
+            return response()->view("errors::{$status}", ['exception' => $e], $status, $e->getHeaders());
+        } else {
+            return $this->convertExceptionToResponse($e);
+        }
+    }
+
+    /**
      * Convert an authentication exception into an unauthenticated response.
      *
      * @param  \Illuminate\Http\Request  $request
