@@ -61,7 +61,7 @@ class Handler extends ExceptionHandler
         if ($exception instanceof TokenMismatchException) {
             return redirect()
                 ->back()
-                ->withErrors(['token_error' => trans('Sorry, your session seems to have expired. Please try again.')])
+                ->withErrors(['token_error' => __('Sorry, your session seems to have expired. Please try again.')])
                 ->withInput();
         }
 
