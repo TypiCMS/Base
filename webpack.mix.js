@@ -1,12 +1,10 @@
 const { mix } = require('laravel-mix');
 
-mix.options({ processCssUrls: false });
-
 /**
  * Compile CSS
  */
-mix.sass('resources/assets/sass/admin.sass', 'public/css');
-mix.sass('resources/assets/sass/public.sass', 'public/css');
+mix.standaloneSass('resources/assets/sass/admin.sass', 'public/css');
+mix.standaloneSass('resources/assets/sass/public.sass', 'public/css');
 
 /**
  * Compile JS
@@ -17,7 +15,7 @@ mix.js('resources/assets/js/public.js', 'public/js');
 /**
  * Copy font-awesome files
  */
-mix.copyDirectory('node_modules/font-awesome/fonts', 'public/fonts');
+mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 
 /**
  * Copy CKEditor main files
@@ -56,13 +54,13 @@ var plugins = [
     'wsc',
 ];
 plugins.forEach(function (plugin) {
-    mix.copyDirectory('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin);
+    mix.copy('node_modules/ckeditor/plugins/' + plugin, 'public/components/ckeditor/plugins/' + plugin);
 });
 
 /**
  * Copy CKEditor skins files
  */
-mix.copyDirectory('node_modules/ckeditor/skins', 'public/components/ckeditor/skins');
+mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins');
 
 /**
  * Versioning process
