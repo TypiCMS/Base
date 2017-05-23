@@ -98,8 +98,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'allsections.*.title.*' => [
+            'max' => 'The title of a section may not be greater than :max characters.',
         ],
     ],
 
