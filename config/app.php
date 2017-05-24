@@ -183,7 +183,6 @@ return [
         TypiCMS\Modules\Users\Providers\ModuleProvider::class,
         TypiCMS\Modules\Roles\Providers\ModuleProvider::class,
         TypiCMS\Modules\Files\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Galleries\Providers\ModuleProvider::class,
         TypiCMS\Modules\Dashboard\Providers\ModuleProvider::class,
         TypiCMS\Modules\Menus\Providers\ModuleProvider::class,
         TypiCMS\Modules\Sitemap\Providers\ModuleProvider::class,
