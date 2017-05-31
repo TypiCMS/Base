@@ -1,10 +1,12 @@
 const { mix } = require('laravel-mix');
 
+mix.options({ processCssUrls: false });
+
 /**
  * Compile CSS
  */
-mix.standaloneSass('resources/assets/sass/admin.sass', 'public/css');
-mix.standaloneSass('resources/assets/sass/public.sass', 'public/css');
+mix.sass('resources/assets/sass/admin.sass', 'public/css');
+mix.sass('resources/assets/sass/public.sass', 'public/css');
 
 /**
  * Compile JS
@@ -35,7 +37,7 @@ mix.copy('node_modules/ckeditor/lang/en.js', 'public/components/ckeditor/lang/en
  * Copy CKEditor plugins files
  */
 var plugins = [
-    'clipboard',
+    'dialogadvtab',
     'div',
     'image',
     'image2',
@@ -49,6 +51,7 @@ var plugins = [
     'showblocks',
     'specialchar',
     'table',
+    'tableselection',
     'widget',
     'widgetselection',
     'wsc',
