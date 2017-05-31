@@ -10,6 +10,7 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.0.48",
     "alertify.js": "^1.0.12",
     "angular": "^1.6.4",
     "angular-cookies": "^1.6.4",
@@ -22,7 +23,6 @@
     "ckeditor": "^4.7.0",
     "cross-env": "^3.2.3",
     "dropzone": "^4.3.0",
-    "fancybox": "https://github.com/fancyapps/fancyBox#master",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "laravel-mix": "0.*",
