@@ -174,6 +174,7 @@ return [
         Rinvex\Repository\Providers\RepositoryServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
         Spatie\Translatable\TranslatableServiceProvider::class,
+        Typidesign\Translations\ArtisanTranslationsServiceProvider::class,
         TypiCMS\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\ModuleProvider::class,
