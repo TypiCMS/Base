@@ -5,7 +5,7 @@
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/96951b30-0060-414c-992d-df965bd63000.svg?style=flat-square)]()
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/typicms/base.svg?style=flat-square)]()
 
-TypiCMS is a modular multilingual content management system built with [Laravel 5.2](http://laravel.com). Out of the box you can manage pages, events, news, places, sliders, etc.
+TypiCMS is a modular multilingual content management system built with [Laravel 5.5](http://laravel.com). Out of the box you can manage pages, events, news, places, sliders, etc.
 
 ![TypiCMS screenshot](http://typicms.org/uploads/files/typicms-screenshot.png?1)
 
@@ -14,7 +14,7 @@ TypiCMS is a modular multilingual content management system built with [Laravel 
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
-  - [npm & Gulp](#npm--gulp)
+  - [Assets](#assets)
   - [Configuration](#configuration)
   - [Installation of a module](#installation-of-a-module)
 - [Modules](#modules)
@@ -62,15 +62,17 @@ This kind of URLs are managed by the CMS:
 
 ## Requirements
 
-- PHP >= 5.5.9
+- PHP >= 7.0.0
 - OpenSSL PHP Extension
+- PDO PHP Extension
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
 - Memcached or Redis
+- XML PHP Extension
 
 ## Installation
 
-First install [Node.js](http://nodejs.org) and [gulp](http://gulpjs.com)
+First install [Node.js](http://nodejs.org)
 
 1. Create a new project
 
@@ -90,11 +92,12 @@ First install [Node.js](http://nodejs.org) and [gulp](http://gulpjs.com)
 
 Go to http://mywebsite.local/admin and log in.
 
-### npm & Gulp
+### Assets
 
-In order to work on assets, you need to install [Node.js](http://nodejs.org) and [gulp](http://gulpjs.com), then cd to your website folder and run these commands:
+Assets are managed with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix).
+In order to work on assets, you need to install [Node.js](http://nodejs.org), then cd to your website folder and run these commands:
 
-1. Install gulp packages according to gulpfile.js (directory **node_modules**)
+1. Install npm packages (in directory **node_modules**)
 
    ```
    npm install
@@ -102,7 +105,7 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org) and
 2. Compile admin and public assets
 
    ```
-   gulp all
+   npm run dev
    ```
 
 ### Configuration
@@ -160,6 +163,7 @@ Each module can be published in order to be modified and tracked by git. Here is
 Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.
 Each translation of a page has its own route.
 A page can be linked to a module.
+A page can have multiple sections.
 
 ### Menus
 
@@ -170,14 +174,10 @@ You can return a HTML formated menu with ``` Menus::render('menuname') ``` or ``
 
 Projects have categories, projects URLs follows this pattern: /en/projects/category-slug/project-slug
 
-### Categories
-
-Categories have many projects.
-
 ### Tags
 
-Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) jQuery plugin.
-The tags module has many to many polymorphic relations so it could easily be linked to other modules.
+Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) plugin.
+The tags module has many to many polymorphic relations so a tag can be easily linked to any module.
 
 ### Events
 
@@ -185,7 +185,7 @@ Events have starting and ending dates.
 
 ### News
 
-Simple news module with linked files/images galleries.
+News module.
 
 ### Contacts
 
@@ -197,13 +197,8 @@ A partner has a logo, website URL, title and body content.
 
 ### Files
 
-The files module allows you to upload multiple files. It uses [DropzoneJS](http://www.dropzonejs.com) to upload them.
-Thumbnails are generated on the fly with [Croppa](https://github.com/BKWLD/croppa).
-
-### Galleries
-
-You can create as many galleries as you want, each gallery has many files.
-Galleries are linkable to any module item through a polymorphic many to many relation.
+The files module allows you to upload and organize files in folders. Behind the scene, [DropzoneJS](http://www.dropzonejs.com) is used to upload files.
+Thumbnails are generated on request with [Croppa](https://github.com/BKWLD/croppa).
 
 ### Users and roles
 
@@ -291,7 +286,7 @@ You can easily scaffold a module, for a module named Cats, run this command:
 php artisan typicms:create cats
 ```
 
-##Upgrade instructions
+## Upgrade instructions
 
 [See the Wiki for upgrade instructions](https://github.com/TypiCMS/Base/wiki)
 
