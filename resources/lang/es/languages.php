@@ -5,5 +5,4 @@ return [
     'es' => 'Español',
     'nl' => 'Holandés',
     'en' => 'Inglés',
-    'all' => 'Todos los idiomas',
 ];
