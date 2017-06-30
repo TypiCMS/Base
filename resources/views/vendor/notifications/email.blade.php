@@ -51,7 +51,7 @@
 {{-- Subcopy --}}
 @isset($actionText)
 @component('mail::subcopy')
-{{ __('If you’re having trouble clicking the “:actionText” button', $actionText) }}, {{ __('copy and paste the URL below into your web browser:') }} [{{ $actionUrl }}]({{ $actionUrl }})
+{{ __('If you’re having trouble clicking the “:actionText” button', ['actionText' => $actionText]) }}, {{ __('copy and paste the URL below into your web browser:') }} [{{ $actionUrl }}]({{ $actionUrl }})
 @endcomponent
 @endisset
 @endcomponent
