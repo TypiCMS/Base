@@ -1,12 +1,10 @@
 const { mix } = require('laravel-mix');
 
-mix.options({ processCssUrls: false });
-
 /**
  * Compile CSS
  */
-mix.sass('resources/assets/sass/admin.sass', 'public/css');
-mix.sass('resources/assets/sass/public.sass', 'public/css');
+mix.standaloneSass('resources/assets/sass/admin.sass', 'public/css');
+mix.standaloneSass('resources/assets/sass/public.sass', 'public/css');
 
 /**
  * Compile JS
@@ -68,8 +66,6 @@ mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins');
 /**
  * Versioning process
  */
-if (mix.config.inProduction) {
-    mix.version();
-}
+mix.version();
 
 mix.browserSync('typicms.dev');
