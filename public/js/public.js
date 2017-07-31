@@ -1,41 +1,38 @@
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-
+/******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
 /******/ 			exports: {}
 /******/ 		};
-
+/******/
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.l = true;
-
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-
-
+/******/
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
-
+/******/
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-
+/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -46,7 +43,7 @@
 /******/ 			});
 /******/ 		}
 /******/ 	};
-
+/******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
 /******/ 	__webpack_require__.n = function(module) {
 /******/ 		var getter = module && module.__esModule ?
@@ -55,34 +52,2436 @@
 /******/ 		__webpack_require__.d(getter, 'a', getter);
 /******/ 		return getter;
 /******/ 	};
-
+/******/
 /******/ 	// Object.prototype.hasOwnProperty.call
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-
+/******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./";
-
+/******/ 	__webpack_require__.p = "";
+/******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 53);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 0:
+/***/ "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js":
+/***/ (function(module, exports) {
+
+// ==================================================
+// fancyBox v3.1.20
+//
+// Licensed GPLv3 for open source use
+// or fancyBox Commercial License for commercial use
+//
+// http://fancyapps.com/fancybox/
+// Copyright 2017 fancyApps
+//
+// ==================================================
+!function(t,e,n,o){"use strict";function i(t){var e=t.currentTarget,o=t.data?t.data.options:{},i=t.data?t.data.items:[],a=n(e).attr("data-fancybox")||"",s=0;t.preventDefault(),t.stopPropagation(),a?(i=i.length?i.filter('[data-fancybox="'+a+'"]'):n('[data-fancybox="'+a+'"]'),s=i.index(e),s<0&&(s=0)):i=[e],n.fancybox.open(i,o,s)}if(n){if(n.fn.fancybox)return void n.error("fancyBox already initialized");var a={loop:!1,margin:[44,0],gutter:50,keyboard:!0,arrows:!0,infobar:!1,toolbar:!0,buttons:["slideShow","fullScreen","thumbs","close"],idleTime:4,smallBtn:"auto",protect:!1,modal:!1,image:{preload:"auto"},ajax:{settings:{data:{fancybox:!0}}},iframe:{tpl:'<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen allowtransparency="true" src=""></iframe>',preload:!0,css:{},attr:{scrolling:"auto"}},animationEffect:"zoom",animationDuration:366,zoomOpacity:"auto",transitionEffect:"fade",transitionDuration:366,slideClass:"",baseClass:"",baseTpl:'<div class="fancybox-container" role="dialog" tabindex="-1"><div class="fancybox-bg"></div><div class="fancybox-inner"><div class="fancybox-infobar"><button data-fancybox-prev title="{{PREV}}" class="fancybox-button fancybox-button--left"></button><div class="fancybox-infobar__body"><span data-fancybox-index></span>&nbsp;/&nbsp;<span data-fancybox-count></span></div><button data-fancybox-next title="{{NEXT}}" class="fancybox-button fancybox-button--right"></button></div><div class="fancybox-toolbar">{{BUTTONS}}</div><div class="fancybox-navigation"><button data-fancybox-prev title="{{PREV}}" class="fancybox-arrow fancybox-arrow--left" /><button data-fancybox-next title="{{NEXT}}" class="fancybox-arrow fancybox-arrow--right" /></div><div class="fancybox-stage"></div><div class="fancybox-caption-wrap"><div class="fancybox-caption"></div></div></div></div>',spinnerTpl:'<div class="fancybox-loading"></div>',errorTpl:'<div class="fancybox-error"><p>{{ERROR}}<p></div>',btnTpl:{slideShow:'<button data-fancybox-play class="fancybox-button fancybox-button--play" title="{{PLAY_START}}"></button>',fullScreen:'<button data-fancybox-fullscreen class="fancybox-button fancybox-button--fullscreen" title="{{FULL_SCREEN}}"></button>',thumbs:'<button data-fancybox-thumbs class="fancybox-button fancybox-button--thumbs" title="{{THUMBS}}"></button>',close:'<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}"></button>',smallBtn:'<button data-fancybox-close class="fancybox-close-small" title="{{CLOSE}}"></button>'},parentEl:"body",autoFocus:!0,backFocus:!0,trapFocus:!0,fullScreen:{autoStart:!1},touch:{vertical:!0,momentum:!0},hash:null,media:{},slideShow:{autoStart:!1,speed:4e3},thumbs:{autoStart:!1,hideOnClose:!0},onInit:n.noop,beforeLoad:n.noop,afterLoad:n.noop,beforeShow:n.noop,afterShow:n.noop,beforeClose:n.noop,afterClose:n.noop,onActivate:n.noop,onDeactivate:n.noop,clickContent:function(t,e){return"image"===t.type&&"zoom"},clickSlide:"close",clickOutside:"close",dblclickContent:!1,dblclickSlide:!1,dblclickOutside:!1,mobile:{clickContent:function(t,e){return"image"===t.type&&"toggleControls"},clickSlide:function(t,e){return"image"===t.type?"toggleControls":"close"},dblclickContent:function(t,e){return"image"===t.type&&"zoom"},dblclickSlide:function(t,e){return"image"===t.type&&"zoom"}},lang:"en",i18n:{en:{CLOSE:"Close",NEXT:"Next",PREV:"Previous",ERROR:"The requested content cannot be loaded. <br/> Please try again later.",PLAY_START:"Start slideshow",PLAY_STOP:"Pause slideshow",FULL_SCREEN:"Full screen",THUMBS:"Thumbnails"},de:{CLOSE:"Schliessen",NEXT:"Weiter",PREV:"Zurück",ERROR:"Die angeforderten Daten konnten nicht geladen werden. <br/> Bitte versuchen Sie es später nochmal.",PLAY_START:"Diaschau starten",PLAY_STOP:"Diaschau beenden",FULL_SCREEN:"Vollbild",THUMBS:"Vorschaubilder"}}},s=n(t),r=n(e),c=0,l=function(t){return t&&t.hasOwnProperty&&t instanceof n},u=function(){return t.requestAnimationFrame||t.webkitRequestAnimationFrame||t.mozRequestAnimationFrame||t.oRequestAnimationFrame||function(e){return t.setTimeout(e,1e3/60)}}(),d=function(){var t,n=e.createElement("fakeelement"),i={transition:"transitionend",OTransition:"oTransitionEnd",MozTransition:"transitionend",WebkitTransition:"webkitTransitionEnd"};for(t in i)if(n.style[t]!==o)return i[t]}(),f=function(t){return t&&t.length&&t[0].offsetHeight},h=function(t,o,i){var s=this;s.opts=n.extend(!0,{index:i},a,o||{}),o&&n.isArray(o.buttons)&&(s.opts.buttons=o.buttons),s.id=s.opts.id||++c,s.group=[],s.currIndex=parseInt(s.opts.index,10)||0,s.prevIndex=null,s.prevPos=null,s.currPos=0,s.firstRun=null,s.createGroup(t),s.group.length&&(s.$lastFocus=n(e.activeElement).blur(),s.slides={},s.init(t))};n.extend(h.prototype,{init:function(){var t,e,o,i=this,a=i.group[i.currIndex].opts;i.scrollTop=r.scrollTop(),i.scrollLeft=r.scrollLeft(),n.fancybox.getInstance()||n.fancybox.isMobile||"hidden"===n("body").css("overflow")||(t=n("body").width(),n("html").addClass("fancybox-enabled"),t=n("body").width()-t,t>1&&n("head").append('<style id="fancybox-style-noscroll" type="text/css">.compensate-for-scrollbar, .fancybox-enabled body { margin-right: '+t+"px; }</style>")),o="",n.each(a.buttons,function(t,e){o+=a.btnTpl[e]||""}),e=n(i.translate(i,a.baseTpl.replace("{{BUTTONS}}",o))).addClass("fancybox-is-hidden").attr("id","fancybox-container-"+i.id).addClass(a.baseClass).data("FancyBox",i).prependTo(a.parentEl),i.$refs={container:e},["bg","inner","infobar","toolbar","stage","caption"].forEach(function(t){i.$refs[t]=e.find(".fancybox-"+t)}),(!a.arrows||i.group.length<2)&&e.find(".fancybox-navigation").remove(),a.infobar||i.$refs.infobar.remove(),a.toolbar||i.$refs.toolbar.remove(),i.trigger("onInit"),i.activate(),i.jumpTo(i.currIndex)},translate:function(t,e){var n=t.opts.i18n[t.opts.lang];return e.replace(/\{\{(\w+)\}\}/g,function(t,e){var i=n[e];return i===o?t:i})},createGroup:function(t){var e=this,i=n.makeArray(t);n.each(i,function(t,i){var a,s,r,c,l={},u={},d=[];n.isPlainObject(i)?(l=i,u=i.opts||i):"object"===n.type(i)&&n(i).length?(a=n(i),d=a.data(),u="options"in d?d.options:{},u="object"===n.type(u)?u:{},l.src="src"in d?d.src:u.src||a.attr("href"),["width","height","thumb","type","filter"].forEach(function(t){t in d&&(u[t]=d[t])}),"srcset"in d&&(u.image={srcset:d.srcset}),u.$orig=a,l.type||l.src||(l.type="inline",l.src=i)):l={type:"html",src:i+""},l.opts=n.extend(!0,{},e.opts,u),n.fancybox.isMobile&&(l.opts=n.extend(!0,{},l.opts,l.opts.mobile)),s=l.type||l.opts.type,r=l.src||"",!s&&r&&(r.match(/(^data:image\/[a-z0-9+\/=]*,)|(\.(jp(e|g|eg)|gif|png|bmp|webp|svg|ico)((\?|#).*)?$)/i)?s="image":r.match(/\.(pdf)((\?|#).*)?$/i)?s="pdf":"#"===r.charAt(0)&&(s="inline")),l.type=s,l.index=e.group.length,l.opts.$orig&&!l.opts.$orig.length&&delete l.opts.$orig,!l.opts.$thumb&&l.opts.$orig&&(l.opts.$thumb=l.opts.$orig.find("img:first")),l.opts.$thumb&&!l.opts.$thumb.length&&delete l.opts.$thumb,"function"===n.type(l.opts.caption)?l.opts.caption=l.opts.caption.apply(i,[e,l]):"caption"in d&&(l.opts.caption=d.caption),l.opts.caption=l.opts.caption===o?"":l.opts.caption+"","ajax"===s&&(c=r.split(/\s+/,2),c.length>1&&(l.src=c.shift(),l.opts.filter=c.shift())),"auto"==l.opts.smallBtn&&(n.inArray(s,["html","inline","ajax"])>-1?(l.opts.toolbar=!1,l.opts.smallBtn=!0):l.opts.smallBtn=!1),"pdf"===s&&(l.type="iframe",l.opts.iframe.preload=!1),l.opts.modal&&(l.opts=n.extend(!0,l.opts,{infobar:0,toolbar:0,smallBtn:0,keyboard:0,slideShow:0,fullScreen:0,thumbs:0,touch:0,clickContent:!1,clickSlide:!1,clickOutside:!1,dblclickContent:!1,dblclickSlide:!1,dblclickOutside:!1})),e.group.push(l)})},addEvents:function(){var o=this;o.removeEvents(),o.$refs.container.on("click.fb-close","[data-fancybox-close]",function(t){t.stopPropagation(),t.preventDefault(),o.close(t)}).on("click.fb-prev touchend.fb-prev","[data-fancybox-prev]",function(t){t.stopPropagation(),t.preventDefault(),o.previous()}).on("click.fb-next touchend.fb-next","[data-fancybox-next]",function(t){t.stopPropagation(),t.preventDefault(),o.next()}),s.on("orientationchange.fb resize.fb",function(t){t&&t.originalEvent&&"resize"===t.originalEvent.type?u(function(){o.update()}):(o.$refs.stage.hide(),setTimeout(function(){o.$refs.stage.show(),o.update()},500))}),r.on("focusin.fb",function(t){var i=n.fancybox?n.fancybox.getInstance():null;i.isClosing||!i.current||!i.current.opts.trapFocus||n(t.target).hasClass("fancybox-container")||n(t.target).is(e)||i&&"fixed"!==n(t.target).css("position")&&!i.$refs.container.has(t.target).length&&(t.stopPropagation(),i.focus(),s.scrollTop(o.scrollTop).scrollLeft(o.scrollLeft))}),r.on("keydown.fb",function(t){var e=o.current,i=t.keyCode||t.which;if(e&&e.opts.keyboard&&!n(t.target).is("input")&&!n(t.target).is("textarea"))return 8===i||27===i?(t.preventDefault(),void o.close(t)):37===i||38===i?(t.preventDefault(),void o.previous()):39===i||40===i?(t.preventDefault(),void o.next()):void o.trigger("afterKeydown",t,i)}),o.group[o.currIndex].opts.idleTime&&(o.idleSecondsCounter=0,r.on("mousemove.fb-idle mouseenter.fb-idle mouseleave.fb-idle mousedown.fb-idle touchstart.fb-idle touchmove.fb-idle scroll.fb-idle keydown.fb-idle",function(){o.idleSecondsCounter=0,o.isIdle&&o.showControls(),o.isIdle=!1}),o.idleInterval=t.setInterval(function(){o.idleSecondsCounter++,o.idleSecondsCounter>=o.group[o.currIndex].opts.idleTime&&(o.isIdle=!0,o.idleSecondsCounter=0,o.hideControls())},1e3))},removeEvents:function(){var e=this;s.off("orientationchange.fb resize.fb"),r.off("focusin.fb keydown.fb .fb-idle"),this.$refs.container.off(".fb-close .fb-prev .fb-next"),e.idleInterval&&(t.clearInterval(e.idleInterval),e.idleInterval=null)},previous:function(t){return this.jumpTo(this.currPos-1,t)},next:function(t){return this.jumpTo(this.currPos+1,t)},jumpTo:function(t,e,i){var a,s,r,c,l,u,d,h=this,p=h.group.length;if(!(h.isSliding||h.isClosing||h.isAnimating&&h.firstRun)){if(t=parseInt(t,10),s=h.current?h.current.opts.loop:h.opts.loop,!s&&(t<0||t>=p))return!1;if(a=h.firstRun=null===h.firstRun,!(p<2&&!a&&h.isSliding)){if(c=h.current,h.prevIndex=h.currIndex,h.prevPos=h.currPos,r=h.createSlide(t),p>1&&((s||r.index>0)&&h.createSlide(t-1),(s||r.index<p-1)&&h.createSlide(t+1)),h.current=r,h.currIndex=r.index,h.currPos=r.pos,h.trigger("beforeShow",a),h.updateControls(),u=n.fancybox.getTranslate(r.$slide),r.isMoved=(0!==u.left||0!==u.top)&&!r.$slide.hasClass("fancybox-animated"),r.forcedDuration=o,n.isNumeric(e)?r.forcedDuration=e:e=r.opts[a?"animationDuration":"transitionDuration"],e=parseInt(e,10),a)return r.opts.animationEffect&&e&&h.$refs.container.css("transition-duration",e+"ms"),h.$refs.container.removeClass("fancybox-is-hidden"),f(h.$refs.container),h.$refs.container.addClass("fancybox-is-open"),r.$slide.addClass("fancybox-slide--current"),h.loadSlide(r),void h.preload();n.each(h.slides,function(t,e){n.fancybox.stop(e.$slide)}),r.$slide.removeClass("fancybox-slide--next fancybox-slide--previous").addClass("fancybox-slide--current"),r.isMoved?(l=Math.round(r.$slide.width()),n.each(h.slides,function(t,o){var i=o.pos-r.pos;n.fancybox.animate(o.$slide,{top:0,left:i*l+i*o.opts.gutter},e,function(){o.$slide.removeAttr("style").removeClass("fancybox-slide--next fancybox-slide--previous"),o.pos===h.currPos&&(r.isMoved=!1,h.complete())})})):h.$refs.stage.children().removeAttr("style"),r.isLoaded?h.revealContent(r):h.loadSlide(r),h.preload(),c.pos!==r.pos&&(d="fancybox-slide--"+(c.pos>r.pos?"next":"previous"),c.$slide.removeClass("fancybox-slide--complete fancybox-slide--current fancybox-slide--next fancybox-slide--previous"),c.isComplete=!1,e&&(r.isMoved||r.opts.transitionEffect)&&(r.isMoved?c.$slide.addClass(d):(d="fancybox-animated "+d+" fancybox-fx-"+r.opts.transitionEffect,n.fancybox.animate(c.$slide,d,e,function(){c.$slide.removeClass(d).removeAttr("style")}))))}}},createSlide:function(t){var e,o,i=this;return o=t%i.group.length,o=o<0?i.group.length+o:o,!i.slides[t]&&i.group[o]&&(e=n('<div class="fancybox-slide"></div>').appendTo(i.$refs.stage),i.slides[t]=n.extend(!0,{},i.group[o],{pos:t,$slide:e,isLoaded:!1}),i.updateSlide(i.slides[t])),i.slides[t]},scaleToActual:function(t,e,i){var a,s,r,c,l,u=this,d=u.current,f=d.$content,h=parseInt(d.$slide.width(),10),p=parseInt(d.$slide.height(),10),g=d.width,b=d.height;"image"!=d.type||d.hasError||!f||u.isAnimating||(n.fancybox.stop(f),u.isAnimating=!0,t=t===o?.5*h:t,e=e===o?.5*p:e,a=n.fancybox.getTranslate(f),c=g/a.width,l=b/a.height,s=.5*h-.5*g,r=.5*p-.5*b,g>h&&(s=a.left*c-(t*c-t),s>0&&(s=0),s<h-g&&(s=h-g)),b>p&&(r=a.top*l-(e*l-e),r>0&&(r=0),r<p-b&&(r=p-b)),u.updateCursor(g,b),n.fancybox.animate(f,{top:r,left:s,scaleX:c,scaleY:l},i||330,function(){u.isAnimating=!1}),u.SlideShow&&u.SlideShow.isActive&&u.SlideShow.stop())},scaleToFit:function(t){var e,o=this,i=o.current,a=i.$content;"image"!=i.type||i.hasError||!a||o.isAnimating||(n.fancybox.stop(a),o.isAnimating=!0,e=o.getFitPos(i),o.updateCursor(e.width,e.height),n.fancybox.animate(a,{top:e.top,left:e.left,scaleX:e.width/a.width(),scaleY:e.height/a.height()},t||330,function(){o.isAnimating=!1}))},getFitPos:function(t){var e,o,i,a,r,c=this,l=t.$content,u=t.width,d=t.height,f=t.opts.margin;return!(!l||!l.length||!u&&!d)&&("number"===n.type(f)&&(f=[f,f]),2==f.length&&(f=[f[0],f[1],f[0],f[1]]),s.width()<800&&(f=[0,0,0,0]),e=parseInt(c.$refs.stage.width(),10)-(f[1]+f[3]),o=parseInt(c.$refs.stage.height(),10)-(f[0]+f[2]),i=Math.min(1,e/u,o/d),a=Math.floor(i*u),r=Math.floor(i*d),{top:Math.floor(.5*(o-r))+f[0],left:Math.floor(.5*(e-a))+f[3],width:a,height:r})},update:function(){var t=this;n.each(t.slides,function(e,n){t.updateSlide(n)})},updateSlide:function(t){var e=this,o=t.$content;o&&(t.width||t.height)&&(n.fancybox.stop(o),n.fancybox.setTranslate(o,e.getFitPos(t)),t.pos===e.currPos&&e.updateCursor()),t.$slide.trigger("refresh"),e.trigger("onUpdate",t)},updateCursor:function(t,e){var n,i=this,a=i.$refs.container.removeClass("fancybox-is-zoomable fancybox-can-zoomIn fancybox-can-drag fancybox-can-zoomOut");i.current&&!i.isClosing&&(i.isZoomable()?(a.addClass("fancybox-is-zoomable"),n=t!==o&&e!==o?t<i.current.width&&e<i.current.height:i.isScaledDown(),n?a.addClass("fancybox-can-zoomIn"):i.current.opts.touch?a.addClass("fancybox-can-drag"):a.addClass("fancybox-can-zoomOut")):i.current.opts.touch&&a.addClass("fancybox-can-drag"))},isZoomable:function(){var t,e=this,o=e.current;if(o&&!e.isClosing)return!!("image"===o.type&&o.isLoaded&&!o.hasError&&("zoom"===o.opts.clickContent||n.isFunction(o.opts.clickContent)&&"zoom"===o.opts.clickContent(o))&&(t=e.getFitPos(o),o.width>t.width||o.height>t.height))},isScaledDown:function(){var t=this,e=t.current,o=e.$content,i=!1;return o&&(i=n.fancybox.getTranslate(o),i=i.width<e.width||i.height<e.height),i},canPan:function(){var t=this,e=t.current,n=e.$content,o=!1;return n&&(o=t.getFitPos(e),o=Math.abs(n.width()-o.width)>1||Math.abs(n.height()-o.height)>1),o},loadSlide:function(t){var e,o,i,a=this;if(!t.isLoading&&!t.isLoaded){switch(t.isLoading=!0,a.trigger("beforeLoad",t),e=t.type,o=t.$slide,o.off("refresh").trigger("onReset").addClass("fancybox-slide--"+(e||"unknown")).addClass(t.opts.slideClass),e){case"image":a.setImage(t);break;case"iframe":a.setIframe(t);break;case"html":a.setContent(t,t.src||t.content);break;case"inline":n(t.src).length?a.setContent(t,n(t.src)):a.setError(t);break;case"ajax":a.showLoading(t),i=n.ajax(n.extend({},t.opts.ajax.settings,{url:t.src,success:function(e,n){"success"===n&&a.setContent(t,e)},error:function(e,n){e&&"abort"!==n&&a.setError(t)}})),o.one("onReset",function(){i.abort()});break;default:a.setError(t)}return!0}},setImage:function(e){var o,i,a,s,r=this,c=e.opts.image.srcset;if(c){a=t.devicePixelRatio||1,s=t.innerWidth*a,i=c.split(",").map(function(t){var e={};return t.trim().split(/\s+/).forEach(function(t,n){var o=parseInt(t.substring(0,t.length-1),10);return 0===n?e.url=t:void(o&&(e.value=o,e.postfix=t[t.length-1]))}),e}),i.sort(function(t,e){return t.value-e.value});for(var l=0;l<i.length;l++){var u=i[l];if("w"===u.postfix&&u.value>=s||"x"===u.postfix&&u.value>=a){o=u;break}}!o&&i.length&&(o=i[i.length-1]),o&&(e.src=o.url,e.width&&e.height&&"w"==o.postfix&&(e.height=e.width/e.height*o.value,e.width=o.value))}e.$content=n('<div class="fancybox-image-wrap"></div>').addClass("fancybox-is-hidden").appendTo(e.$slide),e.opts.preload!==!1&&e.opts.width&&e.opts.height&&(e.opts.thumb||e.opts.$thumb)?(e.width=e.opts.width,e.height=e.opts.height,e.$ghost=n("<img />").one("error",function(){n(this).remove(),e.$ghost=null,r.setBigImage(e)}).one("load",function(){r.afterLoad(e),r.setBigImage(e)}).addClass("fancybox-image").appendTo(e.$content).attr("src",e.opts.thumb||e.opts.$thumb.attr("src"))):r.setBigImage(e)},setBigImage:function(t){var e=this,o=n("<img />");t.$image=o.one("error",function(){e.setError(t)}).one("load",function(){clearTimeout(t.timouts),t.timouts=null,e.isClosing||(t.width=this.naturalWidth,t.height=this.naturalHeight,t.opts.image.srcset&&o.attr("sizes","100vw").attr("srcset",t.opts.image.srcset),e.hideLoading(t),t.$ghost?t.timouts=setTimeout(function(){t.timouts=null,t.$ghost.hide()},Math.min(300,Math.max(1e3,t.height/1600))):e.afterLoad(t))}).addClass("fancybox-image").attr("src",t.src).appendTo(t.$content),o[0].complete?o.trigger("load"):o[0].error?o.trigger("error"):t.timouts=setTimeout(function(){o[0].complete||t.hasError||e.showLoading(t)},100)},setIframe:function(t){var e,i=this,a=t.opts.iframe,s=t.$slide;t.$content=n('<div class="fancybox-content'+(a.preload?" fancybox-is-hidden":"")+'"></div>').css(a.css).appendTo(s),e=n(a.tpl.replace(/\{rnd\}/g,(new Date).getTime())).attr(a.attr).appendTo(t.$content),a.preload?(i.showLoading(t),e.on("load.fb error.fb",function(e){this.isReady=1,t.$slide.trigger("refresh"),i.afterLoad(t)}),s.on("refresh.fb",function(){var n,i,s,r,c,l=t.$content;if(1===e[0].isReady){try{n=e.contents(),i=n.find("body")}catch(t){}i&&i.length&&(a.css.width===o||a.css.height===o)&&(s=e[0].contentWindow.document.documentElement.scrollWidth,r=Math.ceil(i.outerWidth(!0)+(l.width()-s)),c=Math.ceil(i.outerHeight(!0)),l.css({width:a.css.width===o?r+(l.outerWidth()-l.innerWidth()):a.css.width,height:a.css.height===o?c+(l.outerHeight()-l.innerHeight()):a.css.height})),l.removeClass("fancybox-is-hidden")}})):this.afterLoad(t),e.attr("src",t.src),t.opts.smallBtn===!0&&t.$content.prepend(i.translate(t,t.opts.btnTpl.smallBtn)),s.one("onReset",function(){try{n(this).find("iframe").hide().attr("src","//about:blank")}catch(t){}n(this).empty(),t.isLoaded=!1})},setContent:function(t,e){var o=this;o.isClosing||(o.hideLoading(t),t.$slide.empty(),l(e)&&e.parent().length?(e.parent(".fancybox-slide--inline").trigger("onReset"),t.$placeholder=n("<div></div>").hide().insertAfter(e),e.css("display","inline-block")):t.hasError||("string"===n.type(e)&&(e=n("<div>").append(n.trim(e)).contents(),3===e[0].nodeType&&(e=n("<div>").html(e))),t.opts.filter&&(e=n("<div>").html(e).find(t.opts.filter))),t.$slide.one("onReset",function(){t.$placeholder&&(t.$placeholder.after(e.hide()).remove(),t.$placeholder=null),t.$smallBtn&&(t.$smallBtn.remove(),t.$smallBtn=null),t.hasError||(n(this).empty(),t.isLoaded=!1)}),t.$content=n(e).appendTo(t.$slide),t.opts.smallBtn&&!t.$smallBtn&&(t.$smallBtn=n(o.translate(t,t.opts.btnTpl.smallBtn)).appendTo(t.$content)),this.afterLoad(t))},setError:function(t){t.hasError=!0,t.$slide.removeClass("fancybox-slide--"+t.type),this.setContent(t,this.translate(t,t.opts.errorTpl))},showLoading:function(t){var e=this;t=t||e.current,t&&!t.$spinner&&(t.$spinner=n(e.opts.spinnerTpl).appendTo(t.$slide))},hideLoading:function(t){var e=this;t=t||e.current,t&&t.$spinner&&(t.$spinner.remove(),delete t.$spinner)},afterLoad:function(t){var e=this;e.isClosing||(t.isLoading=!1,t.isLoaded=!0,e.trigger("afterLoad",t),e.hideLoading(t),t.opts.protect&&t.$content&&!t.hasError&&(t.$content.on("contextmenu.fb",function(t){return 2==t.button&&t.preventDefault(),!0}),"image"===t.type&&n('<div class="fancybox-spaceball"></div>').appendTo(t.$content)),e.revealContent(t))},revealContent:function(t){var e,i,a,s,r,c=this,l=t.$slide,u=!1;return e=t.opts[c.firstRun?"animationEffect":"transitionEffect"],a=t.opts[c.firstRun?"animationDuration":"transitionDuration"],a=parseInt(t.forcedDuration===o?a:t.forcedDuration,10),!t.isMoved&&t.pos===c.currPos&&a||(e=!1),"zoom"!==e||t.pos===c.currPos&&a&&"image"===t.type&&!t.hasError&&(u=c.getThumbPos(t))||(e="fade"),"zoom"===e?(r=c.getFitPos(t),r.scaleX=Math.round(r.width/u.width*100)/100,r.scaleY=Math.round(r.height/u.height*100)/100,delete r.width,delete r.height,s=t.opts.zoomOpacity,"auto"==s&&(s=Math.abs(t.width/t.height-u.width/u.height)>.1),s&&(u.opacity=.1,r.opacity=1),n.fancybox.setTranslate(t.$content.removeClass("fancybox-is-hidden"),u),f(t.$content),void n.fancybox.animate(t.$content,r,a,function(){c.complete()})):(c.updateSlide(t),e?(n.fancybox.stop(l),i="fancybox-animated fancybox-slide--"+(t.pos>c.prevPos?"next":"previous")+" fancybox-fx-"+e,l.removeAttr("style").removeClass("fancybox-slide--current fancybox-slide--next fancybox-slide--previous").addClass(i),t.$content.removeClass("fancybox-is-hidden"),f(l),void n.fancybox.animate(l,"fancybox-slide--current",a,function(e){l.removeClass(i).removeAttr("style"),t.pos===c.currPos&&c.complete()},!0)):(f(l),t.$content.removeClass("fancybox-is-hidden"),void(t.pos===c.currPos&&c.complete())))},getThumbPos:function(o){var i,a=this,s=!1,r=function(e){for(var o,i=e[0],a=i.getBoundingClientRect(),s=[];null!==i.parentElement;)"hidden"!==n(i.parentElement).css("overflow")&&"auto"!==n(i.parentElement).css("overflow")||s.push(i.parentElement.getBoundingClientRect()),i=i.parentElement;return o=s.every(function(t){var e=Math.min(a.right,t.right)-Math.max(a.left,t.left),n=Math.min(a.bottom,t.bottom)-Math.max(a.top,t.top);return e>0&&n>0}),o&&a.bottom>0&&a.right>0&&a.left<n(t).width()&&a.top<n(t).height()},c=o.opts.$thumb,l=c?c.offset():0;return l&&c[0].ownerDocument===e&&r(c)&&(i=a.$refs.stage.offset(),s={top:l.top-i.top+parseFloat(c.css("border-top-width")||0),left:l.left-i.left+parseFloat(c.css("border-left-width")||0),width:c.width(),height:c.height(),scaleX:1,scaleY:1}),s},complete:function(){var t=this,o=t.current,i={};o.isMoved||!o.isLoaded||o.isComplete||(o.isComplete=!0,o.$slide.siblings().trigger("onReset"),f(o.$slide),o.$slide.addClass("fancybox-slide--complete"),n.each(t.slides,function(e,o){o.pos>=t.currPos-1&&o.pos<=t.currPos+1?i[o.pos]=o:o&&(n.fancybox.stop(o.$slide),o.$slide.unbind().remove())}),t.slides=i,t.updateCursor(),t.trigger("afterShow"),(n(e.activeElement).is("[disabled]")||o.opts.autoFocus&&"image"!=o.type&&"iframe"!==o.type)&&t.focus())},preload:function(){var t,e,n=this;n.group.length<2||(t=n.slides[n.currPos+1],e=n.slides[n.currPos-1],t&&"image"===t.type&&n.loadSlide(t),e&&"image"===e.type&&n.loadSlide(e))},focus:function(){var t,e=this.current;this.isClosing||(t=e&&e.isComplete?e.$slide.find("button,:input,[tabindex],a").filter(":not([disabled]):visible:first"):null,t=t&&t.length?t:this.$refs.container,t.focus())},activate:function(){var t=this;n(".fancybox-container").each(function(){var e=n(this).data("FancyBox");e&&e.uid!==t.uid&&!e.isClosing&&e.trigger("onDeactivate")}),t.current&&(t.$refs.container.index()>0&&t.$refs.container.prependTo(e.body),t.updateControls()),t.trigger("onActivate"),t.addEvents()},close:function(t,e){var o,i,a,s,r,c,l=this,f=l.current,h=function(){l.cleanUp(t)};return!l.isClosing&&(l.isClosing=!0,l.trigger("beforeClose",t)===!1?(l.isClosing=!1,u(function(){l.update()}),!1):(l.removeEvents(),f.timouts&&clearTimeout(f.timouts),a=f.$content,o=f.opts.animationEffect,i=n.isNumeric(e)?e:o?f.opts.animationDuration:0,f.$slide.off(d).removeClass("fancybox-slide--complete fancybox-slide--next fancybox-slide--previous fancybox-animated"),f.$slide.siblings().trigger("onReset").remove(),i&&l.$refs.container.removeClass("fancybox-is-open").addClass("fancybox-is-closing"),l.hideLoading(f),l.hideControls(),l.updateCursor(),"zoom"!==o||t!==!0&&a&&i&&"image"===f.type&&!f.hasError&&(c=l.getThumbPos(f))||(o="fade"),"zoom"===o?(n.fancybox.stop(a),r=n.fancybox.getTranslate(a),r.width=r.width*r.scaleX,r.height=r.height*r.scaleY,s=f.opts.zoomOpacity,"auto"==s&&(s=Math.abs(f.width/f.height-c.width/c.height)>.1),s&&(c.opacity=0),r.scaleX=r.width/c.width,r.scaleY=r.height/c.height,r.width=c.width,r.height=c.height,n.fancybox.setTranslate(f.$content,r),n.fancybox.animate(f.$content,c,i,h),!0):(o&&i?t===!0?setTimeout(h,i):n.fancybox.animate(f.$slide.removeClass("fancybox-slide--current"),"fancybox-animated fancybox-slide--previous fancybox-fx-"+o,i,h):h(),!0)))},cleanUp:function(t){var e,o=this;o.current.$slide.trigger("onReset"),o.$refs.container.empty().remove(),o.trigger("afterClose",t),o.$lastFocus&&!o.current.focusBack&&o.$lastFocus.focus(),o.current=null,e=n.fancybox.getInstance(),e?e.activate():(s.scrollTop(o.scrollTop).scrollLeft(o.scrollLeft),n("html").removeClass("fancybox-enabled"),n("#fancybox-style-noscroll").remove())},trigger:function(t,e){var o,i=Array.prototype.slice.call(arguments,1),a=this,s=e&&e.opts?e:a.current;return s?i.unshift(s):s=a,i.unshift(a),n.isFunction(s.opts[t])&&(o=s.opts[t].apply(s,i)),o===!1?o:void("afterClose"===t?r.trigger(t+".fb",i):a.$refs.container.trigger(t+".fb",i))},updateControls:function(t){var e=this,o=e.current,i=o.index,a=o.opts,s=a.caption,r=e.$refs.caption;o.$slide.trigger("refresh"),e.$caption=s&&s.length?r.html(s):null,e.isHiddenControls||e.showControls(),n("[data-fancybox-count]").html(e.group.length),n("[data-fancybox-index]").html(i+1),n("[data-fancybox-prev]").prop("disabled",!a.loop&&i<=0),n("[data-fancybox-next]").prop("disabled",!a.loop&&i>=e.group.length-1)},hideControls:function(){this.isHiddenControls=!0,this.$refs.container.removeClass("fancybox-show-infobar fancybox-show-toolbar fancybox-show-caption fancybox-show-nav")},showControls:function(){var t=this,e=t.current?t.current.opts:t.opts,n=t.$refs.container;t.isHiddenControls=!1,t.idleSecondsCounter=0,n.toggleClass("fancybox-show-toolbar",!(!e.toolbar||!e.buttons)).toggleClass("fancybox-show-infobar",!!(e.infobar&&t.group.length>1)).toggleClass("fancybox-show-nav",!!(e.arrows&&t.group.length>1)).toggleClass("fancybox-is-modal",!!e.modal),t.$caption?n.addClass("fancybox-show-caption "):n.removeClass("fancybox-show-caption")},toggleControls:function(){this.isHiddenControls?this.showControls():this.hideControls()}}),n.fancybox={version:"3.1.20",defaults:a,getInstance:function(t){var e=n('.fancybox-container:not(".fancybox-is-closing"):first').data("FancyBox"),o=Array.prototype.slice.call(arguments,1);return e instanceof h&&("string"===n.type(t)?e[t].apply(e,o):"function"===n.type(t)&&t.apply(e,o),e)},open:function(t,e,n){return new h(t,e,n)},close:function(t){var e=this.getInstance();e&&(e.close(),t===!0&&this.close())},destroy:function(){this.close(!0),r.off("click.fb-start")},isMobile:e.createTouch!==o&&/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent),use3d:function(){var n=e.createElement("div");return t.getComputedStyle&&t.getComputedStyle(n).getPropertyValue("transform")&&!(e.documentMode&&e.documentMode<11)}(),getTranslate:function(t){var e;if(!t||!t.length)return!1;if(e=t.eq(0).css("transform"),e&&e.indexOf("matrix")!==-1?(e=e.split("(")[1],e=e.split(")")[0],e=e.split(",")):e=[],e.length)e=e.length>10?[e[13],e[12],e[0],e[5]]:[e[5],e[4],e[0],e[3]],e=e.map(parseFloat);else{e=[0,0,1,1];var n=/\.*translate\((.*)px,(.*)px\)/i,o=n.exec(t.eq(0).attr("style"));o&&(e[0]=parseFloat(o[2]),e[1]=parseFloat(o[1]))}return{top:e[0],left:e[1],scaleX:e[2],scaleY:e[3],opacity:parseFloat(t.css("opacity")),width:t.width(),height:t.height()}},setTranslate:function(t,e){var n="",i={};if(t&&e)return e.left===o&&e.top===o||(n=(e.left===o?t.position().left:e.left)+"px, "+(e.top===o?t.position().top:e.top)+"px",n=this.use3d?"translate3d("+n+", 0px)":"translate("+n+")"),e.scaleX!==o&&e.scaleY!==o&&(n=(n.length?n+" ":"")+"scale("+e.scaleX+", "+e.scaleY+")"),n.length&&(i.transform=n),e.opacity!==o&&(i.opacity=e.opacity),e.width!==o&&(i.width=e.width),e.height!==o&&(i.height=e.height),t.css(i)},animate:function(t,e,i,a,s){var r=d||"transitionend";n.isFunction(i)&&(a=i,i=null),n.isPlainObject(e)||t.removeAttr("style"),t.on(r,function(i){(!i||!i.originalEvent||t.is(i.originalEvent.target)&&"z-index"!=i.originalEvent.propertyName)&&(t.off(r),n.isPlainObject(e)?e.scaleX!==o&&e.scaleY!==o&&(t.css("transition-duration","0ms"),e.width=t.width()*e.scaleX,e.height=t.height()*e.scaleY,e.scaleX=1,e.scaleY=1,n.fancybox.setTranslate(t,e)):s!==!0&&t.removeClass(e),n.isFunction(a)&&a(i))}),n.isNumeric(i)&&t.css("transition-duration",i+"ms"),n.isPlainObject(e)?n.fancybox.setTranslate(t,e):t.addClass(e),t.data("timer",setTimeout(function(){t.trigger("transitionend")},i+16))},stop:function(t){clearTimeout(t.data("timer")),t.off(d)}},n.fn.fancybox=function(t){var e;return t=t||{},e=t.selector||!1,e?n("body").off("click.fb-start",e).on("click.fb-start",e,{items:n(e),options:t},i):this.off("click.fb-start").on("click.fb-start",{items:this,options:t},i),this},r.on("click.fb-start","[data-fancybox]",i)}}(window,document,window.jQuery),function(t){"use strict";var e=function(e,n,o){if(e)return o=o||"","object"===t.type(o)&&(o=t.param(o,!0)),t.each(n,function(t,n){e=e.replace("$"+t,n||"")}),o.length&&(e+=(e.indexOf("?")>0?"&":"?")+o),e},n={youtube:{matcher:/(youtube\.com|youtu\.be|youtube\-nocookie\.com)\/(watch\?(.*&)?v=|v\/|u\/|embed\/?)?(videoseries\?list=(.*)|[\w-]{11}|\?listType=(.*)&list=(.*))(.*)/i,params:{autoplay:1,autohide:1,fs:1,rel:0,hd:1,wmode:"transparent",enablejsapi:1,html5:1},paramPlace:8,type:"iframe",url:"//www.youtube.com/embed/$4",thumb:"//img.youtube.com/vi/$4/hqdefault.jpg"},vimeo:{matcher:/^.+vimeo.com\/(.*\/)?([\d]+)(.*)?/,params:{autoplay:1,hd:1,show_title:1,show_byline:1,show_portrait:0,fullscreen:1,api:1},paramPlace:3,type:"iframe",url:"//player.vimeo.com/video/$2"},metacafe:{matcher:/metacafe.com\/watch\/(\d+)\/(.*)?/,type:"iframe",url:"//www.metacafe.com/embed/$1/?ap=1"},dailymotion:{matcher:/dailymotion.com\/video\/(.*)\/?(.*)/,params:{additionalInfos:0,autoStart:1},type:"iframe",url:"//www.dailymotion.com/embed/video/$1"},vine:{matcher:/vine.co\/v\/([a-zA-Z0-9\?\=\-]+)/,type:"iframe",url:"//vine.co/v/$1/embed/simple"},instagram:{matcher:/(instagr\.am|instagram\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,type:"image",url:"//$1/p/$2/media/?size=l"},google_maps:{matcher:/(maps\.)?google\.([a-z]{2,3}(\.[a-z]{2})?)\/(((maps\/(place\/(.*)\/)?\@(.*),(\d+.?\d+?)z))|(\?ll=))(.*)?/i,type:"iframe",url:function(t){return"//maps.google."+t[2]+"/?ll="+(t[9]?t[9]+"&z="+Math.floor(t[10])+(t[12]?t[12].replace(/^\//,"&"):""):t[12])+"&output="+(t[12]&&t[12].indexOf("layer=c")>0?"svembed":"embed")}}};t(document).on("onInit.fb",function(o,i){t.each(i.group,function(o,i){var a,s,r,c,l,u,d,f=i.src||"",h=!1;i.type||(a=t.extend(!0,{},n,i.opts.media),t.each(a,function(n,o){if(r=f.match(o.matcher),u={},d=n,r){if(h=o.type,o.paramPlace&&r[o.paramPlace]){l=r[o.paramPlace],"?"==l[0]&&(l=l.substring(1)),l=l.split("&");for(var a=0;a<l.length;++a){var p=l[a].split("=",2);2==p.length&&(u[p[0]]=decodeURIComponent(p[1].replace(/\+/g," ")))}}return c=t.extend(!0,{},o.params,i.opts[n],u),f="function"===t.type(o.url)?o.url.call(this,r,c,i):e(o.url,r,c),s="function"===t.type(o.thumb)?o.thumb.call(this,r,c,i):e(o.thumb,r),"vimeo"===d&&(f=f.replace("&%23","#")),!1}}),h?(i.src=f,i.type=h,i.opts.thumb||i.opts.$thumb&&i.opts.$thumb.length||(i.opts.thumb=s),"iframe"===h&&(t.extend(!0,i.opts,{iframe:{preload:!1,attr:{scrolling:"no"}}}),i.contentProvider=d,i.opts.slideClass+=" fancybox-slide--"+("google_maps"==d?"map":"video"))):i.type="image")})})}(window.jQuery),function(t,e,n){"use strict";var o=function(){return t.requestAnimationFrame||t.webkitRequestAnimationFrame||t.mozRequestAnimationFrame||t.oRequestAnimationFrame||function(e){
+return t.setTimeout(e,1e3/60)}}(),i=function(){return t.cancelAnimationFrame||t.webkitCancelAnimationFrame||t.mozCancelAnimationFrame||t.oCancelAnimationFrame||function(e){t.clearTimeout(e)}}(),a=function(e){var n=[];e=e.originalEvent||e||t.e,e=e.touches&&e.touches.length?e.touches:e.changedTouches&&e.changedTouches.length?e.changedTouches:[e];for(var o in e)e[o].pageX?n.push({x:e[o].pageX,y:e[o].pageY}):e[o].clientX&&n.push({x:e[o].clientX,y:e[o].clientY});return n},s=function(t,e,n){return e&&t?"x"===n?t.x-e.x:"y"===n?t.y-e.y:Math.sqrt(Math.pow(t.x-e.x,2)+Math.pow(t.y-e.y,2)):0},r=function(t){if(t.is("a,button,input,select,textarea")||n.isFunction(t.get(0).onclick))return!0;for(var e=0,o=t[0].attributes,i=o.length;e<i;e++)if("data-fancybox-"===o[e].nodeName.substr(0,14))return!0;return!1},c=function(e){var n=t.getComputedStyle(e)["overflow-y"],o=t.getComputedStyle(e)["overflow-x"],i=("scroll"===n||"auto"===n)&&e.scrollHeight>e.clientHeight,a=("scroll"===o||"auto"===o)&&e.scrollWidth>e.clientWidth;return i||a},l=function(t){for(var e=!1;;){if(e=c(t.get(0)))break;if(t=t.parent(),!t.length||t.hasClass("fancybox-stage")||t.is("body"))break}return e},u=function(t){var e=this;e.instance=t,e.$bg=t.$refs.bg,e.$stage=t.$refs.stage,e.$container=t.$refs.container,e.destroy(),e.$container.on("touchstart.fb.touch mousedown.fb.touch",n.proxy(e,"ontouchstart"))};u.prototype.destroy=function(){this.$container.off(".fb.touch")},u.prototype.ontouchstart=function(o){var i=this,c=n(o.target),u=i.instance,d=u.current,f=d.$content,h="touchstart"==o.type;if(h&&i.$container.off("mousedown.fb.touch"),!d||i.instance.isAnimating||i.instance.isClosing)return o.stopPropagation(),void o.preventDefault();if((!o.originalEvent||2!=o.originalEvent.button)&&c.length&&!r(c)&&!r(c.parent())&&!(o.originalEvent.clientX>c[0].clientWidth+c.offset().left)&&(i.startPoints=a(o),i.startPoints&&!(i.startPoints.length>1&&u.isSliding))){if(i.$target=c,i.$content=f,i.canTap=!0,n(e).off(".fb.touch"),n(e).on(h?"touchend.fb.touch touchcancel.fb.touch":"mouseup.fb.touch mouseleave.fb.touch",n.proxy(i,"ontouchend")),n(e).on(h?"touchmove.fb.touch":"mousemove.fb.touch",n.proxy(i,"ontouchmove")),o.stopPropagation(),!u.current.opts.touch&&!u.canPan()||!c.is(i.$stage)&&!i.$stage.find(c).length)return void(c.is("img")&&o.preventDefault());n.fancybox.isMobile&&(l(i.$target)||l(i.$target.parent()))||o.preventDefault(),i.canvasWidth=Math.round(d.$slide[0].clientWidth),i.canvasHeight=Math.round(d.$slide[0].clientHeight),i.startTime=(new Date).getTime(),i.distanceX=i.distanceY=i.distance=0,i.isPanning=!1,i.isSwiping=!1,i.isZooming=!1,i.sliderStartPos=i.sliderLastPos||{top:0,left:0},i.contentStartPos=n.fancybox.getTranslate(i.$content),i.contentLastPos=null,1!==i.startPoints.length||i.isZooming||(i.canTap=!u.isSliding,"image"===d.type&&(i.contentStartPos.width>i.canvasWidth+1||i.contentStartPos.height>i.canvasHeight+1)?(n.fancybox.stop(i.$content),i.$content.css("transition-duration","0ms"),i.isPanning=!0):i.isSwiping=!0,i.$container.addClass("fancybox-controls--isGrabbing")),2!==i.startPoints.length||u.isAnimating||d.hasError||"image"!==d.type||!d.isLoaded&&!d.$ghost||(i.isZooming=!0,i.isSwiping=!1,i.isPanning=!1,n.fancybox.stop(i.$content),i.$content.css("transition-duration","0ms"),i.centerPointStartX=.5*(i.startPoints[0].x+i.startPoints[1].x)-n(t).scrollLeft(),i.centerPointStartY=.5*(i.startPoints[0].y+i.startPoints[1].y)-n(t).scrollTop(),i.percentageOfImageAtPinchPointX=(i.centerPointStartX-i.contentStartPos.left)/i.contentStartPos.width,i.percentageOfImageAtPinchPointY=(i.centerPointStartY-i.contentStartPos.top)/i.contentStartPos.height,i.startDistanceBetweenFingers=s(i.startPoints[0],i.startPoints[1]))}},u.prototype.ontouchmove=function(t){var e=this;if(e.newPoints=a(t),n.fancybox.isMobile&&(l(e.$target)||l(e.$target.parent())))return t.stopPropagation(),void(e.canTap=!1);if((e.instance.current.opts.touch||e.instance.canPan())&&e.newPoints&&e.newPoints.length&&(e.distanceX=s(e.newPoints[0],e.startPoints[0],"x"),e.distanceY=s(e.newPoints[0],e.startPoints[0],"y"),e.distance=s(e.newPoints[0],e.startPoints[0]),e.distance>0)){if(!e.$target.is(e.$stage)&&!e.$stage.find(e.$target).length)return;t.stopPropagation(),t.preventDefault(),e.isSwiping?e.onSwipe():e.isPanning?e.onPan():e.isZooming&&e.onZoom()}},u.prototype.onSwipe=function(){var e,a=this,s=a.isSwiping,r=a.sliderStartPos.left||0;s===!0?Math.abs(a.distance)>10&&(a.canTap=!1,a.instance.group.length<2&&a.instance.opts.touch.vertical?a.isSwiping="y":a.instance.isSliding||a.instance.opts.touch.vertical===!1||"auto"===a.instance.opts.touch.vertical&&n(t).width()>800?a.isSwiping="x":(e=Math.abs(180*Math.atan2(a.distanceY,a.distanceX)/Math.PI),a.isSwiping=e>45&&e<135?"y":"x"),a.instance.isSliding=a.isSwiping,a.startPoints=a.newPoints,n.each(a.instance.slides,function(t,e){n.fancybox.stop(e.$slide),e.$slide.css("transition-duration","0ms"),e.inTransition=!1,e.pos===a.instance.current.pos&&(a.sliderStartPos.left=n.fancybox.getTranslate(e.$slide).left)}),a.instance.SlideShow&&a.instance.SlideShow.isActive&&a.instance.SlideShow.stop()):("x"==s&&(a.distanceX>0&&(a.instance.group.length<2||0===a.instance.current.index&&!a.instance.current.opts.loop)?r+=Math.pow(a.distanceX,.8):a.distanceX<0&&(a.instance.group.length<2||a.instance.current.index===a.instance.group.length-1&&!a.instance.current.opts.loop)?r-=Math.pow(-a.distanceX,.8):r+=a.distanceX),a.sliderLastPos={top:"x"==s?0:a.sliderStartPos.top+a.distanceY,left:r},a.requestId&&(i(a.requestId),a.requestId=null),a.requestId=o(function(){a.sliderLastPos&&(n.each(a.instance.slides,function(t,e){var o=e.pos-a.instance.currPos;n.fancybox.setTranslate(e.$slide,{top:a.sliderLastPos.top,left:a.sliderLastPos.left+o*a.canvasWidth+o*e.opts.gutter})}),a.$container.addClass("fancybox-is-sliding"))}))},u.prototype.onPan=function(){var t,e,a,s=this;s.canTap=!1,t=s.contentStartPos.width>s.canvasWidth?s.contentStartPos.left+s.distanceX:s.contentStartPos.left,e=s.contentStartPos.top+s.distanceY,a=s.limitMovement(t,e,s.contentStartPos.width,s.contentStartPos.height),a.scaleX=s.contentStartPos.scaleX,a.scaleY=s.contentStartPos.scaleY,s.contentLastPos=a,s.requestId&&(i(s.requestId),s.requestId=null),s.requestId=o(function(){n.fancybox.setTranslate(s.$content,s.contentLastPos)})},u.prototype.limitMovement=function(t,e,n,o){var i,a,s,r,c=this,l=c.canvasWidth,u=c.canvasHeight,d=c.contentStartPos.left,f=c.contentStartPos.top,h=c.distanceX,p=c.distanceY;return i=Math.max(0,.5*l-.5*n),a=Math.max(0,.5*u-.5*o),s=Math.min(l-n,.5*l-.5*n),r=Math.min(u-o,.5*u-.5*o),n>l&&(h>0&&t>i&&(t=i-1+Math.pow(-i+d+h,.8)||0),h<0&&t<s&&(t=s+1-Math.pow(s-d-h,.8)||0)),o>u&&(p>0&&e>a&&(e=a-1+Math.pow(-a+f+p,.8)||0),p<0&&e<r&&(e=r+1-Math.pow(r-f-p,.8)||0)),{top:e,left:t}},u.prototype.limitPosition=function(t,e,n,o){var i=this,a=i.canvasWidth,s=i.canvasHeight;return n>a?(t=t>0?0:t,t=t<a-n?a-n:t):t=Math.max(0,a/2-n/2),o>s?(e=e>0?0:e,e=e<s-o?s-o:e):e=Math.max(0,s/2-o/2),{top:e,left:t}},u.prototype.onZoom=function(){var e=this,a=e.contentStartPos.width,r=e.contentStartPos.height,c=e.contentStartPos.left,l=e.contentStartPos.top,u=s(e.newPoints[0],e.newPoints[1]),d=u/e.startDistanceBetweenFingers,f=Math.floor(a*d),h=Math.floor(r*d),p=(a-f)*e.percentageOfImageAtPinchPointX,g=(r-h)*e.percentageOfImageAtPinchPointY,b=(e.newPoints[0].x+e.newPoints[1].x)/2-n(t).scrollLeft(),m=(e.newPoints[0].y+e.newPoints[1].y)/2-n(t).scrollTop(),y=b-e.centerPointStartX,v=m-e.centerPointStartY,x=c+(p+y),w=l+(g+v),$={top:w,left:x,scaleX:e.contentStartPos.scaleX*d,scaleY:e.contentStartPos.scaleY*d};e.canTap=!1,e.newWidth=f,e.newHeight=h,e.contentLastPos=$,e.requestId&&(i(e.requestId),e.requestId=null),e.requestId=o(function(){n.fancybox.setTranslate(e.$content,e.contentLastPos)})},u.prototype.ontouchend=function(t){var o=this,s=Math.max((new Date).getTime()-o.startTime,1),r=o.isSwiping,c=o.isPanning,l=o.isZooming;return o.endPoints=a(t),o.$container.removeClass("fancybox-controls--isGrabbing"),n(e).off(".fb.touch"),o.requestId&&(i(o.requestId),o.requestId=null),o.isSwiping=!1,o.isPanning=!1,o.isZooming=!1,o.canTap?o.onTap(t):(o.speed=366,o.velocityX=o.distanceX/s*.5,o.velocityY=o.distanceY/s*.5,o.speedX=Math.max(.5*o.speed,Math.min(1.5*o.speed,1/Math.abs(o.velocityX)*o.speed)),void(c?o.endPanning():l?o.endZooming():o.endSwiping(r)))},u.prototype.endSwiping=function(t){var e=this,o=!1;e.instance.isSliding=!1,e.sliderLastPos=null,"y"==t&&Math.abs(e.distanceY)>50?(n.fancybox.animate(e.instance.current.$slide,{top:e.sliderStartPos.top+e.distanceY+150*e.velocityY,opacity:0},150),o=e.instance.close(!0,300)):"x"==t&&e.distanceX>50&&e.instance.group.length>1?o=e.instance.previous(e.speedX):"x"==t&&e.distanceX<-50&&e.instance.group.length>1&&(o=e.instance.next(e.speedX)),o!==!1||"x"!=t&&"y"!=t||e.instance.jumpTo(e.instance.current.index,150),e.$container.removeClass("fancybox-is-sliding")},u.prototype.endPanning=function(){var t,e,o,i=this;i.contentLastPos&&(i.instance.current.opts.touch.momentum===!1?(t=i.contentLastPos.left,e=i.contentLastPos.top):(t=i.contentLastPos.left+i.velocityX*i.speed,e=i.contentLastPos.top+i.velocityY*i.speed),o=i.limitPosition(t,e,i.contentStartPos.width,i.contentStartPos.height),o.width=i.contentStartPos.width,o.height=i.contentStartPos.height,n.fancybox.animate(i.$content,o,330))},u.prototype.endZooming=function(){var t,e,o,i,a=this,s=a.instance.current,r=a.newWidth,c=a.newHeight;a.contentLastPos&&(t=a.contentLastPos.left,e=a.contentLastPos.top,i={top:e,left:t,width:r,height:c,scaleX:1,scaleY:1},n.fancybox.setTranslate(a.$content,i),r<a.canvasWidth&&c<a.canvasHeight?a.instance.scaleToFit(150):r>s.width||c>s.height?a.instance.scaleToActual(a.centerPointStartX,a.centerPointStartY,150):(o=a.limitPosition(t,e,r,c),n.fancybox.setTranslate(a.content,n.fancybox.getTranslate(a.$content)),n.fancybox.animate(a.$content,o,150)))},u.prototype.onTap=function(t){var e,o=this,i=n(t.target),s=o.instance,r=s.current,c=t&&a(t)||o.startPoints,l=c[0]?c[0].x-o.$stage.offset().left:0,u=c[0]?c[0].y-o.$stage.offset().top:0,d=function(e){var i=r.opts[e];if(n.isFunction(i)&&(i=i.apply(s,[r,t])),i)switch(i){case"close":s.close(o.startEvent);break;case"toggleControls":s.toggleControls(!0);break;case"next":s.next();break;case"nextOrClose":s.group.length>1?s.next():s.close(o.startEvent);break;case"zoom":"image"==r.type&&(r.isLoaded||r.$ghost)&&(s.canPan()?s.scaleToFit():s.isScaledDown()?s.scaleToActual(l,u):s.group.length<2&&s.close(o.startEvent))}};if(!(t.originalEvent&&2==t.originalEvent.button||s.isSliding||l>i[0].clientWidth+i.offset().left)){if(i.is(".fancybox-bg,.fancybox-inner,.fancybox-outer,.fancybox-container"))e="Outside";else if(i.is(".fancybox-slide"))e="Slide";else{if(!s.current.$content||!s.current.$content.has(t.target).length)return;e="Content"}if(o.tapped){if(clearTimeout(o.tapped),o.tapped=null,Math.abs(l-o.tapX)>50||Math.abs(u-o.tapY)>50||s.isSliding)return this;d("dblclick"+e)}else o.tapX=l,o.tapY=u,r.opts["dblclick"+e]&&r.opts["dblclick"+e]!==r.opts["click"+e]?o.tapped=setTimeout(function(){o.tapped=null,d("click"+e)},300):d("click"+e);return this}},n(e).on("onActivate.fb",function(t,e){e&&!e.Guestures&&(e.Guestures=new u(e))}),n(e).on("beforeClose.fb",function(t,e){e&&e.Guestures&&e.Guestures.destroy()})}(window,document,window.jQuery),function(t,e){"use strict";var n=function(t){this.instance=t,this.init()};e.extend(n.prototype,{timer:null,isActive:!1,$button:null,speed:3e3,init:function(){var t=this;t.$button=t.instance.$refs.toolbar.find("[data-fancybox-play]").on("click",function(){t.toggle()}),(t.instance.group.length<2||!t.instance.group[t.instance.currIndex].opts.slideShow)&&t.$button.hide()},set:function(){var t=this;t.instance&&t.instance.current&&(t.instance.current.opts.loop||t.instance.currIndex<t.instance.group.length-1)?t.timer=setTimeout(function(){t.instance.next()},t.instance.current.opts.slideShow.speed||t.speed):(t.stop(),t.instance.idleSecondsCounter=0,t.instance.showControls())},clear:function(){var t=this;clearTimeout(t.timer),t.timer=null},start:function(){var t=this,e=t.instance.current;t.instance&&e&&(e.opts.loop||e.index<t.instance.group.length-1)&&(t.isActive=!0,t.$button.attr("title",e.opts.i18n[e.opts.lang].PLAY_STOP).addClass("fancybox-button--pause"),e.isComplete&&t.set())},stop:function(){var t=this,e=t.instance.current;t.clear(),t.$button.attr("title",e.opts.i18n[e.opts.lang].PLAY_START).removeClass("fancybox-button--pause"),t.isActive=!1},toggle:function(){var t=this;t.isActive?t.stop():t.start()}}),e(t).on({"onInit.fb":function(t,e){e&&!e.SlideShow&&(e.SlideShow=new n(e))},"beforeShow.fb":function(t,e,n,o){var i=e&&e.SlideShow;o?i&&n.opts.slideShow.autoStart&&i.start():i&&i.isActive&&i.clear()},"afterShow.fb":function(t,e,n){var o=e&&e.SlideShow;o&&o.isActive&&o.set()},"afterKeydown.fb":function(n,o,i,a,s){var r=o&&o.SlideShow;!r||!i.opts.slideShow||80!==s&&32!==s||e(t.activeElement).is("button,a,input")||(a.preventDefault(),r.toggle())},"beforeClose.fb onDeactivate.fb":function(t,e){var n=e&&e.SlideShow;n&&n.stop()}}),e(t).on("visibilitychange",function(){var n=e.fancybox.getInstance(),o=n&&n.SlideShow;o&&o.isActive&&(t.hidden?o.clear():o.set())})}(document,window.jQuery),function(t,e){"use strict";var n=function(){var e,n,o,i=[["requestFullscreen","exitFullscreen","fullscreenElement","fullscreenEnabled","fullscreenchange","fullscreenerror"],["webkitRequestFullscreen","webkitExitFullscreen","webkitFullscreenElement","webkitFullscreenEnabled","webkitfullscreenchange","webkitfullscreenerror"],["webkitRequestFullScreen","webkitCancelFullScreen","webkitCurrentFullScreenElement","webkitCancelFullScreen","webkitfullscreenchange","webkitfullscreenerror"],["mozRequestFullScreen","mozCancelFullScreen","mozFullScreenElement","mozFullScreenEnabled","mozfullscreenchange","mozfullscreenerror"],["msRequestFullscreen","msExitFullscreen","msFullscreenElement","msFullscreenEnabled","MSFullscreenChange","MSFullscreenError"]],a={};for(n=0;n<i.length;n++)if(e=i[n],e&&e[1]in t){for(o=0;o<e.length;o++)a[i[0][o]]=e[o];return a}return!1}();if(!n)return void(e.fancybox.defaults.btnTpl.fullScreen=!1);var o={request:function(e){e=e||t.documentElement,e[n.requestFullscreen](e.ALLOW_KEYBOARD_INPUT)},exit:function(){t[n.exitFullscreen]()},toggle:function(e){e=e||t.documentElement,this.isFullscreen()?this.exit():this.request(e)},isFullscreen:function(){return Boolean(t[n.fullscreenElement])},enabled:function(){return Boolean(t[n.fullscreenEnabled])}};e(t).on({"onInit.fb":function(t,e){var n,i=e.$refs.toolbar.find("[data-fancybox-fullscreen]");e&&!e.FullScreen&&e.group[e.currIndex].opts.fullScreen?(n=e.$refs.container,n.on("click.fb-fullscreen","[data-fancybox-fullscreen]",function(t){t.stopPropagation(),t.preventDefault(),o.toggle(n[0])}),e.opts.fullScreen&&e.opts.fullScreen.autoStart===!0&&o.request(n[0]),e.FullScreen=o):i.hide()},"afterKeydown.fb":function(t,e,n,o,i){e&&e.FullScreen&&70===i&&(o.preventDefault(),e.FullScreen.toggle(e.$refs.container[0]))},"beforeClose.fb":function(t){t&&t.FullScreen&&o.exit()}}),e(t).on(n.fullscreenchange,function(){var t=e.fancybox.getInstance();t.current&&"image"===t.current.type&&t.isAnimating&&(t.current.$content.css("transition","none"),t.isAnimating=!1,t.update(!0,!0,0))})}(document,window.jQuery),function(t,e){"use strict";var n=function(t){this.instance=t,this.init()};e.extend(n.prototype,{$button:null,$grid:null,$list:null,isVisible:!1,init:function(){var t=this,e=t.instance.group[0],n=t.instance.group[1];t.$button=t.instance.$refs.toolbar.find("[data-fancybox-thumbs]"),t.instance.group.length>1&&t.instance.group[t.instance.currIndex].opts.thumbs&&("image"==e.type||e.opts.thumb||e.opts.$thumb)&&("image"==n.type||n.opts.thumb||n.opts.$thumb)?(t.$button.on("click",function(){t.toggle()}),t.isActive=!0):(t.$button.hide(),t.isActive=!1)},create:function(){var t,n,o=this.instance;this.$grid=e('<div class="fancybox-thumbs"></div>').appendTo(o.$refs.container),t="<ul>",e.each(o.group,function(e,o){n=o.opts.thumb||(o.opts.$thumb?o.opts.$thumb.attr("src"):null),n||"image"!==o.type||(n=o.src),n&&n.length&&(t+='<li data-index="'+e+'"  tabindex="0" class="fancybox-thumbs-loading"><img data-src="'+n+'" /></li>')}),t+="</ul>",this.$list=e(t).appendTo(this.$grid).on("click","li",function(){o.jumpTo(e(this).data("index"))}),this.$list.find("img").hide().one("load",function(){var t,n,o,i,a=e(this).parent().removeClass("fancybox-thumbs-loading"),s=a.outerWidth(),r=a.outerHeight();t=this.naturalWidth||this.width,n=this.naturalHeight||this.height,o=t/s,i=n/r,o>=1&&i>=1&&(o>i?(t/=i,n=r):(t=s,n/=o)),e(this).css({width:Math.floor(t),height:Math.floor(n),"margin-top":Math.min(0,Math.floor(.3*r-.3*n)),"margin-left":Math.min(0,Math.floor(.5*s-.5*t))}).show()}).each(function(){this.src=e(this).data("src")})},focus:function(){this.instance.current&&this.$list.children().removeClass("fancybox-thumbs-active").filter('[data-index="'+this.instance.current.index+'"]').addClass("fancybox-thumbs-active").focus()},close:function(){this.$grid.hide()},update:function(){this.instance.$refs.container.toggleClass("fancybox-show-thumbs",this.isVisible),this.isVisible?(this.$grid||this.create(),this.instance.trigger("onThumbsShow"),this.focus()):this.$grid&&this.instance.trigger("onThumbsHide"),this.instance.update()},hide:function(){this.isVisible=!1,this.update()},show:function(){this.isVisible=!0,this.update()},toggle:function(){this.isVisible=!this.isVisible,this.update()}}),e(t).on({"onInit.fb":function(t,e){e&&!e.Thumbs&&(e.Thumbs=new n(e))},"beforeShow.fb":function(t,e,n,o){var i=e&&e.Thumbs;if(i&&i.isActive){if(n.modal)return i.$button.hide(),void i.hide();o&&e.opts.thumbs.autoStart===!0&&i.show(),i.isVisible&&i.focus()}},"afterKeydown.fb":function(t,e,n,o,i){var a=e&&e.Thumbs;a&&a.isActive&&71===i&&(o.preventDefault(),a.toggle())},"beforeClose.fb":function(t,e){var n=e&&e.Thumbs;n&&n.isVisible&&e.opts.thumbs.hideOnClose!==!1&&n.close()}})}(document,window.jQuery),function(t,e,n){"use strict";function o(){var t=e.location.hash.substr(1),n=t.split("-"),o=n.length>1&&/^\+?\d+$/.test(n[n.length-1])?parseInt(n.pop(-1),10)||1:1,i=n.join("-");return o<1&&(o=1),{hash:t,index:o,gallery:i}}function i(t){var e;""!==t.gallery&&(e=n("[data-fancybox='"+n.escapeSelector(t.gallery)+"']").eq(t.index-1),e.length?e.trigger("click"):n("#"+n.escapeSelector(t.gallery)).trigger("click"))}function a(t){var e;return!!t&&(e=t.current?t.current.opts:t.opts,e.$orig?e.$orig.data("fancybox"):e.hash||"")}n.escapeSelector||(n.escapeSelector=function(t){var e=/([\0-\x1f\x7f]|^-?\d)|^-$|[^\x80-\uFFFF\w-]/g,n=function(t,e){return e?"\0"===t?"�":t.slice(0,-1)+"\\"+t.charCodeAt(t.length-1).toString(16)+" ":"\\"+t};return(t+"").replace(e,n)});var s=null,r=null;n(function(){setTimeout(function(){n.fancybox.defaults.hash!==!1&&(n(t).on({"onInit.fb":function(t,e){var n,i;e.group[e.currIndex].opts.hash!==!1&&(n=o(),i=a(e),i&&n.gallery&&i==n.gallery&&(e.currIndex=n.index-1))},"beforeShow.fb":function(n,o,i,c){var l;i.opts.hash!==!1&&(l=a(o),l&&""!==l&&(e.location.hash.indexOf(l)<0&&(o.opts.origHash=e.location.hash),s=l+(o.group.length>1?"-"+(i.index+1):""),"replaceState"in e.history?(r&&clearTimeout(r),r=setTimeout(function(){e.history[c?"pushState":"replaceState"]({},t.title,e.location.pathname+e.location.search+"#"+s),r=null},300)):e.location.hash=s))},"beforeClose.fb":function(o,i,c){var l,u;r&&clearTimeout(r),c.opts.hash!==!1&&(l=a(i),u=i&&i.opts.origHash?i.opts.origHash:"",l&&""!==l&&("replaceState"in history?e.history.replaceState({},t.title,e.location.pathname+e.location.search+u):(e.location.hash=u,n(e).scrollTop(i.scrollTop).scrollLeft(i.scrollLeft))),s=null)}}),n(e).on("hashchange.fb",function(){var t=o();n.fancybox.getInstance()?!s||s===t.gallery+"-"+t.index||1===t.index&&s==t.gallery||(s=null,n.fancybox.close()):""!==t.gallery&&i(t)}),n(e).one("unload.fb popstate.fb",function(){n.fancybox.getInstance("close",!0,0)}),i(o()))},50)})}(document,window,window.jQuery);
+
+/***/ }),
+
+/***/ "./node_modules/bootstrap-sass/assets/javascripts/bootstrap.js":
+/***/ (function(module, exports) {
+
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under the MIT license
+ */
+
+if (typeof jQuery === 'undefined') {
+  throw new Error('Bootstrap\'s JavaScript requires jQuery')
+}
+
++function ($) {
+  'use strict';
+  var version = $.fn.jquery.split(' ')[0].split('.')
+  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {
+    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')
+  }
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: transition.js v3.3.7
+ * http://getbootstrap.com/javascript/#transitions
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
+  // ============================================================
+
+  function transitionEnd() {
+    var el = document.createElement('bootstrap')
+
+    var transEndEventNames = {
+      WebkitTransition : 'webkitTransitionEnd',
+      MozTransition    : 'transitionend',
+      OTransition      : 'oTransitionEnd otransitionend',
+      transition       : 'transitionend'
+    }
+
+    for (var name in transEndEventNames) {
+      if (el.style[name] !== undefined) {
+        return { end: transEndEventNames[name] }
+      }
+    }
+
+    return false // explicit for ie8 (  ._.)
+  }
+
+  // http://blog.alexmaccaw.com/css-transitions
+  $.fn.emulateTransitionEnd = function (duration) {
+    var called = false
+    var $el = this
+    $(this).one('bsTransitionEnd', function () { called = true })
+    var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
+    setTimeout(callback, duration)
+    return this
+  }
+
+  $(function () {
+    $.support.transition = transitionEnd()
+
+    if (!$.support.transition) return
+
+    $.event.special.bsTransitionEnd = {
+      bindType: $.support.transition.end,
+      delegateType: $.support.transition.end,
+      handle: function (e) {
+        if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
+      }
+    }
+  })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: alert.js v3.3.7
+ * http://getbootstrap.com/javascript/#alerts
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // ALERT CLASS DEFINITION
+  // ======================
+
+  var dismiss = '[data-dismiss="alert"]'
+  var Alert   = function (el) {
+    $(el).on('click', dismiss, this.close)
+  }
+
+  Alert.VERSION = '3.3.7'
+
+  Alert.TRANSITION_DURATION = 150
+
+  Alert.prototype.close = function (e) {
+    var $this    = $(this)
+    var selector = $this.attr('data-target')
+
+    if (!selector) {
+      selector = $this.attr('href')
+      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
+    }
+
+    var $parent = $(selector === '#' ? [] : selector)
+
+    if (e) e.preventDefault()
+
+    if (!$parent.length) {
+      $parent = $this.closest('.alert')
+    }
+
+    $parent.trigger(e = $.Event('close.bs.alert'))
+
+    if (e.isDefaultPrevented()) return
+
+    $parent.removeClass('in')
+
+    function removeElement() {
+      // detach from parent, fire event then clean up data
+      $parent.detach().trigger('closed.bs.alert').remove()
+    }
+
+    $.support.transition && $parent.hasClass('fade') ?
+      $parent
+        .one('bsTransitionEnd', removeElement)
+        .emulateTransitionEnd(Alert.TRANSITION_DURATION) :
+      removeElement()
+  }
+
+
+  // ALERT PLUGIN DEFINITION
+  // =======================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this = $(this)
+      var data  = $this.data('bs.alert')
+
+      if (!data) $this.data('bs.alert', (data = new Alert(this)))
+      if (typeof option == 'string') data[option].call($this)
+    })
+  }
+
+  var old = $.fn.alert
+
+  $.fn.alert             = Plugin
+  $.fn.alert.Constructor = Alert
+
+
+  // ALERT NO CONFLICT
+  // =================
+
+  $.fn.alert.noConflict = function () {
+    $.fn.alert = old
+    return this
+  }
+
+
+  // ALERT DATA-API
+  // ==============
+
+  $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: button.js v3.3.7
+ * http://getbootstrap.com/javascript/#buttons
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // BUTTON PUBLIC CLASS DEFINITION
+  // ==============================
+
+  var Button = function (element, options) {
+    this.$element  = $(element)
+    this.options   = $.extend({}, Button.DEFAULTS, options)
+    this.isLoading = false
+  }
+
+  Button.VERSION  = '3.3.7'
+
+  Button.DEFAULTS = {
+    loadingText: 'loading...'
+  }
+
+  Button.prototype.setState = function (state) {
+    var d    = 'disabled'
+    var $el  = this.$element
+    var val  = $el.is('input') ? 'val' : 'html'
+    var data = $el.data()
+
+    state += 'Text'
+
+    if (data.resetText == null) $el.data('resetText', $el[val]())
+
+    // push to event loop to allow forms to submit
+    setTimeout($.proxy(function () {
+      $el[val](data[state] == null ? this.options[state] : data[state])
+
+      if (state == 'loadingText') {
+        this.isLoading = true
+        $el.addClass(d).attr(d, d).prop(d, true)
+      } else if (this.isLoading) {
+        this.isLoading = false
+        $el.removeClass(d).removeAttr(d).prop(d, false)
+      }
+    }, this), 0)
+  }
+
+  Button.prototype.toggle = function () {
+    var changed = true
+    var $parent = this.$element.closest('[data-toggle="buttons"]')
+
+    if ($parent.length) {
+      var $input = this.$element.find('input')
+      if ($input.prop('type') == 'radio') {
+        if ($input.prop('checked')) changed = false
+        $parent.find('.active').removeClass('active')
+        this.$element.addClass('active')
+      } else if ($input.prop('type') == 'checkbox') {
+        if (($input.prop('checked')) !== this.$element.hasClass('active')) changed = false
+        this.$element.toggleClass('active')
+      }
+      $input.prop('checked', this.$element.hasClass('active'))
+      if (changed) $input.trigger('change')
+    } else {
+      this.$element.attr('aria-pressed', !this.$element.hasClass('active'))
+      this.$element.toggleClass('active')
+    }
+  }
+
+
+  // BUTTON PLUGIN DEFINITION
+  // ========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.button')
+      var options = typeof option == 'object' && option
+
+      if (!data) $this.data('bs.button', (data = new Button(this, options)))
+
+      if (option == 'toggle') data.toggle()
+      else if (option) data.setState(option)
+    })
+  }
+
+  var old = $.fn.button
+
+  $.fn.button             = Plugin
+  $.fn.button.Constructor = Button
+
+
+  // BUTTON NO CONFLICT
+  // ==================
+
+  $.fn.button.noConflict = function () {
+    $.fn.button = old
+    return this
+  }
+
+
+  // BUTTON DATA-API
+  // ===============
+
+  $(document)
+    .on('click.bs.button.data-api', '[data-toggle^="button"]', function (e) {
+      var $btn = $(e.target).closest('.btn')
+      Plugin.call($btn, 'toggle')
+      if (!($(e.target).is('input[type="radio"], input[type="checkbox"]'))) {
+        // Prevent double click on radios, and the double selections (so cancellation) on checkboxes
+        e.preventDefault()
+        // The target component still receive the focus
+        if ($btn.is('input,button')) $btn.trigger('focus')
+        else $btn.find('input:visible,button:visible').first().trigger('focus')
+      }
+    })
+    .on('focus.bs.button.data-api blur.bs.button.data-api', '[data-toggle^="button"]', function (e) {
+      $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type))
+    })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: carousel.js v3.3.7
+ * http://getbootstrap.com/javascript/#carousel
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // CAROUSEL CLASS DEFINITION
+  // =========================
+
+  var Carousel = function (element, options) {
+    this.$element    = $(element)
+    this.$indicators = this.$element.find('.carousel-indicators')
+    this.options     = options
+    this.paused      = null
+    this.sliding     = null
+    this.interval    = null
+    this.$active     = null
+    this.$items      = null
+
+    this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
+
+    this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element
+      .on('mouseenter.bs.carousel', $.proxy(this.pause, this))
+      .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
+  }
+
+  Carousel.VERSION  = '3.3.7'
+
+  Carousel.TRANSITION_DURATION = 600
+
+  Carousel.DEFAULTS = {
+    interval: 5000,
+    pause: 'hover',
+    wrap: true,
+    keyboard: true
+  }
+
+  Carousel.prototype.keydown = function (e) {
+    if (/input|textarea/i.test(e.target.tagName)) return
+    switch (e.which) {
+      case 37: this.prev(); break
+      case 39: this.next(); break
+      default: return
+    }
+
+    e.preventDefault()
+  }
+
+  Carousel.prototype.cycle = function (e) {
+    e || (this.paused = false)
+
+    this.interval && clearInterval(this.interval)
+
+    this.options.interval
+      && !this.paused
+      && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
+
+    return this
+  }
+
+  Carousel.prototype.getItemIndex = function (item) {
+    this.$items = item.parent().children('.item')
+    return this.$items.index(item || this.$active)
+  }
+
+  Carousel.prototype.getItemForDirection = function (direction, active) {
+    var activeIndex = this.getItemIndex(active)
+    var willWrap = (direction == 'prev' && activeIndex === 0)
+                || (direction == 'next' && activeIndex == (this.$items.length - 1))
+    if (willWrap && !this.options.wrap) return active
+    var delta = direction == 'prev' ? -1 : 1
+    var itemIndex = (activeIndex + delta) % this.$items.length
+    return this.$items.eq(itemIndex)
+  }
+
+  Carousel.prototype.to = function (pos) {
+    var that        = this
+    var activeIndex = this.getItemIndex(this.$active = this.$element.find('.item.active'))
+
+    if (pos > (this.$items.length - 1) || pos < 0) return
+
+    if (this.sliding)       return this.$element.one('slid.bs.carousel', function () { that.to(pos) }) // yes, "slid"
+    if (activeIndex == pos) return this.pause().cycle()
+
+    return this.slide(pos > activeIndex ? 'next' : 'prev', this.$items.eq(pos))
+  }
+
+  Carousel.prototype.pause = function (e) {
+    e || (this.paused = true)
+
+    if (this.$element.find('.next, .prev').length && $.support.transition) {
+      this.$element.trigger($.support.transition.end)
+      this.cycle(true)
+    }
+
+    this.interval = clearInterval(this.interval)
+
+    return this
+  }
+
+  Carousel.prototype.next = function () {
+    if (this.sliding) return
+    return this.slide('next')
+  }
+
+  Carousel.prototype.prev = function () {
+    if (this.sliding) return
+    return this.slide('prev')
+  }
+
+  Carousel.prototype.slide = function (type, next) {
+    var $active   = this.$element.find('.item.active')
+    var $next     = next || this.getItemForDirection(type, $active)
+    var isCycling = this.interval
+    var direction = type == 'next' ? 'left' : 'right'
+    var that      = this
+
+    if ($next.hasClass('active')) return (this.sliding = false)
+
+    var relatedTarget = $next[0]
+    var slideEvent = $.Event('slide.bs.carousel', {
+      relatedTarget: relatedTarget,
+      direction: direction
+    })
+    this.$element.trigger(slideEvent)
+    if (slideEvent.isDefaultPrevented()) return
+
+    this.sliding = true
+
+    isCycling && this.pause()
+
+    if (this.$indicators.length) {
+      this.$indicators.find('.active').removeClass('active')
+      var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
+      $nextIndicator && $nextIndicator.addClass('active')
+    }
+
+    var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
+    if ($.support.transition && this.$element.hasClass('slide')) {
+      $next.addClass(type)
+      $next[0].offsetWidth // force reflow
+      $active.addClass(direction)
+      $next.addClass(direction)
+      $active
+        .one('bsTransitionEnd', function () {
+          $next.removeClass([type, direction].join(' ')).addClass('active')
+          $active.removeClass(['active', direction].join(' '))
+          that.sliding = false
+          setTimeout(function () {
+            that.$element.trigger(slidEvent)
+          }, 0)
+        })
+        .emulateTransitionEnd(Carousel.TRANSITION_DURATION)
+    } else {
+      $active.removeClass('active')
+      $next.addClass('active')
+      this.sliding = false
+      this.$element.trigger(slidEvent)
+    }
+
+    isCycling && this.cycle()
+
+    return this
+  }
+
+
+  // CAROUSEL PLUGIN DEFINITION
+  // ==========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.carousel')
+      var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
+      var action  = typeof option == 'string' ? option : options.slide
+
+      if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
+      if (typeof option == 'number') data.to(option)
+      else if (action) data[action]()
+      else if (options.interval) data.pause().cycle()
+    })
+  }
+
+  var old = $.fn.carousel
+
+  $.fn.carousel             = Plugin
+  $.fn.carousel.Constructor = Carousel
+
+
+  // CAROUSEL NO CONFLICT
+  // ====================
+
+  $.fn.carousel.noConflict = function () {
+    $.fn.carousel = old
+    return this
+  }
+
+
+  // CAROUSEL DATA-API
+  // =================
+
+  var clickHandler = function (e) {
+    var href
+    var $this   = $(this)
+    var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) // strip for ie7
+    if (!$target.hasClass('carousel')) return
+    var options = $.extend({}, $target.data(), $this.data())
+    var slideIndex = $this.attr('data-slide-to')
+    if (slideIndex) options.interval = false
+
+    Plugin.call($target, options)
+
+    if (slideIndex) {
+      $target.data('bs.carousel').to(slideIndex)
+    }
+
+    e.preventDefault()
+  }
+
+  $(document)
+    .on('click.bs.carousel.data-api', '[data-slide]', clickHandler)
+    .on('click.bs.carousel.data-api', '[data-slide-to]', clickHandler)
+
+  $(window).on('load', function () {
+    $('[data-ride="carousel"]').each(function () {
+      var $carousel = $(this)
+      Plugin.call($carousel, $carousel.data())
+    })
+  })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: collapse.js v3.3.7
+ * http://getbootstrap.com/javascript/#collapse
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+/* jshint latedef: false */
+
++function ($) {
+  'use strict';
+
+  // COLLAPSE PUBLIC CLASS DEFINITION
+  // ================================
+
+  var Collapse = function (element, options) {
+    this.$element      = $(element)
+    this.options       = $.extend({}, Collapse.DEFAULTS, options)
+    this.$trigger      = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
+                           '[data-toggle="collapse"][data-target="#' + element.id + '"]')
+    this.transitioning = null
+
+    if (this.options.parent) {
+      this.$parent = this.getParent()
+    } else {
+      this.addAriaAndCollapsedClass(this.$element, this.$trigger)
+    }
+
+    if (this.options.toggle) this.toggle()
+  }
+
+  Collapse.VERSION  = '3.3.7'
+
+  Collapse.TRANSITION_DURATION = 350
+
+  Collapse.DEFAULTS = {
+    toggle: true
+  }
+
+  Collapse.prototype.dimension = function () {
+    var hasWidth = this.$element.hasClass('width')
+    return hasWidth ? 'width' : 'height'
+  }
+
+  Collapse.prototype.show = function () {
+    if (this.transitioning || this.$element.hasClass('in')) return
+
+    var activesData
+    var actives = this.$parent && this.$parent.children('.panel').children('.in, .collapsing')
+
+    if (actives && actives.length) {
+      activesData = actives.data('bs.collapse')
+      if (activesData && activesData.transitioning) return
+    }
+
+    var startEvent = $.Event('show.bs.collapse')
+    this.$element.trigger(startEvent)
+    if (startEvent.isDefaultPrevented()) return
+
+    if (actives && actives.length) {
+      Plugin.call(actives, 'hide')
+      activesData || actives.data('bs.collapse', null)
+    }
+
+    var dimension = this.dimension()
+
+    this.$element
+      .removeClass('collapse')
+      .addClass('collapsing')[dimension](0)
+      .attr('aria-expanded', true)
+
+    this.$trigger
+      .removeClass('collapsed')
+      .attr('aria-expanded', true)
+
+    this.transitioning = 1
+
+    var complete = function () {
+      this.$element
+        .removeClass('collapsing')
+        .addClass('collapse in')[dimension]('')
+      this.transitioning = 0
+      this.$element
+        .trigger('shown.bs.collapse')
+    }
+
+    if (!$.support.transition) return complete.call(this)
+
+    var scrollSize = $.camelCase(['scroll', dimension].join('-'))
+
+    this.$element
+      .one('bsTransitionEnd', $.proxy(complete, this))
+      .emulateTransitionEnd(Collapse.TRANSITION_DURATION)[dimension](this.$element[0][scrollSize])
+  }
+
+  Collapse.prototype.hide = function () {
+    if (this.transitioning || !this.$element.hasClass('in')) return
+
+    var startEvent = $.Event('hide.bs.collapse')
+    this.$element.trigger(startEvent)
+    if (startEvent.isDefaultPrevented()) return
+
+    var dimension = this.dimension()
+
+    this.$element[dimension](this.$element[dimension]())[0].offsetHeight
+
+    this.$element
+      .addClass('collapsing')
+      .removeClass('collapse in')
+      .attr('aria-expanded', false)
+
+    this.$trigger
+      .addClass('collapsed')
+      .attr('aria-expanded', false)
+
+    this.transitioning = 1
+
+    var complete = function () {
+      this.transitioning = 0
+      this.$element
+        .removeClass('collapsing')
+        .addClass('collapse')
+        .trigger('hidden.bs.collapse')
+    }
+
+    if (!$.support.transition) return complete.call(this)
+
+    this.$element
+      [dimension](0)
+      .one('bsTransitionEnd', $.proxy(complete, this))
+      .emulateTransitionEnd(Collapse.TRANSITION_DURATION)
+  }
+
+  Collapse.prototype.toggle = function () {
+    this[this.$element.hasClass('in') ? 'hide' : 'show']()
+  }
+
+  Collapse.prototype.getParent = function () {
+    return $(this.options.parent)
+      .find('[data-toggle="collapse"][data-parent="' + this.options.parent + '"]')
+      .each($.proxy(function (i, element) {
+        var $element = $(element)
+        this.addAriaAndCollapsedClass(getTargetFromTrigger($element), $element)
+      }, this))
+      .end()
+  }
+
+  Collapse.prototype.addAriaAndCollapsedClass = function ($element, $trigger) {
+    var isOpen = $element.hasClass('in')
+
+    $element.attr('aria-expanded', isOpen)
+    $trigger
+      .toggleClass('collapsed', !isOpen)
+      .attr('aria-expanded', isOpen)
+  }
+
+  function getTargetFromTrigger($trigger) {
+    var href
+    var target = $trigger.attr('data-target')
+      || (href = $trigger.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
+
+    return $(target)
+  }
+
+
+  // COLLAPSE PLUGIN DEFINITION
+  // ==========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.collapse')
+      var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
+
+      if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
+      if (!data) $this.data('bs.collapse', (data = new Collapse(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.collapse
+
+  $.fn.collapse             = Plugin
+  $.fn.collapse.Constructor = Collapse
+
+
+  // COLLAPSE NO CONFLICT
+  // ====================
+
+  $.fn.collapse.noConflict = function () {
+    $.fn.collapse = old
+    return this
+  }
+
+
+  // COLLAPSE DATA-API
+  // =================
+
+  $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function (e) {
+    var $this   = $(this)
+
+    if (!$this.attr('data-target')) e.preventDefault()
+
+    var $target = getTargetFromTrigger($this)
+    var data    = $target.data('bs.collapse')
+    var option  = data ? 'toggle' : $this.data()
+
+    Plugin.call($target, option)
+  })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: dropdown.js v3.3.7
+ * http://getbootstrap.com/javascript/#dropdowns
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // DROPDOWN CLASS DEFINITION
+  // =========================
+
+  var backdrop = '.dropdown-backdrop'
+  var toggle   = '[data-toggle="dropdown"]'
+  var Dropdown = function (element) {
+    $(element).on('click.bs.dropdown', this.toggle)
+  }
+
+  Dropdown.VERSION = '3.3.7'
+
+  function getParent($this) {
+    var selector = $this.attr('data-target')
+
+    if (!selector) {
+      selector = $this.attr('href')
+      selector = selector && /#[A-Za-z]/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
+    }
+
+    var $parent = selector && $(selector)
+
+    return $parent && $parent.length ? $parent : $this.parent()
+  }
+
+  function clearMenus(e) {
+    if (e && e.which === 3) return
+    $(backdrop).remove()
+    $(toggle).each(function () {
+      var $this         = $(this)
+      var $parent       = getParent($this)
+      var relatedTarget = { relatedTarget: this }
+
+      if (!$parent.hasClass('open')) return
+
+      if (e && e.type == 'click' && /input|textarea/i.test(e.target.tagName) && $.contains($parent[0], e.target)) return
+
+      $parent.trigger(e = $.Event('hide.bs.dropdown', relatedTarget))
+
+      if (e.isDefaultPrevented()) return
+
+      $this.attr('aria-expanded', 'false')
+      $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
+    })
+  }
+
+  Dropdown.prototype.toggle = function (e) {
+    var $this = $(this)
+
+    if ($this.is('.disabled, :disabled')) return
+
+    var $parent  = getParent($this)
+    var isActive = $parent.hasClass('open')
+
+    clearMenus()
+
+    if (!isActive) {
+      if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
+        // if mobile we use a backdrop because click events don't delegate
+        $(document.createElement('div'))
+          .addClass('dropdown-backdrop')
+          .insertAfter($(this))
+          .on('click', clearMenus)
+      }
+
+      var relatedTarget = { relatedTarget: this }
+      $parent.trigger(e = $.Event('show.bs.dropdown', relatedTarget))
+
+      if (e.isDefaultPrevented()) return
+
+      $this
+        .trigger('focus')
+        .attr('aria-expanded', 'true')
+
+      $parent
+        .toggleClass('open')
+        .trigger($.Event('shown.bs.dropdown', relatedTarget))
+    }
+
+    return false
+  }
+
+  Dropdown.prototype.keydown = function (e) {
+    if (!/(38|40|27|32)/.test(e.which) || /input|textarea/i.test(e.target.tagName)) return
+
+    var $this = $(this)
+
+    e.preventDefault()
+    e.stopPropagation()
+
+    if ($this.is('.disabled, :disabled')) return
+
+    var $parent  = getParent($this)
+    var isActive = $parent.hasClass('open')
+
+    if (!isActive && e.which != 27 || isActive && e.which == 27) {
+      if (e.which == 27) $parent.find(toggle).trigger('focus')
+      return $this.trigger('click')
+    }
+
+    var desc = ' li:not(.disabled):visible a'
+    var $items = $parent.find('.dropdown-menu' + desc)
+
+    if (!$items.length) return
+
+    var index = $items.index(e.target)
+
+    if (e.which == 38 && index > 0)                 index--         // up
+    if (e.which == 40 && index < $items.length - 1) index++         // down
+    if (!~index)                                    index = 0
+
+    $items.eq(index).trigger('focus')
+  }
+
+
+  // DROPDOWN PLUGIN DEFINITION
+  // ==========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this = $(this)
+      var data  = $this.data('bs.dropdown')
+
+      if (!data) $this.data('bs.dropdown', (data = new Dropdown(this)))
+      if (typeof option == 'string') data[option].call($this)
+    })
+  }
+
+  var old = $.fn.dropdown
+
+  $.fn.dropdown             = Plugin
+  $.fn.dropdown.Constructor = Dropdown
+
+
+  // DROPDOWN NO CONFLICT
+  // ====================
+
+  $.fn.dropdown.noConflict = function () {
+    $.fn.dropdown = old
+    return this
+  }
+
+
+  // APPLY TO STANDARD DROPDOWN ELEMENTS
+  // ===================================
+
+  $(document)
+    .on('click.bs.dropdown.data-api', clearMenus)
+    .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
+    .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
+    .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
+    .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: modal.js v3.3.7
+ * http://getbootstrap.com/javascript/#modals
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // MODAL CLASS DEFINITION
+  // ======================
+
+  var Modal = function (element, options) {
+    this.options             = options
+    this.$body               = $(document.body)
+    this.$element            = $(element)
+    this.$dialog             = this.$element.find('.modal-dialog')
+    this.$backdrop           = null
+    this.isShown             = null
+    this.originalBodyPad     = null
+    this.scrollbarWidth      = 0
+    this.ignoreBackdropClick = false
+
+    if (this.options.remote) {
+      this.$element
+        .find('.modal-content')
+        .load(this.options.remote, $.proxy(function () {
+          this.$element.trigger('loaded.bs.modal')
+        }, this))
+    }
+  }
+
+  Modal.VERSION  = '3.3.7'
+
+  Modal.TRANSITION_DURATION = 300
+  Modal.BACKDROP_TRANSITION_DURATION = 150
+
+  Modal.DEFAULTS = {
+    backdrop: true,
+    keyboard: true,
+    show: true
+  }
+
+  Modal.prototype.toggle = function (_relatedTarget) {
+    return this.isShown ? this.hide() : this.show(_relatedTarget)
+  }
+
+  Modal.prototype.show = function (_relatedTarget) {
+    var that = this
+    var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
+
+    this.$element.trigger(e)
+
+    if (this.isShown || e.isDefaultPrevented()) return
+
+    this.isShown = true
+
+    this.checkScrollbar()
+    this.setScrollbar()
+    this.$body.addClass('modal-open')
+
+    this.escape()
+    this.resize()
+
+    this.$element.on('click.dismiss.bs.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this))
+
+    this.$dialog.on('mousedown.dismiss.bs.modal', function () {
+      that.$element.one('mouseup.dismiss.bs.modal', function (e) {
+        if ($(e.target).is(that.$element)) that.ignoreBackdropClick = true
+      })
+    })
+
+    this.backdrop(function () {
+      var transition = $.support.transition && that.$element.hasClass('fade')
+
+      if (!that.$element.parent().length) {
+        that.$element.appendTo(that.$body) // don't move modals dom position
+      }
+
+      that.$element
+        .show()
+        .scrollTop(0)
+
+      that.adjustDialog()
+
+      if (transition) {
+        that.$element[0].offsetWidth // force reflow
+      }
+
+      that.$element.addClass('in')
+
+      that.enforceFocus()
+
+      var e = $.Event('shown.bs.modal', { relatedTarget: _relatedTarget })
+
+      transition ?
+        that.$dialog // wait for modal to slide in
+          .one('bsTransitionEnd', function () {
+            that.$element.trigger('focus').trigger(e)
+          })
+          .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
+        that.$element.trigger('focus').trigger(e)
+    })
+  }
+
+  Modal.prototype.hide = function (e) {
+    if (e) e.preventDefault()
+
+    e = $.Event('hide.bs.modal')
+
+    this.$element.trigger(e)
+
+    if (!this.isShown || e.isDefaultPrevented()) return
+
+    this.isShown = false
+
+    this.escape()
+    this.resize()
+
+    $(document).off('focusin.bs.modal')
+
+    this.$element
+      .removeClass('in')
+      .off('click.dismiss.bs.modal')
+      .off('mouseup.dismiss.bs.modal')
+
+    this.$dialog.off('mousedown.dismiss.bs.modal')
+
+    $.support.transition && this.$element.hasClass('fade') ?
+      this.$element
+        .one('bsTransitionEnd', $.proxy(this.hideModal, this))
+        .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
+      this.hideModal()
+  }
+
+  Modal.prototype.enforceFocus = function () {
+    $(document)
+      .off('focusin.bs.modal') // guard against infinite focus loop
+      .on('focusin.bs.modal', $.proxy(function (e) {
+        if (document !== e.target &&
+            this.$element[0] !== e.target &&
+            !this.$element.has(e.target).length) {
+          this.$element.trigger('focus')
+        }
+      }, this))
+  }
+
+  Modal.prototype.escape = function () {
+    if (this.isShown && this.options.keyboard) {
+      this.$element.on('keydown.dismiss.bs.modal', $.proxy(function (e) {
+        e.which == 27 && this.hide()
+      }, this))
+    } else if (!this.isShown) {
+      this.$element.off('keydown.dismiss.bs.modal')
+    }
+  }
+
+  Modal.prototype.resize = function () {
+    if (this.isShown) {
+      $(window).on('resize.bs.modal', $.proxy(this.handleUpdate, this))
+    } else {
+      $(window).off('resize.bs.modal')
+    }
+  }
+
+  Modal.prototype.hideModal = function () {
+    var that = this
+    this.$element.hide()
+    this.backdrop(function () {
+      that.$body.removeClass('modal-open')
+      that.resetAdjustments()
+      that.resetScrollbar()
+      that.$element.trigger('hidden.bs.modal')
+    })
+  }
+
+  Modal.prototype.removeBackdrop = function () {
+    this.$backdrop && this.$backdrop.remove()
+    this.$backdrop = null
+  }
+
+  Modal.prototype.backdrop = function (callback) {
+    var that = this
+    var animate = this.$element.hasClass('fade') ? 'fade' : ''
+
+    if (this.isShown && this.options.backdrop) {
+      var doAnimate = $.support.transition && animate
+
+      this.$backdrop = $(document.createElement('div'))
+        .addClass('modal-backdrop ' + animate)
+        .appendTo(this.$body)
+
+      this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
+        if (this.ignoreBackdropClick) {
+          this.ignoreBackdropClick = false
+          return
+        }
+        if (e.target !== e.currentTarget) return
+        this.options.backdrop == 'static'
+          ? this.$element[0].focus()
+          : this.hide()
+      }, this))
+
+      if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
+
+      this.$backdrop.addClass('in')
+
+      if (!callback) return
+
+      doAnimate ?
+        this.$backdrop
+          .one('bsTransitionEnd', callback)
+          .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
+        callback()
+
+    } else if (!this.isShown && this.$backdrop) {
+      this.$backdrop.removeClass('in')
+
+      var callbackRemove = function () {
+        that.removeBackdrop()
+        callback && callback()
+      }
+      $.support.transition && this.$element.hasClass('fade') ?
+        this.$backdrop
+          .one('bsTransitionEnd', callbackRemove)
+          .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
+        callbackRemove()
+
+    } else if (callback) {
+      callback()
+    }
+  }
+
+  // these following methods are used to handle overflowing modals
+
+  Modal.prototype.handleUpdate = function () {
+    this.adjustDialog()
+  }
+
+  Modal.prototype.adjustDialog = function () {
+    var modalIsOverflowing = this.$element[0].scrollHeight > document.documentElement.clientHeight
+
+    this.$element.css({
+      paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
+      paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : ''
+    })
+  }
+
+  Modal.prototype.resetAdjustments = function () {
+    this.$element.css({
+      paddingLeft: '',
+      paddingRight: ''
+    })
+  }
+
+  Modal.prototype.checkScrollbar = function () {
+    var fullWindowWidth = window.innerWidth
+    if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
+      var documentElementRect = document.documentElement.getBoundingClientRect()
+      fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
+    }
+    this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
+    this.scrollbarWidth = this.measureScrollbar()
+  }
+
+  Modal.prototype.setScrollbar = function () {
+    var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
+    this.originalBodyPad = document.body.style.paddingRight || ''
+    if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
+  }
+
+  Modal.prototype.resetScrollbar = function () {
+    this.$body.css('padding-right', this.originalBodyPad)
+  }
+
+  Modal.prototype.measureScrollbar = function () { // thx walsh
+    var scrollDiv = document.createElement('div')
+    scrollDiv.className = 'modal-scrollbar-measure'
+    this.$body.append(scrollDiv)
+    var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth
+    this.$body[0].removeChild(scrollDiv)
+    return scrollbarWidth
+  }
+
+
+  // MODAL PLUGIN DEFINITION
+  // =======================
+
+  function Plugin(option, _relatedTarget) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.modal')
+      var options = $.extend({}, Modal.DEFAULTS, $this.data(), typeof option == 'object' && option)
+
+      if (!data) $this.data('bs.modal', (data = new Modal(this, options)))
+      if (typeof option == 'string') data[option](_relatedTarget)
+      else if (options.show) data.show(_relatedTarget)
+    })
+  }
+
+  var old = $.fn.modal
+
+  $.fn.modal             = Plugin
+  $.fn.modal.Constructor = Modal
+
+
+  // MODAL NO CONFLICT
+  // =================
+
+  $.fn.modal.noConflict = function () {
+    $.fn.modal = old
+    return this
+  }
+
+
+  // MODAL DATA-API
+  // ==============
+
+  $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
+    var $this   = $(this)
+    var href    = $this.attr('href')
+    var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
+    var option  = $target.data('bs.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
+
+    if ($this.is('a')) e.preventDefault()
+
+    $target.one('show.bs.modal', function (showEvent) {
+      if (showEvent.isDefaultPrevented()) return // only register focus restorer if modal will actually get shown
+      $target.one('hidden.bs.modal', function () {
+        $this.is(':visible') && $this.trigger('focus')
+      })
+    })
+    Plugin.call($target, option, this)
+  })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: tooltip.js v3.3.7
+ * http://getbootstrap.com/javascript/#tooltip
+ * Inspired by the original jQuery.tipsy by Jason Frame
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // TOOLTIP PUBLIC CLASS DEFINITION
+  // ===============================
+
+  var Tooltip = function (element, options) {
+    this.type       = null
+    this.options    = null
+    this.enabled    = null
+    this.timeout    = null
+    this.hoverState = null
+    this.$element   = null
+    this.inState    = null
+
+    this.init('tooltip', element, options)
+  }
+
+  Tooltip.VERSION  = '3.3.7'
+
+  Tooltip.TRANSITION_DURATION = 150
+
+  Tooltip.DEFAULTS = {
+    animation: true,
+    placement: 'top',
+    selector: false,
+    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+    trigger: 'hover focus',
+    title: '',
+    delay: 0,
+    html: false,
+    container: false,
+    viewport: {
+      selector: 'body',
+      padding: 0
+    }
+  }
+
+  Tooltip.prototype.init = function (type, element, options) {
+    this.enabled   = true
+    this.type      = type
+    this.$element  = $(element)
+    this.options   = this.getOptions(options)
+    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
+    this.inState   = { click: false, hover: false, focus: false }
+
+    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
+      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
+    }
+
+    var triggers = this.options.trigger.split(' ')
+
+    for (var i = triggers.length; i--;) {
+      var trigger = triggers[i]
+
+      if (trigger == 'click') {
+        this.$element.on('click.' + this.type, this.options.selector, $.proxy(this.toggle, this))
+      } else if (trigger != 'manual') {
+        var eventIn  = trigger == 'hover' ? 'mouseenter' : 'focusin'
+        var eventOut = trigger == 'hover' ? 'mouseleave' : 'focusout'
+
+        this.$element.on(eventIn  + '.' + this.type, this.options.selector, $.proxy(this.enter, this))
+        this.$element.on(eventOut + '.' + this.type, this.options.selector, $.proxy(this.leave, this))
+      }
+    }
+
+    this.options.selector ?
+      (this._options = $.extend({}, this.options, { trigger: 'manual', selector: '' })) :
+      this.fixTitle()
+  }
+
+  Tooltip.prototype.getDefaults = function () {
+    return Tooltip.DEFAULTS
+  }
+
+  Tooltip.prototype.getOptions = function (options) {
+    options = $.extend({}, this.getDefaults(), this.$element.data(), options)
+
+    if (options.delay && typeof options.delay == 'number') {
+      options.delay = {
+        show: options.delay,
+        hide: options.delay
+      }
+    }
+
+    return options
+  }
+
+  Tooltip.prototype.getDelegateOptions = function () {
+    var options  = {}
+    var defaults = this.getDefaults()
+
+    this._options && $.each(this._options, function (key, value) {
+      if (defaults[key] != value) options[key] = value
+    })
+
+    return options
+  }
+
+  Tooltip.prototype.enter = function (obj) {
+    var self = obj instanceof this.constructor ?
+      obj : $(obj.currentTarget).data('bs.' + this.type)
+
+    if (!self) {
+      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
+      $(obj.currentTarget).data('bs.' + this.type, self)
+    }
+
+    if (obj instanceof $.Event) {
+      self.inState[obj.type == 'focusin' ? 'focus' : 'hover'] = true
+    }
+
+    if (self.tip().hasClass('in') || self.hoverState == 'in') {
+      self.hoverState = 'in'
+      return
+    }
+
+    clearTimeout(self.timeout)
+
+    self.hoverState = 'in'
+
+    if (!self.options.delay || !self.options.delay.show) return self.show()
+
+    self.timeout = setTimeout(function () {
+      if (self.hoverState == 'in') self.show()
+    }, self.options.delay.show)
+  }
+
+  Tooltip.prototype.isInStateTrue = function () {
+    for (var key in this.inState) {
+      if (this.inState[key]) return true
+    }
+
+    return false
+  }
+
+  Tooltip.prototype.leave = function (obj) {
+    var self = obj instanceof this.constructor ?
+      obj : $(obj.currentTarget).data('bs.' + this.type)
+
+    if (!self) {
+      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
+      $(obj.currentTarget).data('bs.' + this.type, self)
+    }
+
+    if (obj instanceof $.Event) {
+      self.inState[obj.type == 'focusout' ? 'focus' : 'hover'] = false
+    }
+
+    if (self.isInStateTrue()) return
+
+    clearTimeout(self.timeout)
+
+    self.hoverState = 'out'
+
+    if (!self.options.delay || !self.options.delay.hide) return self.hide()
+
+    self.timeout = setTimeout(function () {
+      if (self.hoverState == 'out') self.hide()
+    }, self.options.delay.hide)
+  }
+
+  Tooltip.prototype.show = function () {
+    var e = $.Event('show.bs.' + this.type)
+
+    if (this.hasContent() && this.enabled) {
+      this.$element.trigger(e)
+
+      var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0])
+      if (e.isDefaultPrevented() || !inDom) return
+      var that = this
+
+      var $tip = this.tip()
+
+      var tipId = this.getUID(this.type)
+
+      this.setContent()
+      $tip.attr('id', tipId)
+      this.$element.attr('aria-describedby', tipId)
+
+      if (this.options.animation) $tip.addClass('fade')
+
+      var placement = typeof this.options.placement == 'function' ?
+        this.options.placement.call(this, $tip[0], this.$element[0]) :
+        this.options.placement
+
+      var autoToken = /\s?auto?\s?/i
+      var autoPlace = autoToken.test(placement)
+      if (autoPlace) placement = placement.replace(autoToken, '') || 'top'
+
+      $tip
+        .detach()
+        .css({ top: 0, left: 0, display: 'block' })
+        .addClass(placement)
+        .data('bs.' + this.type, this)
+
+      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
+      this.$element.trigger('inserted.bs.' + this.type)
+
+      var pos          = this.getPosition()
+      var actualWidth  = $tip[0].offsetWidth
+      var actualHeight = $tip[0].offsetHeight
+
+      if (autoPlace) {
+        var orgPlacement = placement
+        var viewportDim = this.getPosition(this.$viewport)
+
+        placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top'    :
+                    placement == 'top'    && pos.top    - actualHeight < viewportDim.top    ? 'bottom' :
+                    placement == 'right'  && pos.right  + actualWidth  > viewportDim.width  ? 'left'   :
+                    placement == 'left'   && pos.left   - actualWidth  < viewportDim.left   ? 'right'  :
+                    placement
+
+        $tip
+          .removeClass(orgPlacement)
+          .addClass(placement)
+      }
+
+      var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight)
+
+      this.applyPlacement(calculatedOffset, placement)
+
+      var complete = function () {
+        var prevHoverState = that.hoverState
+        that.$element.trigger('shown.bs.' + that.type)
+        that.hoverState = null
+
+        if (prevHoverState == 'out') that.leave(that)
+      }
+
+      $.support.transition && this.$tip.hasClass('fade') ?
+        $tip
+          .one('bsTransitionEnd', complete)
+          .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
+        complete()
+    }
+  }
+
+  Tooltip.prototype.applyPlacement = function (offset, placement) {
+    var $tip   = this.tip()
+    var width  = $tip[0].offsetWidth
+    var height = $tip[0].offsetHeight
+
+    // manually read margins because getBoundingClientRect includes difference
+    var marginTop = parseInt($tip.css('margin-top'), 10)
+    var marginLeft = parseInt($tip.css('margin-left'), 10)
+
+    // we must check for NaN for ie 8/9
+    if (isNaN(marginTop))  marginTop  = 0
+    if (isNaN(marginLeft)) marginLeft = 0
+
+    offset.top  += marginTop
+    offset.left += marginLeft
+
+    // $.fn.offset doesn't round pixel values
+    // so we use setOffset directly with our own function B-0
+    $.offset.setOffset($tip[0], $.extend({
+      using: function (props) {
+        $tip.css({
+          top: Math.round(props.top),
+          left: Math.round(props.left)
+        })
+      }
+    }, offset), 0)
+
+    $tip.addClass('in')
+
+    // check to see if placing tip in new offset caused the tip to resize itself
+    var actualWidth  = $tip[0].offsetWidth
+    var actualHeight = $tip[0].offsetHeight
+
+    if (placement == 'top' && actualHeight != height) {
+      offset.top = offset.top + height - actualHeight
+    }
+
+    var delta = this.getViewportAdjustedDelta(placement, offset, actualWidth, actualHeight)
+
+    if (delta.left) offset.left += delta.left
+    else offset.top += delta.top
+
+    var isVertical          = /top|bottom/.test(placement)
+    var arrowDelta          = isVertical ? delta.left * 2 - width + actualWidth : delta.top * 2 - height + actualHeight
+    var arrowOffsetPosition = isVertical ? 'offsetWidth' : 'offsetHeight'
+
+    $tip.offset(offset)
+    this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical)
+  }
+
+  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
+    this.arrow()
+      .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
+      .css(isVertical ? 'top' : 'left', '')
+  }
+
+  Tooltip.prototype.setContent = function () {
+    var $tip  = this.tip()
+    var title = this.getTitle()
+
+    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
+    $tip.removeClass('fade in top bottom left right')
+  }
+
+  Tooltip.prototype.hide = function (callback) {
+    var that = this
+    var $tip = $(this.$tip)
+    var e    = $.Event('hide.bs.' + this.type)
+
+    function complete() {
+      if (that.hoverState != 'in') $tip.detach()
+      if (that.$element) { // TODO: Check whether guarding this code with this `if` is really necessary.
+        that.$element
+          .removeAttr('aria-describedby')
+          .trigger('hidden.bs.' + that.type)
+      }
+      callback && callback()
+    }
+
+    this.$element.trigger(e)
+
+    if (e.isDefaultPrevented()) return
+
+    $tip.removeClass('in')
+
+    $.support.transition && $tip.hasClass('fade') ?
+      $tip
+        .one('bsTransitionEnd', complete)
+        .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
+      complete()
+
+    this.hoverState = null
+
+    return this
+  }
+
+  Tooltip.prototype.fixTitle = function () {
+    var $e = this.$element
+    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
+      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '')
+    }
+  }
+
+  Tooltip.prototype.hasContent = function () {
+    return this.getTitle()
+  }
+
+  Tooltip.prototype.getPosition = function ($element) {
+    $element   = $element || this.$element
+
+    var el     = $element[0]
+    var isBody = el.tagName == 'BODY'
+
+    var elRect    = el.getBoundingClientRect()
+    if (elRect.width == null) {
+      // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
+      elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top })
+    }
+    var isSvg = window.SVGElement && el instanceof window.SVGElement
+    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
+    // See https://github.com/twbs/bootstrap/issues/20280
+    var elOffset  = isBody ? { top: 0, left: 0 } : (isSvg ? null : $element.offset())
+    var scroll    = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() }
+    var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null
+
+    return $.extend({}, elRect, scroll, outerDims, elOffset)
+  }
+
+  Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
+    return placement == 'bottom' ? { top: pos.top + pos.height,   left: pos.left + pos.width / 2 - actualWidth / 2 } :
+           placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
+           placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
+        /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
+
+  }
+
+  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
+    var delta = { top: 0, left: 0 }
+    if (!this.$viewport) return delta
+
+    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0
+    var viewportDimensions = this.getPosition(this.$viewport)
+
+    if (/right|left/.test(placement)) {
+      var topEdgeOffset    = pos.top - viewportPadding - viewportDimensions.scroll
+      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight
+      if (topEdgeOffset < viewportDimensions.top) { // top overflow
+        delta.top = viewportDimensions.top - topEdgeOffset
+      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) { // bottom overflow
+        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset
+      }
+    } else {
+      var leftEdgeOffset  = pos.left - viewportPadding
+      var rightEdgeOffset = pos.left + viewportPadding + actualWidth
+      if (leftEdgeOffset < viewportDimensions.left) { // left overflow
+        delta.left = viewportDimensions.left - leftEdgeOffset
+      } else if (rightEdgeOffset > viewportDimensions.right) { // right overflow
+        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset
+      }
+    }
+
+    return delta
+  }
+
+  Tooltip.prototype.getTitle = function () {
+    var title
+    var $e = this.$element
+    var o  = this.options
+
+    title = $e.attr('data-original-title')
+      || (typeof o.title == 'function' ? o.title.call($e[0]) :  o.title)
+
+    return title
+  }
+
+  Tooltip.prototype.getUID = function (prefix) {
+    do prefix += ~~(Math.random() * 1000000)
+    while (document.getElementById(prefix))
+    return prefix
+  }
+
+  Tooltip.prototype.tip = function () {
+    if (!this.$tip) {
+      this.$tip = $(this.options.template)
+      if (this.$tip.length != 1) {
+        throw new Error(this.type + ' `template` option must consist of exactly 1 top-level element!')
+      }
+    }
+    return this.$tip
+  }
+
+  Tooltip.prototype.arrow = function () {
+    return (this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow'))
+  }
+
+  Tooltip.prototype.enable = function () {
+    this.enabled = true
+  }
+
+  Tooltip.prototype.disable = function () {
+    this.enabled = false
+  }
+
+  Tooltip.prototype.toggleEnabled = function () {
+    this.enabled = !this.enabled
+  }
+
+  Tooltip.prototype.toggle = function (e) {
+    var self = this
+    if (e) {
+      self = $(e.currentTarget).data('bs.' + this.type)
+      if (!self) {
+        self = new this.constructor(e.currentTarget, this.getDelegateOptions())
+        $(e.currentTarget).data('bs.' + this.type, self)
+      }
+    }
+
+    if (e) {
+      self.inState.click = !self.inState.click
+      if (self.isInStateTrue()) self.enter(self)
+      else self.leave(self)
+    } else {
+      self.tip().hasClass('in') ? self.leave(self) : self.enter(self)
+    }
+  }
+
+  Tooltip.prototype.destroy = function () {
+    var that = this
+    clearTimeout(this.timeout)
+    this.hide(function () {
+      that.$element.off('.' + that.type).removeData('bs.' + that.type)
+      if (that.$tip) {
+        that.$tip.detach()
+      }
+      that.$tip = null
+      that.$arrow = null
+      that.$viewport = null
+      that.$element = null
+    })
+  }
+
+
+  // TOOLTIP PLUGIN DEFINITION
+  // =========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.tooltip')
+      var options = typeof option == 'object' && option
+
+      if (!data && /destroy|hide/.test(option)) return
+      if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.tooltip
+
+  $.fn.tooltip             = Plugin
+  $.fn.tooltip.Constructor = Tooltip
+
+
+  // TOOLTIP NO CONFLICT
+  // ===================
+
+  $.fn.tooltip.noConflict = function () {
+    $.fn.tooltip = old
+    return this
+  }
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: popover.js v3.3.7
+ * http://getbootstrap.com/javascript/#popovers
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // POPOVER PUBLIC CLASS DEFINITION
+  // ===============================
+
+  var Popover = function (element, options) {
+    this.init('popover', element, options)
+  }
+
+  if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
+
+  Popover.VERSION  = '3.3.7'
+
+  Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
+    placement: 'right',
+    trigger: 'click',
+    content: '',
+    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+  })
+
+
+  // NOTE: POPOVER EXTENDS tooltip.js
+  // ================================
+
+  Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)
+
+  Popover.prototype.constructor = Popover
+
+  Popover.prototype.getDefaults = function () {
+    return Popover.DEFAULTS
+  }
+
+  Popover.prototype.setContent = function () {
+    var $tip    = this.tip()
+    var title   = this.getTitle()
+    var content = this.getContent()
+
+    $tip.find('.popover-title')[this.options.html ? 'html' : 'text'](title)
+    $tip.find('.popover-content').children().detach().end()[ // we use append for html objects to maintain js events
+      this.options.html ? (typeof content == 'string' ? 'html' : 'append') : 'text'
+    ](content)
+
+    $tip.removeClass('fade top bottom left right in')
+
+    // IE8 doesn't accept hiding via the `:empty` pseudo selector, we have to do
+    // this manually by checking the contents.
+    if (!$tip.find('.popover-title').html()) $tip.find('.popover-title').hide()
+  }
+
+  Popover.prototype.hasContent = function () {
+    return this.getTitle() || this.getContent()
+  }
+
+  Popover.prototype.getContent = function () {
+    var $e = this.$element
+    var o  = this.options
+
+    return $e.attr('data-content')
+      || (typeof o.content == 'function' ?
+            o.content.call($e[0]) :
+            o.content)
+  }
+
+  Popover.prototype.arrow = function () {
+    return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
+  }
+
+
+  // POPOVER PLUGIN DEFINITION
+  // =========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.popover')
+      var options = typeof option == 'object' && option
+
+      if (!data && /destroy|hide/.test(option)) return
+      if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.popover
+
+  $.fn.popover             = Plugin
+  $.fn.popover.Constructor = Popover
+
+
+  // POPOVER NO CONFLICT
+  // ===================
+
+  $.fn.popover.noConflict = function () {
+    $.fn.popover = old
+    return this
+  }
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: scrollspy.js v3.3.7
+ * http://getbootstrap.com/javascript/#scrollspy
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // SCROLLSPY CLASS DEFINITION
+  // ==========================
+
+  function ScrollSpy(element, options) {
+    this.$body          = $(document.body)
+    this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+    this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
+    this.selector       = (this.options.target || '') + ' .nav li > a'
+    this.offsets        = []
+    this.targets        = []
+    this.activeTarget   = null
+    this.scrollHeight   = 0
+
+    this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+    this.refresh()
+    this.process()
+  }
+
+  ScrollSpy.VERSION  = '3.3.7'
+
+  ScrollSpy.DEFAULTS = {
+    offset: 10
+  }
+
+  ScrollSpy.prototype.getScrollHeight = function () {
+    return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
+  }
+
+  ScrollSpy.prototype.refresh = function () {
+    var that          = this
+    var offsetMethod  = 'offset'
+    var offsetBase    = 0
+
+    this.offsets      = []
+    this.targets      = []
+    this.scrollHeight = this.getScrollHeight()
+
+    if (!$.isWindow(this.$scrollElement[0])) {
+      offsetMethod = 'position'
+      offsetBase   = this.$scrollElement.scrollTop()
+    }
+
+    this.$body
+      .find(this.selector)
+      .map(function () {
+        var $el   = $(this)
+        var href  = $el.data('target') || $el.attr('href')
+        var $href = /^#./.test(href) && $(href)
+
+        return ($href
+          && $href.length
+          && $href.is(':visible')
+          && [[$href[offsetMethod]().top + offsetBase, href]]) || null
+      })
+      .sort(function (a, b) { return a[0] - b[0] })
+      .each(function () {
+        that.offsets.push(this[0])
+        that.targets.push(this[1])
+      })
+  }
+
+  ScrollSpy.prototype.process = function () {
+    var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
+    var scrollHeight = this.getScrollHeight()
+    var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
+    var offsets      = this.offsets
+    var targets      = this.targets
+    var activeTarget = this.activeTarget
+    var i
+
+    if (this.scrollHeight != scrollHeight) {
+      this.refresh()
+    }
+
+    if (scrollTop >= maxScroll) {
+      return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
+    }
+
+    if (activeTarget && scrollTop < offsets[0]) {
+      this.activeTarget = null
+      return this.clear()
+    }
+
+    for (i = offsets.length; i--;) {
+      activeTarget != targets[i]
+        && scrollTop >= offsets[i]
+        && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
+        && this.activate(targets[i])
+    }
+  }
+
+  ScrollSpy.prototype.activate = function (target) {
+    this.activeTarget = target
+
+    this.clear()
+
+    var selector = this.selector +
+      '[data-target="' + target + '"],' +
+      this.selector + '[href="' + target + '"]'
+
+    var active = $(selector)
+      .parents('li')
+      .addClass('active')
+
+    if (active.parent('.dropdown-menu').length) {
+      active = active
+        .closest('li.dropdown')
+        .addClass('active')
+    }
+
+    active.trigger('activate.bs.scrollspy')
+  }
+
+  ScrollSpy.prototype.clear = function () {
+    $(this.selector)
+      .parentsUntil(this.options.target, '.active')
+      .removeClass('active')
+  }
+
+
+  // SCROLLSPY PLUGIN DEFINITION
+  // ===========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.scrollspy')
+      var options = typeof option == 'object' && option
+
+      if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.scrollspy
+
+  $.fn.scrollspy             = Plugin
+  $.fn.scrollspy.Constructor = ScrollSpy
+
+
+  // SCROLLSPY NO CONFLICT
+  // =====================
+
+  $.fn.scrollspy.noConflict = function () {
+    $.fn.scrollspy = old
+    return this
+  }
+
+
+  // SCROLLSPY DATA-API
+  // ==================
+
+  $(window).on('load.bs.scrollspy.data-api', function () {
+    $('[data-spy="scroll"]').each(function () {
+      var $spy = $(this)
+      Plugin.call($spy, $spy.data())
+    })
+  })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: tab.js v3.3.7
+ * http://getbootstrap.com/javascript/#tabs
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // TAB CLASS DEFINITION
+  // ====================
+
+  var Tab = function (element) {
+    // jscs:disable requireDollarBeforejQueryAssignment
+    this.element = $(element)
+    // jscs:enable requireDollarBeforejQueryAssignment
+  }
+
+  Tab.VERSION = '3.3.7'
+
+  Tab.TRANSITION_DURATION = 150
+
+  Tab.prototype.show = function () {
+    var $this    = this.element
+    var $ul      = $this.closest('ul:not(.dropdown-menu)')
+    var selector = $this.data('target')
+
+    if (!selector) {
+      selector = $this.attr('href')
+      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
+    }
+
+    if ($this.parent('li').hasClass('active')) return
+
+    var $previous = $ul.find('.active:last a')
+    var hideEvent = $.Event('hide.bs.tab', {
+      relatedTarget: $this[0]
+    })
+    var showEvent = $.Event('show.bs.tab', {
+      relatedTarget: $previous[0]
+    })
+
+    $previous.trigger(hideEvent)
+    $this.trigger(showEvent)
+
+    if (showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) return
+
+    var $target = $(selector)
+
+    this.activate($this.closest('li'), $ul)
+    this.activate($target, $target.parent(), function () {
+      $previous.trigger({
+        type: 'hidden.bs.tab',
+        relatedTarget: $this[0]
+      })
+      $this.trigger({
+        type: 'shown.bs.tab',
+        relatedTarget: $previous[0]
+      })
+    })
+  }
+
+  Tab.prototype.activate = function (element, container, callback) {
+    var $active    = container.find('> .active')
+    var transition = callback
+      && $.support.transition
+      && ($active.length && $active.hasClass('fade') || !!container.find('> .fade').length)
+
+    function next() {
+      $active
+        .removeClass('active')
+        .find('> .dropdown-menu > .active')
+          .removeClass('active')
+        .end()
+        .find('[data-toggle="tab"]')
+          .attr('aria-expanded', false)
+
+      element
+        .addClass('active')
+        .find('[data-toggle="tab"]')
+          .attr('aria-expanded', true)
+
+      if (transition) {
+        element[0].offsetWidth // reflow for transition
+        element.addClass('in')
+      } else {
+        element.removeClass('fade')
+      }
+
+      if (element.parent('.dropdown-menu').length) {
+        element
+          .closest('li.dropdown')
+            .addClass('active')
+          .end()
+          .find('[data-toggle="tab"]')
+            .attr('aria-expanded', true)
+      }
+
+      callback && callback()
+    }
+
+    $active.length && transition ?
+      $active
+        .one('bsTransitionEnd', next)
+        .emulateTransitionEnd(Tab.TRANSITION_DURATION) :
+      next()
+
+    $active.removeClass('in')
+  }
+
+
+  // TAB PLUGIN DEFINITION
+  // =====================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this = $(this)
+      var data  = $this.data('bs.tab')
+
+      if (!data) $this.data('bs.tab', (data = new Tab(this)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.tab
+
+  $.fn.tab             = Plugin
+  $.fn.tab.Constructor = Tab
+
+
+  // TAB NO CONFLICT
+  // ===============
+
+  $.fn.tab.noConflict = function () {
+    $.fn.tab = old
+    return this
+  }
+
+
+  // TAB DATA-API
+  // ============
+
+  var clickHandler = function (e) {
+    e.preventDefault()
+    Plugin.call($(this), 'show')
+  }
+
+  $(document)
+    .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
+    .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: affix.js v3.3.7
+ * http://getbootstrap.com/javascript/#affix
+ * ========================================================================
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // AFFIX CLASS DEFINITION
+  // ======================
+
+  var Affix = function (element, options) {
+    this.options = $.extend({}, Affix.DEFAULTS, options)
+
+    this.$target = $(this.options.target)
+      .on('scroll.bs.affix.data-api', $.proxy(this.checkPosition, this))
+      .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
+
+    this.$element     = $(element)
+    this.affixed      = null
+    this.unpin        = null
+    this.pinnedOffset = null
+
+    this.checkPosition()
+  }
+
+  Affix.VERSION  = '3.3.7'
+
+  Affix.RESET    = 'affix affix-top affix-bottom'
+
+  Affix.DEFAULTS = {
+    offset: 0,
+    target: window
+  }
+
+  Affix.prototype.getState = function (scrollHeight, height, offsetTop, offsetBottom) {
+    var scrollTop    = this.$target.scrollTop()
+    var position     = this.$element.offset()
+    var targetHeight = this.$target.height()
+
+    if (offsetTop != null && this.affixed == 'top') return scrollTop < offsetTop ? 'top' : false
+
+    if (this.affixed == 'bottom') {
+      if (offsetTop != null) return (scrollTop + this.unpin <= position.top) ? false : 'bottom'
+      return (scrollTop + targetHeight <= scrollHeight - offsetBottom) ? false : 'bottom'
+    }
+
+    var initializing   = this.affixed == null
+    var colliderTop    = initializing ? scrollTop : position.top
+    var colliderHeight = initializing ? targetHeight : height
+
+    if (offsetTop != null && scrollTop <= offsetTop) return 'top'
+    if (offsetBottom != null && (colliderTop + colliderHeight >= scrollHeight - offsetBottom)) return 'bottom'
+
+    return false
+  }
+
+  Affix.prototype.getPinnedOffset = function () {
+    if (this.pinnedOffset) return this.pinnedOffset
+    this.$element.removeClass(Affix.RESET).addClass('affix')
+    var scrollTop = this.$target.scrollTop()
+    var position  = this.$element.offset()
+    return (this.pinnedOffset = position.top - scrollTop)
+  }
+
+  Affix.prototype.checkPositionWithEventLoop = function () {
+    setTimeout($.proxy(this.checkPosition, this), 1)
+  }
+
+  Affix.prototype.checkPosition = function () {
+    if (!this.$element.is(':visible')) return
+
+    var height       = this.$element.height()
+    var offset       = this.options.offset
+    var offsetTop    = offset.top
+    var offsetBottom = offset.bottom
+    var scrollHeight = Math.max($(document).height(), $(document.body).height())
+
+    if (typeof offset != 'object')         offsetBottom = offsetTop = offset
+    if (typeof offsetTop == 'function')    offsetTop    = offset.top(this.$element)
+    if (typeof offsetBottom == 'function') offsetBottom = offset.bottom(this.$element)
+
+    var affix = this.getState(scrollHeight, height, offsetTop, offsetBottom)
+
+    if (this.affixed != affix) {
+      if (this.unpin != null) this.$element.css('top', '')
+
+      var affixType = 'affix' + (affix ? '-' + affix : '')
+      var e         = $.Event(affixType + '.bs.affix')
+
+      this.$element.trigger(e)
+
+      if (e.isDefaultPrevented()) return
+
+      this.affixed = affix
+      this.unpin = affix == 'bottom' ? this.getPinnedOffset() : null
+
+      this.$element
+        .removeClass(Affix.RESET)
+        .addClass(affixType)
+        .trigger(affixType.replace('affix', 'affixed') + '.bs.affix')
+    }
+
+    if (affix == 'bottom') {
+      this.$element.offset({
+        top: scrollHeight - height - offsetBottom
+      })
+    }
+  }
+
+
+  // AFFIX PLUGIN DEFINITION
+  // =======================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.affix')
+      var options = typeof option == 'object' && option
+
+      if (!data) $this.data('bs.affix', (data = new Affix(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }
+
+  var old = $.fn.affix
+
+  $.fn.affix             = Plugin
+  $.fn.affix.Constructor = Affix
+
+
+  // AFFIX NO CONFLICT
+  // =================
+
+  $.fn.affix.noConflict = function () {
+    $.fn.affix = old
+    return this
+  }
+
+
+  // AFFIX DATA-API
+  // ==============
+
+  $(window).on('load', function () {
+    $('[data-spy="affix"]').each(function () {
+      var $spy = $(this)
+      var data = $spy.data()
+
+      data.offset = data.offset || {}
+
+      if (data.offsetBottom != null) data.offset.bottom = data.offsetBottom
+      if (data.offsetTop    != null) data.offset.top    = data.offsetTop
+
+      Plugin.call($spy, data)
+    })
+  })
+
+}(jQuery);
+
+
+/***/ }),
+
+/***/ "./node_modules/jquery/dist/jquery.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
- * jQuery JavaScript Library v3.1.1
+ * jQuery JavaScript Library v3.2.1
  * https://jquery.com/
  *
  * Includes Sizzle.js
  * https://sizzlejs.com/
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright JS Foundation and other contributors
  * Released under the MIT license
  * https://jquery.org/license
  *
- * Date: 2016-09-22T22:30Z
+ * Date: 2017-03-20T18:59Z
  */
 ( function( global, factory ) {
 
@@ -161,7 +2560,7 @@ var support = {};
 
 
 var
-	version = "3.1.1",
+	version = "3.2.1",
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
@@ -309,11 +2708,11 @@ jQuery.extend = jQuery.fn.extend = function() {
 
 				// Recurse if we're merging plain objects or arrays
 				if ( deep && copy && ( jQuery.isPlainObject( copy ) ||
-					( copyIsArray = jQuery.isArray( copy ) ) ) ) {
+					( copyIsArray = Array.isArray( copy ) ) ) ) {
 
 					if ( copyIsArray ) {
 						copyIsArray = false;
-						clone = src && jQuery.isArray( src ) ? src : [];
+						clone = src && Array.isArray( src ) ? src : [];
 
 					} else {
 						clone = src && jQuery.isPlainObject( src ) ? src : {};
@@ -351,8 +2750,6 @@ jQuery.extend( {
 	isFunction: function( obj ) {
 		return jQuery.type( obj ) === "function";
 	},
-
-	isArray: Array.isArray,
 
 	isWindow: function( obj ) {
 		return obj != null && obj === obj.window;
@@ -426,10 +2823,6 @@ jQuery.extend( {
 	// Microsoft forgot to hump their vendor prefix (#9572)
 	camelCase: function( string ) {
 		return string.replace( rmsPrefix, "ms-" ).replace( rdashAlpha, fcamelCase );
-	},
-
-	nodeName: function( elem, name ) {
-		return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
 	},
 
 	each: function( obj, callback ) {
@@ -2916,6 +5309,13 @@ var siblings = function( n, elem ) {
 
 var rneedsContext = jQuery.expr.match.needsContext;
 
+
+
+function nodeName( elem, name ) {
+
+  return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
+
+};
 var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
 
 
@@ -3267,7 +5667,18 @@ jQuery.each( {
 		return siblings( elem.firstChild );
 	},
 	contents: function( elem ) {
-		return elem.contentDocument || jQuery.merge( [], elem.childNodes );
+        if ( nodeName( elem, "iframe" ) ) {
+            return elem.contentDocument;
+        }
+
+        // Support: IE 9 - 11 only, iOS 7 only, Android Browser <=4.3 only
+        // Treat the template element as a regular one in browsers that
+        // don't support it.
+        if ( nodeName( elem, "template" ) ) {
+            elem = elem.content || elem;
+        }
+
+        return jQuery.merge( [], elem.childNodes );
 	}
 }, function( name, fn ) {
 	jQuery.fn[ name ] = function( until, selector ) {
@@ -3365,7 +5776,7 @@ jQuery.Callbacks = function( options ) {
 		fire = function() {
 
 			// Enforce single-firing
-			locked = options.once;
+			locked = locked || options.once;
 
 			// Execute callbacks for all pending executions,
 			// respecting firingIndex overrides and runtime changes
@@ -3534,7 +5945,7 @@ function Thrower( ex ) {
 	throw ex;
 }
 
-function adoptValue( value, resolve, reject ) {
+function adoptValue( value, resolve, reject, noValue ) {
 	var method;
 
 	try {
@@ -3550,9 +5961,10 @@ function adoptValue( value, resolve, reject ) {
 		// Other non-thenables
 		} else {
 
-			// Support: Android 4.0 only
-			// Strict mode functions invoked without .call/.apply get global-object context
-			resolve.call( undefined, value );
+			// Control `resolve` arguments by letting Array#slice cast boolean `noValue` to integer:
+			// * false: [ value ].slice( 0 ) => resolve( value )
+			// * true: [ value ].slice( 1 ) => resolve()
+			resolve.apply( undefined, [ value ].slice( noValue ) );
 		}
 
 	// For Promises/A+, convert exceptions into rejections
@@ -3562,7 +5974,7 @@ function adoptValue( value, resolve, reject ) {
 
 		// Support: Android 4.0 only
 		// Strict mode functions invoked without .call/.apply get global-object context
-		reject.call( undefined, value );
+		reject.apply( undefined, [ value ] );
 	}
 }
 
@@ -3887,7 +6299,8 @@ jQuery.extend( {
 
 		// Single- and empty arguments are adopted like Promise.resolve
 		if ( remaining <= 1 ) {
-			adoptValue( singleValue, master.done( updateFunc( i ) ).resolve, master.reject );
+			adoptValue( singleValue, master.done( updateFunc( i ) ).resolve, master.reject,
+				!remaining );
 
 			// Use .then() to unwrap secondary thenables (cf. gh-3000)
 			if ( master.state() === "pending" ||
@@ -3958,15 +6371,6 @@ jQuery.extend( {
 	// A counter to track how many items to wait for before
 	// the ready event fires. See #6781
 	readyWait: 1,
-
-	// Hold (or release) the ready event
-	holdReady: function( hold ) {
-		if ( hold ) {
-			jQuery.readyWait++;
-		} else {
-			jQuery.ready( true );
-		}
-	},
 
 	// Handle when the DOM is ready
 	ready: function( wait ) {
@@ -4203,7 +6607,7 @@ Data.prototype = {
 		if ( key !== undefined ) {
 
 			// Support array or space separated string of keys
-			if ( jQuery.isArray( key ) ) {
+			if ( Array.isArray( key ) ) {
 
 				// If key is an array of keys...
 				// We always set camelCase keys, so remove that.
@@ -4429,7 +6833,7 @@ jQuery.extend( {
 
 			// Speed up dequeue by getting out quickly if this is just a lookup
 			if ( data ) {
-				if ( !queue || jQuery.isArray( data ) ) {
+				if ( !queue || Array.isArray( data ) ) {
 					queue = dataPriv.access( elem, type, jQuery.makeArray( data ) );
 				} else {
 					queue.push( data );
@@ -4806,7 +7210,7 @@ function getAll( context, tag ) {
 		ret = [];
 	}
 
-	if ( tag === undefined || tag && jQuery.nodeName( context, tag ) ) {
+	if ( tag === undefined || tag && nodeName( context, tag ) ) {
 		return jQuery.merge( [ context ], ret );
 	}
 
@@ -5413,7 +7817,7 @@ jQuery.event = {
 
 			// For checkbox, fire native event so checked state will be right
 			trigger: function() {
-				if ( this.type === "checkbox" && this.click && jQuery.nodeName( this, "input" ) ) {
+				if ( this.type === "checkbox" && this.click && nodeName( this, "input" ) ) {
 					this.click();
 					return false;
 				}
@@ -5421,7 +7825,7 @@ jQuery.event = {
 
 			// For cross-browser consistency, don't fire native .click() on links
 			_default: function( event ) {
-				return jQuery.nodeName( event.target, "a" );
+				return nodeName( event.target, "a" );
 			}
 		},
 
@@ -5698,11 +8102,12 @@ var
 	rscriptTypeMasked = /^true\/(.*)/,
 	rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;
 
+// Prefer a tbody over its parent table for containing new rows
 function manipulationTarget( elem, content ) {
-	if ( jQuery.nodeName( elem, "table" ) &&
-		jQuery.nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ) {
+	if ( nodeName( elem, "table" ) &&
+		nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ) {
 
-		return elem.getElementsByTagName( "tbody" )[ 0 ] || elem;
+		return jQuery( ">tbody", elem )[ 0 ] || elem;
 	}
 
 	return elem;
@@ -6232,12 +8637,18 @@ var getStyles = function( elem ) {
 
 function curCSS( elem, name, computed ) {
 	var width, minWidth, maxWidth, ret,
+
+		// Support: Firefox 51+
+		// Retrieving style before computed somehow
+		// fixes an issue with getting wrong values
+		// on detached elements
 		style = elem.style;
 
 	computed = computed || getStyles( elem );
 
-	// Support: IE <=9 only
-	// getPropertyValue is only needed for .css('filter') (#12537)
+	// getPropertyValue is needed for:
+	//   .css('filter') (IE 9 only, #12537)
+	//   .css('--customProperty) (#3144)
 	if ( computed ) {
 		ret = computed.getPropertyValue( name ) || computed[ name ];
 
@@ -6303,6 +8714,7 @@ var
 	// except "table", "table-cell", or "table-caption"
 	// See here for display values: https://developer.mozilla.org/en-US/docs/CSS/display
 	rdisplayswap = /^(none|table(?!-c[ea]).+)/,
+	rcustomProp = /^--/,
 	cssShow = { position: "absolute", visibility: "hidden", display: "block" },
 	cssNormalTransform = {
 		letterSpacing: "0",
@@ -6330,6 +8742,16 @@ function vendorPropName( name ) {
 			return name;
 		}
 	}
+}
+
+// Return a property mapped along what jQuery.cssProps suggests or to
+// a vendor prefixed property.
+function finalPropName( name ) {
+	var ret = jQuery.cssProps[ name ];
+	if ( !ret ) {
+		ret = jQuery.cssProps[ name ] = vendorPropName( name ) || name;
+	}
+	return ret;
 }
 
 function setPositiveNumber( elem, value, subtract ) {
@@ -6392,43 +8814,30 @@ function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
 
 function getWidthOrHeight( elem, name, extra ) {
 
-	// Start with offset property, which is equivalent to the border-box value
-	var val,
-		valueIsBorderBox = true,
+	// Start with computed style
+	var valueIsBorderBox,
 		styles = getStyles( elem ),
+		val = curCSS( elem, name, styles ),
 		isBorderBox = jQuery.css( elem, "boxSizing", false, styles ) === "border-box";
 
-	// Support: IE <=11 only
-	// Running getBoundingClientRect on a disconnected node
-	// in IE throws an error.
-	if ( elem.getClientRects().length ) {
-		val = elem.getBoundingClientRect()[ name ];
+	// Computed unit is not pixels. Stop here and return.
+	if ( rnumnonpx.test( val ) ) {
+		return val;
 	}
 
-	// Some non-html elements return undefined for offsetWidth, so check for null/undefined
-	// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
-	// MathML - https://bugzilla.mozilla.org/show_bug.cgi?id=491668
-	if ( val <= 0 || val == null ) {
+	// Check for style in case a browser which returns unreliable values
+	// for getComputedStyle silently falls back to the reliable elem.style
+	valueIsBorderBox = isBorderBox &&
+		( support.boxSizingReliable() || val === elem.style[ name ] );
 
-		// Fall back to computed then uncomputed css if necessary
-		val = curCSS( elem, name, styles );
-		if ( val < 0 || val == null ) {
-			val = elem.style[ name ];
-		}
-
-		// Computed unit is not pixels. Stop here and return.
-		if ( rnumnonpx.test( val ) ) {
-			return val;
-		}
-
-		// Check for style in case a browser which returns unreliable values
-		// for getComputedStyle silently falls back to the reliable elem.style
-		valueIsBorderBox = isBorderBox &&
-			( support.boxSizingReliable() || val === elem.style[ name ] );
-
-		// Normalize "", auto, and prepare for extra
-		val = parseFloat( val ) || 0;
+	// Fall back to offsetWidth/Height when value is "auto"
+	// This happens for inline elements with no explicit setting (gh-3571)
+	if ( val === "auto" ) {
+		val = elem[ "offset" + name[ 0 ].toUpperCase() + name.slice( 1 ) ];
 	}
+
+	// Normalize "", auto, and prepare for extra
+	val = parseFloat( val ) || 0;
 
 	// Use the active box-sizing model to add/subtract irrelevant styles
 	return ( val +
@@ -6493,10 +8902,15 @@ jQuery.extend( {
 		// Make sure that we're working with the right name
 		var ret, type, hooks,
 			origName = jQuery.camelCase( name ),
+			isCustomProp = rcustomProp.test( name ),
 			style = elem.style;
 
-		name = jQuery.cssProps[ origName ] ||
-			( jQuery.cssProps[ origName ] = vendorPropName( origName ) || origName );
+		// Make sure that we're working with the right name. We don't
+		// want to query the value if it is a CSS custom property
+		// since they are user-defined.
+		if ( !isCustomProp ) {
+			name = finalPropName( origName );
+		}
 
 		// Gets hook for the prefixed version, then unprefixed version
 		hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
@@ -6532,7 +8946,11 @@ jQuery.extend( {
 			if ( !hooks || !( "set" in hooks ) ||
 				( value = hooks.set( elem, value, extra ) ) !== undefined ) {
 
-				style[ name ] = value;
+				if ( isCustomProp ) {
+					style.setProperty( name, value );
+				} else {
+					style[ name ] = value;
+				}
 			}
 
 		} else {
@@ -6551,11 +8969,15 @@ jQuery.extend( {
 
 	css: function( elem, name, extra, styles ) {
 		var val, num, hooks,
-			origName = jQuery.camelCase( name );
+			origName = jQuery.camelCase( name ),
+			isCustomProp = rcustomProp.test( name );
 
-		// Make sure that we're working with the right name
-		name = jQuery.cssProps[ origName ] ||
-			( jQuery.cssProps[ origName ] = vendorPropName( origName ) || origName );
+		// Make sure that we're working with the right name. We don't
+		// want to modify the value if it is a CSS custom property
+		// since they are user-defined.
+		if ( !isCustomProp ) {
+			name = finalPropName( origName );
+		}
 
 		// Try prefixed name followed by the unprefixed name
 		hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
@@ -6580,6 +9002,7 @@ jQuery.extend( {
 			num = parseFloat( val );
 			return extra === true || isFinite( num ) ? num || 0 : val;
 		}
+
 		return val;
 	}
 } );
@@ -6679,7 +9102,7 @@ jQuery.fn.extend( {
 				map = {},
 				i = 0;
 
-			if ( jQuery.isArray( name ) ) {
+			if ( Array.isArray( name ) ) {
 				styles = getStyles( elem );
 				len = name.length;
 
@@ -6817,13 +9240,18 @@ jQuery.fx.step = {};
 
 
 var
-	fxNow, timerId,
+	fxNow, inProgress,
 	rfxtypes = /^(?:toggle|show|hide)$/,
 	rrun = /queueHooks$/;
 
-function raf() {
-	if ( timerId ) {
-		window.requestAnimationFrame( raf );
+function schedule() {
+	if ( inProgress ) {
+		if ( document.hidden === false && window.requestAnimationFrame ) {
+			window.requestAnimationFrame( schedule );
+		} else {
+			window.setTimeout( schedule, jQuery.fx.interval );
+		}
+
 		jQuery.fx.tick();
 	}
 }
@@ -7050,7 +9478,7 @@ function propFilter( props, specialEasing ) {
 		name = jQuery.camelCase( index );
 		easing = specialEasing[ name ];
 		value = props[ index ];
-		if ( jQuery.isArray( value ) ) {
+		if ( Array.isArray( value ) ) {
 			easing = value[ 1 ];
 			value = props[ index ] = value[ 0 ];
 		}
@@ -7109,12 +9537,19 @@ function Animation( elem, properties, options ) {
 
 			deferred.notifyWith( elem, [ animation, percent, remaining ] );
 
+			// If there's more to do, yield
 			if ( percent < 1 && length ) {
 				return remaining;
-			} else {
-				deferred.resolveWith( elem, [ animation ] );
-				return false;
 			}
+
+			// If this was an empty animation, synthesize a final progress notification
+			if ( !length ) {
+				deferred.notifyWith( elem, [ animation, 1, 0 ] );
+			}
+
+			// Resolve the animation and report its conclusion
+			deferred.resolveWith( elem, [ animation ] );
+			return false;
 		},
 		animation = deferred.promise( {
 			elem: elem,
@@ -7179,6 +9614,13 @@ function Animation( elem, properties, options ) {
 		animation.opts.start.call( elem, animation );
 	}
 
+	// Attach callbacks from options
+	animation
+		.progress( animation.opts.progress )
+		.done( animation.opts.done, animation.opts.complete )
+		.fail( animation.opts.fail )
+		.always( animation.opts.always );
+
 	jQuery.fx.timer(
 		jQuery.extend( tick, {
 			elem: elem,
@@ -7187,11 +9629,7 @@ function Animation( elem, properties, options ) {
 		} )
 	);
 
-	// attach callbacks from options
-	return animation.progress( animation.opts.progress )
-		.done( animation.opts.done, animation.opts.complete )
-		.fail( animation.opts.fail )
-		.always( animation.opts.always );
+	return animation;
 }
 
 jQuery.Animation = jQuery.extend( Animation, {
@@ -7242,8 +9680,8 @@ jQuery.speed = function( speed, easing, fn ) {
 		easing: fn && easing || easing && !jQuery.isFunction( easing ) && easing
 	};
 
-	// Go to the end state if fx are off or if document is hidden
-	if ( jQuery.fx.off || document.hidden ) {
+	// Go to the end state if fx are off
+	if ( jQuery.fx.off ) {
 		opt.duration = 0;
 
 	} else {
@@ -7435,7 +9873,7 @@ jQuery.fx.tick = function() {
 	for ( ; i < timers.length; i++ ) {
 		timer = timers[ i ];
 
-		// Checks the timer has not already been removed
+		// Run the timer and safely remove it when done (allowing for external removal)
 		if ( !timer() && timers[ i ] === timer ) {
 			timers.splice( i--, 1 );
 		}
@@ -7449,30 +9887,21 @@ jQuery.fx.tick = function() {
 
 jQuery.fx.timer = function( timer ) {
 	jQuery.timers.push( timer );
-	if ( timer() ) {
-		jQuery.fx.start();
-	} else {
-		jQuery.timers.pop();
-	}
+	jQuery.fx.start();
 };
 
 jQuery.fx.interval = 13;
 jQuery.fx.start = function() {
-	if ( !timerId ) {
-		timerId = window.requestAnimationFrame ?
-			window.requestAnimationFrame( raf ) :
-			window.setInterval( jQuery.fx.tick, jQuery.fx.interval );
+	if ( inProgress ) {
+		return;
 	}
+
+	inProgress = true;
+	schedule();
 };
 
 jQuery.fx.stop = function() {
-	if ( window.cancelAnimationFrame ) {
-		window.cancelAnimationFrame( timerId );
-	} else {
-		window.clearInterval( timerId );
-	}
-
-	timerId = null;
+	inProgress = null;
 };
 
 jQuery.fx.speeds = {
@@ -7589,7 +10018,7 @@ jQuery.extend( {
 		type: {
 			set: function( elem, value ) {
 				if ( !support.radioValue && value === "radio" &&
-					jQuery.nodeName( elem, "input" ) ) {
+					nodeName( elem, "input" ) ) {
 					var val = elem.value;
 					elem.setAttribute( "type", value );
 					if ( val ) {
@@ -8020,7 +10449,7 @@ jQuery.fn.extend( {
 			} else if ( typeof val === "number" ) {
 				val += "";
 
-			} else if ( jQuery.isArray( val ) ) {
+			} else if ( Array.isArray( val ) ) {
 				val = jQuery.map( val, function( value ) {
 					return value == null ? "" : value + "";
 				} );
@@ -8079,7 +10508,7 @@ jQuery.extend( {
 							// Don't return options that are disabled or in a disabled optgroup
 							!option.disabled &&
 							( !option.parentNode.disabled ||
-								!jQuery.nodeName( option.parentNode, "optgroup" ) ) ) {
+								!nodeName( option.parentNode, "optgroup" ) ) ) {
 
 						// Get the specific value for the option
 						value = jQuery( option ).val();
@@ -8131,7 +10560,7 @@ jQuery.extend( {
 jQuery.each( [ "radio", "checkbox" ], function() {
 	jQuery.valHooks[ this ] = {
 		set: function( elem, value ) {
-			if ( jQuery.isArray( value ) ) {
+			if ( Array.isArray( value ) ) {
 				return ( elem.checked = jQuery.inArray( jQuery( elem ).val(), value ) > -1 );
 			}
 		}
@@ -8426,7 +10855,7 @@ var
 function buildParams( prefix, obj, traditional, add ) {
 	var name;
 
-	if ( jQuery.isArray( obj ) ) {
+	if ( Array.isArray( obj ) ) {
 
 		// Serialize array item.
 		jQuery.each( obj, function( i, v ) {
@@ -8478,7 +10907,7 @@ jQuery.param = function( a, traditional ) {
 		};
 
 	// If an array was passed in, assume that it is an array of form elements.
-	if ( jQuery.isArray( a ) || ( a.jquery && !jQuery.isPlainObject( a ) ) ) {
+	if ( Array.isArray( a ) || ( a.jquery && !jQuery.isPlainObject( a ) ) ) {
 
 		// Serialize the form elements
 		jQuery.each( a, function() {
@@ -8524,7 +10953,7 @@ jQuery.fn.extend( {
 				return null;
 			}
 
-			if ( jQuery.isArray( val ) ) {
+			if ( Array.isArray( val ) ) {
 				return jQuery.map( val, function( val ) {
 					return { name: elem.name, value: val.replace( rCRLF, "\r\n" ) };
 				} );
@@ -9949,13 +12378,6 @@ jQuery.expr.pseudos.animated = function( elem ) {
 
 
 
-/**
- * Gets a window from an element
- */
-function getWindow( elem ) {
-	return jQuery.isWindow( elem ) ? elem : elem.nodeType === 9 && elem.defaultView;
-}
-
 jQuery.offset = {
 	setOffset: function( elem, options, i ) {
 		var curPosition, curLeft, curCSSTop, curTop, curOffset, curCSSLeft, calculatePosition,
@@ -10020,13 +12442,14 @@ jQuery.fn.extend( {
 				} );
 		}
 
-		var docElem, win, rect, doc,
+		var doc, docElem, rect, win,
 			elem = this[ 0 ];
 
 		if ( !elem ) {
 			return;
 		}
 
+		// Return zeros for disconnected and hidden (display: none) elements (gh-2310)
 		// Support: IE <=11 only
 		// Running getBoundingClientRect on a
 		// disconnected node in IE throws an error
@@ -10036,20 +12459,14 @@ jQuery.fn.extend( {
 
 		rect = elem.getBoundingClientRect();
 
-		// Make sure element is not hidden (display: none)
-		if ( rect.width || rect.height ) {
-			doc = elem.ownerDocument;
-			win = getWindow( doc );
-			docElem = doc.documentElement;
+		doc = elem.ownerDocument;
+		docElem = doc.documentElement;
+		win = doc.defaultView;
 
-			return {
-				top: rect.top + win.pageYOffset - docElem.clientTop,
-				left: rect.left + win.pageXOffset - docElem.clientLeft
-			};
-		}
-
-		// Return zeros for disconnected and hidden elements (gh-2310)
-		return rect;
+		return {
+			top: rect.top + win.pageYOffset - docElem.clientTop,
+			left: rect.left + win.pageXOffset - docElem.clientLeft
+		};
 	},
 
 	position: function() {
@@ -10075,7 +12492,7 @@ jQuery.fn.extend( {
 
 			// Get correct offsets
 			offset = this.offset();
-			if ( !jQuery.nodeName( offsetParent[ 0 ], "html" ) ) {
+			if ( !nodeName( offsetParent[ 0 ], "html" ) ) {
 				parentOffset = offsetParent.offset();
 			}
 
@@ -10122,7 +12539,14 @@ jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( 
 
 	jQuery.fn[ method ] = function( val ) {
 		return access( this, function( elem, method, val ) {
-			var win = getWindow( elem );
+
+			// Coalesce documents and windows
+			var win;
+			if ( jQuery.isWindow( elem ) ) {
+				win = elem;
+			} else if ( elem.nodeType === 9 ) {
+				win = elem.defaultView;
+			}
 
 			if ( val === undefined ) {
 				return win ? win[ prop ] : elem[ method ];
@@ -10231,7 +12655,16 @@ jQuery.fn.extend( {
 	}
 } );
 
+jQuery.holdReady = function( hold ) {
+	if ( hold ) {
+		jQuery.readyWait++;
+	} else {
+		jQuery.ready( true );
+	}
+};
+jQuery.isArray = Array.isArray;
 jQuery.parseJSON = JSON.parse;
+jQuery.nodeName = nodeName;
 
 
 
@@ -10289,6443 +12722,39 @@ if ( !noGlobal ) {
 
 
 
-
 return jQuery;
 } );
 
 
 /***/ }),
 
-/***/ 1:
+/***/ "./node_modules/swiper/dist/js/swiper.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under the MIT license
- */
-
-if (typeof jQuery === 'undefined') {
-  throw new Error('Bootstrap\'s JavaScript requires jQuery')
-}
-
-+function ($) {
-  'use strict';
-  var version = $.fn.jquery.split(' ')[0].split('.')
-  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')
-  }
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: transition.js v3.3.7
- * http://getbootstrap.com/javascript/#transitions
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
-  // ============================================================
-
-  function transitionEnd() {
-    var el = document.createElement('bootstrap')
-
-    var transEndEventNames = {
-      WebkitTransition : 'webkitTransitionEnd',
-      MozTransition    : 'transitionend',
-      OTransition      : 'oTransitionEnd otransitionend',
-      transition       : 'transitionend'
-    }
-
-    for (var name in transEndEventNames) {
-      if (el.style[name] !== undefined) {
-        return { end: transEndEventNames[name] }
-      }
-    }
-
-    return false // explicit for ie8 (  ._.)
-  }
-
-  // http://blog.alexmaccaw.com/css-transitions
-  $.fn.emulateTransitionEnd = function (duration) {
-    var called = false
-    var $el = this
-    $(this).one('bsTransitionEnd', function () { called = true })
-    var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
-    setTimeout(callback, duration)
-    return this
-  }
-
-  $(function () {
-    $.support.transition = transitionEnd()
-
-    if (!$.support.transition) return
-
-    $.event.special.bsTransitionEnd = {
-      bindType: $.support.transition.end,
-      delegateType: $.support.transition.end,
-      handle: function (e) {
-        if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
-      }
-    }
-  })
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: alert.js v3.3.7
- * http://getbootstrap.com/javascript/#alerts
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // ALERT CLASS DEFINITION
-  // ======================
-
-  var dismiss = '[data-dismiss="alert"]'
-  var Alert   = function (el) {
-    $(el).on('click', dismiss, this.close)
-  }
-
-  Alert.VERSION = '3.3.7'
-
-  Alert.TRANSITION_DURATION = 150
-
-  Alert.prototype.close = function (e) {
-    var $this    = $(this)
-    var selector = $this.attr('data-target')
-
-    if (!selector) {
-      selector = $this.attr('href')
-      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
-    }
-
-    var $parent = $(selector === '#' ? [] : selector)
-
-    if (e) e.preventDefault()
-
-    if (!$parent.length) {
-      $parent = $this.closest('.alert')
-    }
-
-    $parent.trigger(e = $.Event('close.bs.alert'))
-
-    if (e.isDefaultPrevented()) return
-
-    $parent.removeClass('in')
-
-    function removeElement() {
-      // detach from parent, fire event then clean up data
-      $parent.detach().trigger('closed.bs.alert').remove()
-    }
-
-    $.support.transition && $parent.hasClass('fade') ?
-      $parent
-        .one('bsTransitionEnd', removeElement)
-        .emulateTransitionEnd(Alert.TRANSITION_DURATION) :
-      removeElement()
-  }
-
-
-  // ALERT PLUGIN DEFINITION
-  // =======================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this = $(this)
-      var data  = $this.data('bs.alert')
-
-      if (!data) $this.data('bs.alert', (data = new Alert(this)))
-      if (typeof option == 'string') data[option].call($this)
-    })
-  }
-
-  var old = $.fn.alert
-
-  $.fn.alert             = Plugin
-  $.fn.alert.Constructor = Alert
-
-
-  // ALERT NO CONFLICT
-  // =================
-
-  $.fn.alert.noConflict = function () {
-    $.fn.alert = old
-    return this
-  }
-
-
-  // ALERT DATA-API
-  // ==============
-
-  $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: button.js v3.3.7
- * http://getbootstrap.com/javascript/#buttons
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // BUTTON PUBLIC CLASS DEFINITION
-  // ==============================
-
-  var Button = function (element, options) {
-    this.$element  = $(element)
-    this.options   = $.extend({}, Button.DEFAULTS, options)
-    this.isLoading = false
-  }
-
-  Button.VERSION  = '3.3.7'
-
-  Button.DEFAULTS = {
-    loadingText: 'loading...'
-  }
-
-  Button.prototype.setState = function (state) {
-    var d    = 'disabled'
-    var $el  = this.$element
-    var val  = $el.is('input') ? 'val' : 'html'
-    var data = $el.data()
-
-    state += 'Text'
-
-    if (data.resetText == null) $el.data('resetText', $el[val]())
-
-    // push to event loop to allow forms to submit
-    setTimeout($.proxy(function () {
-      $el[val](data[state] == null ? this.options[state] : data[state])
-
-      if (state == 'loadingText') {
-        this.isLoading = true
-        $el.addClass(d).attr(d, d).prop(d, true)
-      } else if (this.isLoading) {
-        this.isLoading = false
-        $el.removeClass(d).removeAttr(d).prop(d, false)
-      }
-    }, this), 0)
-  }
-
-  Button.prototype.toggle = function () {
-    var changed = true
-    var $parent = this.$element.closest('[data-toggle="buttons"]')
-
-    if ($parent.length) {
-      var $input = this.$element.find('input')
-      if ($input.prop('type') == 'radio') {
-        if ($input.prop('checked')) changed = false
-        $parent.find('.active').removeClass('active')
-        this.$element.addClass('active')
-      } else if ($input.prop('type') == 'checkbox') {
-        if (($input.prop('checked')) !== this.$element.hasClass('active')) changed = false
-        this.$element.toggleClass('active')
-      }
-      $input.prop('checked', this.$element.hasClass('active'))
-      if (changed) $input.trigger('change')
-    } else {
-      this.$element.attr('aria-pressed', !this.$element.hasClass('active'))
-      this.$element.toggleClass('active')
-    }
-  }
-
-
-  // BUTTON PLUGIN DEFINITION
-  // ========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.button')
-      var options = typeof option == 'object' && option
-
-      if (!data) $this.data('bs.button', (data = new Button(this, options)))
-
-      if (option == 'toggle') data.toggle()
-      else if (option) data.setState(option)
-    })
-  }
-
-  var old = $.fn.button
-
-  $.fn.button             = Plugin
-  $.fn.button.Constructor = Button
-
-
-  // BUTTON NO CONFLICT
-  // ==================
-
-  $.fn.button.noConflict = function () {
-    $.fn.button = old
-    return this
-  }
-
-
-  // BUTTON DATA-API
-  // ===============
-
-  $(document)
-    .on('click.bs.button.data-api', '[data-toggle^="button"]', function (e) {
-      var $btn = $(e.target).closest('.btn')
-      Plugin.call($btn, 'toggle')
-      if (!($(e.target).is('input[type="radio"], input[type="checkbox"]'))) {
-        // Prevent double click on radios, and the double selections (so cancellation) on checkboxes
-        e.preventDefault()
-        // The target component still receive the focus
-        if ($btn.is('input,button')) $btn.trigger('focus')
-        else $btn.find('input:visible,button:visible').first().trigger('focus')
-      }
-    })
-    .on('focus.bs.button.data-api blur.bs.button.data-api', '[data-toggle^="button"]', function (e) {
-      $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type))
-    })
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: carousel.js v3.3.7
- * http://getbootstrap.com/javascript/#carousel
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // CAROUSEL CLASS DEFINITION
-  // =========================
-
-  var Carousel = function (element, options) {
-    this.$element    = $(element)
-    this.$indicators = this.$element.find('.carousel-indicators')
-    this.options     = options
-    this.paused      = null
-    this.sliding     = null
-    this.interval    = null
-    this.$active     = null
-    this.$items      = null
-
-    this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
-
-    this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element
-      .on('mouseenter.bs.carousel', $.proxy(this.pause, this))
-      .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
-  }
-
-  Carousel.VERSION  = '3.3.7'
-
-  Carousel.TRANSITION_DURATION = 600
-
-  Carousel.DEFAULTS = {
-    interval: 5000,
-    pause: 'hover',
-    wrap: true,
-    keyboard: true
-  }
-
-  Carousel.prototype.keydown = function (e) {
-    if (/input|textarea/i.test(e.target.tagName)) return
-    switch (e.which) {
-      case 37: this.prev(); break
-      case 39: this.next(); break
-      default: return
-    }
-
-    e.preventDefault()
-  }
-
-  Carousel.prototype.cycle = function (e) {
-    e || (this.paused = false)
-
-    this.interval && clearInterval(this.interval)
-
-    this.options.interval
-      && !this.paused
-      && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
-
-    return this
-  }
-
-  Carousel.prototype.getItemIndex = function (item) {
-    this.$items = item.parent().children('.item')
-    return this.$items.index(item || this.$active)
-  }
-
-  Carousel.prototype.getItemForDirection = function (direction, active) {
-    var activeIndex = this.getItemIndex(active)
-    var willWrap = (direction == 'prev' && activeIndex === 0)
-                || (direction == 'next' && activeIndex == (this.$items.length - 1))
-    if (willWrap && !this.options.wrap) return active
-    var delta = direction == 'prev' ? -1 : 1
-    var itemIndex = (activeIndex + delta) % this.$items.length
-    return this.$items.eq(itemIndex)
-  }
-
-  Carousel.prototype.to = function (pos) {
-    var that        = this
-    var activeIndex = this.getItemIndex(this.$active = this.$element.find('.item.active'))
-
-    if (pos > (this.$items.length - 1) || pos < 0) return
-
-    if (this.sliding)       return this.$element.one('slid.bs.carousel', function () { that.to(pos) }) // yes, "slid"
-    if (activeIndex == pos) return this.pause().cycle()
-
-    return this.slide(pos > activeIndex ? 'next' : 'prev', this.$items.eq(pos))
-  }
-
-  Carousel.prototype.pause = function (e) {
-    e || (this.paused = true)
-
-    if (this.$element.find('.next, .prev').length && $.support.transition) {
-      this.$element.trigger($.support.transition.end)
-      this.cycle(true)
-    }
-
-    this.interval = clearInterval(this.interval)
-
-    return this
-  }
-
-  Carousel.prototype.next = function () {
-    if (this.sliding) return
-    return this.slide('next')
-  }
-
-  Carousel.prototype.prev = function () {
-    if (this.sliding) return
-    return this.slide('prev')
-  }
-
-  Carousel.prototype.slide = function (type, next) {
-    var $active   = this.$element.find('.item.active')
-    var $next     = next || this.getItemForDirection(type, $active)
-    var isCycling = this.interval
-    var direction = type == 'next' ? 'left' : 'right'
-    var that      = this
-
-    if ($next.hasClass('active')) return (this.sliding = false)
-
-    var relatedTarget = $next[0]
-    var slideEvent = $.Event('slide.bs.carousel', {
-      relatedTarget: relatedTarget,
-      direction: direction
-    })
-    this.$element.trigger(slideEvent)
-    if (slideEvent.isDefaultPrevented()) return
-
-    this.sliding = true
-
-    isCycling && this.pause()
-
-    if (this.$indicators.length) {
-      this.$indicators.find('.active').removeClass('active')
-      var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
-      $nextIndicator && $nextIndicator.addClass('active')
-    }
-
-    var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
-    if ($.support.transition && this.$element.hasClass('slide')) {
-      $next.addClass(type)
-      $next[0].offsetWidth // force reflow
-      $active.addClass(direction)
-      $next.addClass(direction)
-      $active
-        .one('bsTransitionEnd', function () {
-          $next.removeClass([type, direction].join(' ')).addClass('active')
-          $active.removeClass(['active', direction].join(' '))
-          that.sliding = false
-          setTimeout(function () {
-            that.$element.trigger(slidEvent)
-          }, 0)
-        })
-        .emulateTransitionEnd(Carousel.TRANSITION_DURATION)
-    } else {
-      $active.removeClass('active')
-      $next.addClass('active')
-      this.sliding = false
-      this.$element.trigger(slidEvent)
-    }
-
-    isCycling && this.cycle()
-
-    return this
-  }
-
-
-  // CAROUSEL PLUGIN DEFINITION
-  // ==========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.carousel')
-      var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
-      var action  = typeof option == 'string' ? option : options.slide
-
-      if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
-      if (typeof option == 'number') data.to(option)
-      else if (action) data[action]()
-      else if (options.interval) data.pause().cycle()
-    })
-  }
-
-  var old = $.fn.carousel
-
-  $.fn.carousel             = Plugin
-  $.fn.carousel.Constructor = Carousel
-
-
-  // CAROUSEL NO CONFLICT
-  // ====================
-
-  $.fn.carousel.noConflict = function () {
-    $.fn.carousel = old
-    return this
-  }
-
-
-  // CAROUSEL DATA-API
-  // =================
-
-  var clickHandler = function (e) {
-    var href
-    var $this   = $(this)
-    var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) // strip for ie7
-    if (!$target.hasClass('carousel')) return
-    var options = $.extend({}, $target.data(), $this.data())
-    var slideIndex = $this.attr('data-slide-to')
-    if (slideIndex) options.interval = false
-
-    Plugin.call($target, options)
-
-    if (slideIndex) {
-      $target.data('bs.carousel').to(slideIndex)
-    }
-
-    e.preventDefault()
-  }
-
-  $(document)
-    .on('click.bs.carousel.data-api', '[data-slide]', clickHandler)
-    .on('click.bs.carousel.data-api', '[data-slide-to]', clickHandler)
-
-  $(window).on('load', function () {
-    $('[data-ride="carousel"]').each(function () {
-      var $carousel = $(this)
-      Plugin.call($carousel, $carousel.data())
-    })
-  })
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: collapse.js v3.3.7
- * http://getbootstrap.com/javascript/#collapse
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-/* jshint latedef: false */
-
-+function ($) {
-  'use strict';
-
-  // COLLAPSE PUBLIC CLASS DEFINITION
-  // ================================
-
-  var Collapse = function (element, options) {
-    this.$element      = $(element)
-    this.options       = $.extend({}, Collapse.DEFAULTS, options)
-    this.$trigger      = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
-                           '[data-toggle="collapse"][data-target="#' + element.id + '"]')
-    this.transitioning = null
-
-    if (this.options.parent) {
-      this.$parent = this.getParent()
-    } else {
-      this.addAriaAndCollapsedClass(this.$element, this.$trigger)
-    }
-
-    if (this.options.toggle) this.toggle()
-  }
-
-  Collapse.VERSION  = '3.3.7'
-
-  Collapse.TRANSITION_DURATION = 350
-
-  Collapse.DEFAULTS = {
-    toggle: true
-  }
-
-  Collapse.prototype.dimension = function () {
-    var hasWidth = this.$element.hasClass('width')
-    return hasWidth ? 'width' : 'height'
-  }
-
-  Collapse.prototype.show = function () {
-    if (this.transitioning || this.$element.hasClass('in')) return
-
-    var activesData
-    var actives = this.$parent && this.$parent.children('.panel').children('.in, .collapsing')
-
-    if (actives && actives.length) {
-      activesData = actives.data('bs.collapse')
-      if (activesData && activesData.transitioning) return
-    }
-
-    var startEvent = $.Event('show.bs.collapse')
-    this.$element.trigger(startEvent)
-    if (startEvent.isDefaultPrevented()) return
-
-    if (actives && actives.length) {
-      Plugin.call(actives, 'hide')
-      activesData || actives.data('bs.collapse', null)
-    }
-
-    var dimension = this.dimension()
-
-    this.$element
-      .removeClass('collapse')
-      .addClass('collapsing')[dimension](0)
-      .attr('aria-expanded', true)
-
-    this.$trigger
-      .removeClass('collapsed')
-      .attr('aria-expanded', true)
-
-    this.transitioning = 1
-
-    var complete = function () {
-      this.$element
-        .removeClass('collapsing')
-        .addClass('collapse in')[dimension]('')
-      this.transitioning = 0
-      this.$element
-        .trigger('shown.bs.collapse')
-    }
-
-    if (!$.support.transition) return complete.call(this)
-
-    var scrollSize = $.camelCase(['scroll', dimension].join('-'))
-
-    this.$element
-      .one('bsTransitionEnd', $.proxy(complete, this))
-      .emulateTransitionEnd(Collapse.TRANSITION_DURATION)[dimension](this.$element[0][scrollSize])
-  }
-
-  Collapse.prototype.hide = function () {
-    if (this.transitioning || !this.$element.hasClass('in')) return
-
-    var startEvent = $.Event('hide.bs.collapse')
-    this.$element.trigger(startEvent)
-    if (startEvent.isDefaultPrevented()) return
-
-    var dimension = this.dimension()
-
-    this.$element[dimension](this.$element[dimension]())[0].offsetHeight
-
-    this.$element
-      .addClass('collapsing')
-      .removeClass('collapse in')
-      .attr('aria-expanded', false)
-
-    this.$trigger
-      .addClass('collapsed')
-      .attr('aria-expanded', false)
-
-    this.transitioning = 1
-
-    var complete = function () {
-      this.transitioning = 0
-      this.$element
-        .removeClass('collapsing')
-        .addClass('collapse')
-        .trigger('hidden.bs.collapse')
-    }
-
-    if (!$.support.transition) return complete.call(this)
-
-    this.$element
-      [dimension](0)
-      .one('bsTransitionEnd', $.proxy(complete, this))
-      .emulateTransitionEnd(Collapse.TRANSITION_DURATION)
-  }
-
-  Collapse.prototype.toggle = function () {
-    this[this.$element.hasClass('in') ? 'hide' : 'show']()
-  }
-
-  Collapse.prototype.getParent = function () {
-    return $(this.options.parent)
-      .find('[data-toggle="collapse"][data-parent="' + this.options.parent + '"]')
-      .each($.proxy(function (i, element) {
-        var $element = $(element)
-        this.addAriaAndCollapsedClass(getTargetFromTrigger($element), $element)
-      }, this))
-      .end()
-  }
-
-  Collapse.prototype.addAriaAndCollapsedClass = function ($element, $trigger) {
-    var isOpen = $element.hasClass('in')
-
-    $element.attr('aria-expanded', isOpen)
-    $trigger
-      .toggleClass('collapsed', !isOpen)
-      .attr('aria-expanded', isOpen)
-  }
-
-  function getTargetFromTrigger($trigger) {
-    var href
-    var target = $trigger.attr('data-target')
-      || (href = $trigger.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') // strip for ie7
-
-    return $(target)
-  }
-
-
-  // COLLAPSE PLUGIN DEFINITION
-  // ==========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.collapse')
-      var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
-
-      if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
-      if (!data) $this.data('bs.collapse', (data = new Collapse(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.collapse
-
-  $.fn.collapse             = Plugin
-  $.fn.collapse.Constructor = Collapse
-
-
-  // COLLAPSE NO CONFLICT
-  // ====================
-
-  $.fn.collapse.noConflict = function () {
-    $.fn.collapse = old
-    return this
-  }
-
-
-  // COLLAPSE DATA-API
-  // =================
-
-  $(document).on('click.bs.collapse.data-api', '[data-toggle="collapse"]', function (e) {
-    var $this   = $(this)
-
-    if (!$this.attr('data-target')) e.preventDefault()
-
-    var $target = getTargetFromTrigger($this)
-    var data    = $target.data('bs.collapse')
-    var option  = data ? 'toggle' : $this.data()
-
-    Plugin.call($target, option)
-  })
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: dropdown.js v3.3.7
- * http://getbootstrap.com/javascript/#dropdowns
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // DROPDOWN CLASS DEFINITION
-  // =========================
-
-  var backdrop = '.dropdown-backdrop'
-  var toggle   = '[data-toggle="dropdown"]'
-  var Dropdown = function (element) {
-    $(element).on('click.bs.dropdown', this.toggle)
-  }
-
-  Dropdown.VERSION = '3.3.7'
-
-  function getParent($this) {
-    var selector = $this.attr('data-target')
-
-    if (!selector) {
-      selector = $this.attr('href')
-      selector = selector && /#[A-Za-z]/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
-    }
-
-    var $parent = selector && $(selector)
-
-    return $parent && $parent.length ? $parent : $this.parent()
-  }
-
-  function clearMenus(e) {
-    if (e && e.which === 3) return
-    $(backdrop).remove()
-    $(toggle).each(function () {
-      var $this         = $(this)
-      var $parent       = getParent($this)
-      var relatedTarget = { relatedTarget: this }
-
-      if (!$parent.hasClass('open')) return
-
-      if (e && e.type == 'click' && /input|textarea/i.test(e.target.tagName) && $.contains($parent[0], e.target)) return
-
-      $parent.trigger(e = $.Event('hide.bs.dropdown', relatedTarget))
-
-      if (e.isDefaultPrevented()) return
-
-      $this.attr('aria-expanded', 'false')
-      $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
-    })
-  }
-
-  Dropdown.prototype.toggle = function (e) {
-    var $this = $(this)
-
-    if ($this.is('.disabled, :disabled')) return
-
-    var $parent  = getParent($this)
-    var isActive = $parent.hasClass('open')
-
-    clearMenus()
-
-    if (!isActive) {
-      if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
-        // if mobile we use a backdrop because click events don't delegate
-        $(document.createElement('div'))
-          .addClass('dropdown-backdrop')
-          .insertAfter($(this))
-          .on('click', clearMenus)
-      }
-
-      var relatedTarget = { relatedTarget: this }
-      $parent.trigger(e = $.Event('show.bs.dropdown', relatedTarget))
-
-      if (e.isDefaultPrevented()) return
-
-      $this
-        .trigger('focus')
-        .attr('aria-expanded', 'true')
-
-      $parent
-        .toggleClass('open')
-        .trigger($.Event('shown.bs.dropdown', relatedTarget))
-    }
-
-    return false
-  }
-
-  Dropdown.prototype.keydown = function (e) {
-    if (!/(38|40|27|32)/.test(e.which) || /input|textarea/i.test(e.target.tagName)) return
-
-    var $this = $(this)
-
-    e.preventDefault()
-    e.stopPropagation()
-
-    if ($this.is('.disabled, :disabled')) return
-
-    var $parent  = getParent($this)
-    var isActive = $parent.hasClass('open')
-
-    if (!isActive && e.which != 27 || isActive && e.which == 27) {
-      if (e.which == 27) $parent.find(toggle).trigger('focus')
-      return $this.trigger('click')
-    }
-
-    var desc = ' li:not(.disabled):visible a'
-    var $items = $parent.find('.dropdown-menu' + desc)
-
-    if (!$items.length) return
-
-    var index = $items.index(e.target)
-
-    if (e.which == 38 && index > 0)                 index--         // up
-    if (e.which == 40 && index < $items.length - 1) index++         // down
-    if (!~index)                                    index = 0
-
-    $items.eq(index).trigger('focus')
-  }
-
-
-  // DROPDOWN PLUGIN DEFINITION
-  // ==========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this = $(this)
-      var data  = $this.data('bs.dropdown')
-
-      if (!data) $this.data('bs.dropdown', (data = new Dropdown(this)))
-      if (typeof option == 'string') data[option].call($this)
-    })
-  }
-
-  var old = $.fn.dropdown
-
-  $.fn.dropdown             = Plugin
-  $.fn.dropdown.Constructor = Dropdown
-
-
-  // DROPDOWN NO CONFLICT
-  // ====================
-
-  $.fn.dropdown.noConflict = function () {
-    $.fn.dropdown = old
-    return this
-  }
-
-
-  // APPLY TO STANDARD DROPDOWN ELEMENTS
-  // ===================================
-
-  $(document)
-    .on('click.bs.dropdown.data-api', clearMenus)
-    .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
-    .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
-    .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
-    .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: modal.js v3.3.7
- * http://getbootstrap.com/javascript/#modals
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // MODAL CLASS DEFINITION
-  // ======================
-
-  var Modal = function (element, options) {
-    this.options             = options
-    this.$body               = $(document.body)
-    this.$element            = $(element)
-    this.$dialog             = this.$element.find('.modal-dialog')
-    this.$backdrop           = null
-    this.isShown             = null
-    this.originalBodyPad     = null
-    this.scrollbarWidth      = 0
-    this.ignoreBackdropClick = false
-
-    if (this.options.remote) {
-      this.$element
-        .find('.modal-content')
-        .load(this.options.remote, $.proxy(function () {
-          this.$element.trigger('loaded.bs.modal')
-        }, this))
-    }
-  }
-
-  Modal.VERSION  = '3.3.7'
-
-  Modal.TRANSITION_DURATION = 300
-  Modal.BACKDROP_TRANSITION_DURATION = 150
-
-  Modal.DEFAULTS = {
-    backdrop: true,
-    keyboard: true,
-    show: true
-  }
-
-  Modal.prototype.toggle = function (_relatedTarget) {
-    return this.isShown ? this.hide() : this.show(_relatedTarget)
-  }
-
-  Modal.prototype.show = function (_relatedTarget) {
-    var that = this
-    var e    = $.Event('show.bs.modal', { relatedTarget: _relatedTarget })
-
-    this.$element.trigger(e)
-
-    if (this.isShown || e.isDefaultPrevented()) return
-
-    this.isShown = true
-
-    this.checkScrollbar()
-    this.setScrollbar()
-    this.$body.addClass('modal-open')
-
-    this.escape()
-    this.resize()
-
-    this.$element.on('click.dismiss.bs.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this))
-
-    this.$dialog.on('mousedown.dismiss.bs.modal', function () {
-      that.$element.one('mouseup.dismiss.bs.modal', function (e) {
-        if ($(e.target).is(that.$element)) that.ignoreBackdropClick = true
-      })
-    })
-
-    this.backdrop(function () {
-      var transition = $.support.transition && that.$element.hasClass('fade')
-
-      if (!that.$element.parent().length) {
-        that.$element.appendTo(that.$body) // don't move modals dom position
-      }
-
-      that.$element
-        .show()
-        .scrollTop(0)
-
-      that.adjustDialog()
-
-      if (transition) {
-        that.$element[0].offsetWidth // force reflow
-      }
-
-      that.$element.addClass('in')
-
-      that.enforceFocus()
-
-      var e = $.Event('shown.bs.modal', { relatedTarget: _relatedTarget })
-
-      transition ?
-        that.$dialog // wait for modal to slide in
-          .one('bsTransitionEnd', function () {
-            that.$element.trigger('focus').trigger(e)
-          })
-          .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
-        that.$element.trigger('focus').trigger(e)
-    })
-  }
-
-  Modal.prototype.hide = function (e) {
-    if (e) e.preventDefault()
-
-    e = $.Event('hide.bs.modal')
-
-    this.$element.trigger(e)
-
-    if (!this.isShown || e.isDefaultPrevented()) return
-
-    this.isShown = false
-
-    this.escape()
-    this.resize()
-
-    $(document).off('focusin.bs.modal')
-
-    this.$element
-      .removeClass('in')
-      .off('click.dismiss.bs.modal')
-      .off('mouseup.dismiss.bs.modal')
-
-    this.$dialog.off('mousedown.dismiss.bs.modal')
-
-    $.support.transition && this.$element.hasClass('fade') ?
-      this.$element
-        .one('bsTransitionEnd', $.proxy(this.hideModal, this))
-        .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
-      this.hideModal()
-  }
-
-  Modal.prototype.enforceFocus = function () {
-    $(document)
-      .off('focusin.bs.modal') // guard against infinite focus loop
-      .on('focusin.bs.modal', $.proxy(function (e) {
-        if (document !== e.target &&
-            this.$element[0] !== e.target &&
-            !this.$element.has(e.target).length) {
-          this.$element.trigger('focus')
-        }
-      }, this))
-  }
-
-  Modal.prototype.escape = function () {
-    if (this.isShown && this.options.keyboard) {
-      this.$element.on('keydown.dismiss.bs.modal', $.proxy(function (e) {
-        e.which == 27 && this.hide()
-      }, this))
-    } else if (!this.isShown) {
-      this.$element.off('keydown.dismiss.bs.modal')
-    }
-  }
-
-  Modal.prototype.resize = function () {
-    if (this.isShown) {
-      $(window).on('resize.bs.modal', $.proxy(this.handleUpdate, this))
-    } else {
-      $(window).off('resize.bs.modal')
-    }
-  }
-
-  Modal.prototype.hideModal = function () {
-    var that = this
-    this.$element.hide()
-    this.backdrop(function () {
-      that.$body.removeClass('modal-open')
-      that.resetAdjustments()
-      that.resetScrollbar()
-      that.$element.trigger('hidden.bs.modal')
-    })
-  }
-
-  Modal.prototype.removeBackdrop = function () {
-    this.$backdrop && this.$backdrop.remove()
-    this.$backdrop = null
-  }
-
-  Modal.prototype.backdrop = function (callback) {
-    var that = this
-    var animate = this.$element.hasClass('fade') ? 'fade' : ''
-
-    if (this.isShown && this.options.backdrop) {
-      var doAnimate = $.support.transition && animate
-
-      this.$backdrop = $(document.createElement('div'))
-        .addClass('modal-backdrop ' + animate)
-        .appendTo(this.$body)
-
-      this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
-        if (this.ignoreBackdropClick) {
-          this.ignoreBackdropClick = false
-          return
-        }
-        if (e.target !== e.currentTarget) return
-        this.options.backdrop == 'static'
-          ? this.$element[0].focus()
-          : this.hide()
-      }, this))
-
-      if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
-
-      this.$backdrop.addClass('in')
-
-      if (!callback) return
-
-      doAnimate ?
-        this.$backdrop
-          .one('bsTransitionEnd', callback)
-          .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
-        callback()
-
-    } else if (!this.isShown && this.$backdrop) {
-      this.$backdrop.removeClass('in')
-
-      var callbackRemove = function () {
-        that.removeBackdrop()
-        callback && callback()
-      }
-      $.support.transition && this.$element.hasClass('fade') ?
-        this.$backdrop
-          .one('bsTransitionEnd', callbackRemove)
-          .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
-        callbackRemove()
-
-    } else if (callback) {
-      callback()
-    }
-  }
-
-  // these following methods are used to handle overflowing modals
-
-  Modal.prototype.handleUpdate = function () {
-    this.adjustDialog()
-  }
-
-  Modal.prototype.adjustDialog = function () {
-    var modalIsOverflowing = this.$element[0].scrollHeight > document.documentElement.clientHeight
-
-    this.$element.css({
-      paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
-      paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : ''
-    })
-  }
-
-  Modal.prototype.resetAdjustments = function () {
-    this.$element.css({
-      paddingLeft: '',
-      paddingRight: ''
-    })
-  }
-
-  Modal.prototype.checkScrollbar = function () {
-    var fullWindowWidth = window.innerWidth
-    if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
-      var documentElementRect = document.documentElement.getBoundingClientRect()
-      fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
-    }
-    this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
-    this.scrollbarWidth = this.measureScrollbar()
-  }
-
-  Modal.prototype.setScrollbar = function () {
-    var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
-    this.originalBodyPad = document.body.style.paddingRight || ''
-    if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
-  }
-
-  Modal.prototype.resetScrollbar = function () {
-    this.$body.css('padding-right', this.originalBodyPad)
-  }
-
-  Modal.prototype.measureScrollbar = function () { // thx walsh
-    var scrollDiv = document.createElement('div')
-    scrollDiv.className = 'modal-scrollbar-measure'
-    this.$body.append(scrollDiv)
-    var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth
-    this.$body[0].removeChild(scrollDiv)
-    return scrollbarWidth
-  }
-
-
-  // MODAL PLUGIN DEFINITION
-  // =======================
-
-  function Plugin(option, _relatedTarget) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.modal')
-      var options = $.extend({}, Modal.DEFAULTS, $this.data(), typeof option == 'object' && option)
-
-      if (!data) $this.data('bs.modal', (data = new Modal(this, options)))
-      if (typeof option == 'string') data[option](_relatedTarget)
-      else if (options.show) data.show(_relatedTarget)
-    })
-  }
-
-  var old = $.fn.modal
-
-  $.fn.modal             = Plugin
-  $.fn.modal.Constructor = Modal
-
-
-  // MODAL NO CONFLICT
-  // =================
-
-  $.fn.modal.noConflict = function () {
-    $.fn.modal = old
-    return this
-  }
-
-
-  // MODAL DATA-API
-  // ==============
-
-  $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
-    var $this   = $(this)
-    var href    = $this.attr('href')
-    var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
-    var option  = $target.data('bs.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
-
-    if ($this.is('a')) e.preventDefault()
-
-    $target.one('show.bs.modal', function (showEvent) {
-      if (showEvent.isDefaultPrevented()) return // only register focus restorer if modal will actually get shown
-      $target.one('hidden.bs.modal', function () {
-        $this.is(':visible') && $this.trigger('focus')
-      })
-    })
-    Plugin.call($target, option, this)
-  })
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: tooltip.js v3.3.7
- * http://getbootstrap.com/javascript/#tooltip
- * Inspired by the original jQuery.tipsy by Jason Frame
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // TOOLTIP PUBLIC CLASS DEFINITION
-  // ===============================
-
-  var Tooltip = function (element, options) {
-    this.type       = null
-    this.options    = null
-    this.enabled    = null
-    this.timeout    = null
-    this.hoverState = null
-    this.$element   = null
-    this.inState    = null
-
-    this.init('tooltip', element, options)
-  }
-
-  Tooltip.VERSION  = '3.3.7'
-
-  Tooltip.TRANSITION_DURATION = 150
-
-  Tooltip.DEFAULTS = {
-    animation: true,
-    placement: 'top',
-    selector: false,
-    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
-    trigger: 'hover focus',
-    title: '',
-    delay: 0,
-    html: false,
-    container: false,
-    viewport: {
-      selector: 'body',
-      padding: 0
-    }
-  }
-
-  Tooltip.prototype.init = function (type, element, options) {
-    this.enabled   = true
-    this.type      = type
-    this.$element  = $(element)
-    this.options   = this.getOptions(options)
-    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
-    this.inState   = { click: false, hover: false, focus: false }
-
-    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
-      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
-    }
-
-    var triggers = this.options.trigger.split(' ')
-
-    for (var i = triggers.length; i--;) {
-      var trigger = triggers[i]
-
-      if (trigger == 'click') {
-        this.$element.on('click.' + this.type, this.options.selector, $.proxy(this.toggle, this))
-      } else if (trigger != 'manual') {
-        var eventIn  = trigger == 'hover' ? 'mouseenter' : 'focusin'
-        var eventOut = trigger == 'hover' ? 'mouseleave' : 'focusout'
-
-        this.$element.on(eventIn  + '.' + this.type, this.options.selector, $.proxy(this.enter, this))
-        this.$element.on(eventOut + '.' + this.type, this.options.selector, $.proxy(this.leave, this))
-      }
-    }
-
-    this.options.selector ?
-      (this._options = $.extend({}, this.options, { trigger: 'manual', selector: '' })) :
-      this.fixTitle()
-  }
-
-  Tooltip.prototype.getDefaults = function () {
-    return Tooltip.DEFAULTS
-  }
-
-  Tooltip.prototype.getOptions = function (options) {
-    options = $.extend({}, this.getDefaults(), this.$element.data(), options)
-
-    if (options.delay && typeof options.delay == 'number') {
-      options.delay = {
-        show: options.delay,
-        hide: options.delay
-      }
-    }
-
-    return options
-  }
-
-  Tooltip.prototype.getDelegateOptions = function () {
-    var options  = {}
-    var defaults = this.getDefaults()
-
-    this._options && $.each(this._options, function (key, value) {
-      if (defaults[key] != value) options[key] = value
-    })
-
-    return options
-  }
-
-  Tooltip.prototype.enter = function (obj) {
-    var self = obj instanceof this.constructor ?
-      obj : $(obj.currentTarget).data('bs.' + this.type)
-
-    if (!self) {
-      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
-      $(obj.currentTarget).data('bs.' + this.type, self)
-    }
-
-    if (obj instanceof $.Event) {
-      self.inState[obj.type == 'focusin' ? 'focus' : 'hover'] = true
-    }
-
-    if (self.tip().hasClass('in') || self.hoverState == 'in') {
-      self.hoverState = 'in'
-      return
-    }
-
-    clearTimeout(self.timeout)
-
-    self.hoverState = 'in'
-
-    if (!self.options.delay || !self.options.delay.show) return self.show()
-
-    self.timeout = setTimeout(function () {
-      if (self.hoverState == 'in') self.show()
-    }, self.options.delay.show)
-  }
-
-  Tooltip.prototype.isInStateTrue = function () {
-    for (var key in this.inState) {
-      if (this.inState[key]) return true
-    }
-
-    return false
-  }
-
-  Tooltip.prototype.leave = function (obj) {
-    var self = obj instanceof this.constructor ?
-      obj : $(obj.currentTarget).data('bs.' + this.type)
-
-    if (!self) {
-      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
-      $(obj.currentTarget).data('bs.' + this.type, self)
-    }
-
-    if (obj instanceof $.Event) {
-      self.inState[obj.type == 'focusout' ? 'focus' : 'hover'] = false
-    }
-
-    if (self.isInStateTrue()) return
-
-    clearTimeout(self.timeout)
-
-    self.hoverState = 'out'
-
-    if (!self.options.delay || !self.options.delay.hide) return self.hide()
-
-    self.timeout = setTimeout(function () {
-      if (self.hoverState == 'out') self.hide()
-    }, self.options.delay.hide)
-  }
-
-  Tooltip.prototype.show = function () {
-    var e = $.Event('show.bs.' + this.type)
-
-    if (this.hasContent() && this.enabled) {
-      this.$element.trigger(e)
-
-      var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0])
-      if (e.isDefaultPrevented() || !inDom) return
-      var that = this
-
-      var $tip = this.tip()
-
-      var tipId = this.getUID(this.type)
-
-      this.setContent()
-      $tip.attr('id', tipId)
-      this.$element.attr('aria-describedby', tipId)
-
-      if (this.options.animation) $tip.addClass('fade')
-
-      var placement = typeof this.options.placement == 'function' ?
-        this.options.placement.call(this, $tip[0], this.$element[0]) :
-        this.options.placement
-
-      var autoToken = /\s?auto?\s?/i
-      var autoPlace = autoToken.test(placement)
-      if (autoPlace) placement = placement.replace(autoToken, '') || 'top'
-
-      $tip
-        .detach()
-        .css({ top: 0, left: 0, display: 'block' })
-        .addClass(placement)
-        .data('bs.' + this.type, this)
-
-      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
-      this.$element.trigger('inserted.bs.' + this.type)
-
-      var pos          = this.getPosition()
-      var actualWidth  = $tip[0].offsetWidth
-      var actualHeight = $tip[0].offsetHeight
-
-      if (autoPlace) {
-        var orgPlacement = placement
-        var viewportDim = this.getPosition(this.$viewport)
-
-        placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top'    :
-                    placement == 'top'    && pos.top    - actualHeight < viewportDim.top    ? 'bottom' :
-                    placement == 'right'  && pos.right  + actualWidth  > viewportDim.width  ? 'left'   :
-                    placement == 'left'   && pos.left   - actualWidth  < viewportDim.left   ? 'right'  :
-                    placement
-
-        $tip
-          .removeClass(orgPlacement)
-          .addClass(placement)
-      }
-
-      var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight)
-
-      this.applyPlacement(calculatedOffset, placement)
-
-      var complete = function () {
-        var prevHoverState = that.hoverState
-        that.$element.trigger('shown.bs.' + that.type)
-        that.hoverState = null
-
-        if (prevHoverState == 'out') that.leave(that)
-      }
-
-      $.support.transition && this.$tip.hasClass('fade') ?
-        $tip
-          .one('bsTransitionEnd', complete)
-          .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
-        complete()
-    }
-  }
-
-  Tooltip.prototype.applyPlacement = function (offset, placement) {
-    var $tip   = this.tip()
-    var width  = $tip[0].offsetWidth
-    var height = $tip[0].offsetHeight
-
-    // manually read margins because getBoundingClientRect includes difference
-    var marginTop = parseInt($tip.css('margin-top'), 10)
-    var marginLeft = parseInt($tip.css('margin-left'), 10)
-
-    // we must check for NaN for ie 8/9
-    if (isNaN(marginTop))  marginTop  = 0
-    if (isNaN(marginLeft)) marginLeft = 0
-
-    offset.top  += marginTop
-    offset.left += marginLeft
-
-    // $.fn.offset doesn't round pixel values
-    // so we use setOffset directly with our own function B-0
-    $.offset.setOffset($tip[0], $.extend({
-      using: function (props) {
-        $tip.css({
-          top: Math.round(props.top),
-          left: Math.round(props.left)
-        })
-      }
-    }, offset), 0)
-
-    $tip.addClass('in')
-
-    // check to see if placing tip in new offset caused the tip to resize itself
-    var actualWidth  = $tip[0].offsetWidth
-    var actualHeight = $tip[0].offsetHeight
-
-    if (placement == 'top' && actualHeight != height) {
-      offset.top = offset.top + height - actualHeight
-    }
-
-    var delta = this.getViewportAdjustedDelta(placement, offset, actualWidth, actualHeight)
-
-    if (delta.left) offset.left += delta.left
-    else offset.top += delta.top
-
-    var isVertical          = /top|bottom/.test(placement)
-    var arrowDelta          = isVertical ? delta.left * 2 - width + actualWidth : delta.top * 2 - height + actualHeight
-    var arrowOffsetPosition = isVertical ? 'offsetWidth' : 'offsetHeight'
-
-    $tip.offset(offset)
-    this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical)
-  }
-
-  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
-    this.arrow()
-      .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
-      .css(isVertical ? 'top' : 'left', '')
-  }
-
-  Tooltip.prototype.setContent = function () {
-    var $tip  = this.tip()
-    var title = this.getTitle()
-
-    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
-    $tip.removeClass('fade in top bottom left right')
-  }
-
-  Tooltip.prototype.hide = function (callback) {
-    var that = this
-    var $tip = $(this.$tip)
-    var e    = $.Event('hide.bs.' + this.type)
-
-    function complete() {
-      if (that.hoverState != 'in') $tip.detach()
-      if (that.$element) { // TODO: Check whether guarding this code with this `if` is really necessary.
-        that.$element
-          .removeAttr('aria-describedby')
-          .trigger('hidden.bs.' + that.type)
-      }
-      callback && callback()
-    }
-
-    this.$element.trigger(e)
-
-    if (e.isDefaultPrevented()) return
-
-    $tip.removeClass('in')
-
-    $.support.transition && $tip.hasClass('fade') ?
-      $tip
-        .one('bsTransitionEnd', complete)
-        .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
-      complete()
-
-    this.hoverState = null
-
-    return this
-  }
-
-  Tooltip.prototype.fixTitle = function () {
-    var $e = this.$element
-    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
-      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '')
-    }
-  }
-
-  Tooltip.prototype.hasContent = function () {
-    return this.getTitle()
-  }
-
-  Tooltip.prototype.getPosition = function ($element) {
-    $element   = $element || this.$element
-
-    var el     = $element[0]
-    var isBody = el.tagName == 'BODY'
-
-    var elRect    = el.getBoundingClientRect()
-    if (elRect.width == null) {
-      // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
-      elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top })
-    }
-    var isSvg = window.SVGElement && el instanceof window.SVGElement
-    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
-    // See https://github.com/twbs/bootstrap/issues/20280
-    var elOffset  = isBody ? { top: 0, left: 0 } : (isSvg ? null : $element.offset())
-    var scroll    = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() }
-    var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null
-
-    return $.extend({}, elRect, scroll, outerDims, elOffset)
-  }
-
-  Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
-    return placement == 'bottom' ? { top: pos.top + pos.height,   left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
-        /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
-
-  }
-
-  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
-    var delta = { top: 0, left: 0 }
-    if (!this.$viewport) return delta
-
-    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0
-    var viewportDimensions = this.getPosition(this.$viewport)
-
-    if (/right|left/.test(placement)) {
-      var topEdgeOffset    = pos.top - viewportPadding - viewportDimensions.scroll
-      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight
-      if (topEdgeOffset < viewportDimensions.top) { // top overflow
-        delta.top = viewportDimensions.top - topEdgeOffset
-      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) { // bottom overflow
-        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset
-      }
-    } else {
-      var leftEdgeOffset  = pos.left - viewportPadding
-      var rightEdgeOffset = pos.left + viewportPadding + actualWidth
-      if (leftEdgeOffset < viewportDimensions.left) { // left overflow
-        delta.left = viewportDimensions.left - leftEdgeOffset
-      } else if (rightEdgeOffset > viewportDimensions.right) { // right overflow
-        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset
-      }
-    }
-
-    return delta
-  }
-
-  Tooltip.prototype.getTitle = function () {
-    var title
-    var $e = this.$element
-    var o  = this.options
-
-    title = $e.attr('data-original-title')
-      || (typeof o.title == 'function' ? o.title.call($e[0]) :  o.title)
-
-    return title
-  }
-
-  Tooltip.prototype.getUID = function (prefix) {
-    do prefix += ~~(Math.random() * 1000000)
-    while (document.getElementById(prefix))
-    return prefix
-  }
-
-  Tooltip.prototype.tip = function () {
-    if (!this.$tip) {
-      this.$tip = $(this.options.template)
-      if (this.$tip.length != 1) {
-        throw new Error(this.type + ' `template` option must consist of exactly 1 top-level element!')
-      }
-    }
-    return this.$tip
-  }
-
-  Tooltip.prototype.arrow = function () {
-    return (this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow'))
-  }
-
-  Tooltip.prototype.enable = function () {
-    this.enabled = true
-  }
-
-  Tooltip.prototype.disable = function () {
-    this.enabled = false
-  }
-
-  Tooltip.prototype.toggleEnabled = function () {
-    this.enabled = !this.enabled
-  }
-
-  Tooltip.prototype.toggle = function (e) {
-    var self = this
-    if (e) {
-      self = $(e.currentTarget).data('bs.' + this.type)
-      if (!self) {
-        self = new this.constructor(e.currentTarget, this.getDelegateOptions())
-        $(e.currentTarget).data('bs.' + this.type, self)
-      }
-    }
-
-    if (e) {
-      self.inState.click = !self.inState.click
-      if (self.isInStateTrue()) self.enter(self)
-      else self.leave(self)
-    } else {
-      self.tip().hasClass('in') ? self.leave(self) : self.enter(self)
-    }
-  }
-
-  Tooltip.prototype.destroy = function () {
-    var that = this
-    clearTimeout(this.timeout)
-    this.hide(function () {
-      that.$element.off('.' + that.type).removeData('bs.' + that.type)
-      if (that.$tip) {
-        that.$tip.detach()
-      }
-      that.$tip = null
-      that.$arrow = null
-      that.$viewport = null
-      that.$element = null
-    })
-  }
-
-
-  // TOOLTIP PLUGIN DEFINITION
-  // =========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.tooltip')
-      var options = typeof option == 'object' && option
-
-      if (!data && /destroy|hide/.test(option)) return
-      if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.tooltip
-
-  $.fn.tooltip             = Plugin
-  $.fn.tooltip.Constructor = Tooltip
-
-
-  // TOOLTIP NO CONFLICT
-  // ===================
-
-  $.fn.tooltip.noConflict = function () {
-    $.fn.tooltip = old
-    return this
-  }
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: popover.js v3.3.7
- * http://getbootstrap.com/javascript/#popovers
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // POPOVER PUBLIC CLASS DEFINITION
-  // ===============================
-
-  var Popover = function (element, options) {
-    this.init('popover', element, options)
-  }
-
-  if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
-
-  Popover.VERSION  = '3.3.7'
-
-  Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
-    placement: 'right',
-    trigger: 'click',
-    content: '',
-    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-  })
-
-
-  // NOTE: POPOVER EXTENDS tooltip.js
-  // ================================
-
-  Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)
-
-  Popover.prototype.constructor = Popover
-
-  Popover.prototype.getDefaults = function () {
-    return Popover.DEFAULTS
-  }
-
-  Popover.prototype.setContent = function () {
-    var $tip    = this.tip()
-    var title   = this.getTitle()
-    var content = this.getContent()
-
-    $tip.find('.popover-title')[this.options.html ? 'html' : 'text'](title)
-    $tip.find('.popover-content').children().detach().end()[ // we use append for html objects to maintain js events
-      this.options.html ? (typeof content == 'string' ? 'html' : 'append') : 'text'
-    ](content)
-
-    $tip.removeClass('fade top bottom left right in')
-
-    // IE8 doesn't accept hiding via the `:empty` pseudo selector, we have to do
-    // this manually by checking the contents.
-    if (!$tip.find('.popover-title').html()) $tip.find('.popover-title').hide()
-  }
-
-  Popover.prototype.hasContent = function () {
-    return this.getTitle() || this.getContent()
-  }
-
-  Popover.prototype.getContent = function () {
-    var $e = this.$element
-    var o  = this.options
-
-    return $e.attr('data-content')
-      || (typeof o.content == 'function' ?
-            o.content.call($e[0]) :
-            o.content)
-  }
-
-  Popover.prototype.arrow = function () {
-    return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
-  }
-
-
-  // POPOVER PLUGIN DEFINITION
-  // =========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.popover')
-      var options = typeof option == 'object' && option
-
-      if (!data && /destroy|hide/.test(option)) return
-      if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.popover
-
-  $.fn.popover             = Plugin
-  $.fn.popover.Constructor = Popover
-
-
-  // POPOVER NO CONFLICT
-  // ===================
-
-  $.fn.popover.noConflict = function () {
-    $.fn.popover = old
-    return this
-  }
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: scrollspy.js v3.3.7
- * http://getbootstrap.com/javascript/#scrollspy
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // SCROLLSPY CLASS DEFINITION
-  // ==========================
-
-  function ScrollSpy(element, options) {
-    this.$body          = $(document.body)
-    this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
-    this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
-    this.selector       = (this.options.target || '') + ' .nav li > a'
-    this.offsets        = []
-    this.targets        = []
-    this.activeTarget   = null
-    this.scrollHeight   = 0
-
-    this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
-    this.refresh()
-    this.process()
-  }
-
-  ScrollSpy.VERSION  = '3.3.7'
-
-  ScrollSpy.DEFAULTS = {
-    offset: 10
-  }
-
-  ScrollSpy.prototype.getScrollHeight = function () {
-    return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
-  }
-
-  ScrollSpy.prototype.refresh = function () {
-    var that          = this
-    var offsetMethod  = 'offset'
-    var offsetBase    = 0
-
-    this.offsets      = []
-    this.targets      = []
-    this.scrollHeight = this.getScrollHeight()
-
-    if (!$.isWindow(this.$scrollElement[0])) {
-      offsetMethod = 'position'
-      offsetBase   = this.$scrollElement.scrollTop()
-    }
-
-    this.$body
-      .find(this.selector)
-      .map(function () {
-        var $el   = $(this)
-        var href  = $el.data('target') || $el.attr('href')
-        var $href = /^#./.test(href) && $(href)
-
-        return ($href
-          && $href.length
-          && $href.is(':visible')
-          && [[$href[offsetMethod]().top + offsetBase, href]]) || null
-      })
-      .sort(function (a, b) { return a[0] - b[0] })
-      .each(function () {
-        that.offsets.push(this[0])
-        that.targets.push(this[1])
-      })
-  }
-
-  ScrollSpy.prototype.process = function () {
-    var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
-    var scrollHeight = this.getScrollHeight()
-    var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
-    var offsets      = this.offsets
-    var targets      = this.targets
-    var activeTarget = this.activeTarget
-    var i
-
-    if (this.scrollHeight != scrollHeight) {
-      this.refresh()
-    }
-
-    if (scrollTop >= maxScroll) {
-      return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
-    }
-
-    if (activeTarget && scrollTop < offsets[0]) {
-      this.activeTarget = null
-      return this.clear()
-    }
-
-    for (i = offsets.length; i--;) {
-      activeTarget != targets[i]
-        && scrollTop >= offsets[i]
-        && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
-        && this.activate(targets[i])
-    }
-  }
-
-  ScrollSpy.prototype.activate = function (target) {
-    this.activeTarget = target
-
-    this.clear()
-
-    var selector = this.selector +
-      '[data-target="' + target + '"],' +
-      this.selector + '[href="' + target + '"]'
-
-    var active = $(selector)
-      .parents('li')
-      .addClass('active')
-
-    if (active.parent('.dropdown-menu').length) {
-      active = active
-        .closest('li.dropdown')
-        .addClass('active')
-    }
-
-    active.trigger('activate.bs.scrollspy')
-  }
-
-  ScrollSpy.prototype.clear = function () {
-    $(this.selector)
-      .parentsUntil(this.options.target, '.active')
-      .removeClass('active')
-  }
-
-
-  // SCROLLSPY PLUGIN DEFINITION
-  // ===========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.scrollspy')
-      var options = typeof option == 'object' && option
-
-      if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.scrollspy
-
-  $.fn.scrollspy             = Plugin
-  $.fn.scrollspy.Constructor = ScrollSpy
-
-
-  // SCROLLSPY NO CONFLICT
-  // =====================
-
-  $.fn.scrollspy.noConflict = function () {
-    $.fn.scrollspy = old
-    return this
-  }
-
-
-  // SCROLLSPY DATA-API
-  // ==================
-
-  $(window).on('load.bs.scrollspy.data-api', function () {
-    $('[data-spy="scroll"]').each(function () {
-      var $spy = $(this)
-      Plugin.call($spy, $spy.data())
-    })
-  })
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: tab.js v3.3.7
- * http://getbootstrap.com/javascript/#tabs
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // TAB CLASS DEFINITION
-  // ====================
-
-  var Tab = function (element) {
-    // jscs:disable requireDollarBeforejQueryAssignment
-    this.element = $(element)
-    // jscs:enable requireDollarBeforejQueryAssignment
-  }
-
-  Tab.VERSION = '3.3.7'
-
-  Tab.TRANSITION_DURATION = 150
-
-  Tab.prototype.show = function () {
-    var $this    = this.element
-    var $ul      = $this.closest('ul:not(.dropdown-menu)')
-    var selector = $this.data('target')
-
-    if (!selector) {
-      selector = $this.attr('href')
-      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
-    }
-
-    if ($this.parent('li').hasClass('active')) return
-
-    var $previous = $ul.find('.active:last a')
-    var hideEvent = $.Event('hide.bs.tab', {
-      relatedTarget: $this[0]
-    })
-    var showEvent = $.Event('show.bs.tab', {
-      relatedTarget: $previous[0]
-    })
-
-    $previous.trigger(hideEvent)
-    $this.trigger(showEvent)
-
-    if (showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) return
-
-    var $target = $(selector)
-
-    this.activate($this.closest('li'), $ul)
-    this.activate($target, $target.parent(), function () {
-      $previous.trigger({
-        type: 'hidden.bs.tab',
-        relatedTarget: $this[0]
-      })
-      $this.trigger({
-        type: 'shown.bs.tab',
-        relatedTarget: $previous[0]
-      })
-    })
-  }
-
-  Tab.prototype.activate = function (element, container, callback) {
-    var $active    = container.find('> .active')
-    var transition = callback
-      && $.support.transition
-      && ($active.length && $active.hasClass('fade') || !!container.find('> .fade').length)
-
-    function next() {
-      $active
-        .removeClass('active')
-        .find('> .dropdown-menu > .active')
-          .removeClass('active')
-        .end()
-        .find('[data-toggle="tab"]')
-          .attr('aria-expanded', false)
-
-      element
-        .addClass('active')
-        .find('[data-toggle="tab"]')
-          .attr('aria-expanded', true)
-
-      if (transition) {
-        element[0].offsetWidth // reflow for transition
-        element.addClass('in')
-      } else {
-        element.removeClass('fade')
-      }
-
-      if (element.parent('.dropdown-menu').length) {
-        element
-          .closest('li.dropdown')
-            .addClass('active')
-          .end()
-          .find('[data-toggle="tab"]')
-            .attr('aria-expanded', true)
-      }
-
-      callback && callback()
-    }
-
-    $active.length && transition ?
-      $active
-        .one('bsTransitionEnd', next)
-        .emulateTransitionEnd(Tab.TRANSITION_DURATION) :
-      next()
-
-    $active.removeClass('in')
-  }
-
-
-  // TAB PLUGIN DEFINITION
-  // =====================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this = $(this)
-      var data  = $this.data('bs.tab')
-
-      if (!data) $this.data('bs.tab', (data = new Tab(this)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.tab
-
-  $.fn.tab             = Plugin
-  $.fn.tab.Constructor = Tab
-
-
-  // TAB NO CONFLICT
-  // ===============
-
-  $.fn.tab.noConflict = function () {
-    $.fn.tab = old
-    return this
-  }
-
-
-  // TAB DATA-API
-  // ============
-
-  var clickHandler = function (e) {
-    e.preventDefault()
-    Plugin.call($(this), 'show')
-  }
-
-  $(document)
-    .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
-    .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: affix.js v3.3.7
- * http://getbootstrap.com/javascript/#affix
- * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // AFFIX CLASS DEFINITION
-  // ======================
-
-  var Affix = function (element, options) {
-    this.options = $.extend({}, Affix.DEFAULTS, options)
-
-    this.$target = $(this.options.target)
-      .on('scroll.bs.affix.data-api', $.proxy(this.checkPosition, this))
-      .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
-
-    this.$element     = $(element)
-    this.affixed      = null
-    this.unpin        = null
-    this.pinnedOffset = null
-
-    this.checkPosition()
-  }
-
-  Affix.VERSION  = '3.3.7'
-
-  Affix.RESET    = 'affix affix-top affix-bottom'
-
-  Affix.DEFAULTS = {
-    offset: 0,
-    target: window
-  }
-
-  Affix.prototype.getState = function (scrollHeight, height, offsetTop, offsetBottom) {
-    var scrollTop    = this.$target.scrollTop()
-    var position     = this.$element.offset()
-    var targetHeight = this.$target.height()
-
-    if (offsetTop != null && this.affixed == 'top') return scrollTop < offsetTop ? 'top' : false
-
-    if (this.affixed == 'bottom') {
-      if (offsetTop != null) return (scrollTop + this.unpin <= position.top) ? false : 'bottom'
-      return (scrollTop + targetHeight <= scrollHeight - offsetBottom) ? false : 'bottom'
-    }
-
-    var initializing   = this.affixed == null
-    var colliderTop    = initializing ? scrollTop : position.top
-    var colliderHeight = initializing ? targetHeight : height
-
-    if (offsetTop != null && scrollTop <= offsetTop) return 'top'
-    if (offsetBottom != null && (colliderTop + colliderHeight >= scrollHeight - offsetBottom)) return 'bottom'
-
-    return false
-  }
-
-  Affix.prototype.getPinnedOffset = function () {
-    if (this.pinnedOffset) return this.pinnedOffset
-    this.$element.removeClass(Affix.RESET).addClass('affix')
-    var scrollTop = this.$target.scrollTop()
-    var position  = this.$element.offset()
-    return (this.pinnedOffset = position.top - scrollTop)
-  }
-
-  Affix.prototype.checkPositionWithEventLoop = function () {
-    setTimeout($.proxy(this.checkPosition, this), 1)
-  }
-
-  Affix.prototype.checkPosition = function () {
-    if (!this.$element.is(':visible')) return
-
-    var height       = this.$element.height()
-    var offset       = this.options.offset
-    var offsetTop    = offset.top
-    var offsetBottom = offset.bottom
-    var scrollHeight = Math.max($(document).height(), $(document.body).height())
-
-    if (typeof offset != 'object')         offsetBottom = offsetTop = offset
-    if (typeof offsetTop == 'function')    offsetTop    = offset.top(this.$element)
-    if (typeof offsetBottom == 'function') offsetBottom = offset.bottom(this.$element)
-
-    var affix = this.getState(scrollHeight, height, offsetTop, offsetBottom)
-
-    if (this.affixed != affix) {
-      if (this.unpin != null) this.$element.css('top', '')
-
-      var affixType = 'affix' + (affix ? '-' + affix : '')
-      var e         = $.Event(affixType + '.bs.affix')
-
-      this.$element.trigger(e)
-
-      if (e.isDefaultPrevented()) return
-
-      this.affixed = affix
-      this.unpin = affix == 'bottom' ? this.getPinnedOffset() : null
-
-      this.$element
-        .removeClass(Affix.RESET)
-        .addClass(affixType)
-        .trigger(affixType.replace('affix', 'affixed') + '.bs.affix')
-    }
-
-    if (affix == 'bottom') {
-      this.$element.offset({
-        top: scrollHeight - height - offsetBottom
-      })
-    }
-  }
-
-
-  // AFFIX PLUGIN DEFINITION
-  // =======================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.affix')
-      var options = typeof option == 'object' && option
-
-      if (!data) $this.data('bs.affix', (data = new Affix(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.affix
-
-  $.fn.affix             = Plugin
-  $.fn.affix.Constructor = Affix
-
-
-  // AFFIX NO CONFLICT
-  // =================
-
-  $.fn.affix.noConflict = function () {
-    $.fn.affix = old
-    return this
-  }
-
-
-  // AFFIX DATA-API
-  // ==============
-
-  $(window).on('load', function () {
-    $('[data-spy="affix"]').each(function () {
-      var $spy = $(this)
-      var data = $spy.data()
-
-      data.offset = data.offset || {}
-
-      if (data.offsetBottom != null) data.offset.bottom = data.offsetBottom
-      if (data.offsetTop    != null) data.offset.top    = data.offsetTop
-
-      Plugin.call($spy, data)
-    })
-  })
-
-}(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 2:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {// ==================================================
-// fancyBox v3.0.17
-//
-// Licensed GPLv3 for open source use
-// or fancyBox Commercial License for commercial use
-//
-// http://fancyapps.com/fancybox/
-// Copyright 2017 fancyApps
-//
-// ==================================================
-;(function (window, document, $, undefined) {
-    'use strict';
-
-    // If there's no jQuery, fancyBox can't work
-    // =========================================
-
-    if ( !$ ) {
-        return undefined;
-    }
-
-    // Private default settings
-    // ========================
-
-    var defaults = {
-
-        // Animation duration in ms
-        speed : 330,
-
-        // Enable infinite gallery navigation
-        loop : true,
-
-        // Should zoom animation change opacity, too
-        // If opacity is 'auto', then fade-out if image and thumbnail have different aspect ratios
-        opacity : 'auto',
-
-        // Space around image, ignored if zoomed-in or viewport smaller than 800px
-        margin : [44, 0],
-
-        // Horizontal space between slides
-        gutter : 30,
-
-        // Should display toolbars
-        infobar : true,
-        buttons : true,
-
-        // What buttons should appear in the toolbar
-        slideShow  : true,
-        fullScreen : true,
-        thumbs     : true,
-        closeBtn   : true,
-
-        // Should apply small close button at top right corner of the content
-        // If 'auto' - will be set for content having type 'html', 'inline' or 'ajax'
-        smallBtn : 'auto',
-
-        image : {
-
-            // Wait for images to load before displaying
-            // Requires predefined image dimensions
-            // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
-            preload : "auto",
-
-            // Protect an image from downloading by right-click
-            protect : false
-
-        },
-
-        ajax : {
-
-            // Object containing settings for ajax request
-            settings : {
-
-                // This helps to indicate that request comes from the modal
-                // Feel free to change naming
-                data : {
-                    fancybox : true
-                }
-            }
-
-        },
-
-        iframe : {
-
-            // Iframe template
-            tpl : '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen allowtransparency="true" src=""></iframe>',
-
-            // Preload iframe before displaying it
-            // This allows to calculate iframe content width and height
-            // (note: Due to "Same Origin Policy", you can't get cross domain data).
-            preload : true,
-
-            // Scrolling attribute for iframe tag
-            scrolling : 'no',
-
-            // Custom CSS styling for iframe wrapping element
-            css : {}
-
-        },
-
-        // Custom CSS class for layout
-        baseClass : '',
-
-        // Custom CSS class for slide element
-        slideClass : '',
-
-        // Base template for layout
-        baseTpl	: '<div class="fancybox-container" role="dialog" tabindex="-1">' +
-                '<div class="fancybox-bg"></div>' +
-                '<div class="fancybox-controls">' +
-                    '<div class="fancybox-infobar">' +
-                        '<button data-fancybox-previous class="fancybox-button fancybox-button--left" title="Previous"></button>' +
-                        '<div class="fancybox-infobar__body">' +
-                            '<span class="js-fancybox-index"></span>&nbsp;/&nbsp;<span class="js-fancybox-count"></span>' +
-                        '</div>' +
-                        '<button data-fancybox-next class="fancybox-button fancybox-button--right" title="Next"></button>' +
-                    '</div>' +
-                    '<div class="fancybox-buttons">' +
-                        '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Close (Esc)"></button>' +
-                    '</div>' +
-                '</div>' +
-                '<div class="fancybox-slider-wrap">' +
-                    '<div class="fancybox-slider"></div>' +
-                '</div>' +
-                '<div class="fancybox-caption-wrap"><div class="fancybox-caption"></div></div>' +
-            '</div>',
-
-        // Loading indicator template
-        spinnerTpl : '<div class="fancybox-loading"></div>',
-
-        // Error message template
-        errorTpl : '<div class="fancybox-error"><p>The requested content cannot be loaded. <br /> Please try again later.<p></div>',
-
-        closeTpl : '<button data-fancybox-close class="fancybox-close-small">×</button>',
-
-        // Container is injected into this element
-        parentEl : 'body',
-
-        // Enable gestures (tap, zoom, pan and pinch)
-        touch : true,
-
-        // Enable keyboard navigation
-        keyboard : true,
-
-        // Try to focus on first focusable element after opening
-        focus : true,
-
-        // Close when clicked outside of the content
-        closeClickOutside : true,
-
-        // Callbacks
-        beforeLoad	 : $.noop,
-        afterLoad    : $.noop,
-        beforeMove 	 : $.noop,
-        afterMove    : $.noop,
-        onComplete	 : $.noop,
-
-        onInit       : $.noop,
-        beforeClose	 : $.noop,
-        afterClose	 : $.noop,
-        onActivate   : $.noop,
-        onDeactivate : $.noop
-
-    };
-
-    var $W = $(window);
-    var $D = $(document);
-
-    var called = 0;
-
-    // Check if an object is a jQuery object and not a native JavaScript object
-    // ========================================================================
-
-    var isQuery = function (obj) {
-        return obj && obj.hasOwnProperty && obj instanceof $;
-    };
-
-    // Handle multiple browsers for requestAnimationFrame()
-    // ====================================================
-
-    var requestAFrame = (function() {
-        return  window.requestAnimationFrame ||
-                window.webkitRequestAnimationFrame ||
-                window.mozRequestAnimationFrame ||
-                function( callback ) {
-                    window.setTimeout(callback, 1000 / 60); };
-                })();
-
-
-    // Check if element is inside the viewport by at least 1 pixel
-    // ===========================================================
-
-    var isElementInViewport = function( el ) {
-        var rect;
-
-        if ( typeof $ === "function" && el instanceof $ ) {
-            el = el[0];
-        }
-
-        rect = el.getBoundingClientRect();
-
-        return rect.bottom > 0 &&
-                rect.right > 0 &&
-                rect.left < (window.innerWidth || document.documentElement.clientWidth)  &&
-                rect.top < (window.innerHeight || document.documentElement.clientHeight);
-    };
-
-
-    // Class definition
-    // ================
-
-    var FancyBox = function( content, opts, index ) {
-        var self = this;
-
-        self.opts  = $.extend( true, { index : index }, defaults, opts || {} );
-        self.id    = self.opts.id || ++called;
-        self.group = [];
-
-        self.currIndex = parseInt( self.opts.index, 10 ) || 0;
-        self.prevIndex = null;
-
-        // Create group elements from original item collection
-        self.createGroup( content );
-
-        if ( !self.group.length ) {
-            return;
-        }
-
-        // Save last active element and current scroll position
-        self.$lastFocus = $(document.activeElement);
-
-        // Collection of interface DOM elements
-        self.elems = {};
-
-        // Collection of gallery objects
-        self.slides = {};
-
-        self.init( content );
-
-    };
-
-    $.extend(FancyBox.prototype, {
-
-        // Create DOM structure
-        // ====================
-
-        init : function() {
-            var self = this;
-
-            var testWidth;
-            var $container;
-
-            self.scrollTop  = $W.scrollTop();
-            self.scrollLeft = $W.scrollLeft();
-
-            // Disable compensating on touch-enabled devices as they probably do not have scrollbars anyway
-            // and therefore we avoid of unnecessary layout reflow
-            if ( !$.fancybox.isTouch && !$( 'body' ).hasClass( 'fancybox-enabled' ) ) {
-
-                testWidth = $( 'body' ).width();
-                testWidth = $( 'body' ).addClass( 'fancybox-enabled' ).width() - testWidth;
-
-                // Body width has increased - compensate missing scrollbars
-                if ( testWidth > 1 ) {
-                    $( '<style id="fancybox-noscroll" type="text/css">' ).html( '.compensate-for-scrollbar, .fancybox-enabled { margin-right: ' + testWidth + 'px; }' ).appendTo( 'head' );
-                }
-
-            }
-
-            $container = $( self.opts.baseTpl )
-                .attr('id', 'fancybox-container-' + self.id)
-                .data( 'FancyBox', self )
-                .addClass( self.opts.baseClass )
-                .hide()
-                .prependTo( self.opts.parentEl );
-
-            // Create object holding references to jQuery wrapped nodes
-            self.$refs = {
-                container   : $container,
-                bg          : $container.find('.fancybox-bg'),
-                controls    : $container.find('.fancybox-controls'),
-                buttons     : $container.find('.fancybox-buttons'),
-                slider_wrap : $container.find('.fancybox-slider-wrap'),
-                slider      : $container.find('.fancybox-slider'),
-                caption     : $container.find('.fancybox-caption')
-            };
-
-            self.prevPos = null;
-            self.currPos = 0;
-
-            self.allowZoomIn = true;
-
-            self.trigger( 'onInit' );
-
-            // Bring to front and enable events
-            self.activate();
-
-            // Try to avoid running multiple times
-            if ( self.current ) {
-                return;
-            }
-
-            self.jumpTo( self.currIndex );
-
-        },
-
-
-        // Create array of gally item objects
-        // Check if each object has valid type and content
-        // ===============================================
-
-        createGroup : function ( content ) {
-            var self  = this;
-            var items = $.makeArray( content );
-
-            $.each(items, function( i, item ) {
-                var obj  = {},
-                    opts = {},
-                    $item,
-                    data,
-                    type,
-                    src,
-                    srcParts;
-
-                // Step 1 - Make sure we have an object
-
-                if ( $.isPlainObject( item ) ) {
-
-                    obj  = item;
-                    opts = item.opts || {};
-
-                } else if ( $.type( item ) === 'object' && $( item ).length ) {
-
-                    $item = $( item );
-                    data  = $item.data();
-
-                    opts = 'options' in data ? data.options : {};
-
-                    opts = $.type( opts ) === 'object' ? opts : {};
-
-                    obj.type = 'type' in data ? data.type : opts.type;
-                    obj.src  = 'src'  in data ? data.src  : ( opts.src || $item.attr( 'href' ) );
-
-                    opts.width   = 'width'   in data ? data.width   : opts.width;
-                    opts.height  = 'height'  in data ? data.height  : opts.height;
-                    opts.thumb   = 'thumb'   in data ? data.thumb   : opts.thumb;
-                    opts.caption = 'caption' in data ? data.caption : ( opts.caption || $item.attr( 'title' ) );
-
-                    opts.selector = 'selector'  in data ? data.selector  : opts.selector;
-
-                    opts.$orig = $item;
-
-                } else {
-
-                    obj = {
-                        type    : 'html',
-                        content : item + ''
-                    };
-
-                }
-
-                obj.opts = $.extend( true, {}, self.opts, opts );
-
-
-                // Step 2 - Make sure we have supported content type
-
-                type = obj.type;
-                src  = obj.src || '';
-
-                if ( !type ) {
-
-                    if ( obj.content ) {
-                        type = 'html';
-
-                    } else if ( src.match(/(^data:image\/[a-z0-9+\/=]*,)|(\.(jp(e|g|eg)|gif|png|bmp|webp|svg|ico)((\?|#).*)?$)/i) ) {
-                        type = 'image';
-
-                    } else if ( src.match(/\.(pdf)((\?|#).*)?$/i) ) {
-                        type = 'pdf';
-
-                    } else if ( src.charAt(0) === '#' ) {
-                        type = 'inline';
-
-                    }
-
-                    obj.type = type;
-
-                }
-
-                // Step 3 - Some adjustments
-
-                obj.index = self.group.length;
-
-                // Check if $orig and $thumb objects exist
-                if ( obj.opts.$orig && !obj.opts.$orig.length ) {
-                    delete obj.opts.$orig;
-                }
-
-                if ( !obj.opts.$thumb && obj.opts.$orig ) {
-                    obj.opts.$thumb = obj.opts.$orig.find( 'img:first' );
-                }
-
-                if ( obj.opts.$thumb && !obj.opts.$thumb.length ) {
-                    delete obj.opts.$thumb;
-                }
-
-                // Make sure we have caption as a string
-                if ( $.type( self.opts.caption ) === 'function' ) {
-                    obj.opts.caption = self.opts.caption.apply( item, [ self, obj ] );
-
-                } else {
-                    obj.opts.caption = obj.opts.caption === undefined ? '' : obj.opts.caption + '';
-                }
-
-                // Check if url contains selector used to filter the content
-                // Example: "ajax.html #something"
-                if ( type === 'ajax' ) {
-                    srcParts = src.split(/\s+/, 2);
-
-                    if ( srcParts.length > 1 ) {
-                        obj.src = srcParts.shift();
-
-                        obj.opts.selector = srcParts.shift();
-                    }
-                }
-
-                if ( obj.opts.smallBtn == 'auto' ) {
-
-                    if ( $.inArray( type, ['html', 'inline', 'ajax'] ) > -1 ) {
-                        obj.opts.buttons  = false;
-                        obj.opts.smallBtn = true;
-
-                    } else {
-                        obj.opts.smallBtn = false;
-                    }
-
-                }
-
-                if ( type === 'pdf' ) {
-
-                    obj.type = 'iframe';
-
-                    obj.opts.closeBtn = true;
-                    obj.opts.smallBtn = false;
-
-                    obj.opts.iframe.preload = false;
-
-                }
-
-                if ( obj.opts.modal ) {
-
-                    $.extend(true, obj.opts, {
-                        infobar		: 0,
-                        buttons		: 0,
-                        keyboard	: 0,
-                        slideShow	: 0,
-                        fullScreen	: 0,
-                        closeClickOutside	: 0
-                    });
-
-                }
-
-                self.group.push( obj );
-
-            });
-
-        },
-
-
-        // Attach an event handler functions for:
-        //   - navigation elements
-        //   - browser scrolling, resizing;
-        //   - focusing
-        //   - keyboard
-        // =================
-
-        addEvents : function() {
-            var self = this;
-
-            var runUpdate = function () {
-
-                $W.scrollTop( self.scrollTop ).scrollLeft( self.scrollLeft );
-
-                self.$refs.slider_wrap.show();
-
-                self.update();
-
-            };
-
-            self.removeEvents();
-
-
-            // Make navigation elements clickable
-
-            self.$refs.container.on('click.fb-close', '[data-fancybox-close]', function(e) {
-                e.stopPropagation();
-                e.preventDefault();
-
-                self.close( e );
-
-            }).on('click.fb-previous', '[data-fancybox-previous]', function(e) {
-                e.stopPropagation();
-                e.preventDefault();
-
-                self.previous();
-
-            }).on('click.fb-next', '[data-fancybox-next]', function(e) {
-                e.stopPropagation();
-                e.preventDefault();
-
-                self.next();
-            });
-
-
-            // Handle page scrolling and browser resizing
-
-            $( window ).on('orientationchange.fb resize.fb', function(e) {
-                requestAFrame(function() {
-
-                    if ( e.type == "orientationchange" ) {
-                        self.$refs.slider_wrap.hide();
-
-                        requestAFrame( runUpdate );
-
-                    } else {
-
-                        runUpdate();
-                    }
-
-                });
-
-            });
-
-
-            // Trap focus
-
-            $D.on('focusin.fb', function(e) {
-                var instance;
-
-                if ( $.fancybox ) {
-                    instance = $.fancybox.getInstance();
-
-                    if ( instance && !$( e.target ).hasClass( 'fancybox-container' ) && !$.contains( instance.$refs.container[0], e.target ) ) {
-                        e.stopPropagation();
-
-                        instance.focus();
-
-                    }
-                }
-
-            });
-
-
-            // Enable keyboard navigation
-
-            $( document ).on('keydown.fb', function (e) {
-                var current = self.current,
-                    keycode = e.keyCode || e.which;
-
-                if ( !current || !current.opts.keyboard ) {
-                    return;
-                }
-
-                if ( $(e.target).is('input') || $(e.target).is('textarea') ) {
-                    return;
-                }
-
-                // Backspace and Esc keys
-                if ( keycode === 8 || keycode === 27 ) {
-                    e.preventDefault();
-
-                    self.close();
-
-                    return;
-                }
-
-                switch ( keycode ) {
-
-                    case 37: // Left arrow
-                    case 38: // Up arrow
-
-                        e.preventDefault();
-
-                        self.previous();
-
-                    break;
-
-                    case 39: // Right arrow
-                    case 40: // Down arrow
-
-                        e.preventDefault();
-
-                        self.next();
-
-                    break;
-
-                    case 80: // "P"
-					case 32: // Spacebar
-
-						e.preventDefault();
-
-						if ( self.SlideShow ) {
-							e.preventDefault();
-
-							self.SlideShow.toggle();
-						}
-
-					break;
-
-                    case 70: // "F"
-
-						if ( self.FullScreen ) {
-							e.preventDefault();
-
-							self.FullScreen.toggle();
-						}
-
-					break;
-
-                    case 71: // "G"
-
-						if ( self.Thumbs ) {
-							e.preventDefault();
-
-							self.Thumbs.toggle();
-						}
-
-					break;
-                }
-            });
-
-
-        },
-
-
-        // Remove events added by the core
-        // ===============================
-
-        removeEvents : function () {
-
-            $W.off( 'scroll.fb resize.fb orientationchange.fb' );
-            $D.off( 'keydown.fb focusin.fb click.fb-close' );
-
-            this.$refs.container.off('click.fb-close click.fb-previous click.fb-next');
-        },
-
-
-        // Slide to left
-        // ==================
-
-        previous : function( duration ) {
-
-            if ( this.current.opts.loop || this.currIndex > 0 ) {
-                this.jumpTo( this.currIndex - 1, duration );
-
-            } else {
-                this.update( false, false, duration );
-            }
-
-        },
-
-
-        // Slide to right
-        // ===================
-
-        next : function( duration ) {
-
-            if ( this.current.opts.loop || this.currIndex < this.group.length - 1 ) {
-                this.jumpTo( this.currIndex + 1, duration );
-
-            } else {
-                this.update( false, false, duration );
-            }
-
-        },
-
-
-        // Display current gallery item, move slider to current position
-        // =============================================================
-
-        jumpTo : function ( to, duration ) {
-            var self = this,
-                firstRun = self.prevIndex === null,
-                index,
-                pos;
-
-            to = parseInt( to, 10 );
-
-            index = to;
-            pos   = to;
-
-            index = index % self.group.length;
-            index = index < 0 ? self.group.length + index : index;
-
-            if ( self.isAnimating || ( index == self.currIndex && !firstRun ) ) {
-                return;
-            }
-
-            if ( self.group.length > 1 && !firstRun ) {
-
-                // Calculate closest position of upcoming item from the current one
-                if ( self.group.length == 2 ) {
-                    pos = to - self.currIndex + self.currPos;
-
-                } else {
-                    pos = index - self.currIndex + self.currPos;
-
-                    if ( Math.abs( self.currPos - ( pos + self.group.length ) ) < Math.abs( self.currPos - pos ) ) {
-                        pos = pos + self.group.length;
-
-                    } else if ( Math.abs( self.currPos - ( pos - self.group.length ) ) < Math.abs( self.currPos - pos ) ) {
-                        pos = pos - self.group.length;
-
-                    }
-                }
-
-            }
-
-            self.prevIndex = self.currIndex;
-            self.prevPos   = self.currPos;
-
-            self.currIndex = index;
-            self.currPos   = pos;
-
-            // Create slides
-
-            self.createSlide( pos );
-
-            if ( self.group.length > 1 ) {
-
-                if ( self.opts.loop || pos - 1 >= 0 ) {
-                    self.createSlide( pos - 1 );
-                }
-
-                if ( self.opts.loop || pos + 1 < self.group.length ) {
-                    self.createSlide( pos + 1 );
-                }
-            }
-
-            self.current = self.slides[ pos ];
-
-            self.current.isMoved    = false;
-            self.current.isComplete = false;
-
-            duration = parseInt( duration === undefined ? self.current.opts.speed : duration, 10 );
-
-            // Move slider to the next position
-            // Note: the content might still be loading
-            self.trigger( 'beforeMove' );
-
-            self.updateControls();
-
-            if ( firstRun ) {
-
-                self.current.$slide.addClass('fancybox-slide--current');
-
-                self.$refs.container.show();
-
-                self.$refs.bg.css('transition-duration', ( duration + 90 ) + 'ms').hide().show(0);
-
-                self.$refs.container.addClass( 'fancybox-container--ready' );
-
-            } else {
-                self.$refs.slider.children().removeClass('fancybox-slide--current fancybox-slide--complete');
-            }
-
-            // Set position immediately on first opening
-            self.update( true, false, firstRun ? 0 : duration );
-
-            self.loadSlide( self.current );
-
-        },
-
-
-        // Create new "slide" element
-        // These are gallery items  that are actually added to DOM
-        // =======================================================
-
-        createSlide : function( pos ) {
-
-            var self = this;
-            var $slide;
-            var index;
-
-            index = pos % self.group.length;
-            index = index < 0 ? self.group.length + index : index;
-
-            if ( !self.slides[ pos ] && self.group[ index ] ) {
-
-                $slide = $('<div class="fancybox-slide"></div>').appendTo( self.$refs.slider );
-
-                self.slides[ pos ] = $.extend( true, {}, self.group[ index ], {
-                    pos      : pos,
-                    $slide   : $slide,
-                    isMoved  : false,
-                    isLoaded : false
-                });
-
-            }
-
-        },
-
-        zoomInOut : function( type, duration, callback ) {
-
-            var self     = this;
-            var current  = self.current;
-            var $what    = current.$placeholder;
-            var $thumb   = current.opts.$thumb;
-            var thumbPos = $thumb ? $thumb.offset() : 0;
-            var slidePos = current.$slide.offset();
-            var opacity  = current.opts.opacity;
-            var props;
-            var start;
-            var end;
-
-            if ( !$what || !thumbPos || !isElementInViewport( $thumb ) ) {
-                return false;
-            }
-
-            $.fancybox.stop( $what );
-
-            self.isAnimating = true;
-
-            props = {
-                top    : thumbPos.top  - slidePos.top  + parseFloat( $thumb.css( "border-top-width" ) || 0 ),
-                left   : thumbPos.left - slidePos.left + parseFloat( $thumb.css( "border-left-width" ) || 0 ),
-                width  : $thumb.width(),
-                height : $thumb.height(),
-                scaleX : 1,
-                scaleY : 1
-            };
-
-            // Check if we need to animate opacity
-            if ( opacity == 'auto' ) {
-                opacity = Math.abs( current.width / current.height - props.width / props.height ) > 0.1;
-            }
-
-            if ( type === 'in' ) {
-
-                start = props;
-                end   = self.getFitPos( current );
-
-                end.scaleX = end.width  / start.width;
-                end.scaleY = end.height / start.height;
-
-                if ( opacity ) {
-                    start.opacity = 0.1;
-                    end.opacity   = 1;
-                }
-
-            } else {
-
-                start = $.fancybox.getTranslate( $what );
-                end   = props;
-
-                // Switch to thumbnail image to improve animation performance
-                if ( current.$ghost ) {
-                    current.$ghost.show();
-
-                    if ( current.$image ) {
-                        current.$image.remove();
-                    }
-                }
-
-                start.scaleX = start.width  / end.width;
-                start.scaleY = start.height / end.height;
-
-                start.width  = end.width;
-                start.height = end.height;
-
-                if ( opacity ) {
-                    end.opacity = 0;
-                }
-
-            }
-
-            self.updateCursor( end.width, end.height );
-
-            // There is no need to animate width/height
-            delete end.width;
-            delete end.height;
-
-            $.fancybox.setTranslate( $what, start );
-
-            $what.show();
-
-            setTimeout(function() {
-
-                $what.css( 'transition', 'all ' + duration + 'ms' );
-
-                $.fancybox.setTranslate( $what, end );
-
-                setTimeout(function() {
-
-                    $what.css( 'transition', 'none' );
-
-                    callback();
-
-                    self.isAnimating = false;
-
-                }, duration + 20 );
-
-            }, 90);
-
-            return true;
-
-        },
-
-        // Start "zoom-in" animation if possible
-        // =====================================
-
-        zoomIn : function() {
-
-            var self     = this;
-            var current  = self.current;
-            var $what    = current.$placeholder;
-
-            self.allowZoomIn = false;
-            self.isOpening   = true;
-
-            return self.zoomInOut( 'in', current.opts.speed, function() {
-
-                var reset = $.fancybox.getTranslate( $what );
-
-                reset.scaleX = 1;
-                reset.scaleY = 1;
-
-                // Reset scalex/scaleY values; this helps for perfomance
-                $.fancybox.setTranslate( $what, reset );
-
-                self.isOpening = false;
-
-                self.update( false, true, 0 );
-
-                self.updateCursor();
-
-                if ( current.$ghost ) {
-                    self.setBigImage( current );
-                }
-
-            });
-
-        },
-
-
-        // Start "zoom-out" animation if possible
-        // ======================================
-
-        zoomOut : function( callback ) {
-
-            var self     = this;
-            var current  = self.current;
-
-            if ( self.zoomInOut( 'out', current.opts.speed, callback ) ) {
-
-                self.$refs.bg.css('transition-duration', current.opts.speed + 'ms');
-
-                this.$refs.container.removeClass( 'fancybox-container--ready' );
-
-                return true;
-            }
-
-            return false;
-
-        },
-
-
-        // Check if image dimensions exceed parent element
-        // ===============================================
-
-        canPan : function() {
-
-            var self = this;
-
-            var current = self.current;
-            var $what   = current.$placeholder;
-
-            var rez = false;
-
-            if ( $what ) {
-                rez = self.getFitPos( current );
-                rez = Math.abs( $what.width() - rez.width ) > 1  || Math.abs( $what.height() - rez.height ) > 1;
-
-            }
-
-            return rez;
-
-        },
-
-
-        // Check if current image dimensions are smaller than actual
-        // =========================================================
-
-        isScaledDown : function() {
-
-            var self = this;
-
-            var current = self.current;
-            var $what   = current.$placeholder;
-
-            var rez = false;
-
-            if ( $what ) {
-                rez = $.fancybox.getTranslate( $what );
-                rez = rez.width < current.width || rez.height < current.height;
-            }
-
-            return rez;
-
-        },
-
-
-        // Scale image to the actual size of the image
-        // ===========================================
-
-        scaleToActual : function( x, y, duration ) {
-
-            var self = this;
-
-            var current = self.current;
-            var $what   = current.$placeholder;
-
-            var imgPos, posX, posY, scaleX, scaleY;
-
-            var canvasWidth  = parseInt( current.$slide.width(), 10 );
-            var canvasHeight = parseInt( current.$slide.height(), 10 );
-
-            var newImgWidth  = current.width;
-            var newImgHeight = current.height;
-
-            if ( !$what ) {
-                return;
-            }
-
-            self.isAnimating = true;
-
-            x = x === undefined ? canvasWidth  * 0.5  : x;
-            y = y === undefined ? canvasHeight * 0.5  : y;
-
-            imgPos = $.fancybox.getTranslate( $what );
-
-            scaleX  = newImgWidth  / imgPos.width;
-            scaleY  = newImgHeight / imgPos.height;
-
-            // Get center position for original image
-            posX = ( canvasWidth * 0.5  - newImgWidth * 0.5 );
-            posY = ( canvasHeight * 0.5 - newImgHeight * 0.5 );
-
-            // Make sure image does not move away from edges
-
-            if ( newImgWidth > canvasWidth ) {
-                posX = imgPos.left * scaleX - ( ( x * scaleX ) - x );
-
-                if ( posX > 0 ) {
-                    posX = 0;
-                }
-
-                if ( posX <  canvasWidth - newImgWidth ) {
-                    posX = canvasWidth - newImgWidth;
-                }
-            }
-
-            if ( newImgHeight > canvasHeight) {
-                posY = imgPos.top  * scaleY - ( ( y * scaleY ) - y );
-
-                if ( posY > 0 ) {
-                    posY = 0;
-                }
-
-                if ( posY <  canvasHeight - newImgHeight ) {
-                    posY = canvasHeight - newImgHeight;
-                }
-            }
-
-            self.updateCursor( newImgWidth, newImgHeight );
-
-            $.fancybox.animate( $what, {
-                top    : imgPos.top,
-                left   : imgPos.left,
-                width  : newImgWidth,
-                height : newImgHeight,
-                scaleX : imgPos.width / newImgWidth,
-                scaleY : imgPos.height / newImgHeight
-            }, {
-                top    : posY,
-                left   : posX,
-                scaleX : 1,
-                scaleY : 1
-            }, duration || current.opts.speed, function() {
-                self.isAnimating = false;
-
-            });
-
-        },
-
-
-        // Scale image to fit inside parent element
-        // ========================================
-
-        scaleToFit : function( duration ) {
-
-            var self = this;
-
-            var current = self.current;
-            var $what   = current.$placeholder;
-            var end;
-
-            if ( !$what ) {
-                return;
-            }
-
-            self.isAnimating = true;
-
-            end = self.getFitPos( current );
-
-            self.updateCursor( end.width, end.height );
-
-            $.fancybox.animate( $what, null, {
-                top    : end.top,
-                left   : end.left,
-                scaleX : end.width  / $what.width(),
-                scaleY : end.height / $what.height()
-            }, duration || current.opts.speed, function() {
-                self.isAnimating = false;
-
-            });
-
-        },
-
-        // Calculate image size to fit inside viewport
-        // ===========================================
-
-        getFitPos : function( slide ) {
-            var $what = slide.$placeholder || slide.$content;
-
-            var imgWidth  = slide.width;
-            var imgHeight = slide.height;
-
-            var margin = slide.opts.margin;
-
-            var canvasWidth, canvasHeight, minRatio, top, left, width, height;
-
-            if ( !$what || !$what.length || ( !imgWidth && !imgHeight) ) {
-                return false;
-            }
-
-            // Convert "margin to CSS style: [ top, right, bottom, left ]
-            if ( $.type( margin ) === "number" ) {
-                margin = [ margin, margin ];
-            }
-
-            if ( margin.length == 2 ) {
-                margin = [ margin[0], margin[1], margin[0], margin[1] ];
-            }
-
-            if ( $W.width() < 800 ) {
-                margin = [0, 0, 0, 0];
-            }
-
-            canvasWidth  = parseInt( slide.$slide.width(), 10 )  - ( margin[ 1 ] + margin[ 3 ] );
-            canvasHeight = parseInt( slide.$slide.height(), 10 ) - ( margin[ 0 ] + margin[ 2 ] );
-
-            minRatio = Math.min(1, canvasWidth / imgWidth, canvasHeight / imgHeight );
-
-            // Use floor rounding to make sure it really fits
-
-            width  = Math.floor( minRatio * imgWidth );
-            height = Math.floor( minRatio * imgHeight );
-
-            top  = Math.floor( ( canvasHeight - height ) * 0.5 ) + margin[ 0 ];
-            left = Math.floor( ( canvasWidth  - width )  * 0.5 ) + margin[ 3 ];
-
-            return {
-                top    : top,
-                left   : left,
-                width  : width,
-                height : height
-            };
-
-        },
-
-        // Move slider to current position
-        // Update all slides (and their content)
-        // =====================================
-
-        update : function( andSlides, andContent, duration ) {
-
-            var self = this;
-
-            var leftValue = ( self.current.pos * Math.floor( self.current.$slide.width() ) * -1 ) - ( self.current.pos * self.current.opts.gutter ) ;
-
-            if ( self.isOpening === true ) {
-                return;
-            }
-
-            duration = parseInt( duration, 10 ) || 0;
-
-            $.fancybox.stop( self.$refs.slider );
-
-            if ( andSlides === false ) {
-                self.updateSlide( self.current, andContent );
-
-            } else {
-
-                $.each( self.slides, function( key, slide ) {
-                    self.updateSlide( slide, andContent );
-                });
-
-            }
-
-            if ( duration ) {
-
-                $.fancybox.animate( self.$refs.slider, null, {
-                    top  : 0,
-                    left : leftValue
-                }, duration, function() {
-                    self.current.isMoved = true;
-
-                    self.afterMove();
-
-                });
-
-            } else {
-
-                $.fancybox.setTranslate( self.$refs.slider, { left : leftValue } );
-
-                self.afterMove();
-
-            }
-
-            self.updateCursor();
-
-            self.trigger( 'onUpdate' );
-        },
-
-
-        // Update slide position and scale content to fit
-        // ==============================================
-
-        updateSlide : function( slide, andContent ) {
-
-            var self  = this;
-            var $what = slide.$placeholder;
-
-            slide = slide || self.current;
-
-            if ( !slide || self.isClosing ) {
-                return;
-            }
-
-            $.fancybox.setTranslate( slide.$slide, { left : ( slide.pos * Math.floor( slide.$slide.width() )  ) + ( slide.pos * slide.opts.gutter) } );
-
-            if ( andContent !== false && $what ) {
-                $.fancybox.setTranslate( $what, self.getFitPos( slide ) );
-            }
-
-            slide.$slide.trigger( 'refresh' );
-
-        },
-
-        // Update cursor style depending if content can be zoomed
-        // ======================================================
-
-        updateCursor : function( nextWidth, nextHeight ) {
-
-            var self = this;
-            var canScale;
-
-            var $container = self.$refs.container.removeClass('fancybox-controls--canzoomIn fancybox-controls--canzoomOut fancybox-controls--canGrab');
-
-            if ( self.isClosing || !self.opts.touch ) {
-                return;
-            }
-
-            if ( nextWidth !== undefined && nextHeight !== undefined ) {
-                canScale = nextWidth < self.current.width && nextHeight < self.current.height;
-
-            } else {
-                canScale = self.isScaledDown();
-            }
-
-            if ( canScale ) {
-                $container.addClass('fancybox-controls--canzoomIn');
-
-            } else if ( self.group.length < 2 ) {
-                $container.addClass('fancybox-controls--canzoomOut');
-
-            } else {
-                $container.addClass('fancybox-controls--canGrab');
-            }
-
-        },
-
-        // Load content into the slide
-        // ===========================
-
-        loadSlide : function( slide ) {
-
-            var self = this, type, $slide;
-            var ajaxLoad;
-
-            if ( !slide ) {
-                return false;
-            }
-
-            if ( slide.isLoading ) {
-                return;
-            }
-
-            self.trigger( 'beforeLoad', slide );
-
-            type	= slide.type;
-            $slide	= slide.$slide;
-
-            $slide
-                .unbind( 'refresh' )
-                .trigger( 'onReset' )
-                .addClass( 'fancybox-slide--' + ( type || 'unknown' ) )
-                .addClass( slide.opts.slideClass );
-
-            slide.isLoading = true;
-
-            // Create content depending on the type
-
-            switch ( type ) {
-
-                case 'image':
-
-                    self.setImage( slide );
-
-                break;
-
-                case 'iframe':
-
-                    self.setIframe( slide );
-
-                break;
-
-                case 'html':
-
-                    self.setContent( slide, slide.content );
-
-                break;
-
-                case 'inline':
-
-                    if ( $( slide.src ).length ) {
-                        self.setContent( slide, $( slide.src ) );
-
-                    } else {
-                        self.setError( slide );
-
-                    }
-
-                break;
-
-                case 'ajax':
-
-                    self.showLoading( slide );
-
-                    ajaxLoad = $.ajax( $.extend( {}, slide.opts.ajax.settings, {
-
-                        url: slide.src,
-
-                        success: function ( data, textStatus ) {
-
-                            if ( textStatus === 'success' ) {
-                                self.setContent( slide, data );
-
-                            }
-
-                        },
-
-                        error: function ( jqXHR, textStatus ) {
-
-                            if ( jqXHR && textStatus !== 'abort' ) {
-                                self.setError( slide );
-
-                            }
-
-                        }
-
-                    }));
-
-                    $slide.one( 'onReset', function () {
-
-                        ajaxLoad.abort();
-
-                    });
-
-                break;
-
-                default:
-
-                    self.setError( slide );
-
-                break;
-
-            }
-
-            return true;
-
-        },
-
-
-        // Use thumbnail image, if possible
-        // ================================
-
-        setImage : function( slide ) {
-
-            var self = this;
-
-            if ( slide.isLoaded && !slide.hasError ) {
-                self.afterLoad( slide );
-
-                return;
-            }
-
-            slide.$placeholder = $('<div class="fancybox-placeholder"></div>').hide().prependTo( slide.$slide );
-
-            if ( slide.opts.preload !== false && slide.opts.width && slide.opts.height && ( slide.opts.thumb || slide.opts.$thumb ) ) {
-
-                slide.width  = slide.opts.width;
-                slide.height = slide.opts.height;
-
-                slide.$ghost = $('<img />')
-                    .addClass( 'fancybox-image' )
-                    .one('load error', function() {
-
-                        if ( self.isClosing ) {
-                            return;
-                        }
-
-                        $( this ).appendTo( slide.$placeholder );
-
-                        // Start preloading full size image
-                        $('<img/>')[0].src = slide.src;
-
-                        // Check if we can perform zoom-in animation
-                        if ( !self.allowZoomIn || !( slide.index === self.currIndex && self.zoomIn() ) ) {
-
-                            self.isOpening = false;
-
-                            self.updateSlide( slide, true );
-
-                            slide.$placeholder.show();
-
-                            self.setBigImage( slide );
-
-                        }
-
-                    })
-                    .attr( 'src', slide.opts.thumb || slide.opts.$thumb.attr( 'src' ) );
-
-            } else {
-
-                self.setBigImage( slide );
-
-            }
-
-        },
-
-
-        // Create full-size image
-        // ======================
-
-        setBigImage : function ( slide ) {
-
-            var self = this;
-            var $img = $('<img />');
-
-            if ( slide.opts.image.protect ) {
-                $('<div class="fancybox-spaceball"></div>').appendTo( slide.$placeholder );
-            }
-
-            $img.one('error', function() {
-
-                self.setError( slide );
-
-            }).one('load', function() {
-
-                if ( self.isClosing ) {
-                    return;
-                }
-
-                slide.$image = $img.addClass('fancybox-image').appendTo( slide.$placeholder );
-
-                slide.width  = this.naturalWidth;
-                slide.height = this.naturalHeight;
-
-                self.afterLoad( slide );
-
-                if ( slide.$ghost ) {
-
-                    slide.timouts = setTimeout(function() {
-                        slide.$ghost.hide();
-                    }, 300);
-
-                }
-
-            }).attr('src', slide.src);
-
-            if ( $img[0].complete ) {
-                  $img.trigger('load');
-
-            } else if( $img[0].error ) {
-                 $img.trigger('error');
-
-            } else {
-
-                slide.timouts = setTimeout(function() {
-
-                    if ( !$img[0].complete ) {
-                        self.showLoading( slide );
-                    }
-
-                }, 150);
-
-            }
-
-        },
-
-        // Simply show image holder without animation
-        // It has been hidden initially to avoid flickering
-        // ================================================
-
-        revealImage : function( slide ) {
-
-            if ( slide.$placeholder ) {
-                slide.$placeholder.show();
-
-                if ( slide.index === this.currIndex ) {
-                    this.updateCursor();
-                }
-            }
-
-        },
-
-        // Create iframe wrapper, iframe and bindings
-        // ==========================================
-
-        setIframe : function( slide ) {
-            var self	= this,
-                opts    = slide.opts.iframe,
-                $slide	= slide.$slide,
-                $iframe;
-
-            slide.$content = $('<div class="fancybox-content"></div>')
-                .css( opts.css )
-                .appendTo( $slide );
-
-            $iframe = $( opts.tpl.replace(/\{rnd\}/g, new Date().getTime()) )
-                .attr('scrolling', $.fancybox.isTouch ? 'auto' : opts.scrolling)
-                .appendTo( slide.$content );
-
-            if ( opts.preload ) {
-                slide.$content.addClass( 'fancybox-tmp' );
-
-                self.showLoading( slide );
-
-                // Unfortunately, it is not always possible to determine if iframe is successfully loaded
-                // (due to browser security policy)
-
-                $iframe.on('load.fb error.fb', function(e) {
-                    this.isReady = 1;
-
-                    slide.$slide.trigger( 'refresh' );
-
-                    self.afterLoad( slide );
-
-                });
-
-                // Recalculate iframe content size
-
-                $slide.on('refresh.fb', function() {
-                    var $wrap = slide.$content,
-                        $contents,
-                        $body,
-                        scrollWidth,
-                        frameWidth,
-                        frameHeight;
-
-                    if ( $iframe[0].isReady !== 1 ) {
-                        return;
-                    }
-
-                    // Check if content is accessible,
-                    // it will fail if frame is not with the same origin
-
-                    try {
-                        $contents	= $iframe.contents();
-                        $body		= $contents.find('body');
-
-                    } catch (ignore) {}
-
-                    // Calculate dimensions for the wrapper
-
-                    if ( $body && $body.length && !( opts.css.width !== undefined && opts.css.height !== undefined ) ) {
-
-                        scrollWidth = $iframe[0].contentWindow.document.documentElement.scrollWidth;
-
-                        frameWidth	= Math.ceil( $body.outerWidth(true) + ( $wrap.width() - scrollWidth ) );
-                        frameHeight	= Math.ceil( $body.outerHeight(true) );
-
-                        // Resize wrapper to fit iframe content
-
-                        $wrap.css({
-                            'width'  : opts.css.width  === undefined ? frameWidth  + ( $wrap.outerWidth()  - $wrap.innerWidth() )  : opts.css.width,
-                            'height' : opts.css.height === undefined ? frameHeight + ( $wrap.outerHeight() - $wrap.innerHeight() ) : opts.css.height
-                        });
-
-                    }
-
-                    $wrap.removeClass( 'fancybox-tmp' );
-
-                });
-
-            } else {
-
-                this.afterLoad( slide );
-
-            }
-
-            $iframe.attr( 'src', slide.src );
-
-            if ( slide.opts.smallBtn ) {
-                slide.$content.prepend( slide.opts.closeTpl );
-            }
-
-            // Remove iframe if closing or changing gallery item
-
-            $slide.one('onReset', function () {
-
-                // This helps IE not to throw errors when closing
-
-                try {
-
-                    $(this).find('iframe').hide().attr('src', '//about:blank');
-
-                } catch (ignore) {}
-
-                $(this).empty();
-
-            });
-
-        },
-
-
-        // Wrap and append content to the slide
-        // ======================================
-
-        setContent : function ( slide, content ) {
-
-            var self = this;
-
-            if ( self.isClosing ) {
-                return;
-            }
-
-            self.hideLoading( slide );
-
-            slide.$slide.empty();
-
-            if ( isQuery( content ) && content.parent().length ) {
-
-                // If it is a jQuery object, then it will be moved to the box.
-                // The placeholder is created so we will know where to put it back.
-                // If user is navigating gallery fast, then the content might be already moved to the box
-
-                if ( content.data( 'placeholder' ) ) {
-                    content.parents('.fancybox-slide').trigger( 'onReset' );
-                }
-
-                content.data({'placeholder' : $('<div></div>' ).hide().insertAfter( content ) }).css('display', 'inline-block');
-
-            } else {
-
-                if ( $.type( content ) === 'string' ) {
-
-                    content = $('<div>').append( content ).contents();
-
-                    if ( content[0].nodeType === 3 ) {
-                        content = $('<div>').html( content );
-                    }
-
-                }
-
-                if ( slide.opts.selector ) {
-                    content = $('<div>').html( content ).find( slide.opts.selector );
-                }
-
-            }
-
-            slide.$slide.one('onReset', function () {
-                var placeholder = isQuery( content ) ? content.data('placeholder') : 0;
-
-                if ( placeholder ) {
-                    content.hide().replaceAll( placeholder );
-
-                    content.data( 'placeholder', null );
-                }
-
-                $(this).empty();
-
-                slide.isLoaded = false;
-
-            });
-
-            slide.$content = $( content ).appendTo( slide.$slide );
-
-            if ( slide.opts.smallBtn === true ) {
-                slide.$content.find( '.fancybox-close-small' ).remove().end().eq(0).append( slide.opts.closeTpl );
-            }
-
-            this.afterLoad( slide );
-
-        },
-
-        // Display error message
-        // =====================
-
-        setError : function ( slide ) {
-
-            slide.hasError = true;
-
-            this.setContent( slide, slide.opts.errorTpl );
-
-        },
-
-
-        showLoading : function( slide ) {
-            var self = this;
-
-            slide = slide || self.current;
-
-            if ( slide && !slide.$spinner ) {
-                slide.$spinner = $( self.opts.spinnerTpl ).appendTo( slide.$slide );
-            }
-
-        },
-
-        hideLoading : function( slide ) {
-
-            var self = this;
-
-            slide = slide || self.current;
-
-            if ( slide && slide.$spinner ) {
-                slide.$spinner.remove();
-
-                delete slide.$spinner;
-            }
-
-        },
-
-        afterMove : function() {
-
-            var self    = this;
-            var current = self.current;
-
-            if ( !current ) {
-                return;
-            }
-
-            current.isMoved = true;
-
-            current.$slide.siblings().trigger( 'onReset' );
-
-            // Remove unnecessary slides
-            $.each( self.slides, function( key, slide ) {
-
-                // Leave current and neighbouring slides
-                if ( slide.pos < self.currPos - 1 || slide.pos > self.currPos + 1 ) {
-
-                    slide.$slide.remove();
-
-                    delete self.slides[ key ];
-
-                }
-
-            });
-
-            self.trigger( 'afterMove' );
-
-            if ( current.isLoaded ) {
-                self.complete();
-            }
-
-        },
-
-        // Adjustments after slide has been loaded
-        // =======================================
-
-        afterLoad : function( slide ) {
-
-            var self = this;
-
-            if ( self.isClosing ) {
-                return;
-            }
-
-            slide.isLoading = false;
-            slide.isLoaded  = true;
-
-            self.trigger( 'afterLoad', slide );
-
-            self.hideLoading( slide );
-
-            // Do not update in case we have $ghost element - user might have already zoomed/swiped
-            if ( !slide.$ghost ) {
-                self.updateSlide( slide, true );
-            }
-
-            if ( slide.index === self.currIndex ) {
-
-                if ( slide.isMoved ) {
-                    self.complete();
-
-                } else {
-                    self.revealImage( slide );
-                }
-
-                // Load next and previous image if needed
-                if ( self.slides[ self.currPos + 1 ] && self.slides[ self.currPos + 1 ].type === 'image' ) {
-                    self.loadSlide( self.slides[ self.currPos + 1 ] );
-                }
-
-                if ( self.slides[ self.currPos - 1 ] && self.slides[ self.currPos - 1 ].type === 'image' ) {
-                    self.loadSlide( self.slides[ self.currPos - 1 ] );
-                }
-
-            } else {
-                self.revealImage( slide );
-            }
-
-        },
-
-        // Final adjustments after current gallery item is moved to position
-        // and it`s content is loaded
-        // ==================================================================
-
-        complete : function() {
-
-            var self   = this;
-            var curent = self.current;
-
-            curent.isComplete = true;
-
-            if ( !(self.allowZoomIn && self.zoomIn() ) ) {
-
-                self.isOpening = false;
-
-                self.revealImage( curent );
-            }
-
-            curent.$slide.addClass('fancybox-slide--complete');
-
-            if ( self.opts.focus ) {
-                self.focus();
-            }
-
-            self.trigger( 'onComplete' );
-
-        },
-
-
-        // Try to find and focus on the first focusable element
-        // ====================================================
-
-        focus : function() {
-
-            var $el = this.current && this.current.isComplete ? this.current.$slide.find('button,:input,[tabindex],a:not(".disabled")').filter(':visible:first') : null;
-
-            if ( !$el || !$el.length ) {
-                $el = this.$refs.container;
-
-            }
-
-            $el.focus();
-
-            // Scroll position of wrapper element sometimes changes after focusing (IE)
-            this.$refs.slider_wrap.scrollLeft(0);
-
-            // And the same goes for slide element
-            if ( this.current ) {
-                this.current.$slide.scrollTop(0);
-            }
-        },
-
-
-        // Activates current instance - brings container to the front and enables keyboard,
-        // notifies other instances about deactivating
-        // =================================================================================
-
-        activate : function () {
-            var self = this;
-
-            // Deactivate all instances
-
-            $( '.fancybox-container' ).each(function () {
-
-                var instance = $(this).data( 'FancyBox' );
-
-                // Skip self and closing instances
-
-                if (instance && instance.uid !== self.uid && !instance.isClosing) {
-                    instance.trigger( 'onDeactivate' );
-                }
-
-            });
-
-            if ( self.current ) {
-
-                if ( self.$refs.container.index() > 0 ) {
-                    self.$refs.container.prependTo( document.body );
-                }
-
-                self.updateControls();
-            }
-
-            self.trigger( 'onActivate' );
-
-            self.addEvents();
-
-        },
-
-
-        // Start closing procedure
-        // This will start "zoom-out" animation if needed and clean everything up afterwards
-        // =================================================================================
-
-        close : function( e ) {
-
-            var self    = this;
-            var current = self.current;
-
-            var done = $.proxy(function() {
-
-                self.cleanUp( e );  // Now "this" is again our instance
-
-            }, this);
-
-            if ( self.isAnimating || self.isClosing ) {
-                return false;
-            }
-
-            self.isClosing = true;
-
-            if ( current.timouts ) {
-                clearTimeout( current.timouts );
-            }
-
-            if ( e !== true) {
-                $.fancybox.stop( self.$refs.slider );
-            }
-
-            self.$refs.container
-                .removeClass('fancybox-container--active')
-                .addClass('fancybox-container--closing');
-
-            current.$slide
-                .removeClass('fancybox-slide--complete')
-                .siblings()
-                .remove();
-
-
-            if ( !current.isMoved ) {
-                current.$slide.css('overflow', 'visible');
-            }
-
-            // Remove all events
-            // If there are multiple instances, they will be set again by "activate" method
-
-            self.removeEvents();
-
-            // Clean up
-
-            self.hideLoading( current );
-
-            self.hideControls();
-
-            self.updateCursor();
-
-            self.trigger( 'beforeClose', current, e );
-
-            if ( e === true) {
-                setTimeout( done, current.opts.speed );
-
-                this.$refs.container.removeClass( 'fancybox-container--ready' );
-
-            } else if ( !self.zoomOut( done ) ) {
-
-                $.fancybox.animate( self.$refs.container, null, { opacity : 0 }, current.opts.speed, "easeInSine", done );
-
-            }
-
-        },
-
-
-        // Final adjustments after removing the instance
-        // =============================================
-
-        cleanUp : function( e ) {
-            var self = this,
-                instance;
-
-            self.$refs.slider.children().trigger( 'onReset' );
-
-            self.$refs.container.empty().remove();
-
-            self.current = null;
-
-            self.trigger( 'afterClose', e);
-
-            // Check if there are other instances
-
-            instance = $.fancybox.getInstance();
-
-            if ( instance ) {
-                instance.activate();
-
-            } else {
-
-                $( 'body' ).removeClass( 'fancybox-enabled' );
-
-                $( '#fancybox-noscroll' ).remove();
-
-            }
-
-            // Place back focus
-            if ( self.$lastFocus ) {
-                self.$lastFocus.focus();
-            }
-
-            $W.scrollTop( self.scrollTop ).scrollLeft( self.scrollLeft );
-
-        },
-
-
-        // Call callback and trigger an event
-        // ==================================
-
-        trigger : function( name, slide ) {
-            var args  = Array.prototype.slice.call(arguments, 1),
-                self  = this,
-                obj   = slide && slide.opts ? slide : self.current;
-
-            if ( obj ) {
-                args.unshift( obj );
-
-            } else {
-                obj = self;
-            }
-
-            args.unshift( self );
-
-            if ( $.isFunction( obj.opts[ name ] ) ) {
-                obj.opts[ name ].apply( obj, args );
-            }
-
-            self.$refs.container.trigger( name + '.fb', args);
-
-        },
-
-
-        // Toggle toolbar and caption
-        // ==========================
-
-        toggleControls : function( force ) {
-
-            if ( this.isHiddenControls ) {
-                this.updateControls( force );
-
-            } else {
-                this.hideControls();
-            }
-
-
-        },
-
-
-        // Hide toolbar and caption
-        // ========================
-
-        hideControls : function () {
-
-            this.isHiddenControls = true;
-
-            this.$refs.container.removeClass('fancybox-show-controls');
-
-            this.$refs.container.removeClass('fancybox-show-caption');
-
-        },
-
-
-        // Update infobar values, navigation button states and reveal caption
-        // ==================================================================
-
-        updateControls : function ( force ) {
-
-            var self = this;
-
-            var $container = self.$refs.container;
-            var $caption   = self.$refs.caption;
-
-            // Toggle infobar and buttons
-
-            var current  = self.current;
-            var index    = current.index;
-            var opts     = current.opts;
-            var caption  = opts.caption;
-
-            if ( this.isHiddenControls && force !== true ) {
-                return;
-            }
-
-            this.isHiddenControls = false;
-
-            self.$refs.container.addClass('fancybox-show-controls');
-
-            $container
-                .toggleClass('fancybox-show-infobar', !!opts.infobar && self.group.length > 1)
-                .toggleClass('fancybox-show-buttons', !!opts.buttons )
-                .toggleClass('fancybox-is-modal',     !!opts.modal );
-
-            $('.fancybox-button--left',  $container).toggleClass( 'fancybox-button--disabled', (!opts.loop && index <= 0 ) );
-            $('.fancybox-button--right', $container).toggleClass( 'fancybox-button--disabled', (!opts.loop && index >= self.group.length - 1) );
-
-            $('.fancybox-button--play',  $container).toggle( !!( opts.slideShow && self.group.length > 1) );
-            $('.fancybox-button--close', $container).toggle( !!opts.closeBtn );
-
-            // Update infobar values
-
-            $('.js-fancybox-count', $container).html( self.group.length );
-            $('.js-fancybox-index', $container).html( index + 1 );
-
-            // Recalculate content dimensions
-            current.$slide.trigger( 'refresh' );
-
-            // Reveal or create new caption
-            if ( $caption ) {
-                $caption.empty();
-            }
-
-            if ( caption && caption.length ) {
-                $caption.html( caption );
-
-                this.$refs.container.addClass( 'fancybox-show-caption ');
-
-                self.$caption = $caption;
-
-            } else {
-                this.$refs.container.removeClass( 'fancybox-show-caption' );
-
-            }
-
-        }
-
-    });
-
-
-    $.fancybox = {
-
-        version  : "3.0.17",
-        defaults : defaults,
-
-
-        // Get current instance and execute a command.
-        //
-        // Examples of usage:
-        //
-        //   $instance = $.fancybox.getInstance();
-        //   $.fancybox.getInstance().jumpTo( 1 );
-        //   $.fancybox.getInstance( 'jumpTo', 1 );
-        //   $.fancybox.getInstance( function() {
-        //       console.info( this.currIndex );
-        //   });
-        // ======================================================
-
-        getInstance : function ( command ) {
-            var instance = $('.fancybox-container:not(".fancybox-container--closing"):first').data( 'FancyBox' );
-            var args     = Array.prototype.slice.call(arguments, 1);
-
-            if ( instance instanceof FancyBox ) {
-
-                if ( $.type( command ) === 'string' ) {
-                    instance[ command ].apply( instance, args );
-
-                } else if ( $.type( command ) === 'function' ) {
-                    command.apply( instance, args );
-
-                }
-
-                return instance;
-            }
-
-            return false;
-
-        },
-
-
-        // Create new instance
-        // ===================
-
-        open : function ( items, opts, index ) {
-            return new FancyBox( items, opts, index );
-        },
-
-
-        // Close current or all instances
-        // ==============================
-
-        close : function ( all ) {
-            var instance = this.getInstance();
-
-            if ( instance ) {
-                instance.close();
-
-                // Try to find and close next instance
-
-                if ( all === true ) {
-                    this.close();
-                }
-            }
-
-        },
-
-
-        // Test for the existence of touch events in the browser
-        // =====================================================
-
-        isTouch : document.createTouch !== undefined,
-
-
-        // Detect if 'translate3d' support is available
-        // ============================================
-
-        use3d : (function() {
-            var div = document.createElement('div');
-
-            return window.getComputedStyle( div ).getPropertyValue('transform') && !(document.documentMode && document.documentMode <= 11);
-        }()),
-
-
-        // Helper function to get current visual state of an element
-        // returns array[ top, left, horizontal-scale, vertical-scale, opacity ]
-        // =====================================================================
-
-        getTranslate : function( $el ) {
-            var position, matrix;
-
-            if ( !$el || !$el.length ) {
-                return false;
-            }
-
-            position = $el.get( 0 ).getBoundingClientRect();
-            matrix   = $el.eq( 0 ).css('transform');
-
-            if ( matrix && matrix.indexOf( 'matrix' ) !== -1 ) {
-                matrix = matrix.split('(')[1];
-                matrix = matrix.split(')')[0];
-                matrix = matrix.split(',');
-            } else {
-                matrix = [];
-            }
-
-            if ( matrix.length ) {
-
-                // If IE
-                if ( matrix.length > 10 ) {
-                    matrix = [ matrix[13], matrix[12], matrix[0], matrix[5] ];
-
-                } else {
-                    matrix = [ matrix[5], matrix[4], matrix[0], matrix[3]];
-                }
-
-                matrix = matrix.map(parseFloat);
-
-            } else {
-                matrix = [ 0, 0, 1, 1 ];
-            }
-
-            return {
-                top     : matrix[ 0 ],
-                left    : matrix[ 1 ],
-                scaleX  : matrix[ 2 ],
-                scaleY  : matrix[ 3 ],
-                opacity : parseFloat( $el.css('opacity') ),
-                width   : position.width,
-                height  : position.height
-            };
-
-        },
-
-
-        // Shortcut for setting "translate3d" properties for element
-        // Can set be used to set opacity, too
-        // ========================================================
-
-        setTranslate : function( $el, props ) {
-            var str  = '';
-            var css  = {};
-
-            if ( !$el || !props ) {
-                return;
-            }
-
-            if ( props.left !== undefined || props.top !== undefined ) {
-
-                str = ( props.left === undefined ? $el.position().top : props.left )  + 'px, ' + ( props.top === undefined ? $el.position().top : props.top ) + 'px';
-
-                if ( this.use3d ) {
-                    str = 'translate3d(' + str + ', 0px)';
-
-                } else {
-                    str = 'translate(' + str + ')';
-                }
-
-            }
-
-            if ( props.scaleX !== undefined && props.scaleY !== undefined ) {
-                str = (str.length ? str + ' ' : '') + 'scale(' + props.scaleX + ', ' + props.scaleY + ')';
-            }
-
-            if ( str.length ) {
-                css.transform = str;
-            }
-
-            if ( props.opacity !== undefined ) {
-                css.opacity = props.opacity;
-            }
-
-            if ( props.width !== undefined ) {
-                css.width = props.width;
-            }
-
-            if ( props.height !== undefined ) {
-                css.height = props.height;
-            }
-
-            return $el.css( css );
-
-        },
-
-
-        // Common easings for entrances and exits
-        // t: current time, b: begInnIng value, c: change In value, d: duration
-        // ====================================================================
-
-        easing : {
-            easeOutCubic : function (t, b, c, d) {
-                return c * ((t=t/d-1)*t*t + 1) + b;
-            },
-            easeInCubic : function (t, b, c, d) {
-                return c * (t/=d)*t*t + b;
-            },
-            easeOutSine : function (t, b, c, d) {
-                return c * Math.sin(t/d * (Math.PI/2)) + b;
-            },
-            easeInSine : function (t, b, c, d) {
-                return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
-            }
-        },
-
-
-        // Stop fancyBox animation
-        // =======================
-
-        stop : function( $el ) {
-
-            $el.removeData( 'animateID' );
-
-        },
-
-        // Animate element using "translate3d"
-        // Usage:
-        // animate( element, start properties, end properties, duration, easing, callback )
-        // or
-        // animate( element, start properties, end properties, duration, callback )
-        // =================================================================================
-
-        animate : function( $el, from, to, duration, easing, done ) {
-
-            var self = this;
-
-            var lastTime  = null;
-            var animTime  = 0;
-
-            var curr;
-            var diff;
-            var id;
-
-            var frame = function ( timestamp ) {
-                curr = [];
-                diff = 0;
-
-                // If "stop" method has been called on this element, then just stop
-                if ( !$el.length || $el.data( 'animateID' ) !== id ) {
-                    return;
-                }
-
-                timestamp = timestamp || Date.now();
-
-                if ( lastTime ) {
-                    diff = timestamp - lastTime;
-                }
-
-                lastTime = timestamp;
-                animTime += diff;
-
-                // Are we done?
-                if ( animTime >= duration ) {
-
-                    if ( to.scaleX !== undefined && to.scaleY !== undefined && from.width !== undefined && from.height !== undefined ) {
-                        to.width  = from.width  * to.scaleX;
-                        to.height = from.height * to.scaleY;
-
-                        to.scaleX = 1;
-                        to.scaleY = 1;
-                    }
-
-                    self.setTranslate( $el, to );
-
-                    done();
-
-                    return;
-                }
-
-                for ( var prop in to ) {
-
-                    if ( to.hasOwnProperty( prop ) && from[ prop ] !== undefined ) {
-
-                        if ( from[ prop ] == to[ prop ] ) {
-                            curr[ prop ] = to[ prop ];
-
-                        } else {
-                            curr[ prop ] = self.easing[ easing ]( animTime, from[ prop ], to[ prop ] - from[ prop ], duration );
-                        }
-
-                    }
-                }
-
-                self.setTranslate( $el, curr );
-
-                requestAFrame( frame );
-            };
-
-            self.animateID = id = self.animateID === undefined ? 1 : self.animateID + 1;
-
-            $el.data( 'animateID', id );
-
-            if ( done === undefined && $.type(easing) == 'function' ) {
-                done   = easing;
-                easing = undefined;
-            }
-
-            if ( !easing ) {
-                easing = "easeOutCubic";
-            }
-
-            done = done || $.noop;
-
-            if ( !duration ) {
-                this.setTranslate( $el, to );
-
-                done();
-
-                return;
-            }
-
-            if ( from ) {
-                this.setTranslate( $el, from );
-
-
-            } else {
-
-                // We need current values to calculate change in time
-                from = this.getTranslate( $el );
-
-            }
-
-            $el.show();
-
-            requestAFrame( frame );
-        }
-
-    };
-
-
-    // Event handler for click event to "fancyboxed" links
-    // ===================================================
-
-    function _run( e ) {
-        var target	= e.currentTarget,
-            opts	= e.data ? e.data.options : {},
-            items	= e.data ? e.data.items : [],
-            value	= '',
-            index	= 0;
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        // Get all related items and find index for clicked one
-
-        if ( $(target).attr( 'data-fancybox' ) ) {
-            value = $(target).data( 'fancybox' );
-        }
-
-        if ( value ) {
-            items = items.length ? items.filter( '[data-fancybox="' + value + '"]' ) : $( '[data-fancybox=' + value + ']' );
-            index = items.index( target );
-
-        } else {
-            items = [ target ];
-        }
-
-        $.fancybox.open( items, opts, index );
-    }
-
-
-    // Create a jQuery plugin
-    // ======================
-
-    $.fn.fancybox = function (options) {
-
-        this.off('click.fb-start').on('click.fb-start', {
-            items   : this,
-            options : options || {}
-        }, _run);
-
-        return this;
-
-    };
-
-
-    // Self initializing plugin
-    // ========================
-
-    $(document).on('click.fb-start', '[data-fancybox]', _run);
-
-}(window, document, __webpack_provided_window_dot_jQuery));
-
-// ==========================================================================
-//
-// Media
-// Adds additional media type support
-//
-// ==========================================================================
-;(function ($) {
-
-	'use strict';
-
-	// Formats matching url to final form
-
-	var format = function (url, rez, params) {
-		if (!url) {
-			return;
-		}
-		params = params || '';
-
-		if ($.type(params) === "object") {
-			params = $.param(params, true);
-		}
-
-		$.each(rez, function (key, value) {
-			url = url.replace('$' + key, value || '');
-		});
-
-		if (params.length) {
-			url += (url.indexOf('?') > 0 ? '&' : '?') + params;
-		}
-
-		return url;
-	};
-
-	// Object containing properties for each media type
-
-	var media = {
-		youtube: {
-			matcher: /(youtube\.com|youtu\.be|youtube\-nocookie\.com)\/(watch\?(.*&)?v=|v\/|u\/|embed\/?)?(videoseries\?list=(.*)|[\w-]{11}|\?listType=(.*)&list=(.*))(.*)/i,
-			params: {
-				autoplay: 1,
-				autohide: 1,
-				fs: 1,
-				rel: 0,
-				hd: 1,
-				wmode: 'transparent',
-				enablejsapi: 1,
-				html5: 1
-			},
-			paramPlace : 8,
-			type: 'iframe',
-			url: '//www.youtube.com/embed/$4',
-			thumb: '//img.youtube.com/vi/$4/hqdefault.jpg'
-		},
-
-		vimeo: {
-			matcher: /((player\.)?vimeo(pro)?\.com)\/(video\/)?([\d]+)?(\?(.*))?/,
-			params: {
-				autoplay: 1,
-				hd: 1,
-				show_title: 1,
-				show_byline: 1,
-				show_portrait: 0,
-				fullscreen: 1,
-				api: 1
-			},
-			paramPlace : 7,
-			type: 'iframe',
-			url: '//player.vimeo.com/video/$5'
-		},
-
-		metacafe: {
-			matcher: /metacafe.com\/watch\/(\d+)\/(.*)?/,
-			type: 'iframe',
-			url: '//www.metacafe.com/embed/$1/?ap=1'
-		},
-
-		dailymotion: {
-			matcher: /dailymotion.com\/video\/(.*)\/?(.*)/,
-			params: {
-				additionalInfos: 0,
-				autoStart: 1
-			},
-			type: 'iframe',
-			url: '//www.dailymotion.com/embed/video/$1'
-		},
-
-		vine: {
-			matcher: /vine.co\/v\/([a-zA-Z0-9\?\=\-]+)/,
-			type: 'iframe',
-			url: '//vine.co/v/$1/embed/simple'
-		},
-
-		instagram: {
-			matcher: /(instagr\.am|instagram\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,
-			type: 'image',
-			url: '//$1/p/$2/media/?size=l'
-		},
-
-		// Examples:
-		// http://maps.google.com/?ll=48.857995,2.294297&spn=0.007666,0.021136&t=m&z=16
-		// http://maps.google.com/?ll=48.857995,2.294297&spn=0.007666,0.021136&t=m&z=16
-		// https://www.google.lv/maps/place/Googleplex/@37.4220041,-122.0833494,17z/data=!4m5!3m4!1s0x0:0x6c296c66619367e0!8m2!3d37.4219998!4d-122.0840572
-		google_maps: {
-			matcher: /(maps\.)?google\.([a-z]{2,3}(\.[a-z]{2})?)\/(((maps\/(place\/(.*)\/)?\@(.*),(\d+.?\d+?)z))|(\?ll=))(.*)?/i,
-			type: 'iframe',
-			url: function (rez) {
-				return '//maps.google.' + rez[2] + '/?ll=' + ( rez[9] ? rez[9] + '&z=' + Math.floor(  rez[10]  ) + ( rez[12] ? rez[12].replace(/^\//, "&") : '' )  : rez[12] ) + '&output=' + ( rez[12] && rez[12].indexOf('layer=c') > 0 ? 'svembed' : 'embed' );
-			}
-		}
-	};
-
-	$(document).on('onInit.fb', function (e, instance) {
-
-		$.each(instance.group, function( i, item ) {
-
-			var url	 = item.src || '',
-				type = false,
-				thumb,
-				rez,
-				params,
-				urlParams,
-				o,
-				id,
-				provider;
-
-			// Skip items that already have content type
-			if ( item.type ) {
-				return;
-			}
-
-			// Look for any matching media type
-
-			$.each(media, function ( n, el ) {
-				rez = url.match(el.matcher);
-				o   = {};
-				provider = n;
-
-				if (!rez) {
-					return;
-				}
-
-				type = el.type;
-
-				if ( el.paramPlace && rez[ el.paramPlace ] ) {
-					urlParams = rez[ el.paramPlace ];
-
-					if ( urlParams[ 0 ] == '?') {
-						urlParams = urlParams.substring(1);
-					}
-
-					urlParams = urlParams.split('&');
-
-					for ( var m = 0; m < urlParams.length; ++m ) {
-						var p = urlParams[ m ].split('=', 2);
-
-						if ( p.length == 2 ) {
-							o[ p[0] ] = decodeURIComponent( p[1].replace(/\+/g, " ") );
-						}
-					}
-				}
-
-				if ( el.idPlace ) {
-					id = rez[ el.idPlace ];
-				}
-
-				params = $.extend( true, {}, el.params, item.opts[ n ], o );
-
-				url   = $.type(el.url) === "function" ? el.url.call(this, rez, params, item) : format(el.url, rez, params);
-				thumb = $.type(el.thumb) === "function" ? el.thumb.call(this, rez, params, item) : format(el.thumb, rez);
-
-				return false;
-			});
-
-			// If it is found, then change content type and update the url
-
-			if ( type ) {
-				item.src  = url;
-				item.type = type;
-
-				if ( !item.opts.thumb && !(item.opts.$thumb && item.opts.$thumb.length ) ) {
-					item.opts.thumb = thumb;
-				}
-
-				if ( id ) {
-					item.opts.id = provider + '-' + id;
-				}
-
-				if ( type === 'iframe' ) {
-					$.extend(true, item.opts, {
-						iframe : {
-							preload   : false,
-							scrolling : "no"
-						},
-						smallBtn   : false,
-						closeBtn   : true,
-						fullScreen : false,
-						slideShow  : false
-					});
-
-					item.opts.slideClass += ' fancybox-slide--video';
-				}
-
-			} else {
-
-				// If no content type is found, then set it to `iframe` as fallback
-				item.type = 'iframe';
-
-			}
-
-		});
-
-	});
-
-}(__webpack_provided_window_dot_jQuery));
-
-// ==========================================================================
-//
-// Guestures
-// Adds touch guestures, handles click and tap events
-//
-// ==========================================================================
-;(function (window, document, $) {
-	'use strict';
-
-	var requestAFrame = (function() {
-		return  window.requestAnimationFrame ||
-				window.webkitRequestAnimationFrame ||
-				window.mozRequestAnimationFrame ||
-				function( callback ) {
-					window.setTimeout(callback, 1000 / 60); };
-				})();
-
-
-	var pointers = function( e ) {
-		var result = [];
-
-		e = e.originalEvent || e || window.e;
-		e = e.touches && e.touches.length ? e.touches : ( e.changedTouches && e.changedTouches.length ? e.changedTouches : [ e ] );
-
-		for ( var key in e ) {
-
-			if ( e[ key ].pageX ) {
-				result.push( { x : e[ key ].pageX, y : e[ key ].pageY } );
-
-			} else if ( e[ key ].clientX ) {
-				result.push( { x : e[ key ].clientX, y : e[ key ].clientY } );
-			}
-		}
-
-		return result;
-	};
-
-	var distance = function( point2, point1, what ) {
-
-		if ( what === 'x' ) {
-			return point2.x - point1.x;
-
-		} else if ( what === 'y' ) {
-			return point2.y - point1.y;
-		}
-
-		return Math.sqrt( Math.pow( point2.x - point1.x, 2 ) + Math.pow( point2.y - point1.y, 2 ) );
-
-	};
-
-	var isClickable = function( $el ) {
-
-	 	return $el.is('a') || $el.is('button') || $el.is('input') || $el.is('select') || $el.is('textarea') || $.isFunction( $el.get(0).onclick );
-
-	};
-
-	var hasScrollbars = function( el ) {
-		var overflowY = window.getComputedStyle( el )['overflow-y'];
-		var overflowX = window.getComputedStyle( el )['overflow-x'];
-
-		var vertical   = (overflowY === 'scroll' || overflowY === 'auto') && el.scrollHeight > el.clientHeight;
-		var horizontal = (overflowX === 'scroll' || overflowX === 'auto') && el.scrollWidth > el.clientWidth;
-
-		return vertical || horizontal;
-	};
-
-	var isScrollable = function ( $el ) {
-
-		var rez = false;
-
-		while ( true ) {
-			rez	= hasScrollbars( $el.get(0) );
-
-			if ( rez ) {
-				break;
-			}
-
-			$el = $el.parent();
-
-			if ( !$el.length || $el.hasClass('fancybox-slider') || $el.is('body') ) {
-				break;
-			}
-
-		}
-
-		return rez;
-
-	};
-
-
-	var Guestures = function ( instance ) {
-
-		var self = this;
-
-		self.instance = instance;
-
-		self.$wrap       = instance.$refs.slider_wrap;
-		self.$slider     = instance.$refs.slider;
-		self.$container  = instance.$refs.container;
-
-		self.destroy();
-
-		self.$wrap.on('touchstart.fb mousedown.fb', $.proxy(self, "ontouchstart"));
-
-	};
-
-	Guestures.prototype.destroy = function() {
-
-		this.$wrap.off('touchstart.fb mousedown.fb touchmove.fb mousemove.fb touchend.fb touchcancel.fb mouseup.fb mouseleave.fb');
-
-	};
-
-
-	Guestures.prototype.ontouchstart = function( e ) {
-
-		var self = this;
-
-		var $target  = $( e.target );
-		var instance = self.instance;
-		var current  = instance.current;
-		var $content = current.$content || current.$placeholder;
-
-		var frame = function() {
-
-			if ( self.sliderNewPos ) {
-				$.fancybox.setTranslate( self.$slider, self.sliderNewPos );
-
-				self.sliderNewPos = null;
-			}
-
-			if ( self.contentNewPos ) {
-				$.fancybox.setTranslate( self.$content, self.contentNewPos );
-
-				self.contentNewPos = null;
-			}
-
-			if ( self.isSwiping || self.isPanning || self.isZooming ) {
-				requestAFrame( frame );
-			}
-
-		};
-
-		// Ignore taping on links, buttons and scrollable items
-		if ( isClickable( $target ) || isClickable( $target.parent() ) || ( isScrollable( $target ) && !$target.hasClass('fancybox-slide') ) ) {
-			return;
-		}
-
-		e.stopPropagation();
-		e.preventDefault();
-
-		if ( !current || self.instance.isAnimating || self.instance.isClosing ) {
-			return;
-		}
-
-		self.startPoints = pointers( e );
-
-		// Prevent zooming if already swiping
-		if ( self.startPoints.length > 1 && !current.isMoved ) {
-			return;
-		}
-
-		self.$wrap.off('touchmove.fb mousemove.fb',  $.proxy(self, "ontouchmove"));
-		self.$wrap.off('touchend.fb touchcancel.fb mouseup.fb mouseleave.fb',  $.proxy(self, "ontouchend"));
-
-		self.$wrap.on('touchmove.fb mousemove.fb',  $.proxy(self, "ontouchmove"));
-		self.$wrap.on('touchend.fb touchcancel.fb mouseup.fb mouseleave.fb',  $.proxy(self, "ontouchend"));
-
-		self.$target  = $target;
-		self.$content = $content;
-
-		self.startTime = new Date().getTime();
-		self.distanceX = self.distanceY = self.distance = 0;
-
-		self.canvasWidth  = Math.round( current.$slide.width() );
-		self.canvasHeight = Math.round( current.$slide.height() );
-
-		self.canTap    = current.isMoved;
-		self.isPanning = false;
-		self.isSwiping = false;
-		self.isZooming = false;
-
-		self.sliderStartPos = $.fancybox.getTranslate( self.$slider );
-		self.sliderNewPos   = null;
-
-		self.contentStartPos = $.fancybox.getTranslate( self.$content );
-		self.contentNewPos   = null;
-
-		if ( self.startPoints.length == 1 ) {
-
-			if ( current.type === 'image' && ( self.contentStartPos.width > self.canvasWidth + 1 || self.contentStartPos.height > self.canvasHeight + 1 ) ) {
-
-				$.fancybox.stop( self.$content );
-
-				self.isPanning = true;
-
-			} else {
-
-				$.fancybox.stop( self.$slider );
-
-				self.isSwiping = true;
-			}
-
-			self.$container.addClass('fancybox-controls--isGrabbing');
-
-		}
-
-		if ( current.type === 'image' && !current.hasError && self.startPoints.length == 2 && ( current.isLoaded || current.$ghost ) ) {
-
-			self.isZooming = true;
-			self.canTap    = false;
-
-			$.fancybox.stop( self.$content );
-
-			self.centerPointStartX = ((self.startPoints[0].x + self.startPoints[1].x) / 2) - $(window).scrollLeft();
-			self.centerPointStartY = ((self.startPoints[0].y + self.startPoints[1].y) / 2) - $(window).scrollTop();
-
-			self.percentageOfImageAtPinchPointX = ( self.centerPointStartX - self.contentStartPos.left ) / self.contentStartPos.width;
-			self.percentageOfImageAtPinchPointY = ( self.centerPointStartY - self.contentStartPos.top  ) / self.contentStartPos.height;
-
-			self.startDistanceBetweenFingers = distance( self.startPoints[0], self.startPoints[1] );
-
-		}
-
-		frame();
-	};
-
-	Guestures.prototype.ontouchmove = function( e ) {
-
-		var self = this;
-
-		e.preventDefault();
-
-		if ( self.instance.isAnimating ) {
-			return;
-		}
-
-		self.newPoints = pointers( e );
-
-		if ( !self.newPoints.length ) {
-			return;
-		}
-
-		self.distanceX = distance( self.newPoints[0], self.startPoints[0], 'x' );
-		self.distanceY = distance( self.newPoints[0], self.startPoints[0], 'y' );
-
-		self.distance = distance( self.newPoints[0], self.startPoints[0] );
-
-		// Skip false ontouchmove events (Chrome)
-		if ( self.distance > 0 ) {
-
-			if ( self.isSwiping ) {
-				self.onSwipe();
-
-			} else if ( self.isPanning ) {
-				self.onPan();
-
-			} else if ( self.isZooming ) {
-				self.onZoom();
-			}
-
-		}
-
-	};
-
-	Guestures.prototype.onSwipe = function() {
-
-		var self = this;
-
-		var swiping = self.isSwiping;
-		var angle;
-
-		if ( swiping === true ) {
-
-			if ( Math.abs( self.distance ) > 10 )  {
-
-				angle   = Math.abs( Math.atan2( self.distanceY, self.distanceX ) * 180 / Math.PI );
-				swiping = ( angle > 45 && angle < 135 ) || self.instance.group.length <= 1 ? 'y' : 'x';
-
-				if ( self.instance.opts.touch.vertical === false || ( self.instance.opts.touch.vertical === 'auto' && $( window ).width() > 800 ) ) {
-					swiping = 'x';
-				}
-
-				self.isSwiping = swiping;
-				self.canTap    = false;
-
-				self.instance.current.isMoved = false;
-				self.instance.allowZoomIn = false;
-
-				// Reset points to avoid jumping, because we dropped first swipes to calculate the angle
-				self.startPoints = self.newPoints;
-			}
-
-		} else {
-
-			self.sliderNewPos = {
-				top  : swiping == 'x' ? 0 : self.sliderStartPos.top  + self.distanceY,
-				left : swiping == 'y' ? self.sliderStartPos.left : self.sliderStartPos.left + self.distanceX
-			};
-
-		}
-
-	};
-
-	Guestures.prototype.onPan = function() {
-
-		var self = this;
-
-		var newOffsetX, newOffsetY, newPos;
-
-		self.canTap = false;
-
-		if ( self.contentStartPos.width > self.canvasWidth ) {
-			newOffsetX = self.contentStartPos.left + self.distanceX;
-
-		} else {
-			newOffsetX = self.contentStartPos.left;
-
-		}
-
-		newOffsetY = self.contentStartPos.top + self.distanceY;
-
-		newPos = self.limitMovement( newOffsetX, newOffsetY, self.contentStartPos.width, self.contentStartPos.height );
-
-		newPos.scaleX = self.contentStartPos.scaleX;
-		newPos.scaleY = self.contentStartPos.scaleY;
-
-		self.contentNewPos  = newPos;
-		self.contentLastPos = newPos;
-
-	};
-
-	// Make panning sticky to the edges
-	Guestures.prototype.limitMovement = function( newOffsetX, newOffsetY, newWidth, newHeight ) {
-
-		var self = this;
-
-		var minTranslateX, minTranslateY, maxTranslateX, maxTranslateY;
-
-		var canvasWidth  = self.canvasWidth;
-		var canvasHeight = self.canvasHeight;
-
-		var currentOffsetX = self.contentStartPos.left;
-		var currentOffsetY = self.contentStartPos.top;
-
-		var distanceX = self.distanceX;
-		var distanceY = self.distanceY;
-
-		// Slow down proportionally to traveled distance
-
-		minTranslateX = Math.max(0, canvasWidth  * 0.5 - newWidth  * 0.5 );
-		minTranslateY = Math.max(0, canvasHeight * 0.5 - newHeight * 0.5 );
-
-		maxTranslateX = Math.min( canvasWidth  - newWidth,  canvasWidth  * 0.5 - newWidth  * 0.5 );
-		maxTranslateY = Math.min( canvasHeight - newHeight, canvasHeight * 0.5 - newHeight * 0.5 );
-
-		if ( newWidth > canvasWidth ) {
-
-			//   ->
-			if ( distanceX > 0 && newOffsetX > minTranslateX ) {
-				newOffsetX = minTranslateX - 1 + Math.pow(-minTranslateX + currentOffsetX + distanceX, 0.8 ) || 0;
-			}
-
-			//    <-
-			if ( distanceX  < 0 && newOffsetX < maxTranslateX ) {
-				newOffsetX = maxTranslateX + 1 - Math.pow( maxTranslateX - currentOffsetX - distanceX, 0.8 ) || 0;
-			}
-
-		}
-
-		if ( newHeight > canvasHeight ) {
-
-			//   \/
-			if ( distanceY > 0 && newOffsetY > minTranslateY ) {
-				newOffsetY = minTranslateY - 1 + Math.pow(-minTranslateY + currentOffsetY + distanceY, 0.8 ) || 0;
-			}
-
-			//   /\
-			if ( distanceY < 0 && newOffsetY < maxTranslateY ) {
-				newOffsetY = maxTranslateY + 1 - Math.pow ( maxTranslateY - currentOffsetY - distanceY, 0.8 ) || 0;
-			}
-
-		}
-
-		return {
-			top  : newOffsetY,
-			left : newOffsetX
-		};
-
-	};
-
-
-	Guestures.prototype.limitPosition = function( newOffsetX, newOffsetY, newWidth, newHeight ) {
-
-		var self = this;
-
-		var canvasWidth  = self.canvasWidth;
-		var canvasHeight = self.canvasHeight;
-
-		if ( newWidth > canvasWidth ) {
-			newOffsetX = newOffsetX > 0 ? 0 : newOffsetX;
-			newOffsetX = newOffsetX < canvasWidth - newWidth ? canvasWidth - newWidth : newOffsetX;
-
-		} else {
-
-			// Center horizontally
-			newOffsetX = Math.max( 0, canvasWidth / 2 - newWidth / 2 );
-
-		}
-
-		if ( newHeight > canvasHeight ) {
-			newOffsetY = newOffsetY > 0 ? 0 : newOffsetY;
-			newOffsetY = newOffsetY < canvasHeight - newHeight ? canvasHeight - newHeight : newOffsetY;
-
-		} else {
-
-			// Center vertically
-			newOffsetY = Math.max( 0, canvasHeight / 2 - newHeight / 2 );
-
-		}
-
-		return {
-			top  : newOffsetY,
-			left : newOffsetX
-		};
-
-	};
-
-	Guestures.prototype.onZoom = function() {
-
-		var self = this;
-
-		// Calculate current distance between points to get pinch ratio and new width and height
-
-		var currentWidth  = self.contentStartPos.width;
-		var currentHeight = self.contentStartPos.height;
-
-		var currentOffsetX = self.contentStartPos.left;
-		var currentOffsetY = self.contentStartPos.top;
-
-		var endDistanceBetweenFingers = distance( self.newPoints[0], self.newPoints[1] );
-
-		var pinchRatio = endDistanceBetweenFingers / self.startDistanceBetweenFingers;
-
-		var newWidth  = Math.floor( currentWidth  * pinchRatio );
-		var newHeight = Math.floor( currentHeight * pinchRatio );
-
-		// This is the translation due to pinch-zooming
-		var translateFromZoomingX = (currentWidth  - newWidth)  * self.percentageOfImageAtPinchPointX;
-		var translateFromZoomingY = (currentHeight - newHeight) * self.percentageOfImageAtPinchPointY;
-
-		//Point between the two touches
-
-		var centerPointEndX = ((self.newPoints[0].x + self.newPoints[1].x) / 2) - $(window).scrollLeft();
-		var centerPointEndY = ((self.newPoints[0].y + self.newPoints[1].y) / 2) - $(window).scrollTop();
-
-		// And this is the translation due to translation of the centerpoint
-		// between the two fingers
-
-		var translateFromTranslatingX = centerPointEndX - self.centerPointStartX;
-		var translateFromTranslatingY = centerPointEndY - self.centerPointStartY;
-
-		// The new offset is the old/current one plus the total translation
-
-		var newOffsetX = currentOffsetX + ( translateFromZoomingX + translateFromTranslatingX );
-		var newOffsetY = currentOffsetY + ( translateFromZoomingY + translateFromTranslatingY );
-
-		var newPos = {
-			top    : newOffsetY,
-			left   : newOffsetX,
-			scaleX : self.contentStartPos.scaleX * pinchRatio,
-			scaleY : self.contentStartPos.scaleY * pinchRatio
-		};
-
-		self.canTap = false;
-
-		self.newWidth  = newWidth;
-		self.newHeight = newHeight;
-
-		self.contentNewPos  = newPos;
-		self.contentLastPos = newPos;
-
-	};
-
-	Guestures.prototype.ontouchend = function( e ) {
-
-		var self = this;
-
-		var current = self.instance.current;
-
-		var dMs = Math.max( (new Date().getTime() ) - self.startTime, 1);
-
-		var swiping = self.isSwiping;
-		var panning = self.isPanning;
-		var zooming = self.isZooming;
-
-		self.endPoints = pointers( e );
-
-		if ( self.endPoints.length > 1 && ( self.isSwiping === 'x' || self.isSwiping === 'y' ) ) {
-			return;
-		}
-
-		self.$container.removeClass('fancybox-controls--isGrabbing');
-
-		self.$wrap.off('touchmove.fb mousemove.fb',  $.proxy(this, "ontouchmove"));
-		self.$wrap.off('touchend.fb touchcancel.fb mouseup.fb mouseleave.fb',  $.proxy(this, "ontouchend"));
-
-		self.isSwiping = false;
-		self.isPanning = false;
-		self.isZooming = false;
-
-		if ( self.canTap )  {
-			return self.ontap();
-		}
-
-		// Speed in px/ms
-		self.velocityX = self.distanceX / dMs * 0.5;
-		self.velocityY = self.distanceY / dMs * 0.5;
-
-		self.speed = current.opts.speed;
-
-		self.speedX = Math.max( self.speed * 0.75, Math.min( self.speed * 1.5, ( 1 / Math.abs( self.velocityX ) ) * self.speed ) );
-		self.speedY = Math.max( self.speed * 0.75, Math.min( self.speed * 1.5, ( 1 / Math.abs( self.velocityY ) ) * self.speed ) );
-
-		if ( swiping ) {
-			self.endSwiping( swiping );
-
-		} else if ( panning ) {
-			self.endPanning();
-
-		} else if ( zooming ) {
-			self.endZooming();
-
-		}
-
-
-		return;
-	};
-
-	Guestures.prototype.endSwiping = function( swiping ) {
-
-		var self = this;
-
-		// Close if swiped vertically / navigate if horizontally
-
-		if ( swiping == 'y' && Math.abs( self.distanceY ) > 50 ) {
-
-			// Continue vertical movement
-
-			$.fancybox.animate( self.$slider, null, {
-				top     : self.sliderStartPos.top + self.distanceY + self.velocityY * 150,
-				left    : self.sliderStartPos.left,
-				opacity : 0
-			}, self.speedY );
-
-			self.instance.close( true );
-
-		} else if ( swiping == 'x' && self.distanceX > 50 ) {
-			self.instance.previous( self.speedX );
-
-		} else if ( swiping == 'x' && self.distanceX < -50 ) {
-			self.instance.next( self.speedX );
-
-		} else {
-
-			// Move back to center
-			self.instance.update( false, true, self.speedX );
-
-		}
-
-	};
-
-	Guestures.prototype.endPanning = function() {
-
-		var self = this;
-
-		var newOffsetX = self.contentLastPos.left + ( self.velocityX * self.speed * 2 );
-		var newOffsetY = self.contentLastPos.top  + ( self.velocityY * self.speed * 2 );
-
-		var newPos = self.limitPosition( newOffsetX, newOffsetY, self.contentStartPos.width, self.contentStartPos.height );
-
-		 newPos.width  = self.contentStartPos.width;
-		 newPos.height = self.contentStartPos.height;
-
-		$.fancybox.animate( self.$content, null, newPos, self.speed, "easeOutSine" );
-
-	};
-
-
-	Guestures.prototype.endZooming = function() {
-
-		var self = this;
-
-		var current = self.instance.current;
-		var newPos;
-
-		var newOffsetX = self.contentLastPos.left;
-		var newOffsetY = self.contentLastPos.top;
-
-		var newWidth  = self.newWidth;
-		var newHeight = self.newHeight;
-
-		var reset = {
-		   	top    : newOffsetY,
-		   	left   : newOffsetX,
-		   	width  : newWidth,
-		   	height : newHeight,
-			scaleX : 1,
-			scaleY : 1
-	   };
-
-	   // Reset scalex/scaleY values; this helps for perfomance and does not break animation
-	   $.fancybox.setTranslate( self.$content, reset );
-
-		if ( newWidth < self.canvasWidth && newHeight < self.canvasHeight ) {
-			self.instance.scaleToFit( 150 );
-
-		} else if ( newWidth > current.width || newHeight > current.height ) {
-			self.instance.scaleToActual( self.centerPointStartX, self.centerPointStartY, 150 );
-
-		} else {
-
-			newPos = self.limitPosition( newOffsetX, newOffsetY, newWidth, newHeight );
-
-			$.fancybox.animate( self.$content, null, newPos, self.speed, "easeOutSine" );
-
-		}
-
-	};
-
-	Guestures.prototype.ontap = function() {
-
-		var self = this;
-
-		var x = self.endPoints[0].x;
-		var y = self.endPoints[0].y;
-
-		x = x - self.$wrap.offset().left;
-		y = y - self.$wrap.offset().top;
-
-		if ( !$.fancybox.isTouch ) {
-
-			if ( self.instance.opts.closeClickOutside && self.$target.is('.fancybox-slide') ) {
-				self.instance.close();
-
-				return;
-			}
-
-			if ( self.instance.current.type == 'image' && self.instance.current.isMoved ) {
-
-				if ( self.instance.canPan() ) {
-					self.instance.scaleToFit();
-
-				} else if ( self.instance.isScaledDown() ) {
-					self.instance.scaleToActual( x, y );
-
-				} else if ( self.instance.group.length < 2 ) {
-					self.instance.close();
-
-				}
-
-			}
-
-			return;
-		}
-
-
-		// Double tap
-		if ( self.tapped ) {
-
-			self.tapped = false;
-
-			clearTimeout( self.id );
-
-			if (Math.abs( x - self.x ) > 50 || Math.abs( y - self.y ) > 50 || !self.instance.current.isMoved ) {
-				return this;
-			}
-
-			if ( !( self.instance.current.isLoaded || self.instance.current.$ghost ) ) {
-				return;
-			}
-
-			if ( self.instance.current.type == 'image' ) {
-
-				if ( self.instance.canPan() ) {
-					self.instance.scaleToFit();
-
-				} else if ( self.instance.isScaledDown() ) {
-					self.instance.scaleToActual( x, y );
-
-				}
-
-			}
-
-		} else {
-
-			// Single tap
-
-			self.tapped = true;
-
-			self.x = x;
-			self.y = y;
-
-			self.id = setTimeout(function() {
-				self.tapped = false;
-
-				self.instance.toggleControls( true );
-
-			}, 300);
-		}
-
-		return this;
-	};
-
-	$(document).on('onActivate.fb', function (e, instance) {
-
-		if ( instance.opts.touch && !instance.Guestures ) {
-			instance.Guestures = new Guestures( instance );
-		}
-
-	});
-
-	$(document).on('beforeClose.fb', function (e, instance) {
-
-		if ( instance.Guestures ) {
-			instance.Guestures.destroy();
-		}
-
-	});
-
-
-}(window, document, __webpack_provided_window_dot_jQuery));
-
-// ==========================================================================
-//
-// SlideShow
-// Enables slideshow functionality
-//
-// Example of usage:
-// $.fancybox.getInstance().slideShow.start()
-//
-// ==========================================================================
-;(function (document, $) {
-	'use strict';
-
-	var SlideShow = function( instance ) {
-
-		this.instance = instance;
-
-		this.init();
-
-	};
-
-	$.extend( SlideShow.prototype, {
-		timer   : null,
-		speed   : 3000,
-		$button : null,
-
-		init : function() {
-			var self = this;
-
-			self.$button = $('<button data-fancybox-play class="fancybox-button fancybox-button--play" title="Slideshow (P)"></button>')
-				.appendTo( self.instance.$refs.buttons );
-
-			self.instance.$refs.container.on('click', '[data-fancybox-play]', function() {
-				self.toggle();
-			});
-
-		},
-
-		set : function() {
-			var self = this;
-
-			// Check if reached last element
-			if (self.instance && self.instance.current && self.instance.currIndex < self.instance.group.length - 1) {
-
-				self.timer = setTimeout(function() {
-					self.instance.next();
-
-				}, self.speed);
-
-			} else {
-				self.stop();
-			}
-		},
-
-		clear : function() {
-			var self = this;
-
-			clearTimeout( self.timer );
-
-			self.timer = null;
-		},
-
-		start : function() {
-			var self = this;
-
-			self.stop();
-
-			if (self.instance && self.instance.current && self.instance.currIndex < self.instance.group.length - 1) {
-
-				self.instance.$refs.container.on({
-					'beforeLoad.fb.player'	: $.proxy(self, "clear"),
-					'onComplete.fb.player'	: $.proxy(self, "set"),
-				});
-
-				if ( self.instance.current.isComplete ) {
-					self.set();
-
-				} else {
-					self.timer = true;
-				}
-
-				self.instance.$refs.container.trigger('onPlayStart');
-
-				self.$button.addClass('fancybox-button--pause');
-			}
-
-		},
-
-		stop: function() {
-			var self = this;
-
-			self.clear();
-
-			self.instance.$refs.container
-				.trigger('onPlayEnd')
-				.off('.player');
-
-			self.$button.removeClass('fancybox-button--pause');
-		},
-
-		toggle : function() {
-			var self = this;
-
-			if ( self.timer ) {
-				self.stop();
-
-			} else {
-				self.start();
-			}
-		}
-
-	});
-
-	$(document).on('onInit.fb', function(e, instance) {
-
-		if ( !!instance.opts.slideShow && !instance.SlideShow && instance.group.length > 1 ) {
-			instance.SlideShow = new SlideShow( instance );
-		}
-
-	});
-
-	$(document).on('beforeClose.fb onDeactivate.fb', function(e, instance) {
-
-		if ( instance.SlideShow ) {
-			instance.SlideShow.stop();
-		}
-
-	});
-
-}(document, __webpack_provided_window_dot_jQuery));
-
-// ==========================================================================
-//
-// FullScreen
-// Adds fullscreen functionality
-//
-// ==========================================================================
-;(function (document, $) {
-	'use strict';
-
-	var FullScreen = function( instance ) {
-
-		this.instance = instance;
-
-		this.init();
-
-	};
-
-	$.extend( FullScreen.prototype, {
-
-		$button : null,
-
-		init : function() {
-			var self = this;
-
-			if ( !self.isAvailable() ) {
-				return;
-			}
-
-			self.$button = $('<button data-fancybox-fullscreen class="fancybox-button fancybox-button--fullscreen" title="Full screen (F)"></button>')
-				.appendTo( self.instance.$refs.buttons );
-
-			self.instance.$refs.container.on('click.fb-fullscreen', '[data-fancybox-fullscreen]', function(e) {
-
-				e.stopPropagation();
-				e.preventDefault();
-
-				self.toggle();
-
-			});
-
-			$(document).on('onUpdate.fb', function(e, instance) {
-				self.$button.toggle( !!instance.current.opts.fullScreen );
-
-				self.$button.toggleClass('fancybox-button-shrink', self.isActivated() );
-
-			});
-
-			$(document).on('afterClose.fb', function() {
-				self.exit();
-			});
-
-		},
-
-		isAvailable : function() {
-			var element = this.instance.$refs.container.get(0);
-
-			return !!(element.requestFullscreen || element.msRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen);
-
-		},
-
-		isActivated : function() {
-			return !(!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement);
-
-		},
-
-		launch : function() {
-			var element = this.instance.$refs.container.get(0);
-
-			if ( !element || this.instance.isClosing ) {
-				return;
-			}
-
-			if (element.requestFullscreen) {
-				element.requestFullscreen();
-
-			} else if (element.msRequestFullscreen) {
-				element.msRequestFullscreen();
-
-			} else if (element.mozRequestFullScreen) {
-				element.mozRequestFullScreen();
-
-			} else if (element.webkitRequestFullscreen) {
-				element.webkitRequestFullscreen(element.ALLOW_KEYBOARD_INPUT);
-			}
-
-		},
-
-		exit : function() {
-
-			if (document.exitFullscreen) {
-				document.exitFullscreen();
-
-			} else if (document.msExitFullscreen) {
-				document.msExitFullscreen();
-
-			} else if (document.mozCancelFullScreen) {
-				document.mozCancelFullScreen();
-
-			} else if (document.webkitExitFullscreen) {
-				document.webkitExitFullscreen();
-			}
-
-		},
-
-		toggle : function() {
-
-			if ( this.isActivated() ) {
-				this.exit();
-
-			} else if ( this.isAvailable() ) {
-				this.launch();
-			}
-
-		}
-	});
-
-	$(document).on('onInit.fb', function(e, instance) {
-
-		if ( !!instance.opts.fullScreen && !instance.FullScreen) {
-			instance.FullScreen = new FullScreen( instance );
-		}
-
-	});
-
-}(document, __webpack_provided_window_dot_jQuery));
-
-// ==========================================================================
-//
-// Thumbs
-// Displays thumbnails in a grid
-//
-// ==========================================================================
-;(function (document, $) {
-	'use strict';
-
-	var FancyThumbs = function( instance ) {
-
-		this.instance = instance;
-
-		this.init();
-
-	};
-
-	$.extend( FancyThumbs.prototype, {
-
-		$button		: null,
-		$grid		: null,
-		$list		: null,
-		isVisible	: false,
-
-		init : function() {
-			var self = this;
-
-			self.$button = $('<button data-fancybox-thumbs class="fancybox-button fancybox-button--thumbs" title="Thumbnails (G)"></button>')
-				.appendTo( this.instance.$refs.buttons )
-				.on('touchend click', function(e) {
-					e.stopPropagation();
-					e.preventDefault();
-
-					self.toggle();
-				});
-
-		},
-
-		create : function() {
-			var instance = this.instance,
-				list,
-				src;
-
-			this.$grid = $('<div class="fancybox-thumbs"></div>').appendTo( instance.$refs.container );
-
-			list = '<ul>';
-
-			$.each(instance.group, function( i, item ) {
-
-				src = item.opts.thumb || ( item.opts.$thumb ? item.opts.$thumb.attr('src') : null );
-
-				if ( !src && item.type === 'image' ) {
-					src = item.src;
-				}
-
-				if ( src && src.length ) {
-					list += '<li data-index="' + i + '"  tabindex="0" class="fancybox-thumbs-loading"><img data-src="' + src + '" /></li>';
-				}
-
-			});
-
-			list += '</ul>';
-
-			this.$list = $( list ).appendTo( this.$grid ).on('click touchstart', 'li', function() {
-
-				instance.jumpTo( $(this).data('index') );
-
-			});
-
-			this.$list.find('img').hide().one('load', function() {
-
-				var $parent		= $(this).parent().removeClass('fancybox-thumbs-loading'),
-					thumbWidth	= $parent.outerWidth(),
-					thumbHeight	= $parent.outerHeight(),
-					width,
-					height,
-					widthRatio,
-					heightRatio;
-
-				width  = this.naturalWidth	|| this.width;
-				height = this.naturalHeight	|| this.height;
-
-				//Calculate thumbnail width/height and center it
-
-				widthRatio  = width  / thumbWidth;
-				heightRatio = height / thumbHeight;
-
-				if (widthRatio >= 1 && heightRatio >= 1) {
-					if (widthRatio > heightRatio) {
-						width  = width / heightRatio;
-						height = thumbHeight;
-
-					} else {
-						width  = thumbWidth;
-						height = height / widthRatio;
-					}
-				}
-
-				$(this).css({
-					width         : Math.floor(width),
-					height        : Math.floor(height),
-					'margin-top'  : Math.min( 0, Math.floor(thumbHeight * 0.3 - height * 0.3 ) ),
-					'margin-left' : Math.min( 0, Math.floor(thumbWidth  * 0.5 - width  * 0.5 ) )
-				}).show();
-
-			})
-			.each(function() {
-				this.src = $( this ).data( 'src' );
-			});
-
-		},
-
-		focus : function() {
-
-			if ( this.instance.current ) {
-				this.$list
-					.children()
-					.removeClass('fancybox-thumbs-active')
-					.filter('[data-index="' + this.instance.current.index  + '"]')
-					.addClass('fancybox-thumbs-active')
-					.focus();
-			}
-
-		},
-
-		close : function() {
-
-			this.$grid.hide();
-
-		},
-
-		update : function() {
-
-			this.instance.$refs.container.toggleClass('fancybox-container--thumbs', this.isVisible);
-
-			if ( this.isVisible ) {
-
-				if ( !this.$grid ) {
-					this.create();
-				}
-
-				this.$grid.show();
-
-				this.focus();
-
-			} else if ( this.$grid ) {
-				this.$grid.hide();
-			}
-
-			if ( !this.instance.allowZoomIn ) {
-				this.instance.update();
-			}
-
-		},
-
-		hide : function() {
-
-			this.isVisible = false;
-
-			this.update();
-
-		},
-
-		show : function() {
-
-			this.isVisible = true;
-
-			this.update();
-
-		},
-
-		toggle : function() {
-
-			if ( this.isVisible ) {
-				this.hide();
-
-			} else {
-				this.show();
-			}
-		}
-
-	});
-
-	$(document).on('onInit.fb', function(e, instance) {
-
-		if ( !!instance.opts.thumbs && !instance.Thumbs && instance.group.length > 1 && (
-		    		( instance.group[0].type == 'image' || instance.group[0].opts.thumb ) &&
-		    		( instance.group[1].type == 'image' || instance.group[1].opts.thumb )
-			 	)
-		   ) {
-
-			instance.Thumbs = new FancyThumbs( instance );
-		}
-
-	});
-
-	$(document).on('beforeMove.fb', function(e, instance, item) {
-		var self = instance.Thumbs;
-
-		if ( !self ) {
-			return;
-		}
-
-		if ( item.modal ) {
-
-			self.$button.hide();
-
-			self.hide();
-
-
-		} else {
-
-			self.$button.show();
-
-			if ( instance.opts.thumbs.showOnStart === true && instance.allowZoomIn ) {
-				self.show();
-
-			} else if ( self.isVisible ) {
-				self.focus();
-			}
-
-		}
-
-	});
-
-	$(document).on('beforeClose.fb', function(e, instance) {
-
-		if ( instance.Thumbs && instance.Thumbs.isVisible && instance.opts.thumbs.hideOnClosing !== false ) {
-			instance.Thumbs.close();
-		}
-
-		instance.Thumbs = null;
-
-	});
-
-}(document, __webpack_provided_window_dot_jQuery));
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 29:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {$(function () {
-    $('[data-toggle="offcanvas"]').click(function (e) {
-        $('.sidebar-offcanvas').toggleClass('active');
-        e.preventDefault();
-    });
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 30:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {$('.smooth-scroll').on('click', function (e) {
-
-    e.preventDefault();
-    var hash = this.hash;
-    target = $(hash);
-
-    $('html, body').animate({
-        'scrollTop': target.offset().top
-    }, 500, 'swing', function () {
-        window.location.hash = hash;
-    });
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 48:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery, __webpack_provided_window_dot_jQuery) {/**
- * Swiper 3.4.1
+/**
+ * Swiper 3.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
  * 
- * Copyright 2016, Vladimir Kharlampidi
+ * Copyright 2017, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
  * 
  * Licensed under MIT
  * 
- * Released on: December 13, 2016
+ * Released on: March 10, 2017
  */
 (function () {
     'use strict';
     var $;
+
     /*===========================
     Swiper
     ===========================*/
     var Swiper = function (container, params) {
         if (!(this instanceof Swiper)) return new Swiper(container, params);
+    
 
         var defaults = {
             direction: 'horizontal',
@@ -16926,6 +12955,8 @@ if (typeof jQuery === 'undefined') {
             Callbacks:
             onInit: function (swiper)
             onDestroy: function (swiper)
+            onBeforeResize: function (swiper)
+            onAfterResize: function (swiper)
             onClick: function (swiper, e)
             onTap: function (swiper, e)
             onDoubleTap: function (swiper, e)
@@ -16948,6 +12979,7 @@ if (typeof jQuery === 'undefined') {
             onAutoplayStop: function (swiper),
             onLazyImageLoad: function (swiper, slide, image)
             onLazyImageReady: function (swiper, slide, image)
+            onKeyPress: function (swiper, keyCode)
             */
         
         };
@@ -16996,7 +13028,7 @@ if (typeof jQuery === 'undefined') {
         }
         if (typeof $ === 'undefined') {
             if (typeof Dom7 === 'undefined') {
-                $ = window.Dom7 || window.Zepto || __webpack_provided_window_dot_jQuery;
+                $ = window.Dom7 || window.Zepto || window.jQuery;
             }
             else {
                 $ = Dom7;
@@ -17110,7 +13142,6 @@ if (typeof jQuery === 'undefined') {
             s.params.centeredSlides = false;
             s.params.spaceBetween = 0;
             s.params.virtualTranslate = true;
-            s.params.setWrapperSize = false;
         }
         if (s.params.effect === 'fade' || s.params.effect === 'flip') {
             s.params.slidesPerView = 1;
@@ -17118,7 +13149,6 @@ if (typeof jQuery === 'undefined') {
             s.params.slidesPerGroup = 1;
             s.params.watchSlidesProgress = true;
             s.params.spaceBetween = 0;
-            s.params.setWrapperSize = false;
             if (typeof initialVirtualTranslate === 'undefined') {
                 s.params.virtualTranslate = true;
             }
@@ -17545,6 +13575,7 @@ if (typeof jQuery === 'undefined') {
         
                 if (s.params.centeredSlides) {
                     slidePosition = slidePosition + slideSize / 2 + prevSlideSize / 2 + spaceBetween;
+                    if(prevSlideSize === 0 && i !== 0) slidePosition = slidePosition - s.size / 2 - spaceBetween;
                     if (i === 0) slidePosition = slidePosition - s.size / 2 - spaceBetween;
                     if (Math.abs(slidePosition) < 1 / 1000) slidePosition = 0;
                     if ((index) % s.params.slidesPerGroup === 0) s.snapGrid.push(slidePosition);
@@ -17934,6 +13965,7 @@ if (typeof jQuery === 'undefined') {
             if (s.params.scrollbar && s.scrollbar) {
                 s.scrollbar.set();
             }
+            var newTranslate;
             function forceSetTranslate() {
                 var translate = s.rtl ? -s.translate : s.translate;
                 newTranslate = Math.min(Math.max(s.translate, s.maxTranslate()), s.minTranslate());
@@ -17942,7 +13974,7 @@ if (typeof jQuery === 'undefined') {
                 s.updateClasses();
             }
             if (updateTranslate) {
-                var translated, newTranslate;
+                var translated;
                 if (s.controller && s.controller.spline) {
                     s.controller.spline = undefined;
                 }
@@ -17973,6 +14005,7 @@ if (typeof jQuery === 'undefined') {
           Resize Handler
           ===========================*/
         s.onResize = function (forceUpdatePagination) {
+            if (s.params.onBeforeResize) s.params.onBeforeResize(s);
             //Breakpoints
             if (s.params.breakpoints) {
                 s.setBreakpoint();
@@ -18018,6 +14051,7 @@ if (typeof jQuery === 'undefined') {
             // Return locks after resize
             s.params.allowSwipeToPrev = allowSwipeToPrev;
             s.params.allowSwipeToNext = allowSwipeToNext;
+            if (s.params.onAfterResize) s.params.onAfterResize(s);
         };
         
         /*=========================
@@ -18346,7 +14380,7 @@ if (typeof jQuery === 'undefined') {
             if (isScrolling) {
                 s.emit('onTouchMoveOpposite', s, e);
             }
-            if (typeof startMoving === 'undefined' && s.browser.ieTouch) {
+            if (typeof startMoving === 'undefined') {
                 if (s.touches.currentX !== s.touches.startX || s.touches.currentY !== s.touches.startY) {
                     startMoving = true;
                 }
@@ -18356,7 +14390,7 @@ if (typeof jQuery === 'undefined') {
                 isTouched = false;
                 return;
             }
-            if (!startMoving && s.browser.ieTouch) {
+            if (!startMoving) {
                 return;
             }
             s.allowClick = false;
@@ -19480,6 +15514,7 @@ if (typeof jQuery === 'undefined') {
                 }
             }
         };
+        
 
         /*=========================
           Images Lazy Loading
@@ -19506,6 +15541,7 @@ if (typeof jQuery === 'undefined') {
                         srcset = _img.attr('data-srcset'),
                         sizes = _img.attr('data-sizes');
                     s.loadImage(_img[0], (src || background), srcset, sizes, false, function () {
+                        if (typeof s === 'undefined' || s === null || !s) return;
                         if (background) {
                             _img.css('background-image', 'url("' + background + '")');
                             _img.removeAttr('data-background');
@@ -19691,9 +15727,9 @@ if (typeof jQuery === 'undefined') {
             disableDraggable: function () {
                 var sb = s.scrollbar;
                 var target = s.support.touch ? sb.track : document;
-                $(sb.track).off(s.draggableEvents.start, sb.dragStart);
-                $(target).off(s.draggableEvents.move, sb.dragMove);
-                $(target).off(s.draggableEvents.end, sb.dragEnd);
+                $(sb.track).off(sb.draggableEvents.start, sb.dragStart);
+                $(target).off(sb.draggableEvents.move, sb.dragMove);
+                $(target).off(sb.draggableEvents.end, sb.dragEnd);
             },
             set: function () {
                 if (!s.params.scrollbar) return;
@@ -19792,12 +15828,27 @@ if (typeof jQuery === 'undefined') {
                 s.scrollbar.drag.transition(duration);
             }
         };
+        
 
         /*=========================
           Controller
           ===========================*/
         s.controller = {
             LinearSpline: function (x, y) {
+                var binarySearch = (function() {
+                    var maxIndex, minIndex, guess;
+                    return function(array, val) {
+                        minIndex = -1;
+                        maxIndex = array.length;
+                        while (maxIndex - minIndex > 1)
+                            if (array[guess = maxIndex + minIndex >> 1] <= val) {
+                                minIndex = guess;
+                            } else {
+                                maxIndex = guess;
+                            }
+                        return maxIndex;
+                    };
+                })();
                 this.x = x;
                 this.y = y;
                 this.lastIndex = x.length - 1;
@@ -19818,21 +15869,6 @@ if (typeof jQuery === 'undefined') {
                     // y2 := ((x2−x1) × (y3−y1)) ÷ (x3−x1) + y1
                     return ((x2 - this.x[i1]) * (this.y[i3] - this.y[i1])) / (this.x[i3] - this.x[i1]) + this.y[i1];
                 };
-        
-                var binarySearch = (function() {
-                    var maxIndex, minIndex, guess;
-                    return function(array, val) {
-                        minIndex = -1;
-                        maxIndex = array.length;
-                        while (maxIndex - minIndex > 1)
-                            if (array[guess = maxIndex + minIndex >> 1] <= val) {
-                                minIndex = guess;
-                            } else {
-                                maxIndex = guess;
-                            }
-                        return maxIndex;
-                    };
-                })();
             },
             //xxx: for now i will just save one spline function to to
             getInterpolateFunction: function(c){
@@ -19868,7 +15904,7 @@ if (typeof jQuery === 'undefined') {
                     c.setWrapperTranslate(controlledTranslate, false, s);
                     c.updateActiveIndex();
                }
-               if (s.isArray(controlled)) {
+               if (Array.isArray(controlled)) {
                    for (var i = 0; i < controlled.length; i++) {
                        if (controlled[i] !== byController && controlled[i] instanceof Swiper) {
                            setControlledTranslate(controlled[i]);
@@ -19897,7 +15933,7 @@ if (typeof jQuery === 'undefined') {
                         });
                     }
                 }
-                if (s.isArray(controlled)) {
+                if (Array.isArray(controlled)) {
                     for (i = 0; i < controlled.length; i++) {
                         if (controlled[i] !== byController && controlled[i] instanceof Swiper) {
                             setControlledTransition(controlled[i]);
@@ -19909,6 +15945,7 @@ if (typeof jQuery === 'undefined') {
                 }
             }
         };
+        
 
         /*=========================
           Hash Navigation
@@ -19939,14 +15976,15 @@ if (typeof jQuery === 'undefined') {
                 if (!s.params.hashnav || s.params.history) return;
                 s.hashnav.initialized = true;
                 var hash = document.location.hash.replace('#', '');
-                if (!hash) return;
-                var speed = 0;
-                for (var i = 0, length = s.slides.length; i < length; i++) {
-                    var slide = s.slides.eq(i);
-                    var slideHash = slide.attr('data-hash') || slide.attr('data-history');
-                    if (slideHash === hash && !slide.hasClass(s.params.slideDuplicateClass)) {
-                        var index = slide.index();
-                        s.slideTo(index, speed, s.params.runCallbacksOnInit, true);
+                if (hash) {
+                    var speed = 0;
+                    for (var i = 0, length = s.slides.length; i < length; i++) {
+                        var slide = s.slides.eq(i);
+                        var slideHash = slide.attr('data-hash') || slide.attr('data-history');
+                        if (slideHash === hash && !slide.hasClass(s.params.slideDuplicateClass)) {
+                            var index = slide.index();
+                            s.slideTo(index, speed, s.params.runCallbacksOnInit, true);
+                        }
                     }
                 }
                 if (s.params.hashnavWatchState) s.hashnav.attachEvents();
@@ -19955,6 +15993,7 @@ if (typeof jQuery === 'undefined') {
                 if (s.params.hashnavWatchState) s.hashnav.attachEvents(true);
             }
         };
+        
 
         /*=========================
           History Api with fallback to Hashnav
@@ -20022,6 +16061,7 @@ if (typeof jQuery === 'undefined') {
                 }
             }
         };
+        
 
         /*=========================
           Keyboard Control
@@ -20090,6 +16130,7 @@ if (typeof jQuery === 'undefined') {
                 if (kc === 40) s.slideNext();
                 if (kc === 38) s.slidePrev();
             }
+            s.emit('onKeyPress', s, kc);
         }
         s.disableKeyboardControl = function () {
             s.params.keyboardControl = false;
@@ -20108,18 +16149,6 @@ if (typeof jQuery === 'undefined') {
             event: false,
             lastScrollTime: (new window.Date()).getTime()
         };
-        if (s.params.mousewheelControl) {
-            /**
-             * The best combination if you prefer spinX + spinY normalization.  It favors
-             * the older DOMMouseScroll for Firefox, as FF does not include wheelDelta with
-             * 'wheel' event, making spin speed determination impossible.
-             */
-            s.mousewheel.event = (navigator.userAgent.indexOf('firefox') > -1) ?
-                'DOMMouseScroll' :
-                isEventSupported() ?
-                    'wheel' : 'mousewheel';
-        }
-        
         function isEventSupported() {
             var eventName = 'onwheel';
             var isSupported = eventName in document;
@@ -20142,115 +16171,6 @@ if (typeof jQuery === 'undefined') {
         
             return isSupported;
         }
-        
-        function handleMousewheel(e) {
-            if (e.originalEvent) e = e.originalEvent; //jquery fix
-            var delta = 0;
-            var rtlFactor = s.rtl ? -1 : 1;
-        
-            var data = normalizeWheel( e );
-        
-            if (s.params.mousewheelForceToAxis) {
-                if (s.isHorizontal()) {
-                    if (Math.abs(data.pixelX) > Math.abs(data.pixelY)) delta = data.pixelX * rtlFactor;
-                    else return;
-                }
-                else {
-                    if (Math.abs(data.pixelY) > Math.abs(data.pixelX)) delta = data.pixelY;
-                    else return;
-                }
-            }
-            else {
-                delta = Math.abs(data.pixelX) > Math.abs(data.pixelY) ? - data.pixelX * rtlFactor : - data.pixelY;
-            }
-        
-            if (delta === 0) return;
-        
-            if (s.params.mousewheelInvert) delta = -delta;
-        
-            if (!s.params.freeMode) {
-                if ((new window.Date()).getTime() - s.mousewheel.lastScrollTime > 60) {
-                    if (delta < 0) {
-                        if ((!s.isEnd || s.params.loop) && !s.animating) {
-                            s.slideNext();
-                            s.emit('onScroll', s, e);
-                        }
-                        else if (s.params.mousewheelReleaseOnEdges) return true;
-                    }
-                    else {
-                        if ((!s.isBeginning || s.params.loop) && !s.animating) {
-                            s.slidePrev();
-                            s.emit('onScroll', s, e);
-                        }
-                        else if (s.params.mousewheelReleaseOnEdges) return true;
-                    }
-                }
-                s.mousewheel.lastScrollTime = (new window.Date()).getTime();
-        
-            }
-            else {
-                //Freemode or scrollContainer:
-                var position = s.getWrapperTranslate() + delta * s.params.mousewheelSensitivity;
-                var wasBeginning = s.isBeginning,
-                    wasEnd = s.isEnd;
-        
-                if (position >= s.minTranslate()) position = s.minTranslate();
-                if (position <= s.maxTranslate()) position = s.maxTranslate();
-        
-                s.setWrapperTransition(0);
-                s.setWrapperTranslate(position);
-                s.updateProgress();
-                s.updateActiveIndex();
-        
-                if (!wasBeginning && s.isBeginning || !wasEnd && s.isEnd) {
-                    s.updateClasses();
-                }
-        
-                if (s.params.freeModeSticky) {
-                    clearTimeout(s.mousewheel.timeout);
-                    s.mousewheel.timeout = setTimeout(function () {
-                        s.slideReset();
-                    }, 300);
-                }
-                else {
-                    if (s.params.lazyLoading && s.lazy) {
-                        s.lazy.load();
-                    }
-                }
-                // Emit event
-                s.emit('onScroll', s, e);
-        
-                // Stop autoplay
-                if (s.params.autoplay && s.params.autoplayDisableOnInteraction) s.stopAutoplay();
-        
-                // Return page scroll on edge positions
-                if (position === 0 || position === s.maxTranslate()) return;
-            }
-        
-            if (e.preventDefault) e.preventDefault();
-            else e.returnValue = false;
-            return false;
-        }
-        s.disableMousewheelControl = function () {
-            if (!s.mousewheel.event) return false;
-            var target = s.container;
-            if (s.params.mousewheelEventsTarged !== 'container') {
-                target = $(s.params.mousewheelEventsTarged);
-            }
-            target.off(s.mousewheel.event, handleMousewheel);
-            return true;
-        };
-        
-        s.enableMousewheelControl = function () {
-            if (!s.mousewheel.event) return false;
-            var target = s.container;
-            if (s.params.mousewheelEventsTarged !== 'container') {
-                target = $(s.params.mousewheelEventsTarged);
-            }
-            target.on(s.mousewheel.event, handleMousewheel);
-            return true;
-        };
-        
         /**
          * Mouse wheel (and 2-finger trackpad) support on the web sucks.  It is
          * complicated, thus this doc is long and (hopefully) detailed enough to answer
@@ -20415,6 +16335,127 @@ if (typeof jQuery === 'undefined') {
                 pixelY: pY
             };
         }
+        if (s.params.mousewheelControl) {
+            /**
+             * The best combination if you prefer spinX + spinY normalization.  It favors
+             * the older DOMMouseScroll for Firefox, as FF does not include wheelDelta with
+             * 'wheel' event, making spin speed determination impossible.
+             */
+            s.mousewheel.event = (navigator.userAgent.indexOf('firefox') > -1) ?
+                'DOMMouseScroll' :
+                isEventSupported() ?
+                    'wheel' : 'mousewheel';
+        }
+        function handleMousewheel(e) {
+            if (e.originalEvent) e = e.originalEvent; //jquery fix
+            var delta = 0;
+            var rtlFactor = s.rtl ? -1 : 1;
+        
+            var data = normalizeWheel( e );
+        
+            if (s.params.mousewheelForceToAxis) {
+                if (s.isHorizontal()) {
+                    if (Math.abs(data.pixelX) > Math.abs(data.pixelY)) delta = data.pixelX * rtlFactor;
+                    else return;
+                }
+                else {
+                    if (Math.abs(data.pixelY) > Math.abs(data.pixelX)) delta = data.pixelY;
+                    else return;
+                }
+            }
+            else {
+                delta = Math.abs(data.pixelX) > Math.abs(data.pixelY) ? - data.pixelX * rtlFactor : - data.pixelY;
+            }
+        
+            if (delta === 0) return;
+        
+            if (s.params.mousewheelInvert) delta = -delta;
+        
+            if (!s.params.freeMode) {
+                if ((new window.Date()).getTime() - s.mousewheel.lastScrollTime > 60) {
+                    if (delta < 0) {
+                        if ((!s.isEnd || s.params.loop) && !s.animating) {
+                            s.slideNext();
+                            s.emit('onScroll', s, e);
+                        }
+                        else if (s.params.mousewheelReleaseOnEdges) return true;
+                    }
+                    else {
+                        if ((!s.isBeginning || s.params.loop) && !s.animating) {
+                            s.slidePrev();
+                            s.emit('onScroll', s, e);
+                        }
+                        else if (s.params.mousewheelReleaseOnEdges) return true;
+                    }
+                }
+                s.mousewheel.lastScrollTime = (new window.Date()).getTime();
+        
+            }
+            else {
+                //Freemode or scrollContainer:
+                var position = s.getWrapperTranslate() + delta * s.params.mousewheelSensitivity;
+                var wasBeginning = s.isBeginning,
+                    wasEnd = s.isEnd;
+        
+                if (position >= s.minTranslate()) position = s.minTranslate();
+                if (position <= s.maxTranslate()) position = s.maxTranslate();
+        
+                s.setWrapperTransition(0);
+                s.setWrapperTranslate(position);
+                s.updateProgress();
+                s.updateActiveIndex();
+        
+                if (!wasBeginning && s.isBeginning || !wasEnd && s.isEnd) {
+                    s.updateClasses();
+                }
+        
+                if (s.params.freeModeSticky) {
+                    clearTimeout(s.mousewheel.timeout);
+                    s.mousewheel.timeout = setTimeout(function () {
+                        s.slideReset();
+                    }, 300);
+                }
+                else {
+                    if (s.params.lazyLoading && s.lazy) {
+                        s.lazy.load();
+                    }
+                }
+                // Emit event
+                s.emit('onScroll', s, e);
+        
+                // Stop autoplay
+                if (s.params.autoplay && s.params.autoplayDisableOnInteraction) s.stopAutoplay();
+        
+                // Return page scroll on edge positions
+                if (position === 0 || position === s.maxTranslate()) return;
+            }
+        
+            if (e.preventDefault) e.preventDefault();
+            else e.returnValue = false;
+            return false;
+        }
+        s.disableMousewheelControl = function () {
+            if (!s.mousewheel.event) return false;
+            var target = s.container;
+            if (s.params.mousewheelEventsTarged !== 'container') {
+                target = $(s.params.mousewheelEventsTarged);
+            }
+            target.off(s.mousewheel.event, handleMousewheel);
+            s.params.mousewheelControl = false;
+            return true;
+        };
+        
+        s.enableMousewheelControl = function () {
+            if (!s.mousewheel.event) return false;
+            var target = s.container;
+            if (s.params.mousewheelEventsTarged !== 'container') {
+                target = $(s.params.mousewheelEventsTarged);
+            }
+            target.on(s.mousewheel.event, handleMousewheel);
+            s.params.mousewheelControl = true;
+            return true;
+        };
+        
 
         /*=========================
           Parallax
@@ -20845,6 +16886,7 @@ if (typeof jQuery === 'undefined') {
                 s.zoom.attachEvents(true);
             }
         };
+        
 
         /*=========================
           Plugins API. Collect all and init all plugins
@@ -20862,6 +16904,7 @@ if (typeof jQuery === 'undefined') {
                 }
             }
         };
+        
 
         /*=========================
           Events/Callbacks/Plugins Emitter
@@ -20924,6 +16967,7 @@ if (typeof jQuery === 'undefined') {
             s.on(eventName, _handler);
             return s;
         };
+        
 
         // Accessibility tools
         s.a11y = {
@@ -21946,11 +17990,12 @@ if (typeof jQuery === 'undefined') {
     // Required DOM Plugins
     var domLib;
     if (typeof Dom7 === 'undefined') {
-    	domLib = window.Dom7 || window.Zepto || __webpack_provided_window_dot_jQuery;
+    	domLib = window.Dom7 || window.Zepto || window.jQuery;
     }
     else {
     	domLib = Dom7;
     }
+    
 
     /*===========================
     Add .swiper plugin from Dom libraries
@@ -22020,9 +18065,11 @@ if (typeof jQuery === 'undefined') {
             };
         }
     }
+    
 
     window.Swiper = Swiper;
 })();
+
 /*===========================
 Swiper AMD Export
 ===========================*/
@@ -22036,59 +18083,25 @@ else if (typeof define === 'function' && define.amd) {
         return window.Swiper;
     });
 }
+
 //# sourceMappingURL=maps/swiper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
 
 /***/ }),
 
-/***/ 5:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
- * jQuery
- */
-window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(0);
-
-/**
- * Bootstrap
- */
-__webpack_require__(1);
-
-/**
- * Fancybox
- */
-__webpack_require__(2);
-
-/**
- * Swiper
- */
-__webpack_require__(48);
-
-/**
- * All files in /reources/assets/js/public
- */
-var req = __webpack_require__(50);
-req.keys().forEach(function (key) {
-  req(key);
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-
-/***/ 50:
+/***/ "./resources/assets/js/public recursive ^(.*\\.(js$))[^.]*$/gi":
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./offcanvas.js": 29,
-	"./smooth-scroll.js": 30
+	"./offcanvas.js": "./resources/assets/js/public/offcanvas.js",
+	"./smooth-scroll.js": "./resources/assets/js/public/smooth-scroll.js"
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
 };
 function webpackContextResolve(req) {
 	var id = map[req];
-	if(!(id + 1)) // check for number
+	if(!(id + 1)) // check for number or string
 		throw new Error("Cannot find module '" + req + "'.");
 	return id;
 };
@@ -22097,15 +18110,77 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 50;
-
+webpackContext.id = "./resources/assets/js/public recursive ^(.*\\.(js$))[^.]*$/gi";
 
 /***/ }),
 
-/***/ 53:
+/***/ "./resources/assets/js/public.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(5);
+/**
+ * jQuery
+ */
+window.$ = window.jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
+
+/**
+ * Bootstrap
+ */
+__webpack_require__("./node_modules/bootstrap-sass/assets/javascripts/bootstrap.js");
+
+/**
+ * Fancybox
+ */
+__webpack_require__("./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js");
+
+/**
+ * Swiper
+ */
+__webpack_require__("./node_modules/swiper/dist/js/swiper.js");
+
+/**
+ * Get files from /resources/assets/js/public
+ */
+var req = __webpack_require__("./resources/assets/js/public recursive ^(.*\\.(js$))[^.]*$/gi");
+req.keys().forEach(function (key) {
+  req(key);
+});
+
+/***/ }),
+
+/***/ "./resources/assets/js/public/offcanvas.js":
+/***/ (function(module, exports) {
+
+$(function () {
+    $('[data-toggle="offcanvas"]').click(function (e) {
+        $('.sidebar-offcanvas').toggleClass('active');
+        e.preventDefault();
+    });
+});
+
+/***/ }),
+
+/***/ "./resources/assets/js/public/smooth-scroll.js":
+/***/ (function(module, exports) {
+
+$('.smooth-scroll').on('click', function (e) {
+
+    e.preventDefault();
+    var hash = this.hash;
+    target = $(hash);
+
+    $('html, body').animate({
+        'scrollTop': target.offset().top
+    }, 500, 'swing', function () {
+        window.location.hash = hash;
+    });
+});
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./resources/assets/js/public.js");
 
 
 /***/ })
