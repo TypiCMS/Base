@@ -11,20 +11,6 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/TypiCMS/laravel-translatable"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/TypiCMS/laravel-permission"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/TypiCMS/eloquent-sortable"
-        }
-    ],
     "require": {
         "php": ">=7.0.0",
         "adamwathan/form": "0.8.12",
@@ -39,9 +25,9 @@
         "maatwebsite/laravel-sidebar": "~1.1.1",
         "rinvex/repository": "dev-develop",
         "roumen/feed": "~2.10.1",
-        "spatie/eloquent-sortable": "dev-master",
-        "spatie/laravel-permission": "dev-master",
-        "spatie/laravel-translatable": "dev-master",
+        "spatie/eloquent-sortable": "dev-laravel-55",
+        "spatie/laravel-permission": "dev-laravel-55",
+        "spatie/laravel-translatable": "dev-laravel-55",
         "typidesign/laravel-artisan-translations": "~1.0.0",
         "typicms/blocks": "dev-dev",
         "typicms/core": "dev-dev",
