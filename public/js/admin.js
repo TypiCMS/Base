@@ -58504,6 +58504,9 @@ webpackContext.id = "./resources/assets/typicms recursive ^(.*\\.(js$))[^.]*$/gi
         if (modulePath === 'projects' && pathSegments[3] === 'categories') {
             modulePath = 'projects/categories';
         }
+        if (modulePath === 'pages' && pathSegments[4] === 'edit') {
+            modulePath = 'sections';
+        }
 
         return $resource('/admin/' + modulePath + '/:id', null, {
             update: {
