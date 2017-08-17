@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3925536629332757c8fad3214fc61174",
+    "content-hash": "d93f80dd14848a9d8cf8f165cc891e43",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -3293,16 +3293,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
-                "reference": "3f6410f5cf47c0618ac75f23aef9335448d03051"
+                "reference": "e7bf00ffaab7086eea3fcad193912b87f7cd6690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/3f6410f5cf47c0618ac75f23aef9335448d03051",
-                "reference": "3f6410f5cf47c0618ac75f23aef9335448d03051",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/e7bf00ffaab7086eea3fcad193912b87f7cd6690",
+                "reference": "e7bf00ffaab7086eea3fcad193912b87f7cd6690",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/bootforms": "^0.8",
+                "adamwathan/bootforms": ">=0.8.0 <0.8.13",
+                "adamwathan/form": ">=0.8.0 <0.8.13 || ^0.9",
                 "illuminate/support": "~5.0",
                 "php": ">=5.5.9"
             },
@@ -3338,7 +3339,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2017-06-09T16:46:34+00:00"
+            "time": "2017-08-17T12:39:08+00:00"
         },
         {
             "name": "typicms/menus",
