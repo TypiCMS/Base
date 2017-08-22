@@ -57770,6 +57770,7 @@ var map = {
 	"./jquery.xsrf.js": "./resources/assets/js/admin/jquery.xsrf.js",
 	"./lang-switcher-active.js": "./resources/assets/js/admin/lang-switcher-active.js",
 	"./offcanvas-admin.js": "./resources/assets/js/admin/offcanvas-admin.js",
+	"./page-sections.js": "./resources/assets/js/admin/page-sections.js",
 	"./preferences.js": "./resources/assets/js/admin/preferences.js",
 	"./preview-window.js": "./resources/assets/js/admin/preview-window.js",
 	"./select-files-window.js": "./resources/assets/js/admin/select-files-window.js",
@@ -58254,7 +58255,7 @@ $(function () {
     /**
      * Locale switcher : set active button
      */
-    $('#btn-group-form-locales .btn').click(function () {
+    $('#btn-group-form-locales .btn').on('click', function () {
         $(this).parent().children('.active').removeClass('active');
         $(this).addClass('active');
     });
@@ -58268,6 +58269,20 @@ $(function () {
 $(function () {
     $('[data-toggle="offcanvas"]').click(function () {
         $('.row-offcanvas').toggleClass('active');
+    });
+});
+
+/***/ }),
+
+/***/ "./resources/assets/js/admin/page-sections.js":
+/***/ (function(module, exports) {
+
+$(function () {
+    var lastItem = $('#sections').children('.section').last();
+    lastItem.hide();
+    $('#btn-add-section').on('click', function () {
+        lastItem.show().find(':disabled').attr({ 'disabled': false });
+        $(this).hide();
     });
 });
 
@@ -58433,6 +58448,20 @@ $(function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__preferences__["default"])('menus_' + $(this).attr('id') + '_collapsed', '');
     });
 });
+
+/***/ }),
+
+/***/ "./resources/assets/sass/admin.sass":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/assets/sass/public.sass":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -59680,7 +59709,9 @@ angular.module('typicms').filter('dateFromMySQL', function (dateFilter) {
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./resources/assets/js/admin.js");
+__webpack_require__("./resources/assets/js/admin.js");
+__webpack_require__("./resources/assets/sass/admin.sass");
+module.exports = __webpack_require__("./resources/assets/sass/public.sass");
 
 
 /***/ })

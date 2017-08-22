@@ -18094,7 +18094,8 @@ else if (typeof define === 'function' && define.amd) {
 
 var map = {
 	"./offcanvas.js": "./resources/assets/js/public/offcanvas.js",
-	"./smooth-scroll.js": "./resources/assets/js/public/smooth-scroll.js"
+	"./smooth-scroll.js": "./resources/assets/js/public/smooth-scroll.js",
+	"./swiper.js": "./resources/assets/js/public/swiper.js"
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -18173,6 +18174,25 @@ $('.smooth-scroll').on('click', function (e) {
     }, 500, 'swing', function () {
         window.location.hash = hash;
     });
+});
+
+/***/ }),
+
+/***/ "./resources/assets/js/public/swiper.js":
+/***/ (function(module, exports) {
+
+/**
+ * Sliders
+ */
+var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    grabCursor: true,
+    autoplay: 6000,
+    setWrapperSize: true,
+    // slidesPerView: 'auto',
+    // spaceBetween: 30,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
 });
 
 /***/ }),
