@@ -1,14 +1,19 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
-## 3.0.0 - 2017-01-XX
+## 3.0.0 - 2017-09-01
 
 ### Changed
-- incoming() method from Events module is now upcoming()
-- double arrows in array are no more aligned
-- locale() helper method to get array of all locales
+- Upgraded to Laravel 5.5 LTS
+- Use of Laravel Mix
+- Use of translation strings as keys stored in json files
+- New filemanager with directories and drag and drop
+- Use of spatie/laravel-translatable in place of dimsav/laravel-translatable
+- Use of rinvex/repository in place of custom repository
+- locales() helper method to get array of all locales
 - @block('name') blade directive
 - @menu('name') blade directive
+- Better roles and permissions management
 
 ## 2.8.0 - 2016-04-13
 
