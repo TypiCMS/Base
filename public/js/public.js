@@ -18121,12 +18121,12 @@ webpackContext.id = "./resources/assets/js/public recursive ^(.*\\.(js$))[^.]*$/
 /**
  * jQuery
  */
-window.$ = window.jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
+window.$ = window.jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js"
 
 /**
  * Bootstrap
  */
-__webpack_require__("./node_modules/bootstrap-sass/assets/javascripts/bootstrap.js");
+);__webpack_require__("./node_modules/bootstrap-sass/assets/javascripts/bootstrap.js");
 
 /**
  * Fancybox
