@@ -34,10 +34,11 @@ return [
     'different'            => ':attribute en :other moeten verschillend zijn.',
     'digits'               => ':attribute moet bestaan uit :digits cijfers.',
     'digits_between'       => ':attribute moet bestaan uit minimaal :min en maximaal :max cijfers.',
-    'dimensions'           => 'The :attribute has invalid image dimensions.',
+    'dimensions'           => ':attribute heeft geen geldige afmetingen voor afbeeldingen.',
     'distinct'             => ':attribute heeft een dubbele waarde.',
     'email'                => ':attribute is geen geldig e-mailadres.',
     'exists'               => ':attribute bestaat niet.',
+    'file'                 => ':attribute moet een bestand zijn.',
     'filled'               => ':attribute is verplicht.',
     'image'                => ':attribute moet een afbeelding zijn.',
     'in'                   => ':attribute is ongeldig.',
@@ -52,6 +53,7 @@ return [
         'array'   => ':attribute mag niet meer dan :max items bevatten.',
     ],
     'mimes'                => ':attribute moet een bestand zijn van het bestandstype :values.',
+    'mimetypes'            => ':attribute moet een bestand zijn van het bestandstype :values.',
     'min'                  => [
         'numeric' => ':attribute moet minimaal :min zijn.',
         'file'    => ':attribute moet minimaal :min kilobytes zijn.',
@@ -79,6 +81,7 @@ return [
     'string'               => ':attribute moet een tekenreeks zijn.',
     'timezone'             => ':attribute moet een geldige tijdzone zijn.',
     'unique'               => ':attribute is al in gebruik.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => ':attribute is geen geldige URL.',
 
     /*
@@ -109,6 +112,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes'           => [
+        //
+    ],
 
 ];

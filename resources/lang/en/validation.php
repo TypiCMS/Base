@@ -16,11 +16,13 @@ return [
     'accepted'             => 'The :attribute must be accepted.',
     'active_url'           => 'The :attribute is not a valid URL.',
     'after'                => 'The :attribute must be a date after :date.',
+    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
     'alpha'                => 'The :attribute may only contain letters.',
     'alpha_dash'           => 'The :attribute may only contain letters, numbers, and dashes.',
     'alpha_num'            => 'The :attribute may only contain letters and numbers.',
     'array'                => 'The :attribute must be an array.',
     'before'               => 'The :attribute must be a date before :date.',
+    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
     'between'              => [
         'numeric' => 'The :attribute must be between :min and :max.',
         'file'    => 'The :attribute must be between :min and :max kilobytes.',
@@ -38,7 +40,8 @@ return [
     'distinct'             => 'The :attribute field has a duplicate value.',
     'email'                => 'The :attribute must be a valid email address.',
     'exists'               => 'The selected :attribute is invalid.',
-    'filled'               => 'The :attribute field is required.',
+    'file'                 => 'The :attribute must be a file.',
+    'filled'               => 'The :attribute field must have a value.',
     'image'                => 'The :attribute must be an image.',
     'in'                   => 'The selected :attribute is invalid.',
     'in_array'             => 'The :attribute field does not exist in :other.',
@@ -52,6 +55,7 @@ return [
         'array'   => 'The :attribute may not have more than :max items.',
     ],
     'mimes'                => 'The :attribute must be a file of type: :values.',
+    'mimetypes'            => 'The :attribute must be a file of type: :values.',
     'min'                  => [
         'numeric' => 'The :attribute must be at least :min.',
         'file'    => 'The :attribute must be at least :min kilobytes.',
@@ -79,6 +83,7 @@ return [
     'string'               => 'The :attribute must be a string.',
     'timezone'             => 'The :attribute must be a valid zone.',
     'unique'               => 'The :attribute has already been taken.',
+    'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
 
     /*
@@ -93,8 +98,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'allsections.*.title.*' => [
+            'max' => 'The title of a section may not be greater than :max characters.',
         ],
     ],
 
@@ -109,191 +114,6 @@ return [
     |
     */
 
-    'attributes' => [
-        // General
-        'name'             => 'Name',
-        'username'         => 'Username',
-        'password'         => 'Password',
-        'age'              => 'Age',
-        'sex'              => 'Sex',
-        'gender'           => 'Gender',
-        'day'              => 'Day',
-        'month'            => 'Month',
-        'year'             => 'Year',
-        'hour'             => 'Hour',
-        'minute'           => 'Minute',
-        'second'           => 'Second',
-        'title'            => 'Title',
-        'website_title'    => 'Website title',
-        'content'          => 'Content',
-        'description'      => 'Description',
-        'excerpt'          => 'Excerpt',
-        'date'             => 'Date',
-        'time'             => 'Time',
-        'available'        => 'Available',
-        'size'             => 'Size',
-        'slug'             => 'Slug',
-        'url'              => 'URL',
-        'body'             => 'Body',
-        'meta_keywords'    => 'Meta keywords',
-        'meta_title'       => 'Meta title',
-        'meta_description' => 'Meta description',
-        'summary'          => 'Summary',
-        'uri'              => 'Uri',
-        'online'           => 'Online',
-        'status'           => 'Status',
-        'generate'         => 'Generate',
-
-        // Contacts
-        'created_at' => 'Created at',
-        'email'      => 'Email',
-        'mr'         => 'Mr',
-        'mrs'        => 'Mrs',
-        'website'    => 'Website',
-        'first_name' => 'First name',
-        'last_name'  => 'Last name',
-        'company'    => 'Company',
-        'city'       => 'City',
-        'country'    => 'Country',
-        'address'    => 'Address',
-        'postcode'   => 'Post code',
-        'phone'      => 'Phone',
-        'mobile'     => 'Mobile',
-        'fax'        => 'Fax',
-        'language'   => 'Language',
-        'message'    => 'Message',
-        'send'       => 'Send',
-
-        // Pages
-        'rss_enabled'               => 'Rss enabled',
-        'comments_enabled'          => 'Comments enabled',
-        'private'                   => 'Private',
-        'is_home'                   => 'Is home',
-        'redirect to first child'   => 'Redirect to first child',
-        'don’t generate HTML cache' => 'Don’t generate HTML cache',
-        'module'                    => 'Module',
-        'template'                  => 'Template',
-        'css'                       => 'CSS',
-        'js'                        => 'JavaScript',
-        'add_to_menu'               => 'Add to menu',
-
-        // Places
-        'latitude'    => 'Latitude',
-        'longitude'   => 'Longitude',
-        'fax'         => 'Fax',
-        'info'        => 'Info',
-        'Show on map' => 'Show on map',
-        'category_id' => 'Category',
-        'info'        => 'Info',
-
-        // Partners
-        'logo'     => 'Logo',
-        'homepage' => 'On homepage',
-
-        // Events
-        'start_date'    => 'Start date',
-        'end_date'      => 'End date',
-        'start_time'    => 'Start time',
-        'end_time'      => 'End time',
-        'HH:MM'         => 'HH:MM',
-        'DDMMYYYY'      => 'DD.MM.YYYY',
-        'DDMMYYYY HHMM' => 'DD.MM.YYYY HH:MM',
-        'location'      => 'Location',
-        'venue'         => 'Venue',
-        'price'         => 'Price',
-        'currency'      => 'Currency',
-
-        // Projects
-        'category_id' => 'Category',
-
-        // Mots-clés
-        'tags' => 'Tags',
-        'tag'  => 'Tag',
-        'uses' => 'Uses',
-
-        // Menulinks
-        'page_id'        => 'Page',
-        'menu_id'        => 'Menu',
-        'module_name'    => 'Module name',
-        'target'         => 'Target',
-        'class'          => 'Class',
-        'icon_class'     => 'Icon class',
-        'restricted_to'  => 'Restricted to',
-        'link_type'      => 'Link type',
-        'has_categories' => 'Show categories',
-        'side'           => 'Side',
-        'Front office'   => 'Front office',
-        'Back office'    => 'Back office',
-
-        // Users
-        'first_name'            => 'First name',
-        'last_name'             => 'Last name',
-        'groups'                => 'Groups',
-        'roles'                 => 'Roles',
-        'email'                 => 'Email',
-        'password'              => 'Password',
-        'password_confirmation' => 'Password confirmation',
-        'reset password'        => 'Reset password',
-        'register'              => 'Register',
-        'Change password'       => 'Change password',
-        'save'                  => 'Save',
-        'save and exit'         => 'Save and exit',
-        'exit'                  => 'Exit',
-        'log in'                => 'Log in',
-        'modify'                => 'Modify',
-        'permissions'           => 'Permissions',
-        'superuser'             => 'Superuser',
-        'activated'             => 'Activated',
-        'getMergedPermissions'  => 'Get merged permissions',
-
-        // Settings
-        'webmaster_email'       => 'Webmaster email',
-        'google_analytics_code' => 'Google Analytics ID',
-        'google_tag_manager_id' => 'Google Tag Manager ID',
-        'lang_chooser'          => 'Lang chooser',
-        'welcome_message'       => 'Administration welcome message',
-        'admin_locale'          => 'Administration language',
-        'auth_public'           => 'Authenticate to view website',
-        'registration allowed'  => 'Registration allowed',
-
-        // Galleries
-        'galleries' => 'Galleries',
-
-        // Translations
-        'key'          => 'Key',
-        'translations' => 'Translations',
-
-        // Files
-        'alt_attribute'    => 'Alt attribute',
-        'keywords'         => 'Keywords',
-        'folder_id'        => 'Folder',
-        'user_id'          => 'User',
-        'type'             => 'Type',
-        'position'         => 'Position',
-        'name'             => 'Name',
-        'path'             => 'Path',
-        'files'            => 'Files',
-        'filename'         => 'Filename',
-        'extension'        => 'Extension',
-        'mimetype'         => 'Mimetype',
-        'width'            => 'Width',
-        'height'           => 'Height',
-        'download_count'   => 'Download_count',
-        'file information' => 'File information',
-        'image'            => 'Image',
-        'replace image'    => 'Replace image',
-        'file'             => 'File',
-        'replace file'     => 'Replace file',
-        'max'              => 'Maximum',
-        'max :size MB'     => 'Maximum :size MB',
-        'KB'               => 'KB',
-        'MB'               => 'MB',
-        'size (px)'        => 'Size (px)',
-        'preview'          => 'Preview',
-
-        'Submit' => 'Submit',
-        'Reset'  => 'Reset',
-        'Cancel' => 'Cancel',
-    ],
+    'attributes' => [],
 
 ];

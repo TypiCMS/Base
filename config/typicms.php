@@ -4,22 +4,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Cache system (use cache decorator in place of repository classes)
-    |--------------------------------------------------------------------------
-    */
-    'cache' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Save each front office page in public/html as flat html file.
-    | Pages are generated only when debug is off and no user is connected.
-    | The directory is cleaned on eloquent save, delete and composer install.
-    |--------------------------------------------------------------------------
-    */
-    'html_cache' => false,
-
-    /*
-    |--------------------------------------------------------------------------
     | You can choose not to have main locale in URLs
     |--------------------------------------------------------------------------
     |

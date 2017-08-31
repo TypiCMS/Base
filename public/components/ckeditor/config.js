@@ -13,14 +13,6 @@ CKEDITOR.editorConfig = function( config ) {
         { name: 'tools', items: [ 'Maximize', 'ShowBlocks', 'Source' ] },
     ];
 
-    // Quicktable config
-    config.qtRows = 20, // Count of rows
-    config.qtColumns = 20, // Count of columns
-    config.qtBorder = '0', // Border of inserted table
-    config.qtWidth = '100%', // Width of inserted table
-    config.qtCellPadding = '0', // Cell padding table
-    config.qtCellSpacing = '0', // Cell spacing table
-
     // Remove some buttons provided by the standard plugins, which are
     // not needed in the Standard(s) toolbar.
     config.removeButtons = 'Underline';
@@ -30,17 +22,11 @@ CKEDITOR.editorConfig = function( config ) {
     // Set the most common block elements.
     config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre';
 
-    config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks,div';
+    config.extraPlugins = 'image2,codemirror,panelbutton,oembed,justify,showblocks,div,dialogadvtab';
     config.removePlugins = 'image';
 
-    // Skin / UI
-    config.skin = 'typicms';
-    config.uiColor = '#eeeeee';
     config.height = 500;
-    config.dialog_backgroundCoverColor = 'black';
-
-    // config.forcePasteAsPlainText = true;
-    config.contentsCss = ['/css/public.css', '/components/ckeditor/css/content.css'];
+    config.contentsCss = ['/css/public.css', '/components/ckeditor/custom.css'];
     config.allowedContent = true;
 
     // codemirror
@@ -57,7 +43,39 @@ CKEDITOR.editorConfig = function( config ) {
     // File browser
     config.filebrowserBrowseUrl = '/admin/files?view=filepicker';
     config.filebrowserImageBrowseUrl = '/admin/files?type=i&view=filepicker';
-    config.filebrowserWindowWidth = 800;
-    config.filebrowserWindowHeight = 500;
 
 };
+
+CKEDITOR.on('dialogDefinition', function (event) {
+    var editor = event.editor;
+    var dialogDefinition = event.data.definition;
+    var dialogName = event.data.name;
+
+    var cleanUpFuncRef = CKEDITOR.tools.addFunction(function () {
+        $('#filepicker')
+            .removeClass('filepicker-modal-no-overlay')
+            .removeClass('filepicker-modal-open')
+            .data('CKEditorCleanUpFuncNum', 0)
+            .data('CKEditorFuncNum', 0);
+        $('html, body').removeClass('noscroll');
+    });
+
+    var tabCount = dialogDefinition.contents.length;
+    for (var i = 0; i < tabCount; i++) {
+        var browseButton = dialogDefinition.contents[i].get('browse');
+
+        if (browseButton !== null) {
+            browseButton.hidden = false;
+            browseButton.onClick = function (dialog, i) {
+                editor._.filebrowserSe = this;
+                $('#filepicker')
+                    .addClass('filepicker-modal-open')
+                    .addClass('filepicker-modal-no-overlay')
+                    .data('CKEditorCleanUpFuncNum', cleanUpFuncRef)
+                    .data('CKEditorFuncNum', CKEDITOR.instances[event.editor.name]._.filebrowserFn);
+                $('html, body').addClass('noscroll');
+            }
+        }
+    }
+}); // dialogDefinition
+

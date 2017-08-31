@@ -10,3 +10,17 @@ if (!function_exists('mb_ucfirst')) {
         return mb_strtoupper($firstChar, $encoding).$then;
     }
 }
+
+if (! function_exists('column')) {
+    function column($column)
+    {
+        return $column.'->'.config('app.locale');
+    }
+}
+
+if (! function_exists('locales')) {
+    function locales()
+    {
+        return config('translatable-bootforms.locales');
+    }
+}

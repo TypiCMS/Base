@@ -32,6 +32,7 @@ CKEDITOR.stylesSet.add( 'default', [
 	*/
 
     { name: 'Default button', element: 'a', attributes: { 'class': 'btn btn-default' } },
+    { name: 'Link button', element: 'a', attributes: { 'class': 'link-button' } },
     { name: 'Primary button', element: 'a', attributes: { 'class': 'btn btn-primary' } },
 
     { name: 'Alert Success', element: 'div', attributes: { 'class': 'alert alert-success' } },

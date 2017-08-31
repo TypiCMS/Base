@@ -4,13 +4,13 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Illuminate\Foundation\Validation\ValidationException;
-use Illuminate\Http\Exception\HttpResponseException;
+use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Facades\Log;
-use Krucas\Notification\Facades\Notification;
+use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
@@ -22,10 +22,22 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        AuthorizationException::class,
-        HttpException::class,
-        ModelNotFoundException::class,
-        ValidationException::class,
+        \Illuminate\Auth\AuthenticationException::class,
+        \Illuminate\Auth\Access\AuthorizationException::class,
+        \Symfony\Component\HttpKernel\Exception\HttpException::class,
+        \Illuminate\Database\Eloquent\ModelNotFoundException::class,
+        \Illuminate\Session\TokenMismatchException::class,
+        \Illuminate\Validation\ValidationException::class,
+    ];
+
+    /**
+     * A list of the inputs that are never flashed for validation exceptions.
+     *
+     * @var array
+     */
+    protected $dontFlash = [
+        'password',
+        'password_confirmation',
     ];
 
     /**
@@ -33,47 +45,66 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param \Exception $e
-     *
+     * @param  \Exception  $exception
      * @return void
      */
-    public function report(Exception $e)
+    public function report(Exception $exception)
     {
-        if ($this->shouldReport($e)) {
-            Log::error($e);
+        if ($this->shouldReport($exception)) {
+            Log::error($exception);
         }
-        parent::report($e);
+        parent::report($exception);
     }
 
     /**
      * Render an exception into an HTTP response.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \Exception               $e
-     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $e)
+    public function render($request, Exception $exception)
     {
+        $locale = ($request->segment(1) === 'admin') ? config('typicms.admin_locale') : config('app.locale');
+
         /*
          * Notification on TokenMismatchException
          */
-        if ($e instanceof TokenMismatchException) {
-            Notification::error(trans('global.Security token expired. Please, repeat your request.'));
-
-            return redirect()->back()->withInput();
+        if ($exception instanceof TokenMismatchException) {
+            return redirect()
+                ->back()
+                ->withErrors(['token_error' => __('Sorry, your session seems to have expired. Please try again.', [], $locale)])
+                ->withInput();
         }
 
-        if ($e instanceof HttpResponseException) {
-            return $e->getResponse();
-        } elseif ($e instanceof ModelNotFoundException) {
-            $e = new NotFoundHttpException($e->getMessage(), $e);
-        } elseif ($e instanceof AuthorizationException) {
-            $e = new HttpException(403, $e->getMessage());
-        } elseif ($e instanceof ValidationException && $e->getResponse()) {
-            return $e->getResponse();
+        if ($exception instanceof HttpResponseException) {
+            return $exception->getResponse();
+        } elseif ($exception instanceof ModelNotFoundException) {
+            $exception = new NotFoundHttpException($exception->getMessage(), $exception);
+        } elseif ($exception instanceof AuthorizationException) {
+            if ($request->wantsJson()) {
+                return response()->json(['error' => __($exception->getMessage(), [], $locale)], 403);
+            }
+            $exception = new HttpException(403, $exception->getMessage());
+        } elseif ($exception instanceof ValidationException && $exception->getResponse()) {
+            return $exception->getResponse();
+        }
+        if ($request->wantsJson()) {
+            return response()->json(['error' => __('Error', [], $locale)], 500);
         }
 
+        return parent::render($request, $exception);
+    }
+
+    /**
+     * Prepare response containing exception render.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Exception $e
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    protected function prepareResponse($request, Exception $e)
+    {
         if ($this->isHttpException($e)) {
             return $this->toIlluminateResponse($this->renderHttpException($e), $e);
         } else {
@@ -81,8 +112,31 @@ class Handler extends ExceptionHandler
             if (app()->environment() == 'production') {
                 return response()->view('errors.500', [], 500);
             }
-
             return $this->toIlluminateResponse($this->convertExceptionToResponse($e), $e);
+        }
+    }
+
+    /**
+     * Render the given HttpException.
+     *
+     * @param  \Symfony\Component\HttpKernel\Exception\HttpException  $e
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    protected function renderHttpException(HttpException $e)
+    {
+        $status = $e->getStatusCode();
+
+        view()->replaceNamespace('errors', [
+            resource_path('views/errors'),
+            __DIR__.'/views',
+        ]);
+
+        if (request()->segment(1) === 'admin' && view()->exists("errors::admin.{$status}")) {
+            return response()->view("errors::admin.{$status}", ['exception' => $e], $status, $e->getHeaders());
+        } elseif (view()->exists("errors::{$status}")) {
+            return response()->view("errors::{$status}", ['exception' => $e], $status, $e->getHeaders());
+        } else {
+            return $this->convertExceptionToResponse($e);
         }
     }
 }

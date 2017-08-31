@@ -2,25 +2,35 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Label override
-    |--------------------------------------------------------------------------
-    |
-    | The label to use when creating a localized form element.
-    | Useful for indicating that the form element is meant for a certain language.
-    | To have the label itself translated you still need to pass a trans() value as label in the view.
-    |
-    | Available placeholders:
-    |   %label   The original (eventually translated) label.
-    |   %locale  The locale  (e.g. 'en')
-    |
-    | E.g. for '%label (%locale)' and TranslatableBootForm::text(trans('nameTranslationKey'), 'name')
-    | this would yield the following labels:
-    |   <label for="en[name]">Name (en)</label>
-    |   <label for="nl[name]">Naam (nl)</label>
-    |
-    */
+	/*
+	|--------------------------------------------------------------------------
+	| Locales
+	|--------------------------------------------------------------------------
+	|
+	| Array of available locales
+	|
+	*/
+	'locales' => ['fr', 'nl', 'en'],
+
+	/*
+	|--------------------------------------------------------------------------
+	| Label override
+	|--------------------------------------------------------------------------
+	|
+	| The label to use when creating a localized form element.
+	| Useful for indicating that the form element is meant for a certain language.
+	| To have the label itself translated you still need to pass a trans() value as label in the view.
+	|
+	| Available placeholders:
+	|   %label   The original (eventually translated) label.
+	|   %locale  The locale  (e.g. 'en')
+	|
+	| E.g. for '%label (%locale)' and TranslatableBootForm::text(trans('nameTranslationKey'), 'name')
+	| this would yield the following labels:
+	|   <label for="en[name]">Name (en)</label>
+	|   <label for="nl[name]">Naam (nl)</label>
+	|
+	*/
 
     'label-locale-indicator' => '<span>%label</span> <span>(%locale)</span>',
 

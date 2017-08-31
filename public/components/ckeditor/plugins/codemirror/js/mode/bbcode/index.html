@@ -1,0 +1,73 @@
+<!doctype html>
+
+<title>CodeMirror: BBCode mode</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../../doc/docs.css">
+
+<link rel="stylesheet" href="../../lib/codemirror.css">
+<script src="../../lib/codemirror.js"></script>
+<script src="bbcode.js"></script>
+<div id=nav>
+  <a href="http://codemirror.net"><img id=logo src="../../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../../index.html">Home</a>
+    <li><a href="../../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/marijnh/codemirror">Code</a>
+  </ul>
+  <ul>
+    <li><a href="../index.html">Language modes</a>
+    <li><a class=active href="#">BBCode</a>
+  </ul>
+</div>
+
+<article>
+<h2>BBCode mode</h2>
+<form><textarea id="code" name="code">
+    [*] item [:-)]
+    Normal text [b]Bold text[/b] [i]italic[/i] [s]strikethrough[/s]
+    [hr]
+
+    [url]http://domain.com[/url]
+    [url=http://domain.com?a=1&amp;b=2]Link[/url]
+
+    [img]http://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Go-home.svg/100px-Go-home.svg.png[/img]
+
+    [quote]quoted text[/quote]
+
+    [code]monospaced text[/code]
+
+    [size=15]Large Text[/size]
+
+    [color=red]Red Text[/color]
+    or
+    [color=#FF0000]Red Text[/color]
+    or
+    [color=FF0000]Red Text[/color]
+
+    [list] [*]Entry 1 [*]Entry 2 [/list]
+    [list] *Entry 1 *Entry 2 [/list]
+
+    [table] [tr] [td]table data[/td] [/tr] [/table]
+
+    [code]Invalid 1[/b]
+    [unknown]Invalid 1[/unknown]
+
+    [brackets][opening[/brackets]
+    [brackets]closing][/brackets]
+    [brackets][unmatched][/brackets]
+</textarea></form>
+
+  <script type="text/javascript">
+    var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code"), {
+      mode           : "bbcode",
+      tabSize        : 2,
+      indentUnit     : 2,
+      indentWithTabs : false,
+      lineNumbers    : true
+    });
+  </script>
+
+  <p><strong>MIME types defined:</strong> <code>text/x-bbcode</code>.</p>
+</article>
+<!-- vim: set ts=2 sts=2 sw=2 et: -->

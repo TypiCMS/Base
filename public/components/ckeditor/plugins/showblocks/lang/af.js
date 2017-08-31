@@ -1,1 +1,1 @@
-CKEDITOR.plugins.setLang("showblocks","af",{toolbar:"Toon blokke"});
+﻿CKEDITOR.plugins.setLang("showblocks","af",{toolbar:"Toon blokke"});

@@ -1,14 +1,19 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
-## 2.9.0 - 2016-11-04
+## 3.0.0 - 2017-09-01
 
 ### Changed
-- [laravel-translatable](https://github.com/dimsav/laravel-translatable) 6.0, you will need to upgrade your custom models.
-- [laravel-permission](https://github.com/spatie/laravel-permission) 1.5
-- [bkwld/croppa](https://github.com/BKWLD/croppa) 4.5
-- Yarn
-- CKEditor: more styles + div plugin
+- Upgraded to Laravel 5.5 LTS
+- Use of Laravel Mix
+- Use of translation strings as keys stored in json files
+- New filemanager with directories and drag and drop
+- Use of spatie/laravel-translatable in place of dimsav/laravel-translatable
+- Use of rinvex/repository in place of custom repository
+- locales() helper method to get array of all locales
+- @block('name') blade directive
+- @menu('name') blade directive
+- Better roles and permissions management
 
 ## 2.8.0 - 2016-04-13
 

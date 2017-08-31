@@ -12,14 +12,17 @@ return [
     | such as the size rules. Feel free to tweak each of these messages.
     |
     */
+
     'accepted'             => ':attribute debe ser aceptado.',
     'active_url'           => ':attribute no es una URL válida.',
     'after'                => ':attribute debe ser una fecha posterior a :date.',
-    'alpha'                => ':attribute solo debe contener letras.',
-    'alpha_dash'           => ':attribute solo debe contener letras, números y guiones.',
-    'alpha_num'            => ':attribute solo debe contener letras y números.',
+    'after_or_equal'       => ':attribute debe ser una fecha posterior o igual a :date.',
+    'alpha'                => ':attribute sólo debe contener letras.',
+    'alpha_dash'           => ':attribute sólo debe contener letras, números y guiones.',
+    'alpha_num'            => ':attribute sólo debe contener letras y números.',
     'array'                => ':attribute debe ser un conjunto.',
     'before'               => ':attribute debe ser una fecha anterior a :date.',
+    'before_or_equal'      => ':attribute debe ser una fecha anterior o igual a :date.',
     'between'              => [
         'numeric' => ':attribute tiene que estar entre :min - :max.',
         'file'    => ':attribute debe pesar entre :min - :max kilobytes.',
@@ -33,10 +36,11 @@ return [
     'different'            => ':attribute y :other deben ser diferentes.',
     'digits'               => ':attribute debe tener :digits dígitos.',
     'digits_between'       => ':attribute debe tener entre :min y :max dígitos.',
-    'dimensions'           => 'Las dimensiones de la imagen :attribute no son validas.',
+    'dimensions'           => 'Las dimensiones de la imagen :attribute no son válidas.',
     'distinct'             => 'El campo :attribute contiene un valor duplicado.',
     'email'                => ':attribute no es un correo válido',
     'exists'               => ':attribute es inválido.',
+    'file'                 => 'El campo :attribute debe ser un archivo.',
     'filled'               => 'El campo :attribute es obligatorio.',
     'image'                => ':attribute debe ser una imagen.',
     'in'                   => ':attribute es inválido.',
@@ -51,6 +55,7 @@ return [
         'array'   => ':attribute no debe tener más de :max elementos.',
     ],
     'mimes'                => ':attribute debe ser un archivo con formato: :values.',
+    'mimetypes'            => ':attribute debe ser un archivo con formato: :values.',
     'min'                  => [
         'numeric' => 'El tamaño de :attribute debe ser de al menos :min.',
         'file'    => 'El tamaño de :attribute debe ser de al menos :min kilobytes.',
@@ -78,7 +83,9 @@ return [
     'string'               => 'El campo :attribute debe ser una cadena de caracteres.',
     'timezone'             => 'El :attribute debe ser una zona válida.',
     'unique'               => ':attribute ya ha sido registrado.',
+    'uploaded'             => 'Subir :attribute ha fallado.',
     'url'                  => 'El formato :attribute es inválido.',
+
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines
@@ -89,11 +96,13 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
+
     'custom'               => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'allsections.*.title.*' => [
+            'max' => 'Título de la sección no debe ser mayor que :max caracteres.',
         ],
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes
@@ -105,191 +114,6 @@ return [
     |
     */
 
-    'attributes' => [
-        // General
-        'name'             => 'Nombre',
-        'username'         => 'Nombre de usuario',
-        'password'         => 'Contraseña',
-        'age'              => 'Edad',
-        'sex'              => 'Sexo',
-        'gender'           => 'Género',
-        'day'              => 'Día',
-        'month'            => 'Mes',
-        'year'             => 'Año',
-        'hour'             => 'Hora',
-        'minute'           => 'Minuto',
-        'second'           => 'Segundo',
-        'title'            => 'Título',
-        'website_title'    => 'Título de la web',
-        'content'          => 'Contenido',
-        'description'      => 'Descripción',
-        'excerpt'          => 'Extracto',
-        'date'             => 'Fecha',
-        'time'             => 'Hora',
-        'available'        => 'Disponible',
-        'size'             => 'Tamañao',
-        'slug'             => 'Slug',
-        'url'              => 'URL',
-        'body'             => 'Contenido principal',
-        'meta_keywords'    => 'Meta keywords',
-        'meta_title'       => 'Meta title',
-        'meta_description' => 'Meta description',
-        'summary'          => 'Resumen',
-        'uri'              => 'Uri',
-        'online'           => 'Conectado',
-        'status'           => 'Estado',
-        'generate'         => 'Generar',
-
-        // Contacts
-        'created_at' => 'Creado el',
-        'email'      => 'Email',
-        'mr'         => 'Sr',
-        'mrs'        => 'Sra',
-        'website'    => 'Sitio Web',
-        'first_name' => 'Nombre',
-        'last_name'  => 'Apellidos',
-        'company'    => 'Empresa',
-        'city'       => 'Ciudad',
-        'country'    => 'País',
-        'address'    => 'Dirección',
-        'postcode'   => 'Código Postal',
-        'phone'      => 'Teléfono',
-        'mobile'     => 'Móvil',
-        'fax'        => 'Fax',
-        'language'   => 'Idioma',
-        'message'    => 'Mensaje',
-        'send'       => 'Enviar',
-
-        // Pages
-        'rss_enabled'               => 'Rss habilitado',
-        'comments_enabled'          => 'Comentarios habilitados',
-        'private'                   => 'Privado',
-        'is_home'                   => 'Es inicio',
-        'redirect to first child'   => 'Redireccionar al primer hijo',
-        'don’t generate HTML cache' => 'No generar HTML cache',
-        'module'                    => 'Módulo',
-        'template'                  => 'Plantilla',
-        'css'                       => 'CSS',
-        'js'                        => 'JavaScript',
-        'add_to_menu'               => 'Añadir al menú',
-
-        // Places
-        'latitude'    => 'Latitud',
-        'longitude'   => 'Longitud',
-        'fax'         => 'Fax',
-        'info'        => 'Información',
-        'Show on map' => 'Mostrar en el mapa',
-        'category_id' => 'Categoría',
-        'info'        => 'Información',
-
-        // Partners
-        'logo'     => 'Logo',
-        'homepage' => 'En página de inicio',
-
-        // Events
-        'start_date'    => 'Fecha de inicio',
-        'end_date'      => 'Fecha de finalización',
-        'start_time'    => 'Hora de inicio',
-        'end_time'      => 'Hora de finalización',
-        'HH:MM'         => 'HH:MM',
-        'DDMMYYYY'      => 'DD.MM.YYYY',
-        'DDMMYYYY HHMM' => 'DD.MM.YYYY HH:MM',
-        'location'      => 'Ubicación',
-        'venue'         => 'Ubicación',
-        'price'         => 'Precio',
-        'currency'      => 'Moneda',
-
-        // Projects
-        'category_id' => 'Categoría',
-
-        // Mots-clés
-        'tags' => 'Etiquetas',
-        'tag'  => 'Etiqueta',
-        'uses' => 'Usos',
-
-        // Menulinks
-        'page_id'        => 'Página',
-        'menu_id'        => 'Menú',
-        'module_name'    => 'Nombre del módulo',
-        'target'         => 'Objetivo',
-        'class'          => 'Clase',
-        'icon_class'     => 'Clase de icono',
-        'restricted_to'  => 'Restringido a',
-        'link_type'      => 'Tipo de enlace',
-        'has_categories' => 'Mostrar categorías',
-        'side'           => 'Lado',
-        'Front office'   => 'Front office',
-        'Back office'    => 'Back office',
-
-        // Users
-        'first_name'            => 'Nombre',
-        'last_name'             => 'Apellidos',
-        'groups'                => 'Grupos',
-        'roles'                 => 'Roles',
-        'email'                 => 'Email',
-        'password'              => 'Contraseña',
-        'password_confirmation' => 'Confirmación de contraseña',
-        'reset password'        => 'Restablecer contraseña',
-        'register'              => 'Registrar',
-        'Change password'       => 'Cambiar contraseña',
-        'save'                  => 'Guardar',
-        'save and exit'         => 'Guardar y salir',
-        'exit'                  => 'Salir',
-        'log in'                => 'Acceder',
-        'modify'                => 'Modicar',
-        'permissions'           => 'Permisos',
-        'superuser'             => 'Superusuario',
-        'activated'             => 'Activado',
-        'getMergedPermissions'  => 'Obtener permisos fusionados',
-
-        // Settings
-        'webmaster_email'       => 'Email del Maestro de la Web',
-        'google_analytics_code' => 'Google Analytics ID',
-        'google_tag_manager_id' => 'Google Tag Manager ID',
-        'lang_chooser'          => 'Selector de idioma',
-        'welcome_message'       => 'Administration welcome message',
-        'admin_locale'          => 'Idioma de la administración',
-        'auth_public'           => 'Autenticarse para ver la web',
-        'registration allowed'  => 'Registro permitido',
-
-        // Galleries
-        'galleries' => 'Galerías',
-
-        // Translations
-        'key'          => 'Clave',
-        'translations' => 'Traducciones',
-
-        // Files
-        'alt_attribute'    => 'Alt attribute',
-        'keywords'         => 'Palabras clave',
-        'folder_id'        => 'Carpeta',
-        'user_id'          => 'Usuario',
-        'type'             => 'Tipo',
-        'position'         => 'Posición',
-        'name'             => 'Nombre',
-        'path'             => 'Ruta',
-        'files'            => 'Archivos',
-        'filename'         => 'Nombre de archivo',
-        'extension'        => 'Extensión',
-        'mimetype'         => 'Tipo Mime',
-        'width'            => 'Anchura',
-        'height'           => 'Altura',
-        'download_count'   => 'Número de descargas',
-        'file information' => 'Información del archivo',
-        'image'            => 'Imagen',
-        'replace image'    => 'Reemplazar imagen',
-        'file'             => 'Archivo',
-        'replace file'     => 'Reemplazar archivo',
-        'max'              => 'Máximo',
-        'max :size MB'     => 'Máximo :size MB',
-        'KB'               => 'KB',
-        'MB'               => 'MB',
-        'size (px)'        => 'Tamaño (px)',
-        'preview'          => 'Previsualizar',
-
-        'Submit' => 'Enviar',
-        'Reset'  => 'Resetear',
-        'Cancel' => 'Cancelar',
-    ],
+    'attributes' => [],
 
 ];
