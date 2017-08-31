@@ -53,8 +53,10 @@ CKEDITOR.on('dialogDefinition', function (event) {
 
     var cleanUpFuncRef = CKEDITOR.tools.addFunction(function () {
         $('#filepicker')
+            .removeClass('filepicker-single')
             .removeClass('filepicker-modal-no-overlay')
             .removeClass('filepicker-modal-open')
+            .addClass('filepicker-multiple')
             .data('CKEditorCleanUpFuncNum', 0)
             .data('CKEditorFuncNum', 0);
         $('html, body').removeClass('noscroll');
@@ -69,6 +71,8 @@ CKEDITOR.on('dialogDefinition', function (event) {
             browseButton.onClick = function (dialog, i) {
                 editor._.filebrowserSe = this;
                 $('#filepicker')
+                    .addClass('filepicker-single')
+                    .removeClass('filepicker-multiple')
                     .addClass('filepicker-modal-open')
                     .addClass('filepicker-modal-no-overlay')
                     .data('CKEditorCleanUpFuncNum', cleanUpFuncRef)
