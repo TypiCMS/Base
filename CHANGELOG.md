@@ -8,6 +8,7 @@ All notable changes to TypiCMS will be documented in this file.
 - Use of Laravel Mix
 - Use of translation strings as keys stored in json files
 - New filemanager with directories and drag and drop
+- A page can have sections
 - Use of spatie/laravel-translatable in place of dimsav/laravel-translatable
 - Use of rinvex/repository in place of custom repository
 - locales() helper method to get array of all locales
