@@ -9,6 +9,14 @@ mix.standaloneSass('resources/assets/sass/public.sass', 'public/css');
 /**
  * Compile JS
  */
+mix.webpackConfig({
+    module: {
+        rules: [{
+            test: /\.js$/,
+            loader: ['ng-annotate-loader', 'babel-loader']
+        }]
+    }
+});
 mix.js('resources/assets/js/admin.js', 'public/js');
 mix.js('resources/assets/js/public.js', 'public/js');
 
