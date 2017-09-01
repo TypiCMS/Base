@@ -57837,7 +57837,6 @@ var map = {
 	"./jquery.xsrf.js": "./resources/assets/js/admin/jquery.xsrf.js",
 	"./lang-switcher-active.js": "./resources/assets/js/admin/lang-switcher-active.js",
 	"./offcanvas-admin.js": "./resources/assets/js/admin/offcanvas-admin.js",
-	"./page-sections.js": "./resources/assets/js/admin/page-sections.js",
 	"./preferences.js": "./resources/assets/js/admin/preferences.js",
 	"./preview-window.js": "./resources/assets/js/admin/preview-window.js",
 	"./select-files-window.js": "./resources/assets/js/admin/select-files-window.js",
@@ -58336,20 +58335,6 @@ $(function () {
 $(function () {
     $('[data-toggle="offcanvas"]').click(function () {
         $('.row-offcanvas').toggleClass('active');
-    });
-});
-
-/***/ }),
-
-/***/ "./resources/assets/js/admin/page-sections.js":
-/***/ (function(module, exports) {
-
-$(function () {
-    var lastItem = $('#sections').children('.section').last();
-    lastItem.hide();
-    $('#btn-add-section').on('click', function () {
-        lastItem.show().find(':disabled').attr({ 'disabled': false });
-        $(this).hide();
     });
 });
 
@@ -59397,13 +59382,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                     return false;
                 }
 
+                // If parent is private set current model to private
+                if (event.dest.nodesScope.$nodeScope) {
+                    if (nodes.$nodeScope.model.private == 1) {
+                        model.private = 1;
+                    }
+                }
+
                 data.moved = model.id;
                 data.item = [];
                 model.position = event.dest.index + 1;
                 model.parent_id = parentId;
 
                 angular.forEach(currentList, function (model) {
-                    data.item.push({ id: model.id, parent_id: model.parent_id });
+                    data.item.push({ id: model.id, parent_id: model.parent_id, private: model.private });
                 });
 
                 $http.post('/admin/' + modulePath + '/sort', data).success(function (data) {
