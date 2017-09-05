@@ -879,16 +879,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.1",
+            "version": "v5.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "fad090f6e14b97df91489803644ac88b5321864e"
+                "reference": "65da63c8ad4836e2bcddcff75becd49c71c5041c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/fad090f6e14b97df91489803644ac88b5321864e",
-                "reference": "fad090f6e14b97df91489803644ac88b5321864e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/65da63c8ad4836e2bcddcff75becd49c71c5041c",
+                "reference": "65da63c8ad4836e2bcddcff75becd49c71c5041c",
                 "shasum": ""
             },
             "require": {
@@ -1007,7 +1007,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-09-01T06:33:38+00:00"
+            "time": "2017-09-04T14:09:04+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1441,16 +1441,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "4d4896e553f2094e657fe493506dc37c509d4e2b"
+                "reference": "a1e8e1a30e1352f118feff1a8481066ddc2f234a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4d4896e553f2094e657fe493506dc37c509d4e2b",
-                "reference": "4d4896e553f2094e657fe493506dc37c509d4e2b",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a1e8e1a30e1352f118feff1a8481066ddc2f234a",
+                "reference": "a1e8e1a30e1352f118feff1a8481066ddc2f234a",
                 "shasum": ""
             },
             "require": {
@@ -1488,7 +1488,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2017-07-28T14:45:09+00:00"
+            "time": "2017-09-02T17:10:46+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1974,12 +1974,12 @@
             "version": "v2.10.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RoumenDamianoff/laravel-feed.git",
+                "url": "https://github.com/Laravelium/laravel-feed.git",
                 "reference": "ffbdb58f2ef41c7cb5d3bcd0aec2273e8eabc58b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-feed/zipball/ffbdb58f2ef41c7cb5d3bcd0aec2273e8eabc58b",
+                "url": "https://api.github.com/repos/Laravelium/laravel-feed/zipball/ffbdb58f2ef41c7cb5d3bcd0aec2273e8eabc58b",
                 "reference": "ffbdb58f2ef41c7cb5d3bcd0aec2273e8eabc58b",
                 "shasum": ""
             },
@@ -2025,12 +2025,12 @@
             "version": "v2.5.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RoumenDamianoff/laravel-sitemap.git",
+                "url": "https://github.com/Laravelium/laravel-sitemap.git",
                 "reference": "637e094b2f5e1e56389845dcd3f0e8db4c2f05d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/637e094b2f5e1e56389845dcd3f0e8db4c2f05d9",
+                "url": "https://api.github.com/repos/Laravelium/laravel-sitemap/zipball/637e094b2f5e1e56389845dcd3f0e8db4c2f05d9",
                 "reference": "637e094b2f5e1e56389845dcd3f0e8db4c2f05d9",
                 "shasum": ""
             },
@@ -2122,16 +2122,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "2.5.0",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "e36ddb9fa6a68e4da4ce93078256e3dab782bd24"
+                "reference": "bec6e19c7da4831040a9161ff7476505293063b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/e36ddb9fa6a68e4da4ce93078256e3dab782bd24",
-                "reference": "e36ddb9fa6a68e4da4ce93078256e3dab782bd24",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/bec6e19c7da4831040a9161ff7476505293063b8",
+                "reference": "bec6e19c7da4831040a9161ff7476505293063b8",
                 "shasum": ""
             },
             "require": {
@@ -2144,7 +2144,7 @@
             "require-dev": {
                 "monolog/monolog": "^1.22",
                 "orchestra/testbench": "~3.4.2|~3.5.0",
-                "phpunit/phpunit": "^6.2"
+                "phpunit/phpunit": "^5.7|6.2"
             },
             "type": "library",
             "extra": {
@@ -2183,7 +2183,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2017-08-30T13:27:35+00:00"
+            "time": "2017-09-05T06:25:58+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
@@ -3144,16 +3144,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "3.0.2",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "e3bbbb56daac8e323d91908c427f1bb433579675"
+                "reference": "a43a74c75cb5b87ece302c621be48ac05702adf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/e3bbbb56daac8e323d91908c427f1bb433579675",
-                "reference": "e3bbbb56daac8e323d91908c427f1bb433579675",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/a43a74c75cb5b87ece302c621be48ac05702adf4",
+                "reference": "a43a74c75cb5b87ece302c621be48ac05702adf4",
                 "shasum": ""
             },
             "require": {
@@ -3179,7 +3179,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-09-01T13:51:19+00:00"
+            "time": "2017-09-05T18:21:06+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -3218,16 +3218,16 @@
         },
         {
             "name": "typicms/files",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "32b308223cfe819220bd5459f8f1fba4aa71e15e"
+                "reference": "d493d3dd3e9520a9b08acf33eeda07ed011cc02c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/32b308223cfe819220bd5459f8f1fba4aa71e15e",
-                "reference": "32b308223cfe819220bd5459f8f1fba4aa71e15e",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/d493d3dd3e9520a9b08acf33eeda07ed011cc02c",
+                "reference": "d493d3dd3e9520a9b08acf33eeda07ed011cc02c",
                 "shasum": ""
             },
             "require": {
@@ -3249,7 +3249,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-09-01T12:55:13+00:00"
+            "time": "2017-09-05T10:11:47+00:00"
         },
         {
             "name": "typicms/history",
@@ -3558,16 +3558,16 @@
         },
         {
             "name": "typicms/sitemap",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
-                "reference": "dd7f2bb0d741f3e6de7a5cd87cf3194548ea07f2"
+                "reference": "a88d93d3e8005e76a0fcbcfedc2d33e17f399f5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/dd7f2bb0d741f3e6de7a5cd87cf3194548ea07f2",
-                "reference": "dd7f2bb0d741f3e6de7a5cd87cf3194548ea07f2",
+                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/a88d93d3e8005e76a0fcbcfedc2d33e17f399f5c",
+                "reference": "a88d93d3e8005e76a0fcbcfedc2d33e17f399f5c",
                 "shasum": ""
             },
             "require": {
@@ -3597,11 +3597,11 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-08-31T21:07:55+00:00"
+            "time": "2017-09-05T09:35:30+00:00"
         },
         {
             "name": "typicms/translations",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
@@ -4284,16 +4284,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.2.3",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "86e24012a3139b42a7b71155cfaa325389f00f1f"
+                "reference": "2d3d238c433cf69caeb4842e97a3223a116f94b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/86e24012a3139b42a7b71155cfaa325389f00f1f",
-                "reference": "86e24012a3139b42a7b71155cfaa325389f00f1f",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/2d3d238c433cf69caeb4842e97a3223a116f94b2",
+                "reference": "2d3d238c433cf69caeb4842e97a3223a116f94b2",
                 "shasum": ""
             },
             "require": {
@@ -4325,7 +4325,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-08-29T19:37:41+00:00"
+            "time": "2017-08-30T18:51:59+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -4376,22 +4376,22 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.7.0",
+            "version": "v1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "93d39f1f7f9326d746203c7c056f300f7f126073"
+                "reference": "c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/93d39f1f7f9326d746203c7c056f300f7f126073",
-                "reference": "93d39f1f7f9326d746203c7c056f300f7f126073",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6",
+                "reference": "c9b8c6088acd19d769d4cc0ffa60a9fe34344bd6",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
                 "php": "^5.3|^7.0",
-                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2",
+                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
                 "sebastian/comparator": "^1.1|^2.0",
                 "sebastian/recursion-context": "^1.0|^2.0|^3.0"
             },
@@ -4402,7 +4402,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -4435,7 +4435,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2017-03-02T20:05:34+00:00"
+            "time": "2017-09-04T11:05:03+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
