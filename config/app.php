@@ -198,9 +198,6 @@ return [
          */
         TypiCMS\Modules\Core\Providers\ModuleProvider::class,
 
-        // Pages module needs to be at last for routing to work.
-        TypiCMS\Modules\Pages\Providers\ModuleProvider::class,
-
         /*
          * Application Service Providers...
          */
@@ -209,6 +206,13 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+         * TypiCMS Pages service provider,
+         * a catch all route is registered,
+         * so it should stay at last...
+         */
+        TypiCMS\Modules\Pages\Providers\ModuleProvider::class,
 
     ],
 
