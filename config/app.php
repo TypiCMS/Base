@@ -167,7 +167,6 @@ return [
          * Package Service Providers...
          */
         AdamWathan\BootForms\BootFormsServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
@@ -265,7 +264,6 @@ return [
         'FileUpload' => TypiCMS\Modules\Core\Facades\FileUpload::class,
         'TypiCMS' => TypiCMS\Modules\Core\Facades\TypiCMS::class,
 
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'BootForm' => AdamWathan\BootForms\Facades\BootForm::class,
         'Form' => AdamWathan\Form\Facades\Form::class,
         'TranslatableBootForm' => TypiCMS\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,
