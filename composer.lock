@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "49d1fb16887ee3ff6ecea83c7946d870",
+    "content-hash": "9fe07962015e900386f8ae794061c890",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1817,16 +1817,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e"
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/45cffe822057a09e05f7bd09ec5fb88eeecd2334",
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334",
                 "shasum": ""
             },
             "require": {
@@ -1895,7 +1895,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2017-08-04T13:39:04+00:00"
+            "time": "2017-09-22T20:46:04+00:00"
         },
         {
             "name": "rinvex/repository",
@@ -2132,16 +2132,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "2.5.4",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "c975ab2ad698900139cb453dc058b1271afceefd"
+                "reference": "bf7bdc0ba53ab334c7c9ae20ac08b51df9afe3bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/c975ab2ad698900139cb453dc058b1271afceefd",
-                "reference": "c975ab2ad698900139cb453dc058b1271afceefd",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/bf7bdc0ba53ab334c7c9ae20ac08b51df9afe3bd",
+                "reference": "bf7bdc0ba53ab334c7c9ae20ac08b51df9afe3bd",
                 "shasum": ""
             },
             "require": {
@@ -2193,7 +2193,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2017-09-10T09:59:34+00:00"
+            "time": "2017-09-10T15:14:15+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
@@ -3154,16 +3154,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "3.0.4",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "a43a74c75cb5b87ece302c621be48ac05702adf4"
+                "reference": "dd97b813b22f73c5133dea9dce2e9c57ecaa86a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/a43a74c75cb5b87ece302c621be48ac05702adf4",
-                "reference": "a43a74c75cb5b87ece302c621be48ac05702adf4",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/dd97b813b22f73c5133dea9dce2e9c57ecaa86a7",
+                "reference": "dd97b813b22f73c5133dea9dce2e9c57ecaa86a7",
                 "shasum": ""
             },
             "require": {
@@ -3189,7 +3189,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-09-05T18:21:06+00:00"
+            "time": "2017-09-24T10:38:07+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -3228,16 +3228,16 @@
         },
         {
             "name": "typicms/files",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "d493d3dd3e9520a9b08acf33eeda07ed011cc02c"
+                "reference": "62f685e471f573d48e85073410ee4c0a05a6eb0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/d493d3dd3e9520a9b08acf33eeda07ed011cc02c",
-                "reference": "d493d3dd3e9520a9b08acf33eeda07ed011cc02c",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/62f685e471f573d48e85073410ee4c0a05a6eb0a",
+                "reference": "62f685e471f573d48e85073410ee4c0a05a6eb0a",
                 "shasum": ""
             },
             "require": {
@@ -3259,7 +3259,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-09-05T10:11:47+00:00"
+            "time": "2017-09-23T11:11:35+00:00"
         },
         {
             "name": "typicms/history",
@@ -3498,16 +3498,16 @@
         },
         {
             "name": "typicms/roles",
-            "version": "3.0.0",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Roles.git",
-                "reference": "058c6753453a2e6e9ae4c63e77c51b01a36d06a4"
+                "reference": "017d0df1c5c838733ccdfe07ef532f9f893d763a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/058c6753453a2e6e9ae4c63e77c51b01a36d06a4",
-                "reference": "058c6753453a2e6e9ae4c63e77c51b01a36d06a4",
+                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/017d0df1c5c838733ccdfe07ef532f9f893d763a",
+                "reference": "017d0df1c5c838733ccdfe07ef532f9f893d763a",
                 "shasum": ""
             },
             "require": {
@@ -3529,20 +3529,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-08-31T20:49:48+00:00"
+            "time": "2017-09-24T11:22:11+00:00"
         },
         {
             "name": "typicms/settings",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
-                "reference": "cec1670df3f699e091910e64d272126a649c89d0"
+                "reference": "b796f42c160ae6a7798c2e7b7a045b0933d5e005"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/cec1670df3f699e091910e64d272126a649c89d0",
-                "reference": "cec1670df3f699e091910e64d272126a649c89d0",
+                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/b796f42c160ae6a7798c2e7b7a045b0933d5e005",
+                "reference": "b796f42c160ae6a7798c2e7b7a045b0933d5e005",
                 "shasum": ""
             },
             "require": {
@@ -3564,7 +3564,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-08-31T21:08:25+00:00"
+            "time": "2017-09-23T11:15:22+00:00"
         },
         {
             "name": "typicms/sitemap",
@@ -3646,16 +3646,16 @@
         },
         {
             "name": "typicms/users",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "dbf95ecb5e11b5b89273b30612377d6d38f2813a"
+                "reference": "33ef197a7b6ae3c71b6cf9f766da40d15c70282e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/dbf95ecb5e11b5b89273b30612377d6d38f2813a",
-                "reference": "dbf95ecb5e11b5b89273b30612377d6d38f2813a",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/33ef197a7b6ae3c71b6cf9f766da40d15c70282e",
+                "reference": "33ef197a7b6ae3c71b6cf9f766da40d15c70282e",
                 "shasum": ""
             },
             "require": {
@@ -3677,7 +3677,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-08-31T20:52:13+00:00"
+            "time": "2017-09-24T10:38:35+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -4699,16 +4699,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.3.0",
+            "version": "6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9501bab711403a1ab5b8378a8adb4ec3db3debdb"
+                "reference": "c0ff817b36a827e64bf5f57bc72278150cf30a77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9501bab711403a1ab5b8378a8adb4ec3db3debdb",
-                "reference": "9501bab711403a1ab5b8378a8adb4ec3db3debdb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c0ff817b36a827e64bf5f57bc72278150cf30a77",
+                "reference": "c0ff817b36a827e64bf5f57bc72278150cf30a77",
                 "shasum": ""
             },
             "require": {
@@ -4779,7 +4779,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-08-04T05:20:39+00:00"
+            "time": "2017-09-24T07:25:54+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
