@@ -261,7 +261,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'FileUpload' => TypiCMS\Modules\Core\Facades\FileUpload::class,
         'TypiCMS' => TypiCMS\Modules\Core\Facades\TypiCMS::class,
 
         'BootForm' => AdamWathan\BootForms\Facades\BootForm::class,
