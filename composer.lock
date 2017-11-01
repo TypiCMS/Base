@@ -889,16 +889,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.18",
+            "version": "v5.5.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1cc21baac11551377734b8c17ead17db4c34fe21"
+                "reference": "c678100e84934ec85c9f8bc26bd0a60222682719"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1cc21baac11551377734b8c17ead17db4c34fe21",
-                "reference": "1cc21baac11551377734b8c17ead17db4c34fe21",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c678100e84934ec85c9f8bc26bd0a60222682719",
+                "reference": "c678100e84934ec85c9f8bc26bd0a60222682719",
                 "shasum": ""
             },
             "require": {
@@ -1016,7 +1016,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-10-19T12:50:26+00:00"
+            "time": "2017-10-25T19:10:45+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1353,7 +1353,7 @@
         },
         {
             "name": "mtdowling/cron-expression",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mtdowling/cron-expression.git",
@@ -1902,12 +1902,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rinvex/repository.git",
-                "reference": "b6c2f29f1f5b6c1c195d46ce47ccc4a102da0d19"
+                "reference": "29884f8cd9cd212ff30b1d52124fd3d1c040fda1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rinvex/repository/zipball/b6c2f29f1f5b6c1c195d46ce47ccc4a102da0d19",
-                "reference": "b6c2f29f1f5b6c1c195d46ce47ccc4a102da0d19",
+                "url": "https://api.github.com/repos/rinvex/repository/zipball/29884f8cd9cd212ff30b1d52124fd3d1c040fda1",
+                "reference": "29884f8cd9cd212ff30b1d52124fd3d1c040fda1",
                 "shasum": ""
             },
             "require": {
@@ -1976,7 +1976,7 @@
                 "repository",
                 "rinvex"
             ],
-            "time": "2017-09-12T17:03:04+00:00"
+            "time": "2017-10-29T02:19:23+00:00"
         },
         {
             "name": "roumen/feed",
@@ -3153,16 +3153,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "3.0.11",
+            "version": "3.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "9b172bdfdc78053319e6c5fc3a73c31d9a1e2aba"
+                "reference": "c184881a0e5d21ca397810c1b0f1885ae5e9b7c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/9b172bdfdc78053319e6c5fc3a73c31d9a1e2aba",
-                "reference": "9b172bdfdc78053319e6c5fc3a73c31d9a1e2aba",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/c184881a0e5d21ca397810c1b0f1885ae5e9b7c7",
+                "reference": "c184881a0e5d21ca397810c1b0f1885ae5e9b7c7",
                 "shasum": ""
             },
             "require": {
@@ -3188,7 +3188,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-10-23T13:06:35+00:00"
+            "time": "2017-11-01T20:05:15+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -3641,7 +3641,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-09-01T09:31:07+00:00"
+            "time": "2017-09-25T13:01:26+00:00"
         },
         {
             "name": "typicms/users",
