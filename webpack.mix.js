@@ -3,8 +3,8 @@ let mix = require('laravel-mix');
 /**
  * Compile CSS
  */
-mix.standaloneSass('resources/assets/sass/admin.sass', 'public/css');
-mix.standaloneSass('resources/assets/sass/public.sass', 'public/css');
+mix.standaloneSass('resources/assets/scss/admin.scss', 'public/css');
+mix.standaloneSass('resources/assets/scss/public.scss', 'public/css');
 
 /**
  * Compile JS
