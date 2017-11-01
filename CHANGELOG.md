@@ -6,12 +6,12 @@ All notable changes to TypiCMS will be documented in this file.
 ### Changed
 - Upgraded to Laravel 5.5 LTS
 - Use of Laravel Mix
-- Use of translation strings as keys stored in json files
+- Use of translation strings stored in json files
 - New filemanager with directories and drag and drop
 - A page can have sections
 - Use of spatie/laravel-translatable in place of dimsav/laravel-translatable
-- Use of rinvex/repository in place of custom repository
-- locales() helper method to get array of all locales
+- Use of rinvex/repository
+- locales() helper method to get an array of all locales
 - @block('name') blade directive
 - @menu('name') blade directive
 - Better roles and permissions management
