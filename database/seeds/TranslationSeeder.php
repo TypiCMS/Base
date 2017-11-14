@@ -6,14 +6,14 @@ class TranslationSeeder extends Seeder
 {
     public function run()
     {
-            $typi_translations = [
+        $typi_translations = [
             ['id' => '1', 'group' => 'db', 'translation' => '{"fr":"En savoir plus","en":"More","nl":"Meer"}', 'key' => 'More', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
             ['id' => '2', 'group' => 'db', 'translation' => '{"fr":"Aller au contenu","en":"Skip to content","nl":"Naar inhoud"}', 'key' => 'Skip to content', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
             ['id' => '3', 'group' => 'db', 'translation' => '{"fr":"Français","en":"Français","nl":"Français"}', 'key' => 'languages.fr', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
             ['id' => '4', 'group' => 'db', 'translation' => '{"fr":"English","en":"English","nl":"English"}', 'key' => 'languages.en', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
             ['id' => '5', 'group' => 'db', 'translation' => '{"fr":"Nederlands","en":"Nederlands","nl":"Nederlands"}', 'key' => 'languages.nl', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
             ['id' => '6', 'group' => 'db', 'translation' => '{"fr":"Chercher","en":"Search","nl":"Zoeken"}', 'key' => 'Search', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
-            ['id' => '7', 'group' => 'db', 'translation' => '{"fr":"Merci","en":"Thank you","nl":"Dank u"}', 'key' => 'message when contact form is sent', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
+            ['id' => '7', 'group' => 'db', 'translation' => '{"fr":"Merci pour votre demande de contact, elle sera traitée dans les meilleurs délais.","en":"Thank you for your contact request, it will be treated as soon as possible.","nl":"Bedankt voor uw contactaanvraag, het zal zo snel mogelijk worden behandeld."}', 'key' => 'message when contact form is sent', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
             ['id' => '8', 'group' => 'db', 'translation' => '{"fr":"Veuillez s’il vous plaît corriger les erreurs ci-dessous","en":"Please correct the errors below","nl":"Gelieve de onderstaande fouten te corrigeren"}', 'key' => 'message when errors in form', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
             ['id' => '9', 'group' => 'db', 'translation' => '{"fr":"Ajouter au calendrier","en":"Add to calendar","nl":"Toevoegen aan Agenda"}', 'key' => 'Add to calendar', 'created_at' => '2014-02-28 22:50:19', 'updated_at' => '2014-02-28 22:50:19'],
             ['id' => '10', 'group' => 'db', 'translation' => '{"fr":"Toutes les actualités","nl":"Alle nieuws","en":"All news"}', 'key' => 'All news', 'created_at' => '2014-02-28 15:39:28', 'updated_at' => '2014-02-28 15:39:28'],
