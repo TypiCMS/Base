@@ -76,4 +76,4 @@ mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins');
  */
 mix.version();
 
-mix.browserSync('typicms.dev');
+mix.browserSync('typicms.test');
