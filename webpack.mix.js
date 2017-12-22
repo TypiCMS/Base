@@ -48,7 +48,6 @@ var plugins = [
     'image',
     'image2',
     'justify',
-    'lineutils',
     'link',
     'magicline',
     'panelbutton',
@@ -59,7 +58,6 @@ var plugins = [
     'table',
     'tableselection',
     'widget',
-    'widgetselection',
     'wsc',
 ];
 plugins.forEach(function (plugin) {
