@@ -65,7 +65,7 @@ return [
         |
         */
 
-        'lifetime' => env('TYPICMS_CACHE', -1),
+        'lifetime' => (int) env('TYPICMS_CACHE', -1),
 
         /*
         |--------------------------------------------------------------------------
