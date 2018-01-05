@@ -63,6 +63,7 @@ This kind of URLs are managed by the CMS:
 ## Requirements
 
 - PHP >= 7.0.0
+- MySQL 5.7
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - Mbstring PHP Extension
