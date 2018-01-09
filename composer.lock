@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8bf4d575f927dc97dd1d15a8bc8e398",
+    "content-hash": "ea4409ebaaee6eb3145869a67918dede",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -1906,13 +1906,13 @@
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rinvex/repository.git",
-                "reference": "3a0a10a38f766d61c606ff52b588d6a00c9c15e3"
+                "url": "https://github.com/TypiCMS/repository.git",
+                "reference": "5806ded2e5787a06c99bd14a54b2c0abb45cda9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rinvex/repository/zipball/3a0a10a38f766d61c606ff52b588d6a00c9c15e3",
-                "reference": "3a0a10a38f766d61c606ff52b588d6a00c9c15e3",
+                "url": "https://api.github.com/repos/TypiCMS/repository/zipball/5806ded2e5787a06c99bd14a54b2c0abb45cda9a",
+                "reference": "5806ded2e5787a06c99bd14a54b2c0abb45cda9a",
                 "shasum": ""
             },
             "require": {
@@ -1921,7 +1921,7 @@
                 "illuminate/database": "~5.5.0",
                 "illuminate/events": "~5.5.0",
                 "illuminate/support": "~5.5.0",
-                "php": "^7.1.0"
+                "php": "^7.0.0"
             },
             "require-dev": {
                 "codedungeon/phpunit-result-printer": "^0.4.0",
@@ -1947,20 +1947,24 @@
                     "Rinvex\\Repository\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Rinvex\\Tests\\": "tests"
+                }
+            },
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Rinvex LLC",
-                    "email": "help@rinvex.com",
-                    "homepage": "https://rinvex.com"
+                    "homepage": "https://rinvex.com",
+                    "email": "help@rinvex.com"
                 },
                 {
                     "name": "Abdelrahman Omran",
-                    "email": "me@omranic.com",
                     "homepage": "https://omranic.com",
+                    "email": "me@omranic.com",
                     "role": "Project Lead"
                 },
                 {
@@ -1982,7 +1986,13 @@
                 "repository",
                 "rinvex"
             ],
-            "time": "2018-01-02T10:44:30+00:00"
+            "support": {
+                "email": "help@rinvex.com",
+                "issues": "https://github.com/rinvex/repository/issues",
+                "source": "https://github.com/rinvex/repository",
+                "docs": "https://github.com/rinvex/repository/blob/master/README.md"
+            },
+            "time": "2018-01-09T11:15:36+00:00"
         },
         {
             "name": "roumen/feed",
