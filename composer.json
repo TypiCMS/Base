@@ -23,7 +23,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "bkwld/croppa": "~4.6.0",
+        "bkwld/croppa": "~4.7.0",
         "fideloper/proxy": "~3.3",
         "guzzlehttp/guzzle": "~6.0",
         "laracasts/presenter": "~0.2.1",
@@ -55,7 +55,7 @@
         "typicms/users": "~3.0.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "~3.0.1",
+        "barryvdh/laravel-debugbar": "~3.1",
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",

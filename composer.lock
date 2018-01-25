@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b71d033a3fc32fa5c12c5e3a6daf8b4",
+    "content-hash": "66aa073ebdcba0d341764d8006fcba9e",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -94,16 +94,16 @@
         },
         {
             "name": "bkwld/croppa",
-            "version": "4.6.0",
+            "version": "4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BKWLD/croppa.git",
-                "reference": "ad18844355a673a1300cd3b1861aa3c8d07cf418"
+                "reference": "c8c73d8a24a0ecda6a1a148c4b20f3eb237861ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/ad18844355a673a1300cd3b1861aa3c8d07cf418",
-                "reference": "ad18844355a673a1300cd3b1861aa3c8d07cf418",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/c8c73d8a24a0ecda6a1a148c4b20f3eb237861ed",
+                "reference": "c8c73d8a24a0ecda6a1a148c4b20f3eb237861ed",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +121,7 @@
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "4 - 5"
             },
             "type": "library",
             "extra": {
@@ -149,7 +149,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "time": "2017-09-21T15:22:16+00:00"
+            "time": "2017-11-01T22:14:52+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3774,16 +3774,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.0.1",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "bce341e3194bbeffa60ac782d645067557f5075e"
+                "reference": "01a859752094e00aa8548832312366753272f8af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/bce341e3194bbeffa60ac782d645067557f5075e",
-                "reference": "bce341e3194bbeffa60ac782d645067557f5075e",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/01a859752094e00aa8548832312366753272f8af",
+                "reference": "01a859752094e00aa8548832312366753272f8af",
                 "shasum": ""
             },
             "require": {
@@ -3838,7 +3838,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2017-08-29T08:54:25+00:00"
+            "time": "2017-09-18T13:32:46+00:00"
         },
         {
             "name": "doctrine/instantiator",
