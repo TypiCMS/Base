@@ -18,8 +18,8 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0",
         "barryvdh/laravel-debugbar": "~3.0.1",
+        "php": ">=7.0.0 <7.2.0",
         "bkwld/croppa": "~4.6.0",
         "fideloper/proxy": "~3.3",
         "guzzlehttp/guzzle": "~6.0",
