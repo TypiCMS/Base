@@ -15,10 +15,14 @@
         {
             "type": "vcs",
             "url": "https://github.com/TypiCMS/repository.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
         }
     ],
     "require": {
-        "php": ">=7.0.0 <7.2.0",
+        "php": ">=7.0.0",
         "bkwld/croppa": "~4.6.0",
         "fideloper/proxy": "~3.3",
         "guzzlehttp/guzzle": "~6.0",
@@ -26,7 +30,7 @@
         "laracasts/utilities": "~2.1.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "maatwebsite/laravel-sidebar": "~1.1.1",
+        "maatwebsite/laravel-sidebar": "~1.1.2",
         "rinvex/repository": "dev-develop",
         "roumen/feed": "~2.10.1",
         "spatie/eloquent-sortable": "~3.4.1",
