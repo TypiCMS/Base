@@ -18,7 +18,6 @@
         }
     ],
     "require": {
-        "barryvdh/laravel-debugbar": "~3.0.1",
         "php": ">=7.0.0 <7.2.0",
         "bkwld/croppa": "~4.6.0",
         "fideloper/proxy": "~3.3",
@@ -52,6 +51,7 @@
         "typicms/users": "~3.0.0"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "~3.0.1",
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
