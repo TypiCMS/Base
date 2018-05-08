@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "66aa073ebdcba0d341764d8006fcba9e",
+    "content-hash": "5dcc80088af0826975d6219c735b7538",
     "packages": [
         {
             "name": "adamwathan/bootforms",
-            "version": "v0.8.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/adamwathan/bootforms.git",
-                "reference": "7f9928805ffe6736486b246e4ab22c811934237b"
+                "url": "https://github.com/TypiCMS/bootforms.git",
+                "reference": "337568a45398bc6834ec7cbf4f9bbacc0eed0a22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/7f9928805ffe6736486b246e4ab22c811934237b",
-                "reference": "7f9928805ffe6736486b246e4ab22c811934237b",
+                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/337568a45398bc6834ec7cbf4f9bbacc0eed0a22",
+                "reference": "337568a45398bc6834ec7cbf4f9bbacc0eed0a22",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/form": "^0.8.11",
+                "adamwathan/form": "^0.9.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -35,7 +35,6 @@
                     "AdamWathan\\BootForms": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -46,21 +45,23 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "abandoned": true,
-            "time": "2017-04-26T13:23:10+00:00"
+            "support": {
+                "source": "https://github.com/TypiCMS/bootforms/tree/master"
+            },
+            "time": "2018-05-08T15:26:07+00:00"
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.8.12",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "b5a1e8af895a2daa22663508394633fd8ad99904"
+                "reference": "d44534bf812512daa9d5a3b68d0ef7928def99b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/b5a1e8af895a2daa22663508394633fd8ad99904",
-                "reference": "b5a1e8af895a2daa22663508394633fd8ad99904",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/d44534bf812512daa9d5a3b68d0ef7928def99b8",
+                "reference": "d44534bf812512daa9d5a3b68d0ef7928def99b8",
                 "shasum": ""
             },
             "require": {
@@ -90,7 +91,7 @@
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
             "abandoned": true,
-            "time": "2017-01-31T13:18:04+00:00"
+            "time": "2017-07-07T16:13:45+00:00"
         },
         {
             "name": "bkwld/croppa",
@@ -1022,16 +1023,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.44",
+            "version": "1.0.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "168dbe519737221dc87d17385cde33073881fd02"
+                "reference": "a99f94e63b512d75f851b181afcdf0ee9ebef7e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/168dbe519737221dc87d17385cde33073881fd02",
-                "reference": "168dbe519737221dc87d17385cde33073881fd02",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/a99f94e63b512d75f851b181afcdf0ee9ebef7e6",
+                "reference": "a99f94e63b512d75f851b181afcdf0ee9ebef7e6",
                 "shasum": ""
             },
             "require": {
@@ -1102,7 +1103,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2018-04-06T09:58:14+00:00"
+            "time": "2018-05-07T08:44:23+00:00"
         },
         {
             "name": "maatwebsite/laravel-sidebar",
@@ -2385,30 +2386,30 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.4.9",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "fdd5abcebd1061ec647089c6c41a07ed60af09f8"
+                "reference": "63353a71073faf08f62caab4e6889b06a787f07b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/fdd5abcebd1061ec647089c6c41a07ed60af09f8",
-                "reference": "fdd5abcebd1061ec647089c6c41a07ed60af09f8",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/63353a71073faf08f62caab4e6889b06a787f07b",
+                "reference": "63353a71073faf08f62caab4e6889b06a787f07b",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8"
+                "php": "^7.1.3"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3"
+                "symfony/dependency-injection": "<3.4"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.8|~3.0|~4.0",
-                "symfony/dependency-injection": "~3.3|~4.0",
-                "symfony/expression-language": "~2.8|~3.0|~4.0",
-                "symfony/stopwatch": "~2.8|~3.0|~4.0"
+                "symfony/config": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/expression-language": "~3.4|~4.0",
+                "symfony/stopwatch": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -2417,7 +2418,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -2444,7 +2445,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-06T07:35:25+00:00"
+            "time": "2018-04-06T07:35:43+00:00"
         },
         {
             "name": "symfony/finder",
@@ -3103,16 +3104,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "3.0.29",
+            "version": "3.0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "671c5bfc56c20c933792d5533398f8f264b296c6"
+                "reference": "93a03e2539333897bfe1d6f8ae92d18939392580"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/671c5bfc56c20c933792d5533398f8f264b296c6",
-                "reference": "671c5bfc56c20c933792d5533398f8f264b296c6",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/93a03e2539333897bfe1d6f8ae92d18939392580",
+                "reference": "93a03e2539333897bfe1d6f8ae92d18939392580",
                 "shasum": ""
             },
             "require": {
@@ -3138,7 +3139,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2018-05-02T11:55:54+00:00"
+            "time": "2018-05-02T12:47:51+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -3247,21 +3248,21 @@
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
-            "version": "1.4.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
-                "reference": "e7bf00ffaab7086eea3fcad193912b87f7cd6690"
+                "reference": "155fcd2f1af716aeec83da984142ed4f4180c1bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/e7bf00ffaab7086eea3fcad193912b87f7cd6690",
-                "reference": "e7bf00ffaab7086eea3fcad193912b87f7cd6690",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/155fcd2f1af716aeec83da984142ed4f4180c1bb",
+                "reference": "155fcd2f1af716aeec83da984142ed4f4180c1bb",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/bootforms": ">=0.8.0 <0.8.13",
-                "adamwathan/form": ">=0.8.0 <0.8.13 || ^0.9",
+                "adamwathan/bootforms": "dev-master",
+                "adamwathan/form": "^0.9.0",
                 "illuminate/support": "~5.0",
                 "php": ">=5.5.9"
             },
@@ -3297,7 +3298,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2017-08-17T12:39:08+00:00"
+            "time": "2018-05-08T15:22:25+00:00"
         },
         {
             "name": "typicms/menus",
@@ -3336,21 +3337,21 @@
         },
         {
             "name": "typicms/nestablecollection",
-            "version": "v1.1.8",
+            "version": "v1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/NestableCollection.git",
-                "reference": "eb52d6bd85f9ed7572f6fe6132692955334bc0b6"
+                "reference": "f148e504fc302101b1b9b8fd8a21211c4dd2f098"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/eb52d6bd85f9ed7572f6fe6132692955334bc0b6",
-                "reference": "eb52d6bd85f9ed7572f6fe6132692955334bc0b6",
+                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/f148e504fc302101b1b9b8fd8a21211c4dd2f098",
+                "reference": "f148e504fc302101b1b9b8fd8a21211c4dd2f098",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "~4.2.0|~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0",
-                "illuminate/support": "~4.2.0|~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0"
+                "illuminate/database": "~4.2.0|~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0|~5.6.0",
+                "illuminate/support": "~4.2.0|~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0|~5.6.0"
             },
             "type": "library",
             "autoload": {
@@ -3378,7 +3379,7 @@
                 "nested set",
                 "tree"
             ],
-            "time": "2018-01-31T10:37:40+00:00"
+            "time": "2018-05-07T08:58:49+00:00"
         },
         {
             "name": "typicms/objects",
@@ -5579,7 +5580,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "rinvex/repository": 20
+        "rinvex/repository": 20,
+        "typicms/laravel-translatable-bootforms": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
