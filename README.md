@@ -1,9 +1,8 @@
 # TypiCMS
 
-[![Packagist](https://img.shields.io/packagist/v/typicms/base.svg?style=flat-square)]()
-[![Packagist](https://img.shields.io/packagist/l/typicms/base.svg?style=flat-square)]()
-[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/96951b30-0060-414c-992d-df965bd63000.svg?style=flat-square)]()
-[![Scrutinizer](https://img.shields.io/scrutinizer/g/typicms/base.svg?style=flat-square)]()
+[![Latest Stable Version](https://poser.pugx.org/typicms/base/v/stable)](https://packagist.org/packages/typicms/base)
+[![License](https://poser.pugx.org/typicms/base/license)](https://packagist.org/packages/typicms/base)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TypiCMS/Base/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/TypiCMS/Base/?branch=master)
 
 TypiCMS is a modular multilingual content management system built with [Laravel 5.5](http://laravel.com). Out of the box you can manage pages, events, news, places, sliders, etc.
 
