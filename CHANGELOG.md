@@ -2,13 +2,14 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
-## 4.0.0 - 2017-09-01
+## 4.0.0 - 2018-05-14
 
 ### Changed
 
 * Bootstrap 4
 * CKEditor 4.9
 * Page model: the method 'children' is renamed to 'subpages'.
+* pagesState cookie renamed to typicms_pagestree
 
 ## 3.0.0 - 2017-09-01
 
