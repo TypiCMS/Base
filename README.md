@@ -11,38 +11,38 @@ TypiCMS is a modular multilingual content management system built with [Laravel 
 
 ## Table of contents
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-  - [Assets](#assets)
-  - [Configuration](#configuration)
-  - [Installation of a module](#installation-of-a-module)
-- [Modules](#modules)
-  - [Pages](#pages)
-  - [Menus](#menus)
-  - [Projects](#projects)
-  - [Categories](#categories)
-  - [Tags](#tags)
-  - [Events](#events)
-  - [News](#news)
-  - [Contacts](#contacts)
-  - [Partners](#partners)
-  - [Files](#files)
-  - [Galleries](#galleries)
-  - [Users and roles](#users-and-roles)
-  - [Blocks](#blocks)
-  - [Translations](#translations)
-  - [Sitemap](#sitemap)
-  - [Settings](#settings)
-  - [History](#history)
-- [Facades](#facades)
-- [Artisan commands](#artisan-commands)
-- [Roadmap](#roadmap)
-- [Upgrade instructions](#upgrade-instructions)
-- [Change log](#change-log)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [Licence](#licence)
+* [Features](#features)
+* [Requirements](#requirements)
+* [Installation](#installation)
+  * [Assets](#assets)
+  * [Configuration](#configuration)
+  * [Installation of a module](#installation-of-a-module)
+* [Modules](#modules)
+  * [Pages](#pages)
+  * [Menus](#menus)
+  * [Projects](#projects)
+  * [Categories](#categories)
+  * [Tags](#tags)
+  * [Events](#events)
+  * [News](#news)
+  * [Contacts](#contacts)
+  * [Partners](#partners)
+  * [Files](#files)
+  * [Galleries](#galleries)
+  * [Users and roles](#users-and-roles)
+  * [Blocks](#blocks)
+  * [Translations](#translations)
+  * [Sitemap](#sitemap)
+  * [Settings](#settings)
+  * [History](#history)
+* [Facades](#facades)
+* [Artisan commands](#artisan-commands)
+* [Roadmap](#roadmap)
+* [Upgrade instructions](#upgrade-instructions)
+* [Change log](#change-log)
+* [Contributing](#contributing)
+* [Credits](#credits)
+* [Licence](#licence)
 
 ## Features
 
@@ -62,14 +62,14 @@ This kind of URLs are managed by the CMS:
 
 ## Requirements
 
-- PHP >= 7.0.0
-- MySQL 5.7
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Mbstring PHP Extension
-- Tokenizer PHP Extension
-- Memcached or Redis
-- XML PHP Extension
+* PHP >= 7.0.0
+* MySQL 5.7
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
+* Memcached or Redis
+* XML PHP Extension
 
 ## Installation
 
@@ -80,11 +80,13 @@ First install [Node.js](http://nodejs.org)
    ```
    composer create-project typicms/base mywebsite
    ```
+
 2. Enter the newly created folder
 
    ```
    cd mywebsite
    ```
+
 3. DB migration and seed, user creation, npm installation and directory rights
 
    ```
@@ -103,6 +105,7 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), th
    ```
    npm install
    ```
+
 2. Compile admin and public assets
 
    ```
@@ -126,12 +129,14 @@ If you need to customize it, [publish it](#publish-a-module)!
    ```
    composer require typicms/news
    ```
-2. Add ```TypiCMS\Modules\News\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
+
+2. Add `TypiCMS\Modules\News\Providers\ModuleProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleProvider::class,`
 3. Publish views and migrations
 
    ```
    php artisan vendor:publish
    ```
+
 4. Migrate the database
 
    ```
@@ -147,8 +152,9 @@ This example is for a new module called Cats.
    ```
    php artisan typicms:create cats
    ```
+
 2. The module is in **/Modules/Cats**, you can customize it
-3. Add ```TypiCMS\Modules\Cats\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
+3. Add `TypiCMS\Modules\Cats\Providers\ModuleProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleProvider::class,`
 4. Migrate the database
 
    ```
@@ -169,7 +175,7 @@ A page can have multiple sections.
 ### Menus
 
 Each menu has nestable entries. One entry can be linked to a page or URL.
-You can return a HTML formated menu with ``` Menus::render('menuname') ``` or ``` @menu('menuname') ```.
+You can return a HTML formated menu with `Menus::render('menuname')` or `@menu('menuname')`.
 
 ### Projects
 
@@ -209,13 +215,13 @@ Roles and Permissions are managed with [spatie/laravel-permission](https://githu
 ### Blocks
 
 Blocks are useful to display custom content in your views.
-You can display the content of a block with ``` Blocks::render('blockname') ``` or ``` @block('blockname') ```.
+You can display the content of a block with `Blocks::render('blockname')` or `@block('blockname')`.
 
 ### Translations
 
 Translations can be stored in the database through the admin panel (/admin/translations).
 
-You can call DB translation everywhere with ``` Lang::get('db.Key') ```, ``` trans('db.Key') ``` or ``` @lang('db.Key') ```.
+You can call DB translation everywhere with `Lang::get('db.Key')`, `trans('db.Key')` or `@lang('db.Key')`.
 
 ### Sitemap
 
@@ -228,12 +234,12 @@ Change website title, and other options trough the settings panel. Settings are 
 
 ### History
 
-*created*, *updated*, *deleted*, *online* and *offline* actions are logged in database.
+_created_, _updated_, _deleted_, _online_ and _offline_ actions are logged in database.
 25 latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
-Each modules has a facade that give you access to the repository, you can call for example ```News::latest(3)``` to get the three latest news.
+Each modules has a facade that give you access to the repository, you can call for example `News::latest(3)` to get the three latest news.
 Check available methods in each module’s repository.
 
 ## Artisan commands
@@ -252,7 +258,7 @@ php artisan typicms:install
 php artisan cache:prefix yourCachePrefix
 ```
 
-This command is triggered by ```typicms:install```
+This command is triggered by `typicms:install`
 
 ### Initial migration and seed
 
@@ -260,7 +266,7 @@ This command is triggered by ```typicms:install```
 php artisan typicms:database
 ```
 
-This command is triggered by ```typicms:install```
+This command is triggered by `typicms:install`
 
 ### Publish a module
 
@@ -275,9 +281,9 @@ These steps will be executed:
 
 1. Publishing of views and migrations for Pages module.
 2. Copying of everything excepted views and migrations from **/vendor/typicms/pages/src** to **/Modules/Pages**.
-3. Running ```composer remove typicms/pages```.
+3. Running `composer remove typicms/pages`.
 
-When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running ```composer update```.
+When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running `composer update`.
 
 ### Create a module
 
@@ -301,8 +307,8 @@ Please see [CONTRIBUTING](https://github.com/TypiCMS/Base/blob/master/CONTRIBUTI
 
 ## Credits
 
-- [Samuel De Backer](https://github.com/sdebacker)
-- [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
+* [Samuel De Backer](https://github.com/sdebacker)
+* [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
 
 ## License
 
