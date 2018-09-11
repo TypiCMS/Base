@@ -151,7 +151,6 @@ return [
          */
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
-        Roumen\Feed\FeedServiceProvider::class,
         Typidesign\Translations\ArtisanTranslationsServiceProvider::class,
         TypiCMS\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
