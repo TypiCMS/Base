@@ -3,14 +3,14 @@ let mix = require('laravel-mix');
 /**
  * Compile CSS
  */
-mix.sass('resources/assets/scss/admin.scss', 'public/css');
-mix.sass('resources/assets/scss/public.scss', 'public/css');
+mix.sass('resources/scss/admin.scss', 'public/css');
+mix.sass('resources/scss/public.scss', 'public/css');
 
 /**
  * Compile JS
  */
-mix.js('resources/assets/js/admin.js', 'public/js');
-mix.js('resources/assets/js/public.js', 'public/js');
+mix.js('resources/js/admin.js', 'public/js');
+mix.js('resources/js/public.js', 'public/js');
 
 /**
  * Copy font-awesome files
