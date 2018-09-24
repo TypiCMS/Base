@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29e486cf3880d492bcde4d02efadeb41",
+    "content-hash": "c16ed229199bf87154d723a7fd6b7b2f",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -695,16 +695,16 @@
         },
         {
             "name": "laracasts/utilities",
-            "version": "2.1",
+            "version": "3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laracasts/PHP-Vars-To-Js-Transformer.git",
-                "reference": "4402a0ed774f8eb36ea7ba169341d9d5b6049378"
+                "reference": "298fb3c6f29901a4550c4f98b57c05f368341d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laracasts/PHP-Vars-To-Js-Transformer/zipball/4402a0ed774f8eb36ea7ba169341d9d5b6049378",
-                "reference": "4402a0ed774f8eb36ea7ba169341d9d5b6049378",
+                "url": "https://api.github.com/repos/laracasts/PHP-Vars-To-Js-Transformer/zipball/298fb3c6f29901a4550c4f98b57c05f368341d04",
+                "reference": "298fb3c6f29901a4550c4f98b57c05f368341d04",
                 "shasum": ""
             },
             "require": {
@@ -715,7 +715,20 @@
                 "phpspec/phpspec": "~2.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laracasts\\Utilities\\JavaScript\\JavaScriptServiceProvider"
+                    ],
+                    "aliases": {
+                        "JavaScript": "Laracasts\\Utilities\\JavaScript\\JavaScriptFacade"
+                    }
+                }
+            },
             "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
                 "psr-4": {
                     "Laracasts\\Utilities\\JavaScript\\": "src/"
                 }
@@ -735,7 +748,7 @@
                 "javascript",
                 "laravel"
             ],
-            "time": "2015-10-01T05:16:28+00:00"
+            "time": "2017-09-01T17:25:57+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1697,20 +1710,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/repository.git",
-                "reference": "5806ded2e5787a06c99bd14a54b2c0abb45cda9a"
+                "reference": "f5a0bd1d99028033e6dfcc2c7c912bbfd080b1b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/repository/zipball/5806ded2e5787a06c99bd14a54b2c0abb45cda9a",
-                "reference": "5806ded2e5787a06c99bd14a54b2c0abb45cda9a",
+                "url": "https://api.github.com/repos/TypiCMS/repository/zipball/f5a0bd1d99028033e6dfcc2c7c912bbfd080b1b6",
+                "reference": "f5a0bd1d99028033e6dfcc2c7c912bbfd080b1b6",
                 "shasum": ""
             },
             "require": {
-                "illuminate/container": "~5.5.0",
-                "illuminate/contracts": "~5.5.0",
-                "illuminate/database": "~5.5.0",
-                "illuminate/events": "~5.5.0",
-                "illuminate/support": "~5.5.0",
+                "illuminate/container": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/contracts": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/events": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
                 "php": "^7.0.0"
             },
             "require-dev": {
@@ -1782,7 +1795,7 @@
                 "source": "https://github.com/rinvex/repository",
                 "docs": "https://github.com/rinvex/repository/blob/master/README.md"
             },
-            "time": "2018-01-09T11:15:36+00:00"
+            "time": "2018-09-11T15:49:32+00:00"
         },
         {
             "name": "roumen/feed",
@@ -1833,6 +1846,7 @@
                 "laravel",
                 "rss"
             ],
+            "abandoned": "laravelium/feed",
             "time": "2017-03-22T17:31:36+00:00"
         },
         {
@@ -1881,6 +1895,7 @@
                 "generator",
                 "laravel"
             ],
+            "abandoned": "laravelium/sitemap",
             "time": "2015-12-17T17:30:38+00:00"
         },
         {
@@ -3135,7 +3150,7 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap 4 specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2018-05-09T09:07:22+00:00"
+            "time": "2018-05-09T19:56:04+00:00"
         },
         {
             "name": "typicms/core",
@@ -3297,7 +3312,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2018-05-09T08:41:31+00:00"
+            "time": "2018-05-09T19:51:06+00:00"
         },
         {
             "name": "typicms/history",
