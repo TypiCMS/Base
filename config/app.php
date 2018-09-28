@@ -164,6 +164,7 @@ return [
         TypiCMS\Modules\Dashboard\Providers\ModuleProvider::class,
         TypiCMS\Modules\Menus\Providers\ModuleProvider::class,
         TypiCMS\Modules\Sitemap\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Tags\Providers\ModuleProvider::class,
 
         /*
          * TypiCMS Modules Service Providers.
