@@ -1,1 +1,1 @@
-<small class="badge pull-right {{ $badge->color or 'badge-success' }}">{{ $badge->value }}</small>
+<small class="badge pull-right {{ $badge->color ?? 'badge-success' }}">{{ $badge->value }}</small>

@@ -1,6 +1,6 @@
 <li class="sidebar-item-{{ $item->id }} {{ $item->state }} @if($item->hasItems()) treeview @endif">
     <a href="{{ $item->route }}" @if($item->hasAppend())class="hasAppend"@endif>
-        <i class="{{ $item->icon or 'fa fa-angle-double-right' }}"></i>
+        <i class="{{ $item->icon ?? 'fa fa-angle-double-right' }}"></i>
         <div>{{ $item->name }}</div>
 
         @if($item->hasBadge())
@@ -9,7 +9,7 @@
             @endforeach
         @endif
 
-        @if($item->hasItems())<i class="{{ $item->toggleIcon or 'fa fa-angle-left' }} pull-right"></i>@endif
+        @if($item->hasItems())<i class="{{ $item->toggleIcon ?? 'fa fa-angle-left' }} pull-right"></i>@endif
     </a>
 
     @if($item->hasAppend())
