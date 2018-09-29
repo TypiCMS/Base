@@ -4,44 +4,43 @@
 [![License](https://poser.pugx.org/typicms/base/license)](https://packagist.org/packages/typicms/base)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TypiCMS/Base/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/TypiCMS/Base/?branch=master)
 
-TypiCMS is a modular multilingual content management system built with [Laravel 5.5](http://laravel.com). Out of the box you can manage pages, events, news, places, sliders, etc.
+TypiCMS is a modular multilingual content management system built with [Laravel 5.7](http://laravel.com). Out of the box you can manage pages, events, news, places, menus, translations, etc.
 
 ![TypiCMS screenshot](http://typicms.org/uploads/files/typicms-screenshot.png?2)
 
 ## Table of contents
 
-* [Features](#features)
-* [Requirements](#requirements)
-* [Installation](#installation)
-  * [Assets](#assets)
-  * [Configuration](#configuration)
-  * [Installation of a module](#installation-of-a-module)
-* [Modules](#modules)
-  * [Pages](#pages)
-  * [Menus](#menus)
-  * [Projects](#projects)
-  * [Categories](#categories)
-  * [Tags](#tags)
-  * [Events](#events)
-  * [News](#news)
-  * [Contacts](#contacts)
-  * [Partners](#partners)
-  * [Files](#files)
-  * [Galleries](#galleries)
-  * [Users and roles](#users-and-roles)
-  * [Blocks](#blocks)
-  * [Translations](#translations)
-  * [Sitemap](#sitemap)
-  * [Settings](#settings)
-  * [History](#history)
-* [Facades](#facades)
-* [Artisan commands](#artisan-commands)
-* [Roadmap](#roadmap)
-* [Upgrade instructions](#upgrade-instructions)
-* [Change log](#change-log)
-* [Contributing](#contributing)
-* [Credits](#credits)
-* [Licence](#licence)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+  - [Assets](#assets)
+  - [Configuration](#configuration)
+  - [Installation of a module](#installation-of-a-module)
+- [Available modules](#available-modules)
+  - [Pages](#pages)
+  - [Menus](#menus)
+  - [Projects](#projects)
+  - [Categories](#categories)
+  - [Tags](#tags)
+  - [Events](#events)
+  - [News](#news)
+  - [Contacts](#contacts)
+  - [Partners](#partners)
+  - [Files](#files)
+  - [Galleries](#galleries)
+  - [Users and roles](#users-and-roles)
+  - [Blocks](#blocks)
+  - [Translations](#translations)
+  - [Sitemap](#sitemap)
+  - [Settings](#settings)
+  - [History](#history)
+- [Facades](#facades)
+- [Artisan commands](#artisan-commands)
+- [Roadmap](#roadmap)
+- [Change log](#change-log)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [Licence](#licence)
 
 ## Features
 
@@ -51,24 +50,24 @@ This kind of URLs are managed by the CMS:
 
 **Modules:**
 
-* /en/events/slug-in-english
-* /fr/evenements/slug-en-francais
+- /en/events/slug-in-english
+- /fr/evenements/slug-en-francais
 
 **Pages:**
 
-* /en/parent-pages-slug-en/subpage-slug-en/page-slug-en
-* /fr/parent-pages-slug-fr/subpage-slug-fr/page-slug-fr
+- /en/parent-pages-slug-en/subpage-slug-en/page-slug-en
+- /fr/parent-pages-slug-fr/subpage-slug-fr/page-slug-fr
 
 ## Requirements
 
-* PHP >= 7.0.0
-* MySQL 5.7
-* OpenSSL PHP Extension
-* PDO PHP Extension
-* Mbstring PHP Extension
-* Tokenizer PHP Extension
-* Memcached or Redis
-* XML PHP Extension
+- PHP >= 7.1.3
+- MySQL 5.7
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- Memcached or Redis
+- XML PHP Extension
 
 ## Installation
 
@@ -92,12 +91,12 @@ First install [Node.js](http://nodejs.org)
    php artisan typicms:install
    ```
 
-Go to http://mywebsite.local/admin and log in.
+Go to http://mywebsite.test/admin and log in.
 
 ### Assets
 
 Assets are managed with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix).
-In order to work on assets, you need to install [Node.js](http://nodejs.org), then cd to your website folder and run these commands:
+In order to work on assets, you need to install [Node.js](http://nodejs.org), then enter your website folder and run these commands:
 
 1. Install npm packages (in directory **node_modules**)
 
@@ -121,7 +120,7 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), th
 ### Installation of a module
 
 This example is for the News module. After these steps, the module will appear in the sidebar of the back office.
-If you need to customize it, [publish it](#publish-a-module)!
+If you need to customize it, you can [publish it](#publish-a-module)!
 
 1. Install module with Composer
 
@@ -144,7 +143,7 @@ If you need to customize it, [publish it](#publish-a-module)!
 
 ### Module scaffolding
 
-This example is for a new module called Cats.
+This example is for a module called Cats.
 
 1. Create the module with artisan:
 
@@ -160,9 +159,9 @@ This example is for a new module called Cats.
    php artisan migrate
    ```
 
-## Existing modules
+## Available modules
 
-Each module can be published in order to be modified and tracked by git. Here is more info on [publishing a module](#publish-a-module).
+Each module can be [published](#publish-a-module).
 
 ### Pages
 
@@ -224,17 +223,16 @@ You can call DB translation everywhere with `Lang::get('db.Key')`, `trans('db.Ke
 
 ### Sitemap
 
-Route sitemap.xml generates a sitemap file in XML format.
-To add modules to the site map configure app/config/sitemap.php.
+A sitemap is generated by reading all pages available in your project. The URL is /sitemap.xml.
 
 ### Settings
 
-Change website title, and other options trough the settings panel. Settings are saved in the database
+Change the website title, logo, and other options in the settings panel.
 
 ### History
 
 _created_, _updated_, _deleted_, _online_ and _offline_ actions are logged in database.
-25 latest records are displayed in the back office’s dashboard.
+Latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
@@ -269,12 +267,13 @@ This command is triggered by `typicms:install`
 
 ### Publish a module
 
-If you want to modify a module, for example add some fields or a relation, you can not do it easily because each module is in vendor directory.
-The solution is to remove it from composer and copy it to the **/Modules** directory. For example, the module **Pages** will be published by running this command:
+If you want to modify a module, for example to add some fields or a relation, you have to publish it by running:
 
 ```
-php artisan typicms:publish pages
+php artisan typicms:publish <modulename>
 ```
+
+The module is now located in the **/Modules** directory.
 
 These steps will be executed:
 
@@ -286,19 +285,15 @@ When a module is published, it will be tracked by git and you will be able to ma
 
 ### Create a module
 
-You can easily scaffold a module, for a module named Cats, run this command:
+You can easily scaffold a module by running this this command:
 
 ```
-php artisan typicms:create cats
+php artisan typicms:create <modulename>
 ```
 
-## Upgrade instructions
+## Changelog
 
-[See the Wiki for upgrade instructions](https://github.com/TypiCMS/Base/wiki)
-
-## Change log
-
-Please see [CHANGELOG](https://github.com/TypiCMS/Base/blob/master/CHANGELOG.md) for more information what has changed recently.
+Please see [CHANGELOG](https://github.com/TypiCMS/Base/blob/master/CHANGELOG.md) for more information on what has changed.
 
 ## Contributing
 
@@ -306,8 +301,8 @@ Please see [CONTRIBUTING](https://github.com/TypiCMS/Base/blob/master/CONTRIBUTI
 
 ## Credits
 
-* [Samuel De Backer](https://github.com/sdebacker)
-* [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
+- [Samuel De Backer](https://github.com/sdebacker)
+- [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
 
 ## License
 
