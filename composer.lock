@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "747a71c57d6a280e973a320698279449",
+    "content-hash": "e7b4352ef26918657a7c365c403195e7",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -3272,16 +3272,16 @@
         },
         {
             "name": "typicms/dashboard",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
-                "reference": "108e20eed2a2229f94189fbddcde3532bf0aa360"
+                "reference": "4858f36f0e8f1920b96829578b1b65eaf8537559"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/108e20eed2a2229f94189fbddcde3532bf0aa360",
-                "reference": "108e20eed2a2229f94189fbddcde3532bf0aa360",
+                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/4858f36f0e8f1920b96829578b1b65eaf8537559",
+                "reference": "4858f36f0e8f1920b96829578b1b65eaf8537559",
                 "shasum": ""
             },
             "require": {
@@ -3303,7 +3303,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2018-09-29T07:42:36+00:00"
+            "time": "2018-09-29T08:55:07+00:00"
         },
         {
             "name": "typicms/files",
@@ -3528,21 +3528,21 @@
         },
         {
             "name": "typicms/nestablecollection",
-            "version": "v1.1.2",
+            "version": "v1.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/NestableCollection.git",
-                "reference": "38724d4b30bcb23de5983bdd5e06381848bc7049"
+                "reference": "f815d794416ca9a3228b4aafd4b328689d09ec3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/38724d4b30bcb23de5983bdd5e06381848bc7049",
-                "reference": "38724d4b30bcb23de5983bdd5e06381848bc7049",
+                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/f815d794416ca9a3228b4aafd4b328689d09ec3b",
+                "reference": "f815d794416ca9a3228b4aafd4b328689d09ec3b",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "~4.2.0|~5.0",
-                "illuminate/support": "~4.2.0|~5.0"
+                "illuminate/database": "~4.2|~5.0",
+                "illuminate/support": "~4.2|~5.0"
             },
             "type": "library",
             "autoload": {
@@ -3570,7 +3570,7 @@
                 "nested set",
                 "tree"
             ],
-            "time": "2016-07-07T14:49:43+00:00"
+            "time": "2018-09-29T10:20:27+00:00"
         },
         {
             "name": "typicms/objects",
@@ -3604,16 +3604,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "c0d8dc63f8d82beda39738518a87d3ca84259297"
+                "reference": "f67eb3ca94f4fc15887337e108c5da6c605ba5e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/c0d8dc63f8d82beda39738518a87d3ca84259297",
-                "reference": "c0d8dc63f8d82beda39738518a87d3ca84259297",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/f67eb3ca94f4fc15887337e108c5da6c605ba5e7",
+                "reference": "f67eb3ca94f4fc15887337e108c5da6c605ba5e7",
                 "shasum": ""
             },
             "require": {
@@ -3635,7 +3635,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2018-09-29T08:54:34+00:00"
+            "time": "2018-09-29T10:22:43+00:00"
         },
         {
             "name": "typicms/roles",
@@ -3996,6 +3996,74 @@
     ],
     "packages-dev": [
         {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "5b68f3972083a7eeec0d6f161962fcda71a127c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/5b68f3972083a7eeec0d6f161962fcda71a127c0",
+                "reference": "5b68f3972083a7eeec0d6f161962fcda71a127c0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "5.5.x|5.6.x|5.7.x",
+                "illuminate/session": "5.5.x|5.6.x|5.7.x",
+                "illuminate/support": "5.5.x|5.6.x|5.7.x",
+                "maximebf/debugbar": "~1.15.0",
+                "php": ">=7.0",
+                "symfony/debug": "^3|^4",
+                "symfony/finder": "^3|^4"
+            },
+            "require-dev": {
+                "laravel/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2018-08-22T11:06:19+00:00"
+        },
+        {
             "name": "beyondcode/laravel-dump-server",
             "version": "1.2.1",
             "source": {
@@ -4268,6 +4336,67 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
+                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "^1.0",
+                "symfony/var-dumper": "^2.6|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "time": "2017-12-15T11:13:46+00:00"
         },
         {
             "name": "mockery/mockery",
