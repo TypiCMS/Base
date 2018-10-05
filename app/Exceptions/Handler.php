@@ -66,9 +66,6 @@ class Handler extends ExceptionHandler
     {
         $locale = ($request->segment(1) === 'admin') ? config('typicms.admin_locale') : config('app.locale');
 
-        /*
-         * Notification on TokenMismatchException
-         */
         if ($exception instanceof TokenMismatchException) {
             return redirect()
                 ->back()
@@ -76,43 +73,7 @@ class Handler extends ExceptionHandler
                 ->withInput();
         }
 
-        if ($exception instanceof HttpResponseException) {
-            return $exception->getResponse();
-        } elseif ($exception instanceof ModelNotFoundException) {
-            $exception = new NotFoundHttpException($exception->getMessage(), $exception);
-        } elseif ($exception instanceof AuthorizationException) {
-            if ($request->wantsJson()) {
-                return response()->json(['error' => __($exception->getMessage(), [], $locale)], 403);
-            }
-            $exception = new HttpException(403, $exception->getMessage());
-        } elseif ($exception instanceof ValidationException && $exception->getResponse()) {
-            return $exception->getResponse();
-        }
-        if ($request->wantsJson()) {
-            return response()->json(['error' => __('Error', [], $locale)], 500);
-        }
-
         return parent::render($request, $exception);
-    }
-
-    /**
-     * Prepare response containing exception render.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception $e
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    protected function prepareResponse($request, Exception $e)
-    {
-        if ($this->isHttpException($e)) {
-            return $this->toIlluminateResponse($this->renderHttpException($e), $e);
-        } else {
-            // Custom error 500 view on production
-            if (app()->environment() == 'production') {
-                return response()->view('errors.500', [], 500);
-            }
-            return $this->toIlluminateResponse($this->convertExceptionToResponse($e), $e);
-        }
     }
 
     /**
