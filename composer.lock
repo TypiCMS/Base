@@ -797,16 +797,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.8",
+            "version": "v5.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "763b64a43ebb6042e463aab4214d4cc9722147be"
+                "reference": "172f69f86bb86e107fb9fafff293b4b01291cf05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/763b64a43ebb6042e463aab4214d4cc9722147be",
-                "reference": "763b64a43ebb6042e463aab4214d4cc9722147be",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/172f69f86bb86e107fb9fafff293b4b01291cf05",
+                "reference": "172f69f86bb86e107fb9fafff293b4b01291cf05",
                 "shasum": ""
             },
             "require": {
@@ -935,7 +935,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-10-04T14:47:20+00:00"
+            "time": "2018-10-09T13:28:28+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -2103,16 +2103,16 @@
         },
         {
             "name": "spatie/laravel-query-builder",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-query-builder.git",
-                "reference": "b6fd53fc8c519909a3c9f0da5f417db0b89380a3"
+                "reference": "0e2a013051a34f5f2d7c908d52503344aa1c5204"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/b6fd53fc8c519909a3c9f0da5f417db0b89380a3",
-                "reference": "b6fd53fc8c519909a3c9f0da5f417db0b89380a3",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/0e2a013051a34f5f2d7c908d52503344aa1c5204",
+                "reference": "0e2a013051a34f5f2d7c908d52503344aa1c5204",
                 "shasum": ""
             },
             "require": {
@@ -2156,7 +2156,7 @@
                 "laravel-query-builder",
                 "spatie"
             ],
-            "time": "2018-10-03T08:14:25+00:00"
+            "time": "2018-10-09T15:06:36+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
@@ -3298,16 +3298,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "5.0.6",
+            "version": "5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "b4d4a0691ec5697b13ffea84972cb3e6d4cd3aa4"
+                "reference": "386650ba6acb9fea876236ea23367eae8d44a08c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/b4d4a0691ec5697b13ffea84972cb3e6d4cd3aa4",
-                "reference": "b4d4a0691ec5697b13ffea84972cb3e6d4cd3aa4",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/386650ba6acb9fea876236ea23367eae8d44a08c",
+                "reference": "386650ba6acb9fea876236ea23367eae8d44a08c",
                 "shasum": ""
             },
             "require": {
@@ -3329,7 +3329,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2018-10-08T12:38:35+00:00"
+            "time": "2018-10-09T15:18:08+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -3883,16 +3883,16 @@
         },
         {
             "name": "typicms/users",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "7fe99c272b9a4db1a4ecb8e03c0b6f93c9286532"
+                "reference": "666b765ba2ce57358dbfb1b5d59d9e814ebcdfda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/7fe99c272b9a4db1a4ecb8e03c0b6f93c9286532",
-                "reference": "7fe99c272b9a4db1a4ecb8e03c0b6f93c9286532",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/666b765ba2ce57358dbfb1b5d59d9e814ebcdfda",
+                "reference": "666b765ba2ce57358dbfb1b5d59d9e814ebcdfda",
                 "shasum": ""
             },
             "require": {
@@ -3914,7 +3914,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2018-09-29T08:53:42+00:00"
+            "time": "2018-10-09T15:16:22+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
