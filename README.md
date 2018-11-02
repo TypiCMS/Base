@@ -71,7 +71,7 @@ This kind of URLs are managed by the CMS:
 
 ## Installation
 
-First install [Node.js](http://nodejs.org)
+First install [Composer](https://getcomposer.org)
 
 1. Create a new project
 
