@@ -66,4 +66,30 @@ mix.copy('node_modules/ckeditor/skins', 'public/components/ckeditor/skins');
  */
 mix.version();
 
+/**
+ * BrowserSync
+ */
 mix.browserSync('typicms.test');
+
+/**
+ * Options
+ */
+mix.options({
+    processCssUrls: false,
+    autoprefixer: {
+        enabled: true,
+        options: {
+            grid: true,
+            browsers: ['last 10 versions'],
+        },
+    },
+});
+
+/**
+ * Source maps
+ */
+// if (!mix.inProduction()) {
+//     mix.webpackConfig({
+//         devtool: 'source-map',
+//     }).sourceMaps();
+// }
