@@ -10,25 +10,29 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@fancyapps/fancybox": "^3.4",
+        "@fancyapps/fancybox": "^3.5.2",
         "alertify.js": "^1.0",
         "bootstrap": "^4.1",
-        "browser-sync": "^2.24",
-        "browser-sync-webpack-plugin": "^2.2",
-        "ckeditor": "^4.10.1",
+        "browser-sync": "^2.26.3",
+        "browser-sync-webpack-plugin": "2.0.1",
+        "ckeditor": "^4.11.1",
         "cross-env": "^5.2",
         "dropzone": "^5.5",
         "font-awesome": "^4.7",
+        "imagemin": "^5.0.0",
         "jquery": "^3.3",
-        "laravel-mix": "2.*",
+        "laravel-mix": "^4.0.0",
         "lodash": "^4.17.11",
+        "node-sass": "^4.11.0",
         "popper.js": "^1.14",
+        "sass": "^1.15.2",
+        "sass-loader": "7.*",
         "selectize": "^0.12",
-        "sl-vue-tree": "^1.7",
+        "sl-vue-tree": "^1.8.2",
         "swiper": "3.2.7",
         "vue": "^2.*",
-        "vue-i18n": "^8.1",
+        "vue-i18n": "^8.4",
         "vue2-dropzone": "^3.5.2",
-        "vuedraggable": "^2.16.0"
+        "vuedraggable": "^2.17"
     }
 }
