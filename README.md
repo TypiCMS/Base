@@ -249,14 +249,6 @@ Commands are located in **/vendor/typicms/core/src/Commands**
 php artisan typicms:install
 ```
 
-### Set cache key prefix in app/config/cache.php
-
-```
-php artisan cache:prefix yourCachePrefix
-```
-
-This command is triggered by `typicms:install`
-
 ### Initial migration and seed
 
 ```
