@@ -9,10 +9,15 @@ return [
      |
      | Debugbar is enabled by default, when debug is set to true in app.php.
      | You can override the value by setting enable to true or false instead of null.
+     | 
+     | You can provide an array of URI's that must be ignored (eg. 'api/*')
      |
      */
 
-    'enabled' => null,
+    'enabled' => env('DEBUGBAR_ENABLED', null),
+    'except' => [
+        'telescope*'
+    ],
 
     /*
      |--------------------------------------------------------------------------
@@ -27,10 +32,11 @@ return [
      |
      */
     'storage' => [
-        'enabled' => true,
-        'driver' => 'file', // redis, file, pdo
-        'path' => storage_path().'/debugbar', // For file driver
+        'enabled'    => true,
+        'driver'     => 'file', // redis, file, pdo, custom
+        'path'       => storage_path('debugbar'), // For file driver
         'connection' => null,   // Leave null for default connection (Redis/PDO)
+        'provider'   => '' // Instance of StorageInterface for custom driver
     ],
 
     /*
@@ -57,10 +63,23 @@ return [
      | The Debugbar can capture Ajax requests and display them. If you don't want this (ie. because of errors),
      | you can use this option to disable sending the data through the headers.
      |
+     | Optionally, you can also send ServerTiming headers on ajax requests for the Chrome DevTools.
      */
 
     'capture_ajax' => true,
+    'add_ajax_timing' => false,
 
+    /*
+     |--------------------------------------------------------------------------
+     | Custom Error Handler for Deprecated warnings
+     |--------------------------------------------------------------------------
+     |
+     | When enabled, the Debugbar shows deprecated warnings for Symfony components
+     | in the Messages tab.
+     |
+     */
+    'error_handler' => false,
+    
     /*
      |--------------------------------------------------------------------------
      | Clockwork integration
@@ -91,17 +110,18 @@ return [
         'db'              => true,  // Show database (PDO) queries and bindings
         'views'           => true,  // Views with their data
         'route'           => true,  // Current route information
+        'auth'            => true, // Display Laravel authentication status
+        'gate'            => true, // Display Laravel Gate checks
+        'session'         => true,  // Display session data
+        'symfony_request' => true,  // Only one can be enabled..
+        'mail'            => true,  // Catch mail messages
         'laravel'         => false, // Laravel version and environment
         'events'          => false, // All events fired
         'default_request' => false, // Regular or special Symfony request logger
-        'symfony_request' => true,  // Only one can be enabled..
-        'mail'            => true,  // Catch mail messages
         'logs'            => false, // Add the latest log messages
         'files'           => false, // Show the included files
         'config'          => false, // Display config settings
-        'auth'            => false, // Display Laravel authentication status
-        'gate'            => false, // Display Laravel Gate checks
-        'session'         => true,  // Display session data
+        'cache'           => false, // Display cache events
     ],
 
     /*
@@ -115,29 +135,32 @@ return [
 
     'options' => [
         'auth' => [
-            'show_name' => false,   // Also show the users name/email in the debugbar
+            'show_name' => true,   // Also show the users name/email in the debugbar
         ],
         'db' => [
             'with_params'       => true,   // Render SQL with the parameters substituted
+            'backtrace'         => true,   // Use a backtrace to find the origin of the query in your files.
             'timeline'          => false,  // Add the queries to the timeline
-            'backtrace'         => true,  // EXPERIMENTAL: Use a backtrace to find the origin of the query in your files.
-            'explain' => [            // EXPERIMENTAL: Show EXPLAIN output on queries
+            'explain' => [                 // Show EXPLAIN output on queries
                 'enabled' => false,
-                'types' => ['SELECT'], // array('SELECT', 'INSERT', 'UPDATE', 'DELETE'); for MySQL 5.6.3+
+                'types' => ['SELECT'],     // ['SELECT', 'INSERT', 'UPDATE', 'DELETE']; for MySQL 5.6.3+
             ],
             'hints'             => true,    // Show hints for common mistakes
         ],
         'mail' => [
-            'full_log' => false,
+            'full_log' => false
         ],
         'views' => [
             'data' => false,    //Note: Can slow down the application, because the data can be quite large..
         ],
         'route' => [
-            'label' => true,  // show complete route on bar
+            'label' => true  // show complete route on bar
         ],
         'logs' => [
-            'file' => null,
+            'file' => null
+        ],
+        'cache' => [
+            'values' => true // collect cache values
         ],
     ],
 
@@ -146,7 +169,7 @@ return [
      | Inject Debugbar in Response
      |--------------------------------------------------------------------------
      |
-     | Usually, the debugbar is added just before <body>, by listening to the
+     | Usually, the debugbar is added just before </body>, by listening to the
      | Response after the App is done. If you disable this, you have to add them
      | in your template yourself. See http://phpdebugbar.com/docs/rendering.html
      |
@@ -166,4 +189,13 @@ return [
      */
     'route_prefix' => '_debugbar',
 
+    /*
+     |--------------------------------------------------------------------------
+     | DebugBar route domain
+     |--------------------------------------------------------------------------
+     |
+     | By default DebugBar route served from the same domain that request served.
+     | To override default domain, specify it as a non-empty value.
+     */
+    'route_domain' => null,
 ];
