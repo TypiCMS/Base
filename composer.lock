@@ -373,16 +373,16 @@
         },
         {
             "name": "fideloper/proxy",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fideloper/TrustedProxy.git",
-                "reference": "cf8a0ca4b85659b9557e206c90110a6a4dba980a"
+                "reference": "177c79a2d1f9970f89ee2fb4c12b429af38b6dfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/cf8a0ca4b85659b9557e206c90110a6a4dba980a",
-                "reference": "cf8a0ca4b85659b9557e206c90110a6a4dba980a",
+                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/177c79a2d1f9970f89ee2fb4c12b429af38b6dfb",
+                "reference": "177c79a2d1f9970f89ee2fb4c12b429af38b6dfb",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +423,7 @@
                 "proxy",
                 "trusted proxy"
             ],
-            "time": "2018-02-07T20:20:57+00:00"
+            "time": "2019-01-10T14:06:47+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -801,16 +801,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.19",
+            "version": "v5.7.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5c1d1ec7e8563ea31826fd5eb3f6791acf01160c"
+                "reference": "25f74458a242b61cc9e9c09d31f94fb13ed805f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5c1d1ec7e8563ea31826fd5eb3f6791acf01160c",
-                "reference": "5c1d1ec7e8563ea31826fd5eb3f6791acf01160c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/25f74458a242b61cc9e9c09d31f94fb13ed805f3",
+                "reference": "25f74458a242b61cc9e9c09d31f94fb13ed805f3",
                 "shasum": ""
             },
             "require": {
@@ -884,7 +884,7 @@
                 "moontoast/math": "^1.1",
                 "orchestra/testbench-core": "3.7.*",
                 "pda/pheanstalk": "^3.0",
-                "phpunit/phpunit": "^7.0",
+                "phpunit/phpunit": "^7.5",
                 "predis/predis": "^1.1.1",
                 "symfony/css-selector": "^4.1",
                 "symfony/dom-crawler": "^4.1",
@@ -943,7 +943,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-12-18T14:00:38+00:00"
+            "time": "2019-01-15T15:20:32+00:00"
         },
         {
             "name": "laravel/nexmo-notification-channel",
@@ -1623,16 +1623,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.1.1",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610"
+                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
-                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
+                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
                 "shasum": ""
             },
             "require": {
@@ -1648,7 +1648,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -1670,20 +1670,20 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-12-26T11:32:39+00:00"
+            "time": "2019-01-12T16:31:37+00:00"
         },
         {
             "name": "opis/closure",
-            "version": "3.1.3",
+            "version": "3.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "5e9095ce871a425ab87a854b285b7766de38a7d9"
+                "reference": "41f5da65d75cf473e5ee582df8fc7f2c733ce9d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/5e9095ce871a425ab87a854b285b7766de38a7d9",
-                "reference": "5e9095ce871a425ab87a854b285b7766de38a7d9",
+                "url": "https://api.github.com/repos/opis/closure/zipball/41f5da65d75cf473e5ee582df8fc7f2c733ce9d6",
+                "reference": "41f5da65d75cf473e5ee582df8fc7f2c733ce9d6",
                 "shasum": ""
             },
             "require": {
@@ -1731,7 +1731,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2019-01-06T22:07:38+00:00"
+            "time": "2019-01-14T14:45:33+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2540,16 +2540,16 @@
         },
         {
             "name": "spatie/laravel-query-builder",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-query-builder.git",
-                "reference": "8c28dea5679b1481efc3c3c2c19a4cb0c1a86c9e"
+                "reference": "4433ba5a78a328ca5052241635c84dc4ff610039"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/8c28dea5679b1481efc3c3c2c19a4cb0c1a86c9e",
-                "reference": "8c28dea5679b1481efc3c3c2c19a4cb0c1a86c9e",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/4433ba5a78a328ca5052241635c84dc4ff610039",
+                "reference": "4433ba5a78a328ca5052241635c84dc4ff610039",
                 "shasum": ""
             },
             "require": {
@@ -2593,7 +2593,7 @@
                 "laravel-query-builder",
                 "spatie"
             ],
-            "time": "2018-11-27T09:10:35+00:00"
+            "time": "2019-01-12T22:54:46+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
@@ -4068,16 +4068,16 @@
         },
         {
             "name": "typicms/menus",
-            "version": "5.0.4",
+            "version": "5.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "b8ad5d120c083f677a0b5e687ebec95b7f0bd64f"
+                "reference": "53df7b443964587a5c6729064943d480a5200618"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/b8ad5d120c083f677a0b5e687ebec95b7f0bd64f",
-                "reference": "b8ad5d120c083f677a0b5e687ebec95b7f0bd64f",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/53df7b443964587a5c6729064943d480a5200618",
+                "reference": "53df7b443964587a5c6729064943d480a5200618",
                 "shasum": ""
             },
             "require": {
@@ -4099,7 +4099,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2018-12-19T11:00:32+00:00"
+            "time": "2019-01-08T11:47:43+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -5785,16 +5785,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.1",
+            "version": "7.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c23d78776ad415d5506e0679723cb461d71f488f"
+                "reference": "7c89093bd00f7d5ddf0ab81dee04f801416b4944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c23d78776ad415d5506e0679723cb461d71f488f",
-                "reference": "c23d78776ad415d5506e0679723cb461d71f488f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7c89093bd00f7d5ddf0ab81dee04f801416b4944",
+                "reference": "7c89093bd00f7d5ddf0ab81dee04f801416b4944",
                 "shasum": ""
             },
             "require": {
@@ -5865,7 +5865,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-12-12T07:20:32+00:00"
+            "time": "2019-01-15T08:19:08+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
