@@ -110,7 +110,7 @@ return [
      *
      * @var integer
      */
-    'jpeg_quality' => 95,
+    'jpeg_quality' => 75,
 
     /*
      * Turn on interlacing to make progessive jpegs.
