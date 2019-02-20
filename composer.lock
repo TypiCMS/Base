@@ -801,16 +801,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.26",
+            "version": "v5.7.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ca3bc9769969e8af3bd9878a3e0242051c74dae4"
+                "reference": "688fbfa889d43f392825b381ad3981847120fdfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ca3bc9769969e8af3bd9878a3e0242051c74dae4",
-                "reference": "ca3bc9769969e8af3bd9878a3e0242051c74dae4",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/688fbfa889d43f392825b381ad3981847120fdfa",
+                "reference": "688fbfa889d43f392825b381ad3981847120fdfa",
                 "shasum": ""
             },
             "require": {
@@ -943,7 +943,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-02-12T14:52:21+00:00"
+            "time": "2019-02-19T14:37:47+00:00"
         },
         {
             "name": "laravel/nexmo-notification-channel",
@@ -3762,21 +3762,21 @@
         },
         {
             "name": "typicms/bootforms",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/bootforms.git",
-                "reference": "7b8e78f53f1a756e82505594f2429c6a0d265ef9"
+                "reference": "9c8c45c6a3c54ccb4638855410f4ac150e3b80d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/7b8e78f53f1a756e82505594f2429c6a0d265ef9",
-                "reference": "7b8e78f53f1a756e82505594f2429c6a0d265ef9",
+                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/9c8c45c6a3c54ccb4638855410f4ac150e3b80d9",
+                "reference": "9c8c45c6a3c54ccb4638855410f4ac150e3b80d9",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0",
-                "typicms/form": "^1.0.0"
+                "typicms/form": "^1.0.2"
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
@@ -3811,7 +3811,7 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap 4 specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2018-11-28T12:26:02+00:00"
+            "time": "2019-02-19T17:28:55+00:00"
         },
         {
             "name": "typicms/core",
@@ -3920,16 +3920,16 @@
         },
         {
             "name": "typicms/form",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/form.git",
-                "reference": "e09938567a2bb9a0bdc6ff0afb5bcc68052e9a1f"
+                "reference": "a711afa7bbf3f4d5567c0de9215752d5aa7d32e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/form/zipball/e09938567a2bb9a0bdc6ff0afb5bcc68052e9a1f",
-                "reference": "e09938567a2bb9a0bdc6ff0afb5bcc68052e9a1f",
+                "url": "https://api.github.com/repos/TypiCMS/form/zipball/a711afa7bbf3f4d5567c0de9215752d5aa7d32e4",
+                "reference": "a711afa7bbf3f4d5567c0de9215752d5aa7d32e4",
                 "shasum": ""
             },
             "require": {
@@ -3969,7 +3969,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2018-05-09T08:41:31+00:00"
+            "time": "2019-02-18T05:53:35+00:00"
         },
         {
             "name": "typicms/history",
@@ -4182,16 +4182,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "5.0.9",
+            "version": "5.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "cbebf4173623c40c2625014275c583a25c66b2f0"
+                "reference": "ce9e962aca9503c51070040ab0d0866c89aa5035"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/cbebf4173623c40c2625014275c583a25c66b2f0",
-                "reference": "cbebf4173623c40c2625014275c583a25c66b2f0",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/ce9e962aca9503c51070040ab0d0866c89aa5035",
+                "reference": "ce9e962aca9503c51070040ab0d0866c89aa5035",
                 "shasum": ""
             },
             "require": {
@@ -4213,7 +4213,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-02-07T11:19:43+00:00"
+            "time": "2019-02-19T12:41:46+00:00"
         },
         {
             "name": "typicms/roles",
@@ -5691,16 +5691,16 @@
         },
         {
             "name": "phpunit/php-timer",
-            "version": "2.0.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f"
+                "reference": "8b389aebe1b8b0578430bda0c7c95a829608e059"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/8b8454ea6958c3dee38453d3bd571e023108c91f",
-                "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/8b389aebe1b8b0578430bda0c7c95a829608e059",
+                "reference": "8b389aebe1b8b0578430bda0c7c95a829608e059",
                 "shasum": ""
             },
             "require": {
@@ -5712,7 +5712,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -5736,7 +5736,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2018-02-01T13:07:23+00:00"
+            "time": "2019-02-20T10:12:59+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -5789,16 +5789,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.5",
+            "version": "7.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "23a200a60552cb9ba483a8d1e106c70fb0be0bb9"
+                "reference": "09c85e14994df92e5ff1f5ec0b481bdb7d3d3df9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/23a200a60552cb9ba483a8d1e106c70fb0be0bb9",
-                "reference": "23a200a60552cb9ba483a8d1e106c70fb0be0bb9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/09c85e14994df92e5ff1f5ec0b481bdb7d3d3df9",
+                "reference": "09c85e14994df92e5ff1f5ec0b481bdb7d3d3df9",
                 "shasum": ""
             },
             "require": {
@@ -5869,7 +5869,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-02-15T14:00:34+00:00"
+            "time": "2019-02-18T09:24:50+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
