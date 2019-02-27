@@ -46,6 +46,7 @@ class Kernel extends HttpKernel
         'admin' => [
             'web',
             'auth',
+            \TypiCMS\Modules\Core\Http\Middleware\SetTranslatableFallbackLocaleToNull::class,
             \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
             \TypiCMS\Modules\Core\Http\Middleware\UserPrefs::class,
