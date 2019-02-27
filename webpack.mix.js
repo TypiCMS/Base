@@ -6,7 +6,7 @@ require('laravel-mix-purgecss');
  */
 mix.sass('resources/scss/admin.scss', 'public/css', { implementation: require('node-sass') });
 mix.sass('resources/scss/public.scss', 'public/css', { implementation: require('node-sass') });
-mix.purgeCss({ whitelistPatterns: [/^sidebar/, /^sl-vue-tree/, /^menu/, /^fa-/, /^filemanager/] });
+mix.purgeCss({ whitelistPatterns: [/^sidebar/, /^sl-vue-tree/, /^menu/, /^fa-/, /^filemanager/, /^btn/, /^alert/] });
 
 /**
  * Compile JS
