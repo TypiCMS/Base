@@ -8,11 +8,11 @@ class PermissionSeeder extends Seeder
     {
         $typi_permissions = [
             ['id' => 1, 'name' => 'view-navbar', 'guard_name' => 'web'],
-            ['id' => 2, 'name' => 'dashboard', 'guard_name' => 'web'],
+            ['id' => 2, 'name' => 'see-dashboard', 'guard_name' => 'web'],
             ['id' => 3, 'name' => 'see-history', 'guard_name' => 'web'],
             ['id' => 4, 'name' => 'see-settings', 'guard_name' => 'web'],
             ['id' => 5, 'name' => 'update-setting', 'guard_name' => 'web'],
-            ['id' => 6, 'name' => 'delete-history', 'guard_name' => 'web'],
+            ['id' => 6, 'name' => 'clear-history', 'guard_name' => 'web'],
             ['id' => 7, 'name' => 'change-locale', 'guard_name' => 'web'],
             ['id' => 8, 'name' => 'update-preferences', 'guard_name' => 'web'],
             ['id' => 9, 'name' => 'clear-cache', 'guard_name' => 'web'],

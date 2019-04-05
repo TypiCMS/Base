@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Carbon;
 
 class PageSeeder extends Seeder
 {
@@ -8,15 +9,15 @@ class PageSeeder extends Seeder
     {
         $typi_pages = [
             [
-                'id' => '1',
-                'meta_robots_no_index' => '',
-                'meta_robots_no_follow' => '',
-                'is_home' => '1',
-                'css' => '',
-                'js' => '',
+                'id' => 1,
+                'image_id' => null,
+                'position' => 1,
+                'is_home' => 1,
+                'css' => null,
+                'js' => null,
                 'template' => 'home',
-                'created_at' => '2014-03-28 21:57:44',
-                'updated_at' => '2014-03-28 20:26:35',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'slug' => '{"fr":null,"en":null,"nl":null}',
                 'uri' => '{"fr":null,"nl":null,"en":null}',
                 'title' => '{"fr":"Accueil","nl":"Home","en":"Home"}',
@@ -26,15 +27,15 @@ class PageSeeder extends Seeder
                 'meta_keywords' => '{"fr":null,"nl":null,"en":null}',
             ],
             [
-                'id' => '2',
-                'meta_robots_no_index' => '',
-                'meta_robots_no_follow' => '',
-                'is_home' => '0',
-                'css' => '',
-                'js' => '',
-                'template' => '',
-                'created_at' => '2014-03-28 21:52:13',
-                'updated_at' => '2014-03-28 21:08:14',
+                'id' => 2,
+                'image_id' => null,
+                'position' => 2,
+                'is_home' => 0,
+                'css' => null,
+                'js' => null,
+                'template' => null,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'slug' => '{"fr":"contact","en":"contact","nl":"contact"}',
                 'uri' => '{"fr":"contact","nl":"contact","en":"contact"}',
                 'title' => '{"fr":"Contact","nl":"Contact","en":"Contact"}',
@@ -44,15 +45,15 @@ class PageSeeder extends Seeder
                 'meta_keywords' => '{"fr":null,"nl":null,"en":null}',
             ],
             [
-                'id' => '3',
-                'meta_robots_no_index' => '',
-                'meta_robots_no_follow' => '',
-                'is_home' => '0',
-                'css' => '',
-                'js' => '',
-                'template' => '',
-                'created_at' => '2014-03-28 21:58:30',
-                'updated_at' => '2014-03-28 20:59:15',
+                'id' => 3,
+                'image_id' => null,
+                'position' => 3,
+                'is_home' => 0,
+                'css' => null,
+                'js' => null,
+                'template' => null,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'slug' => '{"fr":"conditions-d-utilisation","nl":"gebruiksvoorwaarden","en":"terms-of-use"}',
                 'uri' => '{"fr":"conditions-d-utilisation","nl":"gebruiksvoorwaarden","en":"terms-of-use"}',
                 'title' => '{"fr":"Conditions d’utilisation","nl":"Gebruiksvoorwaarden","en":"Terms of use"}',
