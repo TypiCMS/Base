@@ -12,6 +12,7 @@ use Illuminate\Session\TokenMismatchException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Handler extends ExceptionHandler
@@ -69,7 +70,7 @@ class Handler extends ExceptionHandler
         if ($exception instanceof TokenMismatchException) {
             return redirect()
                 ->back()
-                ->withErrors(['token_error' => __('Sorry, your session seems to have expired. Please try again.', [], $locale)])
+                ->withErrors(['token_error' => __('Sorry, your session has expired. Please refresh and try again.', [], $locale)])
                 ->withInput();
         }
 
@@ -79,24 +80,20 @@ class Handler extends ExceptionHandler
     /**
      * Render the given HttpException.
      *
-     * @param  \Symfony\Component\HttpKernel\Exception\HttpException  $e
+     * @param  \Symfony\Component\HttpKernel\Exception\HttpExceptionInterface  $e
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    protected function renderHttpException(HttpException $e)
+    protected function renderHttpException(HttpExceptionInterface $e)
     {
+        $this->registerErrorViewPaths();
+
         $status = $e->getStatusCode();
-
-        view()->replaceNamespace('errors', [
-            resource_path('views/errors'),
-            __DIR__.'/views',
-        ]);
-
         if (request()->segment(1) === 'admin' && view()->exists("errors::admin.{$status}")) {
             return response()->view("errors::admin.{$status}", ['exception' => $e], $status, $e->getHeaders());
         } elseif (view()->exists("errors::{$status}")) {
             return response()->view("errors::{$status}", ['exception' => $e], $status, $e->getHeaders());
-        } else {
-            return $this->convertExceptionToResponse($e);
         }
+
+        return $this->convertExceptionToResponse($e);
     }
 }
