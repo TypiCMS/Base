@@ -2,6 +2,20 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 6.0.0 - 2019-04-06
+
+### Changed
+
+* Upgraded to Laravel 5.8.
+* An image_id field was added to each module.
+* Use of json-ld in place of microdata for structured content.
+* [Module Events] A route was added to view past events.
+* Classes name in views changed.
+* Email verification added to the module Users.
+* Make use of Laravel notification system in module Contacts.
+* Login, register, forgot password views are now translated.
+* In the core presenter, the thumb() method was renamed to image().
+
 ## 5.0.0 - 2018-09-29
 
 ### Changed
