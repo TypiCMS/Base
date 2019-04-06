@@ -14,10 +14,6 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/TypiCMS/repository.git"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
         }
     ],
@@ -26,27 +22,27 @@
         "bkwld/croppa": "~4.7.0",
         "eluceo/ical": "~0.8",
         "fideloper/proxy": "^4.0",
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "^6.3",
         "laracasts/presenter": "~0.2.1",
         "laracasts/utilities": "~3.0",
         "laravel/framework": "5.8.*",
-        "laravel/tinker": "~1.0",
+        "laravel/tinker": "^1.0",
         "maatwebsite/laravel-sidebar": "~1.1.2",
-        "rinvex/repository": "dev-develop",
+        "rinvex/laravel-repositories": "~4.0.0",
         "laravelium/feed": "~3.0",
         "laravelium/sitemap": "~3.0",
-        "msurguy/honeypot": "~1.0.3",
-        "spatie/eloquent-sortable": "~3.4.1",
-        "spatie/laravel-permission": "~2.19.0",
+        "msurguy/honeypot": "~1.1.1",
+        "spatie/eloquent-sortable": "~3.5.0",
+        "spatie/laravel-permission": "~2.36.1",
         "spatie/laravel-query-builder": "^1.9",
-        "spatie/laravel-translatable": "~2.2.0",
+        "spatie/laravel-translatable": "~4.1.1",
         "typicms/blocks": "~6.0.0",
         "typicms/core": "~6.0.0",
         "typicms/tags": "~6.0.0",
         "typicms/dashboard": "~6.0.0",
         "typicms/files": "~6.0.0",
         "typicms/history": "~6.0.0",
-        "typicms/laravel-translatable-bootforms": "~2.0.0",
+        "typicms/laravel-translatable-bootforms": "~4.0.0",
         "typicms/menus": "~6.0.0",
         "typicms/nestablecollection": "~1.1.12",
         "typicms/objects": "~6.0.0",
@@ -64,8 +60,8 @@
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^2.0",
-        "phpunit/phpunit": "^7.0"
+        "nunomaduro/collision": "^3.0",
+        "phpunit/phpunit": "^7.5"
     },
     "config": {
         "optimize-autoloader": true,
