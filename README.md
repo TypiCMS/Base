@@ -4,7 +4,7 @@
 [![License](https://poser.pugx.org/typicms/base/license)](https://packagist.org/packages/typicms/base)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TypiCMS/Base/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/TypiCMS/Base/?branch=master)
 
-TypiCMS is a modular multilingual content management system built with [Laravel 5.7](http://laravel.com). Out of the box you can manage pages, events, news, places, menus, translations, etc.
+TypiCMS is a modular multilingual content management system built with [Laravel 5.8](http://laravel.com). Out of the box you can manage pages, events, news, places, menus, translations, etc.
 
 ![TypiCMS screenshot](http://typicms.org/uploads/files/typicms-screenshot.png?2)
 
