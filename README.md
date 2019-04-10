@@ -91,6 +91,8 @@ First install [Composer](https://getcomposer.org)
    php artisan typicms:install
    ```
 
+Note: if you use MariaDB, set 'mariadb' to true in config/typicms.php
+
 Go to http://mywebsite.test/admin and log in.
 
 ### Assets
