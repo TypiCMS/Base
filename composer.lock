@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "a594b5a1990dde3ad2e885360127e76b",
@@ -3703,16 +3703,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "6.0.4",
+            "version": "6.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "e9a3a7a070e97eae009f633eb4c9642ebb15f54f"
+                "reference": "dc3644e95b9fbf4de2aa17edd052d3e531645aa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/e9a3a7a070e97eae009f633eb4c9642ebb15f54f",
-                "reference": "e9a3a7a070e97eae009f633eb4c9642ebb15f54f",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/dc3644e95b9fbf4de2aa17edd052d3e531645aa3",
+                "reference": "dc3644e95b9fbf4de2aa17edd052d3e531645aa3",
                 "shasum": ""
             },
             "require": {
@@ -3734,7 +3734,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-04-09T20:33:54+00:00"
+            "time": "2019-04-10T08:51:59+00:00"
         },
         {
             "name": "typicms/dashboard",
