@@ -204,8 +204,10 @@ A partner has a logo, website URL, title and body content.
 
 ### Files
 
-The files module allows you to upload and organize files in folders. Behind the scene, [DropzoneJS](http://www.dropzonejs.com) is used to upload files.
-Thumbnails are generated on request with [Croppa](https://github.com/BKWLD/croppa).
+The files module allows you to upload and organize images, documents and folders. It works with [DropzoneJS](http://www.dropzonejs.com) for the uploading proccess.
+Thumbnails are generated on the fly thanks to [Croppa](https://github.com/BKWLD/croppa).
+
+If you want to store the original images on a storage service such as Amazon s3 and your cropped images on the local disk, set `FILESYSTEM_DRIVER=s3` in your **.env** file and in **config/croppa.php** set `'src_dir' => 'filesystem.default.driver'` and `'crops_dir' => storage_path('app/public')`.
 
 ### Users and roles
 
