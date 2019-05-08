@@ -2,6 +2,11 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 6.0.7 - 2019-05-08
+
+### Changed
+* This version contains a breaking change in the croppa config file ('path' value). Please copy the content of the config file at this address: `https://github.com/TypiCMS/Base/blob/master/config/croppa.php` and paste it into your project’s `/config/croppa.php` file.
+
 ## 6.0.0 - 2019-04-06
 
 ### Changed
