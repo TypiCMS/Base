@@ -2568,16 +2568,16 @@
         },
         {
             "name": "symfony/contracts",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/contracts.git",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
+                "reference": "d3636025e8253c6144358ec0a62773cae588395b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/d3636025e8253c6144358ec0a62773cae588395b",
+                "reference": "d3636025e8253c6144358ec0a62773cae588395b",
                 "shasum": ""
             },
             "require": {
@@ -2585,19 +2585,22 @@
             },
             "require-dev": {
                 "psr/cache": "^1.0",
-                "psr/container": "^1.0"
+                "psr/container": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10"
             },
             "suggest": {
                 "psr/cache": "When using the Cache contracts",
                 "psr/container": "When using the Service contracts",
                 "symfony/cache-contracts-implementation": "",
+                "symfony/event-dispatcher-implementation": "",
+                "symfony/http-client-contracts-implementation": "",
                 "symfony/service-contracts-implementation": "",
                 "symfony/translation-contracts-implementation": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -2632,7 +2635,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2018-12-05T08:06:11+00:00"
+            "time": "2019-04-27T14:29:50+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -3705,16 +3708,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "6.0.8",
+            "version": "6.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "bfb426bcfed62be5689601279515e6343079e43d"
+                "reference": "0bd79ffebdef97372d742d49079755dced5e582d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/bfb426bcfed62be5689601279515e6343079e43d",
-                "reference": "bfb426bcfed62be5689601279515e6343079e43d",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/0bd79ffebdef97372d742d49079755dced5e582d",
+                "reference": "0bd79ffebdef97372d742d49079755dced5e582d",
                 "shasum": ""
             },
             "require": {
@@ -3736,7 +3739,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-05-08T12:05:06+00:00"
+            "time": "2019-05-09T07:30:20+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -3775,16 +3778,16 @@
         },
         {
             "name": "typicms/files",
-            "version": "6.0.2",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "43c027b6bba0cf09b465c59bf376e21b7d2b610b"
+                "reference": "981575cdfabc8e8501224277a782d97271744759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/43c027b6bba0cf09b465c59bf376e21b7d2b610b",
-                "reference": "43c027b6bba0cf09b465c59bf376e21b7d2b610b",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/981575cdfabc8e8501224277a782d97271744759",
+                "reference": "981575cdfabc8e8501224277a782d97271744759",
                 "shasum": ""
             },
             "require": {
@@ -3806,7 +3809,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-05-08T12:02:21+00:00"
+            "time": "2019-05-09T07:27:55+00:00"
         },
         {
             "name": "typicms/form",
@@ -5618,16 +5621,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.9",
+            "version": "7.5.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "134669cf0eeac3f79bc7f0c793efbc158bffc160"
+                "reference": "d7d9cee051d03ed98df6023aad93f7902731a780"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/134669cf0eeac3f79bc7f0c793efbc158bffc160",
-                "reference": "134669cf0eeac3f79bc7f0c793efbc158bffc160",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d7d9cee051d03ed98df6023aad93f7902731a780",
+                "reference": "d7d9cee051d03ed98df6023aad93f7902731a780",
                 "shasum": ""
             },
             "require": {
@@ -5698,7 +5701,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-04-19T15:50:46+00:00"
+            "time": "2019-05-09T05:06:47+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
