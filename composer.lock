@@ -3708,16 +3708,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "6.0.12",
+            "version": "6.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "6929b505b4259126b81a080e7fdd2cdb77e06312"
+                "reference": "84f167bbd92a8c1eb9e84366bf860620604aadb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/6929b505b4259126b81a080e7fdd2cdb77e06312",
-                "reference": "6929b505b4259126b81a080e7fdd2cdb77e06312",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/84f167bbd92a8c1eb9e84366bf860620604aadb8",
+                "reference": "84f167bbd92a8c1eb9e84366bf860620604aadb8",
                 "shasum": ""
             },
             "require": {
@@ -3739,7 +3739,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-05-13T10:37:56+00:00"
+            "time": "2019-05-14T09:22:34+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -4075,16 +4075,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "6.0.1",
+            "version": "6.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "a3bb1e742d60a986bb13824134a03f79301fcf27"
+                "reference": "8227335eb20c2b34411a8fdd0ad57978c62f3b0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/a3bb1e742d60a986bb13824134a03f79301fcf27",
-                "reference": "a3bb1e742d60a986bb13824134a03f79301fcf27",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/8227335eb20c2b34411a8fdd0ad57978c62f3b0b",
+                "reference": "8227335eb20c2b34411a8fdd0ad57978c62f3b0b",
                 "shasum": ""
             },
             "require": {
@@ -4106,7 +4106,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-05-10T20:27:39+00:00"
+            "time": "2019-05-14T09:21:12+00:00"
         },
         {
             "name": "typicms/roles",
@@ -5621,16 +5621,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.10",
+            "version": "7.5.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d7d9cee051d03ed98df6023aad93f7902731a780"
+                "reference": "64cb33f5b520da490a7b13149d39b43cf3c890c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d7d9cee051d03ed98df6023aad93f7902731a780",
-                "reference": "d7d9cee051d03ed98df6023aad93f7902731a780",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/64cb33f5b520da490a7b13149d39b43cf3c890c6",
+                "reference": "64cb33f5b520da490a7b13149d39b43cf3c890c6",
                 "shasum": ""
             },
             "require": {
@@ -5701,7 +5701,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-05-09T05:06:47+00:00"
+            "time": "2019-05-14T04:53:02+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
