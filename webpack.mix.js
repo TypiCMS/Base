@@ -77,10 +77,8 @@ mix.browserSync('typicms.test');
 mix.options({
     processCssUrls: false,
     autoprefixer: {
-        enabled: true,
         options: {
-            grid: true,
-            browsers: ['last 10 versions'],
+            overrideBrowserslist: ['last 10 versions'],
         },
     },
 });
