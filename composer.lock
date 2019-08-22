@@ -4033,16 +4033,16 @@
         },
         {
             "name": "typicms/files",
-            "version": "6.0.4",
+            "version": "6.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "90ec6fcb5446240b64a63f01f3655f7f71c947c2"
+                "reference": "d8da43ab5e63732929e1f0924f729d7a62c7e45d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/90ec6fcb5446240b64a63f01f3655f7f71c947c2",
-                "reference": "90ec6fcb5446240b64a63f01f3655f7f71c947c2",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/d8da43ab5e63732929e1f0924f729d7a62c7e45d",
+                "reference": "d8da43ab5e63732929e1f0924f729d7a62c7e45d",
                 "shasum": ""
             },
             "require": {
@@ -4064,7 +4064,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-05-10T18:49:52+00:00"
+            "time": "2019-08-22T11:05:31+00:00"
         },
         {
             "name": "typicms/form",
@@ -4725,22 +4725,22 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.2.4",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "2d195779ea4f809f69764a795e2ec371dbb76a96"
+                "reference": "bf19d9362d0efd1e97c67a76f13f8085953bbbbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/2d195779ea4f809f69764a795e2ec371dbb76a96",
-                "reference": "2d195779ea4f809f69764a795e2ec371dbb76a96",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/bf19d9362d0efd1e97c67a76f13f8085953bbbbd",
+                "reference": "bf19d9362d0efd1e97c67a76f13f8085953bbbbd",
                 "shasum": ""
             },
             "require": {
-                "illuminate/routing": "5.5.x|5.6.x|5.7.x|5.8.x",
-                "illuminate/session": "5.5.x|5.6.x|5.7.x|5.8.x",
-                "illuminate/support": "5.5.x|5.6.x|5.7.x|5.8.x",
+                "illuminate/routing": "^5.5|^6",
+                "illuminate/session": "^5.5|^6",
+                "illuminate/support": "^5.5|^6",
                 "maximebf/debugbar": "~1.15.0",
                 "php": ">=7.0",
                 "symfony/debug": "^3|^4",
@@ -4789,7 +4789,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2019-03-25T09:39:08+00:00"
+            "time": "2019-08-22T07:52:30+00:00"
         },
         {
             "name": "beyondcode/laravel-dump-server",
