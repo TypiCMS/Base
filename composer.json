@@ -26,10 +26,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/TypiCMS/eloquent-sortable.git"
-        },
-        {
-            "type": "vcs",
             "url": "https://gitlab.com/samueldebacker/Feed.git"
         },
         {
@@ -50,9 +46,9 @@
         "laravel/tinker": "^1.0",
         "laravelium/feed": "dev-master",
         "laravelium/sitemap": "^6.0",
-        "maatwebsite/laravel-sidebar": "~1.1.3",
+        "maatwebsite/laravel-sidebar": "~1.1.4",
         "msurguy/honeypot": "dev-master",
-        "spatie/eloquent-sortable": "dev-master",
+        "spatie/eloquent-sortable": "~3.7.0",
         "spatie/laravel-permission": "^3.0",
         "spatie/laravel-query-builder": "^2.1",
         "spatie/laravel-translatable": "~4.2.0",
@@ -72,7 +68,7 @@
         "typicms/tags": "~7.0",
         "typicms/translations": "~7.0",
         "typicms/users": "~7.0",
-        "typidesign/laravel-artisan-translations": "^1.0"
+        "typidesign/laravel-artisan-translations": "~1.0.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
