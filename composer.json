@@ -26,10 +26,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://gitlab.com/samueldebacker/Feed.git"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
         }
     ],
@@ -44,7 +40,7 @@
         "laracasts/utilities": "dev-master",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "laravelium/feed": "dev-master",
+        "laravelium/feed": "^6.0",
         "laravelium/sitemap": "^6.0",
         "maatwebsite/laravel-sidebar": "~1.1.4",
         "msurguy/honeypot": "dev-master",

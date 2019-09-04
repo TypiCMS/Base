@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ef6bc8b8ceb0db54169d8aacc26418d",
+    "content-hash": "58db5ed4ac1518555f0cf6b481989969",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -1198,24 +1198,25 @@
         },
         {
             "name": "laravelium/feed",
-            "version": "dev-master",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/samueldebacker/Feed.git",
-                "reference": "f71c48d79d019f4c0053cb6031d4fa99dfb860ed"
+                "url": "https://gitlab.com/Laravelium/Feed.git",
+                "reference": "91ddec71754a60fa066d7ef0a2ea0124d7966eb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/samueldebacker%2FFeed/repository/archive.zip?sha=f71c48d79d019f4c0053cb6031d4fa99dfb860ed",
-                "reference": "f71c48d79d019f4c0053cb6031d4fa99dfb860ed",
+                "url": "https://gitlab.com/api/v4/projects/Laravelium%2FFeed/repository/archive.zip?sha=91ddec71754a60fa066d7ef0a2ea0124d7966eb0",
+                "reference": "91ddec71754a60fa066d7ef0a2ea0124d7966eb0",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "~5.8|~6.0",
-                "php": ">=7.1.3"
+                "illuminate/filesystem": "~6.0",
+                "illuminate/support": "~6.0",
+                "php": ">=7.2"
             },
             "require-dev": {
-                "mockery/mockery": "^1.0",
+                "laravel/framework": "~6.0",
                 "orchestra/testbench-core": "3.8.*",
                 "phpunit/phpunit": "^7.5 || ^8.0"
             },
@@ -1235,6 +1236,7 @@
                     "Laravelium\\Feed": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1242,12 +1244,12 @@
                 {
                     "name": "Roumen Damianoff",
                     "email": "roumen@damianoff.com",
-                    "role": "Developer",
-                    "homepage": "https://damianoff.com"
+                    "homepage": "https://damianoff.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Laravelium Feed package for Laravel.",
-            "homepage": "https://laravelium.com",
+            "homepage": "https://gitlab.com/Laravelium",
             "keywords": [
                 "atom",
                 "feed",
@@ -1256,7 +1258,7 @@
                 "laravelium",
                 "rss"
             ],
-            "time": "2019-09-04T08:33:26+00:00"
+            "time": "2019-09-04T19:26:55+00:00"
         },
         {
             "name": "laravelium/sitemap",
@@ -1407,21 +1409,19 @@
         },
         {
             "name": "maatwebsite/laravel-sidebar",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Sidebar.git",
-                "reference": "c60b007ef87645c21d470503b7ec49049c3352a5"
+                "reference": "04f8b04c274dfbb3fe401aafd42479d0fcf99500"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/c60b007ef87645c21d470503b7ec49049c3352a5",
-                "reference": "c60b007ef87645c21d470503b7ec49049c3352a5",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/04f8b04c274dfbb3fe401aafd42479d0fcf99500",
+                "reference": "04f8b04c274dfbb3fe401aafd42479d0fcf99500",
                 "shasum": ""
             },
             "require": {
-                "illuminate/cache": "~5.0|~6.0",
-                "illuminate/container": "~5.0|~6.0",
                 "illuminate/contracts": "~5.0|~6.0",
                 "illuminate/routing": "~5.0|~6.0",
                 "illuminate/support": "~5.0|~6.0",
@@ -1429,13 +1429,13 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.1"
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~5.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Maatwebsite\\Sidebar\\": "src/"
+                    "Maatwebsite\\Sidebar\\": "src/Maatwebsite/Sidebar"
                 }
             },
             "license": [
@@ -1450,14 +1450,12 @@
             "description": "A sidebar builder for Laravel",
             "keywords": [
                 "acp",
-                "laravel",
-                "menu",
-                "sidebar"
+                "laravel"
             ],
             "support": {
                 "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.1.3"
             },
-            "time": "2019-09-04T08:35:22+00:00"
+            "time": "2019-09-04T13:31:52+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2262,24 +2260,24 @@
         },
         {
             "name": "spatie/eloquent-sortable",
-            "version": "dev-master",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TypiCMS/eloquent-sortable.git",
-                "reference": "ba0886fa106dd2d58de8546b28976bd6a2e42b24"
+                "url": "https://github.com/spatie/eloquent-sortable.git",
+                "reference": "0eb944f90dd88756f93d916bf387e232190a7acf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/eloquent-sortable/zipball/ba0886fa106dd2d58de8546b28976bd6a2e42b24",
-                "reference": "ba0886fa106dd2d58de8546b28976bd6a2e42b24",
+                "url": "https://api.github.com/repos/spatie/eloquent-sortable/zipball/0eb944f90dd88756f93d916bf387e232190a7acf",
+                "reference": "0eb944f90dd88756f93d916bf387e232190a7acf",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "~5.8.0|~6.0",
+                "laravel/framework": "~5.8.0|^6.0",
                 "php": "^7.2"
             },
             "require-dev": {
-                "orchestra/testbench": "~3.8.0",
+                "orchestra/testbench": "~3.8.0|^4.0",
                 "phpunit/phpunit": "^8.0"
             },
             "type": "library",
@@ -2288,11 +2286,7 @@
                     "Spatie\\EloquentSortable\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Spatie\\EloquentSortable\\Test\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2312,10 +2306,7 @@
                 "sort",
                 "sortable"
             ],
-            "support": {
-                "source": "https://github.com/TypiCMS/eloquent-sortable/tree/master"
-            },
-            "time": "2019-09-04T08:48:59+00:00"
+            "time": "2019-09-04T10:53:31+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -3937,16 +3928,16 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "49262ec8987e31eed8cbb7ca31d181713b264083"
+                "reference": "bd1f6c0b2f62d855887db5d559a73b66e776f5a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/49262ec8987e31eed8cbb7ca31d181713b264083",
-                "reference": "49262ec8987e31eed8cbb7ca31d181713b264083",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/bd1f6c0b2f62d855887db5d559a73b66e776f5a5",
+                "reference": "bd1f6c0b2f62d855887db5d559a73b66e776f5a5",
                 "shasum": ""
             },
             "require": {
@@ -3968,7 +3959,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:41:50+00:00"
+            "time": "2019-09-04T20:14:21+00:00"
         },
         {
             "name": "typicms/bootforms",
@@ -4025,16 +4016,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "7.0.1",
+            "version": "7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "459594b2d81e035d8efe5825617eb956df0f1ae5"
+                "reference": "20375ea98209ec9055f86e605b3179f6c0af7254"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/459594b2d81e035d8efe5825617eb956df0f1ae5",
-                "reference": "459594b2d81e035d8efe5825617eb956df0f1ae5",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/20375ea98209ec9055f86e605b3179f6c0af7254",
+                "reference": "20375ea98209ec9055f86e605b3179f6c0af7254",
                 "shasum": ""
             },
             "require": {
@@ -4056,7 +4047,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-04T11:28:14+00:00"
+            "time": "2019-09-04T20:01:55+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -4183,16 +4174,16 @@
         },
         {
             "name": "typicms/history",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
-                "reference": "28083e786f19357e9068a85ea7b767e348a20c26"
+                "reference": "f74c4ec0b897e68491f6269860e9ea4fa3486684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/History/zipball/28083e786f19357e9068a85ea7b767e348a20c26",
-                "reference": "28083e786f19357e9068a85ea7b767e348a20c26",
+                "url": "https://api.github.com/repos/TypiCMS/History/zipball/f74c4ec0b897e68491f6269860e9ea4fa3486684",
+                "reference": "f74c4ec0b897e68491f6269860e9ea4fa3486684",
                 "shasum": ""
             },
             "require": {
@@ -4214,20 +4205,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-04T08:23:30+00:00"
+            "time": "2019-09-04T13:42:30+00:00"
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
-                "reference": "b613f486f0eb3f0d03896ea6d430ae3a044f4c93"
+                "reference": "ec68d9fd9b2e8b8ca1c09177c69f3f9dd578c959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/b613f486f0eb3f0d03896ea6d430ae3a044f4c93",
-                "reference": "b613f486f0eb3f0d03896ea6d430ae3a044f4c93",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/ec68d9fd9b2e8b8ca1c09177c69f3f9dd578c959",
+                "reference": "ec68d9fd9b2e8b8ca1c09177c69f3f9dd578c959",
                 "shasum": ""
             },
             "require": {
@@ -4277,20 +4268,20 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2019-09-04T08:44:11+00:00"
+            "time": "2019-09-04T14:33:58+00:00"
         },
         {
             "name": "typicms/menus",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "82417ef70f87c458909370a31a2aaa31342e218b"
+                "reference": "4576c46950e4e1b7ab995d926333250e5fb1e70b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/82417ef70f87c458909370a31a2aaa31342e218b",
-                "reference": "82417ef70f87c458909370a31a2aaa31342e218b",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/4576c46950e4e1b7ab995d926333250e5fb1e70b",
+                "reference": "4576c46950e4e1b7ab995d926333250e5fb1e70b",
                 "shasum": ""
             },
             "require": {
@@ -4312,7 +4303,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:43:13+00:00"
+            "time": "2019-09-04T20:04:38+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -4362,16 +4353,16 @@
         },
         {
             "name": "typicms/objects",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "55802ec43f5892700378bfdb59ba3ad5a35201e7"
+                "reference": "46685d38420d1e1dfb17de24c14d3dd7fca7d82f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/55802ec43f5892700378bfdb59ba3ad5a35201e7",
-                "reference": "55802ec43f5892700378bfdb59ba3ad5a35201e7",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/46685d38420d1e1dfb17de24c14d3dd7fca7d82f",
+                "reference": "46685d38420d1e1dfb17de24c14d3dd7fca7d82f",
                 "shasum": ""
             },
             "require": {
@@ -4388,20 +4379,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:43:27+00:00"
+            "time": "2019-09-04T20:05:50+00:00"
         },
         {
             "name": "typicms/pages",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "b0e4971015b3e071416b34adf8fb5cb98668a0ef"
+                "reference": "29a0fd622def302102a1d9657a3b135b7147ae00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/b0e4971015b3e071416b34adf8fb5cb98668a0ef",
-                "reference": "b0e4971015b3e071416b34adf8fb5cb98668a0ef",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/29a0fd622def302102a1d9657a3b135b7147ae00",
+                "reference": "29a0fd622def302102a1d9657a3b135b7147ae00",
                 "shasum": ""
             },
             "require": {
@@ -4423,20 +4414,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:43:31+00:00"
+            "time": "2019-09-04T20:06:25+00:00"
         },
         {
             "name": "typicms/roles",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Roles.git",
-                "reference": "5299a8725442df131277859e8165450eac6d0bdd"
+                "reference": "0ddd6a83a44eba2a65b4f8d2633b356ccba252ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/5299a8725442df131277859e8165450eac6d0bdd",
-                "reference": "5299a8725442df131277859e8165450eac6d0bdd",
+                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/0ddd6a83a44eba2a65b4f8d2633b356ccba252ae",
+                "reference": "0ddd6a83a44eba2a65b4f8d2633b356ccba252ae",
                 "shasum": ""
             },
             "require": {
@@ -4458,7 +4449,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:43:52+00:00"
+            "time": "2019-09-04T20:07:45+00:00"
         },
         {
             "name": "typicms/settings",
@@ -4540,16 +4531,16 @@
         },
         {
             "name": "typicms/tags",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "713544271848b3065efbbde04cf087510e8cfe35"
+                "reference": "11794a95f63d843be9fa96eabb43c5975798df90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/713544271848b3065efbbde04cf087510e8cfe35",
-                "reference": "713544271848b3065efbbde04cf087510e8cfe35",
+                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/11794a95f63d843be9fa96eabb43c5975798df90",
+                "reference": "11794a95f63d843be9fa96eabb43c5975798df90",
                 "shasum": ""
             },
             "require": {
@@ -4571,20 +4562,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:45:08+00:00"
+            "time": "2019-09-04T20:08:40+00:00"
         },
         {
             "name": "typicms/translations",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
-                "reference": "08e70b8b6612aee959174adf2fdcd295957ecb9e"
+                "reference": "04fb466018fbd87804a598e9f9d9c98296057e80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/08e70b8b6612aee959174adf2fdcd295957ecb9e",
-                "reference": "08e70b8b6612aee959174adf2fdcd295957ecb9e",
+                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/04fb466018fbd87804a598e9f9d9c98296057e80",
+                "reference": "04fb466018fbd87804a598e9f9d9c98296057e80",
                 "shasum": ""
             },
             "require": {
@@ -4606,20 +4597,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:45:14+00:00"
+            "time": "2019-09-04T20:09:06+00:00"
         },
         {
             "name": "typicms/users",
-            "version": "7.0.0",
+            "version": "7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "fa69a140b10983af148439c86641d8c5537816e8"
+                "reference": "804ea55f7437d2b688164f025205584f54a85d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/fa69a140b10983af148439c86641d8c5537816e8",
-                "reference": "fa69a140b10983af148439c86641d8c5537816e8",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/804ea55f7437d2b688164f025205584f54a85d7e",
+                "reference": "804ea55f7437d2b688164f025205584f54a85d7e",
                 "shasum": ""
             },
             "require": {
@@ -4641,7 +4632,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:45:18+00:00"
+            "time": "2019-09-04T20:09:30+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -4970,16 +4961,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "1.4.8",
+            "version": "1.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "8992921a199e9632cb3da76709aff1d53431259a"
+                "reference": "5082ea8e531894dca7ffcee25206d93cd25aca42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/8992921a199e9632cb3da76709aff1d53431259a",
-                "reference": "8992921a199e9632cb3da76709aff1d53431259a",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/5082ea8e531894dca7ffcee25206d93cd25aca42",
+                "reference": "5082ea8e531894dca7ffcee25206d93cd25aca42",
                 "shasum": ""
             },
             "require": {
@@ -5034,7 +5025,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2019-09-04T10:50:24+00:00"
+            "time": "2019-09-04T19:13:40+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -6908,9 +6899,7 @@
         "bkwld/croppa": 20,
         "laracasts/presenter": 20,
         "laracasts/utilities": 20,
-        "laravelium/feed": 20,
-        "msurguy/honeypot": 20,
-        "spatie/eloquent-sortable": 20
+        "msurguy/honeypot": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
