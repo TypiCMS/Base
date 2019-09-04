@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -13,7 +12,6 @@ return [
     |
     */
 
-    'failed'   => 'Deze combinatie van e-mailadres en wachtwoord is niet geldig.',
+    'failed' => 'Deze combinatie van e-mailadres en wachtwoord is niet geldig.',
     'throttle' => 'Teveel gefaalde login pogingen. Probeer het over :seconds seconden nogmaals.',
-
 ];
