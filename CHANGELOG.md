@@ -2,6 +2,14 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 7.0.0 - 2019-09-04
+
+### Changed
+
+* Upgraded to Laravel 6.
+* Return type definitions in models and controllers
+* Repositories removed, queries are now cached tnahks to genealabs/laravel-model-caching
+
 ## 6.0.7 - 2019-05-08
 
 ### Changed
