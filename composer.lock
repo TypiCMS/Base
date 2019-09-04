@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f409857372ac8790e7c9689ff702a902",
+    "content-hash": "27cba088dde41e11d536601a7aafaad2",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -3660,7 +3660,7 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
@@ -3748,16 +3748,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "fff6748be879d78228a4de13e7c2d955cf0a5cbb"
+                "reference": "381aadfc03d201c83ee5054ee532776d2f147799"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/fff6748be879d78228a4de13e7c2d955cf0a5cbb",
-                "reference": "fff6748be879d78228a4de13e7c2d955cf0a5cbb",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/381aadfc03d201c83ee5054ee532776d2f147799",
+                "reference": "381aadfc03d201c83ee5054ee532776d2f147799",
                 "shasum": ""
             },
             "require": {
@@ -3779,11 +3779,11 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2019-09-03T21:42:09+00:00"
+            "time": "2019-09-04T10:39:20+00:00"
         },
         {
             "name": "typicms/dashboard",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
@@ -3818,7 +3818,7 @@
         },
         {
             "name": "typicms/files",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
@@ -3906,7 +3906,7 @@
         },
         {
             "name": "typicms/history",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
@@ -3941,7 +3941,7 @@
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
-            "version": "dev-master",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
@@ -4004,7 +4004,7 @@
         },
         {
             "name": "typicms/menus",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
@@ -4085,7 +4085,7 @@
         },
         {
             "name": "typicms/objects",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
@@ -4115,7 +4115,7 @@
         },
         {
             "name": "typicms/pages",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
@@ -4150,7 +4150,7 @@
         },
         {
             "name": "typicms/roles",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Roles.git",
@@ -4185,7 +4185,7 @@
         },
         {
             "name": "typicms/settings",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
@@ -4220,7 +4220,7 @@
         },
         {
             "name": "typicms/sitemap",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
@@ -4263,7 +4263,7 @@
         },
         {
             "name": "typicms/tags",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
@@ -4298,7 +4298,7 @@
         },
         {
             "name": "typicms/translations",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
@@ -4333,7 +4333,7 @@
         },
         {
             "name": "typicms/users",
-            "version": "dev-master",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
@@ -6633,22 +6633,7 @@
         "laracasts/utilities": 20,
         "laravelium/feed": 20,
         "msurguy/honeypot": 20,
-        "spatie/eloquent-sortable": 20,
-        "typicms/blocks": 20,
-        "typicms/core": 20,
-        "typicms/dashboard": 20,
-        "typicms/files": 20,
-        "typicms/history": 20,
-        "typicms/laravel-translatable-bootforms": 20,
-        "typicms/menus": 20,
-        "typicms/objects": 20,
-        "typicms/pages": 20,
-        "typicms/roles": 20,
-        "typicms/settings": 20,
-        "typicms/sitemap": 20,
-        "typicms/tags": 20,
-        "typicms/translations": 20,
-        "typicms/users": 20
+        "spatie/eloquent-sortable": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
