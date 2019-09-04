@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e2b45cfacb57742d581bbd7fb4245be",
+    "content-hash": "f409857372ac8790e7c9689ff702a902",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -4693,16 +4693,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "afd41c326d7636afd82177be4edec2c0a30cf1be"
+                "reference": "cf7364d2598a6b36be492e7cd10dcf1b3c375a09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/afd41c326d7636afd82177be4edec2c0a30cf1be",
-                "reference": "afd41c326d7636afd82177be4edec2c0a30cf1be",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/cf7364d2598a6b36be492e7cd10dcf1b3c375a09",
+                "reference": "cf7364d2598a6b36be492e7cd10dcf1b3c375a09",
                 "shasum": ""
             },
             "require": {
@@ -4710,7 +4710,7 @@
                 "ext-mbstring": "*",
                 "facade/flare-client-php": "^1.0",
                 "facade/ignition-contracts": "^1.0",
-                "filp/whoops": "^2.1.4",
+                "filp/whoops": "^2.4",
                 "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0",
                 "monolog/monolog": "^1.12|^2.0",
                 "php": "^7.1",
@@ -4757,7 +4757,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2019-09-04T08:30:42+00:00"
+            "time": "2019-09-04T09:20:40+00:00"
         },
         {
             "name": "facade/ignition-contracts",
