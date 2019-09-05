@@ -60,13 +60,15 @@ This kind of URLs are managed by the CMS:
 
 ## Requirements
 
-- PHP >= 7.1.3
-- MySQL 5.7
+- PHP >= 7.2
+- MySQL 5.7.8
+- BCMath PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+- Mbstring PHP Extension
 - OpenSSL PHP Extension
 - PDO PHP Extension
-- Mbstring PHP Extension
 - Tokenizer PHP Extension
-- Memcached or Redis
 - XML PHP Extension
 
 ## Installation
