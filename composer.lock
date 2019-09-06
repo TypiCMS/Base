@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58db5ed4ac1518555f0cf6b481989969",
+    "content-hash": "6356973ccd86a8531ac31a1a8ab61b8d",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -883,16 +883,16 @@
         },
         {
             "name": "laracasts/presenter",
-            "version": "dev-master",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TypiCMS/Presenter.git",
-                "reference": "90d69dd5dcdbdd1c00a9854f742a89529396c7b2"
+                "url": "https://github.com/laracasts/Presenter.git",
+                "reference": "b17a643d562ab358f7cd3f3d0b264ac315dc2010"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Presenter/zipball/90d69dd5dcdbdd1c00a9854f742a89529396c7b2",
-                "reference": "90d69dd5dcdbdd1c00a9854f742a89529396c7b2",
+                "url": "https://api.github.com/repos/laracasts/Presenter/zipball/b17a643d562ab358f7cd3f3d0b264ac315dc2010",
+                "reference": "b17a643d562ab358f7cd3f3d0b264ac315dc2010",
                 "shasum": ""
             },
             "require": {
@@ -909,6 +909,7 @@
                     "Laracasts\\Presenter": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -924,27 +925,24 @@
                 "presenter",
                 "view"
             ],
-            "support": {
-                "source": "https://github.com/TypiCMS/Presenter/tree/master"
-            },
-            "time": "2019-09-04T08:51:31+00:00"
+            "time": "2019-09-05T13:43:00+00:00"
         },
         {
             "name": "laracasts/utilities",
-            "version": "dev-master",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TypiCMS/PHP-Vars-To-Js-Transformer.git",
-                "reference": "8c575a5265dbd3876d2a63e85d84685f799ecf04"
+                "url": "https://github.com/laracasts/PHP-Vars-To-Js-Transformer.git",
+                "reference": "490c6cf4d23c26c94e01867265c84921863a5f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/PHP-Vars-To-Js-Transformer/zipball/8c575a5265dbd3876d2a63e85d84685f799ecf04",
-                "reference": "8c575a5265dbd3876d2a63e85d84685f799ecf04",
+                "url": "https://api.github.com/repos/laracasts/PHP-Vars-To-Js-Transformer/zipball/490c6cf4d23c26c94e01867265c84921863a5f19",
+                "reference": "490c6cf4d23c26c94e01867265c84921863a5f19",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.0|~6.0",
+                "illuminate/support": "^5.0|^6.0",
                 "php": ">=5.5.0"
             },
             "require-dev": {
@@ -969,6 +967,7 @@
                     "Laracasts\\Utilities\\JavaScript\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -983,10 +982,7 @@
                 "javascript",
                 "laravel"
             ],
-            "support": {
-                "source": "https://github.com/TypiCMS/PHP-Vars-To-Js-Transformer/tree/master"
-            },
-            "time": "2019-09-04T08:51:49+00:00"
+            "time": "2019-09-04T12:55:27+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1540,16 +1536,16 @@
         },
         {
             "name": "msurguy/honeypot",
-            "version": "dev-master",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msurguy/Honeypot.git",
-                "reference": "d2f24fbadf8c10e6598211a4746de5e29c1fa900"
+                "reference": "6a56b99a89ba894434ded13a94c5797f07f67aad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/d2f24fbadf8c10e6598211a4746de5e29c1fa900",
-                "reference": "d2f24fbadf8c10e6598211a4746de5e29c1fa900",
+                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/6a56b99a89ba894434ded13a94c5797f07f67aad",
+                "reference": "6a56b99a89ba894434ded13a94c5797f07f67aad",
                 "shasum": ""
             },
             "require": {
@@ -1592,7 +1588,7 @@
                 "laravel",
                 "spam"
             ],
-            "time": "2019-09-03T22:44:57+00:00"
+            "time": "2019-09-06T16:09:40+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -6896,10 +6892,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "bkwld/croppa": 20,
-        "laracasts/presenter": 20,
-        "laracasts/utilities": 20,
-        "msurguy/honeypot": 20
+        "bkwld/croppa": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
