@@ -18,14 +18,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/TypiCMS/presenter.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/TypiCMS/PHP-Vars-To-Js-Transformer.git"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
         }
     ],
@@ -36,14 +28,14 @@
         "fideloper/proxy": "^4.0",
         "genealabs/laravel-model-caching": "^0.7.0",
         "guzzlehttp/guzzle": "^6.3",
-        "laracasts/presenter": "dev-master",
-        "laracasts/utilities": "dev-master",
+        "laracasts/presenter": "~0.2.2",
+        "laracasts/utilities": "~3.0.1",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
         "laravelium/feed": "^6.0",
         "laravelium/sitemap": "^6.0",
         "maatwebsite/laravel-sidebar": "~1.1.4",
-        "msurguy/honeypot": "dev-master",
+        "msurguy/honeypot": "~1.1.2",
         "spatie/eloquent-sortable": "~3.7.0",
         "spatie/laravel-permission": "^3.0",
         "spatie/laravel-query-builder": "^2.1",
