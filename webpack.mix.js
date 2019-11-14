@@ -35,6 +35,7 @@ mix.copy('node_modules/ckeditor4/lang/en.js', 'public/components/ckeditor/lang/e
  * Copy CKEditor plugins files
  */
 var plugins = [
+    'dialog',
     'dialogadvtab',
     'div',
     'image',
@@ -49,6 +50,7 @@ var plugins = [
     'specialchar',
     'table',
     'tableselection',
+    'tabletools',
     'widget',
     'wsc',
 ];
