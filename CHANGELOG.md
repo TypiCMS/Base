@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 7.0.13 - 2019-12-09
+
+### Changed
+
+* The CKEditor directory has changed from public/components/ckeditor to ckeditor4. Please republish assets and update you blade views to point to this new directory. Also, there are now two initial possible configurations: config-full (class .ckeditor-full in markup) and config-light (class .ckeditor-light in markup).
+
 ## 7.0.0 - 2019-09-04
 
 ### Changed
