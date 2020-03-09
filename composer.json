@@ -14,13 +14,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/TypiCMS/croppa.git",
-            "no-api": true
+            "url": "https://github.com/TypiCMS/croppa.git"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/TypiCMS/Laravel-Sidebar.git",
-            "no-api": true
+            "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
         }
     ],
     "require": {
