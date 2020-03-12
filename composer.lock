@@ -839,20 +839,20 @@
         },
         {
             "name": "laracasts/presenter",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laracasts/Presenter.git",
-                "reference": "b17a643d562ab358f7cd3f3d0b264ac315dc2010"
+                "reference": "66ef61dac416f119de75788b5d50eacef3174303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laracasts/Presenter/zipball/b17a643d562ab358f7cd3f3d0b264ac315dc2010",
-                "reference": "b17a643d562ab358f7cd3f3d0b264ac315dc2010",
+                "url": "https://api.github.com/repos/laracasts/Presenter/zipball/66ef61dac416f119de75788b5d50eacef3174303",
+                "reference": "66ef61dac416f119de75788b5d50eacef3174303",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.0|~6.0",
+                "illuminate/support": "~5.0|~6.0|~7.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -881,7 +881,7 @@
                 "presenter",
                 "view"
             ],
-            "time": "2019-09-05T13:43:00+00:00"
+            "time": "2020-03-09T15:02:31+00:00"
         },
         {
             "name": "laracasts/utilities",
@@ -942,16 +942,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.18.0",
+            "version": "v6.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "077b895d935b7fbcfb1d1eb34217fa4f80a130d8"
+                "reference": "367c2c8dfdfe83cb2ddbc029c0222174098d093a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/077b895d935b7fbcfb1d1eb34217fa4f80a130d8",
-                "reference": "077b895d935b7fbcfb1d1eb34217fa4f80a130d8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/367c2c8dfdfe83cb2ddbc029c0222174098d093a",
+                "reference": "367c2c8dfdfe83cb2ddbc029c0222174098d093a",
                 "shasum": ""
             },
             "require": {
@@ -1084,7 +1084,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-03-03T13:14:27+00:00"
+            "time": "2020-03-10T14:11:04+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1567,22 +1567,22 @@
         },
         {
             "name": "msurguy/honeypot",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msurguy/Honeypot.git",
-                "reference": "16bba3255870fe272575fd3928d76a209ffec098"
+                "reference": "ac8c28d4bcd3c14657ddf772ffef05144da5f078"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/16bba3255870fe272575fd3928d76a209ffec098",
-                "reference": "16bba3255870fe272575fd3928d76a209ffec098",
+                "url": "https://api.github.com/repos/msurguy/Honeypot/zipball/ac8c28d4bcd3c14657ddf772ffef05144da5f078",
+                "reference": "ac8c28d4bcd3c14657ddf772ffef05144da5f078",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "4.*|5.*|6.*",
-                "illuminate/support": "4.*|5.*|6.*",
-                "illuminate/translation": "4.*|5.*|6.*",
+                "illuminate/config": "4.*|5.*|6.*|7.*",
+                "illuminate/support": "4.*|5.*|6.*|7.*",
+                "illuminate/translation": "4.*|5.*|6.*|7.*",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -1622,7 +1622,7 @@
                 "laravel",
                 "spam"
             ],
-            "time": "2020-02-15T20:16:56+00:00"
+            "time": "2020-03-09T22:04:13+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -4120,16 +4120,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "7.0.24",
+            "version": "7.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "7e69635d377de828841cd18fc54f3f79fa00dbbf"
+                "reference": "fa7f7e3cc775d469a066f70b4fb00cb52222f5c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/7e69635d377de828841cd18fc54f3f79fa00dbbf",
-                "reference": "7e69635d377de828841cd18fc54f3f79fa00dbbf",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/fa7f7e3cc775d469a066f70b4fb00cb52222f5c3",
+                "reference": "fa7f7e3cc775d469a066f70b4fb00cb52222f5c3",
                 "shasum": ""
             },
             "require": {
@@ -4151,7 +4151,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2020-02-26T19:07:45+00:00"
+            "time": "2020-03-06T22:15:03+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -4487,16 +4487,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "7.0.9",
+            "version": "7.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "9b7541bbe1493803b427e517e2c8dc3bad563af7"
+                "reference": "1d57cdd2ddcd489ae06e028c65845fb1a8d529ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/9b7541bbe1493803b427e517e2c8dc3bad563af7",
-                "reference": "9b7541bbe1493803b427e517e2c8dc3bad563af7",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/1d57cdd2ddcd489ae06e028c65845fb1a8d529ff",
+                "reference": "1d57cdd2ddcd489ae06e028c65845fb1a8d529ff",
                 "shasum": ""
             },
             "require": {
@@ -4518,7 +4518,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2020-02-17T10:27:30+00:00"
+            "time": "2020-03-12T08:33:46+00:00"
         },
         {
             "name": "typicms/roles",
