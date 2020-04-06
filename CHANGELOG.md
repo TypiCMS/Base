@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 7.0.30 - 2020-04-06
+
+### Added
+
+* Added the possibility to make links to CMS pages via CKEditor.
+
 ## 7.0.13 - 2019-12-09
 
 ### Changed
