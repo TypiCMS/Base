@@ -2,7 +2,7 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
-## 7.0.30 - 2020-04-06
+## 7.0.31 - 2020-04-06
 
 ### Added
 
