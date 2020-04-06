@@ -789,6 +789,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -835,6 +836,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -1278,16 +1280,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "75542a366ccbe1896ed79fcf3e8e68206d6c4257"
+                "reference": "5a67afc2572ec6d430526cdc9c637ef124812389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/75542a366ccbe1896ed79fcf3e8e68206d6c4257",
-                "reference": "75542a366ccbe1896ed79fcf3e8e68206d6c4257",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/5a67afc2572ec6d430526cdc9c637ef124812389",
+                "reference": "5a67afc2572ec6d430526cdc9c637ef124812389",
                 "shasum": ""
             },
             "require": {
@@ -1348,7 +1350,7 @@
                 "md",
                 "parser"
             ],
-            "time": "2020-03-25T19:55:28+00:00"
+            "time": "2020-04-05T16:01:48+00:00"
         },
         {
             "name": "league/flysystem",
@@ -4121,16 +4123,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "7.0.26",
+            "version": "7.0.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "72ea89364f6b93751e3f9ad16755ab6d5c6dafe6"
+                "reference": "623ad00ec68d6ef2aecfbf080f497f878f7c23c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/72ea89364f6b93751e3f9ad16755ab6d5c6dafe6",
-                "reference": "72ea89364f6b93751e3f9ad16755ab6d5c6dafe6",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/623ad00ec68d6ef2aecfbf080f497f878f7c23c8",
+                "reference": "623ad00ec68d6ef2aecfbf080f497f878f7c23c8",
                 "shasum": ""
             },
             "require": {
@@ -4152,7 +4154,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2020-03-21T12:14:40+00:00"
+            "time": "2020-04-06T12:58:56+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -4488,16 +4490,16 @@
         },
         {
             "name": "typicms/pages",
-            "version": "7.0.11",
+            "version": "7.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "afcb77f00a3a1380ce0bd23869158cbe27131500"
+                "reference": "0cc65e3ffde51c986dd08b023fc39fc79944e349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/afcb77f00a3a1380ce0bd23869158cbe27131500",
-                "reference": "afcb77f00a3a1380ce0bd23869158cbe27131500",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/0cc65e3ffde51c986dd08b023fc39fc79944e349",
+                "reference": "0cc65e3ffde51c986dd08b023fc39fc79944e349",
                 "shasum": ""
             },
             "require": {
@@ -4519,7 +4521,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2020-03-21T12:18:20+00:00"
+            "time": "2020-04-06T13:00:01+00:00"
         },
         {
             "name": "typicms/roles",
