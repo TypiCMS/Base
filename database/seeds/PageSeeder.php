@@ -27,8 +27,8 @@ class PageSeeder extends Seeder
                 "js" => null,
                 "module" => null,
                 "template" => "home",
-                "created_at" => "2020-03-16 11:57:06",
-                "updated_at" => "2020-04-13 21:31:49"
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
             ],
             [
                 "id" => 2,
@@ -49,8 +49,8 @@ class PageSeeder extends Seeder
                 "js" => null,
                 "module" => null,
                 "template" => null,
-                "created_at" => "2020-03-16 11:57:06",
-                "updated_at" => "2020-04-13 21:31:31"
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
             ],
             [
                 "id" => 3,
@@ -71,8 +71,8 @@ class PageSeeder extends Seeder
                 "js" => null,
                 "module" => null,
                 "template" => null,
-                "created_at" => "2020-04-13 20:38:24",
-                "updated_at" => "2020-04-13 22:14:43"
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
             ],
             [
                 "id" => 4,
@@ -93,8 +93,8 @@ class PageSeeder extends Seeder
                 "js" => null,
                 "module" => null,
                 "template" => null,
-                "created_at" => "2020-04-13 20:38:33",
-                "updated_at" => "2020-04-13 22:17:25"
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
             ],
             [
                 "id" => 5,
@@ -115,8 +115,8 @@ class PageSeeder extends Seeder
                 "js" => null,
                 "module" => null,
                 "template" => null,
-                "created_at" => "2020-04-13 20:21:53",
-                "updated_at" => "2020-04-13 22:21:03"
+                "created_at" => Carbon::now(),
+                "updated_at" => Carbon::now()
             ]
         ];
 
