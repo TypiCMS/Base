@@ -35,17 +35,18 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
         ],
 
         'public' => [
             'web',
+            \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
         ],
 
         'admin' => [
             'web',
             'auth',
+            \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetTranslatableFallbackLocaleToNull::class,
             \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
