@@ -6,296 +6,296 @@ All notable changes to TypiCMS will be documented in this file.
 
 ### Fixed
 
-* The SetLocale middleware has been removed from the web group, allowing to use Laravel Telescope without further config. The SetLocale middleware has been added to the routes of the Users module.
+-   The SetLocale middleware has been removed from the web group, allowing to use Laravel Telescope without further config. The SetLocale middleware has been added to the routes of the Users module.
 
 ## 7.0.31 - 2020-04-06
 
 ### Added
 
-* Added the possibility to make links to CMS pages via CKEditor.
+-   Added the possibility to make links to CMS pages via CKEditor.
 
 ## 7.0.13 - 2019-12-09
 
 ### Changed
 
-* The CKEditor directory has changed from public/components/ckeditor to ckeditor4. Please republish assets and update you blade views to point to this new directory. Also, there are now two initial possible configurations: config-full (class .ckeditor-full in markup) and config-light (class .ckeditor-light in markup).
+-   The CKEditor directory has changed from public/components/ckeditor to ckeditor4. Please republish assets and update you blade views to point to this new directory. Also, there are now two initial possible configurations: config-full (class .ckeditor-full in markup) and config-light (class .ckeditor-light in markup).
 
 ## 7.0.0 - 2019-09-04
 
 ### Changed
 
-* Upgraded to Laravel 6.
-* Return type definitions in models and controllers
-* Repositories removed, queries are now cached tnahks to genealabs/laravel-model-caching
+-   Upgraded to Laravel 6.
+-   Return type definitions in models and controllers
+-   Repositories removed, queries are now cached tnahks to genealabs/laravel-model-caching
 
 ## 6.0.7 - 2019-05-08
 
 ### Changed
-* This version contains a breaking change in the croppa config file ('path' value). Please copy the content of the config file at this address: `https://github.com/TypiCMS/Base/blob/master/config/croppa.php` and paste it into your project’s `/config/croppa.php` file.
+
+-   This version contains a breaking change in the croppa config file ('path' value). Please copy the content of the config file at this address: `https://github.com/TypiCMS/Base/blob/master/config/croppa.php` and paste it into your project’s `/config/croppa.php` file.
 
 ## 6.0.0 - 2019-04-06
 
 ### Changed
 
-* Upgraded to Laravel 5.8.
-* An image_id field was added to each module.
-* Use of json-ld in place of microdata for structured content.
-* [Module Events] A route was added to view past events.
-* Classes name in views changed.
-* Email verification added to the module Users.
-* Make use of Laravel notification system in module Contacts.
-* Login, register, forgot password views are now translated.
-* In the core presenter, the thumb() method was renamed to image().
+-   Upgraded to Laravel 5.8.
+-   An image_id field was added to each module.
+-   Use of json-ld in place of microdata for structured content.
+-   [Module Events] A route was added to view past events.
+-   Classes name in views changed.
+-   Email verification added to the module Users.
+-   Make use of Laravel notification system in module Contacts.
+-   Login, register, forgot password views are now translated.
+-   In the core presenter, the thumb() method was renamed to image().
 
 ## 5.0.0 - 2018-09-29
 
 ### Changed
 
-* Vue.js in place of angular
-* Server side lists in admin
-* Many other enhancements
-
+-   Vue.js in place of angular
+-   Server side lists in admin
+-   Many other enhancements
 
 ## 4.0.0 - 2018-05-14
 
 ### Changed
 
-* Bootstrap 4
-* CKEditor 4.9
-* Page model: the method 'children' is renamed to 'subpages'.
-* pagesState cookie renamed to typicms_pagestree
+-   Bootstrap 4
+-   CKEditor 4.9
+-   Page model: the method 'children' is renamed to 'subpages'.
+-   pagesState cookie renamed to typicms_pagestree
 
 ## 3.0.0 - 2017-09-01
 
 ### Changed
 
-* Upgraded to Laravel 5.5 LTS
-* Use of Laravel Mix
-* Use of translation strings stored in json files
-* New filemanager with directories and drag and drop
-* A page can have sections
-* Use of spatie/laravel-translatable in place of dimsav/laravel-translatable
-* Use of rinvex/repository
-* locales() helper method to get an array of all locales
-* @block('name') blade directive
-* @menu('name') blade directive
-* Better roles and permissions management
+-   Upgraded to Laravel 5.5 LTS
+-   Use of Laravel Mix
+-   Use of translation strings stored in json files
+-   New filemanager with directories and drag and drop
+-   A page can have sections
+-   Use of spatie/laravel-translatable in place of dimsav/laravel-translatable
+-   Use of rinvex/repository
+-   locales() helper method to get an array of all locales
+-   @block('name') blade directive
+-   @menu('name') blade directive
+-   Better roles and permissions management
 
 ## 2.8.0 - 2016-04-13
 
 ### Changed
 
-* Groups is replaced by roles
-* Permissions are now stored in database, see [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
-* Preview button in form is only present when the module is linked to a page.
-* Routes name in admin have changed from **admin.{module}.{action}** to admin::{action}-{module(s)}
-* index, edit and create methods where removed from BaseAdminController.
+-   Groups is replaced by roles
+-   Permissions are now stored in database, see [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
+-   Preview button in form is only present when the module is linked to a page.
+-   Routes name in admin have changed from **admin.{module}.{action}** to admin::{action}-{module(s)}
+-   index, edit and create methods where removed from BaseAdminController.
 
 ## 2.7.25 - 2016-03-29
 
 ### Changed
 
-* Class img-responsive removed from core presenter method thumb().
-* width and height attributes added to <img> tag generated by thumb() in core presenter.
+-   Class img-responsive removed from core presenter method thumb().
+-   width and height attributes added to <img> tag generated by thumb() in core presenter.
 
 ## 2.7.15 - 2016-03-13
 
 ### Fixed
 
-* Bug where old input value where empty when form validation failed.
+-   Bug where old input value where empty when form validation failed.
 
 ## 2.7.14 - 2016-03-09
 
 ### Added
 
-* app/helpers.php file autoloaded.
-* mb_ucfirst method in helpers.php.
+-   app/helpers.php file autoloaded.
+-   mb_ucfirst method in helpers.php.
 
 ## 2.7.6 - 2016-02-15
 
 ### Added
 
-* Offcanvas navigation on public side.
+-   Offcanvas navigation on public side.
 
 ## 2.7.5 - 2016-02-08
 
 ### Changed
 
-* Possibility to show every languages in a form.
+-   Possibility to show every languages in a form.
 
 ### Breaking change
 
-* Replace file /resources/assets/js/admin/set-content-locale.js with https://github.com/TypiCMS/TypiCMS/blob/master/resources/assets/js/admin/set-content-locale.js
-* Add 'languages.all' key in /resources/lang/\*/global.php
+-   Replace file /resources/assets/js/admin/set-content-locale.js with https://github.com/TypiCMS/TypiCMS/blob/master/resources/assets/js/admin/set-content-locale.js
+-   Add 'languages.all' key in /resources/lang/\*/global.php
 
 ## 2.7.3 - 2016-02-05
 
 ### Changed
 
-* Angular 1.5, CKEditor 4.5.7, jQuery 2.2.0 (Drop IE 8 support).
+-   Angular 1.5, CKEditor 4.5.7, jQuery 2.2.0 (Drop IE 8 support).
 
 ## 2.7.0 - 2016-02-04
 
 ### Changed
 
-* Translatable fields are grouped by fields, not by locale, TypiCMS now use Propaganistas\LaravelTranslatableBootForms.
-* Bower is removed from TypiCMS.
+-   Translatable fields are grouped by fields, not by locale, TypiCMS now use Propaganistas\LaravelTranslatableBootForms.
+-   Bower is removed from TypiCMS.
 
 ## 2.6.6 - 2016-01-13
 
 ### Fixed
 
-* Bug with PHP < 7 in history module.
+-   Bug with PHP < 7 in history module.
 
 ## 2.6.3 - 2016-01-06
 
 ### Added
 
-* Command typicms:create {module} to scaffold a module.
+-   Command typicms:create {module} to scaffold a module.
 
 ## 2.6.0 - 2016-01-03
 
 ### Added
 
-* Command typicms:publish {module} to move a module from vendor directory to the Modules directory.
-* Added a button to clear latest changes in dashboard.
-* TypiCMS now require Laravel 5.2.
+-   Command typicms:publish {module} to move a module from vendor directory to the Modules directory.
+-   Added a button to clear latest changes in dashboard.
+-   TypiCMS now require Laravel 5.2.
 
 ### Fixed
 
-* Old value are preserved in tags and date fields when a form has errors.
-* When Tags module was loaded, there was a query to get all tags on every requests.
-* API GET methods are now protected.
-* Find nearest address is repaired in Places module.
+-   Old value are preserved in tags and date fields when a form has errors.
+-   When Tags module was loaded, there was a query to get all tags on every requests.
+-   API GET methods are now protected.
+-   Find nearest address is repaired in Places module.
 
 ### Removed
 
-* TypiCMS@logo(), TypiCMS@logoOrTitle() method.
-* Methods previously marked @deprecated are removed.
-* Menulinks module has been merged with Menus.
+-   TypiCMS@logo(), TypiCMS@logoOrTitle() method.
+-   Methods previously marked @deprecated are removed.
+-   Menulinks module has been merged with Menus.
 
 ## 2.5.21 - 2015-12-19
 
 ### Fixed
 
-* Disabling all "Online" languages throws error #38.
-  BREAKING CHANGE: in app/Http/Kernel.php, move PublicLocale middleware from $middleware to $routeMiddleware array.
+-   Disabling all "Online" languages throws error #38.
+    BREAKING CHANGE: in app/Http/Kernel.php, move PublicLocale middleware from $middleware to $routeMiddleware array.
 
 ## 2.5.18 - 2015-12-15
 
 ### Added
 
-* Multiple pages can be linked to same module (require modules Core 2.5.10 and Pages 2.5.5).
+-   Multiple pages can be linked to same module (require modules Core 2.5.10 and Pages 2.5.5).
 
 ## 2.5.12 - 2015-10-29
 
 ### Added
 
-* Redirect + Notification on TokenMismatchException in place of server error.
+-   Redirect + Notification on TokenMismatchException in place of server error.
 
 ## 2.5.0 - 2015-10-19
 
 ### Added
 
-* Custom script (clear-compiled) to avoid composer update issues. See https://github.com/laravel/framework/issues/9678.
-* Pages can be saved to static html files in the public/html directory, to be served directly by the webserver. See config/typicms.html_cache.
-* New command `php artisan clear-html` to empty the public/html directory.
-* Pages that shouldn't be cached have a no_cache attribute.
-* cviebrock/image-validator 2.0
+-   Custom script (clear-compiled) to avoid composer update issues. See https://github.com/laravel/framework/issues/9678.
+-   Pages can be saved to static html files in the public/html directory, to be served directly by the webserver. See config/typicms.html_cache.
+-   New command `php artisan clear-html` to empty the public/html directory.
+-   Pages that shouldn't be cached have a no_cache attribute.
+-   cviebrock/image-validator 2.0
 
 ### Changed
 
-* dimsav/laravel-translatable 5.2
-* adamwathan/bootforms 0.7
-* edvinaskrucas/notification 5.1
-* TypiCMS coding style follows the "recommended" preset of StyleCI. See https://styleci.readme.io/docs/presets#recommended
+-   dimsav/laravel-translatable 5.2
+-   adamwathan/bootforms 0.7
+-   edvinaskrucas/notification 5.1
+-   TypiCMS coding style follows the "recommended" preset of StyleCI. See https://styleci.readme.io/docs/presets#recommended
 
 ### Fixed
 
-* TypiCMS can be installed on systems without memcached.
-* Edvinaskrukas/Notification system was misconfigured.
+-   TypiCMS can be installed on systems without memcached.
+-   Edvinaskrukas/Notification system was misconfigured.
 
 ## 2.4.32 - 2015-10-14
 
 ### Changed
 
-* BREAKING CHANGE: Add this line after publicAccess in routeMiddleware array: 'publicCache' => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
-* BREAKING CHANGE: Add a new column in pages table: `no_cache` tinyint(1) NOT NULL DEFAULT '0'.
+-   BREAKING CHANGE: Add this line after publicAccess in routeMiddleware array: 'publicCache' => \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
+-   BREAKING CHANGE: Add a new column in pages table: `no_cache` tinyint(1) NOT NULL DEFAULT '0'.
 
 ## 2.4.24 - 2015-09-25
 
 ### Changed
 
-* BREAKING CHANGE: store and update methods where removed from TypiCMS\Modules\Core\Http\Controllers\BaseApiController, so you will have to implement these methods in your custom modules ApiController classes.
+-   BREAKING CHANGE: store and update methods where removed from TypiCMS\Modules\Core\Http\Controllers\BaseApiController, so you will have to implement these methods in your custom modules ApiController classes.
 
 ## 2.4.18 - 2015-08-09
 
 ### Added
 
-* Dynamic links to a resource in text editor, for example {!! page:3 !!} or {!! news:5 !!}
+-   Dynamic links to a resource in text editor, for example {!! page:3 !!} or {!! news:5 !!}
 
 ## 2.4.13 - 2015-08-01
 
-* CKEditor 4.5.1
+-   CKEditor 4.5.1
 
 ## 2.4.12 - 2015-08-01
 
-* Angular 1.4
-* Font Awesome 4.4
-* npm in place of Bower when possible
+-   Angular 1.4
+-   Font Awesome 4.4
+-   npm in place of Bower when possible
 
 ## 2.4.4 - 2015-06-30
 
-* bkwld/croppa 4.2
+-   bkwld/croppa 4.2
 
 ## 2.4.0 - 2015-06-09
 
 ### Changed
 
-* Laravel 5.1
+-   Laravel 5.1
 
 ## 2.3.0 - 2015-05-26
 
 ### Changed
 
-* Authentication is now based on Laravel Auth.
-* Composer set to "minimum-stability": "stable"
-* Better wysiwyg filepicker
+-   Authentication is now based on Laravel Auth.
+-   Composer set to "minimum-stability": "stable"
+-   Better wysiwyg filepicker
 
 ### Removed
 
-* Cartalyst/Sentry (No more throttling feature)
-* angular-gettext
-* cviebrock/image-validator
+-   Cartalyst/Sentry (No more throttling feature)
+-   angular-gettext
+-   cviebrock/image-validator
 
 ## 2.2.0 - 2015-05-10
 
 ### Added
 
-* Laracasts\Presenter package
+-   Laracasts\Presenter package
 
 ### Changed
 
-* Core module Namespace is now TypiCMS\Modules\Core.
+-   Core module Namespace is now TypiCMS\Modules\Core.
 
 ## 2.1.6 - 2015-04-28
 
 ### Added
 
-* A page can be private.
-* Content of a page linked to a module is shown in module’s list template.
-* Contacts module has an event that send mail to visitor and webmaster.
-* laracasts/generators package added.
-* CKEditor autocorrect plugin.
-* Assets versionning with elixir.
-* Possibility to upload the website logo via settings module in admin interface.
-* During page creation, possibility to add it to a menu.
-* (BETA) Enabling config/typicms.html_cache cause frontend pages being saved as static html in public/html folder.
+-   A page can be private.
+-   Content of a page linked to a module is shown in module’s list template.
+-   Contacts module has an event that send mail to visitor and webmaster.
+-   laracasts/generators package added.
+-   CKEditor autocorrect plugin.
+-   Assets versionning with elixir.
+-   Possibility to upload the website logo via settings module in admin interface.
+-   During page creation, possibility to add it to a menu.
+-   (BETA) Enabling config/typicms.html_cache cause frontend pages being saved as static html in public/html folder.
 
 ### Changed
 
-* Locale is no more stored in page’s uri.
+-   Locale is no more stored in page’s uri.
 
 ### Fixed
 
-* Lot of code cleaning and bug fixes.
+-   Lot of code cleaning and bug fixes.
