@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 7.0.34 - 2020-04-15
+
+### Fixed
+
+* The SetLocale middleware has been removed from the web group, allowing to use Laravel Telescope without further config. The SetLocale middleware has been added to the routes of the Users module.
+
 ## 7.0.31 - 2020-04-06
 
 ### Added
