@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | You can choose not to have main locale in URLs
@@ -44,4 +43,14 @@ return [
     */
     'mariadb' => false,
 
+    /*
+    |--------------------------------------------------------------------------
+    | The following IP’s can visit the website without login when
+    | the website is protected by a login and a password.
+    |--------------------------------------------------------------------------
+    |
+    */
+    'authorized_ips' => [
+        // '127.0.0.1',
+    ],
 ];
