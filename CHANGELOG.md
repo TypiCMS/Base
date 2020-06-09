@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 7.0.35 - 2020-06-09
+
+### Added
+
+-   Added the possibility to specify IP’s that can see the website without login, when the website is protected by a login and a password.
+
 ## 7.0.34 - 2020-04-15
 
 ### Fixed
