@@ -1,5 +1,8 @@
 # TypiCMS
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/typicms/base.svg?style=flat-square)](https://packagist.org/packages/typicms/base)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
 [![Latest Stable Version](https://poser.pugx.org/typicms/base/v/stable)](https://packagist.org/packages/typicms/base)
 [![License](https://poser.pugx.org/typicms/base/license)](https://packagist.org/packages/typicms/base)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TypiCMS/Base/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/TypiCMS/Base/?branch=master)
