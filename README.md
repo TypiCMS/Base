@@ -2,9 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/typicms/base.svg?style=flat-square)](https://packagist.org/packages/typicms/base)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-
-[![Latest Stable Version](https://poser.pugx.org/typicms/base/v/stable)](https://packagist.org/packages/typicms/base)
-[![License](https://poser.pugx.org/typicms/base/license)](https://packagist.org/packages/typicms/base)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TypiCMS/Base/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/TypiCMS/Base/?branch=master)
 
 TypiCMS is a modular multilingual content management system built with [Laravel 6](https://laravel.com). Out of the box you can manage pages, events, news, places, menus, translations, etc.
@@ -228,7 +225,7 @@ You can display the content of a block with `Blocks::render('blockname')` or `@b
 
 Translations can be stored in the database through the admin panel (/admin/translations).
 
-You can call DB translation everywhere with `Lang::get('db.Key')`, `trans('db.Key')` or `@lang('db.Key')`.
+You can get a translation from the database with the standard Laravel functions: `__('Key')`, `trans('Key')` or `@lang('Key')`.
 
 ### Sitemap
 
