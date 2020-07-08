@@ -2,6 +2,16 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 7.0.39 - 2020-07-08
+
+### Added
+
+-   LiveReload preloaded, can be enabled in webpack.mix.js.
+
+### Fixed
+
+-   Use of Node Sass in place of Dart Sass, Node Sass consumes less memory and is faster.
+
 ## 7.0.35 - 2020-06-09
 
 ### Added
