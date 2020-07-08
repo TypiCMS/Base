@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+// var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 /**
  * Compile CSS
@@ -81,6 +82,13 @@ mix.browserSync('typicms.test');
 mix.options({
     processCssUrls: false,
 });
+
+/**
+ * Livereload
+ */
+// mix.webpackConfig({
+//     plugins: [new LiveReloadPlugin()],
+// });
 
 /**
  * Source maps
