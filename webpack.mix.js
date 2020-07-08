@@ -57,7 +57,7 @@ var plugins = [
     'widget',
     'wsc',
 ];
-plugins.forEach(function(plugin) {
+plugins.forEach(function (plugin) {
     mix.copy('node_modules/ckeditor4/plugins/' + plugin, 'public/components/ckeditor4/plugins/' + plugin);
 });
 
