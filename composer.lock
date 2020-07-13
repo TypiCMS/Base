@@ -4,38 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ece2308c26a7b9e5960726aab3c259d",
+    "content-hash": "ad6e4d831f88755128a38bb5be29bf18",
     "packages": [
         {
             "name": "bkwld/croppa",
-            "version": "dev-master",
+            "version": "4.9.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TypiCMS/croppa.git",
-                "reference": "899fa10bc106f3de1a4da8ebc181496a7ce9fbfa"
+                "url": "https://github.com/BKWLD/croppa.git",
+                "reference": "c31797f5790cbecc2591ef9ae9a20f71a7f9efcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/croppa/zipball/899fa10bc106f3de1a4da8ebc181496a7ce9fbfa",
-                "reference": "899fa10bc106f3de1a4da8ebc181496a7ce9fbfa",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/c31797f5790cbecc2591ef9ae9a20f71a7f9efcd",
+                "reference": "c31797f5790cbecc2591ef9ae9a20f71a7f9efcd",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "4 - 6",
-                "illuminate/routing": "4 - 6",
-                "illuminate/support": "4 - 6",
+                "ext-gd": "*",
+                "illuminate/console": "4 - 7",
+                "illuminate/routing": "4 - 7",
+                "illuminate/support": "4 - 7",
                 "league/flysystem": "~1.0",
-                "php": ">=5.5.0",
-                "symfony/http-foundation": "2 - 4",
-                "symfony/http-kernel": "2 - 4",
+                "php": "^7.2.5",
+                "symfony/http-foundation": "2 - 5",
+                "symfony/http-kernel": "2 - 5",
                 "weotch/phpthumb": "^1.0.5"
             },
             "conflict": {
                 "league/flysystem-cached-adapter": "<1.0.2"
             },
             "require-dev": {
-                "mockery/mockery": "~1.2",
+                "mockery/mockery": "~0.9",
                 "phpunit/phpunit": "4 - 5"
+            },
+            "suggest": {
+                "ext-exif": "Required if you want to have Croppa auto-rotate images from devices like mobile phones based on exif meta data."
             },
             "type": "library",
             "extra": {
@@ -53,6 +57,7 @@
                     "Bkwld\\Croppa": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -62,10 +67,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "support": {
-                "source": "https://github.com/TypiCMS/croppa/tree/master"
-            },
-            "time": "2019-09-03T21:33:56+00:00"
+            "time": "2020-06-12T21:54:43+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -7125,9 +7127,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "bkwld/croppa": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -2,7 +2,12 @@
     "name": "typicms/base",
     "type": "project",
     "description": "A multilingual CMS built with Laravel",
-    "keywords": ["cms", "multilingual", "laravel", "typi"],
+    "keywords": [
+        "cms",
+        "multilingual",
+        "laravel",
+        "typi"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -19,7 +24,7 @@
     ],
     "require": {
         "php": "^7.2",
-        "bkwld/croppa": "dev-master",
+        "bkwld/croppa": "^4.9",
         "eluceo/ical": "^0.15.1",
         "fideloper/proxy": "^4.0",
         "genealabs/laravel-model-caching": "^0.7.0",
