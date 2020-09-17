@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;
 
@@ -7,7 +9,7 @@ class TranslationSeeder extends Seeder
 {
     public function run()
     {
-            $typi_translations = [
+        $typi_translations = [
             ['id' => 1, 'group' => 'db', 'translation' => '{"fr":"En savoir plus","en":"More","nl":"Meer"}', 'key' => 'More', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
             ['id' => 2, 'group' => 'db', 'translation' => '{"fr":"Aller au contenu","en":"Skip to content","nl":"Naar inhoud"}', 'key' => 'Skip to content', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
             ['id' => 3, 'group' => 'db', 'translation' => '{"fr":"Français","en":"Français","nl":"Français"}', 'key' => 'languages.fr', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
