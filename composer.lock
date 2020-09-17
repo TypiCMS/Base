@@ -4510,16 +4510,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "7.0.48",
+            "version": "7.0.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "c64cdfb67edbb1b484e80ac139f9510eefe129a8"
+                "reference": "b977506a78e900efd35b3d9cc2ea8a5cc9a430b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/c64cdfb67edbb1b484e80ac139f9510eefe129a8",
-                "reference": "c64cdfb67edbb1b484e80ac139f9510eefe129a8",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/b977506a78e900efd35b3d9cc2ea8a5cc9a430b7",
+                "reference": "b977506a78e900efd35b3d9cc2ea8a5cc9a430b7",
                 "shasum": ""
             },
             "require": {
@@ -4547,7 +4547,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-11T15:53:57+00:00"
+            "time": "2020-09-17T13:42:44+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -4580,6 +4580,12 @@
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
+                }
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/typicms",
+                    "type": "github"
                 }
             ],
             "time": "2020-05-06T21:01:17+00:00"
@@ -4784,16 +4790,16 @@
         },
         {
             "name": "typicms/menus",
-            "version": "7.0.4",
+            "version": "7.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "3debd4e818917fa7614cbde0fb7f0fd886d05540"
+                "reference": "124a968e5261caa04de1dc60b3f03178a49c2ff6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/3debd4e818917fa7614cbde0fb7f0fd886d05540",
-                "reference": "3debd4e818917fa7614cbde0fb7f0fd886d05540",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/124a968e5261caa04de1dc60b3f03178a49c2ff6",
+                "reference": "124a968e5261caa04de1dc60b3f03178a49c2ff6",
                 "shasum": ""
             },
             "require": {
@@ -4821,7 +4827,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-15T17:50:10+00:00"
+            "time": "2020-09-17T12:54:10+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -4877,16 +4883,16 @@
         },
         {
             "name": "typicms/objects",
-            "version": "7.0.12",
+            "version": "7.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "04187ab3136b8adfe2ef7cdef3116b37878b3437"
+                "reference": "85db54e6287bef04cac2f3e7c032915a181c8b92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/04187ab3136b8adfe2ef7cdef3116b37878b3437",
-                "reference": "04187ab3136b8adfe2ef7cdef3116b37878b3437",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/85db54e6287bef04cac2f3e7c032915a181c8b92",
+                "reference": "85db54e6287bef04cac2f3e7c032915a181c8b92",
                 "shasum": ""
             },
             "require": {
@@ -4909,20 +4915,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-15T17:50:34+00:00"
+            "time": "2020-09-17T13:38:28+00:00"
         },
         {
             "name": "typicms/pages",
-            "version": "7.0.16",
+            "version": "7.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "34399771d32065c9d0557b1a6e28eb1daa417589"
+                "reference": "4ec27a772f7ed4703760d54c9f77de4ca2ae8776"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/34399771d32065c9d0557b1a6e28eb1daa417589",
-                "reference": "34399771d32065c9d0557b1a6e28eb1daa417589",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/4ec27a772f7ed4703760d54c9f77de4ca2ae8776",
+                "reference": "4ec27a772f7ed4703760d54c9f77de4ca2ae8776",
                 "shasum": ""
             },
             "require": {
@@ -4950,7 +4956,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-15T17:51:30+00:00"
+            "time": "2020-09-17T13:43:20+00:00"
         },
         {
             "name": "typicms/roles",
@@ -5026,6 +5032,12 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
+            "funding": [
+                {
+                    "url": "https://github.com/typicms",
+                    "type": "github"
+                }
+            ],
             "time": "2020-05-06T21:02:56+00:00"
         },
         {
@@ -5067,6 +5079,12 @@
                 {
                     "name": "Samuel De Backer",
                     "email": "sdebacker@gmail.com"
+                }
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/typicms",
+                    "type": "github"
                 }
             ],
             "time": "2020-05-06T21:02:51+00:00"
