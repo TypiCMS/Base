@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "700a6cc60f0de43991beeb5accaf7071",
+    "content-hash": "1730ce7529047bef17581e70a7c5fcee",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1741,35 +1741,33 @@
         },
         {
             "name": "maatwebsite/laravel-sidebar",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Sidebar.git",
-                "reference": "66f81ddf9cdbdbe262c0a823a6dae21b2e1179d3"
+                "reference": "09d438e7370e4a2a16f69bd9ab41914de6d067a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/66f81ddf9cdbdbe262c0a823a6dae21b2e1179d3",
-                "reference": "66f81ddf9cdbdbe262c0a823a6dae21b2e1179d3",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/09d438e7370e4a2a16f69bd9ab41914de6d067a2",
+                "reference": "09d438e7370e4a2a16f69bd9ab41914de6d067a2",
                 "shasum": ""
             },
             "require": {
-                "illuminate/cache": "~5.0|~6.0|~7.0|~8.0",
-                "illuminate/container": "~5.0|~6.0|~7.0|~8.0",
-                "illuminate/contracts": "~5.0|~6.0|~7.0|~8.0",
-                "illuminate/routing": "~5.0|~6.0|~7.0|~8.0",
-                "illuminate/support": "~5.0|~6.0|~7.0|~8.0",
-                "illuminate/view": "~5.0|~6.0|~7.0|~8.0",
+                "illuminate/contracts": ">=5.0",
+                "illuminate/routing": ">=5.0",
+                "illuminate/support": ">=5.0",
+                "illuminate/view": ">=5.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.1"
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~5.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Maatwebsite\\Sidebar\\": "src/"
+                    "Maatwebsite\\Sidebar\\": "src/Maatwebsite/Sidebar"
                 }
             },
             "license": [
@@ -1784,14 +1782,12 @@
             "description": "A sidebar builder for Laravel",
             "keywords": [
                 "acp",
-                "laravel",
-                "menu",
-                "sidebar"
+                "laravel"
             ],
             "support": {
-                "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.1.5"
+                "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.1.6"
             },
-            "time": "2020-09-17T16:02:36+00:00"
+            "time": "2020-09-17T20:16:03+00:00"
         },
         {
             "name": "monolog/monolog",
