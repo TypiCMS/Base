@@ -24,3 +24,13 @@ if (!function_exists('locales')) {
         return config('translatable-bootforms.locales');
     }
 }
+
+if (!function_exists('getMigrationFileName')) {
+    function getMigrationFileName(string $table): string
+    {
+        $directory = database_path(DIRECTORY_SEPARATOR.'migrations'.DIRECTORY_SEPARATOR);
+        $migrations = File::glob($directory.'*_create_'.$table.'_table.php');
+
+        return $migrations[0] ?? $directory.date('Y_m_d_His').'_create_'.$table.'_table.php';
+    }
+}
