@@ -11,14 +11,14 @@ if (!function_exists('mb_ucfirst')) {
     }
 }
 
-if (! function_exists('column')) {
+if (!function_exists('column')) {
     function column($column)
     {
         return $column.'->'.config('app.locale');
     }
 }
 
-if (! function_exists('locales')) {
+if (!function_exists('locales')) {
     function locales()
     {
         return config('translatable-bootforms.locales');
