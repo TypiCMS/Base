@@ -10,37 +10,37 @@ TypiCMS is a modular multilingual content management system built with [Laravel 
 
 ## Table of contents
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-  - [Assets](#assets)
-  - [Configuration](#configuration)
-  - [Installation of a module](#installation-of-a-module)
-- [Available modules](#available-modules)
-  - [Pages](#pages)
-  - [Menus](#menus)
-  - [Projects](#projects)
-  - [Categories](#categories)
-  - [Tags](#tags)
-  - [Events](#events)
-  - [News](#news)
-  - [Contacts](#contacts)
-  - [Partners](#partners)
-  - [Files](#files)
-  - [Galleries](#galleries)
-  - [Users and roles](#users-and-roles)
-  - [Blocks](#blocks)
-  - [Translations](#translations)
-  - [Sitemap](#sitemap)
-  - [Settings](#settings)
-  - [History](#history)
-- [Facades](#facades)
-- [Artisan commands](#artisan-commands)
-- [Roadmap](#roadmap)
-- [Change log](#change-log)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [Licence](#licence)
+-   [Features](#features)
+-   [Requirements](#requirements)
+-   [Installation](#installation)
+    -   [Assets](#assets)
+    -   [Configuration](#configuration)
+    -   [Installation of a module](#installation-of-a-module)
+-   [Available modules](#available-modules)
+    -   [Pages](#pages)
+    -   [Menus](#menus)
+    -   [Projects](#projects)
+    -   [Categories](#categories)
+    -   [Tags](#tags)
+    -   [Events](#events)
+    -   [News](#news)
+    -   [Contacts](#contacts)
+    -   [Partners](#partners)
+    -   [Files](#files)
+    -   [Galleries](#galleries)
+    -   [Users and roles](#users-and-roles)
+    -   [Blocks](#blocks)
+    -   [Translations](#translations)
+    -   [Sitemap](#sitemap)
+    -   [Settings](#settings)
+    -   [History](#history)
+-   [Facades](#facades)
+-   [Artisan commands](#artisan-commands)
+-   [Roadmap](#roadmap)
+-   [Change log](#change-log)
+-   [Contributing](#contributing)
+-   [Credits](#credits)
+-   [Licence](#licence)
 
 ## Features
 
@@ -50,26 +50,26 @@ This kind of URLs are managed by the CMS:
 
 **Modules:**
 
-- /en/events/slug-in-english
-- /fr/evenements/slug-en-francais
+-   /en/events/slug-in-english
+-   /fr/evenements/slug-en-francais
 
 **Pages:**
 
-- /en/parent-pages-slug-en/subpage-slug-en/page-slug-en
-- /fr/parent-pages-slug-fr/subpage-slug-fr/page-slug-fr
+-   /en/parent-pages-slug-en/subpage-slug-en/page-slug-en
+-   /fr/parent-pages-slug-fr/subpage-slug-fr/page-slug-fr
 
 ## Requirements
 
-- PHP >= 7.2
-- MySQL 5.7.8
-- BCMath PHP Extension
-- Ctype PHP Extension
-- JSON PHP Extension
-- Mbstring PHP Extension
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
+-   PHP >= 7.2
+-   MySQL 5.7.8
+-   BCMath PHP Extension
+-   Ctype PHP Extension
+-   JSON PHP Extension
+-   Mbstring PHP Extension
+-   OpenSSL PHP Extension
+-   PDO PHP Extension
+-   Tokenizer PHP Extension
+-   XML PHP Extension
 
 ## Installation
 
@@ -77,21 +77,21 @@ First install [Composer](https://getcomposer.org)
 
 1. Create a new project
 
-   ```
-   composer create-project typicms/base mywebsite
-   ```
+    ```
+    composer create-project typicms/base mywebsite
+    ```
 
 2. Enter the newly created folder
 
-   ```
-   cd mywebsite
-   ```
+    ```
+    cd mywebsite
+    ```
 
 3. DB migration and seed, user creation, npm installation and directory rights
 
-   ```
-   php artisan typicms:install
-   ```
+    ```
+    php artisan typicms:install
+    ```
 
 Note: if you use MariaDB, set 'mariadb' to true in config/typicms.php
 
@@ -104,15 +104,15 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), th
 
 1. Install npm packages (in directory **node_modules**)
 
-   ```
-   npm install
-   ```
+    ```
+    npm install
+    ```
 
 2. Compile admin and public assets
 
-   ```
-   npm run dev
-   ```
+    ```
+    npm run dev
+    ```
 
 ### Configuration
 
@@ -128,22 +128,22 @@ If you need to customize it, you can [publish it](#publish-a-module)!
 
 1. Install module with Composer
 
-   ```
-   composer require typicms/news
-   ```
+    ```
+    composer require typicms/news
+    ```
 
-2. Add `TypiCMS\Modules\News\Providers\ModuleProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleProvider::class,`
+2. Add `TypiCMS\Modules\News\Providers\ModuleServiceProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,`
 3. Publish views and migrations
 
-   ```
-   php artisan vendor:publish
-   ```
+    ```
+    php artisan vendor:publish
+    ```
 
 4. Migrate the database
 
-   ```
-   php artisan migrate
-   ```
+    ```
+    php artisan migrate
+    ```
 
 ### Module scaffolding
 
@@ -151,17 +151,17 @@ This example is for a module called Cats.
 
 1. Create the module with artisan:
 
-   ```
-   php artisan typicms:create cats
-   ```
+    ```
+    php artisan typicms:create cats
+    ```
 
 2. The module is in **/Modules/Cats**, you can customize it
-3. Add `TypiCMS\Modules\Cats\Providers\ModuleProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleProvider::class,`
+3. Add `TypiCMS\Modules\Cats\Providers\ModuleServiceProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,`
 4. Migrate the database
 
-   ```
-   php artisan migrate
-   ```
+    ```
+    php artisan migrate
+    ```
 
 ## Available modules
 
@@ -299,8 +299,8 @@ Please see [CONTRIBUTING](https://github.com/TypiCMS/Base/blob/master/CONTRIBUTI
 
 ## Credits
 
-- [Samuel De Backer](https://github.com/sdebacker)
-- [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
+-   [Samuel De Backer](https://github.com/sdebacker)
+-   [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
 
 ## License
 
