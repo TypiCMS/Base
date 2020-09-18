@@ -168,29 +168,29 @@ return [
         Typidesign\Translations\ArtisanTranslationsServiceProvider::class,
         TypiCMS\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
-        TypiCMS\Modules\Translations\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Blocks\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Settings\Providers\ModuleProvider::class,
-        TypiCMS\Modules\History\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Users\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Roles\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Files\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Dashboard\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Menus\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Sitemap\Providers\ModuleProvider::class,
-        TypiCMS\Modules\Tags\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Translations\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Blocks\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Settings\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\History\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Users\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Roles\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Files\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Dashboard\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Menus\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Sitemap\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Tags\Providers\ModuleServiceProvider::class,
 
         /*
          * TypiCMS Modules Service Providers.
          * Here is the place for your modules,
          * they should be set before Core Service provider.
          */
-        // TypiCMS\Modules\News\Providers\ModuleProvider::class,
+        // TypiCMS\Modules\News\Providers\ModuleServiceProvider::class,
 
         /*
          * TypiCMS Core Service Provider...
          */
-        TypiCMS\Modules\Core\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -206,7 +206,7 @@ return [
          * a catch all route is registered,
          * so it should stay at last...
          */
-        TypiCMS\Modules\Pages\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Pages\Providers\ModuleServiceProvider::class,
     ],
 
     /*
