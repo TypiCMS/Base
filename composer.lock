@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1730ce7529047bef17581e70a7c5fcee",
+    "content-hash": "888d62a754a0a668308ed2d2535e1d7d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -429,16 +429,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.20",
+            "version": "2.1.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "f46887bc48db66c7f38f668eb7d6ae54583617ff"
+                "reference": "563d0cdde5d862235ffe24a158497f4d490191b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/f46887bc48db66c7f38f668eb7d6ae54583617ff",
-                "reference": "f46887bc48db66c7f38f668eb7d6ae54583617ff",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/563d0cdde5d862235ffe24a158497f4d490191b5",
+                "reference": "563d0cdde5d862235ffe24a158497f4d490191b5",
                 "shasum": ""
             },
             "require": {
@@ -483,7 +483,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-09-06T13:44:32+00:00"
+            "time": "2020-09-19T14:37:56+00:00"
         },
         {
             "name": "eluceo/ical",
@@ -1149,16 +1149,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.4.0",
+            "version": "v8.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1c57ab5e375d0a897c22b29e8352453be514131e"
+                "reference": "5a748eecae35fd453e0b1e4d4b6f4fadf0d3e7ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1c57ab5e375d0a897c22b29e8352453be514131e",
-                "reference": "1c57ab5e375d0a897c22b29e8352453be514131e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/5a748eecae35fd453e0b1e4d4b6f4fadf0d3e7ac",
+                "reference": "5a748eecae35fd453e0b1e4d4b6f4fadf0d3e7ac",
                 "shasum": ""
             },
             "require": {
@@ -1308,7 +1308,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-09-16T16:13:13+00:00"
+            "time": "2020-09-18T21:27:11+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1740,6 +1740,80 @@
             "time": "2020-08-09T10:34:01+00:00"
         },
         {
+            "name": "maatwebsite/excel",
+            "version": "3.1.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
+                "reference": "ba7152670257ba9f47bb6ff7cee025f8fc9da608"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/ba7152670257ba9f47bb6ff7cee025f8fc9da608",
+                "reference": "ba7152670257ba9f47bb6ff7cee025f8fc9da608",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0",
+                "php": "^7.0",
+                "phpoffice/phpspreadsheet": "^1.14"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Maatwebsite\\Excel\\ExcelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Maatwebsite\\Excel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Brouwers",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "Supercharged Excel exports and imports in Laravel",
+            "keywords": [
+                "PHPExcel",
+                "batch",
+                "csv",
+                "excel",
+                "export",
+                "import",
+                "laravel",
+                "php",
+                "phpspreadsheet"
+            ],
+            "funding": [
+                {
+                    "url": "https://laravel-excel.com/commercial-support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/patrickbrouwers",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-08T15:29:50+00:00"
+        },
+        {
             "name": "maatwebsite/laravel-sidebar",
             "version": "1.1.6",
             "source": {
@@ -1788,6 +1862,237 @@
                 "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.1.6"
             },
             "time": "2020-09-17T20:16:03+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "shasum": ""
+            },
+            "require": {
+                "myclabs/php-enum": "^1.5",
+                "php": ">= 7.1",
+                "psr/http-message": "^1.0",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": ">= 6.3",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": ">= 7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "András Kolesár",
+                    "email": "kolesar@kolesar.hu"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "funding": [
+                {
+                    "url": "https://opencollective.com/zipstream",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2020-05-30T13:11:16+00:00"
+        },
+        {
+            "name": "markbaker/complex",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPComplex.git",
+                "reference": "c3131244e29c08d44fefb49e0dd35021e9e39dd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/c3131244e29c08d44fefb49e0dd35021e9e39dd2",
+                "reference": "c3131244e29c08d44fefb49e0dd35021e9e39dd2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6.0|^7.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "^4.0|^5.0|^6.0|^7.0",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "^4.8.35|^5.0|^6.0|^7.0",
+                "sebastian/phpcpd": "2.*",
+                "squizlabs/php_codesniffer": "^3.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Complex\\": "classes/src/"
+                },
+                "files": [
+                    "classes/src/functions/abs.php",
+                    "classes/src/functions/acos.php",
+                    "classes/src/functions/acosh.php",
+                    "classes/src/functions/acot.php",
+                    "classes/src/functions/acoth.php",
+                    "classes/src/functions/acsc.php",
+                    "classes/src/functions/acsch.php",
+                    "classes/src/functions/argument.php",
+                    "classes/src/functions/asec.php",
+                    "classes/src/functions/asech.php",
+                    "classes/src/functions/asin.php",
+                    "classes/src/functions/asinh.php",
+                    "classes/src/functions/atan.php",
+                    "classes/src/functions/atanh.php",
+                    "classes/src/functions/conjugate.php",
+                    "classes/src/functions/cos.php",
+                    "classes/src/functions/cosh.php",
+                    "classes/src/functions/cot.php",
+                    "classes/src/functions/coth.php",
+                    "classes/src/functions/csc.php",
+                    "classes/src/functions/csch.php",
+                    "classes/src/functions/exp.php",
+                    "classes/src/functions/inverse.php",
+                    "classes/src/functions/ln.php",
+                    "classes/src/functions/log2.php",
+                    "classes/src/functions/log10.php",
+                    "classes/src/functions/negative.php",
+                    "classes/src/functions/pow.php",
+                    "classes/src/functions/rho.php",
+                    "classes/src/functions/sec.php",
+                    "classes/src/functions/sech.php",
+                    "classes/src/functions/sin.php",
+                    "classes/src/functions/sinh.php",
+                    "classes/src/functions/sqrt.php",
+                    "classes/src/functions/tan.php",
+                    "classes/src/functions/tanh.php",
+                    "classes/src/functions/theta.php",
+                    "classes/src/operations/add.php",
+                    "classes/src/operations/subtract.php",
+                    "classes/src/operations/multiply.php",
+                    "classes/src/operations/divideby.php",
+                    "classes/src/operations/divideinto.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with complex numbers",
+            "homepage": "https://github.com/MarkBaker/PHPComplex",
+            "keywords": [
+                "complex",
+                "mathematics"
+            ],
+            "time": "2020-08-26T19:47:57+00:00"
+        },
+        {
+            "name": "markbaker/matrix",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPMatrix.git",
+                "reference": "182d44c3b2e3b063468f7481ae3ef71c69dc1409"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/182d44c3b2e3b063468f7481ae3ef71c69dc1409",
+                "reference": "182d44c3b2e3b063468f7481ae3ef71c69dc1409",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6.0|^7.0.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "dev-master",
+                "phploc/phploc": "^4",
+                "phpmd/phpmd": "dev-master",
+                "phpunit/phpunit": "^5.7|^6.0|7.0",
+                "sebastian/phpcpd": "^3.0",
+                "squizlabs/php_codesniffer": "^3.0@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Matrix\\": "classes/src/"
+                },
+                "files": [
+                    "classes/src/functions/adjoint.php",
+                    "classes/src/functions/antidiagonal.php",
+                    "classes/src/functions/cofactors.php",
+                    "classes/src/functions/determinant.php",
+                    "classes/src/functions/diagonal.php",
+                    "classes/src/functions/identity.php",
+                    "classes/src/functions/inverse.php",
+                    "classes/src/functions/minors.php",
+                    "classes/src/functions/trace.php",
+                    "classes/src/functions/transpose.php",
+                    "classes/src/operations/add.php",
+                    "classes/src/operations/directsum.php",
+                    "classes/src/operations/subtract.php",
+                    "classes/src/operations/multiply.php",
+                    "classes/src/operations/divideby.php",
+                    "classes/src/operations/divideinto.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with matrices",
+            "homepage": "https://github.com/MarkBaker/PHPMatrix",
+            "keywords": [
+                "mathematics",
+                "matrix",
+                "vector"
+            ],
+            "time": "2020-08-28T19:41:55+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1940,6 +2245,52 @@
             "time": "2020-09-17T19:09:16+00:00"
         },
         {
+            "name": "myclabs/php-enum",
+            "version": "1.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/php-enum.git",
+                "reference": "5f36467c7a87e20fbdc51e524fd8f9d1de80187c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/5f36467c7a87e20fbdc51e524fd8f9d1de80187c",
+                "reference": "5f36467c7a87e20fbdc51e524fd8f9d1de80187c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7",
+                "squizlabs/php_codesniffer": "1.*",
+                "vimeo/psalm": "^3.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyCLabs\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Enum contributors",
+                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                }
+            ],
+            "description": "PHP Enum implementation",
+            "homepage": "http://github.com/myclabs/php-enum",
+            "keywords": [
+                "enum"
+            ],
+            "time": "2020-02-14T08:15:52+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "2.40.0",
             "source": {
@@ -2030,16 +2381,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.9.1",
+            "version": "v4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28"
+                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/88e519766fc58bd46b8265561fb79b54e2e00b28",
-                "reference": "88e519766fc58bd46b8265561fb79b54e2e00b28",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1c13d05035deff45f1230ca68bd7d74d621762d9",
+                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9",
                 "shasum": ""
             },
             "require": {
@@ -2078,7 +2429,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-08-30T16:15:20+00:00"
+            "time": "2020-09-19T14:52:48+00:00"
         },
         {
             "name": "opis/closure",
@@ -2185,6 +2536,102 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "phpoffice/phpspreadsheet",
+            "version": "1.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
+                "reference": "2383aad5689778470491581442aab38cec41bf1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/2383aad5689778470491581442aab38cec41bf1d",
+                "reference": "2383aad5689778470491581442aab38cec41bf1d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-iconv": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "ext-xml": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*",
+                "ext-zip": "*",
+                "ext-zlib": "*",
+                "maennchen/zipstream-php": "^2.1",
+                "markbaker/complex": "^1.4",
+                "markbaker/matrix": "^1.2",
+                "php": "^7.2",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "require-dev": {
+                "dompdf/dompdf": "^0.8.5",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "jpgraph/jpgraph": "^4.0",
+                "mpdf/mpdf": "^8.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "^8.5",
+                "squizlabs/php_codesniffer": "^3.5",
+                "tecnickcom/tcpdf": "^6.3"
+            },
+            "suggest": {
+                "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
+                "jpgraph/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
+                "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
+                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "https://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker",
+                    "homepage": "https://markbakeruk.net"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "https://rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                },
+                {
+                    "name": "Adrien Crivelli"
+                }
+            ],
+            "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "gnumeric",
+                "ods",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "time": "2020-07-19T09:51:35+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -2394,6 +2841,58 @@
                 "psr-18"
             ],
             "time": "2020-06-29T06:28:15+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2019-04-30T12:38:16+00:00"
         },
         {
             "name": "psr/http-message",
@@ -2949,16 +3448,16 @@
         },
         {
             "name": "spatie/laravel-query-builder",
-            "version": "3.2.2",
+            "version": "2.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-query-builder.git",
-                "reference": "e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc"
+                "reference": "2258ce2d1accb5a286c9fef2bcf58398f1889dde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc",
-                "reference": "e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/2258ce2d1accb5a286c9fef2bcf58398f1889dde",
+                "reference": "2258ce2d1accb5a286c9fef2bcf58398f1889dde",
                 "shasum": ""
             },
             "require": {
@@ -3011,7 +3510,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-09-09T16:31:48+00:00"
+            "time": "2020-09-08T22:38:15+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
@@ -5347,12 +5846,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "6b63bdbc4268e5a799b2fc2d57499b0a504a6f59"
+                "reference": "4b793f5d4d202314a5486a74e1d53022e86f036d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/6b63bdbc4268e5a799b2fc2d57499b0a504a6f59",
-                "reference": "6b63bdbc4268e5a799b2fc2d57499b0a504a6f59",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/4b793f5d4d202314a5486a74e1d53022e86f036d",
+                "reference": "4b793f5d4d202314a5486a74e1d53022e86f036d",
                 "shasum": ""
             },
             "require": {
@@ -5380,7 +5879,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:58:52+00:00"
+            "time": "2020-09-20T20:37:55+00:00"
         },
         {
             "name": "typicms/bootforms",
@@ -5441,12 +5940,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "81608ed1dd63ac7200da5feee175a8cb11fbaa3d"
+                "reference": "a07ebdf224ea63a65418d008914fb4a32ad10454"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/81608ed1dd63ac7200da5feee175a8cb11fbaa3d",
-                "reference": "81608ed1dd63ac7200da5feee175a8cb11fbaa3d",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/a07ebdf224ea63a65418d008914fb4a32ad10454",
+                "reference": "a07ebdf224ea63a65418d008914fb4a32ad10454",
                 "shasum": ""
             },
             "require": {
@@ -5474,7 +5973,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:58:44+00:00"
+            "time": "2020-09-21T09:50:38+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -5482,12 +5981,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
-                "reference": "0e4dc8459aecece1cf3c450793c9c06e6030919a"
+                "reference": "539c64d6a834d5172f698b68b33f5c85eef61664"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/0e4dc8459aecece1cf3c450793c9c06e6030919a",
-                "reference": "0e4dc8459aecece1cf3c450793c9c06e6030919a",
+                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/539c64d6a834d5172f698b68b33f5c85eef61664",
+                "reference": "539c64d6a834d5172f698b68b33f5c85eef61664",
                 "shasum": ""
             },
             "require": {
@@ -5515,7 +6014,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T16:04:56+00:00"
+            "time": "2020-09-20T20:38:36+00:00"
         },
         {
             "name": "typicms/files",
@@ -5523,12 +6022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "887f7c93c201d4c08eb69e9e040a4fc0860a1ce8"
+                "reference": "52e4aab072aea51a54a74602a1df1a7fb09250e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/887f7c93c201d4c08eb69e9e040a4fc0860a1ce8",
-                "reference": "887f7c93c201d4c08eb69e9e040a4fc0860a1ce8",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/52e4aab072aea51a54a74602a1df1a7fb09250e5",
+                "reference": "52e4aab072aea51a54a74602a1df1a7fb09250e5",
                 "shasum": ""
             },
             "require": {
@@ -5556,7 +6055,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T16:05:16+00:00"
+            "time": "2020-09-20T20:38:49+00:00"
         },
         {
             "name": "typicms/form",
@@ -5617,12 +6116,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
-                "reference": "29de62349bb801700f7a66d890ab32fa96475a72"
+                "reference": "42dcfdb0c59517924221e22bd8fb9c3dee06fdce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/History/zipball/29de62349bb801700f7a66d890ab32fa96475a72",
-                "reference": "29de62349bb801700f7a66d890ab32fa96475a72",
+                "url": "https://api.github.com/repos/TypiCMS/History/zipball/42dcfdb0c59517924221e22bd8fb9c3dee06fdce",
+                "reference": "42dcfdb0c59517924221e22bd8fb9c3dee06fdce",
                 "shasum": ""
             },
             "require": {
@@ -5650,7 +6149,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T16:05:27+00:00"
+            "time": "2020-09-20T20:39:07+00:00"
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
@@ -5727,12 +6226,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "8a7f698c1dd5eb192490b4e7f7c29f202635b5cc"
+                "reference": "468c048094a9861024a441bb423baf8b24569a4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/8a7f698c1dd5eb192490b4e7f7c29f202635b5cc",
-                "reference": "8a7f698c1dd5eb192490b4e7f7c29f202635b5cc",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/468c048094a9861024a441bb423baf8b24569a4c",
+                "reference": "468c048094a9861024a441bb423baf8b24569a4c",
                 "shasum": ""
             },
             "require": {
@@ -5760,7 +6259,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T16:05:35+00:00"
+            "time": "2020-09-20T20:39:18+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -5820,12 +6319,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "224f013249432d5dd6947fd5cb8dc76702c01c60"
+                "reference": "6d016ea540f42d58ce1b0beaa0471e2a8c36f0de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/224f013249432d5dd6947fd5cb8dc76702c01c60",
-                "reference": "224f013249432d5dd6947fd5cb8dc76702c01c60",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/6d016ea540f42d58ce1b0beaa0471e2a8c36f0de",
+                "reference": "6d016ea540f42d58ce1b0beaa0471e2a8c36f0de",
                 "shasum": ""
             },
             "require": {
@@ -5848,7 +6347,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:59:10+00:00"
+            "time": "2020-09-20T20:39:31+00:00"
         },
         {
             "name": "typicms/pages",
@@ -5856,12 +6355,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "7be866c240076c558f9a79c16aafb78dc58a1be4"
+                "reference": "478c7430e6e97137400fcdb6c95a05ce46726f7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/7be866c240076c558f9a79c16aafb78dc58a1be4",
-                "reference": "7be866c240076c558f9a79c16aafb78dc58a1be4",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/478c7430e6e97137400fcdb6c95a05ce46726f7d",
+                "reference": "478c7430e6e97137400fcdb6c95a05ce46726f7d",
                 "shasum": ""
             },
             "require": {
@@ -5889,7 +6388,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:59:15+00:00"
+            "time": "2020-09-21T09:49:13+00:00"
         },
         {
             "name": "typicms/roles",
@@ -5897,12 +6396,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Roles.git",
-                "reference": "795d759f68e215e5b7f1c30d1b4cb203e81a8fc5"
+                "reference": "acf7dc7d4bd226cb46702b90506ba5c45e55f69a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/795d759f68e215e5b7f1c30d1b4cb203e81a8fc5",
-                "reference": "795d759f68e215e5b7f1c30d1b4cb203e81a8fc5",
+                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/acf7dc7d4bd226cb46702b90506ba5c45e55f69a",
+                "reference": "acf7dc7d4bd226cb46702b90506ba5c45e55f69a",
                 "shasum": ""
             },
             "require": {
@@ -5930,7 +6429,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:59:31+00:00"
+            "time": "2020-09-20T20:40:38+00:00"
         },
         {
             "name": "typicms/settings",
@@ -5938,12 +6437,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
-                "reference": "981c2696af75bd22aa4a8a8bccb05cd951fbd8e9"
+                "reference": "2743c5a638021b8e429913498157f34600e2ef26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/981c2696af75bd22aa4a8a8bccb05cd951fbd8e9",
-                "reference": "981c2696af75bd22aa4a8a8bccb05cd951fbd8e9",
+                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/2743c5a638021b8e429913498157f34600e2ef26",
+                "reference": "2743c5a638021b8e429913498157f34600e2ef26",
                 "shasum": ""
             },
             "require": {
@@ -5971,7 +6470,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:59:36+00:00"
+            "time": "2020-09-20T20:40:53+00:00"
         },
         {
             "name": "typicms/sitemap",
@@ -5979,12 +6478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
-                "reference": "7b2fd5708bbce39e4e268ff22e28bf4b040cbbf8"
+                "reference": "bfa33cf4c2107150b7175becc71f3c6c8271c62d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/7b2fd5708bbce39e4e268ff22e28bf4b040cbbf8",
-                "reference": "7b2fd5708bbce39e4e268ff22e28bf4b040cbbf8",
+                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/bfa33cf4c2107150b7175becc71f3c6c8271c62d",
+                "reference": "bfa33cf4c2107150b7175becc71f3c6c8271c62d",
                 "shasum": ""
             },
             "require": {
@@ -5992,13 +6491,6 @@
                 "laravelium/sitemap": "~8.0"
             },
             "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "TypiCMS\\Modules\\Sitemap\\Providers\\ModuleProvider"
-                    ]
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "TypiCMS\\Modules\\Sitemap\\": "src/"
@@ -6020,7 +6512,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T16:19:40+00:00"
+            "time": "2020-09-20T20:40:47+00:00"
         },
         {
             "name": "typicms/tags",
@@ -6028,12 +6520,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "a6a3d7563adf65f5d0557bc7cccf963ba03ead2e"
+                "reference": "95855034a06e406614ec69732e9e3c35f68f3a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/a6a3d7563adf65f5d0557bc7cccf963ba03ead2e",
-                "reference": "a6a3d7563adf65f5d0557bc7cccf963ba03ead2e",
+                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/95855034a06e406614ec69732e9e3c35f68f3a6a",
+                "reference": "95855034a06e406614ec69732e9e3c35f68f3a6a",
                 "shasum": ""
             },
             "require": {
@@ -6061,7 +6553,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:59:53+00:00"
+            "time": "2020-09-20T20:41:39+00:00"
         },
         {
             "name": "typicms/translations",
@@ -6069,12 +6561,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
-                "reference": "2f1e11ac6d28cec0368b990674af7980456a7a0e"
+                "reference": "9354ba84d6f215cd865c11db30df19cfaf3ace1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/2f1e11ac6d28cec0368b990674af7980456a7a0e",
-                "reference": "2f1e11ac6d28cec0368b990674af7980456a7a0e",
+                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/9354ba84d6f215cd865c11db30df19cfaf3ace1c",
+                "reference": "9354ba84d6f215cd865c11db30df19cfaf3ace1c",
                 "shasum": ""
             },
             "require": {
@@ -6102,7 +6594,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:59:58+00:00"
+            "time": "2020-09-20T20:41:47+00:00"
         },
         {
             "name": "typicms/users",
@@ -6110,12 +6602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "a1703dd7d08d4d6ed3a5f3489c22513e4c5d953a"
+                "reference": "43b3c2e5c6bd0891c86df4eb61bdb78dea55965e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/a1703dd7d08d4d6ed3a5f3489c22513e4c5d953a",
-                "reference": "a1703dd7d08d4d6ed3a5f3489c22513e4c5d953a",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/43b3c2e5c6bd0891c86df4eb61bdb78dea55965e",
+                "reference": "43b3c2e5c6bd0891c86df4eb61bdb78dea55965e",
                 "shasum": ""
             },
             "require": {
@@ -6143,20 +6635,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-17T15:58:35+00:00"
+            "time": "2020-09-20T20:42:07+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typidesign/laravel-artisan-translations.git",
-                "reference": "ef72faef049973a31ea92d5281647196e37116f7"
+                "reference": "f7f2b2750daac090577ef8f917605220edf9a0fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typidesign/laravel-artisan-translations/zipball/ef72faef049973a31ea92d5281647196e37116f7",
-                "reference": "ef72faef049973a31ea92d5281647196e37116f7",
+                "url": "https://api.github.com/repos/typidesign/laravel-artisan-translations/zipball/f7f2b2750daac090577ef8f917605220edf9a0fc",
+                "reference": "f7f2b2750daac090577ef8f917605220edf9a0fc",
                 "shasum": ""
             },
             "require": {
@@ -6196,7 +6688,7 @@
                 "laravel-artisan-translations",
                 "typidesign"
             ],
-            "time": "2017-06-02T08:32:20+00:00"
+            "time": "2020-09-18T09:51:31+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -6529,16 +7021,16 @@
         },
         {
             "name": "facade/flare-client-php",
-            "version": "1.3.5",
+            "version": "1.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/flare-client-php.git",
-                "reference": "25907a113bfc212a38d458ae365bfb902b4e7fb8"
+                "reference": "451fadf38e9f635e7f8e1f5b3cf5c9eb82f11799"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/25907a113bfc212a38d458ae365bfb902b4e7fb8",
-                "reference": "25907a113bfc212a38d458ae365bfb902b4e7fb8",
+                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/451fadf38e9f635e7f8e1f5b3cf5c9eb82f11799",
+                "reference": "451fadf38e9f635e7f8e1f5b3cf5c9eb82f11799",
                 "shasum": ""
             },
             "require": {
@@ -6551,7 +7043,6 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.14",
-                "larapack/dd": "^1.1",
                 "phpunit/phpunit": "^7.5.16",
                 "spatie/phpunit-snapshot-assertions": "^2.0"
             },
@@ -6587,7 +7078,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-26T18:06:23+00:00"
+            "time": "2020-09-18T06:35:11+00:00"
         },
         {
             "name": "facade/ignition",
@@ -7449,16 +7940,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.1.9",
+            "version": "9.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "cf6582906d4b2502c5f4c6be6a3d0b4cd5b3ef7f"
+                "reference": "c9394cb9d07ecfa9351b96f2e296bad473195f4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/cf6582906d4b2502c5f4c6be6a3d0b4cd5b3ef7f",
-                "reference": "cf6582906d4b2502c5f4c6be6a3d0b4cd5b3ef7f",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c9394cb9d07ecfa9351b96f2e296bad473195f4d",
+                "reference": "c9394cb9d07ecfa9351b96f2e296bad473195f4d",
                 "shasum": ""
             },
             "require": {
@@ -7518,7 +8009,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-15T06:14:11+00:00"
+            "time": "2020-09-19T05:29:17+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
