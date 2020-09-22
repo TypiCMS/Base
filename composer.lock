@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d80649298447d87aed453582812f4233",
+    "content-hash": "785bf4a42979040f88dc53b09269ae3e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1373,6 +1373,60 @@
                 "psysh"
             ],
             "time": "2020-08-11T19:28:08+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "ff6af4f0bc5a5bfe73352cdc03dbfffc4ace92d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/ff6af4f0bc5a5bfe73352cdc03dbfffc4ace92d8",
+                "reference": "ff6af4f0bc5a5bfe73352cdc03dbfffc4ace92d8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.0",
+                "illuminate/filesystem": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "time": "2020-09-11T15:34:08+00:00"
         },
         {
             "name": "laravelium/feed",
@@ -5946,12 +6000,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "5dd232e4cdc91f03df7130ce9a112bb8962c238e"
+                "reference": "706c66e0530045d32561d181af5062dc2e735628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/5dd232e4cdc91f03df7130ce9a112bb8962c238e",
-                "reference": "5dd232e4cdc91f03df7130ce9a112bb8962c238e",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/706c66e0530045d32561d181af5062dc2e735628",
+                "reference": "706c66e0530045d32561d181af5062dc2e735628",
                 "shasum": ""
             },
             "require": {
@@ -5979,7 +6033,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T19:52:05+00:00"
+            "time": "2020-09-21T20:28:22+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -6331,12 +6385,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "6862e4178b887bb892da00ffb20777676d38d05f"
+                "reference": "1548752aafc2b83547fea7491af41a4808fc4ec3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/6862e4178b887bb892da00ffb20777676d38d05f",
-                "reference": "6862e4178b887bb892da00ffb20777676d38d05f",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/1548752aafc2b83547fea7491af41a4808fc4ec3",
+                "reference": "1548752aafc2b83547fea7491af41a4808fc4ec3",
                 "shasum": ""
             },
             "require": {
@@ -6359,7 +6413,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:51:12+00:00"
+            "time": "2020-09-21T20:39:27+00:00"
         },
         {
             "name": "typicms/pages",
@@ -6367,12 +6421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "398da207760bdeef95db1ea3cf181b4c7c9b895a"
+                "reference": "2757fd90b544264f0e4f29a9a9513b16c6bc207c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/398da207760bdeef95db1ea3cf181b4c7c9b895a",
-                "reference": "398da207760bdeef95db1ea3cf181b4c7c9b895a",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/2757fd90b544264f0e4f29a9a9513b16c6bc207c",
+                "reference": "2757fd90b544264f0e4f29a9a9513b16c6bc207c",
                 "shasum": ""
             },
             "require": {
@@ -6400,7 +6454,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:51:19+00:00"
+            "time": "2020-09-21T20:39:36+00:00"
         },
         {
             "name": "typicms/roles",
@@ -6449,12 +6503,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Search.git",
-                "reference": "a276bab0846345bc3d189ecdd47965d211023ebe"
+                "reference": "1e397558f27678905beec5bc7b4dfafde1fa9b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Search/zipball/a276bab0846345bc3d189ecdd47965d211023ebe",
-                "reference": "a276bab0846345bc3d189ecdd47965d211023ebe",
+                "url": "https://api.github.com/repos/TypiCMS/Search/zipball/1e397558f27678905beec5bc7b4dfafde1fa9b64",
+                "reference": "1e397558f27678905beec5bc7b4dfafde1fa9b64",
                 "shasum": ""
             },
             "require": {
@@ -6482,7 +6536,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T19:11:58+00:00"
+            "time": "2020-09-21T20:23:51+00:00"
         },
         {
             "name": "typicms/settings",
@@ -6573,12 +6627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "b5e226b2e48e622d680025f44e2f9736c7f8bbc1"
+                "reference": "f07a7d728a9b454223162a8f7e92803f4818c077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/b5e226b2e48e622d680025f44e2f9736c7f8bbc1",
-                "reference": "b5e226b2e48e622d680025f44e2f9736c7f8bbc1",
+                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/f07a7d728a9b454223162a8f7e92803f4818c077",
+                "reference": "f07a7d728a9b454223162a8f7e92803f4818c077",
                 "shasum": ""
             },
             "require": {
@@ -6606,7 +6660,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:52:37+00:00"
+            "time": "2020-09-21T20:40:02+00:00"
         },
         {
             "name": "typicms/translations",
