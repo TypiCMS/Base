@@ -14,11 +14,6 @@ mix.js('resources/js/admin.js', 'public/js');
 mix.js('resources/js/public.js', 'public/js');
 
 /**
- * Copy font-awesome files
- */
-mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
-
-/**
  * Copy CKEditor main files
  */
 mix.copy('node_modules/ckeditor4/ckeditor.js', 'public/components/ckeditor4/ckeditor.js');
