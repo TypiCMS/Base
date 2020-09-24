@@ -2,6 +2,27 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 8.0.0 - 2020-09-
+
+### Added
+
+-   Description textarea added to menu links
+-   A menu link can be linked to a section of a page
+-   Export to Excel functionality added to some modules
+-   Facebook App Id & Twitter fields added to settings
+-   Search module
+-   Subscriptions module, works with Laravel Cashier for Mollie
+-   Forum module
+-   New Artisan command to create a superuser (php artisan typicms:user)
+
+### Changed
+
+-   Laravel 8
+-   ModuleProvider are renamed to ModuleServiceProvider
+-   Permissions are now shared with the frontend
+-   Font Awesome replaced by Bootstrap Icons
+-   $request->all() replaced everywhere by $request->validated()
+
 ## 7.0.39 - 2020-07-08
 
 ### Added
@@ -42,7 +63,7 @@ All notable changes to TypiCMS will be documented in this file.
 
 -   Upgraded to Laravel 6.
 -   Return type definitions in models and controllers
--   Repositories removed, queries are now cached tnahks to genealabs/laravel-model-caching
+-   Repositories removed, queries are now cached with genealabs/laravel-model-caching
 
 ## 6.0.7 - 2019-05-08
 
@@ -59,8 +80,8 @@ All notable changes to TypiCMS will be documented in this file.
 -   Use of json-ld in place of microdata for structured content.
 -   [Module Events] A route was added to view past events.
 -   Classes name in views changed.
--   Email verification added to the module Users.
--   Make use of Laravel notification system in module Contacts.
+-   Email verification added to the Users module.
+-   Make use of Laravel notification system in Contacts module.
 -   Login, register, forgot password views are now translated.
 -   In the core presenter, the thumb() method was renamed to image().
 
