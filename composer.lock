@@ -843,16 +843,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.0.1",
+            "version": "7.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "2d9d3c186a6637a43193e66b097c50e4451eaab2"
+                "reference": "7edeaa528fbb57123028bd5a76b9ce9540194e26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/2d9d3c186a6637a43193e66b097c50e4451eaab2",
-                "reference": "2d9d3c186a6637a43193e66b097c50e4451eaab2",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7edeaa528fbb57123028bd5a76b9ce9540194e26",
+                "reference": "7edeaa528fbb57123028bd5a76b9ce9540194e26",
                 "shasum": ""
             },
             "require": {
@@ -866,7 +866,6 @@
                 "psr/http-client-implementation": "1.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.0",
                 "ext-curl": "*",
                 "php-http/client-integration-tests": "dev-phpunit8",
                 "phpunit/phpunit": "^8.5.5",
@@ -880,7 +879,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.0-dev"
+                    "dev-master": "7.1-dev"
                 }
             },
             "autoload": {
@@ -920,7 +919,25 @@
                 "rest",
                 "web service"
             ],
-            "time": "2020-06-27T10:33:25+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/alexeyshockov",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/gmponos",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-22T09:10:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1149,16 +1166,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.5.0",
+            "version": "v8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5a748eecae35fd453e0b1e4d4b6f4fadf0d3e7ac"
+                "reference": "a71952a6dba55de0bb11b5fbbd84874eda2a755c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5a748eecae35fd453e0b1e4d4b6f4fadf0d3e7ac",
-                "reference": "5a748eecae35fd453e0b1e4d4b6f4fadf0d3e7ac",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a71952a6dba55de0bb11b5fbbd84874eda2a755c",
+                "reference": "a71952a6dba55de0bb11b5fbbd84874eda2a755c",
                 "shasum": ""
             },
             "require": {
@@ -1308,7 +1325,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-09-18T21:27:11+00:00"
+            "time": "2020-09-22T13:42:02+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -2346,16 +2363,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.40.0",
+            "version": "2.40.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d"
+                "reference": "d9a76d8b7eb0f97cf3a82529393245212f40ba3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6c7646154181013ecd55e80c201b9fd873c6ee5d",
-                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d9a76d8b7eb0f97cf3a82529393245212f40ba3b",
+                "reference": "d9a76d8b7eb0f97cf3a82529393245212f40ba3b",
                 "shasum": ""
             },
             "require": {
@@ -2431,20 +2448,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-11T19:00:58+00:00"
+            "time": "2020-09-23T08:17:37+00:00"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.10.0",
+            "version": "v4.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9"
+                "reference": "1b479e7592812411c20c34d9ed33db3957bde66e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1c13d05035deff45f1230ca68bd7d74d621762d9",
-                "reference": "1c13d05035deff45f1230ca68bd7d74d621762d9",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1b479e7592812411c20c34d9ed33db3957bde66e",
+                "reference": "1b479e7592812411c20c34d9ed33db3957bde66e",
                 "shasum": ""
             },
             "require": {
@@ -2483,7 +2500,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-09-19T14:52:48+00:00"
+            "time": "2020-09-23T18:23:49+00:00"
         },
         {
             "name": "opis/closure",
@@ -5900,12 +5917,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "ff054844aa65aa94b7a90aa881ed13e83631a760"
+                "reference": "52b1adf7f04fa33b45308df6515a7fe2098b4d57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/ff054844aa65aa94b7a90aa881ed13e83631a760",
-                "reference": "ff054844aa65aa94b7a90aa881ed13e83631a760",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/52b1adf7f04fa33b45308df6515a7fe2098b4d57",
+                "reference": "52b1adf7f04fa33b45308df6515a7fe2098b4d57",
                 "shasum": ""
             },
             "require": {
@@ -5933,7 +5950,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:49:37+00:00"
+            "time": "2020-09-22T14:14:15+00:00"
         },
         {
             "name": "typicms/bootforms",
@@ -6000,12 +6017,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "706c66e0530045d32561d181af5062dc2e735628"
+                "reference": "1091b1d0e16675d328dffe5f5850cc9ab2cdda85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/706c66e0530045d32561d181af5062dc2e735628",
-                "reference": "706c66e0530045d32561d181af5062dc2e735628",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/1091b1d0e16675d328dffe5f5850cc9ab2cdda85",
+                "reference": "1091b1d0e16675d328dffe5f5850cc9ab2cdda85",
                 "shasum": ""
             },
             "require": {
@@ -6033,7 +6050,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T20:28:22+00:00"
+            "time": "2020-09-24T19:29:10+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -6041,12 +6058,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
-                "reference": "303f7634e4324b691fb25ca33b91f3a187bc8903"
+                "reference": "ee90de89a9ecf47087c23101b7f38d46c4a17e8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/303f7634e4324b691fb25ca33b91f3a187bc8903",
-                "reference": "303f7634e4324b691fb25ca33b91f3a187bc8903",
+                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/ee90de89a9ecf47087c23101b7f38d46c4a17e8c",
+                "reference": "ee90de89a9ecf47087c23101b7f38d46c4a17e8c",
                 "shasum": ""
             },
             "require": {
@@ -6074,7 +6091,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:50:06+00:00"
+            "time": "2020-09-22T21:21:20+00:00"
         },
         {
             "name": "typicms/files",
@@ -6082,12 +6099,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "4c31fedd8d82d7c625ed1e71f43147f0c61d57a7"
+                "reference": "fa7d8aed9e8a5a44e332a8e639b1e7003cc8b2f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/4c31fedd8d82d7c625ed1e71f43147f0c61d57a7",
-                "reference": "4c31fedd8d82d7c625ed1e71f43147f0c61d57a7",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/fa7d8aed9e8a5a44e332a8e639b1e7003cc8b2f5",
+                "reference": "fa7d8aed9e8a5a44e332a8e639b1e7003cc8b2f5",
                 "shasum": ""
             },
             "require": {
@@ -6115,7 +6132,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:50:21+00:00"
+            "time": "2020-09-22T21:40:25+00:00"
         },
         {
             "name": "typicms/form",
@@ -6182,12 +6199,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
-                "reference": "5938201e005c25a53af78d2687835239f87e4b5e"
+                "reference": "73827b310b19f0b65d85287acb9c13a53889c329"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/History/zipball/5938201e005c25a53af78d2687835239f87e4b5e",
-                "reference": "5938201e005c25a53af78d2687835239f87e4b5e",
+                "url": "https://api.github.com/repos/TypiCMS/History/zipball/73827b310b19f0b65d85287acb9c13a53889c329",
+                "reference": "73827b310b19f0b65d85287acb9c13a53889c329",
                 "shasum": ""
             },
             "require": {
@@ -6215,7 +6232,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:50:37+00:00"
+            "time": "2020-09-23T07:51:04+00:00"
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
@@ -6292,12 +6309,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "64b1beaaa9a4be4d7c1a5911df5b60e3703ad0c9"
+                "reference": "b88de8d9d4b044ab453e87ba551ad28ce3aac220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/64b1beaaa9a4be4d7c1a5911df5b60e3703ad0c9",
-                "reference": "64b1beaaa9a4be4d7c1a5911df5b60e3703ad0c9",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/b88de8d9d4b044ab453e87ba551ad28ce3aac220",
+                "reference": "b88de8d9d4b044ab453e87ba551ad28ce3aac220",
                 "shasum": ""
             },
             "require": {
@@ -6325,7 +6342,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:50:45+00:00"
+            "time": "2020-09-23T07:41:36+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -6385,12 +6402,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "1548752aafc2b83547fea7491af41a4808fc4ec3"
+                "reference": "ea2609b3ffe8665997d488fb8603b6ba6b0d0c46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/1548752aafc2b83547fea7491af41a4808fc4ec3",
-                "reference": "1548752aafc2b83547fea7491af41a4808fc4ec3",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/ea2609b3ffe8665997d488fb8603b6ba6b0d0c46",
+                "reference": "ea2609b3ffe8665997d488fb8603b6ba6b0d0c46",
                 "shasum": ""
             },
             "require": {
@@ -6413,7 +6430,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T20:39:27+00:00"
+            "time": "2020-09-24T15:51:19+00:00"
         },
         {
             "name": "typicms/pages",
@@ -6421,12 +6438,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "2757fd90b544264f0e4f29a9a9513b16c6bc207c"
+                "reference": "61b26da1481390e6b4bac695f9468ce2cf5ecdca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/2757fd90b544264f0e4f29a9a9513b16c6bc207c",
-                "reference": "2757fd90b544264f0e4f29a9a9513b16c6bc207c",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/61b26da1481390e6b4bac695f9468ce2cf5ecdca",
+                "reference": "61b26da1481390e6b4bac695f9468ce2cf5ecdca",
                 "shasum": ""
             },
             "require": {
@@ -6454,7 +6471,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T20:39:36+00:00"
+            "time": "2020-09-24T19:29:35+00:00"
         },
         {
             "name": "typicms/roles",
@@ -6462,12 +6479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Roles.git",
-                "reference": "1b145346b066a575b36221a71054215f7ef1ac26"
+                "reference": "db6f3fe06d9611b923e2bc8d7dde8f8d26c3cc03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/1b145346b066a575b36221a71054215f7ef1ac26",
-                "reference": "1b145346b066a575b36221a71054215f7ef1ac26",
+                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/db6f3fe06d9611b923e2bc8d7dde8f8d26c3cc03",
+                "reference": "db6f3fe06d9611b923e2bc8d7dde8f8d26c3cc03",
                 "shasum": ""
             },
             "require": {
@@ -6495,7 +6512,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:51:57+00:00"
+            "time": "2020-09-22T14:13:31+00:00"
         },
         {
             "name": "typicms/search",
@@ -6503,12 +6520,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Search.git",
-                "reference": "1e397558f27678905beec5bc7b4dfafde1fa9b64"
+                "reference": "b9fcb6e1f7dbc5f8b90aaaa4812dcddf8934cd9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Search/zipball/1e397558f27678905beec5bc7b4dfafde1fa9b64",
-                "reference": "1e397558f27678905beec5bc7b4dfafde1fa9b64",
+                "url": "https://api.github.com/repos/TypiCMS/Search/zipball/b9fcb6e1f7dbc5f8b90aaaa4812dcddf8934cd9c",
+                "reference": "b9fcb6e1f7dbc5f8b90aaaa4812dcddf8934cd9c",
                 "shasum": ""
             },
             "require": {
@@ -6536,7 +6553,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T20:23:51+00:00"
+            "time": "2020-09-24T15:33:25+00:00"
         },
         {
             "name": "typicms/settings",
@@ -6544,12 +6561,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
-                "reference": "67dcc75dcb3a60af4c4460b8f380878cda61d397"
+                "reference": "bfe5f225b8fd78a99f0df76fab7a4b63c636c510"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/67dcc75dcb3a60af4c4460b8f380878cda61d397",
-                "reference": "67dcc75dcb3a60af4c4460b8f380878cda61d397",
+                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/bfe5f225b8fd78a99f0df76fab7a4b63c636c510",
+                "reference": "bfe5f225b8fd78a99f0df76fab7a4b63c636c510",
                 "shasum": ""
             },
             "require": {
@@ -6577,7 +6594,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:52:04+00:00"
+            "time": "2020-09-22T21:21:43+00:00"
         },
         {
             "name": "typicms/sitemap",
@@ -6627,12 +6644,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "f07a7d728a9b454223162a8f7e92803f4818c077"
+                "reference": "70debda0c8511f5523b66f734931e1f8902da8ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/f07a7d728a9b454223162a8f7e92803f4818c077",
-                "reference": "f07a7d728a9b454223162a8f7e92803f4818c077",
+                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/70debda0c8511f5523b66f734931e1f8902da8ce",
+                "reference": "70debda0c8511f5523b66f734931e1f8902da8ce",
                 "shasum": ""
             },
             "require": {
@@ -6660,7 +6677,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T20:40:02+00:00"
+            "time": "2020-09-24T15:33:30+00:00"
         },
         {
             "name": "typicms/translations",
@@ -6668,12 +6685,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
-                "reference": "374d2ef18d09cb2d95617badd295e9ad35799f6c"
+                "reference": "ede910e33f71945fcdb7c649b8811182dc77b657"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/374d2ef18d09cb2d95617badd295e9ad35799f6c",
-                "reference": "374d2ef18d09cb2d95617badd295e9ad35799f6c",
+                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/ede910e33f71945fcdb7c649b8811182dc77b657",
+                "reference": "ede910e33f71945fcdb7c649b8811182dc77b657",
                 "shasum": ""
             },
             "require": {
@@ -6701,7 +6718,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:52:44+00:00"
+            "time": "2020-09-22T14:11:39+00:00"
         },
         {
             "name": "typicms/users",
@@ -6709,12 +6726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "104dd0af0dba784299884e236a2be7327d57aebf"
+                "reference": "9ba53414fec396b3e02fc2858fd8b9ff2ed7b7e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/104dd0af0dba784299884e236a2be7327d57aebf",
-                "reference": "104dd0af0dba784299884e236a2be7327d57aebf",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/9ba53414fec396b3e02fc2858fd8b9ff2ed7b7e6",
+                "reference": "9ba53414fec396b3e02fc2858fd8b9ff2ed7b7e6",
                 "shasum": ""
             },
             "require": {
@@ -6742,7 +6759,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T18:52:52+00:00"
+            "time": "2020-09-24T09:05:25+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -8345,16 +8362,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.3.10",
+            "version": "9.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "919333f2d046a89f9238f15d09f17a8f0baa5cc2"
+                "reference": "f7316ea106df7c9507f4fdaa88c47bc10a3b27a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/919333f2d046a89f9238f15d09f17a8f0baa5cc2",
-                "reference": "919333f2d046a89f9238f15d09f17a8f0baa5cc2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f7316ea106df7c9507f4fdaa88c47bc10a3b27a1",
+                "reference": "f7316ea106df7c9507f4fdaa88c47bc10a3b27a1",
                 "shasum": ""
             },
             "require": {
@@ -8370,7 +8387,7 @@
                 "phar-io/version": "^3.0.2",
                 "php": ">=7.3",
                 "phpspec/prophecy": "^1.11.1",
-                "phpunit/php-code-coverage": "^9.1.5",
+                "phpunit/php-code-coverage": "^9.1.11",
                 "phpunit/php-file-iterator": "^3.0.4",
                 "phpunit/php-invoker": "^3.1",
                 "phpunit/php-text-template": "^2.0.2",
@@ -8440,7 +8457,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-12T09:34:39+00:00"
+            "time": "2020-09-24T08:08:49+00:00"
         },
         {
             "name": "scrivo/highlight.php",
