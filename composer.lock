@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2ec6063d382835df3d1677b19a5343e",
+    "content-hash": "09abcfe04b9e56f677335c64255ab43e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5990,7 +5990,7 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
@@ -6090,7 +6090,7 @@
         },
         {
             "name": "typicms/core",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
@@ -6131,7 +6131,7 @@
         },
         {
             "name": "typicms/dashboard",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
@@ -6172,7 +6172,7 @@
         },
         {
             "name": "typicms/files",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
@@ -6272,7 +6272,7 @@
         },
         {
             "name": "typicms/history",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
@@ -6382,7 +6382,7 @@
         },
         {
             "name": "typicms/menus",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
@@ -6475,7 +6475,7 @@
         },
         {
             "name": "typicms/objects",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
@@ -6511,7 +6511,7 @@
         },
         {
             "name": "typicms/pages",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
@@ -6552,7 +6552,7 @@
         },
         {
             "name": "typicms/roles",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Roles.git",
@@ -6593,7 +6593,7 @@
         },
         {
             "name": "typicms/search",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Search.git",
@@ -6634,7 +6634,7 @@
         },
         {
             "name": "typicms/settings",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
@@ -6675,7 +6675,7 @@
         },
         {
             "name": "typicms/sitemap",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
@@ -6717,7 +6717,7 @@
         },
         {
             "name": "typicms/tags",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
@@ -6758,7 +6758,7 @@
         },
         {
             "name": "typicms/translations",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
@@ -6799,7 +6799,7 @@
         },
         {
             "name": "typicms/users",
-            "version": "dev-master",
+            "version": "8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
@@ -9680,23 +9680,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "typicms/blocks": 20,
-        "typicms/core": 20,
-        "typicms/dashboard": 20,
-        "typicms/files": 20,
-        "typicms/history": 20,
-        "typicms/menus": 20,
-        "typicms/objects": 20,
-        "typicms/pages": 20,
-        "typicms/roles": 20,
-        "typicms/settings": 20,
-        "typicms/sitemap": 20,
-        "typicms/search": 20,
-        "typicms/tags": 20,
-        "typicms/translations": 20,
-        "typicms/users": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
