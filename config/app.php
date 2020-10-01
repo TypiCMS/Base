@@ -179,6 +179,7 @@ return [
         TypiCMS\Modules\Menus\Providers\ModuleServiceProvider::class,
         TypiCMS\Modules\Sitemap\Providers\ModuleServiceProvider::class,
         TypiCMS\Modules\Tags\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Search\Providers\ModuleServiceProvider::class,
 
         /*
          * TypiCMS Modules Service Providers.
