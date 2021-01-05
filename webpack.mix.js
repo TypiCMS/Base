@@ -4,13 +4,13 @@ const mix = require('laravel-mix');
 /**
  * Compile CSS
  */
-mix.sass('resources/scss/admin.scss', 'public/css', { implementation: require('node-sass') });
-mix.sass('resources/scss/public.scss', 'public/css', { implementation: require('node-sass') });
+mix.sass('resources/scss/admin.scss', 'public/css');
+mix.sass('resources/scss/public.scss', 'public/css');
 
 /**
  * Compile JS
  */
-mix.js('resources/js/admin.js', 'public/js');
+mix.js('resources/js/admin.js', 'public/js').vue();
 mix.js('resources/js/public.js', 'public/js');
 
 /**
@@ -69,7 +69,14 @@ mix.version();
 /**
  * BrowserSync
  */
-mix.browserSync('typicms.test');
+mix.browserSync({
+    proxy: 'typicms.test',
+    open: false,
+    notify: false,
+    ui: false,
+    online: false,
+    browser: 'google chrome',
+});
 
 /**
  * Options
