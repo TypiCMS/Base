@@ -2,7 +2,14 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
-## 8.0.0 - 2020-09-
+## 9.0.0 - 2021-01-
+
+### Changed
+
+-   Bootstrap 5
+-   Laravel Mix 6
+
+## 8.0.0 - 2020-10-01
 
 ### Added
 
