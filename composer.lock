@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b99d64570a8c790262859c6403d738c4",
+    "content-hash": "259e522372fa087ff4b9bf64b76342f7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1540,16 +1540,16 @@
         },
         {
             "name": "laravel/ui",
-            "version": "v3.1.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/ui.git",
-                "reference": "444072cb2f8baaa15172c5cde2bd30d188c3b7e7"
+                "reference": "a1f82c6283c8373ea1958b8a27c3d5c98cade351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/444072cb2f8baaa15172c5cde2bd30d188c3b7e7",
-                "reference": "444072cb2f8baaa15172c5cde2bd30d188c3b7e7",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/a1f82c6283c8373ea1958b8a27c3d5c98cade351",
+                "reference": "a1f82c6283c8373ea1958b8a27c3d5c98cade351",
                 "shasum": ""
             },
             "require": {
@@ -1592,9 +1592,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/ui/issues",
-                "source": "https://github.com/laravel/ui/tree/v3.1.0"
+                "source": "https://github.com/laravel/ui/tree/v3.2.0"
             },
-            "time": "2020-11-03T19:51:21+00:00"
+            "time": "2021-01-06T19:20:22+00:00"
         },
         {
             "name": "laravelium/feed",
@@ -6206,7 +6206,7 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
@@ -6221,7 +6221,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6240,7 +6239,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Blocks/issues",
-                "source": "https://github.com/TypiCMS/Blocks/tree/master"
+                "source": "https://github.com/TypiCMS/Blocks/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6315,22 +6314,21 @@
         },
         {
             "name": "typicms/core",
-            "version": "dev-master",
+            "version": "9.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "14de4c77feb009c45e1c07d5983bef0b92cbc234"
+                "reference": "ada69e7ff755c2a91c42cb1b8a8985d9ed743a27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/14de4c77feb009c45e1c07d5983bef0b92cbc234",
-                "reference": "14de4c77feb009c45e1c07d5983bef0b92cbc234",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/ada69e7ff755c2a91c42cb1b8a8985d9ed743a27",
+                "reference": "ada69e7ff755c2a91c42cb1b8a8985d9ed743a27",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6349,7 +6347,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/master"
+                "source": "https://github.com/TypiCMS/Core/tree/9.0.1"
             },
             "funding": [
                 {
@@ -6357,11 +6355,11 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-06T12:32:40+00:00"
+            "time": "2021-01-07T09:03:58+00:00"
         },
         {
             "name": "typicms/dashboard",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
@@ -6376,7 +6374,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6395,7 +6392,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Dashboard/issues",
-                "source": "https://github.com/TypiCMS/Dashboard/tree/8.0.0"
+                "source": "https://github.com/TypiCMS/Dashboard/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6407,7 +6404,7 @@
         },
         {
             "name": "typicms/files",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
@@ -6422,7 +6419,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6441,7 +6437,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Files/issues",
-                "source": "https://github.com/TypiCMS/Files/tree/master"
+                "source": "https://github.com/TypiCMS/Files/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6516,7 +6512,7 @@
         },
         {
             "name": "typicms/history",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
@@ -6531,7 +6527,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6550,7 +6545,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/History/issues",
-                "source": "https://github.com/TypiCMS/History/tree/8.0.1"
+                "source": "https://github.com/TypiCMS/History/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6635,7 +6630,7 @@
         },
         {
             "name": "typicms/menus",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
@@ -6650,7 +6645,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6669,7 +6663,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Menus/issues",
-                "source": "https://github.com/TypiCMS/Menus/tree/master"
+                "source": "https://github.com/TypiCMS/Menus/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6737,7 +6731,7 @@
         },
         {
             "name": "typicms/objects",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
@@ -6752,7 +6746,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -6766,7 +6759,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Objects/issues",
-                "source": "https://github.com/TypiCMS/Objects/tree/master"
+                "source": "https://github.com/TypiCMS/Objects/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6778,7 +6771,7 @@
         },
         {
             "name": "typicms/pages",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
@@ -6793,7 +6786,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6812,7 +6804,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Pages/issues",
-                "source": "https://github.com/TypiCMS/Pages/tree/master"
+                "source": "https://github.com/TypiCMS/Pages/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6824,7 +6816,7 @@
         },
         {
             "name": "typicms/roles",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Roles.git",
@@ -6839,7 +6831,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6858,7 +6849,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Roles/issues",
-                "source": "https://github.com/TypiCMS/Roles/tree/master"
+                "source": "https://github.com/TypiCMS/Roles/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6870,7 +6861,7 @@
         },
         {
             "name": "typicms/search",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Search.git",
@@ -6885,7 +6876,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6904,7 +6894,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Search/issues",
-                "source": "https://github.com/TypiCMS/Search/tree/master"
+                "source": "https://github.com/TypiCMS/Search/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6916,7 +6906,7 @@
         },
         {
             "name": "typicms/settings",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
@@ -6931,7 +6921,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6950,7 +6939,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Settings/issues",
-                "source": "https://github.com/TypiCMS/Settings/tree/master"
+                "source": "https://github.com/TypiCMS/Settings/tree/9.0.0"
             },
             "funding": [
                 {
@@ -6962,7 +6951,7 @@
         },
         {
             "name": "typicms/sitemap",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
@@ -6978,7 +6967,6 @@
                 "laravel/framework": "~8.0",
                 "laravelium/sitemap": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6997,7 +6985,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Sitemap/issues",
-                "source": "https://github.com/TypiCMS/Sitemap/tree/8.0.0"
+                "source": "https://github.com/TypiCMS/Sitemap/tree/9.0.0"
             },
             "funding": [
                 {
@@ -7009,7 +6997,7 @@
         },
         {
             "name": "typicms/tags",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
@@ -7024,7 +7012,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -7043,7 +7030,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Tags/issues",
-                "source": "https://github.com/TypiCMS/Tags/tree/master"
+                "source": "https://github.com/TypiCMS/Tags/tree/9.0.0"
             },
             "funding": [
                 {
@@ -7055,7 +7042,7 @@
         },
         {
             "name": "typicms/translations",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
@@ -7070,7 +7057,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -7089,7 +7075,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Translations/issues",
-                "source": "https://github.com/TypiCMS/Translations/tree/master"
+                "source": "https://github.com/TypiCMS/Translations/tree/9.0.0"
             },
             "funding": [
                 {
@@ -7101,7 +7087,7 @@
         },
         {
             "name": "typicms/users",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
@@ -7116,7 +7102,6 @@
             "require": {
                 "laravel/framework": "~8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -7135,7 +7120,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Users/issues",
-                "source": "https://github.com/TypiCMS/Users/tree/master"
+                "source": "https://github.com/TypiCMS/Users/tree/9.0.0"
             },
             "funding": [
                 {
@@ -10090,23 +10075,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "typicms/blocks": 20,
-        "typicms/core": 20,
-        "typicms/dashboard": 20,
-        "typicms/files": 20,
-        "typicms/history": 20,
-        "typicms/menus": 20,
-        "typicms/objects": 20,
-        "typicms/pages": 20,
-        "typicms/roles": 20,
-        "typicms/settings": 20,
-        "typicms/sitemap": 20,
-        "typicms/search": 20,
-        "typicms/tags": 20,
-        "typicms/translations": 20,
-        "typicms/users": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
