@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "259e522372fa087ff4b9bf64b76342f7",
+    "content-hash": "44b4db648f51646f1a6f113a33db810b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6314,16 +6314,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "9.0.1",
+            "version": "9.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "ada69e7ff755c2a91c42cb1b8a8985d9ed743a27"
+                "reference": "eb92700a9a852db9159875c937e9052c287bd4d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/ada69e7ff755c2a91c42cb1b8a8985d9ed743a27",
-                "reference": "ada69e7ff755c2a91c42cb1b8a8985d9ed743a27",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/eb92700a9a852db9159875c937e9052c287bd4d4",
+                "reference": "eb92700a9a852db9159875c937e9052c287bd4d4",
                 "shasum": ""
             },
             "require": {
@@ -6347,7 +6347,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/9.0.1"
+                "source": "https://github.com/TypiCMS/Core/tree/9.0.4"
             },
             "funding": [
                 {
@@ -6355,7 +6355,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-07T09:03:58+00:00"
+            "time": "2021-01-07T09:38:35+00:00"
         },
         {
             "name": "typicms/dashboard",
@@ -7842,61 +7842,6 @@
                 "source": "https://github.com/filp/whoops/tree/2.9.1"
             },
             "time": "2020-11-01T12:00:00+00:00"
-        },
-        {
-            "name": "fzaninotto/faker",
-            "version": "v1.9.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "848d8125239d7dbf8ab25cb7f054f1a630e68c2e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/848d8125239d7dbf8ab25cb7f054f1a630e68c2e",
-                "reference": "848d8125239d7dbf8ab25cb7f054f1a630e68c2e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.3 || ^7.0"
-            },
-            "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^2.9.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Zaninotto"
-                }
-            ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "support": {
-                "issues": "https://github.com/fzaninotto/Faker/issues",
-                "source": "https://github.com/fzaninotto/Faker/tree/v1.9.2"
-            },
-            "abandoned": true,
-            "time": "2020-12-11T09:56:16+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
