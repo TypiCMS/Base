@@ -34,6 +34,8 @@ var plugins = [
     'dialog',
     'dialogadvtab',
     'div',
+    'embed',
+    'embedbase',
     'image',
     'image2',
     'justify',
