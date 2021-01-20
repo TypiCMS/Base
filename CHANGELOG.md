@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 9.0.3 - 2021-01-20
+
+### Changed
+
+-   CKEditor: oEmbed plugin remplaced by Embed.
+
 ## 9.0.0 - 2021-01-07
 
 ### Changed
