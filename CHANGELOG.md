@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 9.0.4 - 2021-01-25
+
+### Changed
+
+-   The route named 'dashboard' is renamed to 'admin::dashboard'.
+
 ## 9.0.3 - 2021-01-20
 
 ### Changed
