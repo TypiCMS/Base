@@ -2,6 +2,14 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 9.0.12 - 2021-02-25
+
+### Changed
+
+-   The locales should now be configured in config/typicms.php
+-   The SetLocale middleware is now splited in four smaller middlewares: AddLocaleToRootUrl, VerifyLocalizedUrl, SetLocaleFromUrl and SetSystemLocale.
+-   New permission added: see unpublished items
+
 ## 9.0.4 - 2021-01-25
 
 ### Changed
