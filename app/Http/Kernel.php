@@ -41,16 +41,19 @@ class Kernel extends HttpKernel
 
         'public' => [
             'web',
-            \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
+            \TypiCMS\Modules\Core\Http\Middleware\AddLocaleToRootUrl::class,
+            \TypiCMS\Modules\Core\Http\Middleware\VerifyLocalizedUrl::class,
+            \TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUrl::class,
+            \TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
         ],
 
         'admin' => [
             'web',
             'auth',
-            \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetTranslatableFallbackLocaleToNull::class,
             \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
+            \TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
             \TypiCMS\Modules\Core\Http\Middleware\UserPrefs::class,
         ],
