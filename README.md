@@ -14,7 +14,7 @@ TypiCMS is a modular multilingual content management system built with [Laravel]
 -   [Requirements](#requirements)
 -   [Installation](#installation)
     -   [Assets](#assets)
-    -   [Configuration](#configuration)
+    -   [Locales configuration](#locales-configuration)
     -   [Installation of a module](#installation-of-a-module)
 -   [Available modules](#available-modules)
     -   [Pages](#pages)
@@ -87,7 +87,7 @@ First install [Composer](https://getcomposer.org)
     cd mywebsite
     ```
 
-3. DB migration and seed, user creation, npm installation and directory rights
+3. Migration of the database, seeding, user creation, npm installation and directory rights
 
     ```
     php artisan typicms:install
@@ -100,7 +100,7 @@ Go to http://mywebsite.test/admin and log in.
 ### Assets
 
 Assets are managed with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix).
-In order to work on assets, you need to install [Node.js](http://nodejs.org), then enter your website folder and run these commands:
+In order to work on assets, you need to install [Node.js](http://nodejs.org), then go to your website folder and run these commands:
 
 1. Install npm packages (in directory **node_modules**)
 
@@ -114,26 +114,24 @@ In order to work on assets, you need to install [Node.js](http://nodejs.org), th
     npm run dev
     ```
 
-### Configuration
+### Locales configuration
 
-1. Set locales in config/translatable.php.
-2. Set fallback_locale in config/app.php.
-3. Set main_locale_in_url in config/typicms.php to true or false.
-4. Cache driver is set to array, you can change it to another taggable cache system such as redis or memcached in your .env file.
+1. Set the locales in config/typicms.php, the first key of this array is the main locale and should be the same as the locale defined in config/app.php.
+2. Set main_locale_in_url in config/typicms.php to true or false.
 
 ### Installation of a module
 
 This example is for the News module. After these steps, the module will appear in the sidebar of the back office.
 If you need to customize it, you can [publish it](#publish-a-module)!
 
-1. Install module with Composer
+1. Install a module with Composer
 
     ```
     composer require typicms/news
     ```
 
 2. Add `TypiCMS\Modules\News\Providers\ModuleServiceProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,`
-3. Publish views and migrations
+3. Publish the views and migrations
 
     ```
     php artisan vendor:publish
@@ -147,7 +145,7 @@ If you need to customize it, you can [publish it](#publish-a-module)!
 
 ### Module scaffolding
 
-This example is for a module called Cats.
+Let’s create a module called Cats.
 
 1. Create the module with artisan:
 
@@ -280,14 +278,6 @@ These steps will be executed:
 3. Running `composer remove typicms/pages`.
 
 When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running `composer update`.
-
-### Create a module
-
-You can easily scaffold a module by running this this command:
-
-```
-php artisan typicms:create <modulename>
-```
 
 ## Changelog
 
