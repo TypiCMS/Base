@@ -21,7 +21,7 @@ if (!function_exists('column')) {
 if (!function_exists('locales')) {
     function locales()
     {
-        return config('translatable-bootforms.locales');
+        return array_keys(config('typicms.locales'));
     }
 }
 
