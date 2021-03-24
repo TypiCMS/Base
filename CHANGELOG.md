@@ -2,11 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
-## 9.0.16 - 2021-03-24
+## 9.0.17 - 2021-03-24
 
 ### Changed
 
 -   Bootstrap 5 beta3
+-   Assets compiled during installation process.
 
 ## 9.0.12 - 2021-02-25
 
