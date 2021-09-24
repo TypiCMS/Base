@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05cf7da2ecf0390b938f433349293fab",
+    "content-hash": "c7b8ad111a22764c081b4de781c32266",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3971,16 +3971,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "4.4.1",
+            "version": "5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "3c9d7ae7683081ee90a4e2297f4e58aff3492a1e"
+                "reference": "58d5eb6c7b0eafa8bdf0a93d1ca5c214a05344cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/3c9d7ae7683081ee90a4e2297f4e58aff3492a1e",
-                "reference": "3c9d7ae7683081ee90a4e2297f4e58aff3492a1e",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/58d5eb6c7b0eafa8bdf0a93d1ca5c214a05344cb",
+                "reference": "58d5eb6c7b0eafa8bdf0a93d1ca5c214a05344cb",
                 "shasum": ""
             },
             "require": {
@@ -4001,6 +4001,10 @@
                     "providers": [
                         "Spatie\\Permission\\PermissionServiceProvider"
                     ]
+                },
+                "branch-alias": {
+                    "dev-main": "5.x-dev",
+                    "dev-master": "5.x-dev"
                 }
             },
             "autoload": {
@@ -4037,7 +4041,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-permission/issues",
-                "source": "https://github.com/spatie/laravel-permission/tree/4.4.1"
+                "source": "https://github.com/spatie/laravel-permission/tree/5.1.1"
             },
             "funding": [
                 {
@@ -4045,7 +4049,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-01T17:40:58+00:00"
+            "time": "2021-09-01T20:02:17+00:00"
         },
         {
             "name": "spatie/laravel-query-builder",
