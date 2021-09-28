@@ -10,7 +10,7 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "@fancyapps/fancybox": "3.5.2",
+        "@fancyapps/fancybox": "^3.5.7",
         "@popperjs/core": "^2.9.1",
         "alertify.js": "^1.0",
         "axios": "^0.21",
@@ -18,7 +18,7 @@
         "browser-sync": "^2.26",
         "browser-sync-webpack-plugin": "^2.3",
         "ckeditor4": "^4.12",
-        "css-loader": "^5.2.0",
+        "css-loader": "^6.3.0",
         "dropzone": "^5.5",
         "jquery": "^3.3",
         "laravel-mix": "^6.0",
