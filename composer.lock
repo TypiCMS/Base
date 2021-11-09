@@ -1429,16 +1429,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.70.0",
+            "version": "v8.70.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0940624dc77e19212d17f584e42b7843bf5e9d7e"
+                "reference": "f4b69fac9292df1a8afd5eb93e77990444ad5077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0940624dc77e19212d17f584e42b7843bf5e9d7e",
-                "reference": "0940624dc77e19212d17f584e42b7843bf5e9d7e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f4b69fac9292df1a8afd5eb93e77990444ad5077",
+                "reference": "f4b69fac9292df1a8afd5eb93e77990444ad5077",
                 "shasum": ""
             },
             "require": {
@@ -1597,7 +1597,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-11-09T15:36:14+00:00"
+            "time": "2021-11-09T16:50:33+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -6672,16 +6672,16 @@
         },
         {
             "name": "typicms/blocks",
-            "version": "9.0.7",
+            "version": "9.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Blocks.git",
-                "reference": "47fa33e13a43b2ea49cc37b4408608f1f4f13c15"
+                "reference": "eb82c06a726bbc20a2c00ee6fef6b975d3aa28c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/47fa33e13a43b2ea49cc37b4408608f1f4f13c15",
-                "reference": "47fa33e13a43b2ea49cc37b4408608f1f4f13c15",
+                "url": "https://api.github.com/repos/TypiCMS/Blocks/zipball/eb82c06a726bbc20a2c00ee6fef6b975d3aa28c0",
+                "reference": "eb82c06a726bbc20a2c00ee6fef6b975d3aa28c0",
                 "shasum": ""
             },
             "require": {
@@ -6705,7 +6705,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Blocks/issues",
-                "source": "https://github.com/TypiCMS/Blocks/tree/9.0.7"
+                "source": "https://github.com/TypiCMS/Blocks/tree/9.0.8"
             },
             "funding": [
                 {
@@ -6713,7 +6713,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-21T07:38:55+00:00"
+            "time": "2021-11-09T20:26:28+00:00"
         },
         {
             "name": "typicms/bootforms",
@@ -6780,16 +6780,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "9.0.54",
+            "version": "9.0.55",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "ef4d1a574d32bcf0b4c2b9fcadec4c1b51c419fe"
+                "reference": "e8eb8cf381b764b04b9b3f135cec8151e57763f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/ef4d1a574d32bcf0b4c2b9fcadec4c1b51c419fe",
-                "reference": "ef4d1a574d32bcf0b4c2b9fcadec4c1b51c419fe",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/e8eb8cf381b764b04b9b3f135cec8151e57763f1",
+                "reference": "e8eb8cf381b764b04b9b3f135cec8151e57763f1",
                 "shasum": ""
             },
             "require": {
@@ -6813,7 +6813,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/9.0.54"
+                "source": "https://github.com/TypiCMS/Core/tree/9.0.55"
             },
             "funding": [
                 {
@@ -6821,20 +6821,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-09T09:22:09+00:00"
+            "time": "2021-11-09T20:26:46+00:00"
         },
         {
             "name": "typicms/dashboard",
-            "version": "9.0.5",
+            "version": "9.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Dashboard.git",
-                "reference": "59027bf54a4da1fe0a75ce5863cbe5b2b4047662"
+                "reference": "214045fa8f57ecfd7e04a901769985289c998bb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/59027bf54a4da1fe0a75ce5863cbe5b2b4047662",
-                "reference": "59027bf54a4da1fe0a75ce5863cbe5b2b4047662",
+                "url": "https://api.github.com/repos/TypiCMS/Dashboard/zipball/214045fa8f57ecfd7e04a901769985289c998bb1",
+                "reference": "214045fa8f57ecfd7e04a901769985289c998bb1",
                 "shasum": ""
             },
             "require": {
@@ -6858,7 +6858,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Dashboard/issues",
-                "source": "https://github.com/TypiCMS/Dashboard/tree/9.0.5"
+                "source": "https://github.com/TypiCMS/Dashboard/tree/9.0.6"
             },
             "funding": [
                 {
@@ -6866,20 +6866,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T14:54:05+00:00"
+            "time": "2021-11-09T20:26:58+00:00"
         },
         {
             "name": "typicms/files",
-            "version": "9.0.7",
+            "version": "9.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Files.git",
-                "reference": "16cf0b2c23b3100992c8462624e441fb0b5bcfcd"
+                "reference": "a08b88e5ad6267a7f5e2875d36714d443cb4e685"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/16cf0b2c23b3100992c8462624e441fb0b5bcfcd",
-                "reference": "16cf0b2c23b3100992c8462624e441fb0b5bcfcd",
+                "url": "https://api.github.com/repos/TypiCMS/Files/zipball/a08b88e5ad6267a7f5e2875d36714d443cb4e685",
+                "reference": "a08b88e5ad6267a7f5e2875d36714d443cb4e685",
                 "shasum": ""
             },
             "require": {
@@ -6903,7 +6903,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Files/issues",
-                "source": "https://github.com/TypiCMS/Files/tree/9.0.7"
+                "source": "https://github.com/TypiCMS/Files/tree/9.0.8"
             },
             "funding": [
                 {
@@ -6911,7 +6911,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-28T09:07:01+00:00"
+            "time": "2021-11-09T20:27:14+00:00"
         },
         {
             "name": "typicms/form",
@@ -6978,16 +6978,16 @@
         },
         {
             "name": "typicms/history",
-            "version": "9.0.3",
+            "version": "9.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/History.git",
-                "reference": "bfaf2d0afe7a401ba7beaef6ed3247174b0a99da"
+                "reference": "2f0a75905e0dade9cce91c308a9eab638b229832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/History/zipball/bfaf2d0afe7a401ba7beaef6ed3247174b0a99da",
-                "reference": "bfaf2d0afe7a401ba7beaef6ed3247174b0a99da",
+                "url": "https://api.github.com/repos/TypiCMS/History/zipball/2f0a75905e0dade9cce91c308a9eab638b229832",
+                "reference": "2f0a75905e0dade9cce91c308a9eab638b229832",
                 "shasum": ""
             },
             "require": {
@@ -7011,7 +7011,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/History/issues",
-                "source": "https://github.com/TypiCMS/History/tree/9.0.3"
+                "source": "https://github.com/TypiCMS/History/tree/9.0.4"
             },
             "funding": [
                 {
@@ -7019,7 +7019,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T20:05:20+00:00"
+            "time": "2021-11-09T20:27:29+00:00"
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
@@ -7096,16 +7096,16 @@
         },
         {
             "name": "typicms/menus",
-            "version": "9.0.9",
+            "version": "9.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Menus.git",
-                "reference": "9ad95114f9fb6cfc64eee408c950fbd5c06cce8c"
+                "reference": "eee1688ba356fa2d9b59cce7433da5679cad6376"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/9ad95114f9fb6cfc64eee408c950fbd5c06cce8c",
-                "reference": "9ad95114f9fb6cfc64eee408c950fbd5c06cce8c",
+                "url": "https://api.github.com/repos/TypiCMS/Menus/zipball/eee1688ba356fa2d9b59cce7433da5679cad6376",
+                "reference": "eee1688ba356fa2d9b59cce7433da5679cad6376",
                 "shasum": ""
             },
             "require": {
@@ -7129,7 +7129,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Menus/issues",
-                "source": "https://github.com/TypiCMS/Menus/tree/9.0.9"
+                "source": "https://github.com/TypiCMS/Menus/tree/9.0.10"
             },
             "funding": [
                 {
@@ -7137,7 +7137,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T14:54:23+00:00"
+            "time": "2021-11-09T20:27:50+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -7197,16 +7197,16 @@
         },
         {
             "name": "typicms/objects",
-            "version": "9.0.8",
+            "version": "9.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "423e06c9df434c2f2a36d754898003fd7e3fc10b"
+                "reference": "fd4823ce6377190ab961d028144ca3829f24bdcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/423e06c9df434c2f2a36d754898003fd7e3fc10b",
-                "reference": "423e06c9df434c2f2a36d754898003fd7e3fc10b",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/fd4823ce6377190ab961d028144ca3829f24bdcb",
+                "reference": "fd4823ce6377190ab961d028144ca3829f24bdcb",
                 "shasum": ""
             },
             "require": {
@@ -7225,7 +7225,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Objects/issues",
-                "source": "https://github.com/TypiCMS/Objects/tree/9.0.8"
+                "source": "https://github.com/TypiCMS/Objects/tree/9.0.9"
             },
             "funding": [
                 {
@@ -7233,20 +7233,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T20:01:02+00:00"
+            "time": "2021-11-09T20:28:04+00:00"
         },
         {
             "name": "typicms/pages",
-            "version": "9.0.12",
+            "version": "9.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Pages.git",
-                "reference": "ea168f9f14fc0fcc97eb6a38b387a496e45c360b"
+                "reference": "71560718c2add22a3b65dd238829369c3826a088"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/ea168f9f14fc0fcc97eb6a38b387a496e45c360b",
-                "reference": "ea168f9f14fc0fcc97eb6a38b387a496e45c360b",
+                "url": "https://api.github.com/repos/TypiCMS/Pages/zipball/71560718c2add22a3b65dd238829369c3826a088",
+                "reference": "71560718c2add22a3b65dd238829369c3826a088",
                 "shasum": ""
             },
             "require": {
@@ -7270,7 +7270,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Pages/issues",
-                "source": "https://github.com/TypiCMS/Pages/tree/9.0.12"
+                "source": "https://github.com/TypiCMS/Pages/tree/9.0.13"
             },
             "funding": [
                 {
@@ -7278,7 +7278,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T14:52:46+00:00"
+            "time": "2021-11-09T20:28:09+00:00"
         },
         {
             "name": "typicms/roles",
@@ -7327,16 +7327,16 @@
         },
         {
             "name": "typicms/search",
-            "version": "9.0.4",
+            "version": "9.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Search.git",
-                "reference": "07701bc37a6cdc48ea989e1cb5fe25d4143c038c"
+                "reference": "5f97153c4f2ae479b731ebb9a59f52ca6557da99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Search/zipball/07701bc37a6cdc48ea989e1cb5fe25d4143c038c",
-                "reference": "07701bc37a6cdc48ea989e1cb5fe25d4143c038c",
+                "url": "https://api.github.com/repos/TypiCMS/Search/zipball/5f97153c4f2ae479b731ebb9a59f52ca6557da99",
+                "reference": "5f97153c4f2ae479b731ebb9a59f52ca6557da99",
                 "shasum": ""
             },
             "require": {
@@ -7360,7 +7360,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Search/issues",
-                "source": "https://github.com/TypiCMS/Search/tree/9.0.4"
+                "source": "https://github.com/TypiCMS/Search/tree/9.0.5"
             },
             "funding": [
                 {
@@ -7368,20 +7368,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T14:28:07+00:00"
+            "time": "2021-11-09T20:28:34+00:00"
         },
         {
             "name": "typicms/settings",
-            "version": "9.0.5",
+            "version": "9.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Settings.git",
-                "reference": "5a70b344641a1fb338060d8e70ca1a821ec96367"
+                "reference": "5c0f9ef597fb6c17307a05bf5d86c348c3dc6500"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/5a70b344641a1fb338060d8e70ca1a821ec96367",
-                "reference": "5a70b344641a1fb338060d8e70ca1a821ec96367",
+                "url": "https://api.github.com/repos/TypiCMS/Settings/zipball/5c0f9ef597fb6c17307a05bf5d86c348c3dc6500",
+                "reference": "5c0f9ef597fb6c17307a05bf5d86c348c3dc6500",
                 "shasum": ""
             },
             "require": {
@@ -7405,7 +7405,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Settings/issues",
-                "source": "https://github.com/TypiCMS/Settings/tree/9.0.5"
+                "source": "https://github.com/TypiCMS/Settings/tree/9.0.6"
             },
             "funding": [
                 {
@@ -7413,20 +7413,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-10-01T07:01:26+00:00"
+            "time": "2021-11-09T20:28:38+00:00"
         },
         {
             "name": "typicms/sitemap",
-            "version": "9.0.3",
+            "version": "9.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Sitemap.git",
-                "reference": "a76267e926a2a616eb3234c483624fecc7581698"
+                "reference": "4526676acafaf50d348dd14e9e4e955ce0ccaabd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/a76267e926a2a616eb3234c483624fecc7581698",
-                "reference": "a76267e926a2a616eb3234c483624fecc7581698",
+                "url": "https://api.github.com/repos/TypiCMS/Sitemap/zipball/4526676acafaf50d348dd14e9e4e955ce0ccaabd",
+                "reference": "4526676acafaf50d348dd14e9e4e955ce0ccaabd",
                 "shasum": ""
             },
             "require": {
@@ -7451,7 +7451,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Sitemap/issues",
-                "source": "https://github.com/TypiCMS/Sitemap/tree/9.0.3"
+                "source": "https://github.com/TypiCMS/Sitemap/tree/9.0.4"
             },
             "funding": [
                 {
@@ -7459,20 +7459,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T14:53:00+00:00"
+            "time": "2021-11-09T20:28:47+00:00"
         },
         {
             "name": "typicms/tags",
-            "version": "9.0.8",
+            "version": "9.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Tags.git",
-                "reference": "8a46050a2f5207b88491027b4e975007c6228dc1"
+                "reference": "05eb0fc57ce100cf03b3c518beb7b6ab53818991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/8a46050a2f5207b88491027b4e975007c6228dc1",
-                "reference": "8a46050a2f5207b88491027b4e975007c6228dc1",
+                "url": "https://api.github.com/repos/TypiCMS/Tags/zipball/05eb0fc57ce100cf03b3c518beb7b6ab53818991",
+                "reference": "05eb0fc57ce100cf03b3c518beb7b6ab53818991",
                 "shasum": ""
             },
             "require": {
@@ -7496,7 +7496,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Tags/issues",
-                "source": "https://github.com/TypiCMS/Tags/tree/9.0.8"
+                "source": "https://github.com/TypiCMS/Tags/tree/9.0.9"
             },
             "funding": [
                 {
@@ -7504,20 +7504,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T13:54:22+00:00"
+            "time": "2021-11-09T20:28:58+00:00"
         },
         {
             "name": "typicms/translations",
-            "version": "9.0.6",
+            "version": "9.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Translations.git",
-                "reference": "33034a2ed0711a66c8c836b14017ad3039398a26"
+                "reference": "330ed19496e7f480d9cde7eb83cf15d6725ba9d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/33034a2ed0711a66c8c836b14017ad3039398a26",
-                "reference": "33034a2ed0711a66c8c836b14017ad3039398a26",
+                "url": "https://api.github.com/repos/TypiCMS/Translations/zipball/330ed19496e7f480d9cde7eb83cf15d6725ba9d4",
+                "reference": "330ed19496e7f480d9cde7eb83cf15d6725ba9d4",
                 "shasum": ""
             },
             "require": {
@@ -7541,7 +7541,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Translations/issues",
-                "source": "https://github.com/TypiCMS/Translations/tree/9.0.6"
+                "source": "https://github.com/TypiCMS/Translations/tree/9.0.7"
             },
             "funding": [
                 {
@@ -7549,20 +7549,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T22:13:33+00:00"
+            "time": "2021-11-09T20:29:24+00:00"
         },
         {
             "name": "typicms/users",
-            "version": "9.0.13",
+            "version": "9.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Users.git",
-                "reference": "cca4cc812b87f641112acc731d4fc38a9b40564d"
+                "reference": "2500f6988356a7e1c818fd655375cb20500cc177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/cca4cc812b87f641112acc731d4fc38a9b40564d",
-                "reference": "cca4cc812b87f641112acc731d4fc38a9b40564d",
+                "url": "https://api.github.com/repos/TypiCMS/Users/zipball/2500f6988356a7e1c818fd655375cb20500cc177",
+                "reference": "2500f6988356a7e1c818fd655375cb20500cc177",
                 "shasum": ""
             },
             "require": {
@@ -7586,7 +7586,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Users/issues",
-                "source": "https://github.com/TypiCMS/Users/tree/9.0.13"
+                "source": "https://github.com/TypiCMS/Users/tree/9.0.14"
             },
             "funding": [
                 {
@@ -7594,7 +7594,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-08T20:03:27+00:00"
+            "time": "2021-11-09T20:29:30+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
