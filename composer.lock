@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7b8ad111a22764c081b4de781c32266",
+    "content-hash": "7999e85e442c3be76db96c32923463a5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3589,30 +3589,30 @@
         },
         {
             "name": "psr/log",
-            "version": "2.0.0",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "ef29f6d262798707a9edd554e2b82517ef3a9376"
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/ef29f6d262798707a9edd554e2b82517ef3a9376",
-                "reference": "ef29f6d262798707a9edd554e2b82517ef3a9376",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.0"
+                "php": ">=5.3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Psr\\Log\\": "src"
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3633,9 +3633,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/2.0.0"
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
-            "time": "2021-07-14T16:41:46+00:00"
+            "time": "2021-05-03T11:20:27+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -4136,16 +4136,16 @@
         },
         {
             "name": "spatie/laravel-query-builder",
-            "version": "3.6.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-query-builder.git",
-                "reference": "03d8e1307dcb58b16fcc9c4947633fc60ae74802"
+                "reference": "712b3fab3b5835c90f35052ba4bfa93f66d3d4bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/03d8e1307dcb58b16fcc9c4947633fc60ae74802",
-                "reference": "03d8e1307dcb58b16fcc9c4947633fc60ae74802",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/712b3fab3b5835c90f35052ba4bfa93f66d3d4bb",
+                "reference": "712b3fab3b5835c90f35052ba4bfa93f66d3d4bb",
                 "shasum": ""
             },
             "require": {
@@ -4156,6 +4156,7 @@
             },
             "require-dev": {
                 "ext-json": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
                 "laravel/legacy-factories": "^1.0.4",
                 "mockery/mockery": "^1.4",
                 "orchestra/testbench": "^4.9|^5.8|^6.3",
@@ -4202,7 +4203,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-09-06T08:03:10+00:00"
+            "time": "2021-10-27T14:48:58+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
