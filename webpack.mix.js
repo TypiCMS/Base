@@ -31,6 +31,7 @@ mix.copy('node_modules/ckeditor4/lang/en.js', 'public/components/ckeditor4/lang/
  * Copy CKEditor plugins files
  */
 var plugins = [
+    'clipboard',
     'dialog',
     'dialogadvtab',
     'div',
@@ -43,6 +44,7 @@ var plugins = [
     'magicline',
     'panelbutton',
     'pastefromgdocs',
+    'pastefromlibreoffice',
     'pastefromword',
     'pastetools',
     'scayt',
