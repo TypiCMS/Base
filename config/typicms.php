@@ -1,5 +1,7 @@
 <?php
 
+use TypiCMS\Modules\Pages\Models\Page;
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -75,12 +77,26 @@ return [
     |
     */
     'search' => [
+        'linkable_to_page' => true,
+        'pages' => [
+            'model' => Page::class,
+            'columns' => [
+                'title',
+                'body',
+            ],
+        ],
         // 'news' => [
-        //     'model' => 'TypiCMS\Modules\News\Models\News',
+        //     'model' => News::class,
         //     'columns' => [
         //         'title',
         //         'body',
         //     ],
         // ],
+    ],
+
+    'modules' => [
+        'news' => [
+            // 'per_page' => 30
+        ],
     ],
 ];
