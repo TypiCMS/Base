@@ -1,7 +1,9 @@
 <?php
 
 return [
+
     'models' => [
+
         /*
          * When using the "HasPermissions" trait from this package, we need to know which
          * Eloquent model should be used to retrieve your permissions. Of course, it
@@ -22,10 +24,12 @@ return [
          * `Spatie\Permission\Contracts\Role` contract.
          */
 
-        'role' => TypiCMS\Modules\Roles\Models\Role::class,
+        'role' => Spatie\Permission\Models\Role::class,
+
     ],
 
     'table_names' => [
+
         /*
          * When using the "HasRoles" trait from this package, we need to know which
          * table should be used to retrieve your roles. We have chosen a basic
@@ -48,7 +52,7 @@ return [
          * basic default value but you may easily change it to any table you like.
          */
 
-        'model_has_permissions' => 'permission_user',
+        'model_has_permissions' => 'model_has_permissions',
 
         /*
          * When using the "HasRoles" trait from this package, we need to know which
@@ -56,7 +60,7 @@ return [
          * basic default value but you may easily change it to any table you like.
          */
 
-        'model_has_roles' => 'role_user',
+        'model_has_roles' => 'model_has_roles',
 
         /*
          * When using the "HasRoles" trait from this package, we need to know which
@@ -64,7 +68,7 @@ return [
          * basic default value but you may easily change it to any table you like.
          */
 
-        'role_has_permissions' => 'permission_role',
+        'role_has_permissions' => 'role_has_permissions',
     ],
 
     'column_names' => [
@@ -91,6 +95,13 @@ return [
 
         'team_foreign_key' => 'team_id',
     ],
+
+    /*
+     * When set to true, the method for checking permissions will be registered on the gate.
+     * Set this to false, if you want to implement custom logic for checking permissions.
+     */
+
+    'register_permission_check_method' => true,
 
     /*
      * When set to true the package implements teams using the 'team_foreign_key'. If you want
@@ -125,6 +136,7 @@ return [
     'enable_wildcard_permission' => false,
 
     'cache' => [
+
         /*
          * By default all permissions are cached for 24 hours to speed up performance.
          * When permissions or roles are updated the cache is flushed automatically.
