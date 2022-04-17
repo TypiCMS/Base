@@ -66,7 +66,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => TypiCMS\Modules\Users\Models\User::class,
+            'model' => TypiCMS\Modules\Core\Models\User::class,
         ],
 
         // 'users' => [
