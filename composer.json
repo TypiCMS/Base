@@ -39,10 +39,10 @@
         "laracasts/presenter": "^0.2.5",
         "laracasts/utilities": "^3.2",
         "laravel/framework": "^9.2",
+        "laravel/sanctum": "^2.15",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.0",
         "laravelium/feed": "dev-master",
-        "ultrono/laravel-sitemap": "^9.0",
         "maatwebsite/excel": "^3.1",
         "maatwebsite/laravel-sidebar": "~1.1.6",
         "msurguy/honeypot": "~1.1.5",
@@ -54,7 +54,8 @@
         "typicms/laravel-translatable-bootforms": "^6.0",
         "typicms/nestablecollection": "dev-master",
         "typicms/objects": "dev-master",
-        "typidesign/laravel-artisan-translations": "~1.0.4"
+        "typidesign/laravel-artisan-translations": "~1.0.4",
+        "ultrono/laravel-sitemap": "^9.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
