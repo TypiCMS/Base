@@ -1,3 +1,3 @@
 <a class="nav-sidebar-item-append" href="{{ $append->route }}">
-    <i class="{{ $append->icon ?? 'fa fa-plus' }}"></i>
+    <span class="nav-sidebar-item-append-icon">+</span>
 </a>
