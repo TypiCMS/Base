@@ -167,6 +167,7 @@ return [
          */
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
+        Msurguy\Honeypot\HoneypotServiceProvider::class,
         Typidesign\Translations\ArtisanTranslationsServiceProvider::class,
         TypiCMS\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
         TypiCMS\Modules\Core\Providers\TranslationsServiceProvider::class,
@@ -205,6 +206,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Honeypot' => Msurguy\Honeypot\HoneypotFacade::class,
         'TypiCMS' => TypiCMS\Modules\Core\Facades\TypiCMS::class,
         'BootForm' => TypiCMS\BootForms\Facades\BootForm::class,
         'Form' => TypiCMS\Form\Facades\Form::class,
