@@ -1,19 +1,19 @@
 {
     "private": true,
     "scripts": {
-        "dev": "mix",
+        "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
-        "prod": "mix --production",
+        "prod": "npm run production",
         "production": "mix --production"
     },
     "devDependencies": {
         "@fancyapps/fancybox": "^3.5.7",
         "@popperjs/core": "^2.9.1",
         "alertify.js": "^1.0",
-        "axios": "^0.24",
+        "axios": "^0.25",
         "bootstrap": "^5.0",
         "browser-sync": "^2.26",
         "browser-sync-webpack-plugin": "^2.3",
