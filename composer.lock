@@ -2089,16 +2089,16 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/mime-type-detection.git",
-                "reference": "3e4a35d756eedc67096f30240a68a3149120dae7"
+                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/3e4a35d756eedc67096f30240a68a3149120dae7",
-                "reference": "3e4a35d756eedc67096f30240a68a3149120dae7",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
+                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
                 "shasum": ""
             },
             "require": {
@@ -2129,7 +2129,7 @@
             "description": "Mime-type detection for Flysystem",
             "support": {
                 "issues": "https://github.com/thephpleague/mime-type-detection/issues",
-                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.10.0"
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.11.0"
             },
             "funding": [
                 {
@@ -2141,7 +2141,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-11T12:49:04+00:00"
+            "time": "2022-04-17T13:12:02+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -6382,12 +6382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "282004a3d9be6cf2d441d3177968adfb67c690d4"
+                "reference": "91dae285f481812454a05d4ace2f8d48ca1c260e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/282004a3d9be6cf2d441d3177968adfb67c690d4",
-                "reference": "282004a3d9be6cf2d441d3177968adfb67c690d4",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/91dae285f481812454a05d4ace2f8d48ca1c260e",
+                "reference": "91dae285f481812454a05d4ace2f8d48ca1c260e",
                 "shasum": ""
             },
             "require": {
@@ -6420,7 +6420,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-17T07:45:41+00:00"
+            "time": "2022-04-17T15:20:55+00:00"
         },
         {
             "name": "typicms/form",
