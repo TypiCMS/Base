@@ -20,55 +20,49 @@
         {
             "type": "vcs",
             "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/toyi/croppa.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/carbonvader/laravel-feed.git"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
-        "bkwld/croppa": "^4.10",
-        "eluceo/ical": "^0.16.0",
-        "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.0",
-        "genealabs/laravel-model-caching": "^0.11.0",
-        "guzzlehttp/guzzle": "^7.0.1",
-        "laracasts/presenter": "^0.2.4",
+        "php": "^8.0.2",
+        "bkwld/croppa": "^5.0",
+        "eluceo/ical": "^2.5",
+        "genealabs/laravel-model-caching": "^0.12.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "laracasts/presenter": "^0.2.5",
         "laracasts/utilities": "^3.2",
-        "laravel/framework": "^8.12",
-        "laravel/tinker": "^2.5",
+        "laravel/framework": "^9.2",
+        "laravel/tinker": "^2.7",
         "laravel/ui": "^3.0",
-        "laravelium/feed": "^8.0",
-        "laravelium/sitemap": "^8.0",
+        "laravelium/feed": "dev-master",
+        "ultrono/laravel-sitemap": "^9.0",
         "maatwebsite/excel": "^3.1",
         "maatwebsite/laravel-sidebar": "~1.1.6",
         "msurguy/honeypot": "~1.1.5",
-        "spatie/eloquent-sortable": "^3.9",
+        "spatie/eloquent-sortable": "^4.0",
         "spatie/laravel-permission": "^5.1",
-        "spatie/laravel-query-builder": "^4.0",
-        "spatie/laravel-translatable": "^4.4",
-        "typicms/blocks": "~9.0.0",
-        "typicms/core": "~9.0.0",
-        "typicms/dashboard": "~9.0.0",
-        "typicms/files": "~9.0.0",
-        "typicms/history": "~9.0.0",
+        "spatie/laravel-query-builder": "^5.0",
+        "spatie/laravel-translatable": "^6.0",
+        "typicms/core": "dev-master",
         "typicms/laravel-translatable-bootforms": "^6.0",
-        "typicms/menus": "~9.0.0",
-        "typicms/nestablecollection": "~1.1.15",
-        "typicms/objects": "~9.0.0",
-        "typicms/pages": "~9.0.0",
-        "typicms/roles": "~9.0.0",
-        "typicms/settings": "~9.0.0",
-        "typicms/sitemap": "~9.0.0",
-        "typicms/search": "~9.0.0",
-        "typicms/tags": "~9.0.0",
-        "typicms/translations": "~9.0.0",
-        "typicms/users": "~9.0.0",
+        "typicms/nestablecollection": "dev-master",
+        "typicms/objects": "dev-master",
         "typidesign/laravel-artisan-translations": "~1.0.4"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.5",
-        "facade/ignition": "^2.5",
-        "mockery/mockery": "^1.4.2",
-        "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3.3"
+        "barryvdh/laravel-debugbar": "^3.6",
+        "fakerphp/faker": "^1.9.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0"
     },
     "config": {
         "optimize-autoloader": true,
@@ -102,6 +96,9 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""

@@ -3,16 +3,22 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Illuminate\Session\TokenMismatchException;
-use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Throwable;
 
 class Handler extends ExceptionHandler
 {
     /**
+     * A list of exception types with their corresponding custom log levels.
+     *
+     * @var array<class-string<\Throwable>, \Psr\Log\LogLevel::*>
+     */
+    protected $levels = [
+    ];
+
+    /**
      * A list of the exception types that are not reported.
      *
-     * @var array
+     * @var array<int, class-string<\Throwable>>
      */
     protected $dontReport = [
     ];
@@ -20,7 +26,7 @@ class Handler extends ExceptionHandler
     /**
      * A list of the inputs that are never flashed for validation exceptions.
      *
-     * @var array
+     * @var array<int, string>
      */
     protected $dontFlash = [
         'current_password',
@@ -35,7 +41,7 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $exception)
     {
-        if ($this->shouldReport($exception) && app()->bound('sentry')) {
+        if (app()->bound('sentry') && $this->shouldReport($exception)) {
             app('sentry')->captureException($exception);
         }
 
@@ -43,52 +49,11 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Render an exception into an HTTP response.
-     *
-     * @param \Illuminate\Http\Request $request
-     *
-     * @throws \Throwable
-     *
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function render($request, Throwable $exception)
-    {
-        $locale = ($request->segment(1) === 'admin') ? config('typicms.admin_locale') : config('app.locale');
-
-        if ($exception instanceof TokenMismatchException) {
-            return redirect()
-                ->back()
-                ->withErrors(['token_error' => __('Sorry, your session has expired. Please refresh and try again.', [], $locale)])
-                ->withInput();
-        }
-
-        return parent::render($request, $exception);
-    }
-
-    /**
-     * Render the given HttpException.
-     *
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    protected function renderHttpException(HttpExceptionInterface $e)
-    {
-        $this->registerErrorViewPaths();
-
-        $status = $e->getStatusCode();
-        if (request()->segment(1) === 'admin' && view()->exists("errors::admin.{$status}")) {
-            return response()->view("errors::admin.{$status}", ['exception' => $e], $status, $e->getHeaders());
-        }
-        if (view()->exists("errors::{$status}")) {
-            return response()->view("errors::{$status}", ['exception' => $e], $status, $e->getHeaders());
-        }
-
-        return $this->convertExceptionToResponse($e);
-    }
-
-    /**
      * Register the exception handling callbacks for the application.
      */
     public function register()
     {
+        $this->reportable(function (Throwable $e) {
+        });
     }
 }
