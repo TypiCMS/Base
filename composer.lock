@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d4a23c2c430719351d77408110055b1",
+    "content-hash": "6db6c4822b6a691595c9aac5c971c0f7",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -2224,16 +2224,16 @@
         },
         {
             "name": "maatwebsite/laravel-sidebar",
-            "version": "1.1.8",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Sidebar.git",
-                "reference": "fe7ded6d62cec9874eeda68ce983448ecdf01797"
+                "reference": "abc230d855c06dfcd933a6b3d6d5bbad4081a700"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/fe7ded6d62cec9874eeda68ce983448ecdf01797",
-                "reference": "fe7ded6d62cec9874eeda68ce983448ecdf01797",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/abc230d855c06dfcd933a6b3d6d5bbad4081a700",
+                "reference": "abc230d855c06dfcd933a6b3d6d5bbad4081a700",
                 "shasum": ""
             },
             "require": {
@@ -2268,9 +2268,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.1.8"
+                "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.2.1"
             },
-            "time": "2021-11-08T19:46:49+00:00"
+            "time": "2022-04-18T09:34:42+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -6383,12 +6383,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "f3e840e549c798ff8636042c60868a60c66eec66"
+                "reference": "f67d37e24c92ffb5af3b271fd782b752a2180f14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f3e840e549c798ff8636042c60868a60c66eec66",
-                "reference": "f3e840e549c798ff8636042c60868a60c66eec66",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f67d37e24c92ffb5af3b271fd782b752a2180f14",
+                "reference": "f67d37e24c92ffb5af3b271fd782b752a2180f14",
                 "shasum": ""
             },
             "require": {
@@ -6421,7 +6421,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-17T15:36:51+00:00"
+            "time": "2022-04-18T09:15:30+00:00"
         },
         {
             "name": "typicms/form",
@@ -6622,12 +6622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "8064d6ba3f9aa9a0a4e392eeca97dd5696d3fa13"
+                "reference": "a97c468a56880f6d1ee4db51b6e5b811d3c77181"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/8064d6ba3f9aa9a0a4e392eeca97dd5696d3fa13",
-                "reference": "8064d6ba3f9aa9a0a4e392eeca97dd5696d3fa13",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/a97c468a56880f6d1ee4db51b6e5b811d3c77181",
+                "reference": "a97c468a56880f6d1ee4db51b6e5b811d3c77181",
                 "shasum": ""
             },
             "require": {
@@ -6655,7 +6655,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-17T07:47:57+00:00"
+            "time": "2022-04-18T09:21:25+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
