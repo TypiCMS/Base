@@ -2,6 +2,15 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 10.0.0 - 2022-xx-xx
+
+### Changed
+
+-   Tables name changed: permission_role to role_has_permissions, role_user to model_has_role, permission_user to model_has_permissions.
+-   Table primary keys are now big increments.
+-   Modules Pages, Menus, Users, Roles, Files, Tags, Taxonomies, Blocks, History, Setting, Translations are now part of Core.
+-   TypiCMS config file structure has changed.
+
 ## 9.0.17 - 2021-03-24
 
 ### Changed
