@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6db6c4822b6a691595c9aac5c971c0f7",
+    "content-hash": "2567ea29dac377856a9d1603352f5edd",
     "packages": [
         {
             "name": "bkwld/croppa",
-            "version": "dev-master",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TypiCMS/croppa.git",
-                "reference": "ba4c9d72ee52d4cf3ec5774f1b730cc1994478dd"
+                "url": "https://github.com/BKWLD/croppa.git",
+                "reference": "2fec6dc039b815f46ff1526dbba2fbc442a54815"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/croppa/zipball/ba4c9d72ee52d4cf3ec5774f1b730cc1994478dd",
-                "reference": "ba4c9d72ee52d4cf3ec5774f1b730cc1994478dd",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/2fec6dc039b815f46ff1526dbba2fbc442a54815",
+                "reference": "2fec6dc039b815f46ff1526dbba2fbc442a54815",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,6 @@
             "suggest": {
                 "ext-exif": "Required if you want to have Croppa auto-rotate images from devices like mobile phones based on exif meta data."
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -58,6 +57,7 @@
                     "Bkwld\\Croppa": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -68,9 +68,10 @@
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
             "support": {
-                "source": "https://github.com/TypiCMS/croppa/tree/master"
+                "issues": "https://github.com/BKWLD/croppa/issues",
+                "source": "https://github.com/BKWLD/croppa/tree/5.0.0"
             },
-            "time": "2022-04-17T19:34:57+00:00"
+            "time": "2022-04-18T22:31:56+00:00"
         },
         {
             "name": "brick/math",
@@ -1311,16 +1312,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.8.1",
+            "version": "v9.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9f468689964ac80b674a2fe71a56baa7e9e20493"
+                "reference": "4d5a07640891b772188d7737348886a0222737d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9f468689964ac80b674a2fe71a56baa7e9e20493",
-                "reference": "9f468689964ac80b674a2fe71a56baa7e9e20493",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/4d5a07640891b772188d7737348886a0222737d8",
+                "reference": "4d5a07640891b772188d7737348886a0222737d8",
                 "shasum": ""
             },
             "require": {
@@ -1486,7 +1487,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-04-12T15:43:03+00:00"
+            "time": "2022-04-19T15:01:23+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -2224,16 +2225,16 @@
         },
         {
             "name": "maatwebsite/laravel-sidebar",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Sidebar.git",
-                "reference": "abc230d855c06dfcd933a6b3d6d5bbad4081a700"
+                "reference": "452f789e5b34c1416c2dd55930b5782f5e129d73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/abc230d855c06dfcd933a6b3d6d5bbad4081a700",
-                "reference": "abc230d855c06dfcd933a6b3d6d5bbad4081a700",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/452f789e5b34c1416c2dd55930b5782f5e129d73",
+                "reference": "452f789e5b34c1416c2dd55930b5782f5e129d73",
                 "shasum": ""
             },
             "require": {
@@ -2268,9 +2269,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.2.1"
+                "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.2.3"
             },
-            "time": "2022-04-18T09:34:42+00:00"
+            "time": "2022-04-19T11:58:24+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -6383,12 +6384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "f67d37e24c92ffb5af3b271fd782b752a2180f14"
+                "reference": "45ffd9584f717297dfe9940b98e8428e1df2da35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f67d37e24c92ffb5af3b271fd782b752a2180f14",
-                "reference": "f67d37e24c92ffb5af3b271fd782b752a2180f14",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/45ffd9584f717297dfe9940b98e8428e1df2da35",
+                "reference": "45ffd9584f717297dfe9940b98e8428e1df2da35",
                 "shasum": ""
             },
             "require": {
@@ -6421,7 +6422,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-18T09:15:30+00:00"
+            "time": "2022-04-19T20:28:44+00:00"
         },
         {
             "name": "typicms/form",
@@ -6622,12 +6623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "a97c468a56880f6d1ee4db51b6e5b811d3c77181"
+                "reference": "c37e68c07b389b7c391d72d46cff5382d5a91459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/a97c468a56880f6d1ee4db51b6e5b811d3c77181",
-                "reference": "a97c468a56880f6d1ee4db51b6e5b811d3c77181",
+                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/c37e68c07b389b7c391d72d46cff5382d5a91459",
+                "reference": "c37e68c07b389b7c391d72d46cff5382d5a91459",
                 "shasum": ""
             },
             "require": {
@@ -6655,7 +6656,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-18T09:21:25+00:00"
+            "time": "2022-04-19T19:35:27+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -9850,7 +9851,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "bkwld/croppa": 20,
         "laravelium/feed": 20,
         "typicms/core": 20,
         "typicms/nestablecollection": 20,
