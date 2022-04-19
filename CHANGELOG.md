@@ -4,6 +4,10 @@ All notable changes to TypiCMS will be documented in this file.
 
 ## 10.0.0 - 2022-xx-xx
 
+### Added
+
+-   User impersonation
+
 ### Changed
 
 -   Tables name changed: permission_role to role_has_permissions, role_user to model_has_role, permission_user to model_has_permissions.
