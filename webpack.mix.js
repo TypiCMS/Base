@@ -54,7 +54,6 @@ var plugins = [
     'tableselection',
     'tabletools',
     'widget',
-    'wsc',
 ];
 plugins.forEach(function (plugin) {
     mix.copy('node_modules/ckeditor4/plugins/' + plugin, 'public/components/ckeditor4/plugins/' + plugin);
