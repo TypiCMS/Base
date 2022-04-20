@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2567ea29dac377856a9d1603352f5edd",
+    "content-hash": "5739a3bb8636fb2c5bd617b9844f545e",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -6384,12 +6384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "45ffd9584f717297dfe9940b98e8428e1df2da35"
+                "reference": "859d178793d1951c8c1a42b59996468b3e3c0e2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/45ffd9584f717297dfe9940b98e8428e1df2da35",
-                "reference": "45ffd9584f717297dfe9940b98e8428e1df2da35",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/859d178793d1951c8c1a42b59996468b3e3c0e2f",
+                "reference": "859d178793d1951c8c1a42b59996468b3e3c0e2f",
                 "shasum": ""
             },
             "require": {
@@ -6422,7 +6422,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-19T20:28:44+00:00"
+            "time": "2022-04-20T10:41:23+00:00"
         },
         {
             "name": "typicms/form",
@@ -6618,17 +6618,17 @@
             "time": "2022-03-09T07:57:07+00:00"
         },
         {
-            "name": "typicms/objects",
+            "name": "typicms/things",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TypiCMS/Objects.git",
-                "reference": "c37e68c07b389b7c391d72d46cff5382d5a91459"
+                "url": "https://github.com/TypiCMS/Things.git",
+                "reference": "6d68b76226484d49ea33e126b1703f214b75a81c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Objects/zipball/c37e68c07b389b7c391d72d46cff5382d5a91459",
-                "reference": "c37e68c07b389b7c391d72d46cff5382d5a91459",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/6d68b76226484d49ea33e126b1703f214b75a81c",
+                "reference": "6d68b76226484d49ea33e126b1703f214b75a81c",
                 "shasum": ""
             },
             "require": {
@@ -6647,8 +6647,8 @@
                 }
             ],
             "support": {
-                "issues": "https://github.com/TypiCMS/Objects/issues",
-                "source": "https://github.com/TypiCMS/Objects/tree/master"
+                "issues": "https://github.com/TypiCMS/Things/issues",
+                "source": "https://github.com/TypiCMS/Things/tree/master"
             },
             "funding": [
                 {
@@ -6656,27 +6656,26 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-19T19:35:27+00:00"
+            "time": "2022-04-20T10:21:58+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
-            "version": "1.0.4",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typidesign/laravel-artisan-translations.git",
-                "reference": "c19366cdadd916d24bc53dde78b590076ca7fd87"
+                "reference": "a9f0a6dab980c19f899ec8952a431000140befb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typidesign/laravel-artisan-translations/zipball/c19366cdadd916d24bc53dde78b590076ca7fd87",
-                "reference": "c19366cdadd916d24bc53dde78b590076ca7fd87",
+                "url": "https://api.github.com/repos/typidesign/laravel-artisan-translations/zipball/a9f0a6dab980c19f899ec8952a431000140befb6",
+                "reference": "a9f0a6dab980c19f899ec8952a431000140befb6",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0|^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "illuminate/console": "^9.0",
+                "illuminate/filesystem": "^9.0",
+                "php": "^8.0.2"
             },
             "type": "library",
             "extra": {
@@ -6711,9 +6710,9 @@
             ],
             "support": {
                 "issues": "https://github.com/typidesign/laravel-artisan-translations/issues",
-                "source": "https://github.com/typidesign/laravel-artisan-translations/tree/1.0.4"
+                "source": "https://github.com/typidesign/laravel-artisan-translations/tree/2.0.0"
             },
-            "time": "2021-03-23T09:54:51+00:00"
+            "time": "2022-04-20T10:11:54+00:00"
         },
         {
             "name": "ultrono/laravel-sitemap",
@@ -9854,7 +9853,7 @@
         "laravelium/feed": 20,
         "typicms/core": 20,
         "typicms/nestablecollection": 20,
-        "typicms/objects": 20
+        "typicms/things": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
