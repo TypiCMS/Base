@@ -41,7 +41,6 @@ class Kernel extends HttpKernel
 
         'public' => [
             'web',
-            \TypiCMS\Modules\Core\Http\Middleware\AddLocaleToRootUrl::class,
             \TypiCMS\Modules\Core\Http\Middleware\VerifyLocalizedUrl::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUrl::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale::class,
