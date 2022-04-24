@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cecd3769533be6eefea701082abec2f6",
+    "content-hash": "4b30e6b27c6da35244ec148138a818e3",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -2147,16 +2147,16 @@
         },
         {
             "name": "maatwebsite/excel",
-            "version": "3.1.38",
+            "version": "3.1.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SpartnerNL/Laravel-Excel.git",
-                "reference": "dff132ce4d30b19863f4e84de1613fca99604992"
+                "reference": "5165334de44c6f7788a5818a1d019aa71a43e092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/zipball/dff132ce4d30b19863f4e84de1613fca99604992",
-                "reference": "dff132ce4d30b19863f4e84de1613fca99604992",
+                "url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/zipball/5165334de44c6f7788a5818a1d019aa71a43e092",
+                "reference": "5165334de44c6f7788a5818a1d019aa71a43e092",
                 "shasum": ""
             },
             "require": {
@@ -2209,7 +2209,7 @@
             ],
             "support": {
                 "issues": "https://github.com/SpartnerNL/Laravel-Excel/issues",
-                "source": "https://github.com/SpartnerNL/Laravel-Excel/tree/3.1.38"
+                "source": "https://github.com/SpartnerNL/Laravel-Excel/tree/3.1.39"
             },
             "funding": [
                 {
@@ -2221,7 +2221,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-24T16:00:29+00:00"
+            "time": "2022-04-23T11:44:18+00:00"
         },
         {
             "name": "maatwebsite/laravel-sidebar",
@@ -2974,16 +2974,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.22.0",
+            "version": "1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "3a9e29b4f386a08a151a33578e80ef1747037a48"
+                "reference": "21e4cf62699eebf007db28775f7d1554e612ed9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/3a9e29b4f386a08a151a33578e80ef1747037a48",
-                "reference": "3a9e29b4f386a08a151a33578e80ef1747037a48",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/21e4cf62699eebf007db28775f7d1554e612ed9e",
+                "reference": "21e4cf62699eebf007db28775f7d1554e612ed9e",
                 "shasum": ""
             },
             "require": {
@@ -3007,7 +3007,7 @@
                 "php": "^7.3 || ^8.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
-                "psr/simple-cache": "^1.0"
+                "psr/simple-cache": "^1.0 || ^2.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
@@ -3072,9 +3072,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.22.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.23.0"
             },
-            "time": "2022-02-18T12:57:07+00:00"
+            "time": "2022-04-24T13:53:10+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -3462,25 +3462,25 @@
         },
         {
             "name": "psr/simple-cache",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+                "reference": "8707bf3cea6f710bf6ef05491234e3ab06f6432a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/8707bf3cea6f710bf6ef05491234e3ab06f6432a",
+                "reference": "8707bf3cea6f710bf6ef05491234e3ab06f6432a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=8.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -3495,7 +3495,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interfaces for simple caching",
@@ -3507,9 +3507,9 @@
                 "simple-cache"
             ],
             "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/master"
+                "source": "https://github.com/php-fig/simple-cache/tree/2.0.0"
             },
-            "time": "2017-10-23T01:57:42+00:00"
+            "time": "2021-10-29T13:22:09+00:00"
         },
         {
             "name": "psy/psysh",
@@ -6544,26 +6544,28 @@
         },
         {
             "name": "typicms/bootforms",
-            "version": "3.0.1",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/bootforms.git",
-                "reference": "bcdf17c53deedf29c19f95cf2ed80ffcf469095a"
+                "reference": "4bd74c88acde53c75bea6d8ebaa5646c4e3631bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/bcdf17c53deedf29c19f95cf2ed80ffcf469095a",
-                "reference": "bcdf17c53deedf29c19f95cf2ed80ffcf469095a",
+                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/4bd74c88acde53c75bea6d8ebaa5646c4e3631bd",
+                "reference": "4bd74c88acde53c75bea6d8ebaa5646c4e3631bd",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0",
-                "typicms/form": "^2.0.0"
+                "php": "^8.0.2",
+                "typicms/form": "^3.0.0"
             },
             "require-dev": {
-                "mockery/mockery": "1.3.1",
-                "php-coveralls/php-coveralls": "2.0.*",
-                "phpunit/phpunit": "~4.0"
+                "mockery/mockery": "^1.4.4",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^7.4",
+                "php-coveralls/php-coveralls": "~2.5.2",
+                "phpunit/phpunit": "^9.5.10"
             },
             "type": "library",
             "extra": {
@@ -6574,8 +6576,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "TypiCMS\\BootForms": "src/"
+                "psr-4": {
+                    "TypiCMS\\BootForms\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -6595,7 +6597,7 @@
             "description": "Just a Formbuilder with some Bootstrap 5 specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
             "support": {
                 "issues": "https://github.com/TypiCMS/bootforms/issues",
-                "source": "https://github.com/TypiCMS/bootforms/tree/3.0.1"
+                "source": "https://github.com/TypiCMS/bootforms/tree/4.0.0"
             },
             "funding": [
                 {
@@ -6603,7 +6605,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-06T11:59:26+00:00"
+            "time": "2022-04-24T16:24:10+00:00"
         },
         {
             "name": "typicms/core",
@@ -6611,12 +6613,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "77103adc886f7807bed0f64d5784a7d887499b6d"
+                "reference": "d5f9d2c3a802abc6893546378e4a921b464dc763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/77103adc886f7807bed0f64d5784a7d887499b6d",
-                "reference": "77103adc886f7807bed0f64d5784a7d887499b6d",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/d5f9d2c3a802abc6893546378e4a921b464dc763",
+                "reference": "d5f9d2c3a802abc6893546378e4a921b464dc763",
                 "shasum": ""
             },
             "require": {
@@ -6649,30 +6651,32 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-20T13:01:00+00:00"
+            "time": "2022-04-22T09:57:36+00:00"
         },
         {
             "name": "typicms/form",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/form.git",
-                "reference": "3c0b846b8b2196602778274c3328f7fb29aa6e34"
+                "reference": "adae96b443e1c5be7c0e9838b39be615086f2d02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/form/zipball/3c0b846b8b2196602778274c3328f7fb29aa6e34",
-                "reference": "3c0b846b8b2196602778274c3328f7fb29aa6e34",
+                "url": "https://api.github.com/repos/TypiCMS/form/zipball/adae96b443e1c5be7c0e9838b39be615086f2d02",
+                "reference": "adae96b443e1c5be7c0e9838b39be615086f2d02",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": "^8.0.2"
             },
             "require-dev": {
-                "illuminate/support": ">=5.8",
-                "mockery/mockery": "1.3.1",
-                "php-coveralls/php-coveralls": "2.0.*",
-                "phpunit/phpunit": "4.*"
+                "illuminate/support": ">=9.0",
+                "mockery/mockery": "^1.4.4",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^7.4",
+                "php-coveralls/php-coveralls": "~2.5.2",
+                "phpunit/phpunit": "^9.5.10"
             },
             "type": "library",
             "extra": {
@@ -6683,8 +6687,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "TypiCMS\\Form": "src/"
+                "psr-4": {
+                    "TypiCMS\\Form\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -6704,7 +6708,7 @@
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
             "support": {
                 "issues": "https://github.com/TypiCMS/form/issues",
-                "source": "https://github.com/TypiCMS/form/tree/2.0.0"
+                "source": "https://github.com/TypiCMS/form/tree/3.0.0"
             },
             "funding": [
                 {
@@ -6712,33 +6716,34 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T11:44:00+00:00"
+            "time": "2022-04-24T16:31:26+00:00"
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
-            "version": "6.0.4",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
-                "reference": "f5a5aaacdd9d89fad893df1f9d6d6f073139daf9"
+                "reference": "a3df145645dd17663dc807b5da6e7d321d21ebab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/f5a5aaacdd9d89fad893df1f9d6d6f073139daf9",
-                "reference": "f5a5aaacdd9d89fad893df1f9d6d6f073139daf9",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/a3df145645dd17663dc807b5da6e7d321d21ebab",
+                "reference": "a3df145645dd17663dc807b5da6e7d321d21ebab",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": ">=5.8",
-                "php": ">=7.2.0",
-                "spatie/laravel-translatable": ">=2.2",
-                "typicms/bootforms": "^3.0.0",
-                "typicms/form": "^2.0.0"
+                "illuminate/support": ">=9.2",
+                "php": "^8.0.2",
+                "spatie/laravel-translatable": "^6.0",
+                "typicms/bootforms": "^4.0.0",
+                "typicms/form": "^3.0.0"
             },
             "require-dev": {
-                "orchestra/testbench": "~3.8.0",
-                "php-coveralls/php-coveralls": "~2.0.0",
-                "phpunit/phpunit": "~8.0"
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "~7.4.0",
+                "php-coveralls/php-coveralls": "~2.5.2",
+                "phpunit/phpunit": "^9.5.10"
             },
             "type": "library",
             "extra": {
@@ -6777,7 +6782,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/issues",
-                "source": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/tree/9.0.4"
+                "source": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/tree/7.0.0"
             },
             "funding": [
                 {
@@ -6785,7 +6790,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-09T20:27:43+00:00"
+            "time": "2022-04-24T16:34:56+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -6850,12 +6855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
-                "reference": "6dc720afe2fef19b674fe2ea39eb945acbb29e5d"
+                "reference": "9ccb94c3a9abc7de1118cbd901fc8002259d56ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/6dc720afe2fef19b674fe2ea39eb945acbb29e5d",
-                "reference": "6dc720afe2fef19b674fe2ea39eb945acbb29e5d",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/9ccb94c3a9abc7de1118cbd901fc8002259d56ab",
+                "reference": "9ccb94c3a9abc7de1118cbd901fc8002259d56ab",
                 "shasum": ""
             },
             "require": {
@@ -6883,7 +6888,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-20T11:44:18+00:00"
+            "time": "2022-04-22T07:59:11+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -9797,16 +9802,16 @@
         },
         {
             "name": "spatie/ignition",
-            "version": "1.2.7",
+            "version": "1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/ignition.git",
-                "reference": "2f059cf42b48f7c522efbba1c05ad59fc2c1a3f2"
+                "reference": "db25202fab2d5c14613b8914a1bb374998bbf870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/ignition/zipball/2f059cf42b48f7c522efbba1c05ad59fc2c1a3f2",
-                "reference": "2f059cf42b48f7c522efbba1c05ad59fc2c1a3f2",
+                "url": "https://api.github.com/repos/spatie/ignition/zipball/db25202fab2d5c14613b8914a1bb374998bbf870",
+                "reference": "db25202fab2d5c14613b8914a1bb374998bbf870",
                 "shasum": ""
             },
             "require": {
@@ -9863,7 +9868,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-29T08:48:34+00:00"
+            "time": "2022-04-23T20:37:21+00:00"
         },
         {
             "name": "spatie/laravel-ignition",
