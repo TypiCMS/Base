@@ -1,6 +1,6 @@
 <?php
 
-use TypiCMS\Modules\Pages\Models\Page;
+use TypiCMS\Modules\Core\Models\Page;
 
 return [
     /*
