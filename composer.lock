@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b30e6b27c6da35244ec148138a818e3",
+    "content-hash": "d6a402478973c937dcf15777cc65ff7a",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -1741,75 +1741,6 @@
                 "source": "https://github.com/laravel/ui/tree/v3.4.5"
             },
             "time": "2022-02-21T14:59:16+00:00"
-        },
-        {
-            "name": "laravelium/feed",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/carbonvader/laravel-feed.git",
-                "reference": "0a71b9b3dadcfbcae7fedd6e39bea10619df544c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/carbonvader/laravel-feed/zipball/0a71b9b3dadcfbcae7fedd6e39bea10619df544c",
-                "reference": "0a71b9b3dadcfbcae7fedd6e39bea10619df544c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/filesystem": "^9.0",
-                "illuminate/support": "^9.0",
-                "php": ">=7.3"
-            },
-            "require-dev": {
-                "laravel/framework": "^9.0",
-                "orchestra/testbench-core": "^6.0",
-                "phpunit/phpunit": "^9.3"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laravelium\\Feed\\FeedServiceProvider"
-                    ],
-                    "aliases": {
-                        "Feed": "Laravelium\\Feed\\Feed"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Laravelium\\Feed": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rumen Damyanov",
-                    "email": "r@alfamatter.com",
-                    "role": "Developer",
-                    "homepage": "https://darumen.com"
-                }
-            ],
-            "description": "Laravelium Feed package for Laravel.",
-            "homepage": "https://laravelium.com",
-            "keywords": [
-                "atom",
-                "feed",
-                "generator",
-                "laravel",
-                "laravelium",
-                "rss"
-            ],
-            "support": {
-                "issues": "https://github.com/Laravelium/laravel-feed/issues",
-                "source": "https://github.com/Laravelium/laravel-feed",
-                "wiki": "https://github.com/Laravelium/laravel-feed/wiki"
-            },
-            "time": "2022-01-19T15:54:48+00:00"
         },
         {
             "name": "league/commonmark",
@@ -3878,6 +3809,98 @@
                 }
             ],
             "time": "2022-01-21T08:32:41+00:00"
+        },
+        {
+            "name": "spatie/laravel-feed",
+            "version": "4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-feed.git",
+                "reference": "b9e9a48e15dad123bcbebe9c33e7416516d36a4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-feed/zipball/b9e9a48e15dad123bcbebe9c33e7416516d36a4b",
+                "reference": "b9e9a48e15dad123bcbebe9c33e7416516d36a4b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0|^9.0",
+                "illuminate/http": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.9"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.23|^7.0",
+                "phpunit/phpunit": "^9.5",
+                "spatie/phpunit-snapshot-assertions": "^4.2.7",
+                "spatie/test-time": "^1.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Feed\\FeedServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Feed\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jolita Grazyte",
+                    "email": "jolita@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Patrick Organ",
+                    "homepage": "https://github.com/patinthehat",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Generate rss feeds",
+            "homepage": "https://github.com/spatie/laravel-feed",
+            "keywords": [
+                "laravel",
+                "laravel-feed",
+                "rss",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/laravel-feed/tree/4.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-20T15:09:10+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -6613,12 +6636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "7cb28f6b259128b451dbf16827fb63e95f82583a"
+                "reference": "c705d7adc628c6ad3c74c1e279b5e5ce105e30f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/7cb28f6b259128b451dbf16827fb63e95f82583a",
-                "reference": "7cb28f6b259128b451dbf16827fb63e95f82583a",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/c705d7adc628c6ad3c74c1e279b5e5ce105e30f8",
+                "reference": "c705d7adc628c6ad3c74c1e279b5e5ce105e30f8",
                 "shasum": ""
             },
             "require": {
@@ -6651,7 +6674,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-25T15:03:59+00:00"
+            "time": "2022-04-25T18:48:00+00:00"
         },
         {
             "name": "typicms/form",
@@ -6659,12 +6682,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/form.git",
-                "reference": "adae96b443e1c5be7c0e9838b39be615086f2d02"
+                "reference": "8c9acc4530f65f5c2f785ac34650527c96fb6415"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/form/zipball/adae96b443e1c5be7c0e9838b39be615086f2d02",
-                "reference": "adae96b443e1c5be7c0e9838b39be615086f2d02",
+                "url": "https://api.github.com/repos/TypiCMS/form/zipball/8c9acc4530f65f5c2f785ac34650527c96fb6415",
+                "reference": "8c9acc4530f65f5c2f785ac34650527c96fb6415",
                 "shasum": ""
             },
             "require": {
@@ -6716,7 +6739,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-24T16:31:26+00:00"
+            "time": "2022-04-25T15:55:56+00:00"
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
@@ -6724,12 +6747,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
-                "reference": "a3df145645dd17663dc807b5da6e7d321d21ebab"
+                "reference": "ca4ae65c63406987908a21e88e4c45f67766dd97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/a3df145645dd17663dc807b5da6e7d321d21ebab",
-                "reference": "a3df145645dd17663dc807b5da6e7d321d21ebab",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/ca4ae65c63406987908a21e88e4c45f67766dd97",
+                "reference": "ca4ae65c63406987908a21e88e4c45f67766dd97",
                 "shasum": ""
             },
             "require": {
@@ -6790,7 +6813,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-24T16:34:56+00:00"
+            "time": "2022-04-25T15:08:50+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -10082,7 +10105,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "laravelium/feed": 20,
         "typicms/core": 20,
         "typicms/nestablecollection": 20,
         "typicms/things": 20
