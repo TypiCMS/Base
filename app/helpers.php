@@ -1,7 +1,7 @@
 <?php
 
 if (!function_exists('mb_ucfirst')) {
-    function mb_ucfirst($string, $encoding = 'UTF-8')
+    function mb_ucfirst(string $string, string $encoding = 'UTF-8'): string
     {
         $strlen = mb_strlen($string, $encoding);
         $firstChar = mb_substr($string, 0, 1, $encoding);
@@ -12,14 +12,14 @@ if (!function_exists('mb_ucfirst')) {
 }
 
 if (!function_exists('column')) {
-    function column($column)
+    function column(string $column): string
     {
         return $column.'->'.config('app.locale');
     }
 }
 
 if (!function_exists('locales')) {
-    function locales()
+    function locales(): array
     {
         return array_keys(config('typicms.locales'));
     }
