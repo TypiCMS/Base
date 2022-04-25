@@ -20,10 +20,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/carbonvader/laravel-feed.git"
         }
     ],
     "require": {
@@ -38,11 +34,11 @@
         "laravel/sanctum": "^2.15",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.0",
-        "laravelium/feed": "dev-master",
         "maatwebsite/excel": "^3.1",
         "maatwebsite/laravel-sidebar": "~1.2.1",
         "msurguy/honeypot": "~1.1.5",
         "spatie/eloquent-sortable": "^4.0",
+        "spatie/laravel-feed": "^4.1",
         "spatie/laravel-permission": "^5.1",
         "spatie/laravel-query-builder": "^5.0",
         "spatie/laravel-translatable": "^6.0",
