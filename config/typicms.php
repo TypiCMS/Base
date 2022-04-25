@@ -47,7 +47,6 @@ return [
     | Folder to find template files for pages.
     | This folder is a subfolder of /resources/views/vendor/pages
     |--------------------------------------------------------------------------
-    |
     */
     'template_dir' => 'public',
 
@@ -55,7 +54,6 @@ return [
     |--------------------------------------------------------------------------
     | If you use MariaDB, set this value to true
     |--------------------------------------------------------------------------
-    |
     */
     'mariadb' => false,
 
@@ -64,7 +62,6 @@ return [
     | The following IP’s can visit the website without login when
     | the website is protected by a login and a password.
     |--------------------------------------------------------------------------
-    |
     */
     'authorized_ips' => [
         // '127.0.0.1',
@@ -74,10 +71,8 @@ return [
     |--------------------------------------------------------------------------
     | Search engine configuration.
     |--------------------------------------------------------------------------
-    |
     */
     'search' => [
-        'linkable_to_page' => true,
         'pages' => [
             'model' => Page::class,
             'columns' => [
@@ -94,6 +89,11 @@ return [
         // ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Modules configuration.
+    |--------------------------------------------------------------------------
+    */
     'modules' => [
         'news' => [
             // 'per_page' => 30
