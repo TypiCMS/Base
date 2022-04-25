@@ -37,6 +37,8 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \TypiCMS\Modules\Core\Http\Middleware\Impersonate::class,
+            \TypiCMS\Modules\Core\Http\Middleware\SetNavbarLocale::class,
         ],
 
         'public' => [
@@ -51,7 +53,8 @@ class Kernel extends HttpKernel
             'web',
             'auth',
             \TypiCMS\Modules\Core\Http\Middleware\SetTranslatableFallbackLocaleToNull::class,
-            \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
+            \TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUser::class,
+            \TypiCMS\Modules\Core\Http\Middleware\SetContentLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
             \TypiCMS\Modules\Core\Http\Middleware\UserPrefs::class,
@@ -59,6 +62,7 @@ class Kernel extends HttpKernel
 
         'api' => [
             'throttle:api',
+            \TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUser::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
