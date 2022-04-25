@@ -191,7 +191,7 @@ return [
         /*
          * TypiCMS Core Service Provider...
          */
-        TypiCMS\Modules\Core\Providers\CoreServiceProvider::class,
+        TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,
     ],
 
     /*
