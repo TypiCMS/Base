@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6a402478973c937dcf15777cc65ff7a",
+    "content-hash": "501807d4a2a1d3953568f3a42da95ba9",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -1932,16 +1932,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.0.17",
+            "version": "3.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "29eb78cac0be0c22237c5e0f6f98234d97037d79"
+                "reference": "c8e137e594948240b03372e012344b07c61b9193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/29eb78cac0be0c22237c5e0f6f98234d97037d79",
-                "reference": "29eb78cac0be0c22237c5e0f6f98234d97037d79",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c8e137e594948240b03372e012344b07c61b9193",
+                "reference": "c8e137e594948240b03372e012344b07c61b9193",
                 "shasum": ""
             },
             "require": {
@@ -2002,7 +2002,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.0.17"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.0.18"
             },
             "funding": [
                 {
@@ -2018,7 +2018,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-14T14:57:13+00:00"
+            "time": "2022-04-25T18:55:04+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -6571,12 +6571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/bootforms.git",
-                "reference": "4bd74c88acde53c75bea6d8ebaa5646c4e3631bd"
+                "reference": "4756d194e12492a734755ed157b67ec1935178cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/4bd74c88acde53c75bea6d8ebaa5646c4e3631bd",
-                "reference": "4bd74c88acde53c75bea6d8ebaa5646c4e3631bd",
+                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/4756d194e12492a734755ed157b67ec1935178cb",
+                "reference": "4756d194e12492a734755ed157b67ec1935178cb",
                 "shasum": ""
             },
             "require": {
@@ -6628,11 +6628,11 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-24T16:24:10+00:00"
+            "time": "2022-04-25T20:58:33+00:00"
         },
         {
             "name": "typicms/core",
-            "version": "dev-master",
+            "version": "10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
@@ -6647,7 +6647,6 @@
             "require": {
                 "laravel/framework": "~9.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6666,7 +6665,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/master"
+                "source": "https://github.com/TypiCMS/Core/tree/10.0.0"
             },
             "funding": [
                 {
@@ -6682,12 +6681,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/form.git",
-                "reference": "8c9acc4530f65f5c2f785ac34650527c96fb6415"
+                "reference": "2dc5eb79b27beffd3fe57ce466140549dec6180a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/form/zipball/8c9acc4530f65f5c2f785ac34650527c96fb6415",
-                "reference": "8c9acc4530f65f5c2f785ac34650527c96fb6415",
+                "url": "https://api.github.com/repos/TypiCMS/form/zipball/2dc5eb79b27beffd3fe57ce466140549dec6180a",
+                "reference": "2dc5eb79b27beffd3fe57ce466140549dec6180a",
                 "shasum": ""
             },
             "require": {
@@ -6699,6 +6698,7 @@
                 "nunomaduro/larastan": "^2.0",
                 "orchestra/testbench": "^7.4",
                 "php-coveralls/php-coveralls": "~2.5.2",
+                "phpunit/php-code-coverage": "^9.2",
                 "phpunit/phpunit": "^9.5.10"
             },
             "type": "library",
@@ -6739,7 +6739,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-25T15:55:56+00:00"
+            "time": "2022-04-25T20:58:27+00:00"
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
@@ -6747,16 +6747,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
-                "reference": "ca4ae65c63406987908a21e88e4c45f67766dd97"
+                "reference": "94a5f3837225bbef592195bdc7514b8866b000fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/ca4ae65c63406987908a21e88e4c45f67766dd97",
-                "reference": "ca4ae65c63406987908a21e88e4c45f67766dd97",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/94a5f3837225bbef592195bdc7514b8866b000fa",
+                "reference": "94a5f3837225bbef592195bdc7514b8866b000fa",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": ">=9.2",
+                "illuminate/support": "~9.2",
                 "php": "^8.0.2",
                 "spatie/laravel-translatable": "^6.0",
                 "typicms/bootforms": "^4.0.0",
@@ -6813,27 +6813,32 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-25T15:08:50+00:00"
+            "time": "2022-04-26T07:17:41+00:00"
         },
         {
             "name": "typicms/nestablecollection",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/NestableCollection.git",
-                "reference": "a93c3f0d0aeec867185d6d66c1bc1da249d6e245"
+                "reference": "046b150b5154a943a504bdac195f174a7551a31f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/a93c3f0d0aeec867185d6d66c1bc1da249d6e245",
-                "reference": "a93c3f0d0aeec867185d6d66c1bc1da249d6e245",
+                "url": "https://api.github.com/repos/TypiCMS/NestableCollection/zipball/046b150b5154a943a504bdac195f174a7551a31f",
+                "reference": "046b150b5154a943a504bdac195f174a7551a31f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "~4.2|~5.0|~6.0|~7.0|~8.0|~9.0",
-                "illuminate/support": "~4.2|~5.0|~6.0|~7.0|~8.0|~9.0"
+                "illuminate/database": "~9.0",
+                "illuminate/support": "~9.0"
             },
-            "default-branch": true,
+            "require-dev": {
+                "illuminate/database": "~9.0",
+                "illuminate/support": "~9.0",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^7.4"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -6862,7 +6867,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/NestableCollection/issues",
-                "source": "https://github.com/TypiCMS/NestableCollection/tree/1.2.0"
+                "source": "https://github.com/TypiCMS/NestableCollection/tree/2.0.0"
             },
             "funding": [
                 {
@@ -6870,11 +6875,11 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-09T07:57:07+00:00"
+            "time": "2022-04-26T07:07:44+00:00"
         },
         {
             "name": "typicms/things",
-            "version": "dev-master",
+            "version": "10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
@@ -6889,7 +6894,6 @@
             "require": {
                 "laravel/framework": "~9.0"
             },
-            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -6903,7 +6907,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Things/issues",
-                "source": "https://github.com/TypiCMS/Things/tree/master"
+                "source": "https://github.com/TypiCMS/Things/tree/10.0.0"
             },
             "funding": [
                 {
@@ -10104,11 +10108,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "typicms/core": 20,
-        "typicms/nestablecollection": 20,
-        "typicms/things": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
