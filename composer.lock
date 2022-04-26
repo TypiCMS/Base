@@ -692,16 +692,16 @@
         },
         {
             "name": "genealabs/laravel-model-caching",
-            "version": "0.12.2",
+            "version": "0.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GeneaLabs/laravel-model-caching.git",
-                "reference": "3b03241cc9ce2770b94003dae2fdea65c70b877e"
+                "reference": "48db425452d2c3efb9e34d680ff28573f220241c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GeneaLabs/laravel-model-caching/zipball/3b03241cc9ce2770b94003dae2fdea65c70b877e",
-                "reference": "3b03241cc9ce2770b94003dae2fdea65c70b877e",
+                "url": "https://api.github.com/repos/GeneaLabs/laravel-model-caching/zipball/48db425452d2c3efb9e34d680ff28573f220241c",
+                "reference": "48db425452d2c3efb9e34d680ff28573f220241c",
                 "shasum": ""
             },
             "require": {
@@ -755,9 +755,9 @@
             "description": "Automatic caching for Eloquent models.",
             "support": {
                 "issues": "https://github.com/GeneaLabs/laravel-model-caching/issues",
-                "source": "https://github.com/GeneaLabs/laravel-model-caching/tree/0.12.2"
+                "source": "https://github.com/GeneaLabs/laravel-model-caching/tree/0.12.3"
             },
-            "time": "2022-03-08T09:29:59+00:00"
+            "time": "2022-04-26T14:46:24+00:00"
         },
         {
             "name": "genealabs/laravel-pivot-events",
@@ -6632,16 +6632,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "10.0.2",
+            "version": "10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "a409c0bdee2e054ccf10b45f9534026a308f5f2a"
+                "reference": "67fb3cb719fa18e46c25d12291fe5383c08d9f60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/a409c0bdee2e054ccf10b45f9534026a308f5f2a",
-                "reference": "a409c0bdee2e054ccf10b45f9534026a308f5f2a",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/67fb3cb719fa18e46c25d12291fe5383c08d9f60",
+                "reference": "67fb3cb719fa18e46c25d12291fe5383c08d9f60",
                 "shasum": ""
             },
             "require": {
@@ -6665,7 +6665,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/10.0.2"
+                "source": "https://github.com/TypiCMS/Core/tree/10.0.0"
             },
             "funding": [
                 {
@@ -6673,7 +6673,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-26T13:10:23+00:00"
+            "time": "2022-04-26T15:43:00+00:00"
         },
         {
             "name": "typicms/form",
