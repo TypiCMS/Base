@@ -2,11 +2,14 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
-## 10.0.0 - 2022-xx-xx
+## 10.0.0 - 2022-04-26
 
 ### Added
 
--   User impersonation
+-   Ability to impersonate users
+-   Translatable title field added to files
+-   Page sections templates
+-   Events module has a simple reservation system
 
 ### Changed
 
@@ -14,6 +17,7 @@ All notable changes to TypiCMS will be documented in this file.
 -   Table primary keys are now big increments.
 -   Modules Pages, Menus, Users, Roles, Files, Tags, Taxonomies, Blocks, History, Setting, Translations are now part of Core.
 -   TypiCMS config file structure has changed.
+-   laravelium/feed replaced by spatie/laravel-feed.
 
 ## 9.0.17 - 2021-03-24
 
