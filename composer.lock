@@ -506,16 +506,16 @@
         },
         {
             "name": "eluceo/ical",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/markuspoerschke/iCal.git",
-                "reference": "f9a74fefe5582f7e8444e0e87058e36c62e1b005"
+                "reference": "3bf16b2a4f9250184fd16b13cbf7771051e4e7b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/markuspoerschke/iCal/zipball/f9a74fefe5582f7e8444e0e87058e36c62e1b005",
-                "reference": "f9a74fefe5582f7e8444e0e87058e36c62e1b005",
+                "url": "https://api.github.com/repos/markuspoerschke/iCal/zipball/3bf16b2a4f9250184fd16b13cbf7771051e4e7b1",
+                "reference": "3bf16b2a4f9250184fd16b13cbf7771051e4e7b1",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +566,7 @@
                 "issues": "https://github.com/markuspoerschke/iCal/issues",
                 "source": "https://github.com/markuspoerschke/iCal"
             },
-            "time": "2022-02-13T19:32:24+00:00"
+            "time": "2022-04-26T12:14:20+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -6632,16 +6632,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "10.0.1",
+            "version": "10.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "5142ce95ffd66a815bc7843127f3ed4cb22da493"
+                "reference": "a409c0bdee2e054ccf10b45f9534026a308f5f2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/5142ce95ffd66a815bc7843127f3ed4cb22da493",
-                "reference": "5142ce95ffd66a815bc7843127f3ed4cb22da493",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/a409c0bdee2e054ccf10b45f9534026a308f5f2a",
+                "reference": "a409c0bdee2e054ccf10b45f9534026a308f5f2a",
                 "shasum": ""
             },
             "require": {
@@ -6665,7 +6665,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/10.0.1"
+                "source": "https://github.com/TypiCMS/Core/tree/10.0.2"
             },
             "funding": [
                 {
@@ -6673,7 +6673,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-26T10:16:16+00:00"
+            "time": "2022-04-26T13:10:23+00:00"
         },
         {
             "name": "typicms/form",
