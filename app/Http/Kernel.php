@@ -29,20 +29,16 @@ class Kernel extends HttpKernel
      * @var array<string, array<int, class-string|string>>
      */
     protected $middlewareGroups = [
-        'web' => [
+        'public' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
-            // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \TypiCMS\Modules\Core\Http\Middleware\Impersonate::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetNavbarLocale::class,
-        ],
 
-        'public' => [
-            'web',
             \TypiCMS\Modules\Core\Http\Middleware\VerifyLocalizedUrl::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUrl::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale::class,
@@ -50,12 +46,23 @@ class Kernel extends HttpKernel
         ],
 
         'admin' => [
-            'web',
-            'auth',
+            \App\Http\Middleware\EncryptCookies::class,
+            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            \Illuminate\Session\Middleware\StartSession::class,
+            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+            \App\Http\Middleware\VerifyCsrfToken::class,
+
             \TypiCMS\Modules\Core\Http\Middleware\SetTranslatableFallbackLocaleToNull::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUser::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetContentLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale::class,
+
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \TypiCMS\Modules\Core\Http\Middleware\Impersonate::class,
+            \TypiCMS\Modules\Core\Http\Middleware\SetNavbarLocale::class,
+
+            'auth',
+
             \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
             \TypiCMS\Modules\Core\Http\Middleware\UserPrefs::class,
         ],
