@@ -8,26 +8,20 @@ return [
     */
 
     /*
-     * The directory where source images are found. This is generally where your
-     * admin stores uploaded files. Can be either an absolute path to your local
-     * disk (the default) or the name of an IoC binding of a Flysystem instance.
-     *
-     * @var string		 Absolute path in local fileystem
-     *			| string	 IoC binding name of League\Flysystem\Filesystem
-     *			| string	 IoC binding name of League\Flysystem\Cached\CachedAdapter
+     * The disk where source images are found. This is generally where your
+     * admin stores uploaded files.
      */
-    'src_dir' => 'filesystem.default.driver',
+    'src_dir' => 'public',
 
     /*
-     * The directory where cropped images should be saved. The route to the
-     * cropped versions is what should be rendered in your markup; it must be a
-     * web accessible directory.
-     *
-     * @var string		 Absolute path in local fileystem
-     *			| string	 IoC binding name of League\Flysystem\Filesystem
-     *			| string	 IoC binding name of League\Flysystem\Cached\CachedAdapter
+     * The disk where cropped images will be saved.
      */
-    'crops_dir' => 'filesystem.default.driver',
+    'crops_dir' => 'public',
+
+    /*
+     * Set to true if your crop disk is a remote disk, like an S3 bucket.
+     */
+    'crops_are_remote' => false,
 
     /*
      * Maximum number of sizes to allow for a particular source file. This is to
@@ -85,7 +79,7 @@ return [
      * module, you can disable this feature by setting the `signing_key` config
      * to false.
      *
-     * @var string|boolean
+     * @var string | boolean
      */
     'signing_key' => 'app.key',
 

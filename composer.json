@@ -19,12 +19,16 @@
     "repositories": [
         {
             "type": "vcs",
+            "url": "https://github.com/TypiCMS/croppa.git"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
         }
     ],
     "require": {
         "php": "^8.0.2",
-        "bkwld/croppa": "^5.0",
+        "bkwld/croppa": "dev-master",
         "eluceo/ical": "^2.5",
         "genealabs/laravel-model-caching": "^0.12.0",
         "guzzlehttp/guzzle": "^7.2",
