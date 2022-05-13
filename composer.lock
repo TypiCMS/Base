@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81037b3fb4304c221d08395897325984",
+    "content-hash": "cefa2a9f8fcb6800bf4e0f6fd43dde6b",
     "packages": [
         {
             "name": "bkwld/croppa",
-            "version": "dev-master",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TypiCMS/croppa.git",
-                "reference": "822af4a4aa511339d8c412a5e3d8ed29e1d82ca2"
+                "url": "https://github.com/BKWLD/croppa.git",
+                "reference": "67febc12e6e6290abb4bc6fd6d8dbec1793af54f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/croppa/zipball/822af4a4aa511339d8c412a5e3d8ed29e1d82ca2",
-                "reference": "822af4a4aa511339d8c412a5e3d8ed29e1d82ca2",
+                "url": "https://api.github.com/repos/BKWLD/croppa/zipball/67febc12e6e6290abb4bc6fd6d8dbec1793af54f",
+                "reference": "67febc12e6e6290abb4bc6fd6d8dbec1793af54f",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,6 @@
             "suggest": {
                 "ext-exif": "Required if you want to have Croppa auto-rotate images from devices like mobile phones based on exif meta data."
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -58,6 +57,7 @@
                     "Bkwld\\Croppa": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -68,9 +68,10 @@
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
             "support": {
-                "source": "https://github.com/TypiCMS/croppa/tree/master"
+                "issues": "https://github.com/BKWLD/croppa/issues",
+                "source": "https://github.com/BKWLD/croppa/tree/5.1.0"
             },
-            "time": "2022-05-12T20:31:24+00:00"
+            "time": "2022-05-13T00:11:04+00:00"
         },
         {
             "name": "brick/math",
@@ -10121,9 +10122,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "bkwld/croppa": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
