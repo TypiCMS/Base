@@ -2,6 +2,16 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 10.0.6 - 2022-05-15
+
+### Added
+
+-   Support for WebP (Croppa 6 uses Intervention Image).
+
+### Changed
+
+-   Because of Bkwld/Croppa v6, you have to republish the config file by running `php artisan vendor:publish --tag=croppa-config`.
+
 ## 10.0.0 - 2022-04-27
 
 ### Added
