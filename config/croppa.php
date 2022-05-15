@@ -11,17 +11,12 @@ return [
      * The disk where source images are found. This is generally where your
      * admin stores uploaded files.
      */
-    'src_dir' => 'public',
+    'src_disk' => 'public',
 
     /*
      * The disk where cropped images will be saved.
      */
-    'crops_dir' => 'public',
-
-    /*
-     * Set to true if your crop disk is a remote disk, like an S3 bucket.
-     */
-    'crops_are_remote' => false,
+    'crops_disk' => 'public',
 
     /*
      * Maximum number of sizes to allow for a particular source file. This is to
@@ -42,9 +37,9 @@ return [
     /*
      * A regex pattern that is applied to both the src url passed to
      * `Croppa::url()` as well as the crop path received when handling a crop
-     * request to find the path to the src image relative to both the src_dir
-     * and crops_dirs. This path will be used to find the source image in the
-     * src_dir. The path component of the regex must exist in the first captured
+     * request to find the path to the src image relative to both the src_disk
+     * and crops_disks. This path will be used to find the source image in the
+     * src_disk. The path component of the regex must exist in the first captured
      * subpattern. In other words, in the `preg_match` $matches[1].
      *
      * @var string
@@ -61,13 +56,6 @@ return [
      * @var string
      */
     'ignore' => '\.(gif|GIF)$',
-
-    /*
-     * A string that is prepended to the path captured by the `path` pattern
-     * (above) that is used to from the URL to crops.
-     */
-    // 'url_prefix' => '//'.Request::getHttpHost().'/uploads/',         // Local
-    // 'url_prefix' => 'https://your-bucket.s3.amazonaws.com/uploads/', // S3
 
     /*
      * Reject attempts to maliciously create images by signing the generated
@@ -104,7 +92,7 @@ return [
      *
      * @var integer
      */
-    'jpeg_quality' => 75,
+    'quality' => 75,
 
     /*
      * Turn on interlacing to make progessive jpegs.
@@ -119,7 +107,7 @@ return [
      *
      * @var boolean
      */
-    'upscale' => true,
+    'upsize' => true,
 
     /*
      * Filters for adding additional GD effects to an image and using them as parameter
