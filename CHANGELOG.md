@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 10.0.9 - 2022-05-20
+
+### Changed
+
+-   Breaking change: In config/app.php, you have to move `TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,` above the **TypiCMS Modules Service Providers** and add `TypiCMS\Modules\Core\Providers\PagesRoutesServiceProvider::class,` at the end of the `providers` array.
+
 ## 10.0.6 - 2022-05-15
 
 ### Added
@@ -10,7 +16,8 @@ All notable changes to TypiCMS will be documented in this file.
 
 ### Changed
 
--   Because of Bkwld/Croppa v6, you have to republish the config file by running `php artisan vendor:publish --tag=croppa-config`.
+-   Breaking change: Because of Bkwld/Croppa v6, you have to republish the config file by running `php artisan vendor:publish --tag=croppa-config`.
+-   Breaking change: Croppa facade changed from `Bkwld\Croppa\Facade` to `Bkwld\Croppa\Facades\Croppa`.
 
 ## 10.0.0 - 2022-04-27
 
