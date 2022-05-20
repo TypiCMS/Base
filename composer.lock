@@ -2299,30 +2299,30 @@
         },
         {
             "name": "maennchen/zipstream-php",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "d900a051ce342d2090595e877c732db1722b88c2"
+                "reference": "211e9ba1530ea5260b45d90c9ea252f56ec52729"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/d900a051ce342d2090595e877c732db1722b88c2",
-                "reference": "d900a051ce342d2090595e877c732db1722b88c2",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/211e9ba1530ea5260b45d90c9ea252f56ec52729",
+                "reference": "211e9ba1530ea5260b45d90c9ea252f56ec52729",
                 "shasum": ""
             },
             "require": {
                 "myclabs/php-enum": "^1.5",
-                "php": "^8.0",
+                "php": "^7.4 || ^8.0",
                 "psr/http-message": "^1.0",
                 "symfony/polyfill-mbstring": "^1.0"
             },
             "require-dev": {
                 "ext-zip": "*",
-                "guzzlehttp/guzzle": "^7.2.0",
+                "guzzlehttp/guzzle": "^6.5.3 || ^7.2.0",
                 "mikey179/vfsstream": "^1.6",
                 "php-coveralls/php-coveralls": "^2.4",
-                "phpunit/phpunit": "^9.4.2",
+                "phpunit/phpunit": "^8.5.8 || ^9.4.2",
                 "vimeo/psalm": "^4.1"
             },
             "type": "library",
@@ -2360,7 +2360,7 @@
             ],
             "support": {
                 "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
-                "source": "https://github.com/maennchen/ZipStream-PHP/tree/2.2.0"
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/2.2.1"
             },
             "funding": [
                 {
@@ -2368,7 +2368,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-05-18T08:37:26+00:00"
+            "time": "2022-05-18T15:52:06+00:00"
         },
         {
             "name": "markbaker/complex",
@@ -6731,16 +6731,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "10.0.7",
+            "version": "10.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "f32bde16fd26951bdfd78b66625aba2c9615f52b"
+                "reference": "72f38d0121b007df60dadcdb80167607c6e6f7ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f32bde16fd26951bdfd78b66625aba2c9615f52b",
-                "reference": "f32bde16fd26951bdfd78b66625aba2c9615f52b",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/72f38d0121b007df60dadcdb80167607c6e6f7ff",
+                "reference": "72f38d0121b007df60dadcdb80167607c6e6f7ff",
                 "shasum": ""
             },
             "require": {
@@ -6764,7 +6764,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/10.0.7"
+                "source": "https://github.com/TypiCMS/Core/tree/10.0.8"
             },
             "funding": [
                 {
@@ -6772,7 +6772,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-18T11:02:09+00:00"
+            "time": "2022-05-20T11:44:39+00:00"
         },
         {
             "name": "typicms/form",
