@@ -173,6 +173,11 @@ return [
         TypiCMS\Modules\Core\Providers\TranslationsServiceProvider::class,
 
         /*
+         * TypiCMS Core Service Provider...
+         */
+        TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,
+
+        /*
          * TypiCMS Modules Service Providers.
          * Here is the place for your modules,
          * they should be set before Core Service provider.
@@ -189,9 +194,10 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /*
-         * TypiCMS Core Service Provider...
+         * Pages routes contain a catch all route,
+         * so it should stay at last...
          */
-        TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,
+        TypiCMS\Modules\Core\Providers\PagesRoutesServiceProvider::class,
     ],
 
     /*
