@@ -6,7 +6,7 @@ All notable changes to TypiCMS will be documented in this file.
 
 ### Changed
 
--   Breaking change: In config/app.php, you have to move `TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,` above the **TypiCMS Modules Service Providers** and add `TypiCMS\Modules\Core\Providers\PagesRoutesServiceProvider::class,` at the end of the `providers` array.
+-   Breaking change: In `config/app.php`, you have to move `TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,` above the _TypiCMS Modules Service Providers_ and add `TypiCMS\Modules\Core\Providers\PagesRoutesServiceProvider::class,` at the end of the `providers` array.
 
 ## 10.0.6 - 2022-05-15
 
