@@ -35,8 +35,8 @@ class Kernel extends HttpKernel
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \TypiCMS\Modules\Core\Http\Middleware\Impersonate::class,
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetNavbarLocale::class,
 
             \TypiCMS\Modules\Core\Http\Middleware\VerifyLocalizedUrl::class,
@@ -59,8 +59,8 @@ class Kernel extends HttpKernel
             \TypiCMS\Modules\Core\Http\Middleware\SetContentLocale::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale::class,
 
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \TypiCMS\Modules\Core\Http\Middleware\Impersonate::class,
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \TypiCMS\Modules\Core\Http\Middleware\SetNavbarLocale::class,
 
             \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
