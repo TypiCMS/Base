@@ -6751,16 +6751,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "10.0.15",
+            "version": "10.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "aeb2b917dfde9f132c14e81a1e0093aa7187544c"
+                "reference": "97e01a661308e85c18e4d47bf0a9806ae97fe637"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/aeb2b917dfde9f132c14e81a1e0093aa7187544c",
-                "reference": "aeb2b917dfde9f132c14e81a1e0093aa7187544c",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/97e01a661308e85c18e4d47bf0a9806ae97fe637",
+                "reference": "97e01a661308e85c18e4d47bf0a9806ae97fe637",
                 "shasum": ""
             },
             "require": {
@@ -6784,7 +6784,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/10.0.15"
+                "source": "https://github.com/TypiCMS/Core/tree/10.0.16"
             },
             "funding": [
                 {
@@ -6792,7 +6792,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-30T10:04:40+00:00"
+            "time": "2022-07-01T10:08:36+00:00"
         },
         {
             "name": "typicms/form",
@@ -7380,16 +7380,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.6.7",
+            "version": "v3.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "b96f9820aaf1ff9afe945207883149e1c7afb298"
+                "reference": "814b36a08a60f4159cdcbb1c466a6a0027440b6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/b96f9820aaf1ff9afe945207883149e1c7afb298",
-                "reference": "b96f9820aaf1ff9afe945207883149e1c7afb298",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/814b36a08a60f4159cdcbb1c466a6a0027440b6c",
+                "reference": "814b36a08a60f4159cdcbb1c466a6a0027440b6c",
                 "shasum": ""
             },
             "require": {
@@ -7449,7 +7449,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.6.7"
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.6.8"
             },
             "funding": [
                 {
@@ -7461,7 +7461,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-09T07:52:32+00:00"
+            "time": "2022-06-08T15:03:05+00:00"
         },
         {
             "name": "doctrine/instantiator",
