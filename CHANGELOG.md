@@ -2,6 +2,13 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 10.0.19 - 2022-07-01
+
+### Changed
+
+-   Vue.js 2.7
+-   Bootstrap 5.2 (you will have to add `@import '../../../node_modules/bootstrap/scss/maps';` in your bootstrap.scss files)
+
 ## 10.0.9 - 2022-05-20
 
 ### Changed
