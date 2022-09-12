@@ -382,16 +382,16 @@
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v3.3.1",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "be85b3f05b46c39bbc0d95f6c071ddff669510fa"
+                "reference": "782ca5968ab8b954773518e9e49a6f892a34b2a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/be85b3f05b46c39bbc0d95f6c071ddff669510fa",
-                "reference": "be85b3f05b46c39bbc0d95f6c071ddff669510fa",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/782ca5968ab8b954773518e9e49a6f892a34b2a8",
+                "reference": "782ca5968ab8b954773518e9e49a6f892a34b2a8",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +431,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dragonmantank/cron-expression/issues",
-                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.1"
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.2"
             },
             "funding": [
                 {
@@ -439,7 +439,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-18T15:43:28+00:00"
+            "time": "2022-09-10T18:51:20+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -6851,16 +6851,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "10.0.26",
+            "version": "10.0.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "1648f74e3d73979c90a0f1496a13c7f0a0eaaddf"
+                "reference": "a1afaf474380e793ad67baad972a6f4d8ccfdd0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/1648f74e3d73979c90a0f1496a13c7f0a0eaaddf",
-                "reference": "1648f74e3d73979c90a0f1496a13c7f0a0eaaddf",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/a1afaf474380e793ad67baad972a6f4d8ccfdd0a",
+                "reference": "a1afaf474380e793ad67baad972a6f4d8ccfdd0a",
                 "shasum": ""
             },
             "require": {
@@ -6884,7 +6884,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/10.0.26"
+                "source": "https://github.com/TypiCMS/Core/tree/10.0.27"
             },
             "funding": [
                 {
@@ -6892,7 +6892,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-10T13:35:31+00:00"
+            "time": "2022-09-12T08:40:54+00:00"
         },
         {
             "name": "typicms/form",
