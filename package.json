@@ -1,9 +1,10 @@
 {
     "private": true,
     "scripts": {
-        "dev": "npm run development",
+        "dev": "vite",
+        "build": "vite build",
         "development": "mix",
-        "watch": "mix watch",
+        "watch": "vite",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
@@ -23,6 +24,7 @@
         "dropzone": "^5.5",
         "jquery": "^3.3",
         "laravel-mix": "^6.0",
+        "laravel-vite-plugin": "^0.6.0",
         "lodash": "^4.17",
         "postcss": "^8.1",
         "postcss-loader": "^7.0",
@@ -32,6 +34,7 @@
         "sass-loader": "^13.0",
         "sl-vue-tree": "^1.8.2",
         "swiper": "^8.1",
+        "vite": "^3.0.0",
         "vue": "^2.7.0",
         "vue-i18n": "^8.4",
         "vue-loader": "^15.10.0",
