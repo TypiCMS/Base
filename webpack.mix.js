@@ -11,7 +11,6 @@ mix.sass('resources/scss/public.scss', 'public/css');
  * Compile JS
  */
 mix.js('resources/js/admin.js', 'public/js').vue();
-mix.js('resources/js/public.js', 'public/js');
 
 /**
  * Copy CKEditor main files
