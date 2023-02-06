@@ -1,3 +1,12 @@
 {
-    "preset": "psr12"
+    "preset": "psr12",
+    "rules": {
+        "@PhpCsFixer": true,
+        "mb_str_functions": true,
+        "modernize_types_casting": true,
+        "return_assignment": false,
+        "ordered_class_elements": false,
+        "single_line_comment_style": false,
+        "yoda_style": false
+    }
 }
