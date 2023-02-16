@@ -5,6 +5,7 @@ $config->setRules([
     '@PSR12' => true,
     '@PhpCsFixer' => true,
     'mb_str_functions' => true,
+    'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
     'modernize_types_casting' => true,
     'return_assignment' => false,
     'ordered_class_elements' => false,
