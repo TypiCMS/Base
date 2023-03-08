@@ -4,7 +4,6 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
-use Throwable;
 
 class Handler extends ExceptionHandler
 {
@@ -40,7 +39,7 @@ class Handler extends ExceptionHandler
      *
      * @throws \Throwable
      */
-    public function report(Throwable $exception)
+    public function report(\Throwable $exception)
     {
         if (app()->bound('sentry') && $this->shouldReport($exception)) {
             app('sentry')->captureException($exception);
@@ -81,7 +80,44 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
-        $this->reportable(function (Throwable $e) {
+        $this->reportable(function (\Throwable $e) {
+            if (app()->bound('sentry')) {
+                \Sentry\configureScope(function (\Sentry\State\Scope $scope): void {
+                    $scope->setUser($this->getUserInfo(), true);
+                });
+                app('sentry')->captureException($e);
+            }
         });
+    }
+
+    /**
+     * Get logged user info.
+     */
+    private function getUserInfo(): array
+    {
+        $guard = $this->activeGuard();
+
+        if ($user = auth($guard)->user()) {
+            return [
+                'id' => $guard.'-with-id-'.$user->id,
+                'email' => $user->email,
+            ];
+        }
+
+        return [];
+    }
+
+    /**
+     * Get the current guard.
+     */
+    private function activeGuard(): ?string
+    {
+        foreach (array_keys(config('auth.guards')) as $guard) {
+            if (auth($guard)->check()) {
+                return $guard;
+            }
+        }
+
+        return null;
     }
 }
