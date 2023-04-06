@@ -25,7 +25,7 @@
     "require": {
         "php": "^8.1",
         "bkwld/croppa": "^6.0",
-        "eluceo/ical": "^2.11",
+        "eluceo/ical": "^2.5",
         "genealabs/laravel-model-caching": "^0.13.3",
         "guzzlehttp/guzzle": "^7.2",
         "laracasts/presenter": "^0.2.6",
@@ -45,10 +45,10 @@
         "symfony/http-client": "^6.2",
         "symfony/mailgun-mailer": "^6.2",
         "typicms/core": "dev-master",
-        "typicms/laravel-translatable-bootforms": "^7.0",
+        "typicms/laravel-translatable-bootforms": "^8.0",
         "typicms/nestablecollection": "^3.0",
         "typicms/things": "dev-master",
-        "typidesign/laravel-artisan-translations": "~2.0",
+        "typidesign/laravel-artisan-translations": "~3.0",
         "ultrono/laravel-sitemap": "^9.3"
     },
     "require-dev": {
