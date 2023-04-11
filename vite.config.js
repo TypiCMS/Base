@@ -29,15 +29,14 @@ export default defineConfig({
         }),
         viteStaticCopy({
             targets: [
-                // Main CKEditor files
+                // Main CKEditor files and skins
                 {
-                    src: ['node_modules/ckeditor4/ckeditor.js', 'node_modules/ckeditor4/contents.css'],
+                    src: [
+                        'node_modules/ckeditor4/ckeditor.js',
+                        'node_modules/ckeditor4/contents.css',
+                        'node_modules/ckeditor4/skins',
+                    ],
                     dest: '../../public/components/ckeditor4/',
-                },
-                // CKEditor skins
-                {
-                    src: 'node_modules/ckeditor4/skins',
-                    dest: '../../public/components/ckeditor4/skins/',
                 },
                 // CKEditor langs
                 {
