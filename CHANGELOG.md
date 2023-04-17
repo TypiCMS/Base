@@ -2,6 +2,16 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 11.0.0 - 2023-01-XX
+
+### Changed
+
+-   Laravel 10
+-   Bootstrap 5.3
+-   jQuery, Lodash, axios and webpack removed.
+-   PHP Coding Standards Fixer (and Laravel Pint) rules changed.
+-   Some JavaScript files rewritten to TypeScript.
+
 ## 10.0.19 - 2022-07-01
 
 ### Changed
