@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0ccbc8ce9d28c561d2cc599dfa2105b",
+    "content-hash": "77e0e967b35bd4c7f6b1ce3725624340",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -7155,7 +7155,7 @@
         },
         {
             "name": "typicms/core",
-            "version": "dev-master",
+            "version": "11.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
@@ -7170,7 +7170,6 @@
             "require": {
                 "laravel/framework": "~10.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -7189,7 +7188,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/master"
+                "source": "https://github.com/TypiCMS/Core/tree/11.0.0"
             },
             "funding": [
                 {
@@ -7403,7 +7402,7 @@
         },
         {
             "name": "typicms/things",
-            "version": "dev-master",
+            "version": "11.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
@@ -7418,7 +7417,6 @@
             "require": {
                 "laravel/framework": "~10.0"
             },
-            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -7432,7 +7430,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Things/issues",
-                "source": "https://github.com/TypiCMS/Things/tree/master"
+                "source": "https://github.com/TypiCMS/Things/tree/11.0.0"
             },
             "funding": [
                 {
@@ -10360,10 +10358,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "typicms/core": 20,
-        "typicms/things": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
