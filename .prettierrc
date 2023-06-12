@@ -3,11 +3,13 @@
     "singleQuote": true,
     "tabWidth": 4,
     "plugins": [
-        "./node_modules/prettier-plugin-blade/",
+        "./node_modules/prettier-plugin-blade/"
     ],
     "overrides": [
         {
-            "files": ["*.blade.php"],
+            "files": [
+                "*.blade.php"
+            ],
             "options": {
                 "parser": "blade"
             }
