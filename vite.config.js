@@ -38,7 +38,7 @@ export default defineConfig({
                     ],
                     dest: '../../public/components/ckeditor4/',
                 },
-                // CKEditor langs
+                // CKEditor locales
                 {
                     src: [
                         'node_modules/ckeditor4/lang/fr.js',
