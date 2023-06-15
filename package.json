@@ -6,7 +6,8 @@
         "development": "vite",
         "watch": "vite",
         "prod": "vite build",
-        "production": "vite build"
+        "production": "vite build",
+        "format": "npx prettier --write resources/"
     },
     "devDependencies": {
         "@popperjs/core": "^2.9.1",
