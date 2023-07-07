@@ -2,7 +2,7 @@
     "tabWidth": 4,
     "singleQuote": true,
     "plugins": [
-        "./node_modules/prettier-plugin-blade/"
+        "@shufo/prettier-plugin-blade"
     ],
     "overrides": [
         {
