@@ -7208,16 +7208,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "11.0.9",
+            "version": "11.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "0d1590a60949bc889d6f3873be8183600b0ba4cb"
+                "reference": "093d0e0d4ec9d4114d61f1d7d60d440f3ec37cf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/0d1590a60949bc889d6f3873be8183600b0ba4cb",
-                "reference": "0d1590a60949bc889d6f3873be8183600b0ba4cb",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/093d0e0d4ec9d4114d61f1d7d60d440f3ec37cf0",
+                "reference": "093d0e0d4ec9d4114d61f1d7d60d440f3ec37cf0",
                 "shasum": ""
             },
             "require": {
@@ -7241,7 +7241,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/11.0.9"
+                "source": "https://github.com/TypiCMS/Core/tree/11.0.10"
             },
             "funding": [
                 {
@@ -7249,7 +7249,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-28T13:48:10+00:00"
+            "time": "2023-07-10T18:21:09+00:00"
         },
         {
             "name": "typicms/form",
@@ -8976,16 +8976,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.2.3",
+            "version": "10.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "35c8cac1734ede2ae354a6644f7088356ff5b08e"
+                "reference": "68484779b5a2ed711fbdeba6ca01910d87acdff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/35c8cac1734ede2ae354a6644f7088356ff5b08e",
-                "reference": "35c8cac1734ede2ae354a6644f7088356ff5b08e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/68484779b5a2ed711fbdeba6ca01910d87acdff2",
+                "reference": "68484779b5a2ed711fbdeba6ca01910d87acdff2",
                 "shasum": ""
             },
             "require": {
@@ -9057,7 +9057,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.3"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.4"
             },
             "funding": [
                 {
@@ -9073,7 +9073,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-30T06:17:38+00:00"
+            "time": "2023-07-10T04:06:08+00:00"
         },
         {
             "name": "sebastian/cli-parser",
