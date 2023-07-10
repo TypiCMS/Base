@@ -10,7 +10,8 @@
                 "*.blade.php"
             ],
             "options": {
-                "parser": "blade"
+                "parser": "blade",
+                "printWidth": 200,
             }
         }
     ]
