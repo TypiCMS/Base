@@ -7208,16 +7208,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "11.0.11",
+            "version": "11.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "d086de4859576ed61e24a66e2da311559158251e"
+                "reference": "442408223545e9cecc21be584aab091899fd1d03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/d086de4859576ed61e24a66e2da311559158251e",
-                "reference": "d086de4859576ed61e24a66e2da311559158251e",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/442408223545e9cecc21be584aab091899fd1d03",
+                "reference": "442408223545e9cecc21be584aab091899fd1d03",
                 "shasum": ""
             },
             "require": {
@@ -7241,7 +7241,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/11.0.11"
+                "source": "https://github.com/TypiCMS/Core/tree/11.0.12"
             },
             "funding": [
                 {
@@ -7249,7 +7249,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-14T08:04:56+00:00"
+            "time": "2023-07-14T15:45:09+00:00"
         },
         {
             "name": "typicms/form",
@@ -8115,16 +8115,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.10.4",
+            "version": "v1.10.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "f56798088068af8bd75a8f2c4ecae022990fdf75"
+                "reference": "a458fb057bfa2f5a09888a8aa349610be807b0c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/f56798088068af8bd75a8f2c4ecae022990fdf75",
-                "reference": "f56798088068af8bd75a8f2c4ecae022990fdf75",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/a458fb057bfa2f5a09888a8aa349610be807b0c3",
+                "reference": "a458fb057bfa2f5a09888a8aa349610be807b0c3",
                 "shasum": ""
             },
             "require": {
@@ -8137,7 +8137,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.21.1",
                 "illuminate/view": "^10.5.1",
-                "laravel-zero/framework": "^10.0.2",
+                "laravel-zero/framework": "^10.1.1",
                 "mockery/mockery": "^1.5.1",
                 "nunomaduro/larastan": "^2.5.1",
                 "nunomaduro/termwind": "^1.15.1",
@@ -8177,7 +8177,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2023-07-11T15:18:27+00:00"
+            "time": "2023-07-14T10:26:01+00:00"
         },
         {
             "name": "laravel/sail",
