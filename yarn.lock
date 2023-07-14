@@ -377,14 +377,6 @@
   resolved "https://registry.yarnpkg.com/@uppy/locales/-/locales-3.2.3.tgz#cd70f5cb431d292bba0f573dcc029de319c05b21"
   integrity sha512-SvlmBrRul/Up6ri/iuO/dAo4FdDM1tkBy+FsBGpF2NXA2lO2drW//V1oYr9CkCmsiZKop1bCssKTLLCoS2tZeQ==
 
-"@uppy/progress-bar@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@uppy/progress-bar/-/progress-bar-3.0.2.tgz#bd57261b038edd50419acdb65e8033f3e2cbf04e"
-  integrity sha512-vVV+mvPfe4AbTajDAkZo64u15/epgFAMAt0FFs1SX+U8GzwA5Ry+MQ6Tagn1mN+POkql6OZS4F3Dv2Y5pKusBg==
-  dependencies:
-    "@uppy/utils" "^5.3.0"
-    preact "^10.5.13"
-
 "@uppy/provider-views@^3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@uppy/provider-views/-/provider-views-3.4.0.tgz#e9ddfa28dffc0ebc0331646138fae7f7e28833bb"
@@ -851,9 +843,9 @@ editorconfig@^0.15.3:
     sigmund "^1.0.1"
 
 electron-to-chromium@^1.4.431:
-  version "1.4.460"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.460.tgz#f360a5059c039c4a5fb4dfa99680ad8129dd9f84"
-  integrity sha512-kKiHnbrHME7z8E6AYaw0ehyxY5+hdaRmeUbjBO22LZMdqTYCO29EvF0T1cQ3pJ1RN5fyMcHl1Lmcsdt9WWJpJQ==
+  version "1.4.461"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.461.tgz#6b14af66042732bf883ab63a4d82cac8f35eb252"
+  integrity sha512-1JkvV2sgEGTDXjdsaQCeSwYYuhLRphRpc+g6EHTFELJXEiznLt3/0pZ9JuAOQ5p2rI3YxKTbivtvajirIfhrEQ==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -1846,9 +1838,9 @@ sl-vue-tree@^1.8.2:
   integrity sha512-Gdzbp1NwgJxmhlEZ++V6mpYNfDCE2aZv2oknjnuD8C18sPUQYR0tQXKcHe5KF/Yg5X6yFPFycF8RLlfwNI41Aw==
 
 snyk@^1.14.3:
-  version "1.1189.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.1189.0.tgz#21a5e748bccd45b04834d33ba7a2fddf778d6af6"
-  integrity sha512-X94/KQx5+/p6YpsTMPDHGEtT45J/BdJsfzEjtS59IGlT733RCzuh488WZ1yl9SNSYzqBn7UzhFX0QRRbqQrjhg==
+  version "1.1190.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.1190.0.tgz#5002b79dff65bab2973fb3037d14832a79dd0be7"
+  integrity sha512-igyEHQGquLmxEjyjn8CnYAG/JkPcCou7T6RLgdbPj/XY4xUhecd2t5HJK3XagR8ii/nohy/PTyKk/MHro2hxVg==
   dependencies:
     "@sentry/node" "^7.36.0"
     global-agent "^3.0.0"
