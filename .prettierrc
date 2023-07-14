@@ -1,5 +1,4 @@
 {
-    "printWidth": 200,
     "tabWidth": 4,
     "singleQuote": true,
     "plugins": [
@@ -12,7 +11,7 @@
             ],
             "options": {
                 "parser": "blade",
-                "printWidth": 200
+                "printWidth": 9999,
             }
         }
     ]
