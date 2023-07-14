@@ -11,12 +11,7 @@ export default defineConfig({
     },
     plugins: [
         laravel({
-            input: [
-                'resources/scss/public.scss',
-                'resources/scss/admin.scss',
-                'resources/js/public.js',
-                'resources/js/admin.js',
-            ],
+            input: ['resources/scss/public.scss', 'resources/scss/admin.scss', 'resources/js/public.js', 'resources/js/admin.js'],
             refresh: true,
         }),
         vue({
@@ -29,23 +24,19 @@ export default defineConfig({
         }),
         viteStaticCopy({
             targets: [
+                // Photoswipe files
+                {
+                    src: ['node_modules/photoswipe/dist/photoswipe-lightbox.esm.min.js', 'node_modules/photoswipe/dist/photoswipe.esm.min.js'],
+                    dest: '../../public/components/photoswipe/',
+                },
                 // Main CKEditor files and skins
                 {
-                    src: [
-                        'node_modules/ckeditor4/ckeditor.js',
-                        'node_modules/ckeditor4/contents.css',
-                        'node_modules/ckeditor4/skins',
-                    ],
+                    src: ['node_modules/ckeditor4/ckeditor.js', 'node_modules/ckeditor4/contents.css', 'node_modules/ckeditor4/skins'],
                     dest: '../../public/components/ckeditor4/',
                 },
                 // CKEditor locales
                 {
-                    src: [
-                        'node_modules/ckeditor4/lang/fr.js',
-                        'node_modules/ckeditor4/lang/nl.js',
-                        'node_modules/ckeditor4/lang/en.js',
-                        'node_modules/ckeditor4/lang/es.js',
-                    ],
+                    src: ['node_modules/ckeditor4/lang/fr.js', 'node_modules/ckeditor4/lang/nl.js', 'node_modules/ckeditor4/lang/en.js', 'node_modules/ckeditor4/lang/es.js'],
                     dest: '../../public/components/ckeditor4/lang/',
                 },
                 // CKEditor plugins
