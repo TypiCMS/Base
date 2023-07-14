@@ -8,7 +8,7 @@ All notable changes to TypiCMS will be documented in this file.
 
 -   Laravel 10
 -   Bootstrap 5.3
--   jQuery, Lodash, axios and webpack removed.
+-   Removed: jQuery, Lodash, axios and webpack removed.
 -   Uppy for file uploads.
 -   PhotoSwipe for viewing images.
 -   PHP CS Fixer (and Laravel Pint) rules changed.
