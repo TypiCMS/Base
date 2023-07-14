@@ -1,5 +1,5 @@
 {
-    "preset": "psr12",
+    "preset": "per",
     "rules": {
         "@PhpCsFixer": true,
         "@PHP80Migration": true,
@@ -7,10 +7,11 @@
         "multiline_whitespace_before_semicolons": { "strategy": "no_multi_line" },
         "modernize_types_casting": true,
         "return_assignment": false,
-        "ordered_class_elements": false,
-        "single_line_comment_style": false,
+        "ordered_class_elements": { "order": ["use_trait"] },
+        "single_line_comment_style": { "comment_types": ["hash"] },
         "yoda_style": false,
         "global_namespace_import": true,
+        "modernize_strpos": true,
         "concat_space": {
             "spacing": "one"
         }
