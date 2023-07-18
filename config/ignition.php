@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'editor' => env('IGNITION_EDITOR', 'sublime'),
+    'editor' => env('IGNITION_EDITOR', 'phpstorm'),
 
     /*
     |--------------------------------------------------------------------------
