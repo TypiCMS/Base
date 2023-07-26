@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 11.0.3 - 2023-07-26
+
+### Changed
+
+-   Use of @remotedevforce/tom-select in place of tom-select npm package.
+
 ## 11.0.0 - 2023-07-14
 
 ### Changed
