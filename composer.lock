@@ -7319,16 +7319,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "11.0.19",
+            "version": "11.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "db30b5acd31688194ec21f1ccfe812ba5c413cd7"
+                "reference": "c3073ce029671f48a60d162e0ef08f15457b2cfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/db30b5acd31688194ec21f1ccfe812ba5c413cd7",
-                "reference": "db30b5acd31688194ec21f1ccfe812ba5c413cd7",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/c3073ce029671f48a60d162e0ef08f15457b2cfb",
+                "reference": "c3073ce029671f48a60d162e0ef08f15457b2cfb",
                 "shasum": ""
             },
             "require": {
@@ -7352,7 +7352,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/11.0.19"
+                "source": "https://github.com/TypiCMS/Core/tree/11.0.20"
             },
             "funding": [
                 {
@@ -7360,7 +7360,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-19T16:16:31+00:00"
+            "time": "2023-09-21T06:27:37+00:00"
         },
         {
             "name": "typicms/form",
@@ -8357,16 +8357,16 @@
         },
         {
             "name": "maximebf/debugbar",
-            "version": "v1.18.2",
+            "version": "v1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "17dcf3f6ed112bb85a37cf13538fd8de49f5c274"
+                "reference": "30f65f18f7ac086255a77a079f8e0dcdd35e828e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/17dcf3f6ed112bb85a37cf13538fd8de49f5c274",
-                "reference": "17dcf3f6ed112bb85a37cf13538fd8de49f5c274",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/30f65f18f7ac086255a77a079f8e0dcdd35e828e",
+                "reference": "30f65f18f7ac086255a77a079f8e0dcdd35e828e",
                 "shasum": ""
             },
             "require": {
@@ -8417,9 +8417,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maximebf/php-debugbar/issues",
-                "source": "https://github.com/maximebf/php-debugbar/tree/v1.18.2"
+                "source": "https://github.com/maximebf/php-debugbar/tree/v1.19.0"
             },
-            "time": "2023-02-04T15:27:00+00:00"
+            "time": "2023-09-19T19:53:10+00:00"
         },
         {
             "name": "mockery/mockery",
