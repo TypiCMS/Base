@@ -26,7 +26,6 @@ TypiCMS is a modular multilingual content management system built with [Laravel]
     -   [Contacts](#contacts)
     -   [Partners](#partners)
     -   [Files](#files)
-    -   [Galleries](#galleries)
     -   [Users and roles](#users-and-roles)
     -   [Blocks](#blocks)
     -   [Translations](#translations)
