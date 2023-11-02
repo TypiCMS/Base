@@ -2,6 +2,11 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 11.0.10 - 2023-11-02
+
+### Changed
+- Breaking change: Use of Laravel/prompt package for the TypiCMS commands. You have to run ```composer require laravel/prompts```.
+
 ## 11.0.3 - 2023-07-26
 
 ### Changed
