@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77e0e967b35bd4c7f6b1ce3725624340",
+    "content-hash": "f85cec7232da660f78e905a3e4882b14",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -7330,16 +7330,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "11.0.22",
+            "version": "11.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "58cd26571fedae5fef9cfc892717cadae766d150"
+                "reference": "d416b1c637170e4e2d6c37ca3fb897921ea45da7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/58cd26571fedae5fef9cfc892717cadae766d150",
-                "reference": "58cd26571fedae5fef9cfc892717cadae766d150",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/d416b1c637170e4e2d6c37ca3fb897921ea45da7",
+                "reference": "d416b1c637170e4e2d6c37ca3fb897921ea45da7",
                 "shasum": ""
             },
             "require": {
@@ -7363,7 +7363,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/11.0.22"
+                "source": "https://github.com/TypiCMS/Core/tree/11.0.23"
             },
             "funding": [
                 {
@@ -7371,7 +7371,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-29T18:11:13+00:00"
+            "time": "2023-11-01T21:06:20+00:00"
         },
         {
             "name": "typicms/form",
