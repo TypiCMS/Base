@@ -7330,16 +7330,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "11.0.24",
+            "version": "11.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "8f632457940f7ddbbdb4afe8fb142c2174fc28f2"
+                "reference": "f62ae9ee7c8fdca21c468504abc5ddc02fcc1147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/8f632457940f7ddbbdb4afe8fb142c2174fc28f2",
-                "reference": "8f632457940f7ddbbdb4afe8fb142c2174fc28f2",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f62ae9ee7c8fdca21c468504abc5ddc02fcc1147",
+                "reference": "f62ae9ee7c8fdca21c468504abc5ddc02fcc1147",
                 "shasum": ""
             },
             "require": {
@@ -7363,7 +7363,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/11.0.24"
+                "source": "https://github.com/TypiCMS/Core/tree/11.0.25"
             },
             "funding": [
                 {
@@ -7371,7 +7371,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-02T11:28:46+00:00"
+            "time": "2023-11-05T17:51:37+00:00"
         },
         {
             "name": "typicms/form",
@@ -8115,16 +8115,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.15.3",
+            "version": "2.15.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "c83e88a30524f9360b11f585f71e6b17313b7187"
+                "reference": "a139776fa3f5985a50b509f2a02ff0f709d2a546"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/c83e88a30524f9360b11f585f71e6b17313b7187",
-                "reference": "c83e88a30524f9360b11f585f71e6b17313b7187",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/a139776fa3f5985a50b509f2a02ff0f709d2a546",
+                "reference": "a139776fa3f5985a50b509f2a02ff0f709d2a546",
                 "shasum": ""
             },
             "require": {
@@ -8174,7 +8174,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.15.3"
+                "source": "https://github.com/filp/whoops/tree/2.15.4"
             },
             "funding": [
                 {
@@ -8182,7 +8182,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-13T12:00:00+00:00"
+            "time": "2023-11-03T12:00:00+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
