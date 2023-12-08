@@ -4,27 +4,12 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
+use Throwable;
 
 class Handler extends ExceptionHandler
 {
     /**
-     * A list of exception types with their corresponding custom log levels.
-     *
-     * @var array<class-string<\Throwable>, \Psr\Log\LogLevel::*>
-     */
-    protected $levels = [
-    ];
-
-    /**
-     * A list of the exception types that are not reported.
-     *
-     * @var array<int, class-string<\Throwable>>
-     */
-    protected $dontReport = [
-    ];
-
-    /**
-     * A list of the inputs that are never flashed to the session on validation exceptions.
+     * The list of the inputs that are never flashed to the session on validation exceptions.
      *
      * @var array<int, string>
      */
@@ -39,7 +24,7 @@ class Handler extends ExceptionHandler
      */
     public function register(): void
     {
-        $this->reportable(function (\Throwable $e) {
+        $this->reportable(function (Throwable $e) {
             if (app()->bound('sentry')) {
                 \Sentry\configureScope(function (\Sentry\State\Scope $scope): void {
                     $scope->setUser($this->getUserInfo(), true);
@@ -55,10 +40,9 @@ class Handler extends ExceptionHandler
     private function getUserInfo(): array
     {
         $guard = $this->activeGuard();
-
         if ($user = auth($guard)->user()) {
             return [
-                'id' => $guard.'-with-id-'.$user->id,
+                'id' => $guard . '-with-id-' . $user->id,
                 'email' => $user->email,
             ];
         }
@@ -89,17 +73,14 @@ class Handler extends ExceptionHandler
     {
         $statusCode = $e->getStatusCode();
         if (request()->segment(1) === 'admin' && view()->exists("errors::admin.{$statusCode}")) {
-            $view = 'errors::admin.'.$statusCode;
+            $view = 'errors::admin.' . $statusCode;
         } else {
-            $view = 'errors::'.$statusCode;
+            $view = 'errors::' . $statusCode;
         }
-
         if (view()->exists($view)) {
             return $view;
         }
-
-        $view = mb_substr($view, 0, -2).'xx';
-
+        $view = mb_substr($view, 0, -2) . 'xx';
         if (view()->exists($view)) {
             return $view;
         }
