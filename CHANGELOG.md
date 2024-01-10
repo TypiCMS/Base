@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 11.0.31 - 2024-01-10
+
+### Changed
+
+-   Breaking change: 3 files need to be republished. To do so, you can run these commands: `cp vendor/typicms/core/resources/js/admin/set-content-locale.ts resources/js/admin/`, `cp vendor/typicms/core/resources/js/admin/preview-window.ts resources/js/admin/` and `cp vendor/typicms/core/resources/views/core/admin/_buttons-form.blade.php resources/views/vendor/core/admin/`.
+
 ## 11.0.11 - 2023-11-02
 
 ### Changed
