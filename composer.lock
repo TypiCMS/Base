@@ -455,27 +455,27 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "84a527db05647743d50373e0ec53a152f2cde568"
+                "reference": "31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/84a527db05647743d50373e0ec53a152f2cde568",
-                "reference": "84a527db05647743d50373e0ec53a152f2cde568",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd",
+                "reference": "31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.1"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^10",
-                "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "^9.5",
+                "doctrine/coding-standard": "^12",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.5",
                 "psalm/plugin-phpunit": "^0.18.3",
-                "vimeo/psalm": "^5.0"
+                "vimeo/psalm": "^5.21"
             },
             "type": "library",
             "autoload": {
@@ -512,7 +512,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
-                "source": "https://github.com/doctrine/lexer/tree/3.0.0"
+                "source": "https://github.com/doctrine/lexer/tree/3.0.1"
             },
             "funding": [
                 {
@@ -528,7 +528,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-15T16:57:16+00:00"
+            "time": "2024-02-05T11:56:58+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -7414,16 +7414,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "11.0.35",
+            "version": "11.0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "81effe680d12666680951c9bbfecbad9b70ef0c3"
+                "reference": "e7e61be0791baa8f7d47c72f8c58e3181fc2bbc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/81effe680d12666680951c9bbfecbad9b70ef0c3",
-                "reference": "81effe680d12666680951c9bbfecbad9b70ef0c3",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/e7e61be0791baa8f7d47c72f8c58e3181fc2bbc8",
+                "reference": "e7e61be0791baa8f7d47c72f8c58e3181fc2bbc8",
                 "shasum": ""
             },
             "require": {
@@ -7447,7 +7447,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/11.0.35"
+                "source": "https://github.com/TypiCMS/Core/tree/11.0.36"
             },
             "funding": [
                 {
@@ -7455,7 +7455,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-27T14:15:57+00:00"
+            "time": "2024-02-05T12:23:04+00:00"
         },
         {
             "name": "typicms/form",
