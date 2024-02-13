@@ -7387,16 +7387,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "11.0.36",
+            "version": "11.0.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "e7e61be0791baa8f7d47c72f8c58e3181fc2bbc8"
+                "reference": "1b315d6af88f1376ae475f220bc36738f5cbd2a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/e7e61be0791baa8f7d47c72f8c58e3181fc2bbc8",
-                "reference": "e7e61be0791baa8f7d47c72f8c58e3181fc2bbc8",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/1b315d6af88f1376ae475f220bc36738f5cbd2a4",
+                "reference": "1b315d6af88f1376ae475f220bc36738f5cbd2a4",
                 "shasum": ""
             },
             "require": {
@@ -7420,7 +7420,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/11.0.36"
+                "source": "https://github.com/TypiCMS/Core/tree/11.0.37"
             },
             "funding": [
                 {
@@ -7428,7 +7428,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-05T12:23:04+00:00"
+            "time": "2024-02-13T21:47:58+00:00"
         },
         {
             "name": "typicms/form",
@@ -7634,16 +7634,16 @@
         },
         {
             "name": "typicms/things",
-            "version": "11.0.2",
+            "version": "11.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
-                "reference": "602560dcf3dfcafd50f259a6bc1d27569b50b11c"
+                "reference": "ce81021216bcf588c6f61c178ea881dd69ca78d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/602560dcf3dfcafd50f259a6bc1d27569b50b11c",
-                "reference": "602560dcf3dfcafd50f259a6bc1d27569b50b11c",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/ce81021216bcf588c6f61c178ea881dd69ca78d3",
+                "reference": "ce81021216bcf588c6f61c178ea881dd69ca78d3",
                 "shasum": ""
             },
             "require": {
@@ -7662,7 +7662,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Things/issues",
-                "source": "https://github.com/TypiCMS/Things/tree/11.0.2"
+                "source": "https://github.com/TypiCMS/Things/tree/11.0.3"
             },
             "funding": [
                 {
@@ -7670,7 +7670,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-31T11:46:28+00:00"
+            "time": "2024-02-13T21:42:50+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -11457,5 +11457,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
