@@ -51,23 +51,7 @@ This kind of URLs are managed by the CMS:
 -   /en/events/slug-in-english
 -   /fr/evenements/slug-en-francais
 
-**Pages:**
 
--   /en/parent-pages-slug-en/subpage-slug-en/page-slug-en
--   /fr/parent-pages-slug-fr/subpage-slug-fr/page-slug-fr
-
-## Requirements
-
--   PHP >= 7.2
--   MySQL 5.7.8
--   BCMath PHP Extension
--   Ctype PHP Extension
--   JSON PHP Extension
--   Mbstring PHP Extension
--   OpenSSL PHP Extension
--   PDO PHP Extension
--   Tokenizer PHP Extension
--   XML PHP Extension
 
 ## Installation
 
