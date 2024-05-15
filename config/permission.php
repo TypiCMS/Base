@@ -1,5 +1,8 @@
 <?php
 
+use Spatie\Permission\Models\Permission;
+use TypiCMS\Modules\Core\Models\Role;
+
 return [
     'models' => [
         /*
@@ -11,7 +14,7 @@ return [
          * `Spatie\Permission\Contracts\Permission` contract.
          */
 
-        'permission' => Spatie\Permission\Models\Permission::class,
+        'permission' => Permission::class,
 
         /*
          * When using the "HasRoles" trait from this package, we need to know which
@@ -22,7 +25,7 @@ return [
          * `Spatie\Permission\Contracts\Role` contract.
          */
 
-        'role' => TypiCMS\Modules\Core\Models\Role::class,
+        'role' => Role::class,
     ],
 
     'table_names' => [
@@ -94,42 +97,67 @@ return [
 
     /*
      * When set to true, the method for checking permissions will be registered on the gate.
-     * Set this to false, if you want to implement custom logic for checking permissions.
+     * Set this to false if you want to implement custom logic for checking permissions.
      */
 
     'register_permission_check_method' => true,
 
     /*
-     * When set to true the package implements teams using the 'team_foreign_key'. If you want
-     * the migrations to register the 'team_foreign_key', you must set this to true
-     * before doing the migration. If you already did the migration then you must make a new
-     * migration to also add 'team_foreign_key' to 'roles', 'model_has_roles', and
-     * 'model_has_permissions'(view the latest version of package's migration file)
+     * When set to true, Laravel\Octane\Events\OperationTerminated event listener will be registered
+     * this will refresh permissions on every TickTerminated, TaskTerminated and RequestTerminated
+     * NOTE: This should not be needed in most cases, but an Octane/Vapor combination benefited from it.
+     */
+    'register_octane_reset_listener' => false,
+
+    /*
+     * Teams Feature.
+     * When set to true the package implements teams using the 'team_foreign_key'.
+     * If you want the migrations to register the 'team_foreign_key', you must
+     * set this to true before doing the migration.
+     * If you already did the migration then you must make a new migration to also
+     * add 'team_foreign_key' to 'roles', 'model_has_roles', and 'model_has_permissions'
+     * (view the latest version of this package's migration file)
      */
 
     'teams' => false,
 
     /*
-     * When set to true, the required permission names are added to the exception
-     * message. This could be considered an information leak in some contexts, so
-     * the default setting is false here for optimum safety.
+     * Passport Client Credentials Grant
+     * When set to true the package will use Passports Client to check permissions
+     */
+
+    'use_passport_client_credentials' => false,
+
+    /*
+     * When set to true, the required permission names are added to exception messages.
+     * This could be considered an information leak in some contexts, so the default
+     * setting is false here for optimum safety.
      */
 
     'display_permission_in_exception' => false,
 
     /*
-     * When set to true, the required role names are added to the exception
-     * message. This could be considered an information leak in some contexts, so
-     * the default setting is false here for optimum safety.
+     * When set to true, the required role names are added to exception messages.
+     * This could be considered an information leak in some contexts, so the default
+     * setting is false here for optimum safety.
      */
 
     'display_role_in_exception' => false,
 
     /*
      * By default wildcard permission lookups are disabled.
+     * See documentation to understand supported syntax.
      */
 
     'enable_wildcard_permission' => false,
+
+    /*
+     * The class to use for interpreting wildcard permissions.
+     * If you need to modify delimiters, override the class and specify its name here.
+     */
+    // 'permission.wildcard_permission' => Spatie\Permission\WildcardPermission::class,
+
+    /* Cache-specific settings */
 
     'cache' => [
         /*
@@ -137,7 +165,7 @@ return [
          * When permissions or roles are updated the cache is flushed automatically.
          */
 
-        'expiration_time' => \DateInterval::createFromDateString('24 hours'),
+        'expiration_time' => DateInterval::createFromDateString('24 hours'),
 
         /*
          * The cache key used to store all permissions.
