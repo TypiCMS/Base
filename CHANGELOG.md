@@ -9,6 +9,7 @@ All notable changes to TypiCMS will be documented in this file.
 - Laravel 11
 - Images from `/public/img` directory moved to `/resources/images` directory.
 - TypiCMS Service class and Facade removed, use `/app/helpers.php` instead.
+- Open Graph Image field added to pages, news, events, projects, places.
 
 ## 11.0.20 - 2024-01-10
 
