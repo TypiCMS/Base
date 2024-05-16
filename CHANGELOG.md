@@ -7,7 +7,8 @@ All notable changes to TypiCMS will be documented in this file.
 ### Changed
 
 - Laravel 11
-- Images from /public/img directory moved to /resources/images directory.
+- Images from `/public/img` directory moved to `/resources/images` directory.
+- TypiCMS Service class and Facade removed, use `/app/helpers.php` instead.
 
 ## 11.0.20 - 2024-01-10
 
