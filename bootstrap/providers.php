@@ -4,7 +4,6 @@ use App\Providers\AppServiceProvider;
 use Maatwebsite\Sidebar\SidebarServiceProvider;
 use TypiCMS\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider;
 use TypiCMS\Modules\Core\Providers\ModuleServiceProvider;
-use TypiCMS\Modules\Core\Providers\PagesRoutesServiceProvider;
 use TypiCMS\Modules\Core\Providers\TranslationsServiceProvider;
 use Typidesign\Translations\ArtisanTranslationsServiceProvider;
 
@@ -23,7 +22,4 @@ return [
 
     // Application Service Providers.
     AppServiceProvider::class,
-
-    // This Service Provider contain a catch-all route for the pages of your app.
-    PagesRoutesServiceProvider::class,
 ];
