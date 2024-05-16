@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46887ce6f7062a578241c0ba1bb9c05f",
+    "content-hash": "ccb51b209f80f1140b1843129038659f",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -1916,70 +1916,6 @@
             "time": "2024-04-30T12:46:16+00:00"
         },
         {
-            "name": "laravel/sanctum",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/sanctum.git",
-                "reference": "9cfc0ce80cabad5334efff73ec856339e8ec1ac1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/9cfc0ce80cabad5334efff73ec856339e8ec1ac1",
-                "reference": "9cfc0ce80cabad5334efff73ec856339e8ec1ac1",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/console": "^11.0",
-                "illuminate/contracts": "^11.0",
-                "illuminate/database": "^11.0",
-                "illuminate/support": "^11.0",
-                "php": "^8.2",
-                "symfony/console": "^7.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.6",
-                "orchestra/testbench": "^9.0",
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^10.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Sanctum\\SanctumServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Sanctum\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
-            "keywords": [
-                "auth",
-                "laravel",
-                "sanctum"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/sanctum/issues",
-                "source": "https://github.com/laravel/sanctum"
-            },
-            "time": "2024-04-10T19:39:58+00:00"
-        },
-        {
             "name": "laravel/serializable-closure",
             "version": "v1.3.3",
             "source": {
@@ -3041,7 +2977,7 @@
             ],
             "support": {
                 "issues": "https://github.com/msurguy/Honeypot/issues",
-                "source": "https://github.com/msurguy/Honeypot/tree/master"
+                "source": "https://github.com/msurguy/Honeypot/tree/1.3.0"
             },
             "time": "2024-05-03T21:55:03+00:00"
         },
@@ -4725,16 +4661,16 @@
         },
         {
             "name": "spatie/laravel-translatable",
-            "version": "6.7.0",
+            "version": "6.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-translatable.git",
-                "reference": "b75b3300949cdc6ce191f9a4b70addbce5d54ff5"
+                "reference": "d55384cbcf867b3cf21ff4d062403596d94acf81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/b75b3300949cdc6ce191f9a4b70addbce5d54ff5",
-                "reference": "b75b3300949cdc6ce191f9a4b70addbce5d54ff5",
+                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/d55384cbcf867b3cf21ff4d062403596d94acf81",
+                "reference": "d55384cbcf867b3cf21ff4d062403596d94acf81",
                 "shasum": ""
             },
             "require": {
@@ -4795,7 +4731,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-translatable/issues",
-                "source": "https://github.com/spatie/laravel-translatable/tree/6.7.0"
+                "source": "https://github.com/spatie/laravel-translatable/tree/6.7.1"
             },
             "funding": [
                 {
@@ -4803,7 +4739,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-05-13T12:34:22+00:00"
+            "time": "2024-05-14T11:35:51+00:00"
         },
         {
             "name": "symfony/clock",
@@ -7465,12 +7401,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "6dd6bd51ac0d5a1fd16eb64e802573765b5b80b0"
+                "reference": "af16410618796e927b09098243c30af22747130d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/6dd6bd51ac0d5a1fd16eb64e802573765b5b80b0",
-                "reference": "6dd6bd51ac0d5a1fd16eb64e802573765b5b80b0",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/af16410618796e927b09098243c30af22747130d",
+                "reference": "af16410618796e927b09098243c30af22747130d",
                 "shasum": ""
             },
             "require": {
@@ -7503,7 +7439,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-02T13:12:04+00:00"
+            "time": "2024-05-16T15:50:08+00:00"
         },
         {
             "name": "typicms/form",
@@ -7709,12 +7645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
-                "reference": "003aeb21ad2aefecd1d990e41e1256313c192542"
+                "reference": "ba4a1013133bbb3e950d4896dc75649141fd8823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/003aeb21ad2aefecd1d990e41e1256313c192542",
-                "reference": "003aeb21ad2aefecd1d990e41e1256313c192542",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/ba4a1013133bbb3e950d4896dc75649141fd8823",
+                "reference": "ba4a1013133bbb3e950d4896dc75649141fd8823",
                 "shasum": ""
             },
             "require": {
@@ -7742,7 +7678,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-05T15:33:34+00:00"
+            "time": "2024-05-16T15:50:42+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -8817,16 +8753,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.6.11",
+            "version": "1.6.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "81a161d0b135df89951abd52296adf97deb0723d"
+                "reference": "1f4efdd7d3beafe9807b08156dfcb176d18f1699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/81a161d0b135df89951abd52296adf97deb0723d",
-                "reference": "81a161d0b135df89951abd52296adf97deb0723d",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/1f4efdd7d3beafe9807b08156dfcb176d18f1699",
+                "reference": "1f4efdd7d3beafe9807b08156dfcb176d18f1699",
                 "shasum": ""
             },
             "require": {
@@ -8896,7 +8832,7 @@
                 "security": "https://github.com/mockery/mockery/security/advisories",
                 "source": "https://github.com/mockery/mockery"
             },
-            "time": "2024-03-21T18:34:15+00:00"
+            "time": "2024-05-16T03:13:13+00:00"
         },
         {
             "name": "myclabs/deep-copy",
