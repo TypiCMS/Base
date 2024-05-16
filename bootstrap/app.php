@@ -7,6 +7,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 use Illuminate\Foundation\Http\Middleware\ValidateCsrfToken;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
@@ -22,6 +23,7 @@ use TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale;
 use TypiCMS\Modules\Core\Http\Middleware\SetTranslatableFallbackLocaleToNull;
 use TypiCMS\Modules\Core\Http\Middleware\UserPrefs;
 use TypiCMS\Modules\Core\Http\Middleware\VerifyLocalizedUrl;
+use TypiCMS\Modules\Core\Providers\PagesRoutesServiceProvider;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -29,9 +31,14 @@ return Application::configure(basePath: dirname(__DIR__))
         api: __DIR__ . '/../routes/api.php',
         commands: __DIR__ . '/../routes/console.php',
         health: '/up',
+        then: function (Application $app) {
+            $app->booted(function ($app) {
+                $app->register(PagesRoutesServiceProvider::class);
+            });
+        }
     )
     ->withMiddleware(function (Middleware $middleware) {
-        $middleware->api(prepend: [
+        $middleware->api([
             SetLocaleFromUser::class,
         ]);
         $middleware->appendToGroup('public', [
@@ -70,5 +77,6 @@ return Application::configure(basePath: dirname(__DIR__))
             JavaScriptData::class,
             UserPrefs::class,
         ]);
+        $middleware->redirectGuestsTo(fn (Request $request) => route(getBrowserLocaleOrMainLocale() . '::login'));
     })
     ->withExceptions(function (Exceptions $exceptions) {})->create();
