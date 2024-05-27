@@ -22,7 +22,6 @@ use TypiCMS\Modules\Core\Http\Middleware\SetContentLocale;
 use TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUrl;
 use TypiCMS\Modules\Core\Http\Middleware\SetLocaleFromUser;
 use TypiCMS\Modules\Core\Http\Middleware\SetNavbarLocale;
-use TypiCMS\Modules\Core\Http\Middleware\SetSystemLocale;
 use TypiCMS\Modules\Core\Http\Middleware\SetTranslatableFallbackLocaleToNull;
 use TypiCMS\Modules\Core\Http\Middleware\UserPrefs;
 use TypiCMS\Modules\Core\Http\Middleware\VerifyLocalizedUrl;
@@ -56,7 +55,6 @@ return Application::configure(basePath: dirname(__DIR__))
             SetNavbarLocale::class,
             VerifyLocalizedUrl::class,
             SetLocaleFromUrl::class,
-            SetSystemLocale::class,
             PublicAccess::class,
         ]);
         $middleware->appendToGroup('admin', [
@@ -72,7 +70,6 @@ return Application::configure(basePath: dirname(__DIR__))
             SetTranslatableFallbackLocaleToNull::class,
             SetLocaleFromUser::class,
             SetContentLocale::class,
-            SetSystemLocale::class,
 
             Impersonate::class,
             SetNavbarLocale::class,
