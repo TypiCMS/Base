@@ -21,7 +21,7 @@ if (!function_exists('homeUrl')) {
     function homeUrl(): string
     {
         $uri = '/';
-        if (config('typicms.main_locale_in_url') || mainLocale() !== app()->getLocale()) {
+        if (config('typicms.main_locale_in_url') || mainLocale() !== config('app.locale')) {
             $uri .= app()->getLocale();
         }
 
