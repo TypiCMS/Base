@@ -53,8 +53,8 @@ return Application::configure(basePath: dirname(__DIR__))
             PoweredByHeader::class,
             Impersonate::class,
             SetNavbarLocale::class,
-            VerifyLocalizedUrl::class,
             SetLocaleFromUrl::class,
+            VerifyLocalizedUrl::class,
             PublicAccess::class,
         ]);
         $middleware->appendToGroup('admin', [
