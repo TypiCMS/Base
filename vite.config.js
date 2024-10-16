@@ -24,11 +24,6 @@ export default defineConfig({
         }),
         viteStaticCopy({
             targets: [
-                // Photoswipe files
-                {
-                    src: ['node_modules/photoswipe/dist/photoswipe-lightbox.esm.min.js', 'node_modules/photoswipe/dist/photoswipe.esm.min.js'],
-                    dest: '../../public/components/photoswipe/',
-                },
                 // Main CKEditor files and skins
                 {
                     src: ['node_modules/ckeditor4/ckeditor.js', 'node_modules/ckeditor4/contents.css', 'node_modules/ckeditor4/skins'],
