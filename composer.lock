@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28c355286be9c7953c4aaa147282ac17",
+    "content-hash": "beadc5838d7dc47c906483de29d06faf",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -7311,38 +7311,43 @@
         },
         {
             "name": "typicms/bootforms",
-            "version": "3.0.1",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/bootforms.git",
-                "reference": "bcdf17c53deedf29c19f95cf2ed80ffcf469095a"
+                "reference": "e5696597e44b2a86fc305f29e5cb1edb3a1fc0e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/bcdf17c53deedf29c19f95cf2ed80ffcf469095a",
-                "reference": "bcdf17c53deedf29c19f95cf2ed80ffcf469095a",
+                "url": "https://api.github.com/repos/TypiCMS/bootforms/zipball/e5696597e44b2a86fc305f29e5cb1edb3a1fc0e8",
+                "reference": "e5696597e44b2a86fc305f29e5cb1edb3a1fc0e8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0",
-                "typicms/form": "^2.0.0"
+                "php": "^8.0.2",
+                "typicms/form": "^3.0.0"
             },
             "require-dev": {
-                "mockery/mockery": "1.3.1",
-                "php-coveralls/php-coveralls": "2.0.*",
-                "phpunit/phpunit": "~4.0"
+                "mockery/mockery": "^1.4.4",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^7.4",
+                "php-coveralls/php-coveralls": "~2.5.2",
+                "phpunit/phpunit": "^9.5.10"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
                         "TypiCMS\\BootForms\\BootFormsServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "BootForm": "TypiCMS\\BootForms\\Facades\\BootForm"
+                    }
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "TypiCMS\\BootForms": "src/"
+                "psr-4": {
+                    "TypiCMS\\BootForms\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -7362,7 +7367,7 @@
             "description": "Just a Formbuilder with some Bootstrap 5 specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
             "support": {
                 "issues": "https://github.com/TypiCMS/bootforms/issues",
-                "source": "https://github.com/TypiCMS/bootforms/tree/3.0.1"
+                "source": "https://github.com/TypiCMS/bootforms/tree/4.0.1"
             },
             "funding": [
                 {
@@ -7370,7 +7375,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-06T11:59:26+00:00"
+            "time": "2024-05-15T10:28:29+00:00"
         },
         {
             "name": "typicms/core",
@@ -7420,38 +7425,44 @@
         },
         {
             "name": "typicms/form",
-            "version": "2.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/form.git",
-                "reference": "3c0b846b8b2196602778274c3328f7fb29aa6e34"
+                "reference": "9ed483a5a74d58b15e00620049b949eb61987776"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/form/zipball/3c0b846b8b2196602778274c3328f7fb29aa6e34",
-                "reference": "3c0b846b8b2196602778274c3328f7fb29aa6e34",
+                "url": "https://api.github.com/repos/TypiCMS/form/zipball/9ed483a5a74d58b15e00620049b949eb61987776",
+                "reference": "9ed483a5a74d58b15e00620049b949eb61987776",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": "^8.0.2"
             },
             "require-dev": {
-                "illuminate/support": ">=5.8",
-                "mockery/mockery": "1.3.1",
-                "php-coveralls/php-coveralls": "2.0.*",
-                "phpunit/phpunit": "4.*"
+                "illuminate/support": ">=9.0",
+                "mockery/mockery": "^1.4.4",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^7.4",
+                "php-coveralls/php-coveralls": "~2.5.2",
+                "phpunit/php-code-coverage": "^9.2",
+                "phpunit/phpunit": "^9.5.10"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
                         "TypiCMS\\Form\\FormServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "Form": "TypiCMS\\Form\\Facades\\Form"
+                    }
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "TypiCMS\\Form": "src/"
+                "psr-4": {
+                    "TypiCMS\\Form\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -7471,7 +7482,7 @@
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
             "support": {
                 "issues": "https://github.com/TypiCMS/form/issues",
-                "source": "https://github.com/TypiCMS/form/tree/2.0.0"
+                "source": "https://github.com/TypiCMS/form/tree/3.0.1"
             },
             "funding": [
                 {
@@ -7479,40 +7490,44 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-21T11:44:00+00:00"
+            "time": "2024-05-15T10:39:05+00:00"
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
-            "version": "6.0.4",
+            "version": "8.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
-                "reference": "f5a5aaacdd9d89fad893df1f9d6d6f073139daf9"
+                "reference": "e3d171cd09e2a59d81abc7266ad4a389b2f27acb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/f5a5aaacdd9d89fad893df1f9d6d6f073139daf9",
-                "reference": "f5a5aaacdd9d89fad893df1f9d6d6f073139daf9",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/e3d171cd09e2a59d81abc7266ad4a389b2f27acb",
+                "reference": "e3d171cd09e2a59d81abc7266ad4a389b2f27acb",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": ">=5.8",
-                "php": ">=7.2.0",
-                "spatie/laravel-translatable": ">=2.2",
-                "typicms/bootforms": "^3.0.0",
-                "typicms/form": "^2.0.0"
+                "illuminate/support": "~10.0|~11.0",
+                "php": "^8.1",
+                "spatie/laravel-translatable": "^6.0",
+                "typicms/bootforms": "^4.0.0",
+                "typicms/form": "^3.0.0"
             },
             "require-dev": {
-                "orchestra/testbench": "~3.8.0",
-                "php-coveralls/php-coveralls": "~2.0.0",
-                "phpunit/phpunit": "~8.0"
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "~8.3.0",
+                "php-coveralls/php-coveralls": "~2.5.2",
+                "phpunit/phpunit": "^9.5.10"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
                         "TypiCMS\\LaravelTranslatableBootForms\\TranslatableBootFormsServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "TranslatableBootForm": "TypiCMS\\LaravelTranslatableBootForms\\Facades\\TranslatableBootForm"
+                    }
                 }
             },
             "autoload": {
@@ -7544,7 +7559,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/issues",
-                "source": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/tree/9.0.4"
+                "source": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/tree/8.0.1"
             },
             "funding": [
                 {
@@ -7552,7 +7567,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-09T20:27:43+00:00"
+            "time": "2024-05-15T12:04:56+00:00"
         },
         {
             "name": "typicms/nestablecollection",
