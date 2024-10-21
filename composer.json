@@ -30,7 +30,7 @@
         "laracasts/presenter": "^0.2.7",
         "laracasts/utilities": "^3.2",
         "laravel/framework": "^11.0",
-        "laravel/prompts": "^0.1.21",
+        "laravel/prompts": "^0.3",
         "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5",
         "maatwebsite/excel": "^3.1",
@@ -56,9 +56,9 @@
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.0",
-        "pestphp/pest": "^2.34",
-        "pestphp/pest-plugin-laravel": "^2.4",
+        "nunomaduro/collision": "^8.1",
+        "pestphp/pest": "^3.4",
+        "pestphp/pest-plugin-laravel": "^3.0",
         "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
@@ -93,6 +93,10 @@
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi",
             "@php artisan storage:link"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail\" \"npm run dev\" --names=server,queue,logs,vite"
         ]
     },
     "extra": {
