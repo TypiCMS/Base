@@ -3031,20 +3031,20 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.8.0",
+            "version": "3.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "bbd3eef89af8ba66a3aa7952b5439168fbcc529f"
+                "reference": "10ac0aa86b8062219ce21e8189123d611ca3ecd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bbd3eef89af8ba66a3aa7952b5439168fbcc529f",
-                "reference": "bbd3eef89af8ba66a3aa7952b5439168fbcc529f",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/10ac0aa86b8062219ce21e8189123d611ca3ecd9",
+                "reference": "10ac0aa86b8062219ce21e8189123d611ca3ecd9",
                 "shasum": ""
             },
             "require": {
-                "carbonphp/carbon-doctrine-types": "*",
+                "carbonphp/carbon-doctrine-types": "<100.0",
                 "ext-json": "*",
                 "php": "^8.1",
                 "psr/clock": "^1.0",
@@ -3133,7 +3133,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-19T06:22:39+00:00"
+            "time": "2024-11-03T16:02:24+00:00"
         },
         {
             "name": "nette/schema",
@@ -7382,12 +7382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "300ee2bf86dd47cda4c33765a0241afb43e5ae84"
+                "reference": "f553088970eb65a3395e15e4b77a6c2901def298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/300ee2bf86dd47cda4c33765a0241afb43e5ae84",
-                "reference": "300ee2bf86dd47cda4c33765a0241afb43e5ae84",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f553088970eb65a3395e15e4b77a6c2901def298",
+                "reference": "f553088970eb65a3395e15e4b77a6c2901def298",
                 "shasum": ""
             },
             "require": {
@@ -7420,7 +7420,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-01T13:01:16+00:00"
+            "time": "2024-11-03T19:49:14+00:00"
         },
         {
             "name": "typicms/form",
@@ -7636,12 +7636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
-                "reference": "3c0d5b14f0515caa82ba0917fcff4e4f04cdf5f8"
+                "reference": "c86b6f4b22f446f31d0b2de7015de38383c1feb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/3c0d5b14f0515caa82ba0917fcff4e4f04cdf5f8",
-                "reference": "3c0d5b14f0515caa82ba0917fcff4e4f04cdf5f8",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/c86b6f4b22f446f31d0b2de7015de38383c1feb3",
+                "reference": "c86b6f4b22f446f31d0b2de7015de38383c1feb3",
                 "shasum": ""
             },
             "require": {
@@ -7669,7 +7669,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-01T13:08:01+00:00"
+            "time": "2024-11-03T20:04:45+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
