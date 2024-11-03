@@ -10,7 +10,7 @@ All notable changes to TypiCMS will be documented in this file.
 - Images from `/public/img` directory moved to `/resources/images` directory.
 - TypiCMS Service class and Facade removed, use `/app/helpers.php` instead.
 - Open Graph Image field added to pages, news, events, projects, places.
-- Models method uri() replaced by method url().
+- Models’ method uri() replaced by method url().
 - Use of app()->getLocale in place of config('app.locale').
 
 ## 11.0.20 - 2024-01-10
