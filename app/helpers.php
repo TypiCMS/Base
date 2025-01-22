@@ -262,6 +262,6 @@ if (!function_exists('getTemplateDir')) {
         $templateDir = config('typicms.template_dir', 'public');
         $viewPath = app()['view']->getFinder()->getHints()['pages'][0];
 
-        return rtrim($viewPath . DIRECTORY_SEPARATOR . $templateDir, DIRECTORY_SEPARATOR);
+        return mb_rtrim($viewPath . DIRECTORY_SEPARATOR . $templateDir, DIRECTORY_SEPARATOR);
     }
 }

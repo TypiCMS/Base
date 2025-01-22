@@ -1,5 +1,12 @@
 <?php
 
+use Bkwld\Croppa\Filters\BlackWhite;
+use Bkwld\Croppa\Filters\Blur;
+use Bkwld\Croppa\Filters\Darkgray;
+use Bkwld\Croppa\Filters\Negative;
+use Bkwld\Croppa\Filters\OrangeWarhol;
+use Bkwld\Croppa\Filters\TurquoiseWarhol;
+
 return [
     /*
     |-----------------------------------------------------------------------------
@@ -116,11 +123,11 @@ return [
      * @var array
      */
     'filters' => [
-        'gray' => Bkwld\Croppa\Filters\BlackWhite::class,
-        'darkgray' => Bkwld\Croppa\Filters\Darkgray::class,
-        'blur' => Bkwld\Croppa\Filters\Blur::class,
-        'negative' => Bkwld\Croppa\Filters\Negative::class,
-        'orange' => Bkwld\Croppa\Filters\OrangeWarhol::class,
-        'turquoise' => Bkwld\Croppa\Filters\TurquoiseWarhol::class,
+        'gray' => BlackWhite::class,
+        'darkgray' => Darkgray::class,
+        'blur' => Blur::class,
+        'negative' => Negative::class,
+        'orange' => OrangeWarhol::class,
+        'turquoise' => TurquoiseWarhol::class,
     ],
 ];
