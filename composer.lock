@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b3c8b93c9ec998f43671770b747e850",
+    "content-hash": "40be9e085f18ce89922f0e115ad130a3",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -3149,7 +3149,7 @@
         },
         {
             "name": "msurguy/honeypot",
-            "version": "dev-master",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msurguy/Honeypot.git",
@@ -3171,7 +3171,6 @@
                 "mockery/mockery": "0.9.*|^1.4.4",
                 "phpunit/phpunit": "4.0.*|^9.5.10|^10.5"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -7567,22 +7566,21 @@
         },
         {
             "name": "typicms/core",
-            "version": "dev-master",
+            "version": "12.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "d8b6cd2e5d18e2943589c2b446014d46e3542c10"
+                "reference": "4c38e46a66f4a10835282331ce3ba158c6849951"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/d8b6cd2e5d18e2943589c2b446014d46e3542c10",
-                "reference": "d8b6cd2e5d18e2943589c2b446014d46e3542c10",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/4c38e46a66f4a10835282331ce3ba158c6849951",
+                "reference": "4c38e46a66f4a10835282331ce3ba158c6849951",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "~11.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -7601,7 +7599,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/master"
+                "source": "https://github.com/TypiCMS/Core/tree/12.0.0"
             },
             "funding": [
                 {
@@ -7609,7 +7607,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-13T10:13:40+00:00"
+            "time": "2025-01-22T11:28:09+00:00"
         },
         {
             "name": "typicms/form",
@@ -7821,7 +7819,7 @@
         },
         {
             "name": "typicms/things",
-            "version": "dev-master",
+            "version": "12.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
@@ -7836,7 +7834,6 @@
             "require": {
                 "laravel/framework": "~11.0"
             },
-            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -7850,7 +7847,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Things/issues",
-                "source": "https://github.com/TypiCMS/Things/tree/master"
+                "source": "https://github.com/TypiCMS/Things/tree/12.0.0"
             },
             "funding": [
                 {
@@ -11872,11 +11869,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "msurguy/honeypot": 20,
-        "typicms/core": 20,
-        "typicms/things": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
