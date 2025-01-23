@@ -7566,16 +7566,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "12.0.1",
+            "version": "12.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "ee2603b55be804efc20ff6832d16bd59af9c540b"
+                "reference": "6dc7c4afcaa0802c102be2364df014c47be8578d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/ee2603b55be804efc20ff6832d16bd59af9c540b",
-                "reference": "ee2603b55be804efc20ff6832d16bd59af9c540b",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/6dc7c4afcaa0802c102be2364df014c47be8578d",
+                "reference": "6dc7c4afcaa0802c102be2364df014c47be8578d",
                 "shasum": ""
             },
             "require": {
@@ -7599,7 +7599,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/12.0.1"
+                "source": "https://github.com/TypiCMS/Core/tree/12.0.2"
             },
             "funding": [
                 {
@@ -7607,7 +7607,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-23T13:47:27+00:00"
+            "time": "2025-01-23T14:27:18+00:00"
         },
         {
             "name": "typicms/form",
@@ -9148,16 +9148,16 @@
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v8.6.0",
+            "version": "v8.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "a94c0fb8f33da6a113cdc0eac936f7c42134de9d"
+                "reference": "86f003c132143d5a2ab214e19933946409e0cae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/a94c0fb8f33da6a113cdc0eac936f7c42134de9d",
-                "reference": "a94c0fb8f33da6a113cdc0eac936f7c42134de9d",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/86f003c132143d5a2ab214e19933946409e0cae7",
+                "reference": "86f003c132143d5a2ab214e19933946409e0cae7",
                 "shasum": ""
             },
             "require": {
@@ -9178,7 +9178,7 @@
                 "laravel/sanctum": "^4.0.7",
                 "laravel/tinker": "^2.10.0",
                 "orchestra/testbench-core": "^9.9.2",
-                "pestphp/pest": "^2.36.0 || ^3.7.2",
+                "pestphp/pest": "^3.7.3",
                 "sebastian/environment": "^6.1.0 || ^7.2.0"
             },
             "type": "library",
@@ -9216,6 +9216,7 @@
                 "cli",
                 "command-line",
                 "console",
+                "dev",
                 "error",
                 "handling",
                 "laravel",
@@ -9241,25 +9242,25 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2025-01-23T12:48:18+00:00"
+            "time": "2025-01-23T13:41:43+00:00"
         },
         {
             "name": "pestphp/pest",
-            "version": "v3.7.3",
+            "version": "v3.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "e4aab77a349d42e75d3d26861c56341d85626a18"
+                "reference": "4a987d3d5c4e3ba36c76fecbf56113baac2d1b2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/e4aab77a349d42e75d3d26861c56341d85626a18",
-                "reference": "e4aab77a349d42e75d3d26861c56341d85626a18",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/4a987d3d5c4e3ba36c76fecbf56113baac2d1b2b",
+                "reference": "4a987d3d5c4e3ba36c76fecbf56113baac2d1b2b",
                 "shasum": ""
             },
             "require": {
                 "brianium/paratest": "^7.7.0",
-                "nunomaduro/collision": "^8.6.0",
+                "nunomaduro/collision": "^8.6.1",
                 "nunomaduro/termwind": "^2.3.0",
                 "pestphp/pest-plugin": "^3.0.0",
                 "pestphp/pest-plugin-arch": "^3.0.0",
@@ -9341,7 +9342,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/v3.7.3"
+                "source": "https://github.com/pestphp/pest/tree/v3.7.4"
             },
             "funding": [
                 {
@@ -9353,7 +9354,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-23T12:51:02+00:00"
+            "time": "2025-01-23T14:03:29+00:00"
         },
         {
             "name": "pestphp/pest-plugin",
