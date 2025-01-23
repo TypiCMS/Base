@@ -13,6 +13,7 @@ All notable changes to TypiCMS will be documented in this file.
 - Open Graph Image field added to pages, news, events, projects, places.
 - Models’ method uri() replaced by method url().
 - Use of app()->getLocale in place of config('app.locale').
+- password_resets table renamed to password_reset_tokens
 
 ## 11.0.20 - 2024-01-10
 
