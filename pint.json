@@ -4,19 +4,12 @@
         "@PhpCsFixer": true,
         "@PHP80Migration": true,
         "mb_str_functions": true,
-        "multiline_whitespace_before_semicolons": {
-            "strategy": "no_multi_line"
-        },
+        "multiline_whitespace_before_semicolons": { "strategy": "no_multi_line" },
         "modernize_types_casting": true,
         "return_assignment": false,
-        "ordered_class_elements": {
-            "order": ["use_trait"]
-        },
-        "single_line_comment_style": {
-            "comment_types": ["hash"]
-        },
-        "yoda_style": false,
-        "global_namespace_import": true,
+        "ordered_class_elements": { "order": ["use_trait"] },
+        "yoda_style": { "equal": false, "identical": false, "less_and_greater": false },
+        "global_namespace_import": { "import_classes": false, "import_constants": false, "import_functions": false },
         "modernize_strpos": true,
         "concat_space": {
             "spacing": "one"
