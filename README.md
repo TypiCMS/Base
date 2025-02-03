@@ -44,7 +44,7 @@ TypiCMS is a modular multilingual content management system built with [Laravel]
 
 ### URLs
 
-This kind of URLs are managed by the CMS:
+These kind of URLs are managed by the CMS:
 
 **Modules:**
 
@@ -165,7 +165,7 @@ Each module can be [published](#publish-a-module).
 
 ### Pages
 
-Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.
+Pages are nestable with a drag and drop, on drop, URIs are generated and saved in the database.
 Each translation of a page has its own route.
 A page can be linked to a module.
 A page can have multiple sections.
@@ -238,7 +238,7 @@ Latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
-Each modules has a facade that give you access to the repository, you can call for example `News::latest(3)` to get the three latest news.
+Each modules have a facade that gives you access to the repository, you can call for example `News::latest(3)` to get the three latest news.
 Check available methods in each module’s repository.
 
 ## Artisan commands
