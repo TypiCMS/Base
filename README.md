@@ -238,7 +238,7 @@ Latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
-Each modules have a facade that gives you access to the repository, you can call for example `News::latest(3)` to get the three latest news.
+Each module has a facade that gives you access to the repository, you can call for example `News::latest(3)` to get the three latest news.
 Check available methods in each module’s repository.
 
 ## Artisan commands
