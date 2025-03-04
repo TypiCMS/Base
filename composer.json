@@ -1,4 +1,5 @@
 {
+    "$schema": "https://getcomposer.org/schema.json",
     "name": "typicms/base",
     "type": "project",
     "description": "A multilingual CMS built with Laravel",
@@ -57,13 +58,11 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.13",
         "fakerphp/faker": "^1.23",
-        "laravel/pail": "^1.1",
+        "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.13",
-        "laravel/sail": "^1.26",
+        "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.1",
-        "pestphp/pest": "^3.7",
-        "pestphp/pest-plugin-laravel": "^3.0",
+        "nunomaduro/collision": "^8.6",
         "spatie/laravel-ignition": "^2.9"
     },
     "autoload": {
