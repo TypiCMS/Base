@@ -2,7 +2,13 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
-## 12.0.0 - 2025-01
+## 13.0.0 - 2025-03-04
+
+### Changed
+
+- Laravel 12
+
+## 12.0.0 - 2025-01-23
 
 ### Changed
 
