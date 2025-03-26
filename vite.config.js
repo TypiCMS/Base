@@ -1,13 +1,11 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import vue from '@vitejs/plugin-vue2';
+import vue from '@vitejs/plugin-vue';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
-    resolve: {
-        alias: {
-            vue: 'vue/dist/vue.esm.js',
-        },
+    build: {
+        chunkSizeWarningLimit: 800,
     },
     plugins: [
         laravel({
