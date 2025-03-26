@@ -2,6 +2,16 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 14.0.0 - 2025-03-26
+
+### Changed
+
+- Vue.js 3
+
+### Added
+
+- Ability to swap a file in the file manager
+
 ## 13.0.0 - 2025-03-04
 
 ### Changed
