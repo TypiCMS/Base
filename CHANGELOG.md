@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 14.0.4 - 2025-03-31
+
+### Changed
+
+- Use of Vue.js composition API
+
 ## 14.0.0 - 2025-03-26
 
 ### Changed
