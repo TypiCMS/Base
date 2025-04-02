@@ -1738,16 +1738,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.4.1",
+            "version": "v12.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "cdefd852ecb459a65392cd6ccb578c92a15b8e2b"
+                "reference": "0ab4791b2c5f405f8728e4481265599803564c02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cdefd852ecb459a65392cd6ccb578c92a15b8e2b",
-                "reference": "cdefd852ecb459a65392cd6ccb578c92a15b8e2b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/0ab4791b2c5f405f8728e4481265599803564c02",
+                "reference": "0ab4791b2c5f405f8728e4481265599803564c02",
                 "shasum": ""
             },
             "require": {
@@ -1949,7 +1949,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-03-30T16:27:26+00:00"
+            "time": "2025-04-01T14:40:42+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -7632,16 +7632,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "14.0.4",
+            "version": "14.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "b9125014fcac1086548834c7ef80de85f22fc96d"
+                "reference": "1986bc48697994ad2674ef7ea4a9bb89cd1dc81a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/b9125014fcac1086548834c7ef80de85f22fc96d",
-                "reference": "b9125014fcac1086548834c7ef80de85f22fc96d",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/1986bc48697994ad2674ef7ea4a9bb89cd1dc81a",
+                "reference": "1986bc48697994ad2674ef7ea4a9bb89cd1dc81a",
                 "shasum": ""
             },
             "require": {
@@ -7665,7 +7665,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/14.0.4"
+                "source": "https://github.com/TypiCMS/Core/tree/14.0.5"
             },
             "funding": [
                 {
@@ -7673,7 +7673,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-31T07:56:10+00:00"
+            "time": "2025-04-02T08:46:04+00:00"
         },
         {
             "name": "typicms/form",
