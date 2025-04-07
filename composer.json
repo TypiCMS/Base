@@ -21,10 +21,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/laravel-shift/Presenter.git"
         }
     ],
     "require": {
@@ -32,7 +28,7 @@
         "bkwld/croppa": "^7.0",
         "eluceo/ical": "^2.13",
         "genealabs/laravel-model-caching": "^12.0",
-        "laracasts/presenter": "dev-l12-compatibility",
+        "laracasts/presenter": "^0.2.8",
         "laracasts/utilities": "^3.2",
         "laravel/framework": "^12.0",
         "laravel/prompts": "^0.3",
