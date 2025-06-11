@@ -157,8 +157,8 @@ if (!function_exists('getMigrationFileName')) {
 }
 
 if (!function_exists('getPagesLinkedToModule')) {
-    function getPagesLinkedToModule($module = null): array
     /** @return array<int, Page> */
+    function getPagesLinkedToModule(?string $module = null): array
     {
         $module = mb_strtolower($module);
         $routes = app('typicms.routes');
@@ -175,7 +175,7 @@ if (!function_exists('getPagesLinkedToModule')) {
 }
 
 if (!function_exists('getPageLinkedToModule')) {
-    function getPageLinkedToModule($module = null): ?Page
+    function getPageLinkedToModule(?string $module = null): ?Page
     {
         $pages = getPagesLinkedToModule($module);
 
@@ -188,7 +188,7 @@ if (!function_exists('feeds')) {
     function feeds(): Collection
     {
         $locale = config('app.locale');
-        $feeds = collect(config('typicms.modules'))
+        $feeds = collect((array) config('typicms.modules'))
             ->transform(function ($properties, $module) use ($locale) {
                 $routeName = $locale . '::' . $module . '-feed';
                 if (isset($properties['has_feed']) && $properties['has_feed'] === true && Route::has($routeName)) {
