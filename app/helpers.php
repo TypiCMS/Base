@@ -26,6 +26,7 @@ if (!function_exists('column')) {
 }
 
 if (!function_exists('locales')) {
+    /** @return array<string> */
     function locales(): array
     {
         return array_keys(config('typicms.locales'));
@@ -33,6 +34,7 @@ if (!function_exists('locales')) {
 }
 
 if (!function_exists('enabledLocales')) {
+    /** @return array<string> */
     function enabledLocales(): array
     {
         $locales = [];
@@ -86,6 +88,7 @@ if (!function_exists('getBrowserLocaleOrMainLocale')) {
 }
 
 if (!function_exists('modules')) {
+    /** @return array<string> */
     function modules(): array
     {
         $modules = config('typicms.modules');
@@ -96,6 +99,7 @@ if (!function_exists('modules')) {
 }
 
 if (!function_exists('getModulesForSelect')) {
+    /** @return array<string, string> */
     function getModulesForSelect(): array
     {
         $modules = config('typicms.modules');
@@ -112,6 +116,7 @@ if (!function_exists('getModulesForSelect')) {
 }
 
 if (!function_exists('permissions')) {
+    /** @return array<string, array<mixed>> */
     function permissions(): array
     {
         $permissions = [];
@@ -153,6 +158,7 @@ if (!function_exists('getMigrationFileName')) {
 
 if (!function_exists('getPagesLinkedToModule')) {
     function getPagesLinkedToModule($module = null): array
+    /** @return array<int, Page> */
     {
         $module = mb_strtolower($module);
         $routes = app('typicms.routes');
@@ -178,6 +184,7 @@ if (!function_exists('getPageLinkedToModule')) {
 }
 
 if (!function_exists('feeds')) {
+    /** @return Collection<int, Illuminate\Database\Eloquent\Model> */
     function feeds(): Collection
     {
         $locale = config('app.locale');
@@ -196,6 +203,7 @@ if (!function_exists('feeds')) {
 }
 
 if (!function_exists('pageTemplates')) {
+    /** @return array<string, string> */
     function pageTemplates(): array
     {
         $files = File::files(base_path('vendor/typicms/core/resources/views/pages/public'));
@@ -216,6 +224,7 @@ if (!function_exists('pageTemplates')) {
 }
 
 if (!function_exists('pageSectionTemplates')) {
+    /** @return array<string, string> */
     function pageSectionTemplates(): array
     {
         $files = File::files(base_path('vendor/typicms/core/resources/views/pages/public'));
