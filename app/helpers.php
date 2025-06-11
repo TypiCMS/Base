@@ -6,17 +6,6 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use TypiCMS\Modules\Core\Models\Page;
 
-if (!function_exists('mb_ucfirst')) {
-    function mb_ucfirst(string $string, string $encoding = 'UTF-8'): string
-    {
-        $strlen = mb_strlen($string, $encoding);
-        $firstChar = mb_substr($string, 0, 1, $encoding);
-        $then = mb_substr($string, 1, $strlen - 1, $encoding);
-
-        return mb_strtoupper($firstChar, $encoding) . $then;
-    }
-}
-
 if (!function_exists('homeUrl')) {
     function homeUrl(): string
     {
@@ -39,7 +28,7 @@ if (!function_exists('column')) {
 if (!function_exists('locales')) {
     function locales(): array
     {
-        return array_keys(config('typicms.locales', []));
+        return array_keys(config('typicms.locales'));
     }
 }
 
@@ -209,12 +198,7 @@ if (!function_exists('feeds')) {
 if (!function_exists('pageTemplates')) {
     function pageTemplates(): array
     {
-        try {
-            $directory = getTemplateDir();
-            $files = File::files($directory);
-        } catch (Exception $e) {
-            $files = File::files(base_path('vendor/typicms/pages/src/resources/views/public'));
-        }
+        $files = File::files(base_path('vendor/typicms/core/resources/views/pages/public'));
         $templates = [];
         foreach ($files as $file) {
             $filename = File::name($file);
@@ -234,12 +218,7 @@ if (!function_exists('pageTemplates')) {
 if (!function_exists('pageSectionTemplates')) {
     function pageSectionTemplates(): array
     {
-        try {
-            $directory = getTemplateDir();
-            $files = File::files($directory);
-        } catch (Exception $e) {
-            $files = File::files(base_path('vendor/typicms/pages/src/resources/views/public'));
-        }
+        $files = File::files(base_path('vendor/typicms/core/resources/views/pages/public'));
         $templates = [];
         foreach ($files as $file) {
             $filename = File::name($file);
@@ -253,15 +232,5 @@ if (!function_exists('pageSectionTemplates')) {
         }
 
         return ['default' => 'Default'] + $templates;
-    }
-}
-
-if (!function_exists('getTemplateDir')) {
-    function getTemplateDir(): string
-    {
-        $templateDir = config('typicms.template_dir', 'public');
-        $viewPath = app()['view']->getFinder()->getHints()['pages'][0];
-
-        return mb_rtrim($viewPath . DIRECTORY_SEPARATOR . $templateDir, DIRECTORY_SEPARATOR);
     }
 }
