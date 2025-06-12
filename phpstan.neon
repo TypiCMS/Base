@@ -7,12 +7,9 @@ parameters:
     paths:
         - app/
         - Modules/
+        - packages/typicms/
 
-    # Level 10 is the highest level
-    level: 5
+    level: 6
 
-#    ignoreErrors:
-#        - '#PHPDoc tag @var#'
-#
-#    excludePaths:
-#        - ./*/*/FileToBeExcluded.php
+    excludePaths:
+        - packages/typicms/core/src/config/
