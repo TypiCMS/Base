@@ -8,7 +8,8 @@
         "watch": "vite",
         "prod": "vite build",
         "production": "vite build",
-        "format": "npx prettier --write resources/"
+        "format": "npx prettier --write resources/",
+        "icons": "~/Library/Python/3.9/bin/pyftsubset ./node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2 --unicodes=U+f229,U+f22d,U+f231,U+f235,U+f128,U+f12f,U+f138,U+f148,U+f64d,U+f63b,U+f4c9,U+f3e2,U+f4d7 --output-file=./resources/fonts/bootstrap-icons-subset.woff2"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.8",
