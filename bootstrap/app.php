@@ -12,7 +12,6 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Sentry\Laravel\Integration;
-use Sentry\State\Scope;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use TypiCMS\Modules\Core\Http\Middleware\Impersonate;
 use TypiCMS\Modules\Core\Http\Middleware\JavaScriptData;
@@ -89,24 +88,6 @@ return Application::configure(basePath: dirname(__DIR__))
         });
 
         if (app()->bound('sentry')) {
-            if (auth()->check()) {
-                $guard = null;
-                $userInfo = [];
-                foreach (array_keys(config('auth.guards')) as $guard) {
-                    if (auth($guard)->check()) {
-                        return $guard;
-                    }
-                }
-                if ($user = auth($guard)->user()) {
-                    $userInfo = [
-                        'id' => $guard . '-with-id-' . $user->id,
-                        'email' => $user->email,
-                    ];
-                }
-                \Sentry\configureScope(function (Scope $scope) use ($userInfo): void {
-                    $scope->setUser($userInfo, true);
-                });
-            }
             Integration::handles($exceptions);
         }
     })
