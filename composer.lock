@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fd91beeb97c4c2644d9ad0a77b981af",
+    "content-hash": "be815352ac6ff34dd30972ef5cf89437",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -8585,21 +8585,22 @@
         },
         {
             "name": "typicms/core",
-            "version": "14.0.25",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "793ab4fe596fc0abae038ef63addf4fb92b6f356"
+                "reference": "27fea6d8f541b862c8cf79ea1ad0be1ac50b425a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/793ab4fe596fc0abae038ef63addf4fb92b6f356",
-                "reference": "793ab4fe596fc0abae038ef63addf4fb92b6f356",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/27fea6d8f541b862c8cf79ea1ad0be1ac50b425a",
+                "reference": "27fea6d8f541b862c8cf79ea1ad0be1ac50b425a",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "~12.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -8618,7 +8619,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/14.0.25"
+                "source": "https://github.com/TypiCMS/Core/tree/master"
             },
             "funding": [
                 {
@@ -8626,7 +8627,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-23T10:50:08+00:00"
+            "time": "2025-06-23T13:42:15+00:00"
         },
         {
             "name": "typicms/form",
@@ -8838,21 +8839,22 @@
         },
         {
             "name": "typicms/things",
-            "version": "14.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
-                "reference": "a1a232573e0bbdab0491026cd1f399c06c2c3ac5"
+                "reference": "8d612e13af3efa43dcd3cee2ed9bc8c1614cfab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/a1a232573e0bbdab0491026cd1f399c06c2c3ac5",
-                "reference": "a1a232573e0bbdab0491026cd1f399c06c2c3ac5",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/8d612e13af3efa43dcd3cee2ed9bc8c1614cfab6",
+                "reference": "8d612e13af3efa43dcd3cee2ed9bc8c1614cfab6",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "~12.0"
             },
+            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -8866,7 +8868,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Things/issues",
-                "source": "https://github.com/TypiCMS/Things/tree/14.0.2"
+                "source": "https://github.com/TypiCMS/Things/tree/master"
             },
             "funding": [
                 {
@@ -8874,7 +8876,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-23T13:36:13+00:00"
+            "time": "2025-06-11T16:48:16+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -10573,7 +10575,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "typicms/core": 20,
+        "typicms/things": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
