@@ -29,7 +29,11 @@ if (!function_exists('locales')) {
     /** @return array<string> */
     function locales(): array
     {
-        return array_keys(config('typicms.locales'));
+        if (is_array(config('app.locales'))) {
+            return array_keys(config('typicms.locales'));
+        }
+
+        return [];
     }
 }
 
