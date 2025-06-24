@@ -210,7 +210,7 @@ if (!function_exists('pageTemplates')) {
     /** @return array<string, string> */
     function pageTemplates(): array
     {
-        $files = File::files(base_path('vendor/typicms/core/resources/views/pages/public'));
+        $files = File::files(resource_path('views/vendor/pages/public'));
         $templates = [];
         foreach ($files as $file) {
             $filename = File::name($file);
@@ -231,7 +231,7 @@ if (!function_exists('pageSectionTemplates')) {
     /** @return array<string, string> */
     function pageSectionTemplates(): array
     {
-        $files = File::files(base_path('vendor/typicms/core/resources/views/pages/public'));
+        $files = File::files(resource_path('views/vendor/pages/public'));
         $templates = [];
         foreach ($files as $file) {
             $filename = File::name($file);
