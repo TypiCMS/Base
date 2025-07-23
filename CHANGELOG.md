@@ -2,6 +2,14 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 15.0.0 - 2025-07
+
+### Changed
+
+- Passkey and one time password authentication
+- Tiptap editor in place of CKEditor
+- Lucide in place of Bootstrap Icons
+
 ## 14.0.4 - 2025-03-31
 
 ### Changed
