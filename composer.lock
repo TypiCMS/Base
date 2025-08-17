@@ -3800,16 +3800,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.6.2",
+            "version": "5.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "92dde6a5919e34835c506ac8c523ef095a95ed62"
+                "reference": "94f8051919d1b0369a6bcc7931d679a511c03fe9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/92dde6a5919e34835c506ac8c523ef095a95ed62",
-                "reference": "92dde6a5919e34835c506ac8c523ef095a95ed62",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94f8051919d1b0369a6bcc7931d679a511c03fe9",
+                "reference": "94f8051919d1b0369a6bcc7931d679a511c03fe9",
                 "shasum": ""
             },
             "require": {
@@ -3858,9 +3858,9 @@
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
             "support": {
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.2"
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.6.3"
             },
-            "time": "2025-04-13T19:20:35+00:00"
+            "time": "2025-08-01T19:43:32+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -8803,12 +8803,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "54445c23d1bd3b4cf363a52f5e793bbf46e22c97"
+                "reference": "6ec6d91a7b563d331c941bd85dd5aca90e830c8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/54445c23d1bd3b4cf363a52f5e793bbf46e22c97",
-                "reference": "54445c23d1bd3b4cf363a52f5e793bbf46e22c97",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/6ec6d91a7b563d331c941bd85dd5aca90e830c8e",
+                "reference": "6ec6d91a7b563d331c941bd85dd5aca90e830c8e",
                 "shasum": ""
             },
             "require": {
@@ -8841,7 +8841,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-16T21:16:38+00:00"
+            "time": "2025-08-17T19:42:58+00:00"
         },
         {
             "name": "typicms/form",
@@ -9057,12 +9057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
-                "reference": "11cb33bf86f2be38b494e0e77d377a10f7ece3b9"
+                "reference": "b57d79cff2be5a3310e1ba4543ea6c08bdf7dda1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/11cb33bf86f2be38b494e0e77d377a10f7ece3b9",
-                "reference": "11cb33bf86f2be38b494e0e77d377a10f7ece3b9",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/b57d79cff2be5a3310e1ba4543ea6c08bdf7dda1",
+                "reference": "b57d79cff2be5a3310e1ba4543ea6c08bdf7dda1",
                 "shasum": ""
             },
             "require": {
@@ -9090,7 +9090,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-27T11:08:40+00:00"
+            "time": "2025-08-17T19:34:19+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
