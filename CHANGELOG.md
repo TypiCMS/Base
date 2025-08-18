@@ -2,13 +2,13 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
-## 15.0.0 - 2025-08
+## 15.0.0 - 2025-08-18
 
 ### Changed
 
+- Refreshed UI with dark mode support
 - Passkey and one time password authentication
 - Tiptap editor in place of CKEditor
-- Dark mode support
 - Lucide in place of Bootstrap Icons
 
 ## 14.0.4 - 2025-03-31
