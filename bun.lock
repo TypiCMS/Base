@@ -4,54 +4,54 @@
     "": {
       "devDependencies": {
         "@eslint/eslintrc": "^3.3.1",
-        "@eslint/js": "^9.31.0",
-        "@floating-ui/dom": "^1.7.2",
+        "@eslint/js": "^9.33.0",
+        "@floating-ui/dom": "^1.7.3",
         "@popperjs/core": "^2.11.8",
-        "@shufo/prettier-plugin-blade": "^1.16.0",
+        "@shufo/prettier-plugin-blade": "^1.16.1",
         "@simplewebauthn/browser": "^13.1.2",
-        "@tiptap/core": "^3.0.7",
-        "@tiptap/extension-code": "^3.0.7",
-        "@tiptap/extension-color": "^3.0.7",
-        "@tiptap/extension-highlight": "^3.0.7",
-        "@tiptap/extension-image": "^3.0.7",
-        "@tiptap/extension-list": "^3.0.7",
-        "@tiptap/extension-list-item": "^3.0.7",
-        "@tiptap/extension-subscript": "^3.0.7",
-        "@tiptap/extension-superscript": "^3.0.7",
-        "@tiptap/extension-table": "^3.0.7",
-        "@tiptap/extension-text-align": "^3.0.7",
-        "@tiptap/extension-text-style": "^3.0.7",
-        "@tiptap/extension-typography": "^3.0.7",
-        "@tiptap/extension-underline": "^3.0.7",
-        "@tiptap/extension-youtube": "^3.0.7",
-        "@tiptap/extensions": "^3.0.7",
-        "@tiptap/pm": "^3.0.7",
-        "@tiptap/starter-kit": "^3.0.7",
-        "@tiptap/vue-3": "^3.0.7",
-        "@typescript-eslint/eslint-plugin": "^8.38.0",
-        "@typescript-eslint/parser": "^8.38.0",
-        "@uppy/core": "^4.4.7",
-        "@uppy/dashboard": "^4.3.4",
-        "@uppy/drag-drop": "^4.1.3",
-        "@uppy/drop-target": "^3.1.1",
-        "@uppy/file-input": "^4.1.3",
-        "@uppy/image-editor": "^3.3.3",
-        "@uppy/locales": "^4.6.0",
-        "@uppy/progress-bar": "^4.2.1",
-        "@uppy/vue": "^2.3.0",
-        "@uppy/xhr-upload": "^4.3.3",
-        "@vitejs/plugin-vue": "^5.2.4",
+        "@tiptap/core": "^3.2.0",
+        "@tiptap/extension-code": "^3.2.0",
+        "@tiptap/extension-color": "^3.2.0",
+        "@tiptap/extension-highlight": "^3.2.0",
+        "@tiptap/extension-image": "^3.2.0",
+        "@tiptap/extension-list": "^3.2.0",
+        "@tiptap/extension-list-item": "^3.2.0",
+        "@tiptap/extension-subscript": "^3.2.0",
+        "@tiptap/extension-superscript": "^3.2.0",
+        "@tiptap/extension-table": "^3.2.0",
+        "@tiptap/extension-text-align": "^3.2.0",
+        "@tiptap/extension-text-style": "^3.2.0",
+        "@tiptap/extension-typography": "^3.2.0",
+        "@tiptap/extension-underline": "^3.2.0",
+        "@tiptap/extension-youtube": "^3.2.0",
+        "@tiptap/extensions": "^3.2.0",
+        "@tiptap/pm": "^3.2.0",
+        "@tiptap/starter-kit": "^3.2.0",
+        "@tiptap/vue-3": "^3.2.0",
+        "@typescript-eslint/eslint-plugin": "^8.39.1",
+        "@typescript-eslint/parser": "^8.39.1",
+        "@uppy/core": "^4.5.2",
+        "@uppy/dashboard": "^4.4.3",
+        "@uppy/drag-drop": "^4.2.2",
+        "@uppy/drop-target": "^3.2.2",
+        "@uppy/file-input": "^4.2.2",
+        "@uppy/image-editor": "^3.4.2",
+        "@uppy/locales": "^4.8.4",
+        "@uppy/progress-bar": "^4.3.2",
+        "@uppy/vue": "^2.4.2",
+        "@uppy/xhr-upload": "^4.4.2",
+        "@vitejs/plugin-vue": "^6.0.1",
         "alertify.js": "^1.0.12",
         "autoprefixer": "^10.4.21",
         "bootstrap": "^5.3.7",
         "bootstrap-icons": "^1.13.1",
         "concurrently": "^9.2.0",
-        "eslint": "^9.31.0",
+        "eslint": "^9.33.0",
         "eslint-plugin-import": "^2.32.0",
-        "eslint-plugin-vue": "^10.3.0",
-        "laravel-vite-plugin": "^1.3.0",
-        "lucide-static": "^0.525.0",
-        "lucide-vue-next": "^0.525.0",
+        "eslint-plugin-vue": "^10.4.0",
+        "laravel-vite-plugin": "^2.0.0",
+        "lucide-static": "^0.539.0",
+        "lucide-vue-next": "^0.539.0",
         "mitt": "^3.0.1",
         "photoswipe": "^5.4.4",
         "postcss": "^8.5.6",
@@ -61,7 +61,7 @@
         "sl-vue-tree-next": "^0.0.14",
         "swiper": "^11.2.10",
         "tom-select": "^2.4.3",
-        "vite": "^6.3.5",
+        "vite": "^7.1.2",
         "vite-plugin-static-copy": "^3.1.1",
         "vue": "^3.5.18",
         "vue-eslint-parser": "^10.2.0",
@@ -202,6 +202,8 @@
     "@prettier/plugin-php": ["@prettier/plugin-php@0.24.0", "", { "dependencies": { "linguist-languages": "^8.0.0", "php-parser": "^3.2.5" }, "peerDependencies": { "prettier": "^3.0.0" } }, "sha512-x9l65fCE/pgoET6RQowgdgG8Xmzs44z6j6Hhg3coINCyCw9JBGJ5ZzMR2XHAM2jmAdbJAIgqB6cUn4/3W3XLTA=="],
 
     "@remirror/core-constants": ["@remirror/core-constants@3.0.0", "", {}, "sha512-42aWfPrimMfDKDi4YegyS7x+/0tlzaqwPQCULLanv3DMIlu96KTJR0fM5isWX2UViOqlGnX6YFgqWepcX+XMNg=="],
+
+    "@rolldown/pluginutils": ["@rolldown/pluginutils@1.0.0-beta.29", "", {}, "sha512-NIJgOsMjbxAXvoGq/X0gD7VPMQ8j9g0BiDaNjVNVjvl+iKXxL3Jre0v31RmBYeLEmkbj2s02v8vFTbUXi5XS2Q=="],
 
     "@rollup/rollup-android-arm-eabi": ["@rollup/rollup-android-arm-eabi@4.46.3", "", { "os": "android", "cpu": "arm" }, "sha512-UmTdvXnLlqQNOCJnyksjPs1G4GqXNGW1LrzCe8+8QoaLhhDeTXYBgJ3k6x61WIhlHX2U+VzEJ55TtIjR/HTySA=="],
 
@@ -437,7 +439,7 @@
 
     "@uppy/zoom": ["@uppy/zoom@3.3.2", "", { "dependencies": { "@uppy/companion-client": "^4.5.2", "@uppy/provider-views": "^4.5.2", "@uppy/utils": "^6.2.2", "preact": "^10.5.13" }, "peerDependencies": { "@uppy/core": "^4.5.2" } }, "sha512-e/yP3itmWh2U/A8SBLymVngDSIzmbq08eX0QzBrI5wIA1r38lD5tGlO2V9D70ujY8hNX7HQUqF+nK4OEgdUxJA=="],
 
-    "@vitejs/plugin-vue": ["@vitejs/plugin-vue@5.2.4", "", { "peerDependencies": { "vite": "^5.0.0 || ^6.0.0", "vue": "^3.2.25" } }, "sha512-7Yx/SXSOcQq5HiiV3orevHUFn+pmMB4cgbEkDYgnkUWb0WfeQ/wa2yFv6D5ICiCQOVpjA7vYDXrC7AGO8yjDHA=="],
+    "@vitejs/plugin-vue": ["@vitejs/plugin-vue@6.0.1", "", { "dependencies": { "@rolldown/pluginutils": "1.0.0-beta.29" }, "peerDependencies": { "vite": "^5.0.0 || ^6.0.0 || ^7.0.0", "vue": "^3.2.25" } }, "sha512-+MaE752hU0wfPFJEUAIxqw18+20euHHdxVtMvbFcOEpjEyfqXH/5DCoTHiVJ0J29EhTJdoTkjEv5YBKU9dnoTw=="],
 
     "@vue/compiler-core": ["@vue/compiler-core@3.5.18", "", { "dependencies": { "@babel/parser": "^7.28.0", "@vue/shared": "3.5.18", "entities": "^4.5.0", "estree-walker": "^2.0.2", "source-map-js": "^1.2.1" } }, "sha512-3slwjQrrV1TO8MoXgy3aynDQ7lslj5UqDxuHnrzHtpON5CBinhWjJETciPngpin/T3OuW3tXUf86tEurusnztw=="],
 
@@ -847,7 +849,7 @@
 
     "keyv": ["keyv@4.5.4", "", { "dependencies": { "json-buffer": "3.0.1" } }, "sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw=="],
 
-    "laravel-vite-plugin": ["laravel-vite-plugin@1.3.0", "", { "dependencies": { "picocolors": "^1.0.0", "vite-plugin-full-reload": "^1.1.0" }, "peerDependencies": { "vite": "^5.0.0 || ^6.0.0" }, "bin": { "clean-orphaned-assets": "bin/clean.js" } }, "sha512-P5qyG56YbYxM8OuYmK2OkhcKe0AksNVJUjq9LUZ5tOekU9fBn9LujYyctI4t9XoLjuMvHJXXpCoPntY1oKltuA=="],
+    "laravel-vite-plugin": ["laravel-vite-plugin@2.0.0", "", { "dependencies": { "picocolors": "^1.0.0", "vite-plugin-full-reload": "^1.1.0" }, "peerDependencies": { "vite": "^7.0.0" }, "bin": { "clean-orphaned-assets": "bin/clean.js" } }, "sha512-pnaKHInJgiWpG/g+LmaISHl7D/1s5wnOXnrGiBdt4NOs+tYZRw0v/ZANELGX2/dGgHyEzO+iZ6x4idpoK04z/Q=="],
 
     "levn": ["levn@0.4.1", "", { "dependencies": { "prelude-ls": "^1.2.1", "type-check": "~0.4.0" } }, "sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ=="],
 
@@ -873,9 +875,9 @@
 
     "lru-cache": ["lru-cache@10.4.3", "", {}, "sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ=="],
 
-    "lucide-static": ["lucide-static@0.525.0", "", {}, "sha512-dPQiibOV/kRv/UnaNFbiTxdDFZ267rIjHVWLv6GoUXVD5YSW71cyF4tYJVD27zSb0OOWdeWrqZsuBtRaYc4FHw=="],
+    "lucide-static": ["lucide-static@0.539.0", "", {}, "sha512-ybhtBJOeIgY1d1WV3vxJkSOoWi1EaYOkA15WYtct9/kX3+HSTCdbkeM0fQ4i5JxsKmp874J8dsNI92r4t5qCzg=="],
 
-    "lucide-vue-next": ["lucide-vue-next@0.525.0", "", { "peerDependencies": { "vue": ">=3.0.1" } }, "sha512-Xf8+x8B2DrnGDV/rxylS+KBp2FIe6ljwDn2JsGTZZvXIfhmm/q+nv8RuGO1OyoMjOVkkz7CqtUqJfwtFPRbB2w=="],
+    "lucide-vue-next": ["lucide-vue-next@0.539.0", "", { "peerDependencies": { "vue": ">=3.0.1" } }, "sha512-8Y75ekxsBqW+9YZPCbxE6KXoCbNmJYUujKP+nK2cIqmONJXvUSeyroEW4DV1Kjlw8ZvmfKwP0FpdjPzuKvRsQw=="],
 
     "magic-string": ["magic-string@0.30.17", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.0" } }, "sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA=="],
 
@@ -1217,7 +1219,7 @@
 
     "util-deprecate": ["util-deprecate@1.0.2", "", {}, "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="],
 
-    "vite": ["vite@6.3.5", "", { "dependencies": { "esbuild": "^0.25.0", "fdir": "^6.4.4", "picomatch": "^4.0.2", "postcss": "^8.5.3", "rollup": "^4.34.9", "tinyglobby": "^0.2.13" }, "optionalDependencies": { "fsevents": "~2.3.3" }, "peerDependencies": { "@types/node": "^18.0.0 || ^20.0.0 || >=22.0.0", "jiti": ">=1.21.0", "less": "*", "lightningcss": "^1.21.0", "sass": "*", "sass-embedded": "*", "stylus": "*", "sugarss": "*", "terser": "^5.16.0", "tsx": "^4.8.1", "yaml": "^2.4.2" }, "optionalPeers": ["@types/node", "jiti", "less", "lightningcss", "sass", "sass-embedded", "stylus", "sugarss", "terser", "tsx", "yaml"], "bin": { "vite": "bin/vite.js" } }, "sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ=="],
+    "vite": ["vite@7.1.2", "", { "dependencies": { "esbuild": "^0.25.0", "fdir": "^6.4.6", "picomatch": "^4.0.3", "postcss": "^8.5.6", "rollup": "^4.43.0", "tinyglobby": "^0.2.14" }, "optionalDependencies": { "fsevents": "~2.3.3" }, "peerDependencies": { "@types/node": "^20.19.0 || >=22.12.0", "jiti": ">=1.21.0", "less": "^4.0.0", "lightningcss": "^1.21.0", "sass": "^1.70.0", "sass-embedded": "^1.70.0", "stylus": ">=0.54.8", "sugarss": "^5.0.0", "terser": "^5.16.0", "tsx": "^4.8.1", "yaml": "^2.4.2" }, "optionalPeers": ["@types/node", "jiti", "less", "lightningcss", "sass", "sass-embedded", "stylus", "sugarss", "terser", "tsx", "yaml"], "bin": { "vite": "bin/vite.js" } }, "sha512-J0SQBPlQiEXAF7tajiH+rUooJPo0l8KQgyg4/aMunNtrOa7bwuZJsJbDWzeljqQpgftxuq5yNJxQ91O9ts29UQ=="],
 
     "vite-plugin-full-reload": ["vite-plugin-full-reload@1.2.0", "", { "dependencies": { "picocolors": "^1.0.0", "picomatch": "^2.3.1" } }, "sha512-kz18NW79x0IHbxRSHm0jttP4zoO9P9gXh+n6UTwlNKnviTTEpOlum6oS9SmecrTtSr+muHEn5TUuC75UovQzcA=="],
 
