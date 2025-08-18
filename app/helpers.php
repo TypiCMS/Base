@@ -81,7 +81,7 @@ if (!function_exists('isLocaleEnabled')) {
 if (!function_exists('getBrowserLocaleOrMainLocale')) {
     function getBrowserLocaleOrMainLocale(): string
     {
-        if ($locale = mb_substr(getenv('HTTP_ACCEPT_LANGUAGE'), 0, 2)) {
+        if ($locale = mb_substr((string) getenv('HTTP_ACCEPT_LANGUAGE'), 0, 2)) {
             if (in_array($locale, enabledLocales())) {
                 return $locale;
             }
@@ -126,7 +126,7 @@ if (!function_exists('permissions')) {
         $permissions = [];
         foreach (config('typicms.modules') as $module => $data) {
             if (isset($data['permissions']) && is_array($data['permissions'])) {
-                $key = __(ucfirst($module));
+                $key = (string) __(ucfirst($module));
                 $permissions[$key] = $data['permissions'];
             }
         }
