@@ -8,7 +8,7 @@ export default defineConfig({
     },
     plugins: [
         laravel({
-            input: ['resources/scss/public.scss', 'resources/scss/admin.scss', 'resources/js/public.js', 'resources/js/admin.js'],
+            input: ['resources/scss/public.scss', 'resources/scss/admin.scss', 'resources/js/public.js', 'resources/js/admin.js', 'resources/js/admin/theme-switcher.ts'],
             refresh: true,
         }),
         vue({
