@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "427a5851b7f042ad62abbdcdb296b037",
+    "content-hash": "d8214f07c75fa97ab9a0b466664e8dfa",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -2819,56 +2819,6 @@
                 }
             ],
             "time": "2025-08-07T08:31:22+00:00"
-        },
-        {
-            "name": "maatwebsite/laravel-sidebar",
-            "version": "1.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TypiCMS/Laravel-Sidebar.git",
-                "reference": "b8b4bfdc661bf87e47967cfc6fae75f76345e9cd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Sidebar/zipball/b8b4bfdc661bf87e47967cfc6fae75f76345e9cd",
-                "reference": "b8b4bfdc661bf87e47967cfc6fae75f76345e9cd",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": ">=5.0",
-                "illuminate/routing": ">=5.0",
-                "illuminate/support": ">=5.0",
-                "illuminate/view": ">=5.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~1.0",
-                "phpunit/phpunit": "~5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Maatwebsite\\Sidebar\\": "src/Maatwebsite/Sidebar"
-                }
-            },
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Maatwebsite.nl",
-                    "email": "patrick@maatwebsite.nl"
-                }
-            ],
-            "description": "A sidebar builder for Laravel",
-            "keywords": [
-                "acp",
-                "laravel"
-            ],
-            "support": {
-                "source": "https://github.com/TypiCMS/Laravel-Sidebar/tree/1.2.7"
-            },
-            "time": "2025-06-11T13:00:00+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -8803,12 +8753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "124d45a1245ba6a0d725dfd9c00e64dc9a728b17"
+                "reference": "98ee04461775b752a3a7512b66c2049668b82d07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/124d45a1245ba6a0d725dfd9c00e64dc9a728b17",
-                "reference": "124d45a1245ba6a0d725dfd9c00e64dc9a728b17",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/98ee04461775b752a3a7512b66c2049668b82d07",
+                "reference": "98ee04461775b752a3a7512b66c2049668b82d07",
                 "shasum": ""
             },
             "require": {
@@ -8841,7 +8791,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-18T09:56:28+00:00"
+            "time": "2025-08-18T14:23:46+00:00"
         },
         {
             "name": "typicms/form",
@@ -9052,17 +9002,65 @@
             "time": "2025-03-03T15:44:28+00:00"
         },
         {
+            "name": "typicms/sidebar",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Sidebar.git",
+                "reference": "6c5a9fed4839a8c16a2d5bc1abe4ccbb98a5739e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Sidebar/zipball/6c5a9fed4839a8c16a2d5bc1abe4ccbb98a5739e",
+                "reference": "6c5a9fed4839a8c16a2d5bc1abe4ccbb98a5739e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": ">=12.0",
+                "illuminate/routing": ">=12.0",
+                "illuminate/support": ">=12.0",
+                "illuminate/view": ">=12.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "phpunit/phpunit": "^11.5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Sidebar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "description": "A sidebar builder for TypiCMS",
+            "support": {
+                "issues": "https://github.com/TypiCMS/Sidebar/issues",
+                "source": "https://github.com/TypiCMS/Sidebar/tree/1.0.0"
+            },
+            "time": "2025-08-18T14:21:05+00:00"
+        },
+        {
             "name": "typicms/things",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
-                "reference": "b57d79cff2be5a3310e1ba4543ea6c08bdf7dda1"
+                "reference": "f08016b2977dacca5019c5ca82251cfe9b4f2538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/b57d79cff2be5a3310e1ba4543ea6c08bdf7dda1",
-                "reference": "b57d79cff2be5a3310e1ba4543ea6c08bdf7dda1",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/f08016b2977dacca5019c5ca82251cfe9b4f2538",
+                "reference": "f08016b2977dacca5019c5ca82251cfe9b4f2538",
                 "shasum": ""
             },
             "require": {
@@ -9090,7 +9088,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-17T19:34:19+00:00"
+            "time": "2025-08-18T13:21:08+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
