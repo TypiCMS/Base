@@ -1,7 +1,7 @@
 <?php
 
 use App\Providers\AppServiceProvider;
-use Maatwebsite\Sidebar\SidebarServiceProvider;
+use TypiCMS\Modules\Sidebar\SidebarServiceProvider;
 use TypiCMS\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider;
 use TypiCMS\Modules\Core\Providers\ModuleServiceProvider;
 use TypiCMS\Modules\Core\Providers\TranslationsServiceProvider;

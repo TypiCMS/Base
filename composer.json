@@ -17,12 +17,6 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/TypiCMS/Laravel-Sidebar.git"
-        }
-    ],
     "require": {
         "php": "^8.2",
         "bkwld/croppa": "^7.0",
@@ -34,7 +28,6 @@
         "laravel/prompts": "^0.3",
         "laravel/tinker": "^2.9",
         "maatwebsite/excel": "^3.1",
-        "maatwebsite/laravel-sidebar": "^1.2.3",
         "msurguy/honeypot": "^1.4",
         "spatie/eloquent-sortable": "^4.4",
         "spatie/laravel-feed": "^4.4",
@@ -46,6 +39,7 @@
         "symfony/http-client": "^7.2",
         "symfony/mailgun-mailer": "^7.2",
         "typicms/core": "dev-master",
+        "typicms/sidebar": "^1.0",
         "typicms/laravel-translatable-bootforms": "^8.0.1",
         "typicms/nestablecollection": "^5.0",
         "typicms/things": "dev-master",
