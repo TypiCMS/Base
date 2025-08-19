@@ -5,7 +5,7 @@
 
 TypiCMS is a modular multilingual content management system built with [Laravel](https://laravel.com). Out of the box you can manage pages, events, news, places, menus, translations, etc.
 
-![TypiCMS screenshot](https://typicms.org/uploads/files/typicms-screenshot.png?3)
+![TypiCMS screenshot](https://typicms.org/uploads/files/typicms-screenshot.png?4)
 
 ## Table of contents
 
