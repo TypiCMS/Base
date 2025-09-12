@@ -12,7 +12,7 @@
         "format": "prettier --write resources/",
         "format:check": "prettier --check resources/",
         "lint": "eslint . --fix",
-        "icons": "~/Library/Python/3.9/bin/pyftsubset ./node_modules/lucide-static/font/lucide.woff2 --unicodes=U+e0f9,U+e19f,U+e34c,U+e0fa,U+e0d0,U+e115,U+e2bd,U+e504,U+e3e2,U+e183,U+e0ec,U+e31d,U+e64c,U+e467,U+e158,U+e0be,U+e0a9,U+e10f,U+e0db,U+e0c4,U+e563,U+e30d,U+e32d,U+e085,U+e125,U+e1b2,U+e1f9,U+e31b,U+e04c,U+e071,U+e073,U+e072,U+e074,U+e1a4,U+e119,U+e15b,U+e095,U+e155,U+e4a8 --output-file=./resources/fonts/lucide-subset.woff2"
+        "icons": "~/Library/Python/3.9/bin/pyftsubset ./node_modules/lucide-static/font/lucide.woff2 --unicodes=U+e0f9,U+e19f,U+e34c,U+e0fa,U+e0d0,U+e115,U+e2bd,U+e504,U+e3e2,U+e183,U+e0ec,U+e31d,U+e64c,U+e467,U+e158,U+e0be,U+e0a9,U+e10f,U+e0db,U+e0c4,U+e563,U+e30d,U+e32d,U+e085,U+e125,U+e1b2,U+e1f9,U+e31b,U+e04c,U+e071,U+e073,U+e072,U+e074,U+e1a4,U+e119,U+e15b,U+e095,U+e155,U+e4a8,U+e04e --output-file=./resources/fonts/lucide-subset.woff2"
     },
     "devDependencies": {
         "@eslint/eslintrc": "^3.3.1",
