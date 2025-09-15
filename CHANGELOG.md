@@ -6,7 +6,8 @@ All notable changes to TypiCMS will be documented in this file.
 
 ### Changed
 
-- The pages and menulinks trees in admin now have checkboxes.
+- Added checkboxes to the pages and menu links trees in the admin panel.
+- To expand or collapse all child items in the pages and menu links trees, hold the Option key while clicking.
 
 ## 15.0.0 - 2025-08-18
 
