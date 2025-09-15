@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 15.0.7 - 2025-09-15
+
+### Changed
+
+- The pages and menulinks trees in admin now have checkboxes.
+
 ## 15.0.0 - 2025-08-18
 
 ### Changed
