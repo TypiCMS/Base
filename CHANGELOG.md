@@ -2,6 +2,13 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 15.0.8 - 2025-09-17
+
+### Changed
+
+- Alt + click on a checkbox in the pages and menu links trees will check and expand all child items.
+- Toggle arrows in the pages and menu links trees are now accessible with keyboard.
+
 ## 15.0.7 - 2025-09-15
 
 ### Changed
