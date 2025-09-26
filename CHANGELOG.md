@@ -2,6 +2,13 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 15.0.10 - 2025-09-26
+
+### Changed
+
+- Uppy 5 – You will have to republish the FileManagerContent.vue file.
+- Swiper 12 – You will have to republish the swiper.scss file.
+
 ## 15.0.8 - 2025-09-17
 
 ### Changed
