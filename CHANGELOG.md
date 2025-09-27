@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 15.0.11 - 2025-09-27
+
+### Changed
+
+- Use of Compressor.js, run `bun add @uppy/compressor --dev`.
+
 ## 15.0.10 - 2025-09-26
 
 ### Changed
