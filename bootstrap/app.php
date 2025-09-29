@@ -31,13 +31,13 @@ return Application::configure(basePath: dirname(__DIR__))
         web: __DIR__ . '/../routes/web.php',
         commands: __DIR__ . '/../routes/console.php',
         health: '/up',
-        then: function (Application $app) {
-            $app->booted(function ($app) {
+        then: function (Application $app): void {
+            $app->booted(function ($app): void {
                 $app->register(PagesRoutesServiceProvider::class);
             });
         }
     )
-    ->withMiddleware(function (Middleware $middleware) {
+    ->withMiddleware(function (Middleware $middleware): void {
         $middleware->api([
             SetLocaleFromUser::class,
         ]);
@@ -75,9 +75,9 @@ return Application::configure(basePath: dirname(__DIR__))
             JavaScriptData::class,
             UserPrefs::class,
         ]);
-        $middleware->redirectGuestsTo(fn (Request $request) => route(getBrowserLocaleOrMainLocale() . '::login'));
+        $middleware->redirectGuestsTo(fn (Request $request): string => route(getBrowserLocaleOrMainLocale() . '::login'));
     })
-    ->withExceptions(function (Exceptions $exceptions) {
+    ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->dontReport([]);
 
         $exceptions->render(function (HttpException $e, Request $request) {

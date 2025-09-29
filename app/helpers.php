@@ -81,10 +81,10 @@ if (!function_exists('isLocaleEnabled')) {
 if (!function_exists('getBrowserLocaleOrMainLocale')) {
     function getBrowserLocaleOrMainLocale(): string
     {
-        if ($locale = mb_substr((string) getenv('HTTP_ACCEPT_LANGUAGE'), 0, 2)) {
-            if (in_array($locale, enabledLocales())) {
-                return $locale;
-            }
+        $locale = mb_substr((string) getenv('HTTP_ACCEPT_LANGUAGE'), 0, 2);
+
+        if (in_array($locale, enabledLocales())) {
+            return $locale;
         }
 
         return mainLocale();
@@ -110,7 +110,7 @@ if (!function_exists('getModulesForSelect')) {
         $options = ['' => ''];
         foreach ($modules as $module => $properties) {
             if (isset($properties['linkable_to_page']) && $properties['linkable_to_page'] === true) {
-                $options[$module] = __(ucfirst($module));
+                $options[$module] = __(ucfirst((string) $module));
             }
         }
         asort($options);
@@ -126,7 +126,7 @@ if (!function_exists('permissions')) {
         $permissions = [];
         foreach (config('typicms.modules') as $module => $data) {
             if (isset($data['permissions']) && is_array($data['permissions'])) {
-                $key = (string) __(ucfirst($module));
+                $key = (string) __(ucfirst((string) $module));
                 $permissions[$key] = $data['permissions'];
             }
         }
@@ -139,14 +139,16 @@ if (!function_exists('permissions')) {
 if (!function_exists('websiteTitle')) {
     function websiteTitle(?string $locale = null): ?string
     {
-        return config('typicms.' . ($locale ?: app()->getLocale()) . '.website_title');
+        $locale ??= app()->getLocale();
+        return config('typicms.' . $locale . '.website_title');
     }
 }
 
 if (!function_exists('appBaseline')) {
     function appBaseline(?string $locale = null): ?string
     {
-        return config('typicms.' . ($locale ?: app()->getLocale()) . '.website_baseline');
+        $locale ??= app()->getLocale();
+        return config('typicms.' . $locale . '.website_baseline');
     }
 }
 
@@ -164,7 +166,7 @@ if (!function_exists('getPagesLinkedToModule')) {
     /** @return array<int, Page> */
     function getPagesLinkedToModule(?string $module = null): array
     {
-        $module = mb_strtolower($module);
+        $module = mb_strtolower((string) $module);
         $routes = app('typicms.routes');
 
         $pages = [];
@@ -192,17 +194,14 @@ if (!function_exists('feeds')) {
     function feeds(): Collection
     {
         $locale = config('app.locale');
-        $feeds = collect((array) config('typicms.modules'))
+
+        return collect((array) config('typicms.modules'))
             ->transform(function ($properties, $module) use ($locale) {
                 $routeName = $locale . '::' . $module . '-feed';
                 if (isset($properties['has_feed']) && $properties['has_feed'] === true && Route::has($routeName)) {
                     return ['url' => route($routeName, $module), 'title' => __(ucfirst($module) . ' feed') . ' – ' . websiteTitle()];
                 }
-            })->reject(function ($value) {
-                return empty($value);
-            });
-
-        return $feeds;
+            })->reject(fn ($value): false => $value === []);
     }
 }
 
