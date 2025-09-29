@@ -5,11 +5,15 @@ includes:
 parameters:
 
     paths:
-        - app/
-        - Modules/
-        - packages/typicms/
+        - app
+        - bootstrap/app.php
+        - config
+        - database
+        - public
+        - routes
+        - packages
 
     level: 6
 
     excludePaths:
-        - packages/typicms/core/src/config/
+        - packages/typicms/core/src/config
