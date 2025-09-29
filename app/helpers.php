@@ -140,6 +140,7 @@ if (!function_exists('websiteTitle')) {
     function websiteTitle(?string $locale = null): ?string
     {
         $locale ??= app()->getLocale();
+
         return config('typicms.' . $locale . '.website_title');
     }
 }
@@ -148,6 +149,7 @@ if (!function_exists('appBaseline')) {
     function appBaseline(?string $locale = null): ?string
     {
         $locale ??= app()->getLocale();
+
         return config('typicms.' . $locale . '.website_baseline');
     }
 }
