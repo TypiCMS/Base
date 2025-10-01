@@ -28,11 +28,13 @@ import { createApp } from 'vue';
  * i18n
  */
 import { createI18n } from 'vue-i18n';
+import ar from '../../lang/ar.json';
 import en from '../../lang/en.json';
 import es from '../../lang/es.json';
 import fr from '../../lang/fr.json';
+import nl from '../../lang/nl.json';
 
-const messages = { fr, en, es };
+const messages = { ar, fr, en, es, nl };
 const i18n = new createI18n({
     legacy: false,
     locale: window.TypiCMS.locale,

@@ -162,6 +162,7 @@ import '@uppy/dashboard/css/style.min.css';
 import '@uppy/image-editor/css/style.min.css';
 import DropTarget from '@uppy/drop-target';
 import ImageEditor from '@uppy/image-editor';
+import ar from '@uppy/locales/lib/ar_SA';
 import es from '@uppy/locales/lib/es_ES';
 import fr from '@uppy/locales/lib/fr_FR';
 import nl from '@uppy/locales/lib/nl_NL';
@@ -174,7 +175,7 @@ import { useI18n } from 'vue-i18n';
 import fetcher from '../admin/fetcher';
 
 const { t } = useI18n();
-const uppyLocales = { fr, nl, es };
+const uppyLocales = { ar, fr, nl, es };
 
 const props = defineProps({
     multiple: {
