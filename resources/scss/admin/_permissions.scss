@@ -1,0 +1,23 @@
+.permissions-modules {
+    &-title {
+        font-size: $font-size-lg;
+        border-bottom: 1px solid $gray-400;
+        margin-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-item {
+        margin-right: 20px;
+        width: 200px;
+
+        &-title {
+            font-size: $font-size-base;
+            font-weight: bold;
+        }
+    }
+}

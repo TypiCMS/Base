@@ -1,0 +1,24 @@
+.navigation {
+    @include transition($transition-base);
+    background: $light;
+    flex-grow: 1;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh !important;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-up(lg) {
+        display: flex !important;
+        height: auto !important;
+        opacity: 1 !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: transparent;
+        position: static;
+    }
+}

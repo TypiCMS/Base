@@ -1,0 +1,98 @@
+.sl-vue-tree-next {
+    position: relative;
+    cursor: default;
+    user-select: none;
+}
+
+.sl-vue-tree-next-root > .sl-vue-tree-next-nodes-list {
+    position: relative;
+}
+
+.sl-vue-tree-next-node {
+    &-item {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        line-height: 28px;
+        border: 1px solid transparent;
+        border-top-color: var(--bs-border-color);
+        padding-left: $table-cell-padding-x;
+        padding-right: $table-cell-padding-x;
+    }
+}
+
+.sl-vue-tree-next:first-child > .sl-vue-tree-next-nodes-list > .sl-vue-tree-next-node:first-child > .sl-vue-tree-next-node-item {
+    border-top-color: transparent;
+}
+
+.sl-vue-tree-next-node-item.sl-vue-tree-next-cursor-inside {
+    background-color: var(--bs-secondary-bg);
+    .title {
+        cursor: default !important;
+    }
+}
+
+.sl-vue-tree-next-cursor {
+    position: absolute;
+    background-color: var(--bs-border-color);
+    height: 3px;
+    width: 100%;
+}
+
+.sl-vue-tree-next-gap {
+    width: 25px;
+    min-height: 1px;
+    flex-shrink: 0;
+}
+
+.sl-vue-tree-next-toggle {
+    position: absolute;
+    margin-left: -1.5rem;
+}
+
+.tree-toggle-btn {
+    @extend .btn;
+    @extend .btn-sm;
+    @include button-variant(transparent, transparent, $secondary);
+    padding: 0;
+    width: 1.125rem;
+    height: 1.125rem;
+    &:focus-visible {
+        @extend .focus-ring;
+        @extend .focus-ring-secondary;
+    }
+}
+
+.sl-vue-tree-next-sidebar {
+    margin-left: auto;
+}
+
+.sl-vue-tree-next-drag-info {
+    position: absolute;
+    background-color: var(--bs-body-color);
+    opacity: 0.5;
+    border-radius: $border-radius;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding: 0.25rem 0.5rem;
+    color: var(--bs-body-bg);
+}
+
+.sl-vue-tree-next-title {
+    display: flex;
+    padding: 4px 0;
+    align-items: center;
+    min-width: 0; // Needed for text-overflow: ellipsis.
+    div {
+        margin: 0 2px;
+    }
+    .title {
+        cursor: move;
+        padding: 0 2px;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 3px;
+    }
+}

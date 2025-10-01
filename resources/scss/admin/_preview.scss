@@ -1,0 +1,17 @@
+.preview-modal {
+    &-dialog {
+        height: 90vh;
+    }
+    &-content {
+        height: 100%;
+    }
+    &-iframe {
+        border-radius: $modal-content-border-radius;
+        height: 100%;
+    }
+    &-btn-close {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+}

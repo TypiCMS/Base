@@ -1,0 +1,54 @@
+.filemanager .uppy-Root {
+    font-family: $font-family-base !important;
+    color: var(--bs-body-color) !important;
+    -webkit-font-smoothing: initial !important;
+    -moz-osx-font-smoothing: initial !important;
+
+    .uppy-Dashboard-inner,
+    .uppy-Dashboard-innerWrap {
+        border-radius: $modal-content-border-radius !important;
+    }
+    .uppy-Dashboard-AddFiles {
+        border-radius: calc($modal-content-border-radius - 5px) !important;
+    }
+    .uppy-Dashboard-inner {
+        background-color: var(--bs-body-bg) !important;
+    }
+    .uppy-DashboardContent-title {
+        line-height: 60px;
+    }
+    .uppy-DashboardContent-bar {
+        height: 60px;
+        padding-inline: 20px;
+    }
+    .uppy-DashboardContent-back,
+    .uppy-DashboardContent-save,
+    .uppy-DashboardContent-addMore,
+    .uppy-StatusBar-actionBtn--done {
+        @extend .btn;
+        @extend .btn-sm;
+        @extend .btn-light;
+    }
+    .uppy-StatusBar.is-waiting .uppy-StatusBar-actionBtn--upload {
+        @extend .btn;
+        @extend .btn-sm;
+        @extend .btn-primary;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    [data-uppy-theme='dark'] {
+        .uppy-Dashboard-browse {
+            color: var(--bs-primary-text-emphasis);
+            &:focus,
+            &:hover {
+                border-color: var(--bs-primary-text-emphasis);
+            }
+        }
+        .uppy-StatusBar.is-waiting .uppy-StatusBar-actionBtn--upload {
+            @extend .btn;
+            @extend .btn-sm;
+            @extend .btn-primary;
+        }
+    }
+}
