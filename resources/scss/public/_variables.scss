@@ -1,0 +1,81 @@
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+
+$min-contrast-ratio: 4.5;
+
+$body-bg: $white;
+$body-color: $gray-900;
+$link-color: $primary;
+
+$font-family-sans-serif:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    'Liberation Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+
+$font-size-base: 1.125rem;
+
+$paragraph-margin-bottom: 1.5rem;
+$headings-margin-bottom: $paragraph-margin-bottom;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1.125;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base * 0.85;
+
+$grid-gutter-width: 1.5rem;
+
+$container-padding-x: $grid-gutter-width;
+
+$border-radius: 0.5rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 1rem;
+
+$pagination-padding-x: 0;
+$pagination-padding-y: 0;
+$pagination-bg: transparent;
+$pagination-border-width: 0;
+$pagination-hover-bg: $gray-300;
+$pagination-active-bg: $secondary;
+$pagination-disabled-bg: transparent;
+$pagination-disabled-color: $gray-400;

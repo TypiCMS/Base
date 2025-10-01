@@ -1,0 +1,20 @@
+.item-list-pagination {
+    .pagination {
+        gap: 0.2rem;
+        margin-bottom: 0;
+    }
+    .page-link {
+        min-width: 1.75rem;
+        border-radius: $pagination-border-radius;
+        height: 1.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pagination-prev-nav,
+    .pagination-next-nav {
+        line-height: 0.1;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}

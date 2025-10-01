@@ -1,0 +1,43 @@
+.document-list {
+    &-list {
+        @include list-unstyled();
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: $grid-gutter-width * 2;
+    }
+
+    &-item {
+        &-link {
+            @extend .btn;
+            @extend .btn-outline-primary;
+            display: inline-flex;
+            align-items: center;
+            white-space: normal;
+            line-height: $line-height-sm;
+            word-wrap: break-word;
+        }
+
+        &-info {
+            text-align: left;
+            padding-left: 1rem;
+        }
+
+        &-filename {
+            flex-grow: 1;
+            font-size: 1rem;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        &-meta {
+            font-size: 0.875rem;
+            color: $gray-600;
+            transition: $transition-base;
+        }
+
+        &-link:hover &-meta {
+            color: rgba($white, 0.7);
+        }
+    }
+}

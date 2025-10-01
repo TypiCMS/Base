@@ -1,0 +1,28 @@
+.header {
+    padding: $spacer;
+    background-color: var(--bs-body-bg);
+    border-bottom: 1px solid var(--bs-border-color);
+    @include media-breakpoint-up(lg) {
+        position: sticky;
+        top: 56px;
+        z-index: 10;
+    }
+    &-toolbar {
+        gap: $spacer * 0.5;
+        width: 100%;
+    }
+    .sub-list & {
+        padding-left: 0;
+        padding-right: 0;
+        background-color: transparent;
+        border-bottom: none;
+    }
+    &-title {
+        white-space: nowrap;
+        margin-bottom: $spacer;
+        font-size: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+    }
+}

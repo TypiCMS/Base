@@ -1,0 +1,23 @@
+.image-list {
+    &-list {
+        @include list-unstyled();
+        @include make-row();
+        margin-bottom: 0;
+        row-gap: $grid-gutter-width;
+    }
+    &-item {
+        @include make-col-ready();
+        @include media-breakpoint-up(xs) {
+            @include make-col(4);
+        }
+        @include media-breakpoint-up(sm) {
+            @include make-col(3);
+        }
+        @include media-breakpoint-up(md) {
+            @include make-col(2);
+        }
+        &-image {
+            @include img-fluid();
+        }
+    }
+}
