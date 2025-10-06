@@ -238,8 +238,8 @@ Latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
-Each module has a facade that gives you access to the repository, you can call for example `News::latest(3)` to get the three latest news.
-Check available methods in each module’s repository.
+Each module has a [facade](https://laravel.com/docs/master/facades#main-content) that gives you access to the model, you can call for example `News::latest(3)` to get the three latest news.
+Check available methods in each module’s models.
 
 ## Artisan commands
 
