@@ -855,20 +855,20 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.18.0",
+            "version": "v4.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "cb56001e54359df7ae76dc522d08845dc741621b"
+                "reference": "b287d2a16aceffbf6e0295559b39662612b77fcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/cb56001e54359df7ae76dc522d08845dc741621b",
-                "reference": "cb56001e54359df7ae76dc522d08845dc741621b",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/b287d2a16aceffbf6e0295559b39662612b77fcf",
+                "reference": "b287d2a16aceffbf6e0295559b39662612b77fcf",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
             },
             "require-dev": {
                 "cerdic/css-tidy": "^1.7 || ^2.0",
@@ -910,9 +910,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.18.0"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.19.0"
             },
-            "time": "2024-11-01T03:51:45+00:00"
+            "time": "2025-10-17T16:34:55+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -3541,31 +3541,31 @@
         },
         {
             "name": "nunomaduro/termwind",
-            "version": "v2.3.1",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/termwind.git",
-                "reference": "dfa08f390e509967a15c22493dc0bac5733d9123"
+                "reference": "eb61920a53057a7debd718a5b89c2178032b52c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/dfa08f390e509967a15c22493dc0bac5733d9123",
-                "reference": "dfa08f390e509967a15c22493dc0bac5733d9123",
+                "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/eb61920a53057a7debd718a5b89c2178032b52c0",
+                "reference": "eb61920a53057a7debd718a5b89c2178032b52c0",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": "^8.2",
-                "symfony/console": "^7.2.6"
+                "symfony/console": "^7.3.4"
             },
             "require-dev": {
-                "illuminate/console": "^11.44.7",
-                "laravel/pint": "^1.22.0",
+                "illuminate/console": "^11.46.1",
+                "laravel/pint": "^1.25.1",
                 "mockery/mockery": "^1.6.12",
-                "pestphp/pest": "^2.36.0 || ^3.8.2",
-                "phpstan/phpstan": "^1.12.25",
+                "pestphp/pest": "^2.36.0 || ^3.8.4",
+                "phpstan/phpstan": "^1.12.32",
                 "phpstan/phpstan-strict-rules": "^1.6.2",
-                "symfony/var-dumper": "^7.2.6",
+                "symfony/var-dumper": "^7.3.4",
                 "thecodingmachine/phpstan-strict-rules": "^1.0.0"
             },
             "type": "library",
@@ -3608,7 +3608,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nunomaduro/termwind/issues",
-                "source": "https://github.com/nunomaduro/termwind/tree/v2.3.1"
+                "source": "https://github.com/nunomaduro/termwind/tree/v2.3.2"
             },
             "funding": [
                 {
@@ -3624,7 +3624,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-08T08:14:37+00:00"
+            "time": "2025-10-18T11:10:27+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -4954,32 +4954,32 @@
         },
         {
             "name": "spatie/laravel-one-time-passwords",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-one-time-passwords.git",
-                "reference": "9315e258013a292424bdfb5ac3496c6c61fa7b1a"
+                "reference": "7d45be36ffe5cdf5d237e8189a2a9cf84cacf950"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-one-time-passwords/zipball/9315e258013a292424bdfb5ac3496c6c61fa7b1a",
-                "reference": "9315e258013a292424bdfb5ac3496c6c61fa7b1a",
+                "url": "https://api.github.com/repos/spatie/laravel-one-time-passwords/zipball/7d45be36ffe5cdf5d237e8189a2a9cf84cacf950",
+                "reference": "7d45be36ffe5cdf5d237e8189a2a9cf84cacf950",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^11.0|^12.0",
-                "php": "^8.2",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
+                "php": "^8.1",
                 "spatie/laravel-package-tools": "^1.16"
             },
             "require-dev": {
                 "laravel/pint": "^1.14",
                 "livewire/livewire": "^3.6",
-                "nunomaduro/collision": "^8.1.1",
-                "orchestra/testbench": "^9.0|^10.0.0",
-                "pestphp/pest": "^3.0",
-                "pestphp/pest-plugin-arch": "^3.0",
-                "pestphp/pest-plugin-laravel": "^3.0",
-                "phpstan/phpstan": "^2.1",
+                "nunomaduro/collision": "^7.10.0|^8.1.1",
+                "orchestra/testbench": "^8.22|^9.0|^10.0.0",
+                "pestphp/pest": "^2.30|^3.0",
+                "pestphp/pest-plugin-arch": "^2.7|^3.0",
+                "pestphp/pest-plugin-laravel": "^2.2|^3.0",
+                "phpstan/phpstan": "^1.10|^2.1",
                 "spatie/laravel-ray": "^1.35"
             },
             "type": "library",
@@ -5016,7 +5016,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-one-time-passwords/issues",
-                "source": "https://github.com/spatie/laravel-one-time-passwords/tree/1.0.5"
+                "source": "https://github.com/spatie/laravel-one-time-passwords/tree/1.0.6"
             },
             "funding": [
                 {
@@ -5024,7 +5024,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-18T07:42:30+00:00"
+            "time": "2025-10-20T08:54:50+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -5250,16 +5250,16 @@
         },
         {
             "name": "spatie/laravel-query-builder",
-            "version": "6.3.5",
+            "version": "6.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-query-builder.git",
-                "reference": "ee3c98235616f88c11e75d3df5ea48dc7b20dd93"
+                "reference": "b9a5af31c79ae8fb79ae0aa8ba2b9e7180f39481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/ee3c98235616f88c11e75d3df5ea48dc7b20dd93",
-                "reference": "ee3c98235616f88c11e75d3df5ea48dc7b20dd93",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/b9a5af31c79ae8fb79ae0aa8ba2b9e7180f39481",
+                "reference": "b9a5af31c79ae8fb79ae0aa8ba2b9e7180f39481",
                 "shasum": ""
             },
             "require": {
@@ -5274,8 +5274,8 @@
                 "larastan/larastan": "^2.7 || ^3.3",
                 "mockery/mockery": "^1.4",
                 "orchestra/testbench": "^7.0|^8.0|^10.0",
-                "pestphp/pest": "^2.0|^3.7",
-                "phpunit/phpunit": "^10.0|^11.5.3",
+                "pestphp/pest": "^2.0|^3.7|^4.0",
+                "phpunit/phpunit": "^10.0|^11.5.3|^12.0",
                 "spatie/invade": "^2.0"
             },
             "type": "library",
@@ -5320,7 +5320,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-08-04T07:36:33+00:00"
+            "time": "2025-10-20T09:50:21+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
@@ -8802,16 +8802,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "15.0.20",
+            "version": "15.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "36d94904bbcb25a8d71f9d697c78d3d44e61f09a"
+                "reference": "f677053c83ddb5f3e0344e23ce66fcf7f2fa8ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/36d94904bbcb25a8d71f9d697c78d3d44e61f09a",
-                "reference": "36d94904bbcb25a8d71f9d697c78d3d44e61f09a",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f677053c83ddb5f3e0344e23ce66fcf7f2fa8ab0",
+                "reference": "f677053c83ddb5f3e0344e23ce66fcf7f2fa8ab0",
                 "shasum": ""
             },
             "require": {
@@ -8835,7 +8835,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/15.0.20"
+                "source": "https://github.com/TypiCMS/Core/tree/15.0.22"
             },
             "funding": [
                 {
@@ -8843,7 +8843,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-16T11:36:41+00:00"
+            "time": "2025-10-20T13:56:45+00:00"
         },
         {
             "name": "typicms/form",
@@ -9595,28 +9595,28 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
+                "reference": "541057574806f942c94662b817a50f63f7345360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/11cb2199493b2f8a3b53e7f19068fc6aac760991",
-                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/541057574806f942c94662b817a50f63f7345360",
+                "reference": "541057574806f942c94662b817a50f63f7345360",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
+                "ext-date": "*",
+                "ext-filter": "*",
                 "php": "^7.2 || ^8.0"
             },
-            "conflict": {
-                "phpstan/phpstan": "<0.12.20",
-                "vimeo/psalm": "<4.6.1 || 4.6.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5.13"
+            "suggest": {
+                "ext-intl": "",
+                "ext-simplexml": "",
+                "ext-spl": ""
             },
             "type": "library",
             "extra": {
@@ -9647,9 +9647,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.11.0"
+                "source": "https://github.com/webmozarts/assert/tree/1.12.0"
             },
-            "time": "2022-06-03T18:03:27+00:00"
+            "time": "2025-10-20T12:43:39+00:00"
         }
     ],
     "packages-dev": [
@@ -10244,16 +10244,16 @@
         },
         {
             "name": "laravel/roster",
-            "version": "v0.2.8",
+            "version": "v0.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/roster.git",
-                "reference": "832a6db43743bf08a58691da207f977ec8dc43aa"
+                "reference": "82bbd0e2de614906811aebdf16b4305956816fa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/roster/zipball/832a6db43743bf08a58691da207f977ec8dc43aa",
-                "reference": "832a6db43743bf08a58691da207f977ec8dc43aa",
+                "url": "https://api.github.com/repos/laravel/roster/zipball/82bbd0e2de614906811aebdf16b4305956816fa6",
+                "reference": "82bbd0e2de614906811aebdf16b4305956816fa6",
                 "shasum": ""
             },
             "require": {
@@ -10301,7 +10301,7 @@
                 "issues": "https://github.com/laravel/roster/issues",
                 "source": "https://github.com/laravel/roster"
             },
-            "time": "2025-09-22T13:28:47+00:00"
+            "time": "2025-10-20T09:56:46+00:00"
         },
         {
             "name": "laravel/sail",
