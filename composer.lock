@@ -2377,16 +2377,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.30.0",
+            "version": "3.30.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "2203e3151755d874bb2943649dae1eb8533ac93e"
+                "reference": "c139fd65c1f796b926f4aec0df37f6caa959a8da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/2203e3151755d874bb2943649dae1eb8533ac93e",
-                "reference": "2203e3151755d874bb2943649dae1eb8533ac93e",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c139fd65c1f796b926f4aec0df37f6caa959a8da",
+                "reference": "c139fd65c1f796b926f4aec0df37f6caa959a8da",
                 "shasum": ""
             },
             "require": {
@@ -2454,9 +2454,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.30.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.30.1"
             },
-            "time": "2025-06-25T13:29:59+00:00"
+            "time": "2025-10-20T15:35:26+00:00"
         },
         {
             "name": "league/flysystem-local",
@@ -4512,16 +4512,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.12",
+            "version": "v0.12.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "cd23863404a40ccfaf733e3af4db2b459837f7e7"
+                "reference": "d86c2f750e72017a5cdb1b9f1cef468a5cbacd1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/cd23863404a40ccfaf733e3af4db2b459837f7e7",
-                "reference": "cd23863404a40ccfaf733e3af4db2b459837f7e7",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/d86c2f750e72017a5cdb1b9f1cef468a5cbacd1e",
+                "reference": "d86c2f750e72017a5cdb1b9f1cef468a5cbacd1e",
                 "shasum": ""
             },
             "require": {
@@ -4536,9 +4536,11 @@
                 "symfony/console": "4.4.37 || 5.3.14 || 5.3.15 || 5.4.3 || 5.4.4 || 6.0.3 || 6.0.4"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.2"
+                "bamarni/composer-bin-plugin": "^1.2",
+                "composer/class-map-generator": "^1.6"
             },
             "suggest": {
+                "composer/class-map-generator": "Improved tab completion performance with better class discovery.",
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
                 "ext-pdo-sqlite": "The doc command requires SQLite to work.",
                 "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well."
@@ -4584,9 +4586,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.12"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.13"
             },
-            "time": "2025-09-20T13:46:31+00:00"
+            "time": "2025-10-20T22:48:29+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -5089,16 +5091,16 @@
         },
         {
             "name": "spatie/laravel-passkeys",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-passkeys.git",
-                "reference": "4d2332627fe5551dc79aaf0be77a8b01add180db"
+                "reference": "4b9783f16591313e9f68d2f775efe68fcf82d88b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-passkeys/zipball/4d2332627fe5551dc79aaf0be77a8b01add180db",
-                "reference": "4d2332627fe5551dc79aaf0be77a8b01add180db",
+                "url": "https://api.github.com/repos/spatie/laravel-passkeys/zipball/4b9783f16591313e9f68d2f775efe68fcf82d88b",
+                "reference": "4b9783f16591313e9f68d2f775efe68fcf82d88b",
                 "shasum": ""
             },
             "require": {
@@ -5155,7 +5157,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-passkeys/issues",
-                "source": "https://github.com/spatie/laravel-passkeys/tree/1.4.0"
+                "source": "https://github.com/spatie/laravel-passkeys/tree/1.4.1"
             },
             "funding": [
                 {
@@ -5163,7 +5165,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-16T07:39:36+00:00"
+            "time": "2025-10-21T06:36:57+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -8802,16 +8804,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "15.0.23",
+            "version": "15.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "6bff2ead26bfcff1082a04adf24ff15d0d00ac04"
+                "reference": "f2551fd05ba203bcd384f8666da33af0307f8169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/6bff2ead26bfcff1082a04adf24ff15d0d00ac04",
-                "reference": "6bff2ead26bfcff1082a04adf24ff15d0d00ac04",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/f2551fd05ba203bcd384f8666da33af0307f8169",
+                "reference": "f2551fd05ba203bcd384f8666da33af0307f8169",
                 "shasum": ""
             },
             "require": {
@@ -8835,7 +8837,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/15.0.23"
+                "source": "https://github.com/TypiCMS/Core/tree/15.0.24"
             },
             "funding": [
                 {
@@ -8843,7 +8845,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-20T15:13:41+00:00"
+            "time": "2025-10-21T13:04:54+00:00"
         },
         {
             "name": "typicms/form",
