@@ -1,0 +1,43 @@
+.primary-nav {
+    &-list {
+        @extend .nav;
+        @include font-size($font-size-lg);
+        flex-direction: column;
+        align-items: center;
+        @include margin-bottom(1rem);
+        @include media-breakpoint-up(lg) {
+            justify-content: flex-end;
+            font-size: $font-size-base;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
+    }
+    &-item {
+        @extend .nav-item;
+        position: relative;
+        white-space: nowrap;
+    }
+    &-link {
+        @extend .rounded-pill;
+        text-decoration: none;
+        display: inline-block;
+        color: $body-color;
+        padding: 0.65rem 1rem 0.5rem;
+        &:hover {
+            color: $primary;
+        }
+        &:active {
+            color: $primary;
+        }
+        &:focus-visible {
+            color: $white;
+            outline: 0;
+            box-shadow: 0 0 $focus-ring-blur $focus-ring-width rgba($white, 0.5);
+        }
+    }
+    &-item.active > &-link {
+        @extend .active;
+        color: $primary;
+    }
+}

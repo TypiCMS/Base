@@ -1,0 +1,19 @@
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $light;
+    &-container {
+        @extend .container-xl;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-title {
+        font-size: 32px; // in px to force constant height on all sreen sizes
+        line-height: 1.25;
+        margin-bottom: 0;
+        &-logo {
+            @extend .img-fluid;
+        }
+    }
+}

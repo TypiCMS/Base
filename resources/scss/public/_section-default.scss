@@ -1,0 +1,29 @@
+.section-default {
+    &-container {
+        @extend .page-body-container;
+    }
+
+    &-row {
+        @extend .page-row;
+    }
+
+    &-content {
+        @extend .page-content;
+    }
+
+    &-left {
+        @extend .page-left;
+    }
+
+    &-right {
+        @extend .page-right;
+    }
+
+    &-figure {
+        @extend .page-figure;
+
+        &-image {
+            @extend .page-figure-image;
+        }
+    }
+}

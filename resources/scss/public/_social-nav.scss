@@ -1,0 +1,12 @@
+.social-nav {
+    &-list {
+        @extend .nav;
+        @extend .nav-pills;
+    }
+    &-item {
+        @extend .nav-item;
+    }
+    &-link {
+        @extend .nav-link;
+    }
+}

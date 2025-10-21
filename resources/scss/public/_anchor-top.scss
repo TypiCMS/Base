@@ -1,0 +1,32 @@
+.anchor-top {
+    @include transition($transition-fade);
+    position: fixed;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 15px;
+    z-index: 1;
+    @include media-breakpoint-up(sm) {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 30px;
+    }
+    &.disabled {
+        opacity: 0;
+    }
+    &-button {
+        @extend .btn;
+        @extend .btn-outline-primary;
+        @extend .rounded-pill;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:after {
+            display: none;
+        }
+    }
+}

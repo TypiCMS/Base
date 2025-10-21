@@ -1,0 +1,61 @@
+$bootstrap-icons-font-dir: 'bootstrap-icons/font/fonts';
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$light: $gray-100;
+$secondary: $gray-600;
+$dark: $gray-800;
+
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+$h1-font-size: $font-size-base * 2.25;
+$h2-font-size: $font-size-base * 1.25;
+$h3-font-size: $font-size-base * 1.125;
+
+$link-decoration: none;
+
+$border-radius: 0.375rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0.5rem;
+
+$spacer: 1.25rem;
+
+$modal-content-border-radius: 1rem;
+
+$box-shadow-sm: 0 0.5px 1px 1px rgba(0, 0, 0, 0.075);
+
+$table-group-separator-color: $gray-300;
+
+$enable-validation-icons: false;
+
+$pagination-padding-x: 0;
+$pagination-padding-y: 0;
+$pagination-border-width: 0;
+$pagination-color: var(--bs-body-color);
+$pagination-bg: transparent;
+$pagination-hover-color: var(--bs-body-color);
+$pagination-active-bg: var(--bs-secondary-bg-subtle);
+$pagination-active-color: var(--bs-body-color);
+$pagination-disabled-bg: transparent;
+$pagination-border-radius: $border-radius-sm;
+$pagination-font-size: $font-size-sm;
+
+$offcanvas-horizontal-width: 260px;
+$offcanvas-vertical-height: 100vh;
+$offcanvas-transition-duration: 0.3s;
+$offcanvas-border-width: 0;
+
+$card-border-radius: $modal-content-border-radius;
+$card-border-width: 0;

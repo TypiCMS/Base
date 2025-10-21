@@ -1,0 +1,39 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.btn-xs {
+    @include button-size($btn-padding-y-sm * 0.25, $btn-padding-x-sm * 0.8333, 0.75rem, 0.1875rem);
+}
+
+.btn-light {
+    @include button-variant($gray-300, $gray-300, $dark, $gray-400, $gray-400, $dark);
+}
+@include color-mode(dark) {
+    .btn-light {
+        @include button-variant(
+            $gray-800,
+            $gray-700,
+            $light,
+            $gray-900,
+            $gray-600,
+            $light,
+            shade-color($gray-900, 20%),
+            shade-color($gray-600, 10%),
+            $light,
+            shade-color($gray-800, 20%),
+            shade-color($gray-700, 10%),
+            shade-color($gray-600, 10%)
+        );
+    }
+}
+
+.btn-clear-history {
+    @extend .btn;
+    @extend .btn-outline-secondary;
+    @extend .btn-xs;
+    float: right;
+}

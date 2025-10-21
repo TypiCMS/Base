@@ -1,0 +1,30 @@
+.typicms-navbar {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1rem;
+    line-height: 24px;
+    height: 56px;
+    background-color: var(--bs-body-bg);
+    border-bottom: 1px solid var(--bs-border-color);
+    .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    &-brand {
+        @extend .btn;
+        --bs-btn-active-border-color: transparent;
+        padding: 0.25rem;
+        font-size: 1.25rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 50%;
+        &:focus-visible {
+            @extend .focus-ring;
+        }
+    }
+    .nav-link {
+        border-radius: $border-radius;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+}

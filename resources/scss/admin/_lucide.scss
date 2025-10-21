@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "lucide";
+    src: url('../../fonts/lucide-subset.woff2?t=1751036098915') format('woff2');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'lucide' !important;
+    font-size: inherit;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-house::before { content: "\e0f9"; }
+.icon-user::before { content: "\e19f"; }
+.icon-newspaper::before { content: "\e34c"; }
+.icon-image::before { content: "\e0fa"; }
+.icon-file-text::before { content: "\e0d0"; }
+.icon-map-pin::before { content: "\e115"; }
+.icon-calendar-range::before { content: "\e2bd"; }
+.icon-grid-2x2::before { content: "\e504"; }
+.icon-text-select::before { content: "\e3e2"; }
+.icon-tag::before { content: "\e183"; }
+.icon-globe::before { content: "\e0ec"; }
+.icon-file-image::before { content: "\e31d"; }
+.icon-shield-user::before { content: "\e64c"; }
+.icon-circle-user-round::before { content: "\e467"; }
+.icon-settings::before { content: "\e158"; }
+.icon-eye::before { content: "\e0be"; }
+.icon-corner-right-down::before { content: "\e0a9"; }
+.icon-lock::before { content: "\e10f"; }
+.icon-folder::before { content: "\e0db"; }
+.icon-file::before { content: "\e0c4"; }
+.icon-file-music::before { content: "\e563"; }
+.icon-file-archive::before { content: "\e30d"; }
+.icon-file-video-2::before { content: "\e32d"; }
+.icon-circle-plus::before { content: "\e085"; }
+.icon-move::before { content: "\e125"; }
+.icon-x::before { content: "\e1b2"; }
+.icon-pencil::before { content: "\e1f9"; }
+.icon-file-down::before { content: "\e31b"; }
+.icon-arrow-left::before { content: "\e04c"; }
+.icon-chevron-down::before { content: "\e071"; }
+.icon-chevron-right::before { content: "\e073"; }
+.icon-chevron-left::before { content: "\e072"; }
+.icon-chevron-up::before { content: "\e074"; }
+.icon-users::before { content: "\e1a4"; }
+.icon-menu::before { content: "\e119"; }
+.icon-sheet::before { content: "\e15b"; }
+.icon-cloud-upload::before { content: "\e095"; }
+.icon-search::before { content: "\e155"; }
+.icon-key-round::before { content: "\e4a8"; }
+
+$icon-house: '\e0f9';
+$icon-user: '\e19f';
+$icon-newspaper: '\e34c';
+$icon-image: '\e0fa';
+$icon-file-text: '\e0d0';
+$icon-map-pin: '\e115';
+$icon-calendar-range: '\e2bd';
+$icon-grid-2x2: '\e504';
+$icon-text-select: '\e3e2';
+$icon-tag: '\e183';
+$icon-globe: '\e0ec';
+$icon-file-image: '\e31d';
+$icon-shield-user: '\e64c';
+$icon-circle-user-round: '\e467';
+$icon-settings: '\e158';
+$icon-eye: '\e0be';
+$icon-corner-right-down: '\e0a9';
+$icon-lock: '\e10f';
+$icon-folder: '\e0db';
+$icon-file: '\e0c4';
+$icon-file-music: '\e563';
+$icon-file-archive: '\e30d';
+$icon-file-video-2: '\e32d';
+$icon-circle-plus: '\e085';
+$icon-move: '\e125';
+$icon-x: '\e1b2';
+$icon-pencil: '\e1f9';
+$icon-file-down: '\e31b';
+$icon-arrow-left: '\e04c';
+$icon-chevron-down: '\e071';
+$icon-chevron-right: '\e073';
+$icon-chevron-left: '\e072';
+$icon-chevron-up: '\e074';
+$icon-users: '\e1a4';
+$icon-menu: '\e119';
+$icon-sheet: '\e15b';
+$icon-cloud-upload: '\e095';
+$icon-search: '\e155';
+$icon-key-round: '\e4a8';

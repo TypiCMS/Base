@@ -1,0 +1,16 @@
+.pagination {
+    gap: 0.2rem;
+    .page-link {
+        font-weight: bold;
+        font-size: $font-size-sm;
+        min-width: 2rem;
+        border-radius: $border-radius-sm;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:focus-visible {
+            box-shadow: $btn-focus-box-shadow;
+        }
+    }
+}
