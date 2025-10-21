@@ -85,7 +85,7 @@ First install [Composer](https://getcomposer.org)
     cd mywebsite
     ```
 
-3. Migration of the database, seeding, user creation, npm installation and directory rights
+3. Migration of the database, seeding, user creation, npm packages installation and directory permissions.
 
     ```
     php artisan typicms:install
@@ -97,19 +97,19 @@ Go to http://mywebsite.test/admin and log in.
 
 ### Assets
 
-Assets are managed with [Laravel Mix](https://github.com/JeffreyWay/laravel-mix).
-In order to work on assets, you need to install [Node.js](http://nodejs.org), then go to your website folder and run these commands:
+Assets are bundled with [Vite](https://laravel.com/docs/master/vite).
+In order to work on assets, you can install [Bun](https://bun.com), then go to your website folder and run these commands:
 
 1. Install npm packages (in directory **node_modules**)
 
     ```
-    npm install
+    bun install
     ```
 
 2. Compile admin and public assets
 
     ```
-    npm run dev
+    bun run dev
     ```
 
 ### Locales configuration
@@ -238,8 +238,8 @@ Latest records are displayed in the back office’s dashboard.
 
 ## Facades
 
-Each module has a facade that gives you access to the repository, you can call for example `News::latest(3)` to get the three latest news.
-Check available methods in each module’s repository.
+Each module has a [facade](https://laravel.com/docs/master/facades#main-content) that gives you access to the model, you can call for example `News::latest(3)` to get the three latest news.
+Check available methods in each module’s models.
 
 ## Artisan commands
 

@@ -198,7 +198,7 @@ if (!function_exists('feeds')) {
         $locale = config('app.locale');
 
         return collect((array) config('typicms.modules'))
-            ->transform(function ($properties, $module) use ($locale): ?array {
+            ->transform(function (array $properties, string $module) use ($locale): ?array {
                 $routeName = $locale . '::' . $module . '-feed';
                 if (isset($properties['has_feed']) && $properties['has_feed'] === true && Route::has($routeName)) {
                     return ['url' => route($routeName, $module), 'title' => __(ucfirst($module) . ' feed') . ' – ' . websiteTitle()];

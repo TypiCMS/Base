@@ -2,6 +2,13 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 15.0.11 - 2025-10-08
+
+### Changed
+
+- Use Uppy headless components in place of Dashboard.
+- Breaking change: add Cropper.js by running `bun add cropperjs@^1.6.2 --dev` and republish TypiCMS Core files.
+
 ## 15.0.11 - 2025-09-27
 
 ### Changed
