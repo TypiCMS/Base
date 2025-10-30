@@ -1,0 +1,42 @@
+// swiper core styles
+@import 'swiper/css';
+
+// modules styles
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+// @import 'swiper/css/a11y';
+@import 'swiper/css/autoplay';
+// @import 'swiper/css/controller';
+
+// @import 'swiper/css/effect-coverflow';
+// @import 'swiper/css/effect-cube';
+@import 'swiper/css/effect-fade';
+// @import 'swiper/css/effect-flip';
+// @import 'swiper/css/effect-creative';
+// @import 'swiper/css/effect-cards';
+
+// @import 'swiper/css/free-mode';
+// @import 'swiper/css/grid';
+// @import 'swiper/css/hash-navigation';
+// @import 'swiper/css/history';
+// @import 'swiper/css/keyboard';
+// @import 'swiper/css/lazy';
+// @import 'swiper/css/manipulation';
+// @import 'swiper/css/mousewheel';
+@import 'swiper/css/parallax';
+// @import 'swiper/css/scrollbar';
+// @import 'swiper/css/thumbs';
+// @import 'swiper/css/virtual';
+// @import 'swiper/css/zoom';
+:root {
+    --swiper-theme-color: #fff;
+    --swiper-navigation-size: 24px;
+    --swiper-pagination-bullet-height: 12px;
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bottom: -40px;
+    --swiper-pagination-color: #666;
+}
+.swiper-slide {
+    -webkit-transform: translate3d(0, 0, 0); // Safari
+}

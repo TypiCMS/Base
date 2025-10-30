@@ -1,0 +1,48 @@
+.hamburger {
+    @extend .rounded-pill;
+    z-index: 3000;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    font-size: 1px;
+    color: $body-color !important;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    &:focus-visible {
+        outline: 0;
+        box-shadow: 0 0 $focus-ring-blur $focus-ring-width rgba($white, 0.5);
+    }
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+    &:before,
+    &:after {
+        transition: all 0.3s ease-in-out;
+        left: calc(50% - 13px);
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: $primary;
+        height: 2px;
+        width: 26px;
+    }
+    &:before {
+        top: 20px;
+    }
+    &:after {
+        bottom: 20px;
+    }
+    &-open {
+        transform: rotate(45deg);
+        &:before {
+            top: 24px;
+            transform: rotate(-180deg);
+        }
+        &:after {
+            bottom: 24px;
+            transform: rotate(90deg);
+        }
+    }
+}
