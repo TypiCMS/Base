@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4faa3b725a86cc9ab46080f1b3e02ece",
+    "content-hash": "ffeef6e608eb2f10099f857dbcbe5cdd",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -659,29 +659,28 @@
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v3.4.0",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "8c784d071debd117328803d86b2097615b457500"
+                "reference": "d61a8a9604ec1f8c3d150d09db6ce98b32675013"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/8c784d071debd117328803d86b2097615b457500",
-                "reference": "8c784d071debd117328803d86b2097615b457500",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/d61a8a9604ec1f8c3d150d09db6ce98b32675013",
+                "reference": "d61a8a9604ec1f8c3d150d09db6ce98b32675013",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0",
-                "webmozart/assert": "^1.0"
+                "php": "^8.2|^8.3|^8.4|^8.5"
             },
             "replace": {
                 "mtdowling/cron-expression": "^1.0"
             },
             "require-dev": {
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^1.0",
-                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^1.12.32|^2.1.31",
+                "phpunit/phpunit": "^8.5.48|^9.0"
             },
             "type": "library",
             "extra": {
@@ -712,7 +711,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dragonmantank/cron-expression/issues",
-                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.4.0"
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.6.0"
             },
             "funding": [
                 {
@@ -720,7 +719,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-09T13:47:03+00:00"
+            "time": "2025-10-31T18:51:33+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -3332,25 +3331,25 @@
         },
         {
             "name": "nette/schema",
-            "version": "v1.3.2",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "da801d52f0354f70a638673c4a0f04e16529431d"
+                "reference": "2befc2f42d7c715fd9d95efc31b1081e5d765004"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/da801d52f0354f70a638673c4a0f04e16529431d",
-                "reference": "da801d52f0354f70a638673c4a0f04e16529431d",
+                "url": "https://api.github.com/repos/nette/schema/zipball/2befc2f42d7c715fd9d95efc31b1081e5d765004",
+                "reference": "2befc2f42d7c715fd9d95efc31b1081e5d765004",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^4.0",
-                "php": "8.1 - 8.4"
+                "php": "8.1 - 8.5"
             },
             "require-dev": {
                 "nette/tester": "^2.5.2",
-                "phpstan/phpstan-nette": "^1.0",
+                "phpstan/phpstan-nette": "^2.0@stable",
                 "tracy/tracy": "^2.8"
             },
             "type": "library",
@@ -3360,6 +3359,9 @@
                 }
             },
             "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
                 "classmap": [
                     "src/"
                 ]
@@ -3388,9 +3390,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/schema/issues",
-                "source": "https://github.com/nette/schema/tree/v1.3.2"
+                "source": "https://github.com/nette/schema/tree/v1.3.3"
             },
-            "time": "2024-10-06T23:10:23+00:00"
+            "time": "2025-10-30T22:57:59+00:00"
         },
         {
             "name": "nette/utils",
@@ -5322,89 +5324,6 @@
                 }
             ],
             "time": "2025-10-20T09:50:21+00:00"
-        },
-        {
-            "name": "spatie/laravel-translatable",
-            "version": "6.11.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-translatable.git",
-                "reference": "032d85b28de315310dab2048b857016f1194f68b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/032d85b28de315310dab2048b857016f1194f68b",
-                "reference": "032d85b28de315310dab2048b857016f1194f68b",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "^10.0|^11.0|^12.0",
-                "illuminate/support": "^10.0|^11.0|^12.0",
-                "php": "^8.0",
-                "spatie/laravel-package-tools": "^1.11"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.64",
-                "mockery/mockery": "^1.4",
-                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
-                "pestphp/pest": "^1.20|^2.0|^3.0"
-            },
-            "type": "library",
-            "extra": {
-                "aliases": {
-                    "Translatable": "Spatie\\Translatable\\Facades\\Translatable"
-                },
-                "laravel": {
-                    "providers": [
-                        "Spatie\\Translatable\\TranslatableServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Translatable\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Sebastian De Deyne",
-                    "email": "sebastian@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A trait to make an Eloquent model hold translations",
-            "homepage": "https://github.com/spatie/laravel-translatable",
-            "keywords": [
-                "eloquent",
-                "i8n",
-                "laravel-translatable",
-                "model",
-                "multilingual",
-                "spatie",
-                "translate"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-translatable/issues",
-                "source": "https://github.com/spatie/laravel-translatable/tree/6.11.4"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-02-20T15:51:22+00:00"
         },
         {
             "name": "spomky-labs/cbor-php",
@@ -8803,16 +8722,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "15.0.28",
+            "version": "16.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "29e07d7211b5f400eef57f711c67d64c2df847da"
+                "reference": "5f899c8c8798da127a86d12d170756989a8269d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/29e07d7211b5f400eef57f711c67d64c2df847da",
-                "reference": "29e07d7211b5f400eef57f711c67d64c2df847da",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/5f899c8c8798da127a86d12d170756989a8269d7",
+                "reference": "5f899c8c8798da127a86d12d170756989a8269d7",
                 "shasum": ""
             },
             "require": {
@@ -8836,7 +8755,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/15.0.28"
+                "source": "https://github.com/TypiCMS/Core/tree/16.0.1"
             },
             "funding": [
                 {
@@ -8844,7 +8763,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-30T06:52:30+00:00"
+            "time": "2025-11-02T19:56:33+00:00"
         },
         {
             "name": "typicms/form",
@@ -8917,24 +8836,24 @@
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
-            "version": "8.0.2",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms.git",
-                "reference": "9aecf892d9274f24513dedfd21c0cb579e35ebca"
+                "reference": "f894d5efa65680d3e0401e545ec877985f73470b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/9aecf892d9274f24513dedfd21c0cb579e35ebca",
-                "reference": "9aecf892d9274f24513dedfd21c0cb579e35ebca",
+                "url": "https://api.github.com/repos/TypiCMS/Laravel-Translatable-Bootforms/zipball/f894d5efa65680d3e0401e545ec877985f73470b",
+                "reference": "f894d5efa65680d3e0401e545ec877985f73470b",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~10.0|~11.0|~12.0",
                 "php": "^8.1",
-                "spatie/laravel-translatable": "^6.0",
                 "typicms/bootforms": "^4.0.0",
-                "typicms/form": "^3.0.0"
+                "typicms/form": "^3.0.0",
+                "typicms/translatable": "^1.0"
             },
             "require-dev": {
                 "nunomaduro/larastan": "^2.0",
@@ -8972,7 +8891,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "description": "Empowers typicms/bootforms with spatie/laravel-translatable.",
+            "description": "Empowers typicms/bootforms with typicms/laravel-translatable.",
             "keywords": [
                 "bootforms",
                 "form",
@@ -8982,7 +8901,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/issues",
-                "source": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/tree/8.0.2"
+                "source": "https://github.com/TypiCMS/Laravel-Translatable-Bootforms/tree/9.0.0"
             },
             "funding": [
                 {
@@ -8990,7 +8909,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-03T17:49:47+00:00"
+            "time": "2025-11-02T17:34:36+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -9104,16 +9023,16 @@
         },
         {
             "name": "typicms/things",
-            "version": "15.0.4",
+            "version": "16.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Things.git",
-                "reference": "cee90931ed06688a325f723a2d2ac00599d3cf2e"
+                "reference": "7a579bd174c869d03bf9d419e5eb4d44c565678a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/cee90931ed06688a325f723a2d2ac00599d3cf2e",
-                "reference": "cee90931ed06688a325f723a2d2ac00599d3cf2e",
+                "url": "https://api.github.com/repos/TypiCMS/Things/zipball/7a579bd174c869d03bf9d419e5eb4d44c565678a",
+                "reference": "7a579bd174c869d03bf9d419e5eb4d44c565678a",
                 "shasum": ""
             },
             "require": {
@@ -9132,7 +9051,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Things/issues",
-                "source": "https://github.com/TypiCMS/Things/tree/15.0.4"
+                "source": "https://github.com/TypiCMS/Things/tree/16.0.0"
             },
             "funding": [
                 {
@@ -9140,7 +9059,96 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-16T11:08:13+00:00"
+            "time": "2025-11-02T19:26:03+00:00"
+        },
+        {
+            "name": "typicms/translatable",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TypiCMS/Translatable.git",
+                "reference": "55ee9d38ae5034a72e3346a1ee853dd0674b3374"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TypiCMS/Translatable/zipball/55ee9d38ae5034a72e3346a1ee853dd0674b3374",
+                "reference": "55ee9d38ae5034a72e3346a1ee853dd0674b3374",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.11"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+                "pestphp/pest": "^4.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "aliases": {
+                    "Translatable": "TypiCMS\\Translatable\\Facades\\Translatable"
+                },
+                "laravel": {
+                    "providers": [
+                        "TypiCMS\\Translatable\\TranslatableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Translatable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com",
+                    "homepage": "https://typi.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A trait to make an Eloquent model hold translations",
+            "homepage": "https://github.com/typicms/translatable",
+            "keywords": [
+                "TypiCMS",
+                "eloquent",
+                "i8n",
+                "laravel",
+                "model",
+                "multilingual",
+                "translatable",
+                "translate"
+            ],
+            "support": {
+                "issues": "https://github.com/TypiCMS/Translatable/issues",
+                "source": "https://github.com/TypiCMS/Translatable/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/typicms",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-11-02T17:30:20+00:00"
         },
         {
             "name": "typidesign/laravel-artisan-translations",
@@ -9741,21 +9749,21 @@
         },
         {
             "name": "driftingly/rector-laravel",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/driftingly/rector-laravel.git",
-                "reference": "abc336cbf06f53d90ab74cecfd319379fc55d408"
+                "reference": "d7cd932cff9e398a43393f1a1a63b27d574e35ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/driftingly/rector-laravel/zipball/abc336cbf06f53d90ab74cecfd319379fc55d408",
-                "reference": "abc336cbf06f53d90ab74cecfd319379fc55d408",
+                "url": "https://api.github.com/repos/driftingly/rector-laravel/zipball/d7cd932cff9e398a43393f1a1a63b27d574e35ef",
+                "reference": "d7cd932cff9e398a43393f1a1a63b27d574e35ef",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0",
-                "rector/rector": "^2.0"
+                "rector/rector": "^2.2.7"
             },
             "type": "rector-extension",
             "autoload": {
@@ -9770,9 +9778,9 @@
             "description": "Rector upgrades rules for Laravel Framework",
             "support": {
                 "issues": "https://github.com/driftingly/rector-laravel/issues",
-                "source": "https://github.com/driftingly/rector-laravel/tree/2.1.1"
+                "source": "https://github.com/driftingly/rector-laravel/tree/2.1.2"
             },
-            "time": "2025-10-23T13:53:44+00:00"
+            "time": "2025-10-31T21:56:58+00:00"
         },
         {
             "name": "fakerphp/faker",
