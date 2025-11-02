@@ -2,6 +2,13 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 16.0.0 - 2025-11-02
+
+### Changed
+
+- Spatie/Translatable replaced by TypiCMS\translatable
+- Validation rules specified as arrays
+
 ## 15.0.11 - 2025-10-08
 
 ### Changed
