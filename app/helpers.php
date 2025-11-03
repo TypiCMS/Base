@@ -221,8 +221,9 @@ if (!function_exists('pageTemplates')) {
                 continue;
             }
             $name = str_replace('.blade', '', $filename);
-            if ($name[0] != '_' && $name != 'master') {
-                $templates[$name] = ucfirst($name);
+            $label = ucfirst(str_replace('-', ' ', $name));
+            if ($name[0] !== '_' && $name !== 'master') {
+                $templates[$name] = $label;
             }
         }
 
@@ -243,7 +244,8 @@ if (!function_exists('pageSectionTemplates')) {
             }
             if (str_starts_with($filename, '_section-')) {
                 $name = str_replace(['_section-', '.blade'], '', $filename);
-                $templates[$name] = ucfirst($name);
+                $label = ucfirst(str_replace('-', ' ', $name));
+                $templates[$name] = $label;
             }
         }
 
