@@ -11,9 +11,6 @@ parameters:
         - database
         - public
         - routes
-        - packages
+        - Modules
 
     level: 6
-
-    excludePaths:
-        - packages/typicms/core/src/config
