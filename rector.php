@@ -20,6 +20,7 @@ return RectorConfig::configure()
         LaravelSetList::LARAVEL_LEGACY_FACTORIES_TO_CLASSES,
     ])
     ->withComposerBased(laravel: true)
+    ->withImportNames()
     ->withCache(
         cacheDirectory: '/tmp/rector',
         cacheClass: FileCacheStorage::class,
