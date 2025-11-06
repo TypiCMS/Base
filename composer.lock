@@ -1782,16 +1782,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.36.1",
+            "version": "v12.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "cad110d7685fbab990a6bb8184d0cfd847d7c4d8"
+                "reference": "3c3c4ad30f5b528b164a7c09aa4ad03118c4c125"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cad110d7685fbab990a6bb8184d0cfd847d7c4d8",
-                "reference": "cad110d7685fbab990a6bb8184d0cfd847d7c4d8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3c3c4ad30f5b528b164a7c09aa4ad03118c4c125",
+                "reference": "3c3c4ad30f5b528b164a7c09aa4ad03118c4c125",
                 "shasum": ""
             },
             "require": {
@@ -1997,7 +1997,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-10-29T14:20:57+00:00"
+            "time": "2025-11-04T15:39:33+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -5170,16 +5170,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "6.22.0",
+            "version": "6.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "8c87966ddc21893bfda54b792047473703992625"
+                "reference": "9e41247bd512b1e6c229afbc1eb528f7565ae3bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/8c87966ddc21893bfda54b792047473703992625",
-                "reference": "8c87966ddc21893bfda54b792047473703992625",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/9e41247bd512b1e6c229afbc1eb528f7565ae3bb",
+                "reference": "9e41247bd512b1e6c229afbc1eb528f7565ae3bb",
                 "shasum": ""
             },
             "require": {
@@ -5241,7 +5241,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-permission/issues",
-                "source": "https://github.com/spatie/laravel-permission/tree/6.22.0"
+                "source": "https://github.com/spatie/laravel-permission/tree/6.23.0"
             },
             "funding": [
                 {
@@ -5249,7 +5249,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-27T21:58:45+00:00"
+            "time": "2025-11-03T20:16:13+00:00"
         },
         {
             "name": "spatie/laravel-query-builder",
@@ -8722,16 +8722,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "16.0.1",
+            "version": "16.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "5f899c8c8798da127a86d12d170756989a8269d7"
+                "reference": "c360de79b833c469aaf149455392860311f65b23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/5f899c8c8798da127a86d12d170756989a8269d7",
-                "reference": "5f899c8c8798da127a86d12d170756989a8269d7",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/c360de79b833c469aaf149455392860311f65b23",
+                "reference": "c360de79b833c469aaf149455392860311f65b23",
                 "shasum": ""
             },
             "require": {
@@ -8755,7 +8755,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/16.0.1"
+                "source": "https://github.com/TypiCMS/Core/tree/16.0.2"
             },
             "funding": [
                 {
@@ -8763,7 +8763,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-11-02T19:56:33+00:00"
+            "time": "2025-11-06T09:06:18+00:00"
         },
         {
             "name": "typicms/form",
@@ -9749,21 +9749,22 @@
         },
         {
             "name": "driftingly/rector-laravel",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/driftingly/rector-laravel.git",
-                "reference": "d7cd932cff9e398a43393f1a1a63b27d574e35ef"
+                "reference": "2f1e9c3997bf45592d58916f0cedd775e844b9c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/driftingly/rector-laravel/zipball/d7cd932cff9e398a43393f1a1a63b27d574e35ef",
-                "reference": "d7cd932cff9e398a43393f1a1a63b27d574e35ef",
+                "url": "https://api.github.com/repos/driftingly/rector-laravel/zipball/2f1e9c3997bf45592d58916f0cedd775e844b9c6",
+                "reference": "2f1e9c3997bf45592d58916f0cedd775e844b9c6",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0",
-                "rector/rector": "^2.2.7"
+                "rector/rector": "^2.2.7",
+                "webmozart/assert": "^1.11"
             },
             "type": "rector-extension",
             "autoload": {
@@ -9778,9 +9779,9 @@
             "description": "Rector upgrades rules for Laravel Framework",
             "support": {
                 "issues": "https://github.com/driftingly/rector-laravel/issues",
-                "source": "https://github.com/driftingly/rector-laravel/tree/2.1.2"
+                "source": "https://github.com/driftingly/rector-laravel/tree/2.1.3"
             },
-            "time": "2025-10-31T21:56:58+00:00"
+            "time": "2025-11-04T18:32:57+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -9969,16 +9970,16 @@
         },
         {
             "name": "laravel/boost",
-            "version": "v1.6.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/boost.git",
-                "reference": "29d1c7c5a816d2b55c39f50bb07bdbca6c595b09"
+                "reference": "355f7c27952862aab3f61adec27773fd4d41a582"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/boost/zipball/29d1c7c5a816d2b55c39f50bb07bdbca6c595b09",
-                "reference": "29d1c7c5a816d2b55c39f50bb07bdbca6c595b09",
+                "url": "https://api.github.com/repos/laravel/boost/zipball/355f7c27952862aab3f61adec27773fd4d41a582",
+                "reference": "355f7c27952862aab3f61adec27773fd4d41a582",
                 "shasum": ""
             },
             "require": {
@@ -9987,7 +9988,7 @@
                 "illuminate/contracts": "^10.49.0|^11.45.3|^12.28.1",
                 "illuminate/routing": "^10.49.0|^11.45.3|^12.28.1",
                 "illuminate/support": "^10.49.0|^11.45.3|^12.28.1",
-                "laravel/mcp": "^0.2.0|^0.3.0",
+                "laravel/mcp": "^0.3.2",
                 "laravel/prompts": "0.1.25|^0.3.6",
                 "laravel/roster": "^0.2.9",
                 "php": "^8.1"
@@ -10031,7 +10032,7 @@
                 "issues": "https://github.com/laravel/boost/issues",
                 "source": "https://github.com/laravel/boost"
             },
-            "time": "2025-10-28T17:43:53+00:00"
+            "time": "2025-11-05T21:41:46+00:00"
         },
         {
             "name": "laravel/mcp",
