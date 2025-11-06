@@ -1,5 +1,13 @@
 <?php
 
+// use Bkwld\Croppa\Filters\BlackWhite;
+// use Bkwld\Croppa\Filters\Blur;
+// use Bkwld\Croppa\Filters\Darkgray;
+// use Bkwld\Croppa\Filters\Negative;
+// use Bkwld\Croppa\Filters\OrangeWarhol;
+// use Bkwld\Croppa\Filters\TurquoiseWarhol;
+
+
 use Bkwld\Croppa\Filters\BlackWhite;
 use Bkwld\Croppa\Filters\Blur;
 use Bkwld\Croppa\Filters\Darkgray;
