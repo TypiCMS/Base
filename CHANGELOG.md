@@ -2,6 +2,14 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 16.0.2 - 2025-11-12
+
+### Added
+
+- TipTap editor: source code button to view/edit HTML source.
+- TipTap editor: iframe embed support.
+- Search the pages tree.
+
 ## 16.0.0 - 2025-11-02
 
 ### Changed
