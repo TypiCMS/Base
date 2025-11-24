@@ -2,10 +2,17 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
-## 16.0.2 - 2025-11-12
+## 16.0.12 - 2025-11-24
 
 ### Added
 
+- Ability to configure the sidebar label and group of each module.
+
+## 16.0.6 - 2025-11-12
+
+### Added
+
+- Search functionality added to admin pages tree.
 - TipTap editor: source code button to view/edit HTML source.
 - TipTap editor: iframe embed support.
 - Search the pages tree.
