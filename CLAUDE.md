@@ -1,3 +1,198 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## About This Project
+
+TypiCMS is a modular multilingual content management system built with Laravel. It manages pages, events, news, places, menus, translations, and other content types through a flexible module architecture.
+
+## Development Commands
+
+### Build & Dev
+```bash
+# Install PHP dependencies
+composer install
+
+# Install frontend dependencies
+bun install
+
+# Compile assets for development with hot reload
+bun run dev
+
+# Build assets for production
+bun run build
+
+# Run all services (server, queue, logs, vite) - recommended for development
+composer run dev
+```
+
+### Database
+```bash
+# Run migrations
+php artisan migrate
+
+# Fresh install with seed data (WARNING: destructive)
+php artisan typicms:install
+
+# Initial migration and seed
+php artisan typicms:database
+```
+
+### Code Quality
+```bash
+# Format PHP code (run before commits)
+vendor/bin/pint
+
+# Format frontend code
+bun run format
+
+# Check frontend formatting
+bun run format:check
+
+# Lint JavaScript/Vue files
+bun run lint
+```
+
+### Testing
+```bash
+# Run all tests
+php artisan test
+
+# Run specific test file
+php artisan test tests/Feature/ExampleTest.php
+
+# Run tests with coverage
+php artisan test --coverage
+```
+
+### Module Management
+```bash
+# Create a new module (e.g., "cats")
+php artisan typicms:create cats
+
+# Publish a vendor module for customization
+php artisan typicms:publish modulename
+```
+
+## Architecture Overview
+
+### Modular Structure
+
+TypiCMS uses a modular architecture with two types of modules:
+
+1. **Vendor Modules** - Located in `vendor/typicms/` packages (core, things, sidebar, translatable, etc.)
+2. **Published Modules** - Located in `/Modules/` directory after publishing for customization
+
+The core functionality is in `vendor/typicms/core/src/`:
+- `Commands/` - Artisan commands (install, publish, database)
+- `Models/` - Base models (Page, User, File, Block, Menulink, Tag, etc.)
+- `Http/` - Controllers and middleware
+- `Facades/` - Facades for accessing modules
+- `Observers/` - Model observers
+- `Presenters/` - Presentation layer using Laracasts Presenter
+- `routes/` - Route definitions
+- `resources/` - Views, JS, and SCSS
+
+### Multilingual Architecture
+
+- All content models use the `HasTranslations` trait from `typicms/translatable`
+- Translatable fields are stored with locale-specific data
+- Locales are configured in config files (not in `config/typicms.php` which doesn't exist in project root)
+- URL structure: `/en/events/slug-in-english` or `/fr/evenements/slug-en-francais`
+- Pages can have nested URIs: `/en/parent/subpage/page`
+
+### Key Helper Functions
+
+Located in `app/helpers.php`:
+- `homeUrl()` - Get home URL respecting locale configuration
+- `locales()` - Get all configured locales
+- `enabledLocales()` - Get only enabled locales
+- `column($name)` - Get column name for current locale (e.g., `column('title')` → `title->en`)
+
+### Middleware Groups
+
+Defined in `bootstrap/app.php`:
+
+**Public Group** (`public`):
+- Standard web middleware (cookies, session, CSRF)
+- `SetLocaleFromUrl` - Sets locale from URL
+- `VerifyLocalizedUrl` - Ensures URLs are properly localized
+- `PublicAccess` - Handles public content access
+- `PoweredByHeader` - Adds X-Powered-By header
+
+**Admin Group** (`admin`):
+- Includes public middleware
+- `Authenticate` - Requires authentication
+- `SetLocaleFromUser` - Sets locale from user preferences
+- `SetContentLocale` - Sets content editing locale
+- `JavaScriptData` - Passes data to frontend
+- `UserPrefs` - Handles user preferences
+
+### Service Providers
+
+Registered in `bootstrap/providers.php`:
+- `SidebarServiceProvider` - Admin sidebar
+- `ArtisanTranslationsServiceProvider` - Translation management
+- `TranslatableBootFormsServiceProvider` - Form helpers
+- `TranslationsServiceProvider` - Translation loading
+- `ModuleServiceProvider` - Core TypiCMS module registration
+
+When adding custom modules, register their service providers in `bootstrap/providers.php` BEFORE `ModuleServiceProvider::class`.
+
+### Model Patterns
+
+TypiCMS models typically include:
+- `PresentableTrait` - For presenter pattern
+- `HasTranslations` - For multilingual content
+- `HasFiles` - For file attachments
+- `Historable` - For change tracking
+- Observers via PHP attributes (`#[ObservedBy]`)
+
+### Frontend Stack
+
+**Admin Panel:**
+- Vue 3 with Composition API
+- Bootstrap 5 for styling
+- Tiptap 3 for rich text editing
+- Uppy 5 for file uploads
+- Tom Select for dropdowns
+- CodeMirror for code editing
+
+**Build Configuration:**
+- Vite for bundling
+- Entry points: `resources/scss/public.scss`, `resources/scss/admin.scss`, `resources/js/public.js`, `resources/js/admin.js`
+- Resources are in `vendor/typicms/core/resources/` since this project doesn't have a root `resources/` directory
+
+### Pages System
+
+Pages are the core content type:
+- Hierarchical/nestable with parent-child relationships
+- Each translation has its own route
+- Can be linked to modules (making them "module pages")
+- Support multiple sections via `PageSection` model
+- Private pages require authentication
+- Automatic URI generation on save
+
+### Publishing Modules
+
+When you publish a module using `php artisan typicms:publish modulename`:
+1. Views and migrations are published
+2. Module files are copied from vendor to `/Modules/`
+3. The vendor package is removed via `composer remove`
+4. The module becomes part of the project and is tracked by git
+
+This allows customizing any TypiCMS module without losing changes on `composer update`.
+
+## Important Notes
+
+- The project uses **Bun** for JavaScript, not npm/yarn
+- Assets are compiled from vendor package (`vendor/typicms/core/resources/`)
+- Frontend changes require running `bun dev` or `bun build` to be visible
+- Use `composer run dev` to start all services at once (recommended workflow)
+- Never use `env()` outside config files - always use `config()` helper
+- When creating commands, they auto-register - no manual registration needed
+- Facades like `Menus::render()` and `Blocks::render()` provide easy content access
+
 <laravel-boost-guidelines>
 === foundation rules ===
 
