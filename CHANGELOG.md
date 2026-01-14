@@ -2,6 +2,35 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 16.1.0 - 2026-01-14
+
+### Added
+
+- Default section template support.
+- Page section edit button for quick editing.
+- Display tagged items in tag admin form.
+- Show locale indicator in TipTap editor label.
+- Show template name in section list.
+- TipTap editor: floating images support.
+
+### Changed
+
+- Section form displayed on two columns.
+- Template field is now required in section form.
+- Refactored slug generation and uniqueness checks.
+- Improved form validation and page selection in link dialog.
+- Enhanced filename normalization in file uploads.
+- Improved error handling in item deletion.
+- Stricter code across all packages.
+- Removed v-html usage for improved accessibility.
+
+### Fixed
+
+- Repeater component bug.
+- Move to parent folder button enable logic in file manager.
+- HTML decoding in TipTap HTML observer.
+- Menu link cache now properly flushed after page update.
+
 ## 16.0.12 - 2025-11-24
 
 ### Added
