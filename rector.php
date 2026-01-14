@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Rector\Caching\ValueObject\Storage\FileCacheStorage;
 use Rector\Config\RectorConfig;
+use Rector\TypeDeclaration\Rector\StmtsAwareInterface\DeclareStrictTypesRector;
 use RectorLaravel\Set\LaravelSetList;
 use RectorLaravel\Set\LaravelSetProvider;
 
@@ -21,10 +22,7 @@ return RectorConfig::configure()
     ])
     ->withComposerBased(laravel: true)
     ->withImportNames()
-    ->withCache(
-        cacheDirectory: '/tmp/rector',
-        cacheClass: FileCacheStorage::class,
-    )
+    ->withCache(cacheDirectory: '/tmp/rector', cacheClass: FileCacheStorage::class)
     ->withPaths([
         __DIR__ . '/app',
         __DIR__ . '/bootstrap/app.php',
@@ -33,12 +31,17 @@ return RectorConfig::configure()
         __DIR__ . '/public',
         __DIR__ . '/routes',
         __DIR__ . '/Modules',
+        __DIR__ . '/packages',
     ])
     ->withPreparedSets(
         deadCode: true,
         codeQuality: true,
+        codingStyle: true,
         typeDeclarations: true,
         privatization: true,
         earlyReturn: true,
     )
+    ->withRules([
+        DeclareStrictTypesRector::class,
+    ])
     ->withPhpSets();
