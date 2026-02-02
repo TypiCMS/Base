@@ -35,8 +35,8 @@
         "spatie/laravel-passkeys": "^1.0",
         "spatie/laravel-permission": "^6.16",
         "spatie/laravel-query-builder": "^6.3",
-        "symfony/http-client": "^7.2",
-        "symfony/mailgun-mailer": "^7.2",
+        "symfony/http-client": "^8.0.5",
+        "symfony/mailgun-mailer": "^8.0.0",
         "typicms/core": "^16.1",
         "typicms/sidebar": "^1.1",
         "typicms/laravel-translatable-bootforms": "^9.0.0",
@@ -47,10 +47,10 @@
         "ultrono/laravel-sitemap": "^9.5"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.13",
+        "barryvdh/laravel-debugbar": "^4.0.5",
         "driftingly/rector-laravel": "^2.0",
         "fakerphp/faker": "^1.23",
-        "laravel/boost": "^1.8",
+        "laravel/boost": "^2.0",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.41",
