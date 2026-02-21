@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Rector\Caching\ValueObject\Storage\FileCacheStorage;
 use Rector\Config\RectorConfig;
+use Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector;
 use Rector\TypeDeclaration\Rector\StmtsAwareInterface\DeclareStrictTypesRector;
 use RectorLaravel\Set\LaravelSetList;
 use RectorLaravel\Set\LaravelSetProvider;
@@ -44,4 +45,7 @@ return RectorConfig::configure()
     ->withRules([
         DeclareStrictTypesRector::class,
     ])
-    ->withPhpSets();
+    ->withPhpSets()
+    ->withSkip([
+        EncapsedStringsToSprintfRector::class,
+    ]);
