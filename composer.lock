@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0237c494dbb47d57dbc5d5b342e8ae60",
+    "content-hash": "5129c41e5a287d1e421b789cc0136a96",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -849,6 +849,51 @@
             "time": "2026-01-07T21:34:08+00:00"
         },
         {
+            "name": "enshrined/svg-sanitize",
+            "version": "0.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "0afa95ea74be155a7bcd6c6fb60c276c39984500"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/0afa95ea74be155a7bcd6c6fb60c276c39984500",
+                "reference": "0afa95ea74be155a7bcd6c6fb60c276c39984500",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5 || ^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "support": {
+                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.22.0"
+            },
+            "time": "2025-08-12T10:13:48+00:00"
+        },
+        {
             "name": "ezyang/htmlpurifier",
             "version": "v4.19.0",
             "source": {
@@ -982,16 +1027,16 @@
         },
         {
             "name": "genealabs/laravel-model-caching",
-            "version": "12.0.3",
+            "version": "12.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikebronner/laravel-model-caching.git",
-                "reference": "ae605a862d0d3d23463edc46c67d58e0b4faec6c"
+                "reference": "0f384b51980fddf6fc54845747937e5786233cad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikebronner/laravel-model-caching/zipball/ae605a862d0d3d23463edc46c67d58e0b4faec6c",
-                "reference": "ae605a862d0d3d23463edc46c67d58e0b4faec6c",
+                "url": "https://api.github.com/repos/mikebronner/laravel-model-caching/zipball/0f384b51980fddf6fc54845747937e5786233cad",
+                "reference": "0f384b51980fddf6fc54845747937e5786233cad",
                 "shasum": ""
             },
             "require": {
@@ -1044,9 +1089,9 @@
             "description": "Automatic caching for Eloquent models.",
             "support": {
                 "issues": "https://github.com/mikebronner/laravel-model-caching/issues",
-                "source": "https://github.com/mikebronner/laravel-model-caching/tree/12.0.3"
+                "source": "https://github.com/mikebronner/laravel-model-caching/tree/12.0.4"
             },
-            "time": "2026-02-17T23:07:25+00:00"
+            "time": "2026-02-21T14:51:35+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -8740,16 +8785,16 @@
         },
         {
             "name": "typicms/core",
-            "version": "16.1.6",
+            "version": "16.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TypiCMS/Core.git",
-                "reference": "1b6b75093d76d123d8edc5205f02cc4aba7b140d"
+                "reference": "d480a0be1e8e7c0600bb9a325bb11920ee66497d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/1b6b75093d76d123d8edc5205f02cc4aba7b140d",
-                "reference": "1b6b75093d76d123d8edc5205f02cc4aba7b140d",
+                "url": "https://api.github.com/repos/TypiCMS/Core/zipball/d480a0be1e8e7c0600bb9a325bb11920ee66497d",
+                "reference": "d480a0be1e8e7c0600bb9a325bb11920ee66497d",
                 "shasum": ""
             },
             "require": {
@@ -8773,7 +8818,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TypiCMS/Core/issues",
-                "source": "https://github.com/TypiCMS/Core/tree/16.1.6"
+                "source": "https://github.com/TypiCMS/Core/tree/16.1.7"
             },
             "funding": [
                 {
@@ -8781,7 +8826,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-21T14:32:41+00:00"
+            "time": "2026-02-21T15:29:02+00:00"
         },
         {
             "name": "typicms/form",
