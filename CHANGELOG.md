@@ -2,6 +2,12 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 16.1.8 - 2026-02-21
+
+### Changed
+
+- SVG files are now sanitized during upload. Run `composer require enshrined/svg-sanitize`
+
 ## 16.1.0 - 2026-01-14
 
 ### Added
