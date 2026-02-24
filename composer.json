@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "bkwld/croppa": "^7.0",
         "eluceo/ical": "^2.13",
         "enshrined/svg-sanitize": "^0.22.0",
@@ -36,8 +36,8 @@
         "spatie/laravel-passkeys": "^1.0",
         "spatie/laravel-permission": "^7.1.0",
         "spatie/laravel-query-builder": "^6.3",
-        "symfony/http-client": "^8.0.5",
-        "symfony/mailgun-mailer": "^8.0.0",
+        "symfony/http-client": "^7.4.5",
+        "symfony/mailgun-mailer": "^7.4.0",
         "typicms/core": "^16.1",
         "typicms/sidebar": "^1.1",
         "typicms/laravel-translatable-bootforms": "^9.0.0",
