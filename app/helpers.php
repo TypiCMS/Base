@@ -1,9 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 use TypiCMS\Modules\Core\Models\Page;
 
 if (!function_exists('homeUrl')) {
@@ -74,7 +78,7 @@ if (!function_exists('mainLocale')) {
 if (!function_exists('isLocaleEnabled')) {
     function isLocaleEnabled(string $locale): bool
     {
-        return in_array($locale, enabledLocales());
+        return in_array($locale, enabledLocales(), true);
     }
 }
 
@@ -82,8 +86,7 @@ if (!function_exists('getBrowserLocaleOrMainLocale')) {
     function getBrowserLocaleOrMainLocale(): string
     {
         $locale = mb_substr((string) getenv('HTTP_ACCEPT_LANGUAGE'), 0, 2);
-
-        if (in_array($locale, enabledLocales())) {
+        if (in_array($locale, enabledLocales(), true)) {
             return $locale;
         }
 
@@ -113,6 +116,7 @@ if (!function_exists('getModulesForSelect')) {
                 $options[$module] = __(ucfirst((string) $module));
             }
         }
+
         asort($options);
 
         return $options;
@@ -130,6 +134,7 @@ if (!function_exists('permissions')) {
                 $permissions[$key] = $data['permissions'];
             }
         }
+
         ksort($permissions, SORT_LOCALE_STRING);
 
         return $permissions;
@@ -169,7 +174,7 @@ if (!function_exists('getPagesLinkedToModule')) {
     function getPagesLinkedToModule(?string $module = null): array
     {
         $module = mb_strtolower((string) $module);
-        $routes = app('typicms.routes');
+        $routes = resolve('typicms.routes');
 
         $pages = [];
         foreach ($routes as $page) {
@@ -192,7 +197,7 @@ if (!function_exists('getPageLinkedToModule')) {
 }
 
 if (!function_exists('feeds')) {
-    /** @return Collection<int, Illuminate\Database\Eloquent\Model> */
+    /** @return Collection<int, Model> */
     function feeds(): Collection
     {
         $locale = config('app.locale');
@@ -201,11 +206,15 @@ if (!function_exists('feeds')) {
             ->transform(function (array $properties, string $module) use ($locale): ?array {
                 $routeName = $locale . '::' . $module . '-feed';
                 if (isset($properties['has_feed']) && $properties['has_feed'] === true && Route::has($routeName)) {
-                    return ['url' => route($routeName, $module), 'title' => __(ucfirst($module) . ' feed') . ' – ' . websiteTitle()];
+                    return [
+                        'url' => route($routeName, $module),
+                        'title' => __(ucfirst($module) . ' feed') . ' – ' . websiteTitle(),
+                    ];
                 }
 
                 return null;
-            })->reject(fn ($value): bool => $value === null);
+            })
+            ->reject(fn ($value): bool => $value === null);
     }
 }
 
@@ -213,13 +222,22 @@ if (!function_exists('pageTemplates')) {
     /** @return array<string, string> */
     function pageTemplates(): array
     {
-        $files = File::files(resource_path('views/vendor/pages/public'));
+        $hints = View::getFinder()->getHints()['pages'] ?? [];
+        $path = collect($hints)
+            ->map(fn (string $hint): string => "{$hint}/public")
+            ->first(fn (string $dir): bool => File::isDirectory($dir));
+
+        if ($path === null) {
+            return ['' => 'Default'];
+        }
+
         $templates = [];
-        foreach ($files as $file) {
+        foreach (File::files($path) as $file) {
             $filename = File::name($file);
             if ($filename === 'default.blade') {
                 continue;
             }
+
             $name = str_replace('.blade', '', $filename);
             $label = ucfirst(str_replace('-', ' ', $name));
             if ($name[0] !== '_' && $name !== 'master') {
@@ -235,13 +253,22 @@ if (!function_exists('pageSectionTemplates')) {
     /** @return array<string, string> */
     function pageSectionTemplates(): array
     {
-        $files = File::files(resource_path('views/vendor/pages/public'));
+        $hints = View::getFinder()->getHints()['pages'] ?? [];
+        $path = collect($hints)
+            ->map(fn (string $hint): string => "{$hint}/public")
+            ->first(fn (string $dir): bool => File::isDirectory($dir));
+
+        if ($path === null) {
+            return ['default' => 'Default'];
+        }
+
         $templates = [];
-        foreach ($files as $file) {
+        foreach (File::files($path) as $file) {
             $filename = File::name($file);
             if ($filename === '_section-default.blade') {
                 continue;
             }
+
             if (str_starts_with($filename, '_section-')) {
                 $name = str_replace(['_section-', '.blade'], '', $filename);
                 $label = ucfirst(str_replace('-', ' ', $name));
