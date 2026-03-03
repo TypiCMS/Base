@@ -1,73 +1,63 @@
 # TypiCMS
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/TypiCMS/Base/blob/master/LICENCE.md)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Larastan](https://img.shields.io/badge/PHPStan-level%205-brightgreen.svg?style=flat-square)](https://github.com/nunomaduro/larastan)
 
 TypiCMS is a modular multilingual content management system built with [Laravel](https://laravel.com). Out of the box you can manage pages, events, news, places, menus, translations, etc.
 
-![TypiCMS screenshot](https://typicms.org/uploads/files/typicms-screenshot.png?4)
+![TypiCMS screenshot](https://typicms.org/uploads/files/typicms-screenshot.png?2)
 
 ## Table of contents
 
--   [Features](#features)
--   [Requirements](#requirements)
--   [Installation](#installation)
-    -   [Assets](#assets)
-    -   [Locales configuration](#locales-configuration)
-    -   [Installation of a module](#installation-of-a-module)
--   [Available modules](#available-modules)
-    -   [Pages](#pages)
-    -   [Menus](#menus)
-    -   [Projects](#projects)
-    -   [Categories](#categories)
-    -   [Tags](#tags)
-    -   [Events](#events)
-    -   [News](#news)
-    -   [Contacts](#contacts)
-    -   [Partners](#partners)
-    -   [Files](#files)
-    -   [Users and roles](#users-and-roles)
-    -   [Blocks](#blocks)
-    -   [Translations](#translations)
-    -   [Sitemap](#sitemap)
-    -   [Settings](#settings)
-    -   [History](#history)
--   [Facades](#facades)
--   [Artisan commands](#artisan-commands)
--   [Roadmap](#roadmap)
--   [Change log](#change-log)
--   [Contributing](#contributing)
--   [Credits](#credits)
--   [Licence](#licence)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+  - [Assets](#assets)
+  - [Locales configuration](#locales-configuration)
+  - [Installation of a module](#installation-of-a-module)
+- [Available modules](#available-modules)
+  - [Pages](#pages)
+  - [Menus](#menus)
+  - [Projects](#projects)
+  - [Categories](#categories)
+  - [Tags](#tags)
+  - [Events](#events)
+  - [News](#news)
+  - [Contacts](#contacts)
+  - [Partners](#partners)
+  - [Files](#files)
+  - [Users and roles](#users-and-roles)
+  - [Blocks](#blocks)
+  - [Translations](#translations)
+  - [Sitemap](#sitemap)
+  - [Settings](#settings)
+  - [History](#history)
+- [Artisan commands](#artisan-commands)
+- [Roadmap](#roadmap)
+- [Change log](#change-log)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [Licence](#licence)
 
 ## Features
 
 ### URLs
 
-These kind of URLs are managed by the CMS:
+The CMS manages this kind of URL:
 
 **Modules:**
 
--   /en/events/slug-in-english
--   /fr/evenements/slug-en-francais
+- /en/events/slug-in-english
+- /fr/evenements/slug-en-francais
 
 **Pages:**
 
--   /en/parent-pages-slug-en/subpage-slug-en/page-slug-en
--   /fr/parent-pages-slug-fr/subpage-slug-fr/page-slug-fr
+- /en/parent-pages-slug-en/subpage-slug-en/page-slug-en
+- /fr/parent-pages-slug-fr/subpage-slug-fr/page-slug-fr
 
-## Requirements
+## Server Requirements
 
--   PHP >= 7.2
--   MySQL 5.7.8
--   BCMath PHP Extension
--   Ctype PHP Extension
--   JSON PHP Extension
--   Mbstring PHP Extension
--   OpenSSL PHP Extension
--   PDO PHP Extension
--   Tokenizer PHP Extension
--   XML PHP Extension
+See [Laravel requirements](https://laravel.com/docs/master/deployment#server-requirements)
 
 ## Installation
 
@@ -163,7 +153,7 @@ Each module can be [published](#publish-a-module).
 
 ### Pages
 
-Pages are nestable with a drag and drop, on drop, URIs are generated and saved in the database.
+Pages are nestable with drag and drop, on a drop, URIs are generated and saved in the database.
 Each translation of a page has its own route.
 A page can be linked to a module.
 A page can have multiple sections.
@@ -171,16 +161,16 @@ A page can have multiple sections.
 ### Menus
 
 Each menu has nestable entries. One entry can be linked to a page or URL.
-You can return a HTML formated menu with `Menus::render('menuname')` or `@menu('menuname')`.
+You can return an HTML formated menu in a blade file with `@menu('menuname')`.
 
 ### Projects
 
-Projects have categories, projects URLs follows this pattern: /en/projects/category-slug/project-slug
+Projects have categories, projects URLs follow this pattern: /en/projects/category-slug/project-slug
 
 ### Tags
 
 Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) plugin.
-The tags module has many to many polymorphic relations so a tag can be easily linked to any module.
+The tags module has many-to-many polymorphic relations, so a tag can be easily linked to any module.
 
 ### Events
 
@@ -196,11 +186,11 @@ Frontend contact form and admin side records management.
 
 ### Partners
 
-A partner has a logo, website URL, title and body content.
+A partner has a logo, website URL, title, and body content.
 
 ### Files
 
-The files module allows you to upload and organize images, documents and folders. It works with [DropzoneJS](http://www.dropzonejs.com) for the uploading proccess.
+The files module allows you to upload and organize images, documents, and folders. It works with [Uppy](https://uppy.io) for the uploading process.
 Thumbnails are generated on the fly thanks to [Croppa](https://github.com/BKWLD/croppa).
 
 If you want to store the original images on a storage service such as Amazon s3 and your cropped images on the local disk, set `FILESYSTEM_DRIVER=s3` in your **.env** file and in **config/croppa.php** set `'src_dir' => 'filesystem.default.driver'` and `'crops_dir' => storage_path('app/public')`.
@@ -231,13 +221,8 @@ Change the website title, logo, and other options in the settings panel.
 
 ### History
 
-_created_, _updated_, _deleted_, _online_ and _offline_ actions are logged in database.
-Latest records are displayed in the back office’s dashboard.
-
-## Facades
-
-Each module has a [facade](https://laravel.com/docs/master/facades#main-content) that gives you access to the model, you can call for example `News::latest(3)` to get the three latest news.
-Check available methods in each module’s models.
+_created_, _updated_, _deleted_, _online_ and _offline_ actions are logged in the database.
+The latest records are displayed in the back office’s dashboard.
 
 ## Artisan commands
 
@@ -259,7 +244,7 @@ This command is triggered by `typicms:install`
 
 ### Publish a module
 
-If you want to modify a module, for example to add some fields or a relation, you have to publish it by running:
+If you want to modify a module, for example, to add some fields or a relation, you have to publish it by running:
 
 ```
 php artisan typicms:publish <modulename>
@@ -269,11 +254,11 @@ The module is now located in the **/Modules** directory.
 
 These steps will be executed:
 
-1. Publishing of views and migrations for Pages module.
-2. Copying of everything excepted views and migrations from **/vendor/typicms/pages/src** to **/Modules/Pages**.
-3. Running `composer remove typicms/pages`.
+1. Publishing of views and migrations for the Core module.
+2. Copying of everything excepted views and migrations from **/vendor/typicms/core/src** to **/Modules/Core**.
+3. Running `composer remove typicms/core`.
 
-When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running `composer update`.
+When a module is published, it will be tracked by git, and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running `composer update`.
 
 ## Changelog
 
@@ -285,9 +270,9 @@ Please see [CONTRIBUTING](https://github.com/TypiCMS/Base/blob/master/CONTRIBUTI
 
 ## Credits
 
--   [Samuel De Backer](https://github.com/sdebacker)
--   [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
+- [Samuel De Backer](https://github.com/sdebacker)
+- [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
 
 ## License
 
-TypiCMS is an open-source software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+TypiCMS is open-source software licensed under the [MIT license](http://opensource.org/licenses/MIT).
