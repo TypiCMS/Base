@@ -83,10 +83,13 @@ if (!function_exists('isLocaleEnabled')) {
 }
 
 if (!function_exists('getBrowserLocaleOrMainLocale')) {
-    function getBrowserLocaleOrMainLocale(): string
+    function getBrowserLocaleOrMainLocale(?Illuminate\Http\Request $request = null): string
     {
-        $locale = mb_substr((string) getenv('HTTP_ACCEPT_LANGUAGE'), 0, 2);
-        if (in_array($locale, enabledLocales(), true)) {
+        $locale = null;
+        if ($request !== null) {
+            $locale = mb_substr((string) $request->header('Accept-Language'), 0, 2);
+        }
+        if ($locale && in_array($locale, enabledLocales(), true)) {
             return $locale;
         }
 
