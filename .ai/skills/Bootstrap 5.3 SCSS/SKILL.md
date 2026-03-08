@@ -264,6 +264,7 @@ Use `@extend` for Bootstrap utility classes in SCSS:
 ## Anti-Patterns to Avoid
 
 ### Bad: Utility classes in SCSS
+
 ```scss
 // Don't do this
 .component {
@@ -274,6 +275,7 @@ Use `@extend` for Bootstrap utility classes in SCSS:
 ```
 
 ### Good: Use mixins and variables
+
 ```scss
 // Do this instead
 .component {
@@ -284,6 +286,7 @@ Use `@extend` for Bootstrap utility classes in SCSS:
 ```
 
 ### Bad: Hardcoded breakpoints
+
 ```scss
 // Don't do this
 @media (min-width: 768px) {
@@ -292,6 +295,7 @@ Use `@extend` for Bootstrap utility classes in SCSS:
 ```
 
 ### Good: Use breakpoint mixins
+
 ```scss
 // Do this instead
 @include media-breakpoint-up(md) {
