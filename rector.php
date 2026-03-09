@@ -32,7 +32,6 @@ return RectorConfig::configure()
         __DIR__ . '/public',
         __DIR__ . '/routes',
         __DIR__ . '/Modules',
-        __DIR__ . '/packages',
     ])
     ->withPreparedSets(
         deadCode: true,
