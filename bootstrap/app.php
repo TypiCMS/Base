@@ -75,7 +75,7 @@ return Application::configure(basePath: dirname(__DIR__))
             JavaScriptData::class,
             UserPrefs::class,
         ]);
-        $middleware->redirectGuestsTo(fn (Request $request): string => route(getBrowserLocaleOrMainLocale($request) . '::login'));
+        $middleware->redirectGuestsTo(fn (Request $request): string => route($request->getPreferredLanguage(enabledLocales()) . '::login'));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->dontReport([]);
