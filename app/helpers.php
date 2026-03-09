@@ -82,18 +82,6 @@ if (!function_exists('isLocaleEnabled')) {
     }
 }
 
-if (!function_exists('getBrowserLocaleOrMainLocale')) {
-    function getBrowserLocaleOrMainLocale(): string
-    {
-        $locale = mb_substr((string) getenv('HTTP_ACCEPT_LANGUAGE'), 0, 2);
-        if (in_array($locale, enabledLocales(), true)) {
-            return $locale;
-        }
-
-        return mainLocale();
-    }
-}
-
 if (!function_exists('modules')) {
     /** @return array<string> */
     function modules(): array
