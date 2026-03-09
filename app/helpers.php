@@ -82,21 +82,6 @@ if (!function_exists('isLocaleEnabled')) {
     }
 }
 
-if (!function_exists('getBrowserLocaleOrMainLocale')) {
-    function getBrowserLocaleOrMainLocale(?Illuminate\Http\Request $request = null): string
-    {
-        $locale = null;
-        if ($request !== null) {
-            $locale = mb_substr((string) $request->header('Accept-Language'), 0, 2);
-        }
-        if ($locale && in_array($locale, enabledLocales(), true)) {
-            return $locale;
-        }
-
-        return mainLocale();
-    }
-}
-
 if (!function_exists('modules')) {
     /** @return array<string> */
     function modules(): array
