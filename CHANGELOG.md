@@ -2,6 +2,14 @@
 
 All notable changes to TypiCMS will be documented in this file.
 
+## 17.0.0 - 2026
+
+- Laravel 13
+- Base model replaced by traits 
+- genealabs/laravel-model-caching removed
+- spatie/laravel-responsecache added
+- presenter removed in favor of traits
+
 ## 16.1.8 - 2026-02-21
 
 ### Changed
