@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     build: {
-        chunkSizeWarningLimit: 2000,
+        chunkSizeWarningLimit: 3000,
     },
     css: {
         preprocessorOptions: {
@@ -18,15 +18,9 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/scss/public.scss', 'resources/scss/admin.scss', 'resources/js/public.js', 'resources/js/admin.js', 'resources/js/admin/theme-switcher.ts'],
-            refresh: ['resources/views/**'],
+            refresh: true,
+            assets: ['resources/images/**'],
         }),
-        vue({
-            template: {
-                transformAssetUrls: {
-                    // base: null,
-                    // includeAbsolute: false,
-                },
-            },
-        }),
+        vue(),
     ],
 });
