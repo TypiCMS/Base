@@ -9,6 +9,7 @@ All notable changes to TypiCMS will be documented in this file.
 - genealabs/laravel-model-caching removed
 - spatie/laravel-responsecache added
 - presenter removed in favor of traits
+- Pest tests
 
 ## 16.1.8 - 2026-02-21
 
