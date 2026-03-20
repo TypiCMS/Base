@@ -17,12 +17,6 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/typicms/laravel-sitemap.git"
-        }
-    ],
     "require": {
         "php": "^8.4",
         "bkwld/croppa": "dev-master",
@@ -49,7 +43,7 @@
         "typicms/things": "dev-master",
         "typicms/translatable": "^2.0",
         "typidesign/laravel-artisan-translations": "^4.0",
-        "ultrono/laravel-sitemap": "dev-master"
+        "ultrono/laravel-sitemap": "^10.0.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^4.0.5",
