@@ -75,25 +75,31 @@ For all server requirements, see the [Laravel deployment documentation](https://
 
 ## Installation
 
-Install [Composer](https://getcomposer.org) first, then:
+### Via the Laravel installer (recommended)
 
-1. Create a new project:
+Install the [Laravel installer](https://laravel.com/docs/master/installation#installing-php) if you haven't already:
 
-    ```
-    composer create-project typicms/base mywebsite
-    ```
+```
+composer global require laravel/installer
+```
 
-2. Enter the project folder:
+Then create a new project:
 
-    ```
-    cd mywebsite
-    ```
+```
+laravel new mywebsite --using=typicms/base
+```
 
-3. Run the installer, which handles database migration and seeding, creates an admin user, installs npm packages, and sets directory permissions:
+The installer will prompt you for database credentials and run the full TypiCMS setup automatically.
 
-    ```
-    php artisan typicms:install
-    ```
+### Via Composer
+
+```
+composer create-project typicms/base mywebsite
+cd mywebsite
+php artisan typicms:install
+```
+
+---
 
 Go to http://mywebsite.test/admin and log in.
 
