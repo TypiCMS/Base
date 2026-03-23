@@ -12,6 +12,8 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Sentry\Laravel\Integration;
+use Spatie\MarkdownResponse\Middleware\ProvideMarkdownResponse;
+use Spatie\ResponseCache\Middlewares\CacheResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use TypiCMS\Modules\Core\Http\Middleware\Impersonate;
 use TypiCMS\Modules\Core\Http\Middleware\JavaScriptData;
@@ -35,7 +37,7 @@ return Application::configure(basePath: dirname(__DIR__))
             $app->booted(function ($app): void {
                 $app->register(PagesRoutesServiceProvider::class);
             });
-        }
+        },
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->api([
@@ -48,6 +50,9 @@ return Application::configure(basePath: dirname(__DIR__))
             ShareErrorsFromSession::class,
             PreventRequestForgery::class,
             SubstituteBindings::class,
+
+            ProvideMarkdownResponse::class,
+            CacheResponse::class,
             PoweredByHeader::class,
             Impersonate::class,
             SetNavbarLocale::class,
@@ -75,7 +80,9 @@ return Application::configure(basePath: dirname(__DIR__))
             JavaScriptData::class,
             UserPrefs::class,
         ]);
-        $middleware->redirectGuestsTo(fn (Request $request): string => route($request->getPreferredLanguage(enabledLocales()) . '::login'));
+        $middleware->redirectGuestsTo(fn (Request $request): string => route(
+            request()->getPreferredLanguage(enabledLocales()) ?? mainLocale() . '::login',
+        ));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->dontReport([]);
@@ -84,6 +91,16 @@ return Application::configure(basePath: dirname(__DIR__))
             $statusCode = $e->getStatusCode();
             if ($request->is('admin/*') && view()->exists('errors.admin.' . $statusCode)) {
                 return response()->view('errors.admin.' . $statusCode, [], $statusCode);
+            }
+
+            $view = 'errors.' . $statusCode;
+            if (view()->exists($view)) {
+                return response()->view($view, [], $statusCode);
+            }
+
+            $view = mb_substr($view, 0, -2) . 'xx';
+            if (view()->exists($view)) {
+                return response()->view($view, [], $statusCode);
             }
         });
 
