@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Larastan](https://img.shields.io/badge/PHPStan-level%205-brightgreen.svg?style=flat-square)](https://github.com/nunomaduro/larastan)
 
-TypiCMS is a modular multilingual content management system built with [Laravel](https://laravel.com). Out of the box you can manage pages, events, news, places, menus, translations, etc.
+TypiCMS is a modular multilingual content management system built with [Laravel](https://laravel.com). Out of the box you can manage pages, events, news, places, menus, translations, and more.
 
 ![TypiCMS screenshot](https://typicms.org/uploads/files/typicms-screenshot.png?2)
 
@@ -15,11 +15,11 @@ TypiCMS is a modular multilingual content management system built with [Laravel]
   - [Assets](#assets)
   - [Locales configuration](#locales-configuration)
   - [Installation of a module](#installation-of-a-module)
+  - [Module scaffolding](#module-scaffolding)
 - [Available modules](#available-modules)
   - [Pages](#pages)
   - [Menus](#menus)
   - [Projects](#projects)
-  - [Categories](#categories)
   - [Tags](#tags)
   - [Events](#events)
   - [News](#news)
@@ -33,7 +33,6 @@ TypiCMS is a modular multilingual content management system built with [Laravel]
   - [Settings](#settings)
   - [History](#history)
 - [Artisan commands](#artisan-commands)
-- [Roadmap](#roadmap)
 - [Change log](#change-log)
 - [Contributing](#contributing)
 - [Credits](#credits)
@@ -41,9 +40,21 @@ TypiCMS is a modular multilingual content management system built with [Laravel]
 
 ## Features
 
+- **Multilingual** — full support for multiple languages with locale-prefixed URLs
+- **Modular** — install only the modules you need; publish and customize any of them
+- **Dark mode** — the admin panel supports both light and dark themes
+- **Rich text editing** — [TipTap](https://tiptap.dev) editor with support for floating images, tables, YouTube embeds, iframes, and an HTML source view
+- **Passkey and OTP authentication** — secure, passwordless login options for admin users
+- **Page sections** — pages can have multiple content sections, each with its own template
+- **Nestable pages and menus** — drag-and-drop reordering with automatic URI generation
+- **File management** — upload and organize images, documents, and folders with [Uppy](https://uppy.io), image cropping with [Cropper.js](https://fengyuanchen.github.io/cropperjs/), and SVG sanitization on upload
+- **Roles and permissions** — fine-grained access control via [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
+- **History log** — create, update, delete, online, and offline events are logged and shown in the dashboard
+- **Vue.js 3** frontend powered by [Vite](https://vitejs.dev) and written in TypeScript
+
 ### URLs
 
-The CMS manages this kind of URL:
+The CMS manages the following URL patterns:
 
 **Modules:**
 
@@ -52,78 +63,92 @@ The CMS manages this kind of URL:
 
 **Pages:**
 
-- /en/parent-pages-slug-en/subpage-slug-en/page-slug-en
-- /fr/parent-pages-slug-fr/subpage-slug-fr/page-slug-fr
+- /en/parent-page-slug/subpage-slug/page-slug
+- /fr/slug-parent/slug-sous-page/slug-page
 
-## Server Requirements
+## Requirements
 
-See [Laravel requirements](https://laravel.com/docs/master/deployment#server-requirements)
+- PHP 8.4+
+- One of the database engines supported by Laravel (MySQL, PostgreSQL, SQLite, SQL Server)
+
+For all server requirements, see the [Laravel deployment documentation](https://laravel.com/docs/master/deployment#server-requirements).
 
 ## Installation
 
-First install [Composer](https://getcomposer.org)
+### Via the Laravel installer (recommended)
 
-1. Create a new project
+Install the [Laravel installer](https://laravel.com/docs/master/installation#installing-php) if you haven't already:
 
-    ```
-    composer create-project typicms/base mywebsite
-    ```
+```
+composer global require laravel/installer
+```
 
-2. Enter the newly created folder
+Then create a new project:
 
-    ```
-    cd mywebsite
-    ```
+```
+laravel new mywebsite --using=typicms/base
+```
 
-3. Migration of the database, seeding, user creation, npm packages installation and directory permissions.
+The installer will prompt you for database credentials and run the full TypiCMS setup automatically.
 
-    ```
-    php artisan typicms:install
-    ```
+### Via Composer
+
+```
+composer create-project typicms/base mywebsite
+cd mywebsite
+php artisan typicms:install
+```
+
+---
 
 Go to http://mywebsite.test/admin and log in.
 
 ### Assets
 
-Assets are bundled with [Vite](https://laravel.com/docs/master/vite).
-In order to work on assets, you can install [Bun](https://bun.com), then go to your website folder and run these commands:
+Assets are bundled with [Vite](https://laravel.com/docs/master/vite). Install [Bun](https://bun.sh), then run:
 
-1. Install npm packages (in directory **node_modules**)
+1. Install npm packages:
 
     ```
     bun install
     ```
 
-2. Compile admin and public assets
+2. Start the development server:
 
     ```
     bun run dev
     ```
 
+3. Build for production:
+
+    ```
+    bun run prod
+    ```
+
 ### Locales configuration
 
-1. Set the locales in config/typicms.php, the first key of this array is the main locale and should be the same as the locale defined in config/app.php.
-2. Set main_locale_in_url in config/typicms.php to true or false.
+1. Set the locales in `config/typicms.php`. The first key of this array is the main locale and must match the locale defined in `config/app.php`.
+2. Set `main_locale_in_url` in `config/typicms.php` to `true` or `false` depending on whether you want the main locale to appear in the URL.
 
 ### Installation of a module
 
-This example is for the News module. After these steps, the module will appear in the sidebar of the back office.
-If you need to customize it, you can [publish it](#publish-a-module)!
+The following example installs the News module. After these steps, the module will appear in the admin sidebar.
 
-1. Install a module with Composer
+1. Install the module with Composer:
 
     ```
     composer require typicms/news
     ```
 
-2. Add `TypiCMS\Modules\News\Providers\ModuleServiceProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,`
-3. Publish the views and migrations
+2. Add `TypiCMS\Modules\News\Providers\ModuleServiceProvider::class,` to `bootstrap/providers.php`, in the _TypiCMS Modules Service Providers_ section.
+
+3. Publish the views and migrations:
 
     ```
     php artisan vendor:publish
     ```
 
-4. Migrate the database
+4. Run the database migration:
 
     ```
     php artisan migrate
@@ -131,17 +156,17 @@ If you need to customize it, you can [publish it](#publish-a-module)!
 
 ### Module scaffolding
 
-Let’s create a module called Cats.
+To generate a new custom module called Cats:
 
-1. Create the module with artisan:
+1. Create the module:
 
     ```
     php artisan typicms:create cats
     ```
 
-2. The module is in **/Modules/Cats**, you can customize it
-3. Add `TypiCMS\Modules\Cats\Providers\ModuleServiceProvider::class,` to **config/app.php**, before `TypiCMS\Modules\Core\Providers\ModuleServiceProvider::class,`
-4. Migrate the database
+2. The module is created in `/Modules/Cats`. Customize it as needed.
+3. Add `TypiCMS\Modules\Cats\Providers\ModuleServiceProvider::class,` to `bootstrap/providers.php`, in the _TypiCMS Modules Service Providers_ section.
+4. Run the migration:
 
     ```
     php artisan migrate
@@ -149,28 +174,27 @@ Let’s create a module called Cats.
 
 ## Available modules
 
-Each module can be [published](#publish-a-module).
+Each module can be [published](#publish-a-module) to be tracked by git and customized locally.
 
 ### Pages
 
-Pages are nestable with drag and drop, on a drop, URIs are generated and saved in the database.
-Each translation of a page has its own route.
-A page can be linked to a module.
-A page can have multiple sections.
+Pages are nestable with drag and drop. On a drop, URIs are regenerated and saved in the database. Each translation of a page has its own route. A page can be linked to a module and can have multiple sections, each using its own template.
+
+The admin panel includes a searchable pages tree with keyboard-accessible expand/collapse controls.
 
 ### Menus
 
-Each menu has nestable entries. One entry can be linked to a page or URL.
-You can return an HTML formated menu in a blade file with `@menu('menuname')`.
+Each menu has nestable entries. An entry can link to a page or a URL, and can optionally link to a specific section of a page.
+
+Render an HTML menu in a Blade file with `@menu('menuname')`.
 
 ### Projects
 
-Projects have categories, projects URLs follow this pattern: /en/projects/category-slug/project-slug
+Projects have categories. Project URLs follow this pattern: `/en/projects/category-slug/project-slug`.
 
 ### Tags
 
-Tags are linked to projects and use the [Selectize](https://brianreavis.github.io/selectize.js/) plugin.
-The tags module has many-to-many polymorphic relations, so a tag can be easily linked to any module.
+Tags support polymorphic many-to-many relations, so they can be linked to any module. The tag input uses [Tom Select](https://tom-select.js.org).
 
 ### Events
 
@@ -182,7 +206,7 @@ News module.
 
 ### Contacts
 
-Frontend contact form and admin side records management.
+Frontend contact form with admin-side records management. Notifications are sent to the visitor and the webmaster.
 
 ### Partners
 
@@ -190,75 +214,75 @@ A partner has a logo, website URL, title, and body content.
 
 ### Files
 
-The files module allows you to upload and organize images, documents, and folders. It works with [Uppy](https://uppy.io) for the uploading process.
-Thumbnails are generated on the fly thanks to [Croppa](https://github.com/BKWLD/croppa).
+The file manager lets you upload and organize images, documents, and folders. File uploads use [Uppy](https://uppy.io) with drag-and-drop support and a compression step before upload. Images can be cropped using [Cropper.js](https://fengyuanchen.github.io/cropperjs/). SVG files are sanitized on upload. Images can be swapped in place from the file manager.
 
-If you want to store the original images on a storage service such as Amazon s3 and your cropped images on the local disk, set `FILESYSTEM_DRIVER=s3` in your **.env** file and in **config/croppa.php** set `'src_dir' => 'filesystem.default.driver'` and `'crops_dir' => storage_path('app/public')`.
+To store original images on a remote service such as Amazon S3 while serving cropped images from local disk, set `FILESYSTEM_DRIVER=s3` in your `.env` file and configure `croppa.php` accordingly.
 
 ### Users and roles
 
-User registration can be enabled through the settings panel (/admin/settings).
-Roles and Permissions are managed with [spatie/laravel-permission](https://github.com/spatie/laravel-permission).
+Admins can authenticate with a passkey or a one-time password in addition to a standard password. User registration can be enabled in the settings panel (`/admin/settings`). Roles and permissions are managed with [spatie/laravel-permission](https://github.com/spatie/laravel-permission). Admins can impersonate users.
 
 ### Blocks
 
-Blocks are useful to display custom content in your views.
-You can display the content of a block with `Blocks::render('blockname')` or `@block('blockname')`.
+Blocks let you display custom content in your views.
+
+Render a block in Blade with `Blocks::render('blockname')` or `@block('blockname')`.
 
 ### Translations
 
-Translations can be stored in the database through the admin panel (/admin/translations).
+Translations can be managed in the database via the admin panel (`/admin/translations`).
 
-You can get a translation from the database with the standard Laravel functions: `__('Key')`, `trans('Key')` or `@lang('Key')`.
+Retrieve a translation using the standard Laravel helpers: `__('Key')`, `trans('Key')`, or `@lang('Key')`.
 
 ### Sitemap
 
-A sitemap is generated by reading all pages available in your project. The URL is /sitemap.xml.
+A sitemap is generated automatically from all published pages. It is available at `/sitemap.xml`.
 
 ### Settings
 
-Change the website title, logo, and other options in the settings panel.
+Manage the website title, logo, and other global options in the settings panel.
 
 ### History
 
-_created_, _updated_, _deleted_, _online_ and _offline_ actions are logged in the database.
-The latest records are displayed in the back office’s dashboard.
+Create, update, delete, online, and offline events are logged in the database. The most recent records are shown on the back-office dashboard.
 
 ## Artisan commands
 
-Commands are located in **/vendor/typicms/core/src/Commands**
-
-### Installation of TypiCMS
+### Install TypiCMS
 
 ```
 php artisan typicms:install
 ```
 
-### Initial migration and seed
+### Run the initial migration and seed
 
 ```
 php artisan typicms:database
 ```
 
-This command is triggered by `typicms:install`
+This command is called automatically by `typicms:install`.
+
+### Create a superuser
+
+```
+php artisan typicms:user
+```
 
 ### Publish a module
 
-If you want to modify a module, for example, to add some fields or a relation, you have to publish it by running:
+To customize a module — for example, to add fields or a relation — publish it:
 
 ```
 php artisan typicms:publish <modulename>
 ```
 
-The module is now located in the **/Modules** directory.
+This will:
 
-These steps will be executed:
+1. Publish the module's views and migrations.
+2. Copy the module source to `/Modules/<Modulename>`.
+3. Remove the Composer package with `composer remove typicms/<modulename>`.
 
-1. Publishing of views and migrations for the Core module.
-2. Copying of everything excepted views and migrations from **/vendor/typicms/core/src** to **/Modules/Core**.
-3. Running `composer remove typicms/core`.
-
-When a module is published, it will be tracked by git, and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running `composer update`.
+Once published, the module lives in `/Modules/<Modulename>` and is tracked by git, so changes are preserved across `composer update` runs.
 
 ## Changelog
 
