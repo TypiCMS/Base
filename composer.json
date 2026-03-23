@@ -1,6 +1,9 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "typicms/base",
+    "name": "typicms/typicms",
+    "replace": {
+        "typicms/base": "*"
+    },
     "type": "project",
     "description": "A multilingual CMS built with Laravel",
     "keywords": [
@@ -17,9 +20,15 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sdebacker/laravel-passkeys.git"
+        }
+    ],
     "require": {
         "php": "^8.4",
-        "bkwld/croppa": "dev-master",
+        "bkwld/croppa": "^8.0.0",
         "eluceo/ical": "^2.14",
         "enshrined/svg-sanitize": "^0.22.0",
         "genealabs/laravel-model-caching": "^13.0.2",
