@@ -4,12 +4,29 @@ All notable changes to TypiCMS will be documented in this file.
 
 ## 17.0.0 - 2026
 
+### Changed
+
 - Laravel 13
-- Base model replaced by traits 
-- genealabs/laravel-model-caching removed
-- spatie/laravel-responsecache added
-- presenter removed in favor of traits
-- Pest tests
+- PHP 8.4 required
+- Base model replaced by traits
+- Presenter pattern replaced by presenter traits
+- JSON-LD structured data migrated to `<x-json-ld>` Blade component for News, Events, Places, Partners, and Pages
+- Croppa 8
+- Security fixes
+
+### Added
+
+- spatie/laravel-responsecache for response caching on public routes
+- spatie/laravel-markdown-response middleware on public routes
+- `llms.txt` route with pages and module content
+- PHPStan level 8 configuration with Larastan
+- Rector configuration for code modernization
+- Test (with Pest)
+
+### Removed
+
+- genealabs/laravel-model-caching
+- Laracasts/Presenter package
 
 ## 16.1.8 - 2026-02-21
 
