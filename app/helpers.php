@@ -8,6 +8,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
+use TypiCMS\Modules\Core\Models\File as FileModel;
 use TypiCMS\Modules\Core\Models\Page;
 
 if (!function_exists('homeUrl')) {
@@ -19,6 +20,17 @@ if (!function_exists('homeUrl')) {
         }
 
         return url($uri);
+    }
+}
+
+if (!function_exists('imageOrDefault')) {
+    function imageOrDefault(?FileModel $image, ?int $width = null, ?int $height = null): string
+    {
+        if ($image instanceof FileModel) {
+            return $image->render($width, $height);
+        }
+
+        return new FileModel()->render($width, $height);
     }
 }
 
@@ -211,9 +223,9 @@ if (!function_exists('pageTemplates')) {
     function pageTemplates(): array
     {
         $hints = View::getFinder()->getHints()['pages'] ?? [];
-        $path = collect($hints)
-            ->map(fn (string $hint): string => "{$hint}/public")
-            ->first(fn (string $dir): bool => File::isDirectory($dir));
+        $path = collect($hints)->map(fn (string $hint): string => "{$hint}/public")->first(
+            fn (string $dir): bool => File::isDirectory($dir),
+        );
 
         if ($path === null) {
             return ['' => 'Default'];
@@ -242,9 +254,9 @@ if (!function_exists('pageSectionTemplates')) {
     function pageSectionTemplates(): array
     {
         $hints = View::getFinder()->getHints()['pages'] ?? [];
-        $path = collect($hints)
-            ->map(fn (string $hint): string => "{$hint}/public")
-            ->first(fn (string $dir): bool => File::isDirectory($dir));
+        $path = collect($hints)->map(fn (string $hint): string => "{$hint}/public")->first(
+            fn (string $dir): bool => File::isDirectory($dir),
+        );
 
         if ($path === null) {
             return ['default' => 'Default'];
