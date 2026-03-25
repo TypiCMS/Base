@@ -75,33 +75,13 @@ For all server requirements, see the [Laravel deployment documentation](https://
 
 ## Installation
 
-### Via the Laravel installer (recommended)
-
-Install the [Laravel installer](https://laravel.com/docs/master/installation#installing-php) if you haven't already:
-
-```
-composer global require laravel/installer
-```
-
-Then create a new project:
-
-```
-laravel new mywebsite --using=typicms/typicms
-cd mywebsite
-php artisan typicms:install
-```
-
-### Via Composer
-
 ```
 composer create-project typicms/typicms mywebsite
-cd mywebsite
-php artisan typicms:install
 ```
 
 ---
 
-Go to http://mywebsite.test/admin and log in.
+Go to https://mywebsite.test/admin and log in using a password.
 
 ### Assets
 
