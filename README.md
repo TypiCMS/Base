@@ -94,9 +94,7 @@ The installer will prompt you for database credentials and run the full TypiCMS 
 ### Via Composer
 
 ```
-composer create-project typicms/base mywebsite
-cd mywebsite
-php artisan typicms:install
+composer create-project typicms/typicms mywebsite
 ```
 
 ---
