@@ -87,14 +87,16 @@ Then create a new project:
 
 ```
 laravel new mywebsite --using=typicms/typicms
+cd mywebsite
+php artisan typicms:install
 ```
-
-The installer will prompt you for database credentials and run the full TypiCMS setup automatically.
 
 ### Via Composer
 
 ```
 composer create-project typicms/typicms mywebsite
+cd mywebsite
+php artisan typicms:install
 ```
 
 ---
