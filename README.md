@@ -86,7 +86,7 @@ composer global require laravel/installer
 Then create a new project:
 
 ```
-laravel new mywebsite --using=typicms/base
+laravel new mywebsite --using=typicms/typicms
 ```
 
 The installer will prompt you for database credentials and run the full TypiCMS setup automatically.
