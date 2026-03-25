@@ -115,9 +115,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
-            "@php artisan migrate --graceful --ansi",
-            "@php artisan storage:link",
-            "@php artisan typicms:install"
+            "@php artisan storage:link"
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
