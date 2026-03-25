@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52f87104e52061eda25951b84592b53e",
+    "content-hash": "95bb8d4b747875a7f8900ee615adac6f",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -1026,72 +1026,6 @@
                 }
             ],
             "time": "2025-12-03T09:33:47+00:00"
-        },
-        {
-            "name": "genealabs/laravel-model-caching",
-            "version": "13.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikebronner/laravel-model-caching.git",
-                "reference": "49c1ef860360a85c25fe5ad848d2b1c658f73e55"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikebronner/laravel-model-caching/zipball/49c1ef860360a85c25fe5ad848d2b1c658f73e55",
-                "reference": "49c1ef860360a85c25fe5ad848d2b1c658f73e55",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/cache": "^11.0|^12.0|^13.0",
-                "illuminate/config": "^11.0|^12.0|^13.0",
-                "illuminate/console": "^11.0|^12.0|^13.0",
-                "illuminate/container": "^11.0|^12.0|^13.0",
-                "illuminate/database": "^11.0|^12.0|^13.0",
-                "illuminate/http": "^11.0|^12.0|^13.0",
-                "illuminate/support": "^11.0|^12.0|^13.0",
-                "mikebronner/laravel-pivot-events": "*",
-                "php": ">=8.2"
-            },
-            "require-dev": {
-                "doctrine/dbal": "^3.3|^4.2",
-                "fakerphp/faker": "^1.11",
-                "larastan/larastan": "^2.0|^3.0",
-                "laravel/pint": "^1.27",
-                "orchestra/testbench": "^9.0|^10.0|^11.0",
-                "phpunit/phpunit": "^10.5|^11.5.3|^12.5.12",
-                "slevomat/coding-standard": "^7.0|^8.14",
-                "squizlabs/php_codesniffer": "^3.6|^4.0",
-                "symfony/thanks": "^1.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "GeneaLabs\\LaravelModelCaching\\Providers\\Service"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GeneaLabs\\LaravelModelCaching\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Bronner",
-                    "email": "hello@genealabs.com"
-                }
-            ],
-            "description": "Automatic caching for Eloquent models.",
-            "support": {
-                "issues": "https://github.com/mikebronner/laravel-model-caching/issues",
-                "source": "https://github.com/mikebronner/laravel-model-caching/tree/13.0.3"
-            },
-            "time": "2026-03-17T21:50:33+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -3095,63 +3029,6 @@
                 "source": "https://github.com/MarkBaker/PHPMatrix/tree/3.0.1"
             },
             "time": "2022-12-02T22:17:43+00:00"
-        },
-        {
-            "name": "mikebronner/laravel-pivot-events",
-            "version": "13.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikebronner/laravel-pivot-events.git",
-                "reference": "ed98aae5fdef8680d3ae6f5b1c59105d751f447c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikebronner/laravel-pivot-events/zipball/ed98aae5fdef8680d3ae6f5b1c59105d751f447c",
-                "reference": "ed98aae5fdef8680d3ae6f5b1c59105d751f447c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "^11.0|^12.0|^13.0",
-                "illuminate/support": "^11.0|^12.0|^13.0",
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^9.0|^10.0|^11.0",
-                "phpunit/phpunit": "^10.5|^11.0|^12.0",
-                "symfony/thanks": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "GeneaLabs\\LaravelPivotEvents\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Bronner",
-                    "email": "hello@genealabs.com",
-                    "homepage": "https://genealabs.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "This package introduces new eloquent events for sync(), attach(), detach() or updateExistingPivot() methods on BelongsToMany relation.",
-            "homepage": "https://github.com/mikebronner/laravel-pivot-events",
-            "keywords": [
-                "eloquent events",
-                "eloquent extra events",
-                "laravel BelongsToMany events",
-                "laravel pivot events",
-                "laravel sync events"
-            ],
-            "support": {
-                "issues": "https://github.com/mikebronner/laravel-pivot-events/issues",
-                "source": "https://github.com/mikebronner/laravel-pivot-events"
-            },
-            "time": "2026-02-28T19:52:21+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -12140,11 +12017,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.43",
+            "version": "2.1.44",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d01bebe3edfd4d49b9666ee5b8271ddca561042f",
-                "reference": "d01bebe3edfd4d49b9666ee5b8271ddca561042f",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4a88c083c668b2c364a425c9b3171b2d9ea5d218",
+                "reference": "4a88c083c668b2c364a425c9b3171b2d9ea5d218",
                 "shasum": ""
             },
             "require": {
@@ -12189,7 +12066,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-24T20:40:50+00:00"
+            "time": "2026-03-25T17:34:21+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
