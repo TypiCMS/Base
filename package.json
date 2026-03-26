@@ -12,7 +12,7 @@
         "format": "prettier --write resources/",
         "format:check": "prettier --check resources/",
         "lint": "eslint . --fix",
-        "icons": "~/Library/Python/3.9/bin/pyftsubset ./node_modules/lucide-static/font/lucide.woff2 --glyphs=house,user,newspaper,image,file-text,map-pin,calendar-range,key-round,grid-2x2,text-select,tag,globe,file-image,shield-user,circle-user-round,settings,eye,corner-right-down,lock,folder,file,file-music,file-archive,file-video-camera,circle-plus,move,x,pencil,file-down,arrow-left,chevron-down,chevron-right,chevron-left,chevron-up,users,menu,arrow-up,plus,minus --glyph-names --output-file=./resources/fonts/lucide-subset.woff2"
+        "icons": "~/Library/Python/3.9/bin/pyftsubset ./node_modules/lucide-static/font/lucide.woff2 --glyphs=home,user,newspaper,image,file-text,map-pin,calendar-range,key-round,grid-2-x-2,text-select,tag,globe,file-image,shield-user,message-circle-question-mark,circle-user-round,settings,eye,corner-right-down,lock,folder,file,file-music,file-archive,file-video-2,circle-plus,move,x,pencil,file-down,arrow-left,chevron-down,chevron-right,chevron-left,chevron-up,users,menu,arrow-up,plus,minus,building,hash,users,message-square-quote,message-square-more,message-square-text,quote,external-link,mail,arrow-right,arrow-up,arrow-left,arrow-down,shuffle,handshake,shapes --glyph-names --output-file=./resources/fonts/lucide-subset.woff2"
     },
     "dependencies": {
         "@codemirror/autocomplete": "^6.20.1",
@@ -23,6 +23,7 @@
         "@codemirror/state": "^6.6.0",
         "@codemirror/view": "^6.40.0",
         "@floating-ui/dom": "^1.7.6",
+        "@lucide/vue": "^1.7.0",
         "@popperjs/core": "^2.11.8",
         "@simplewebauthn/browser": "^13.3.0",
         "@tiptap/core": "^3.20.4",
@@ -56,7 +57,6 @@
         "bootstrap": "^5.3.8",
         "cropperjs": "^1.6.2",
         "js-beautify": "^1.15.4",
-        "lucide-vue-next": "^0.577.0",
         "mitt": "^3.0.1",
         "photoswipe": "^5.4.4",
         "sl-vue-tree-next": "^0.0.14",
@@ -80,7 +80,7 @@
         "eslint-plugin-vue": "^10.8.0",
         "globals": "^17.4.0",
         "laravel-vite-plugin": "^2.1.0",
-        "lucide-static": "^0.577.0",
+        "lucide-static": "^1.7.0",
         "postcss": "^8.5.8",
         "prettier": "^3.8.1",
         "prettier-plugin-organize-imports": "^4.3.0",
