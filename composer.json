@@ -20,12 +20,6 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/sdebacker/laravel-passkeys.git"
-        }
-    ],
     "require": {
         "php": "^8.4",
         "bkwld/croppa": "^8.0.0",
@@ -40,7 +34,7 @@
         "spatie/laravel-feed": "^4.4",
         "spatie/laravel-markdown-response": "^1.2",
         "spatie/laravel-one-time-passwords": "^1.0",
-        "spatie/laravel-passkeys": "dev-main",
+        "spatie/laravel-passkeys": "^1.6.4",
         "spatie/laravel-permission": "^7.2.3",
         "spatie/laravel-query-builder": "^7.0.1",
         "spatie/laravel-responsecache": "^8.3",
