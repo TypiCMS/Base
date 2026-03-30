@@ -124,7 +124,9 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "typicms/things"
+            ]
         }
     },
     "config": {
