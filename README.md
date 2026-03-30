@@ -120,15 +120,13 @@ The following example installs the News module. After these steps, the module wi
     composer require typicms/news
     ```
 
-2. Add `TypiCMS\Modules\News\Providers\ModuleServiceProvider::class,` to `bootstrap/providers.php`, in the _TypiCMS Modules Service Providers_ section.
-
-3. Publish the views and migrations:
+2. Publish the views and migrations:
 
     ```
     php artisan vendor:publish
     ```
 
-4. Run the database migration:
+3. Run the database migration:
 
     ```
     php artisan migrate
