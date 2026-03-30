@@ -81,7 +81,7 @@ return Application::configure(basePath: dirname(__DIR__))
             UserPrefs::class,
         ]);
         $middleware->redirectGuestsTo(fn (Request $request): string => route(
-            (request()->getPreferredLanguage(enabledLocales()) ?? mainLocale()).'::login',
+            ($request->getPreferredLanguage(enabledLocales()) ?? mainLocale()).'::login',
         ));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
