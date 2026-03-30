@@ -8784,12 +8784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "e392997f66786f6a27870b6980b72455ef1492cc"
+                "reference": "32779c2f21449e3db805d5b40afd5ee9d04add1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/e392997f66786f6a27870b6980b72455ef1492cc",
-                "reference": "e392997f66786f6a27870b6980b72455ef1492cc",
+                "url": "https://api.github.com/repos/typicms/core/zipball/32779c2f21449e3db805d5b40afd5ee9d04add1e",
+                "reference": "32779c2f21449e3db805d5b40afd5ee9d04add1e",
                 "shasum": ""
             },
             "require": {
@@ -8797,6 +8797,14 @@
             },
             "default-branch": true,
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TypiCMS\\Modules\\Core\\Providers\\ModuleServiceProvider",
+                        "TypiCMS\\Modules\\Core\\Providers\\TranslationsServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "TypiCMS\\Modules\\Core\\": "src/"
@@ -8823,7 +8831,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-30T13:48:33+00:00"
+            "time": "2026-03-30T19:52:50+00:00"
         },
         {
             "name": "typicms/form",
@@ -9045,12 +9053,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/sidebar.git",
-                "reference": "9537799bb27f559337aa903d45b4b9afdf0f9b9b"
+                "reference": "06558f09e84135331d6dd12dd3724da5b1c25ed3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/sidebar/zipball/9537799bb27f559337aa903d45b4b9afdf0f9b9b",
-                "reference": "9537799bb27f559337aa903d45b4b9afdf0f9b9b",
+                "url": "https://api.github.com/repos/typicms/sidebar/zipball/06558f09e84135331d6dd12dd3724da5b1c25ed3",
+                "reference": "06558f09e84135331d6dd12dd3724da5b1c25ed3",
                 "shasum": ""
             },
             "require": {
@@ -9066,6 +9074,13 @@
             },
             "default-branch": true,
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TypiCMS\\Modules\\Sidebar\\SidebarServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "TypiCMS\\Modules\\Sidebar\\": "src/"
@@ -9086,7 +9101,7 @@
                 "issues": "https://github.com/typicms/sidebar/issues",
                 "source": "https://github.com/typicms/sidebar/tree/main"
             },
-            "time": "2026-03-30T13:48:45+00:00"
+            "time": "2026-03-30T18:09:41+00:00"
         },
         {
             "name": "typicms/things",
@@ -9094,12 +9109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/things.git",
-                "reference": "d53f51e80f0c0d70c0d16367eb2994ef7f3209ef"
+                "reference": "699aa0d6b566cb9a37fc100c7fe8bb9d15a46421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/things/zipball/d53f51e80f0c0d70c0d16367eb2994ef7f3209ef",
-                "reference": "d53f51e80f0c0d70c0d16367eb2994ef7f3209ef",
+                "url": "https://api.github.com/repos/typicms/things/zipball/699aa0d6b566cb9a37fc100c7fe8bb9d15a46421",
+                "reference": "699aa0d6b566cb9a37fc100c7fe8bb9d15a46421",
                 "shasum": ""
             },
             "require": {
@@ -9107,6 +9122,18 @@
             },
             "default-branch": true,
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TypiCMS\\Modules\\Things\\Providers\\ModuleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Things\\": "src/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -9128,7 +9155,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-30T13:49:17+00:00"
+            "time": "2026-03-30T19:49:05+00:00"
         },
         {
             "name": "typicms/translatable",
@@ -10077,16 +10104,16 @@
         },
         {
             "name": "composer/class-map-generator",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/class-map-generator.git",
-                "reference": "8f5fa3cc214230e71f54924bd0197a3bcc705eb1"
+                "reference": "6a9c2f0970022ab00dc58c07d0685dd712f2231b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/8f5fa3cc214230e71f54924bd0197a3bcc705eb1",
-                "reference": "8f5fa3cc214230e71f54924bd0197a3bcc705eb1",
+                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/6a9c2f0970022ab00dc58c07d0685dd712f2231b",
+                "reference": "6a9c2f0970022ab00dc58c07d0685dd712f2231b",
                 "shasum": ""
             },
             "require": {
@@ -10130,7 +10157,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/class-map-generator/issues",
-                "source": "https://github.com/composer/class-map-generator/tree/1.7.1"
+                "source": "https://github.com/composer/class-map-generator/tree/1.7.2"
             },
             "funding": [
                 {
@@ -10142,7 +10169,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-29T13:15:25+00:00"
+            "time": "2026-03-30T15:36:56+00:00"
         },
         {
             "name": "driftingly/rector-laravel",
@@ -11849,16 +11876,16 @@
         },
         {
             "name": "php-debugbar/php-debugbar",
-            "version": "v3.6.0",
+            "version": "v3.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-debugbar/php-debugbar.git",
-                "reference": "31f7d2e7943a82e72a670335d408d967b05efa5a"
+                "reference": "2e1c66ba07183cf4134df479f6f246f820a463a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-debugbar/php-debugbar/zipball/31f7d2e7943a82e72a670335d408d967b05efa5a",
-                "reference": "31f7d2e7943a82e72a670335d408d967b05efa5a",
+                "url": "https://api.github.com/repos/php-debugbar/php-debugbar/zipball/2e1c66ba07183cf4134df479f6f246f820a463a8",
+                "reference": "2e1c66ba07183cf4134df479f6f246f820a463a8",
                 "shasum": ""
             },
             "require": {
@@ -11935,7 +11962,7 @@
             ],
             "support": {
                 "issues": "https://github.com/php-debugbar/php-debugbar/issues",
-                "source": "https://github.com/php-debugbar/php-debugbar/tree/v3.6.0"
+                "source": "https://github.com/php-debugbar/php-debugbar/tree/v3.6.1"
             },
             "funding": [
                 {
@@ -11947,7 +11974,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-29T17:26:18+00:00"
+            "time": "2026-03-30T18:25:29+00:00"
         },
         {
             "name": "php-debugbar/symfony-bridge",
