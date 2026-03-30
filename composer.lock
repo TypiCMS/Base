@@ -8784,12 +8784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/core.git",
-                "reference": "48e760c1dcee3acf4a382d24e4be2ffa3caff8ec"
+                "reference": "e392997f66786f6a27870b6980b72455ef1492cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/core/zipball/48e760c1dcee3acf4a382d24e4be2ffa3caff8ec",
-                "reference": "48e760c1dcee3acf4a382d24e4be2ffa3caff8ec",
+                "url": "https://api.github.com/repos/typicms/core/zipball/e392997f66786f6a27870b6980b72455ef1492cc",
+                "reference": "e392997f66786f6a27870b6980b72455ef1492cc",
                 "shasum": ""
             },
             "require": {
@@ -8823,7 +8823,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-30T12:14:32+00:00"
+            "time": "2026-03-30T13:48:33+00:00"
         },
         {
             "name": "typicms/form",
@@ -9045,12 +9045,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/sidebar.git",
-                "reference": "60887e9a7d372849c6d37ff1506de20e789a9a5d"
+                "reference": "9537799bb27f559337aa903d45b4b9afdf0f9b9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/sidebar/zipball/60887e9a7d372849c6d37ff1506de20e789a9a5d",
-                "reference": "60887e9a7d372849c6d37ff1506de20e789a9a5d",
+                "url": "https://api.github.com/repos/typicms/sidebar/zipball/9537799bb27f559337aa903d45b4b9afdf0f9b9b",
+                "reference": "9537799bb27f559337aa903d45b4b9afdf0f9b9b",
                 "shasum": ""
             },
             "require": {
@@ -9084,9 +9084,9 @@
             "description": "A sidebar builder for TypiCMS",
             "support": {
                 "issues": "https://github.com/typicms/sidebar/issues",
-                "source": "https://github.com/typicms/sidebar/tree/1.1.1"
+                "source": "https://github.com/typicms/sidebar/tree/main"
             },
-            "time": "2026-03-23T16:15:34+00:00"
+            "time": "2026-03-30T13:48:45+00:00"
         },
         {
             "name": "typicms/things",
@@ -9094,12 +9094,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/things.git",
-                "reference": "4b58f7ff03a2a380332c8dde4220f8fdf7704b84"
+                "reference": "d53f51e80f0c0d70c0d16367eb2994ef7f3209ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/things/zipball/4b58f7ff03a2a380332c8dde4220f8fdf7704b84",
-                "reference": "4b58f7ff03a2a380332c8dde4220f8fdf7704b84",
+                "url": "https://api.github.com/repos/typicms/things/zipball/d53f51e80f0c0d70c0d16367eb2994ef7f3209ef",
+                "reference": "d53f51e80f0c0d70c0d16367eb2994ef7f3209ef",
                 "shasum": ""
             },
             "require": {
@@ -9128,7 +9128,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-25T08:18:18+00:00"
+            "time": "2026-03-30T13:49:17+00:00"
         },
         {
             "name": "typicms/translatable",
@@ -12017,11 +12017,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.44",
+            "version": "2.1.45",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4a88c083c668b2c364a425c9b3171b2d9ea5d218",
-                "reference": "4a88c083c668b2c364a425c9b3171b2d9ea5d218",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f8cdfd9421b7edb7686a2d150a234870464eac70",
+                "reference": "f8cdfd9421b7edb7686a2d150a234870464eac70",
                 "shasum": ""
             },
             "require": {
@@ -12066,7 +12066,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-25T17:34:21+00:00"
+            "time": "2026-03-30T13:22:02+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
