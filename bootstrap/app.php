@@ -30,8 +30,8 @@ use TypiCMS\Modules\Core\Providers\PagesRoutesServiceProvider;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
-        web: __DIR__ . '/../routes/web.php',
-        commands: __DIR__ . '/../routes/console.php',
+        web: __DIR__.'/../routes/web.php',
+        commands: __DIR__.'/../routes/console.php',
         health: '/up',
         then: function (Application $app): void {
             $app->booted(function ($app): void {
@@ -81,7 +81,7 @@ return Application::configure(basePath: dirname(__DIR__))
             UserPrefs::class,
         ]);
         $middleware->redirectGuestsTo(fn (Request $request): string => route(
-            (request()->getPreferredLanguage(enabledLocales()) ?? mainLocale()) . '::login',
+            (request()->getPreferredLanguage(enabledLocales()) ?? mainLocale()).'::login',
         ));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
@@ -89,16 +89,16 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $exceptions->render(function (HttpException $e, Request $request) {
             $statusCode = $e->getStatusCode();
-            if ($request->is('admin/*') && view()->exists('errors.admin.' . $statusCode)) {
-                return response()->view('errors.admin.' . $statusCode, [], $statusCode);
+            if ($request->is('admin/*') && view()->exists('errors.admin.'.$statusCode)) {
+                return response()->view('errors.admin.'.$statusCode, [], $statusCode);
             }
 
-            $view = 'errors.' . $statusCode;
+            $view = 'errors.'.$statusCode;
             if (view()->exists($view)) {
                 return response()->view($view, [], $statusCode);
             }
 
-            $view = mb_substr($view, 0, -2) . 'xx';
+            $view = mb_substr($view, 0, -2).'xx';
             if (view()->exists($view)) {
                 return response()->view($view, [], $statusCode);
             }

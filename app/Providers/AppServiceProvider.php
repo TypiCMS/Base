@@ -16,7 +16,8 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void {
+    public function boot(): void
+    {
         Event::listen('eloquent.saved:*', fn () => ResponseCache::clear());
         Event::listen('eloquent.deleted:*', fn () => ResponseCache::clear());
     }

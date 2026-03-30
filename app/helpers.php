@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\View;
 use TypiCMS\Modules\Core\Models\File as FileModel;
 use TypiCMS\Modules\Core\Models\Page;
 
-if (!function_exists('homeUrl')) {
+if (! function_exists('homeUrl')) {
     function homeUrl(): string
     {
         $uri = '/';
@@ -23,7 +23,7 @@ if (!function_exists('homeUrl')) {
     }
 }
 
-if (!function_exists('imageOrDefault')) {
+if (! function_exists('imageOrDefault')) {
     function imageOrDefault(?FileModel $image, ?int $width = null, ?int $height = null): string
     {
         if ($image instanceof FileModel) {
@@ -34,14 +34,14 @@ if (!function_exists('imageOrDefault')) {
     }
 }
 
-if (!function_exists('column')) {
+if (! function_exists('column')) {
     function column(string $column): string
     {
-        return $column . '->' . app()->getLocale();
+        return $column.'->'.app()->getLocale();
     }
 }
 
-if (!function_exists('locales')) {
+if (! function_exists('locales')) {
     /** @return array<string> */
     function locales(): array
     {
@@ -53,13 +53,13 @@ if (!function_exists('locales')) {
     }
 }
 
-if (!function_exists('enabledLocales')) {
+if (! function_exists('enabledLocales')) {
     /** @return array<string> */
     function enabledLocales(): array
     {
         $locales = [];
         foreach (locales() as $locale) {
-            if (config('typicms.' . $locale . '.status') || request('preview')) {
+            if (config('typicms.'.$locale.'.status') || request('preview')) {
                 $locales[] = $locale;
             }
         }
@@ -68,11 +68,11 @@ if (!function_exists('enabledLocales')) {
     }
 }
 
-if (!function_exists('localeAndRegion')) {
+if (! function_exists('localeAndRegion')) {
     function localeAndRegion(?string $separator = null, ?string $locale = null): ?string
     {
         $localeAndRegion = Arr::get(config('typicms.locales'), app()->getLocale());
-        if (!is_null($separator)) {
+        if (! is_null($separator)) {
             return str_replace('_', $separator, $localeAndRegion);
         }
 
@@ -80,21 +80,21 @@ if (!function_exists('localeAndRegion')) {
     }
 }
 
-if (!function_exists('mainLocale')) {
+if (! function_exists('mainLocale')) {
     function mainLocale(): string
     {
         return Arr::first(locales());
     }
 }
 
-if (!function_exists('isLocaleEnabled')) {
+if (! function_exists('isLocaleEnabled')) {
     function isLocaleEnabled(string $locale): bool
     {
         return in_array($locale, enabledLocales(), true);
     }
 }
 
-if (!function_exists('modules')) {
+if (! function_exists('modules')) {
     /** @return array<string> */
     function modules(): array
     {
@@ -105,7 +105,7 @@ if (!function_exists('modules')) {
     }
 }
 
-if (!function_exists('getModulesForSelect')) {
+if (! function_exists('getModulesForSelect')) {
     /** @return array<string, string> */
     function getModulesForSelect(): array
     {
@@ -123,7 +123,7 @@ if (!function_exists('getModulesForSelect')) {
     }
 }
 
-if (!function_exists('permissions')) {
+if (! function_exists('permissions')) {
     /** @return array<string, array<mixed>> */
     function permissions(): array
     {
@@ -141,35 +141,35 @@ if (!function_exists('permissions')) {
     }
 }
 
-if (!function_exists('websiteTitle')) {
+if (! function_exists('websiteTitle')) {
     function websiteTitle(?string $locale = null): ?string
     {
         $locale ??= app()->getLocale();
 
-        return config('typicms.' . $locale . '.website_title');
+        return config('typicms.'.$locale.'.website_title');
     }
 }
 
-if (!function_exists('appBaseline')) {
+if (! function_exists('appBaseline')) {
     function appBaseline(?string $locale = null): ?string
     {
         $locale ??= app()->getLocale();
 
-        return config('typicms.' . $locale . '.website_baseline');
+        return config('typicms.'.$locale.'.website_baseline');
     }
 }
 
-if (!function_exists('getMigrationFileName')) {
+if (! function_exists('getMigrationFileName')) {
     function getMigrationFileName(string $name, int $count = 0): string
     {
-        $directory = database_path(DIRECTORY_SEPARATOR . 'migrations' . DIRECTORY_SEPARATOR);
-        $migrations = File::glob($directory . '*_' . $name . '.php');
+        $directory = database_path(DIRECTORY_SEPARATOR.'migrations'.DIRECTORY_SEPARATOR);
+        $migrations = File::glob($directory.'*_'.$name.'.php');
 
-        return $migrations[0] ?? $directory . date('Y_m_d_His', time() + $count) . '_' . $name . '.php';
+        return $migrations[0] ?? $directory.date('Y_m_d_His', time() + $count).'_'.$name.'.php';
     }
 }
 
-if (!function_exists('getPagesLinkedToModule')) {
+if (! function_exists('getPagesLinkedToModule')) {
     /** @return array<int, Page> */
     function getPagesLinkedToModule(?string $module = null): array
     {
@@ -187,7 +187,7 @@ if (!function_exists('getPagesLinkedToModule')) {
     }
 }
 
-if (!function_exists('getPageLinkedToModule')) {
+if (! function_exists('getPageLinkedToModule')) {
     function getPageLinkedToModule(?string $module = null): ?Page
     {
         $pages = getPagesLinkedToModule($module);
@@ -196,7 +196,7 @@ if (!function_exists('getPageLinkedToModule')) {
     }
 }
 
-if (!function_exists('feeds')) {
+if (! function_exists('feeds')) {
     /** @return Collection<int, Model> */
     function feeds(): Collection
     {
@@ -204,11 +204,11 @@ if (!function_exists('feeds')) {
 
         return collect((array) config('typicms.modules'))
             ->transform(function (array $properties, string $module) use ($locale): ?array {
-                $routeName = $locale . '::' . $module . '-feed';
+                $routeName = $locale.'::'.$module.'-feed';
                 if (isset($properties['has_feed']) && $properties['has_feed'] === true && Route::has($routeName)) {
                     return [
                         'url' => route($routeName, $module),
-                        'title' => __(ucfirst($module) . ' feed') . ' – ' . websiteTitle(),
+                        'title' => __(ucfirst($module).' feed').' – '.websiteTitle(),
                     ];
                 }
 
@@ -218,7 +218,7 @@ if (!function_exists('feeds')) {
     }
 }
 
-if (!function_exists('pageTemplates')) {
+if (! function_exists('pageTemplates')) {
     /** @return array<string, string> */
     function pageTemplates(): array
     {
@@ -249,7 +249,7 @@ if (!function_exists('pageTemplates')) {
     }
 }
 
-if (!function_exists('pageSectionTemplates')) {
+if (! function_exists('pageSectionTemplates')) {
     /** @return array<string, string> */
     function pageSectionTemplates(): array
     {
