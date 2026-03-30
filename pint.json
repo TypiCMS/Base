@@ -1,22 +1,3 @@
 {
-    "preset": "laravel",
-    "rules": {
-        "mb_str_functions": true,
-        "modernize_types_casting": true,
-        "modernize_strpos": true,
-        "fully_qualified_strict_types": {
-            "import_symbols": false
-        },
-        "not_operator_with_successor_space": false,
-        "phpdoc_align": {
-            "align": "left"
-        },
-        "new_with_parentheses": {
-            "anonymous_class": false,
-            "named_class": true
-        },
-        "concat_space": {
-            "spacing": "one"
-        }
-    }
+    "preset": "laravel"
 }
