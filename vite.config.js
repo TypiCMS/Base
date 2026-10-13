@@ -29,4 +29,7 @@ export default defineConfig({
             },
         }),
     ],
+    resolve: {
+        dedupe: ['@codemirror/autocomplete', '@codemirror/language', '@codemirror/state', '@codemirror/view', '@lezer/common', '@lezer/highlight'],
+    },
 });
