@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "531ad1fd541cdd2e439bd73243cb8793",
+    "content-hash": "4405b5c6d40be65998e9f03c27d83fa8",
     "packages": [
         {
             "name": "bkwld/croppa",
@@ -1648,16 +1648,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v13.35.0",
+            "version": "v13.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a413a9da94884e5e9d58f4e6612884f712827804"
+                "reference": "e5626e38137cf0d82b1e52f15b16283e8442c13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a413a9da94884e5e9d58f4e6612884f712827804",
-                "reference": "a413a9da94884e5e9d58f4e6612884f712827804",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e5626e38137cf0d82b1e52f15b16283e8442c13c",
+                "reference": "e5626e38137cf0d82b1e52f15b16283e8442c13c",
                 "shasum": ""
             },
             "require": {
@@ -1678,7 +1678,7 @@
                 "guzzlehttp/promises": "^2.0.3 || ^3.0",
                 "guzzlehttp/psr7": "^2.9 || ^3.0",
                 "guzzlehttp/uri-template": "^1.0 || ^2.0",
-                "laravel/prompts": "^0.3.11",
+                "laravel/prompts": "^0.3.25",
                 "laravel/serializable-closure": "^2.0.10",
                 "league/commonmark": "^2.8.1",
                 "league/flysystem": "^3.25.1",
@@ -1773,10 +1773,10 @@
                 "league/flysystem-sftp-v3": "^3.25.1",
                 "mockery/mockery": "^1.6.10",
                 "opis/json-schema": "^2.4.1",
-                "orchestra/testbench-core": "^11.5.0",
+                "orchestra/testbench-core": "^11.6.0",
                 "pda/pheanstalk": "^7.0.0 || ^8.0.0",
                 "php-http/discovery": "^1.15",
-                "phpstan/phpstan": "2.2.15",
+                "phpstan/phpstan": "2.3.1",
                 "phpunit/phpunit": "^11.5.50 || ^12.5.8 || ^13.0.3",
                 "predis/predis": "^2.3 || ^3.0",
                 "rector/rector": "2.6.3",
@@ -1875,20 +1875,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-10-06T13:52:37+00:00"
+            "time": "2026-10-13T13:21:00+00:00"
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.25",
+            "version": "v0.3.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "21b7b49d60fcb700016dd27b582ae739c75de816"
+                "reference": "2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/21b7b49d60fcb700016dd27b582ae739c75de816",
-                "reference": "21b7b49d60fcb700016dd27b582ae739c75de816",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0",
+                "reference": "2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0",
                 "shasum": ""
             },
             "require": {
@@ -1931,9 +1931,9 @@
             ],
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
-                "source": "https://github.com/laravel/prompts/tree/v0.3.25"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.26"
             },
-            "time": "2026-10-06T02:25:49+00:00"
+            "time": "2026-10-09T14:45:13+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -8875,16 +8875,16 @@
         },
         {
             "name": "typicms/bootforms",
-            "version": "5.2.1",
+            "version": "dev-bootstrap-6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/bootforms.git",
-                "reference": "a716a921684e01d6a9cc699a409df80a2a37608f"
+                "reference": "a94958a9b56ca2e7d1c5db426df34e9db45287c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/bootforms/zipball/a716a921684e01d6a9cc699a409df80a2a37608f",
-                "reference": "a716a921684e01d6a9cc699a409df80a2a37608f",
+                "url": "https://api.github.com/repos/typicms/bootforms/zipball/a94958a9b56ca2e7d1c5db426df34e9db45287c7",
+                "reference": "a94958a9b56ca2e7d1c5db426df34e9db45287c7",
                 "shasum": ""
             },
             "require": {
@@ -8930,7 +8930,7 @@
             "description": "Just a Formbuilder with some Bootstrap 5 specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
             "support": {
                 "issues": "https://github.com/typicms/bootforms/issues",
-                "source": "https://github.com/typicms/bootforms/tree/5.2.1"
+                "source": "https://github.com/typicms/bootforms/tree/bootstrap-6"
             },
             "funding": [
                 {
@@ -8938,7 +8938,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-12T09:38:30+00:00"
+            "time": "2026-10-08T20:36:07+00:00"
         },
         {
             "name": "typicms/core",
@@ -9064,22 +9064,22 @@
         },
         {
             "name": "typicms/laravel-translatable-bootforms",
-            "version": "10.1.0",
+            "version": "dev-bootstrap-6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/typicms/laravel-translatable-bootforms.git",
-                "reference": "4554f7a807246a6e7f22f1a05baf82ed8801b81e"
+                "reference": "71781ed6430ec3d56794032985881bc9a167a2f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/typicms/laravel-translatable-bootforms/zipball/4554f7a807246a6e7f22f1a05baf82ed8801b81e",
-                "reference": "4554f7a807246a6e7f22f1a05baf82ed8801b81e",
+                "url": "https://api.github.com/repos/typicms/laravel-translatable-bootforms/zipball/71781ed6430ec3d56794032985881bc9a167a2f7",
+                "reference": "71781ed6430ec3d56794032985881bc9a167a2f7",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "~10.0|~11.0|~12.0|~13.0",
                 "php": "^8.2",
-                "typicms/bootforms": "^5.1.0",
+                "typicms/bootforms": "dev-bootstrap-6",
                 "typicms/form": "^4.0.0",
                 "typicms/translatable": "^2.0"
             },
@@ -9131,7 +9131,7 @@
             ],
             "support": {
                 "issues": "https://github.com/typicms/laravel-translatable-bootforms/issues",
-                "source": "https://github.com/typicms/laravel-translatable-bootforms/tree/10.1.0"
+                "source": "https://github.com/typicms/laravel-translatable-bootforms/tree/bootstrap-6"
             },
             "funding": [
                 {
@@ -9139,7 +9139,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-05T20:51:22+00:00"
+            "time": "2026-10-13T15:31:29+00:00"
         },
         {
             "name": "typicms/nestablecollection",
@@ -14208,7 +14208,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "maatwebsite/excel": 20,
-        "typicms/core": 20
+        "typicms/core": 20,
+        "typicms/laravel-translatable-bootforms": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
